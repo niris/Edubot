@@ -1,0 +1,17 @@
+@font-face {
+    src: url(https://unpkg.com/picon@22.3.9/solid.woff2);
+    font-family: picon;
+}
+
+del,
+s {
+    font-family: picon;
+    text-decoration: none;
+    vertical-align: bottom;
+}
+img,
+video,
+audio {
+    width: 100%;
+    border-radius: 20px;
+}

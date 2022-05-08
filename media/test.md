@@ -56,6 +56,11 @@ More times than not, when a command has multiple options, or you need to list sp
 | keyboard | writing or printing on an electronic device | never replaced - used until full of food crumbs |
 
 
+
+|  left    |  right   |
+|----------|----------|
+| ![image label](/media/test.jpg)   | ![image label](/media/test.jpg)  |
+
 ![image label](/media/test.jpg)
 
 ![Destiny Rogers - Euphoria](https://cdns-preview-1.dzcdn.net/stream/c-113e128007e3c0a3040b80039717cac7-5.mp3)
