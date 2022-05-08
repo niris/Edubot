@@ -23,7 +23,7 @@ const mediaRule = (ext2tag = (ext, img) => ({
 
 const LessonShow = {
     props: ['id'],
-    template: `<form v-html="markdownToHtml"></form>`,
+    template: `<form class=lesson v-html="markdownToHtml"></form>`,
     data() { return { lesson: {} } },
     computed: {
         markdownToHtml() {

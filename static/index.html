@@ -17,6 +17,7 @@
 <main class="container">
     <router-link to="/lesson/">Lesson List</router-link>
     <router-view></router-view>
+    <bot-chat></bot-chat>
 </main>
 
 <script defer src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>
@@ -25,6 +26,7 @@
 <script type=module>
 //import {SignUp, SignIn} from '/static/Sign.js'
 import {LessonList, LessonShow} from '/static/Lesson.js'
+import {BotFace, BotChat} from '/static/Bot.js'
 const routes = [
     { path:'/', redirect:'/lesson/'},
     { path:'/lesson/',         name: "LessonList", component: LessonList},
@@ -39,6 +41,8 @@ const routes = [
 ];
 const app = Vue.createApp({});
 app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory()}));
+app.component('bot-face', BotFace);
+app.component('bot-chat', BotChat);
 app.mount('main');
 console.log(app);
 if ('serviceWorker' in navigator) {

@@ -2,16 +2,71 @@
     src: url(https://unpkg.com/picon@22.3.9/solid.woff2);
     font-family: picon;
 }
-
+:root{
+    --grid-maxWidth: 80rem;
+}
 del,
 s {
     font-family: picon;
     text-decoration: none;
     vertical-align: bottom;
 }
-img,
-video,
-audio {
+
+/* remove sharp angle from lessons media for kids safety */
+.lesson img,
+.lesson video,
+.lesson audio {
     width: 100%;
     border-radius: 20px;
+}
+
+.chatbot {
+    --size: 64px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    max-width: 400px;
+}
+
+.chatbot>output {
+    display: flex;
+    margin-bottom: 1em;
+}
+.chatbot>output.bot{
+    border-radius: 20px 20px 20px 0;
+    background-color: var(--color-primary);
+}
+.chatbot>output.user{
+    border-radius: 20px 20px 0 20px;
+    color: var(--color-grey) !important;
+    justify-content: flex-end;
+}
+
+.chatbot>.field {
+    display: flex;
+    height: var(--size);
+}
+
+.chatbot>.field>img {
+    pointer-events: none;
+/*    filter: invert(1) hue-rotate(180deg);*/
+    background-color: var(--color-primary);
+    border-radius: 20px 20px 20px 0;
+    z-index: 1;
+    fill: white;
+    padding: 8px;
+}
+
+.chatbot>.field>input {
+    border-radius: 20px 20px 0 20px !important;
+    transform: translateX(calc(var(--size) * -1));
+    transition: all 0.75s;
+    text-align: right;
+    width: var(--size) !important;
+}
+
+.chatbot>.field>input:focus {
+    width: 100% !important;
+    transform: translateX(0);
 }
