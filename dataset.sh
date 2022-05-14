@@ -1,8 +1,5 @@
 # User (re)creation
 curl -XDELETE 0.0.0.0/api/lesson
-curl -XDELETE 0.0.0.0/api/user/admin || : # delete if any admin exist
-curl 0.0.0.0/api/user -d id=admin -d 'roles={admin,teacher,user}'
-curl 0.0.0.0/api/user -d id=test -d 'roles={teacher,user}'
 # lesson creation + cascade delete
 curl 0.0.0.0/api/lesson -d title=hello -d content="how to use edubot" -d owner=admin
 curl 0.0.0.0/api/lesson -d title=hello -d content="cascade test" -d owner=test

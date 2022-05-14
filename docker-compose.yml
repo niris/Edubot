@@ -1,7 +1,7 @@
 version: '3'
 services:
   postgres:
-    image: postgres
+    image: postgres:14
     ports:
       - "5432:5432"
     environment:
@@ -9,9 +9,10 @@ services:
       POSTGRES_USER: app_user
       POSTGRES_PASSWORD: password
     volumes:
-      - $PWD/pgdata:/var/lib/postgresql/data
+      - ./sql:/sql:ro
+      - ./pgdata:/var/lib/postgresql/data
   postgrest:
-    image: postgrest/postgrest
+    image: postgrest/postgrest:v9.0.0
     ports:
       - "3000:3000"
     links:
@@ -20,6 +21,9 @@ services:
       PGRST_DB_URI: postgres://app_user:password@postgres:5432/app_db
       PGRST_DB_SCHEMA: public
       PGRST_DB_ANON_ROLE: app_user
+      PGRST_DB_PRE__REQUEST: auth.authenticate
+      PGRST_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT check
+      PGRST_APP_SETTINGS_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT sign
     depends_on:
       - postgres
   nginx:
@@ -32,9 +36,9 @@ services:
       - POSTGREST_HOST=postgrest
       - POSTGREST_PORT=3000
     volumes:
-      - "./nginx.conf:/nginx.tpl:ro"
-      - "./static:/etc/nginx/html/static:ro"
-      - "./media:/etc/nginx/html/media:ro"
+      - ./nginx.conf:/nginx.tpl:ro
+      - ./static:/etc/nginx/html/static:ro
+      - ./media:/etc/nginx/html/media:ro
     command: bash -c "
         envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
         nginx -g 'daemon off; error_log /dev/stderr info;'"

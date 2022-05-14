@@ -1,22 +1,21 @@
 # Edubot
 
-Offline-Mobile-first Learning Website
+Mobile-first Chatbot-powered vocabulary learning Website
 
 ## Setup
 
 ```sh
 # start the server on http://localhost
 docker-compose up -d
-# setup database schema (if first lauch)
-docker exec -i $(docker ps -qf name=-postgres-) psql app_db app_user < schema.sql
-# deploy a sample dataset
-./dataset.sh
+# deploy schema if missing lesson table
+if curl -s --fail localhost/api/lesson ; then
+  docker exec -i edubot-postgres-1 psql app_db app_user -f sql/schema.sql
+fi
+# deploy a example dataset if empty lesson table
+if [ $(curl -s localhost/api/lesson) == '[]' ] ; then
+  ./dataset.sh
+fi
 ```
-
-## Features
-
-- offline chatbot
-- offline student courses
 
 ## Data Model
 

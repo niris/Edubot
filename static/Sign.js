@@ -1,30 +1,62 @@
 const SignUp = {
-    data() {
-        return { // TODO: use color + number as password
-            numbers: [0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x39],
-            colors: [0xF00, 0x0F0, 0x00F, 0xFF0, 0x0FFF, 0xFFF, 0x000],
-        }
-    },
-    template: `<form action=/user>
-        <input name=id required>
-        <button type=submit>Sign Up</button>
-    </form>`
+	template: `
+	<form @submit.prevent=signUp($event)>
+		<input required autocomplete=username placeholder="Username" name="id">
+		<input required autocomplete=password placeholder="Password" name="pass" type="password">
+		<button type=submit class=is-full-width>Create User</button>
+	</form>`,
+	methods: {
+		async signUp({target}) {
+			const body = new URLSearchParams(new FormData(target));
+			const auth = await fetch('/api/rpc/register', {method:'POST', body});
+			if (auth.ok) {
+				this.$router.push({ name: "LessonList" });
+				this.$root.$data.$auth = {}; // as register also login
+			} else {
+				const json = await auth.json();
+				alert(json.message);
+			}
+		}
+	}
 }
 
 const SignIn = {
-    props: { range: { default: 'none' }, id: { type: Number, default: 0 } },
-    template: `<div class=row>range={{range}} id={{id}}
-        <a class="card col-4" is=router-link :to="{name:'PieceNew'}">Create</a>
-        <div class="card col-4" v-for="p in plays">
-            <a is=router-link :to="{name:'PieceForm', params:{id:p.piece_id}}">{{p.piece_id}}</a>
-            {{p.date}} {{p.time}}
-            <span v-for="a in p.actors">@{{a}} </span>
-        </div>
-        </div>`,
-    data() { return { plays: [] } },
-    async mounted() {
-        this.plays = await this.rest('/play')
-    }
+	template: `
+	<form @submit.prevent=signIn($event)>
+		<input required autocomplete=username placeholder="Username" name="id">
+		<input required autocomplete=password placeholder="Password" name="pass" type="password">
+		<button type=submit class=is-full-width>Sign In</button>
+	</form>
+	`,
+	methods: {
+		async signIn({target}) {
+			const body = new URLSearchParams(new FormData(target));
+			const auth = await fetch('/api/rpc/login', {method:'POST', body});
+			if (auth.ok) {
+				this.$router.push({ name: "LessonList" });
+				this.$root.$data.$auth = {};
+			} else {
+				const json = await auth.json();
+				alert(json.message);
+			}
+		}
+	}
 }
 
-export { SignUp, SignIn }
+const SignOut = {
+	template: `
+	<form @submit.prevent=signUp($event)>
+		<button type=submit class=is-full-width>SignOut</button>
+	</form>`,
+	methods: {
+		async signUp({target}) {
+			const auth = await fetch('/api/rpc/logout');
+			if (auth.ok) {
+				this.$router.push({ name: "LessonList" });
+				this.$root.$data.$auth = null;
+			}
+		}
+	}
+}
+
+export { SignUp, SignIn, SignOut}

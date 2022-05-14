@@ -15,32 +15,38 @@
 <link rel="manifest" href="/static/manifest.json">
 
 <main class="container">
-    <router-link to="/lesson/">Lesson List</router-link>
-    <router-view></router-view>
-    <bot-chat></bot-chat>
+	<nav class="tabs is-full">
+		<router-link to="/sign/up" v-if="!$root.$data.$auth"><s>star</s> Sign Up</router-link>
+		<router-link to="/sign/in" v-if="!$root.$data.$auth"><s>key</s> Sign In</router-link>
+		<router-link to="/lesson/" v-if="$root.$data.$auth"><s>list</s>Lesson List</router-link>
+		<router-link to="/sign/out" v-if="$root.$data.$auth"><s>exit</s> Sign Out</router-link>
+	</nav>
+	<router-view></router-view>
+	<bot-chat></bot-chat>
 </main>
 
 <script defer src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>
 <script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
 <script defer src="https://unpkg.com/markdown-it@13.0.0/dist/markdown-it.min.js"></script>
 <script type=module>
-//import {SignUp, SignIn} from '/static/Sign.js'
+import {SignUp, SignIn, SignOut} from '/static/Sign.js'
 import {LessonList, LessonShow} from '/static/Lesson.js'
 import {BotFace, BotChat} from '/static/Bot.js'
 const routes = [
-    { path:'/', redirect:'/lesson/'},
-    { path:'/lesson/',         name: "LessonList", component: LessonList},
-    { path:'/lesson/:id',      name: "LessonShow", component: LessonShow, props: true},
-//			{ path:'/sign/up',         name: "SignUp",    component: SignUp},
-//			{ path:'/sign/in',         name: "SignIn",    component: SignIn},
+	{ path:'/', redirect:'/lesson/'},
+	{ path:'/lesson/',         name: "LessonList", component: LessonList},
+	{ path:'/lesson/:id',      name: "LessonShow", component: LessonShow, props: true},
+	{ path:'/sign/up',         name: "SignUp",     component: SignUp},
+	{ path:'/sign/in',         name: "SignIn",     component: SignIn},
+	{ path:'/sign/out',         name: "SignOut",     component: SignOut},
 //			{ path:'/user/',           name: "UserList",  component: UserList},
 //			{ path:'/user/new',        name: "UserNew",   component: UserForm, props: { edit: true }},
 //			{ path:'/user/:id',        name: "UserForm",  component: UserForm, props: true },
 //			{ path:'/user/:id/edit',   name: "UserEdit",  component: UserForm, props: (route) => ({ id: route.query.id, edit: true }) },
-    { path:'/:other(.*)*', component:{template:`<b>404</b>`}}
+	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
-const app = Vue.createApp({});
-app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory()}));
+const app = Vue.createApp({data() {return {$auth: null}}});
+app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory(), linkActiveClass: 'active'}));
 app.component('bot-face', BotFace);
 app.component('bot-chat', BotChat);
 app.mount('main');
