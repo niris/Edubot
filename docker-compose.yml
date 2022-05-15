@@ -18,9 +18,12 @@ services:
     links:
       - postgres:postgres
     environment:
-      PGRST_DB_URI: postgres://root:password@postgres:5432/root # good practive is to create a non-superuser for postgrest
-      PGRST_DB_SCHEMA: public # the default schema that will be rest-served
-      PGRST_DB_ANON_ROLE: anon # role if bad or missing jwt (must exist)
+      # a good practice would've been to create a separate non-superuser for postgrest
+      PGRST_DB_URI: postgres://root:password@postgres:5432/root
+      # default schema to be served (reuse existing "public")
+      PGRST_DB_SCHEMA: public
+      # role if bad or missing jwt (must exist)
+      PGRST_DB_ANON_ROLE: anon
       PGRST_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT check
       PGRST_APP_SETTINGS_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT sign
     depends_on:

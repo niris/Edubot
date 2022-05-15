@@ -10,8 +10,8 @@ const SignUp = {
 			const body = new URLSearchParams(new FormData(target));
 			const auth = await fetch('/api/rpc/register', {method:'POST', body});
 			if (auth.ok) {
-				this.$router.push({ name: "LessonList" });
-				setTimeout(()=>this.$root.$data.auth=true, 1000);
+				this.$root.log();//setTimeout(()=>this.$root.$data.auth=true, 1000);
+				this.$router.push("/");
 			} else {
 				const json = await auth.json();
 				alert(json.message);
@@ -33,8 +33,8 @@ const SignIn = {
 			const body = new URLSearchParams(new FormData(target));
 			const auth = await fetch('/api/rpc/login', {method:'POST', body});
 			if (auth.ok) {
-				this.$router.push({ name: "LessonList" });
-				setTimeout(()=>this.$root.$data.auth=true, 1000);
+				this.$root.log();//setTimeout(()=>this.$root.$data.auth=true, 1000);
+				this.$router.push("/");
 			} else {
 				const json = await auth.json();
 				alert(json.message);
@@ -43,20 +43,26 @@ const SignIn = {
 	}
 }
 
-const SignOut = {
-	template: `
+const SignMe = {
+	template:`
 	<form @submit.prevent=signOut($event)>
-		<button type=submit class=is-full-width>SignOut</button>
+		<div>
+			<h1 style=display:inline-block>{{$root.id}}</h1>
+			&nbsp;
+			<small class="tag">{{$root.role}}</small>
+		</div>
+		
+		<button type=submit class=is-full-width><s>logout</s> Sign Out</button>
 	</form>`,
 	methods: {
 		async signOut({target}) {
 			const auth = await fetch('/api/rpc/logout');
 			if (auth.ok) {
-				this.$router.push({ name: "LessonList" });
-				setTimeout(()=>this.$root.$data.auth=false, 1000);
+				this.$root.log();//setTimeout(()=>this.$root.$data.auth=false, 1000);
+				this.$router.push("/");
 			}
 		}
 	}
 }
 
-export { SignUp, SignIn, SignOut}
+export { SignUp, SignIn, SignMe}

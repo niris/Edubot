@@ -41,11 +41,14 @@ const LessonShow = {
 const LessonList = {
     template: `<h1>Lessons List</h1>
     <ul v-for="l in lessons">
-        <li><router-link :to="{name:'LessonShow', params: {id: l.id}}">{{l.title}}</router-link></li>
+        <li>
+            <router-link :to="''+l.id">{{l.title}}</router-link> by {{l.owner}}
+            <small class=tag v-if=l.draft>draft</small>
+        </li>
     </ul>`,
     data() { return { lessons: [] } },
     async mounted() {
-        this.lessons = await (await fetch(`/api/lesson?select=id,title`)).json();
+        this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft`)).json();
     }
 }
 

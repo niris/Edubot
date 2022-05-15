@@ -4,9 +4,8 @@ create role "anon" nologin; -- PGRST_DB_ANON_ROLE will log into this
 create role "user" nologin;
 create role "admin" nologin;
 
---GRANT anon TO user;
---GRANT user TO admin;
-
+-- allow "root" to switch to our defined roles
+GRANT "anon" TO root;
 GRANT "user" TO root;
 GRANT "admin" TO root;
 
@@ -53,8 +52,7 @@ create trigger encrypt_pass
   execute procedure auth.encrypt_pass();
 
 -- user login verification helper
-create or replace function auth.valid(id text, pass text) returns name
-  as $$
+create or replace function auth.valid(id text, pass text) returns name as $$
 begin
   return (
   select role from auth.users
