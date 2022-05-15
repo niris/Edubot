@@ -11,7 +11,7 @@ const SignUp = {
 			const auth = await fetch('/api/rpc/register', {method:'POST', body});
 			if (auth.ok) {
 				this.$router.push({ name: "LessonList" });
-				this.$root.$data.$auth = {}; // as register also login
+				setTimeout(()=>this.$root.$data.auth=true, 1000);
 			} else {
 				const json = await auth.json();
 				alert(json.message);
@@ -34,7 +34,7 @@ const SignIn = {
 			const auth = await fetch('/api/rpc/login', {method:'POST', body});
 			if (auth.ok) {
 				this.$router.push({ name: "LessonList" });
-				this.$root.$data.$auth = {};
+				setTimeout(()=>this.$root.$data.auth=true, 1000);
 			} else {
 				const json = await auth.json();
 				alert(json.message);
@@ -45,15 +45,15 @@ const SignIn = {
 
 const SignOut = {
 	template: `
-	<form @submit.prevent=signUp($event)>
+	<form @submit.prevent=signOut($event)>
 		<button type=submit class=is-full-width>SignOut</button>
 	</form>`,
 	methods: {
-		async signUp({target}) {
+		async signOut({target}) {
 			const auth = await fetch('/api/rpc/logout');
 			if (auth.ok) {
 				this.$router.push({ name: "LessonList" });
-				this.$root.$data.$auth = null;
+				setTimeout(()=>this.$root.$data.auth=false, 1000);
 			}
 		}
 	}

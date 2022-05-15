@@ -1,14 +1,21 @@
 -- We put auth inside the auth schema to hide them from public view.
 -- Certain public procs/views will refer to helpers and tables inside.
-create role anonymous nologin noinherit;
-create role student nologin;
-create role teacher nologin;
+create role "anon" nologin; -- PGRST_DB_ANON_ROLE will log into this
+create role "user" nologin;
+create role "admin" nologin;
+
+--GRANT anon TO user;
+--GRANT user TO admin;
+
+GRANT "user" TO root;
+GRANT "admin" TO root;
 
 create schema if not exists auth;
 create table if not exists auth.users (
   "id"   text primary key,
   "pass" text not null check (length("pass") < 512), -- an encrypt_pass trigger will handle this field
-  "role" name not null check (length("role") < 512) default 'student' -- role can't be FK enforced, we'll use a trigger
+  "role" name not null check (length("role") < 512) default 'user', -- role can't be FK enforced, we'll use a trigger
+  "progress" JSONB[]
 );
 
 -- auth.users.role enforcement

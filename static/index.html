@@ -16,10 +16,11 @@
 
 <main class="container">
 	<nav class="tabs is-full">
-		<router-link to="/sign/up" v-if="!$root.$data.$auth"><s>star</s> Sign Up</router-link>
-		<router-link to="/sign/in" v-if="!$root.$data.$auth"><s>key</s> Sign In</router-link>
-		<router-link to="/lesson/" v-if="$root.$data.$auth"><s>list</s>Lesson List</router-link>
-		<router-link to="/sign/out" v-if="$root.$data.$auth"><s>exit</s> Sign Out</router-link>
+		<router-link to="/lesson/"  v-if="$root.$data.paths.includes('/lesson')"><s>list</s> Lesson List</router-link>
+		<router-link to="/me"       v-if="$root.$data.paths.includes('/rpc/me')"><s>bust</s> My Profile</router-link>
+		<router-link to="/sign/up"  v-if="$root.$data.paths.includes('/rpc/register')"><s>star</s> Sign Up</router-link>
+		<router-link to="/sign/in"  v-if="$root.$data.paths.includes('/rpc/login')"><s>key</s> Sign In</router-link>
+		<router-link to="/sign/out" v-if="$root.$data.paths.includes('/rpc/logout')"><s>exit</s> Sign Out</router-link>
 	</nav>
 	<router-view></router-view>
 	<bot-chat></bot-chat>
@@ -45,14 +46,24 @@ const routes = [
 //			{ path:'/user/:id/edit',   name: "UserEdit",  component: UserForm, props: (route) => ({ id: route.query.id, edit: true }) },
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
-const app = Vue.createApp({data() {return {$auth: null}}});
+const app = Vue.createApp({
+	data() {return {auth: false, paths: [], $me: {}}},
+	mounted() {this.auth = !this.auth;},
+	watch: {
+		async auth(_is, _was) {
+			const me = await fetch('/api/rpc/me');
+			this.$me = (this.auth = me.ok) ? await me.json() : {};
+			this.paths = Object.keys((await (await fetch(`/api/`)).json()).paths);
+		}
+	},
+});
 app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory(), linkActiveClass: 'active'}));
 app.component('bot-face', BotFace);
 app.component('bot-chat', BotChat);
 app.mount('main');
-console.log(app);
+console.debug(app);
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/worker.js').then(console.log);
+	navigator.serviceWorker.register('/worker.js').then(console.debug);
 }
 //*/
 </script>

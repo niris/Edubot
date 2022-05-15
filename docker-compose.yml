@@ -5,35 +5,34 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: app_db
-      POSTGRES_USER: app_user
+      POSTGRES_DB: root
+      POSTGRES_USER: root
       POSTGRES_PASSWORD: password
     volumes:
       - ./sql:/sql:ro
       - ./pgdata:/var/lib/postgresql/data
-  postgrest:
+  api:
     image: postgrest/postgrest:v9.0.0
     ports:
       - "3000:3000"
     links:
       - postgres:postgres
     environment:
-      PGRST_DB_URI: postgres://app_user:password@postgres:5432/app_db
-      PGRST_DB_SCHEMA: public
-      PGRST_DB_ANON_ROLE: app_user
-      PGRST_DB_PRE__REQUEST: auth.authenticate
+      PGRST_DB_URI: postgres://root:password@postgres:5432/root # good practive is to create a non-superuser for postgrest
+      PGRST_DB_SCHEMA: public # the default schema that will be rest-served
+      PGRST_DB_ANON_ROLE: anon # role if bad or missing jwt (must exist)
       PGRST_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT check
       PGRST_APP_SETTINGS_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT sign
     depends_on:
       - postgres
-  nginx:
-    image: nginx
+  httpd:
+    image: nginx:1
     ports:
       - "80:80"
     links:
-      - postgrest:postgrest
+      - api:api
     environment:
-      - POSTGREST_HOST=postgrest
+      - POSTGREST_HOST=api
       - POSTGREST_PORT=3000
     volumes:
       - ./nginx.conf:/nginx.tpl:ro
@@ -43,4 +42,4 @@ services:
         envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
         nginx -g 'daemon off; error_log /dev/stderr info;'"
     depends_on:
-      - postgrest
+      - api
