@@ -1,15 +1,13 @@
-# User (re)creation
-curl -XDELETE 0.0.0.0/api/lesson
+# User login
+curl 0.0.0.0/api/rpc/login -c .session --data 'id=admin&pass=admin'
 # lesson creation + cascade delete
-curl 0.0.0.0/api/lesson -d title=hello -d content="how to use edubot" -d owner=admin
-curl 0.0.0.0/api/lesson -d title=hello -d content="cascade test" -d owner=test
-curl -XDELETE 0.0.0.0/api/user/test
-echo -n only 1 example lesson shall remain:
-curl -s 0.0.0.0/api/lesson | jq '. | length'
+curl -b .session -XDELETE 0.0.0.0/api/lesson
+curl -b .session 0.0.0.0/api/lesson -d title="curl created" -d content="this lesson was created via curl"
+curl -s 0.0.0.0/api/lesson | jq '. | length' # 1
 # populate database from lessons files
 for f in media/*.md ; do
     TITLE=$(sed -n 's/title: //p' $f)
     TAGS=$(sed -n 's/tags: //p' $f)
     DATE=$(sed -n 's/created: //p' $f)
-    curl 0.0.0.0/api/lesson -d owner=admin -d "tags=$TAGS" -d "title=$TITLE" -d "content=$(sed '1{/^---$/!q;};1,/^---$/d' $f)"
+    curl -b .session 0.0.0.0/api/lesson -d "tags=$TAGS" -d "title=$TITLE" -d "content=$(sed '1{/^---$/!q;};1,/^---$/d' $f)"
 done

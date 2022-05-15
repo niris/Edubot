@@ -51,7 +51,7 @@ create trigger encrypt_pass
   for each row
   execute procedure auth.encrypt_pass();
 
--- user login verification helper
+-- user login verification helper used to generate JWT
 create or replace function auth.valid(id text, pass text) returns name as $$
 begin
   return (

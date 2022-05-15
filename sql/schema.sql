@@ -1,4 +1,5 @@
 -- prevent created FUNCTION to be public by default
+
 ALTER DEFAULT PRIVILEGES REVOKE EXECUTE ON FUNCTIONS FROM PUBLIC;
 -- auth table + roles (anon, admin, user)
 \ir _auth.sql

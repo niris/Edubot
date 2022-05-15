@@ -16,14 +16,13 @@
 
 <main class="container">
 	<nav class="tabs is-full">
-		<router-link to="/user/"    v-if="is('admin')"><s>list2</s> Users</router-link>
-		<router-link to="/lesson/"  v-if="is('admin','user')"><s>list2</s> Lesson List</router-link>
+		<router-link to="/lesson/"  v-if="is('admin','user')"><s>student</s> Lesson List</router-link>
 		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
 		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
 		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>
 	</nav>
 	<router-view></router-view>
-	<bot-chat></bot-chat>
+	<bot-chat ref="bot"></bot-chat>
 </main>
 
 <script defer src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>

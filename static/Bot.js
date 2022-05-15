@@ -30,12 +30,20 @@ const BotFace = {
 const BotChat = {
     data: () => ({ moods: Object.keys(faces), mood: 1, logs:[]}),
     methods: {
+        make(mood, time=1500){
+            this.$refs.face.$props.mood = mood;
+            setTimeout(() => this.$refs.face.$props.mood = "quiet", time);
+        },
         send({ target }) {
             const msg = target.req.value;
             target.req.value = '';
             this.logs.push({msg});
+            if(msg.match(/(score|level|lv|exp)/i)){
+                const score = JSON.parse(localStorage.exams||'[]').length;
+                return this.logs.push({bot:true, msg: `Your score: **${score}** ~~ruby~~`});
+            }
             setTimeout(() => this.logs.push({bot:true, msg: `I know **nothing** about \`${msg}\` ~~apple~~`}), 500);
-            this.$refs.face.$props.mood = this.moods[this.mood++ % this.moods.length];
+            this.make(this.moods[this.mood++ % this.moods.length]);
         },
         md: (txt) => markdownit('default').render(txt),
     },

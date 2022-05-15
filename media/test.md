@@ -80,16 +80,5 @@ More times than not, when a command has multiple options, or you need to list sp
 
 
 ![movie label](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm)
-![movie label](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4)
 
-## Exam
-
-[ ] keep [_] kept [x] *lol*
-[ ] keep [_] kept [x] lol
-
-- [ ] open book
-- [_] read
-  - [ ] preface
-  - [_] story
-  - [x] appendix
-- [x] close book
+That's all folks !
