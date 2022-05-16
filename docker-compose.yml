@@ -37,12 +37,26 @@ services:
     environment:
       - POSTGREST_HOST=api
       - POSTGREST_PORT=3000
+      - VOSK_HOST=vosk
+      - VOSK_PORT=2700
     volumes:
       - ./nginx.conf:/nginx.tpl:ro
       - ./static:/etc/nginx/html/static:ro
       - ./media:/etc/nginx/html/media:ro
     command: bash -c "
-        envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
+        envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT,$$VOSK_HOST,$$VOSK_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
         nginx -g 'daemon off; error_log /dev/stderr info;'"
     depends_on:
       - api
+  vosk:
+    image: alphacep/kaldi-en
+    ports:
+      - "2700:2700"
+    working_dir: /opt/vosk-server/webrtc
+    environment:
+      - VOSK_MODEL_PATH=/opt/vosk-model-en/model
+    command: bash -c "
+        pip install aiohttp aiortc &&
+        python3 asr_server_webrtc.py"
+    volumes:
+      - ./vosk-rtc.py:/opt/vosk-server/webrtc/asr_server_webrtc.py:ro
