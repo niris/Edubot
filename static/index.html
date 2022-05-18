@@ -23,17 +23,6 @@
 	</nav>
 	<router-view></router-view>
 	<bot-chat ref="bot"></bot-chat>
-	<div class="container">
-		<p>
-			<button class="btn btn-success" id="start" onclick="start()">Start</button>
-			<button class="btn btn-danger d-none" id="stop" onclick="stop()">Stop</button>
-			<span id="status" class="text-uppercase text-muted">Press start</span>
-		</p>
-	
-		<div id="text"></div>
-		<div id="partial"></div>
-		<script src="/static/client.js"></script>
-	</div>
 </main>
 
 <script defer src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>

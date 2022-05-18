@@ -19,7 +19,9 @@ s {
     width: 100%;
     border-radius: 20px;
 }
-
+.lesson .voice.live{
+    box-shadow: 0 0 0 5px var(--color-primary) !important;
+}
 .chatbot {
     --size: 64px;
     position: fixed;

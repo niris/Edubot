@@ -17,7 +17,7 @@ Can you select multiple answer:
 
 That's all for the basics
 
-## Interactiv questions
+## Visual comprehension
 
 Look at this picture:
 
@@ -26,6 +26,15 @@ Look at this picture:
 What is this picture about:
 - [x] A mountain
 - [ ] An icecream
+
+
+![movie label](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm)
+
+What is the flower doing:
+- [x] opening
+- [ ] closing
+
+## Audio comprehension
 
 Listen to the following song:
 
@@ -37,9 +46,17 @@ What does the singer **feels** for the first time:
 
 Look at this video:
 
-![movie label](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm)
+# Voice
 
-What is the flower doing:
-- [x] opening
-- [ ] closing
+Say **hello everybody** in this field:
+
+?[voice](hello everybody)
+
+Say **good morning** in this field:
+
+?[voice](good morning)
+
+Say **thank you** in this field:
+
+?[voice](thank you)
 

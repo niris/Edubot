@@ -1,10 +1,13 @@
-const examRule = (validated) => function (state) {
+// hash a question into a localStorage id
+const hashCode = s => s.split('').reduce((a, b) => (a = ((a << 5) - a) + b.charCodeAt(0), a & a), 0);
+// convert list + checkbox into interactiv exam
+const listCheckboxRule = (validated) => function (state) {
     const all = state.tokens;
     for (let i = 0; i < all.length; i++) {
         // search for a paragraph-prefixed bullet list
         if (i < 1 || all[i].type !== "bullet_list_open" || all[i - 1].type !== "paragraph_close") continue;
         // extract it prefix text
-        const name = 'h'+hashCode(all[i - 2].content);
+        const name = 'h' + hashCode(all[i - 2].content);
         for (let j = i; all[j].type !== "bullet_list_close" && j < all.length; j++) {
             if (all[j].type !== "inline" || all[j].children.length != 4 || all[j].children[1].type != 'checkbox_input') continue;
             const checkbox = all[j].children[1];
@@ -18,7 +21,25 @@ const examRule = (validated) => function (state) {
         }
     }
 };
-const hashCode = s => s.split('').reduce((a, b) => (a = ((a << 5) - a) + b.charCodeAt(0), a & a), 0);
+// convert ?[name](value) into HTML input
+const inputRule = (validated) => function (state) {
+    state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
+        const matches = [...child.content.matchAll(/\?\[(.*?)\]\((.*?)\)/g)];
+        return matches.length ? matches.map(([_, content, value]) => [
+            new state.Token("label_open", "label", 1),
+            Object.assign(new state.Token("text_input", "input", 0), {
+                attrs: [
+                    [validated.includes('h' + hashCode(value)) ? "disabled" : "readonly", ""],
+                    ["class", content],
+                    [validated.includes('h' + hashCode(value)) ? "value" : "data-value", value],
+                    ["name", 'h' + hashCode(value)]
+                ]
+            }),
+            //Object.assign(new state.Token("text", "", 0), { content }),
+            new state.Token("label_close", "label", -1),
+        ]).flat() : [child];
+    }).flat());
+};
 // convert [ ] label into HTML checkbox
 const checkboxRule = () => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
@@ -44,34 +65,76 @@ const mediaRule = (ext2tag = (ext, img) => ({
 
 const LessonShow = {
     props: ['id'],
-    template: `<form class=lesson @change.prevent=validate v-html="markdownToHtml"></form>`,
+    template: `<form class=lesson @click=listen @input.prevent=validate v-html="markdownToHtml"></form>`,
     data() { return { lesson: {} } },
     computed: {
         markdownToHtml() {
             const mi = markdownit('default');
-            mi.core.ruler.push("checkbox", checkboxRule());
             mi.core.ruler.push("media", mediaRule());
-            mi.core.ruler.push("exam", examRule(JSON.parse(localStorage.exams||'[]')));
+            mi.core.ruler.push("checkbox", checkboxRule());
+            mi.core.ruler.push("input", inputRule(JSON.parse(localStorage.exams || '[]')));
+            mi.core.ruler.push("exam", listCheckboxRule(JSON.parse(localStorage.exams || '[]')));
             const html = mi.render(this.lesson.content || '...');
             return html;
         }
     },
     methods: {
+        async listen({ target }) {
+            if (!target.classList.contains("voice")) return;
+            target.value = '';
+            target.placeholder = 'Connecting...';
+            const pc = new RTCPeerConnection({ sdpSemantics: 'unified-plan' });
+            const dc = pc.createDataChannel('result');
+            dc.onmessage = (messageEvent) => {
+                target.classList.add('live');
+                target.placeholder = "Speak...";
+                const voskResult = JSON.parse(messageEvent.data || '{}');
+                const base = target.value.replace(/ *\(.*?\)/, '');
+                if (voskResult.text) {
+                    target.value = `${base} ${voskResult.text}`.trim();
+                    target.dispatchEvent(new Event("input", { bubbles: true }));
+                } else if (voskResult.partial) {
+                    target.value = `${base} (${voskResult.partial})`.trim();
+                }
+            };
+            target.onblur = function stop() {
+                dc?.close();
+                pc.getTransceivers?.().forEach((t) => t.stop?.());
+                pc.getSenders().forEach((s) => s.track.stop());
+                setTimeout(() => pc.close(), 500);
+                target.classList.remove('live');
+            }
+
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+            stream.getTracks().forEach((t) => pc.addTrack(t, stream));
+            await pc.setLocalDescription(await pc.createOffer());
+            while (pc.iceGatheringState !== 'complete') await new Promise(r => setTimeout(r, 500));
+            const offer = await fetch('/offer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sdp: pc.localDescription.sdp, type: pc.localDescription.type }),
+            }).then((res) => res.json());
+            await pc.setRemoteDescription(offer);
+            return {};
+        },
         validate({ target }) {
             this.$root.$refs.bot.make('happy');
-            if (target.form[target.name].constructor != RadioNodeList) {
-                return console.log("Only 1 choice ?!");
+            const inputs = target.form[target.name];
+            let correct = false;
+            if (inputs.constructor == HTMLInputElement) {
+                correct = inputs.dataset.value == inputs.value;
             }
-            // bad/incomplete try : shall we tell student ? it break the point of multiple responses...
-            if (target.dataset.checked === undefined) {
-                console.log("wrong answer");
+            if (inputs.constructor == RadioNodeList) {
+                // bad/incomplete try : shall we tell student ? it break the point of multiple responses...
+                if (target.dataset.checked === undefined) {
+                    console.log("wrong answer");
+                }
+                correct = [...inputs].every(c => c.checked == (c.dataset.checked !== undefined));
             }
-            const choices = [...target.form[target.name]];
-            const correct = choices.every(c => c.checked == (c.dataset.checked!==undefined));
             if (correct) {
                 console.log("TODO: POST /api/progress {name} ?");
-                localStorage.exams = JSON.stringify(JSON.parse(localStorage.exams||'[]').concat(target.name));
-                choices.forEach(c=>c.disabled=true);
+                localStorage.exams = JSON.stringify(JSON.parse(localStorage.exams || '[]').concat(target.name));
+                (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             }
         }
     },
