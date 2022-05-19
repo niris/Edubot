@@ -27,14 +27,18 @@ const BotFace = {
         setInterval(() => this.frame++, 750);
     }
 }
+
+const DENSE_MODEL_URL = './static/models/intent/model.json';
+const METADATA_URL = './static/models/intent/intent_metadata.json';
+
 const BotChat = {
-    data: () => ({ moods: Object.keys(faces), mood: 1, logs:[]}),
+    data: () => ({ moods: Object.keys(faces), mood: 1, logs:[],tf,use}),
     methods: {
         make(mood, time=1500){
             this.$refs.face.$props.mood = mood;
             setTimeout(() => this.$refs.face.$props.mood = "quiet", time);
         },
-        send({ target }) {
+        async send({ target }) {
             const msg = target.req.value;
             target.req.value = '';
             this.logs.push({msg});
@@ -42,8 +46,72 @@ const BotChat = {
                 const score = JSON.parse(localStorage.exams||'[]').length;
                 return this.logs.push({bot:true, msg: `Your score: **${score}** ~~ruby~~`});
             }
-            setTimeout(() => this.logs.push({bot:true, msg: `I know **nothing** about \`${msg}\` ~~apple~~`}), 500);
+            const classification =  await this.classify([msg]);
+            const response = await this.getClassificationMessage(classification);
+            setTimeout(() => this.logs.push({bot:true, msg: `${response}`}), 500)
             this.make(this.moods[this.mood++ % this.moods.length]);
+        },
+        async  loadUSE() {
+            const loader = await use.load();
+            return loader;
+        },
+        async loadIntentClassifer(url) {
+            const intent = await tf.loadLayersModel(url);
+            console.log("intent ", intent)
+            return intent;
+          },
+
+        async loadMetadata() {
+            const resp = await fetch(METADATA_URL);
+            const metadata = resp.json();
+            
+            return metadata;
+        },
+        async classify(sentences) {
+            const [useloader, intent, metadata] = await Promise.all(
+                [this.loadUSE(), this.loadIntentClassifer(DENSE_MODEL_URL), this.loadMetadata()]);
+          
+            const {labels} = metadata;
+            const activations = await useloader.embed(sentences);
+          
+            const prediction = intent.predict(activations);
+          
+            const predsArr = await prediction.array();
+            const preview = [predsArr[0].slice()];
+            preview.unshift(labels);
+            console.table(preview);
+          
+            tf.dispose([activations, prediction]);
+          
+            return predsArr[0];
+        },
+        async  getClassificationMessage(softmaxArr) {
+            const THRESHOLD = 0.5;
+            const {labels} = await this.loadMetadata();
+            const max = Math.max(...softmaxArr);
+            const maxIndex = softmaxArr.indexOf(max);
+            const intentLabel = labels[maxIndex];
+            console.log(intentLabel)
+            if (max < THRESHOLD) {
+              return '¯\\_(ツ)_/¯';
+            } else {
+              let response;
+              switch (intentLabel) {
+                case 'neu':
+                  response = ':)';
+                  break;
+                case 'pos':
+                  response = 'I am glad you are happy :D';
+                  break;
+                case 'neg':
+                  response = 'I am so sorry to hear that :(';
+                  break;
+                default:
+                  response = '?';
+                  break;
+              }
+              return response;
+            }
         },
         md: (txt) => markdownit('default').render(txt),
     },
