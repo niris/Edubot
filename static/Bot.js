@@ -28,90 +28,89 @@ const BotFace = {
     }
 }
 
-const DENSE_MODEL_URL = './static/models/intent/model.json';
-const METADATA_URL = './static/models/intent/intent_metadata.json';
-
+const DENSE_MODEL_URL = '/static/models/intent/model.json';
+const METADATA_URL = '/static/models/intent/intent_metadata.json';
+let cache; // out of Vue wrapping
 const BotChat = {
-    data: () => ({ moods: Object.keys(faces), mood: 1, logs:[],tf,use}),
+    data: () => ({ moods: Object.keys(faces), mood: 1, logs: [], tf, use }),
     methods: {
-        make(mood, time=1500){
+        make(mood, time = 1500) {
             this.$refs.face.$props.mood = mood;
             setTimeout(() => this.$refs.face.$props.mood = "quiet", time);
         },
         async send({ target }) {
             const msg = target.req.value;
-            target.req.value = '';
-            this.logs.push({msg});
-            if(msg.match(/(score|level|lv|exp)/i)){
-                const score = JSON.parse(localStorage.exams||'[]').length;
-                return this.logs.push({bot:true, msg: `Your score: **${score}** ~~ruby~~`});
+            if (!cache) {
+                const p = await Promise.all([
+                    use.load(),
+                    tf.loadLayersModel(DENSE_MODEL_URL),
+                    fetch(METADATA_URL),
+                    fetch('/static/dict.txt'),
+                ]);
+                cache = {
+                    useLoader: p[0],
+                    model: p[1],
+                    metadata: await p[2].json(),
+                    dict: (await p[3].text()).split(/\n/)
+                };
             }
-            const classification =  await this.classify([msg]);
+
+            const tokens = await this.wordcut(msg);
+            let tokenized_text = tokens.join(" ")
+
+            target.req.value = '';
+            this.logs.push({ msg });
+            if (msg.match(/(score|level|lv|exp)/i)) {
+                const score = JSON.parse(localStorage.exams || '[]').length;
+                return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
+            }
+            const classification = await this.classify([tokenized_text]);
             const response = await this.getClassificationMessage(classification);
-            setTimeout(() => this.logs.push({bot:true, msg: `${response}`}), 500)
+            setTimeout(() => this.logs.push({ bot: true, msg: `${response}` }), 500)
             this.make(this.moods[this.mood++ % this.moods.length]);
         },
-        async  loadUSE() {
-            const loader = await use.load();
-            return loader;
-        },
-        async loadIntentClassifer(url) {
-            const intent = await tf.loadLayersModel(url);
-            console.log("intent ", intent)
-            return intent;
-          },
-
-        async loadMetadata() {
-            const resp = await fetch(METADATA_URL);
-            const metadata = resp.json();
-            
-            return metadata;
-        },
         async classify(sentences) {
-            const [useloader, intent, metadata] = await Promise.all(
-                [this.loadUSE(), this.loadIntentClassifer(DENSE_MODEL_URL), this.loadMetadata()]);
-          
-            const {labels} = metadata;
-            const activations = await useloader.embed(sentences);
-          
-            const prediction = intent.predict(activations);
-          
+            const activations = await cache.useLoader.embed(sentences);
+            const prediction = cache.model.predict(activations);
             const predsArr = await prediction.array();
-            const preview = [predsArr[0].slice()];
-            preview.unshift(labels);
-            console.table(preview);
-          
+            //const preview = [predsArr[0].slice()];
+            //preview.unshift(cache.metadata.labels);
+            //console.table(preview);
             tf.dispose([activations, prediction]);
-          
             return predsArr[0];
         },
-        async  getClassificationMessage(softmaxArr) {
-            const THRESHOLD = 0.5;
-            const {labels} = await this.loadMetadata();
+        async getClassificationMessage(softmaxArr) {
+            const THRESHOLD = 0.0;
             const max = Math.max(...softmaxArr);
             const maxIndex = softmaxArr.indexOf(max);
-            const intentLabel = labels[maxIndex];
-            console.log(intentLabel)
+            const intentLabel = cache.metadata.labels[maxIndex];
+
             if (max < THRESHOLD) {
-              return '¯\\_(ツ)_/¯';
+                return '¯\\_(ツ)_/¯';
             } else {
-              let response;
-              switch (intentLabel) {
-                case 'neu':
-                  response = ':)';
-                  break;
-                case 'pos':
-                  response = 'I am glad you are happy :D';
-                  break;
-                case 'neg':
-                  response = 'I am so sorry to hear that :(';
-                  break;
-                default:
-                  response = '?';
-                  break;
-              }
-              return response;
+                return intentLabel
             }
+        },
+        async wordcut(w) {
+            const arr = []
+            for (let i = 0; i < w.length;) {
+                let sub = []
+                cache.dict.forEach(v2 => {
+                    if (w[i] + w[i + 1] === v2[0] + v2[1]) sub.push([v2, v2.length])
+                })
+                sub.sort((a, b) => b[1] - a[1])
+                for (let ii = 0; ii < sub.length; ii++) {
+                    const l = sub[ii][1] + i
+                    const s = w.substring(i, l)
+                    if (sub[ii][0] === s) {
+                        i = l - 1
+                        arr.push(s)
+                        ii = sub.length
+                    }
+                }
+                i++
+            }
+            return arr
         },
         md: (txt) => markdownit('default').render(txt),
     },

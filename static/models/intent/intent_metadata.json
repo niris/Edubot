@@ -1,16 +1,20 @@
 {
   "labels": [
-    "neu",
-    "neg",
-    "pos",
-    "q"
+    "engtothai",
+    "listening",
+    "thaitoeng",
+    "complaint",
+    "compliment",
+    "oral",
+    "writing",
+    "vocab"
   ],
   "xsShape": [
-    24063,
+    163,
     512
   ],
   "ysShape": [
-    24063,
-    4
+    163,
+    8
   ]
 }
