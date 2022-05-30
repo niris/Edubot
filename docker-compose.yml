@@ -49,16 +49,6 @@ services:
     depends_on:
       - api
   vosk:
-    image: alphacep/kaldi-en
+    image: sirinyao/kaldi-en-webrtc:v0
     ports:
       - "2700:2700"
-    environment:
-      - BIG_VOSK_MODEL_PATH=/opt/vosk-model-en/model
-      - VOSK_MODEL_PATH=/opt/vosk-model-small-en-us-0.15
-    command: bash -c "
-        wget -q https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip -O tmp.zip &&
-        unzip -o tmp.zip -d /opt && rm -f tmp.zip &&
-        pip install aiohttp aiortc &&
-        python3 /opt/vosk-server/webrtc/asr_server_webrtc.py"
-    volumes:
-      - ./vosk-rtc.py:/opt/vosk-server/webrtc/asr_server_webrtc.py:ro
