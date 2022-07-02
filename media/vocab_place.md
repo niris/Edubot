@@ -1,7 +1,7 @@
 ---
-title: การสะกดคำ
+title: vocabulary about place
 description: 
-tags: {easy,demo,example}
+tags: {simple,vocab}
 ---
 
 <details>
@@ -12,4 +12,3 @@ tags: {easy,demo,example}
 <summary>แบบฝึกหัด</summary>
 
 <details>
-

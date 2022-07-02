@@ -56,7 +56,8 @@ Say **good morning** in this field:
 
 ?[voice](good morning)
 
-Say **thank you** in this field:
+Say **hello everybody** in this field:
 
-?[voice](thank you)
+?[voiceth](hello everybody)
+
 

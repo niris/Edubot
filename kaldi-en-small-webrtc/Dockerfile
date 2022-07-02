@@ -2,6 +2,7 @@ FROM alphacep/kaldi-vosk-server:latest
 
 ENV MODEL_VERSION 0.15
 ENV VOSK_MODEL_PATH /opt/vosk-model-small-en/model
+ENV VOSK_SERVER_PORT 2701
 RUN mkdir /opt/vosk-model-small-en \
    && cd /opt/vosk-model-small-en \
    && wget -q https://alphacephei.com/vosk/models/vosk-model-small-en-us-${MODEL_VERSION}.zip \
@@ -11,6 +12,6 @@ RUN mkdir /opt/vosk-model-small-en \
    && pip install aiohttp aiortc \
    && sed -i 's/frame.planes/frame[0].planes/' /opt/vosk-server/webrtc/asr_server_webrtc.py
 
-EXPOSE 2700
+EXPOSE 2701
 WORKDIR /opt/vosk-server/webrtc
 CMD [ "./asr_server_webrtc.py"]

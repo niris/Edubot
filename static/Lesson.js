@@ -69,7 +69,7 @@ const LessonShow = {
     data() { return { lesson: {} } },
     computed: {
         markdownToHtml() {
-            const mi = markdownit('default');
+            const mi = markdownit({html : true});
             mi.core.ruler.push("media", mediaRule());
             mi.core.ruler.push("checkbox", checkboxRule());
             mi.core.ruler.push("input", inputRule(JSON.parse(localStorage.exams || '[]')));
@@ -80,7 +80,12 @@ const LessonShow = {
     },
     methods: {
         async listen({ target }) {
-            if (!target.classList.contains("voice")) return;
+            if (!(target.classList.contains("voice") || (target.classList.contains("voiceth")))) return;
+            var endpoint = '/offeren';
+            console.log("classlist " , target.classList)
+            if(target.classList.contains("voiceth"))
+                endpoint ='/offerth'
+            
             target.value = '';
             target.placeholder = 'Connecting...';
             const pc = new RTCPeerConnection({ sdpSemantics: 'unified-plan' });
@@ -109,7 +114,7 @@ const LessonShow = {
             stream.getTracks().forEach((t) => pc.addTrack(t, stream));
             await pc.setLocalDescription(await pc.createOffer());
             while (pc.iceGatheringState !== 'complete') await new Promise(r => setTimeout(r, 500));
-            const offer = await fetch('/offer', {
+            const offer = await fetch(endpoint, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ sdp: pc.localDescription.sdp, type: pc.localDescription.type }),

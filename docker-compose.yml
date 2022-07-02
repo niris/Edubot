@@ -37,18 +37,24 @@ services:
     environment:
       - POSTGREST_HOST=api
       - POSTGREST_PORT=3000
-      - VOSK_HOST=vosk
-      - VOSK_PORT=2700
+      - VOSK_EN_HOST=vosken
+      - VOSK_EN_PORT=2701
+      - VOSK_TH_HOST=voskth
+      - VOSK_TH_PORT=2700
     volumes:
       - ./nginx.conf:/nginx.tpl:ro
       - ./static:/etc/nginx/html/static:ro
       - ./media:/etc/nginx/html/media:ro
     command: bash -c "
-        envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT,$$VOSK_HOST,$$VOSK_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
+        envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT,$$VOSK_EN_HOST,$$VOSK_EN_PORT,$$VOSK_TH_HOST,$$VOSK_TH_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
         nginx -g 'daemon off; error_log /dev/stderr info;'"
     depends_on:
       - api
-  vosk:
-    image: sirinyao/kaldi-en-webrtc:v0
+  vosken:
+    image: sirinyao/kaldi-en-webrtc:v1
+    ports:
+      - "2701:2701"
+  voskth:
+    image: sirinyao/kaldi-th-webrtc:v1
     ports:
       - "2700:2700"
