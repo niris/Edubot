@@ -1,6 +1,7 @@
 @font-face {
     src: url(https://unpkg.com/picon@22.3.9/solid.woff2);
     font-family: picon;
+    font-display: swap; /* avoid FOIT */
 }
 :root{
     --grid-maxWidth: 80rem;

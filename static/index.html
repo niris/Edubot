@@ -13,24 +13,9 @@
 <link rel=stylesheet href="https://unpkg.com/chota@0.8.0/dist/chota.min.css" media="print" onload="media='all'">
 <link rel=stylesheet href="/static/style.css" media="print" onload="media='all'">
 <link rel="manifest" href="/static/manifest.json">
-
-<main class="container">
-	<nav class="tabs is-full">
-		<router-link to="/lesson/"  v-if="is('admin','user')"><s>student</s> Lesson List</router-link>
-		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
-		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
-		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>
-	</nav>
-	<router-view></router-view>
-	<bot-chat ref="bot"></bot-chat>
-</main>
-
-<script defer src="https://unpkg.com/vue@3.2.33/dist/vue.global.prod.js"></script>
-<script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
-<script defer src="https://unpkg.com/markdown-it@13.0.0/dist/markdown-it.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder"></script>
-
+<script defer src="/static/vue.global.prod.js"></script>
+<script defer src="/static/vue-router.global.prod.js"></script>
+<script defer src="/static/markdown-it.min.js"></script>
 <script type=module>
 import { Homepage } from '/static/Homepage.js'
 import { SignUp, SignIn, SignMe } from '/static/Sign.js'
@@ -65,3 +50,13 @@ console.debug(app);
 //	navigator.serviceWorker.register('/worker.js').then(console.debug);
 //}
 </script>
+<main class="container">
+	<nav class="tabs is-full">
+		<router-link to="/lesson/"  v-if="is('admin','user')"><s>student</s> Lesson List</router-link>
+		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
+		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
+		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>
+	</nav>	
+	<router-view></router-view>
+	<bot-chat ref="bot"></bot-chat>
+</main>	

@@ -81,11 +81,7 @@ const LessonShow = {
     methods: {
         async listen({ target }) {
             if (!(target.classList.contains("voice") || (target.classList.contains("voiceth")))) return;
-            var endpoint = '/offeren';
-            console.log("classlist " , target.classList)
-            if(target.classList.contains("voiceth"))
-                endpoint ='/offerth'
-            
+            const endpoint = target.classList.contains("voiceth") ? '/offeren' : '/offerth';
             target.value = '';
             target.placeholder = 'Connecting...';
             const pc = new RTCPeerConnection({ sdpSemantics: 'unified-plan' });
@@ -102,7 +98,8 @@ const LessonShow = {
                     target.value = `${base} (${voskResult.partial})`.trim();
                 }
             };
-            target.onblur = function stop() {
+            target.onblur = function () {
+                if(!target.classList.contains('live'))return; // already stopped
                 dc?.close();
                 pc.getTransceivers?.().forEach((t) => t.stop?.());
                 pc.getSenders().forEach((s) => s.track.stop());
@@ -120,7 +117,8 @@ const LessonShow = {
                 body: JSON.stringify({ sdp: pc.localDescription.sdp, type: pc.localDescription.type }),
             }).then((res) => res.json());
             await pc.setRemoteDescription(offer);
-            return {};
+            // stop listening after 5 seconds to avoid flooding
+            setTimeout(target.onblur, 5000);
         },
         validate({ target }) {
             this.$root.$refs.bot.make('happy');

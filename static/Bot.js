@@ -22,7 +22,7 @@ const BotFace = {
     methods: {
         toSvg: (path) => `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="white"><path d="${path}"></path></svg>`
     },
-    template: `<img :src=toSvg(faces[mood][frame%faces[mood].length])>`,
+    template: `<img width=64 height=64 :alt=mood :src=toSvg(faces[mood][frame%faces[mood].length])>`,
     mounted() {
         setInterval(() => this.frame++, 750);
     }
@@ -31,8 +31,11 @@ const BotFace = {
 const DENSE_MODEL_URL = '/static/models/intent/model.json';
 const METADATA_URL = '/static/models/intent/intent_metadata.json';
 let cache; // out of Vue wrapping
+const loadScript = (src) => new Promise(function (onload, onerror) {
+    document.head.appendChild(Object.assign(document.createElement('script'), {src, onload, onerror}));
+});
 const BotChat = {
-    data: () => ({ moods: Object.keys(faces), mood: 1, logs: [], tf, use }),
+    data: () => ({ moods: Object.keys(faces), mood: 1, logs: []}),
     methods: {
         make(mood, time = 1500) {
             this.$refs.face.$props.mood = mood;
@@ -40,6 +43,8 @@ const BotChat = {
         },
         async send({ target }) {
             const msg = target.req.value;
+            if(!window.tf)await loadScript('/static/tfjs.js');
+            if(!window.use)await loadScript('/static/universal-sentence-encoder.js');
             if (!cache) {
                 const p = await Promise.all([
                     use.load(),
