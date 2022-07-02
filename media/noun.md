@@ -1,7 +1,7 @@
 ---
-title: 
+title: Noun
 description: 
-tags: {,}
+tags: {default,lesson}
 ---
 
 <details>

@@ -1,7 +1,7 @@
 ---
-title: 
+title: vocabulary fruits
 description: 
-tags: {,}
+tags: {default,lesson}
 ---
 
 <details>

@@ -1,7 +1,7 @@
 ---
-title: 
+title: Adverb
 description: 
-tags: {,}
+tags: {default,lesson}
 ---
 
 <details>

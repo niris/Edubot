@@ -6,6 +6,7 @@ curl -b .session 0.0.0.0/api/lesson -d title="curl created" -d content="this les
 curl -s 0.0.0.0/api/lesson | jq '. | length' # 1
 # populate database from lessons files
 for f in media/*.md ; do
+    printf "\ndeploy $f ...\n"
     TITLE=$(sed -n 's/title: //p' $f)
     TAGS=$(sed -n 's/tags: //p' $f)
     DATE=$(sed -n 's/created: //p' $f)

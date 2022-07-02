@@ -1,7 +1,7 @@
 ---
 title: 
 description: 
-tags: {,}
+tags: {default,lesson}
 ---
 
 <details>
