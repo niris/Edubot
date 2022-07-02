@@ -1,3 +1,7 @@
+#!/bin/python3
+"""
+Generate multiple lesson from a csv
+"""
 import os
 import csv
 

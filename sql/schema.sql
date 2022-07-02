@@ -26,7 +26,8 @@ CREATE POLICY "lesson_policy" ON public.lesson
 insert into auth.users ("id","pass","role") values ('admin','admin','admin') ON CONFLICT DO NOTHING;
 insert into auth.users ("id","pass","role") values ('user' ,'user' ,'user' ) ON CONFLICT DO NOTHING;
 insert into auth.users ("id","pass","role") values ('root' ,'root' ,'root' ) ON CONFLICT DO NOTHING;
-insert into public.lesson ("title","draft","owner") values ('public',FALSE,'admin') ON CONFLICT DO NOTHING;
-insert into public.lesson ("title","draft","owner") values ('draft',TRUE,'admin') ON CONFLICT DO NOTHING;
+--do not deploy dataset as we want to see the empty lesson page by default
+--insert into public.lesson ("title","draft","owner") values ('public',FALSE,'admin') ON CONFLICT DO NOTHING;
+--insert into public.lesson ("title","draft","owner") values ('draft',TRUE,'admin') ON CONFLICT DO NOTHING;
 
 NOTIFY pgrst, 'reload schema';

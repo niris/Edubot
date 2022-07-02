@@ -2,20 +2,19 @@
 
 Mobile-first Chatbot-powered vocabulary learning Website
 
+## Features
+
+- Chatbot with both Thai Voice and Thai Textual input
+- English lesson with exam and rewards
+- Unlockable lessons using given rewards
+
 ## Setup
 
+Start the project with
 ```sh
-# start the server on http://localhost
 docker-compose up -d
-# deploy schema if missing lesson table
-if curl -s --fail localhost/api/lesson ; then
-  docker exec -i postgres psql -f sql/schema.sql
-fi
-# deploy a example dataset if empty lesson table
-if [ $(curl -s localhost/api/lesson) == '[]' ] ; then
-  ./dataset.sh
-fi
 ```
+Then follow http://localhost for instructions
 
 ## Data Model
 

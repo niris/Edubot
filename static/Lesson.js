@@ -148,7 +148,11 @@ const LessonShow = {
 //URL.createObjectURL(new Blob(Uint8Array.from(s.content.slice(2).match(/../g),a=>parseInt(a,16)), { type: "image/jpeg" } ))
 const LessonList = {
     template: `<h1>Lessons List</h1>
-    <small v-if="!lessons.length">No lessons. Import some examples using the <kbd>./dataset.sh</kbd> script</small>
+    <p v-if="!lessons.length">
+        No lessons. You can Import them with
+        <pre>make deploy</pre>
+        then <a href=>refresh</a> this page.
+    </p>
     <ul v-for="l in lessons">
         <li>
             <router-link :to="''+l.id">{{l.title}}</router-link> by {{l.owner}}

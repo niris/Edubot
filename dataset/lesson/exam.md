@@ -38,7 +38,7 @@ What is the flower doing:
 
 Listen to the following song:
 
-<![Modjo - Lady](https://cdns-preview-3.dzcdn.net/stream/c-3ae408da9e670b3c0bfa4eb026b2d5e4-3.mp3)
+![Modjo - Lady](https://cdns-preview-3.dzcdn.net/stream/c-3ae408da9e670b3c0bfa4eb026b2d5e4-3.mp3)
 
 What does the singer **feels** for the first time:
 - [x] Loved
