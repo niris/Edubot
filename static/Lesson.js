@@ -81,7 +81,7 @@ const LessonShow = {
     methods: {
         async listen({ target }) {
             if (!(target.classList.contains("voice") || (target.classList.contains("voiceth")))) return;
-            const endpoint = target.classList.contains("voiceth") ? '/offeren' : '/offerth';
+            const endpoint = target.classList.contains("voiceth") ? '/offerth' : '/offeren';
             target.value = '';
             target.placeholder = 'Connecting...';
             const pc = new RTCPeerConnection({ sdpSemantics: 'unified-plan' });
