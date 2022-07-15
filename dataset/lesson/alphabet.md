@@ -1,7 +1,7 @@
 ---
 title: ตัวอักษรภาษาอังกฤษ
 description: ตัวอักษรภาษาอังกฤษ
-tags: {easy,pronunciation, writing}
+tags: {easy,pronunciation, writing,lesson}
 ---
 
 ## ตัวอักษรภาษาอังกฤษมี 24 ตัว

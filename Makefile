@@ -5,7 +5,7 @@ logout:.session; rm $<
 test:  .session; curl -b $< $(HOST)/api/lesson -d title="curl created" -d content="this lesson was created via curl"
 purge: .session; curl -b $< -XDELETE $(HOST)/api/lesson
 deploy:.session;
-	for f in dataset/lesson/*.md ; do\
+	for f in dataset/lesson/*.md dataset/vocab/*.md ; do\
 	    TITLE=$$(sed -n 's/title: //p' $$f);\
 	    TAGS=$$(sed -n 's/tags: //p' $$f);\
 	    DATE=$$(sed -n 's/created: //p' $$f);\

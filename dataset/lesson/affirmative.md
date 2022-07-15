@@ -1,7 +1,7 @@
 ---
 title: ประโยคบอกเล่า
 description: 
-tags: {easy,grammar}
+tags: {easy,grammar,lesson}
 ---
 
-## การทักทาย
+## ประโยคบอกเล่า

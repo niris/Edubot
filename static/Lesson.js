@@ -147,21 +147,24 @@ const LessonShow = {
 }
 //URL.createObjectURL(new Blob(Uint8Array.from(s.content.slice(2).match(/../g),a=>parseInt(a,16)), { type: "image/jpeg" } ))
 const LessonList = {
-    template: `<h1>Lessons List</h1>
+    props: ['tag'],
+    template: `
     <p v-if="!lessons.length">
         No lessons. You can Import them with
         <pre>make deploy</pre>
         then <a href=>refresh</a> this page.
     </p>
     <ul v-for="l in lessons">
-        <li>
-            <router-link :to="''+l.id">{{l.title}}</router-link> by {{l.owner}}
+        <li v-if="l.tags.includes(this.$props.tag)">
+            <router-link :to="/lesson/+l.id">{{l.title}}</router-link>
             <small class=tag v-if=l.draft>draft</small>
         </li>
-    </ul>`,
-    data() { return { lessons: [] } },
+    </ul>
+    `
+    ,
+    data() { return { lessons: []} },
     async mounted() {
-        this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft`)).json();
+        this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags`)).json();
     }
 }
 

@@ -27,7 +27,8 @@ import { LessonList, LessonShow } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
 const routes = [
 	{ path:'/',           component: Homepage },
-	{ path:'/lesson/',    component: LessonList },
+	{ path:'/lesson',    component: LessonList,props:{tag:"lesson"} },
+	{ path:'/vocab',    component: LessonList,props:{tag:"vocab"} },
 	{ path:'/lesson/:id', component: LessonShow, props: true },
 	{ path:'/register',   component: SignUp },
 	{ path:'/login',      component: SignIn },
@@ -56,7 +57,8 @@ console.debug(app);
 </script>
 <main class="container">
 	<nav class="tabs is-full">
-		<router-link to="/lesson/"  v-if="is('admin','user')"><s>student</s> Lesson List</router-link>
+		<router-link to="/lesson/"  v-if="is('admin','user')"><s>student</s> บทเรียน</router-link>
+		<router-link to="/vocab/"  v-if="is('admin','user')"><s>student</s> คำศัพท์</router-link>
 		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
 		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
 		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>

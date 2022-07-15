@@ -1,7 +1,7 @@
 ---
 title: การทักทาย
 description: 
-tags: {basic,conversation}
+tags: {basic,conversation,lesson}
 ---
 
 <details>

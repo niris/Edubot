@@ -1,7 +1,7 @@
 ---
 title: การแนะนำตัว
 description: 
-tags: {easy,conversation}
+tags: {easy,conversation,lesson}
 ---
 
 ## การแนะนำตัว

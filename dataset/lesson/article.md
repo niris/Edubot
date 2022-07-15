@@ -1,7 +1,7 @@
 ---
 title: คำนำหน้านาม (a/an/the)
 description: 
-tags: {easy,demo,example}
+tags: {easy,lesson}
 ---
 
 ## คำนำหน้านาม (Article)

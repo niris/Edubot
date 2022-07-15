@@ -1,5 +1,5 @@
 ---
-title: verb to have
+title: Verb to have
 description: 
 tags: {default,lesson}
 ---

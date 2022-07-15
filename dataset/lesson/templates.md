@@ -1,7 +1,7 @@
 ---
 title: template
 description: 
-tags: {default,lesson}
+tags: {default}
 ---
 
 <details>

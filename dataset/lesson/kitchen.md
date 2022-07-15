@@ -1,5 +1,5 @@
 ---
-title: kitchen
+title: ห้องครัว
 description: 
 tags: {easy,vocab}
 ---

@@ -1,7 +1,7 @@
 ---
 title: Basic lesson example
 description: This is a basic lesson demo
-tags: {easy,demo,example}
+tags: {easy,demo,example,lesson}
 ---
 
 # Basic lesson example

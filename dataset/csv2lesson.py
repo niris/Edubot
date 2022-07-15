@@ -4,32 +4,61 @@ Generate multiple lesson from a csv
 """
 import os
 import csv
+import random
 
-for filename in os.listdir("vocab"):
+for filename in os.listdir("csv"):
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
-title: '''+ os.path.splitext(filename)[0] +'''
-description: 
-tags: {easy,vocab}
+    title: '''+ os.path.splitext(filename)[0] +
+    '''
+    description: 
+    tags: {easy,vocab}
 ---
-''')
-    newfile.write('<section class="carousel" aria-label="Gallery">\n<ol class="carousel__viewport">')
-    with open(os.path.join("vocab", filename), 'r') as f: 
+
+'''
+    )
+    newfile.write('<div class="carrousel">\n\n')
+    with open(os.path.join("csv", filename), 'r') as f: 
+        print("filename " + filename)
         csvreader = csv.reader(f)
+        vocab = []
+        meaning = []
+        img = []
+        audio = []
         for row in csvreader:
-            newfile.write('''<li id="carousel__slide1" tabindex="0" class="carousel__slide">
-        <div class="carousel__snapper">
-        <img src="''' + row[2] + '''">  
-        Bowl
-        <audio controls>
-        <source src="''' + row[3] + '''" type="audio/mpeg">
-        </audio>
-        <a href="#carousel__slide4"
-           class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
-      </div>
-    </li>''')
-    newfile.write('</ol></section>')
+            vocab.append(row[0])
+            meaning.append(row[1])
+            img.append('![](' +row[2] +')')
+            audio.append('![](' +row[3] +')')
+        newfile.write('|' + '|'.join(img) + '|\n|')
+        for i in range(len(img)):
+            newfile.write("-------------------------------|")
+        newfile.write('\n|' + '|'.join(audio) + '|\n\n')
+    newfile.write('</div>\n\n')
+    newfile.write('\n\n# แบบฝึกหัด\n\n')
+    
+    def questionGenerator(questions,choices,number):
+        questions_tmp = questions.copy()
+        for r in range(number):
+            choices_tmp = choices.copy()
+            answer_index = random.choice(range(len(questions_tmp)))
+            choices_list = [(choices[answer_index],True)]
+            choices_tmp.pop(answer_index)
+            for r in range(3):
+                choice_index = random.choice(range(len(choices_tmp)))
+                choices_list.append((choices_tmp[choice_index],False))
+                choices_tmp.pop(choice_index)
+
+            choices_list.sort()
+            newfile.write('\n เลือกคำศัพท์/ความหมายที่ตรงกับ **' + questions_tmp[answer_index] + '**\n')
+            for c in choices_list:
+                if c[1]==True:
+                    newfile.write(' - [x] ' + c[0] + '\n')
+                else:
+                    newfile.write(' - [ ] ' + c[0] + '\n')
+            questions_tmp.pop(answer_index)
+    
+    questionGenerator(vocab,meaning,2)
+    questionGenerator(meaning,vocab,2)
     newfile.close()
     f.close()
