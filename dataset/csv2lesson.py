@@ -6,6 +6,8 @@ import os
 import csv
 import random
 
+if not os.path.exists("vocab"):
+    os.makedirs("vocab")
 for filename in os.listdir("csv"):
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
