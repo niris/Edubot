@@ -9,9 +9,10 @@ import random
 if not os.path.exists("vocab"):
     os.makedirs("vocab")
 for filename in os.listdir("csv"):
+    category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
-    title: '''+ os.path.splitext(filename)[0] +
+    title: '''+ category +
     '''
     description: 
     tags: {easy,vocab}
@@ -30,8 +31,8 @@ for filename in os.listdir("csv"):
         for row in csvreader:
             vocab.append(row[0])
             meaning.append(row[1])
-            img.append('![](' +row[2] +')')
-            audio.append('![](' +row[3] +')')
+            img.append('![]('+os.path.join("/media/img",category,row[0]+'.svg')+')')
+            audio.append('![]('+os.path.join("/media/audio",row[0]+'.mp3')+')')
         newfile.write('|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
             newfile.write("-------------------------------|")
