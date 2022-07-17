@@ -154,12 +154,12 @@ const LessonList = {
         <pre>make deploy</pre>
         then <a href=>refresh</a> this page.
     </p>
-    <div class="lesson-container">
+    <div style="display: grid;padding:3em 1em;grid-template-columns: 1fr 1fr 1fr;grid-gap: 2em;">
         <template v-for="(l,index) in lessons" >
-            <div v-if="l.tags.includes(this.$props.tag)" class="card">
-                <img :src="'/media/icons/'+ getIcon() +'.png'" style="width:50%">
-                <div class="thumb-title"><router-link :to="/lesson/+l.id">{{l.title}}</router-link></div>
-            </div>
+            <router-link :to="/lesson/+l.id" v-if="l.tags.includes(this.$props.tag)" class="card" style="border-radius: 1em">
+                <img :src="'/media/icons/'+ getIcon() +'.png'" style="padding: 15%;">
+                <span class="is-center">{{l.title}}</span>
+            </router-link>
         </template>
     </div>
     `
