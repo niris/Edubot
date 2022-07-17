@@ -154,18 +154,28 @@ const LessonList = {
         <pre>make deploy</pre>
         then <a href=>refresh</a> this page.
     </p>
-    <ul v-for="l in lessons">
-        <li v-if="l.tags.includes(this.$props.tag)">
-            <router-link :to="/lesson/+l.id">{{l.title}}</router-link>
-            <small class=tag v-if=l.draft>draft</small>
-        </li>
-    </ul>
+    <div class="lesson-container">
+        <template v-for="(l,index) in lessons" >
+            <div v-if="l.tags.includes(this.$props.tag)" class="card">
+                <img :src="'/media/icons/'+ getIcon() +'.png'" style="width:50%">
+                <div class="thumb-title"><router-link :to="/lesson/+l.id">{{l.title}}</router-link></div>
+            </div>
+        </template>
+    </div>
     `
     ,
-    data() { return { lessons: []} },
+    data() { return { lessons: [], icons:[]} },
     async mounted() {
         this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags`)).json();
+        this.icons = ["kitchen","ecology","studying"] 
+    },
+    methods:{
+        getIcon(){
+            return this.icons[Math.floor(Math.random()*this.icons.length)];
+        }
     }
+
+
 }
 
 export { LessonList, LessonShow }
