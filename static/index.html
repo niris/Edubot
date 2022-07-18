@@ -23,6 +23,7 @@
 <script type=module>
 import { Homepage } from '/static/Homepage.js'
 import { SignUp, SignIn, SignMe } from '/static/Sign.js'
+import { UserList } from '/static/User.js'
 import { LessonList, LessonShow } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
 const routes = [
@@ -33,6 +34,7 @@ const routes = [
 	{ path:'/register',   component: SignUp },
 	{ path:'/login',      component: SignIn },
 	{ path:'/me',         component: SignMe },
+	{ path:'/user/',      component: UserList },
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({
@@ -58,7 +60,8 @@ console.debug(app);
 <main class="container">
 	<nav class="tabs is-full">
 		<router-link to="/lesson/"  v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
-		<router-link to="/vocab/"  v-if="is('admin','user')"><s>bookmark</s> คำศัพท์</router-link>
+		<router-link to="/vocab/"   v-if="is('admin','user')"><s>bookmark</s> คำศัพท์</router-link>
+		<router-link to="/user/"    v-if="is('admin')"><s>group</s> Users</router-link>
 		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
 		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
 		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>

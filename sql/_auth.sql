@@ -14,7 +14,6 @@ create table if not exists auth.users (
   "id"   text primary key,
   "pass" text not null check (length("pass") < 512), -- an encrypt_pass trigger will handle this field
   "role" name not null check (length("role") < 512) default 'user', -- role can't be FK enforced, we'll use a trigger
-  "progress" JSONB[]
 );
 
 -- auth.users.role enforcement

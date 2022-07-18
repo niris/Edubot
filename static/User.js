@@ -11,16 +11,15 @@ const UserForm = {
 }
 
 const UserList = {
-    template:`<div class=row>
-        <p class="card col-3" v-for="user in users">
-            <a is=router-link :to="{name:'UserForm', params:{id:user.id}}">{{user.id}}</a>
-        </p>
-    </div>`,
+    template:`<ul>
+    <li v-for="user in users">
+        {{user.name}} (~{{user.id}}) {{user.birth}}
+    </li>
+    </ul>`,
     data(){return {users:[]}},
     async mounted(){
-        this.users = await this.rest('/actor')
+        this.users = await (await fetch('/api/user')).json()
     }
 }
-
 
 export {UserForm, UserList}
