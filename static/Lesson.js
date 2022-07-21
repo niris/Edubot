@@ -157,23 +157,17 @@ const LessonList = {
     <div style="display: grid;padding:3em 1em;grid-template-columns: 1fr 1fr 1fr;grid-gap: 2em;">
         <template v-for="(l,index) in lessons" >
             <router-link :to="/lesson/+l.id" v-if="l.tags.includes(this.$props.tag)" class="card" style="border-radius: 1em">
-                <img :src="'/media/icons/'+ getIcon() +'.png'" style="padding: 15%;">
+                <img :src="l.icon||'/media/icons/kitchen.png'" style="padding: 15%;">
                 <span class="is-center">{{l.title}}</span>
             </router-link>
         </template>
     </div>
     `
     ,
-    data() { return { lessons: [], icons:[]} },
+    data() { return { lessons: []} },
     async mounted() {
-        this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags`)).json();
-        this.icons = ["kitchen","ecology","studying"] 
+        this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon`)).json();
     },
-    methods:{
-        getIcon(){
-            return this.icons[Math.floor(Math.random()*this.icons.length)];
-        }
-    }
 
 
 }
