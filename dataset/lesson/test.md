@@ -1,6 +1,7 @@
 ---
 title: Basic lesson example
 description: This is a basic lesson demo
+icon: /media/icons/ecology.png
 tags: {easy,demo,example,lesson}
 ---
 

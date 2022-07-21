@@ -1,6 +1,7 @@
 ---
 title: ตัวอักษรภาษาอังกฤษ
 description: ตัวอักษรภาษาอังกฤษ
+icon: /media/icons/ecology.png
 tags: {easy,pronunciation, writing,lesson}
 ---
 

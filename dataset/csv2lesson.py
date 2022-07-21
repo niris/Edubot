@@ -15,7 +15,8 @@ for filename in os.listdir("csv"):
     title: '''+ category +
     '''
     description: 
-    tags: {easy,vocab}
+    icon: /media/icons/ecology.png
+tags: {easy,vocab}
 ---
 
 '''

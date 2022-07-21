@@ -1,6 +1,7 @@
 ---
 title: verb todo
 description: 
+icon: /media/icons/ecology.png
 tags: {default,lesson}
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: ห้องครัว
 description: 
+icon: /media/icons/ecology.png
 tags: {easy,vocab}
 ---
 

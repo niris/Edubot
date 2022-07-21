@@ -1,6 +1,7 @@
 ---
 title: การสะกดคำ
 description: 
+icon: /media/icons/ecology.png
 tags: {easy,demo,example,lesson}
 ---
 

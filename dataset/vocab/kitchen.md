@@ -1,7 +1,8 @@
 ---
     title: kitchen
     description: 
-    tags: {easy,vocab}
+    icon: /media/icons/ecology.png
+tags: {easy,vocab}
 ---
 
 <div class="carrousel">

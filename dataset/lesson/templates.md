@@ -1,6 +1,7 @@
 ---
 title: template
 description: 
+icon: /media/icons/ecology.png
 tags: {default}
 ---
 

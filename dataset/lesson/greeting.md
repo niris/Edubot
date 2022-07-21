@@ -1,6 +1,7 @@
 ---
 title: การทักทาย
 description: 
+icon: /media/icons/ecology.png
 tags: {basic,conversation,lesson}
 ---
 

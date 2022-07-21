@@ -1,8 +1,8 @@
 ---
-title: Pronouns
+title: vocabulary about place
 description: 
 icon: /media/icons/ecology.png
-tags: {default,lesson}
+tags: {simple,vocab}
 ---
 
 <details>
