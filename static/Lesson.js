@@ -151,7 +151,7 @@ const LessonList = {
     template: `
     <p v-if="!lessons.length">
         No lessons. You can Import them with
-        <pre>make deploy</pre>
+        <pre>make lesson_init</pre>
         then <a href=>refresh</a> this page.
     </p>
     <div style="display: grid;padding:3em 1em;grid-template-columns: 1fr 1fr 1fr;grid-gap: 2em;">

@@ -23,7 +23,15 @@ erDiagram
 user {
 	id VARCHAR
 	roles VARCHAR
-	progress JSONB
+}
+profile {
+	id name
+	firstname text
+	lastname text
+	alias text
+	birth date
+	grade integer
+	progress JSON
 }
 lesson {
 	id SERIAL
@@ -32,6 +40,6 @@ lesson {
 	content BYTEA
 }
 
-user ||--o{ lesson : "weak"
-lesson ||--o{ blob : "foreign key"
+user ||--o{ lesson : fk
+user ||--|| profile : fk
 ```

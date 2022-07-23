@@ -60,3 +60,9 @@ begin
   );
 end;
 $$ language plpgsql;
+
+create or replace function auth.id() returns name as $$
+begin
+	return current_setting('request.jwt.claims', true)::json->>'id';
+end;
+$$ language plpgsql;

@@ -11,7 +11,7 @@ const SignUp = {
 			const auth = await fetch('/api/rpc/register', { method: 'POST', body });
 			if (auth.ok) {
 				this.$root.log();//setTimeout(()=>this.$root.$data.auth=true, 1000);
-				this.$router.push("/");
+				this.$router.push("/me");
 			} else {
 				const json = await auth.json();
 				alert(json.message);
@@ -43,8 +43,6 @@ const SignIn = {
 	}
 }
 
-const bootstrap = '{}';
-const headers = { 'Content-Type': 'application/json', 'Prefer': 'return=representation' };
 const SignMe = {
 	template: `
 	<h1 style=display:inline-block>{{$root.id}}</h1>
@@ -52,57 +50,60 @@ const SignMe = {
 	<small class="tag">{{$root.role}}</small>
 	<form @submit.prevent=update($event)>
 		<label>
-			<span>Name</span>
-			<input v-model=name>
+			<span>FirstName</span>
+			<input v-model=me.firstname autocomplete=given-name>
+		</label>
+		<label>
+			<span>LastName</span>
+			<input v-model=me.lastname autocomplete=family-name>
+		</label>
+		<label>
+			<span>Alias</span>
+			<input v-model=me.alias autocomplete=nickname>
 		</label>
 		<label>
 			<span>Birthday</span>
-			<input v-model=birth type=date>
+			<input v-model=me.birth type=date autocomplete=bday>
 		</label>
-		<button type=submit class=is-full-width>Update</button>
-	</form>
-	<div style="display:grid;grid-template-columns: 1fr auto 1fr; grid-gap: 20px;padding: 20px 0;">
+		<label>
+			<span>Grade</span>
+			<input v-model=me.grade type=number>
+		</label>
+		<div style="display:grid;grid-template-columns: 1fr auto 1fr; grid-gap: 20px;padding: 20px 0;">
 		<div>Progress::Local</div>
 		<br>
 		<div>Progress::Server</div>
-		<textarea v-model=local style="width:unset"></textarea>
+		<textarea style="width:unset" disabled>{{progress}}</textarea>
 		<div style=display:grid>
-		<button @click.prevent="local=server">&lt;&lt;</button>
-		<button @click.prevent="server=local">&gt;&gt;</button>
+		<button @click.prevent="progress = me.progress">&lt;&lt;</button>
+		<button @click.prevent="me.progress = progress">&gt;&gt;</button>
 		</div>
-		<textarea v-model=server style="width:unset" disabled></textarea>
-	</div>
-	<form @submit.prevent=signOut($event)>
-		<button type=submit class=is-full-width><s>logout</s> Sign Out</button>
-	</form>`,
-	data() { return { name: null, birth: null, server: null, local: localStorage.progress } },
-	watch: {
-		local(progress) { localStorage.progress = progress },
-		server(progress) {
-			fetch(`/api/user/${this.$root.id}`, { method: 'PATCH', headers, body: JSON.stringify({ progress }) })
-				.then(e => e.json()).then(json => this.apply([json]));
-		},
-	},
+		<textarea style="width:unset" disabled>{{me.progress}}</textarea>
+		</div>
+		<button type=submit class=is-full-width><s>check</s> Update</button>
+		<hr>
+		<button type=button @click=signOut($event) class=is-full-width><s>logout</s> Sign Out</button>
+	</form>
+	`,
+	data() { return { me: {}, progress: JSON.parse(localStorage.progress || '{}') } },
 	async mounted() {
-		let req = await fetch(`/api/user/${this.$root.id}`);
-		if (req.status != 200) {
-			const body = JSON.stringify({ progress: bootstrap });
-			this.apply(await (await fetch('/api/user', { method: 'POST', headers, body })).json());
-		} else {
-			this.apply([await req.json()]);
-		}
+		this.me = await (await fetch(`/api/profile/${this.$root.id}`)).json();
+	},
+	watch: {
+		progress: (val) => localStorage.setItem("progress", JSON.stringify(val))
 	},
 	methods: {
-		apply(json) {
-			[{ progress: this.server, name: this.name, birth: this.birth }] = json;
-		},
 		async update({ target }) {
-			fetch(`/api/user/${this.$root.id}`, { method: 'PATCH', headers, body: JSON.stringify({ name:this.name, birth:this.birth }) })
-				.then(e => e.json()).then(json => this.apply([json]));
+			const ret = await fetch(`/api/profile/${this.$root.id}`, {
+				method: 'PUT', body: JSON.stringify(this.me),
+				headers: { 'Content-Type': 'application/json', 'Prefer': 'return=representation' }
+			});
+			this.me = await ret.json();
 		},
 		async signOut({ target }) {
 			const auth = await fetch('/api/rpc/logout');
 			if (auth.ok) {
+				delete localStorage.progress; // flush local storage to avoid giving progress to next logged user
 				this.$root.log();//setTimeout(()=>this.$root.$data.auth=false, 1000);
 				this.$router.push("/");
 			}

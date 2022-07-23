@@ -9,21 +9,15 @@
 <link rel=icon href="/static/favicon.svg" sizes="any">
 <link rel="apple-touch-icon" href="/static/favicon-192.png">
 <link rel="mask-icon" href="/static/favicon.svg" color="black">
-<link rel="prefetch" href="/static/solid.woff2" crossorigin>
 <link rel=stylesheet href="/static/chota.min.css" media="print" onload="media='all'">
 <link rel=stylesheet href="/static/style.css" media="print" onload="media='all'">
 <link rel="manifest" href="/static/manifest.json">
 <script defer src="/static/vue.global.prod.js"></script>
 <script defer src="/static/vue-router.global.prod.js"></script>
 <script defer src="/static/markdown-it.min.js"></script>
-
-<!--<script defer src="/static/vue.global.prod.js"></script>
-<script defer src="/static/vue-router.global.prod.js"></script>
-<script defer src="/static/markdown-it.min.js"></script>-->
 <script type=module>
 import { Homepage } from '/static/Homepage.js'
 import { SignUp, SignIn, SignMe } from '/static/Sign.js'
-import { UserList } from '/static/User.js'
 import { LessonList, LessonShow } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
 const routes = [
@@ -34,7 +28,6 @@ const routes = [
 	{ path:'/register',   component: SignUp },
 	{ path:'/login',      component: SignIn },
 	{ path:'/me',         component: SignMe },
-	{ path:'/user/',      component: UserList },
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({

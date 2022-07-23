@@ -1,5 +1,5 @@
 @font-face {
-    src: url(https://unpkg.com/picon@22.7.21/solid.woff2);
+    src: url(/static/solid.woff2);
     font-family: picon;
     /* avoid FOIT */
     font-display: swap;
