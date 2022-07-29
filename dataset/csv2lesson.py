@@ -15,7 +15,7 @@ for filename in os.listdir("csv"):
     title: '''+ category +
     '''
     description: 
-    icon: /media/icons/ecology.png
+    icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg
 tags: {easy,vocab}
 ---
 
