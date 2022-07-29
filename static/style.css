@@ -7,7 +7,7 @@
 
 :root {
     --grid-maxWidth: 80rem;
-    --color-primary: #438258;
+    --color-primary: #1A8D7E;
 }
 
 .picon,
@@ -108,7 +108,7 @@ s {
     /* until all image are squared */
 }
 
-body {
+.container {
     background-image: url("bg.png");
     background-size: cover;
     background-repeat: no-repeat;
