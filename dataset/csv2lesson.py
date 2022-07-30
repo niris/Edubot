@@ -25,15 +25,16 @@ tags: {easy,vocab}
     with open(os.path.join("csv", filename), 'r') as f: 
         print("filename " + filename)
         csvreader = csv.reader(f)
-        vocab = []
-        meaning = []
+        vocabs = []
+        meanings = []
         img = []
         audio = []
         for row in csvreader:
-            vocab.append(row[0])
-            meaning.append(row[1])
-            img.append('![]('+os.path.join("/media/img",category,row[0]+'.svg')+')')
-            audio.append('![]('+os.path.join("/media/audio",row[0]+'.mp3')+')')
+            vocab = row[0].replace(" ", "&#x20;")
+            vocabs.append(vocab)
+            meanings.append(row[1])
+            img.append('![]('+os.path.join("/media/img",category,vocab+'.svg')+')')
+            audio.append('![]('+os.path.join("/media/audio",vocab+'.mp3')+')')
         newfile.write('|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
             newfile.write("-------------------------------|")
@@ -62,7 +63,7 @@ tags: {easy,vocab}
                     newfile.write(' - [ ] ' + c[0] + '\n')
             questions_tmp.pop(answer_index)
     
-    questionGenerator(vocab,meaning,2)
-    questionGenerator(meaning,vocab,2)
+    questionGenerator(vocabs,meanings,2)
+    questionGenerator(meanings,vocabs,2)
     newfile.close()
     f.close()
