@@ -2,7 +2,7 @@
 title: Basic exam example
 description: This is a basic exam demo
 icon: /media/icons/ecology.png
-tags: {easy,demo,example}
+tags: {easy,demo,example,lesson}
 ---
 
 # Basic exam page
