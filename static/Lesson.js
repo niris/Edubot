@@ -154,7 +154,7 @@ const LessonList = {
         <pre>make lesson_init</pre>
         then <a href=>refresh</a> this page.
     </p>
-    <div style="display: grid;padding:3em 1em;grid-template-columns: 1fr 1fr 1fr;grid-gap: 2em;">
+    <div class=grid>
         <template v-for="(l,index) in lessons" >
             <router-link :to="/lesson/+l.id" v-if="l.tags.includes(this.$props.tag)" class="card" style="border-radius: 1em">
                 <img :src="l.icon||'/media/icons/kitchen.png'" style="padding: 15%;">
