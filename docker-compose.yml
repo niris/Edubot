@@ -32,6 +32,7 @@ services:
     image: nginx:1
     ports:
       - "80:80"
+#      - "443:443"
     links:
       - api:api
     environment:
@@ -43,6 +44,8 @@ services:
       - VOSK_TH_PORT=2700
     volumes:
       - ./nginx.conf:/nginx.tpl:ro
+#      - ./server.crt:/etc/nginx/server.crt:ro
+#      - ./server.key:/etc/nginx/server.key:ro
       - ./static:/etc/nginx/html/static:ro
       - ./media:/etc/nginx/html/media:ro
     command: bash -c "

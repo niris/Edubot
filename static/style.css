@@ -130,3 +130,7 @@ input[type=color] {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.grid img[height][width]{
+    aspect-ratio: attr(width) / attr(height);
+}

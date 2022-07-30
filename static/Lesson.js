@@ -157,7 +157,7 @@ const LessonList = {
     <div class=grid>
         <template v-for="(l,index) in lessons" >
             <router-link :to="/lesson/+l.id" v-if="l.tags.includes(this.$props.tag)" class="card" style="border-radius: 1em">
-                <img :src="l.icon||'/media/icons/kitchen.png'" style="padding: 15%;">
+                <img alt=cover :src="l.icon||'/media/icons/kitchen.png'" style="padding: 15%;">
                 <span class="is-center">{{l.title}}</span>
             </router-link>
         </template>

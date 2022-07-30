@@ -16,3 +16,6 @@ lesson_init :.a;
 	done;
 test:  .a
 	curl -b $< $(HOST)/api/lesson -d title="curl created" -d content="this lesson was created by teacher via curl"
+apk:
+	bubblewrap init --manifest http://$(HOST)/static/manifest.json
+	bubblewrap build
