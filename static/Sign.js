@@ -69,6 +69,10 @@ const SignMe = {
 			<span>Grade</span>
 			<input v-model=me.grade type=number>
 		</label>
+		<label>
+			<span>Theme</span>
+			<input v-model=$root.theme type=color>
+		</label>
 		<div style="display:grid;grid-template-columns: 1fr auto 1fr; grid-gap: 20px;padding: 20px 0;">
 		<div>Progress::Local</div>
 		<br>
@@ -94,6 +98,7 @@ const SignMe = {
 	},
 	methods: {
 		async update({ target }) {
+			localStorage.theme = this.$root.theme;
 			const ret = await fetch(`/api/profile/${this.$root.id}`, {
 				method: 'PUT', body: JSON.stringify(this.me),
 				headers: { 'Content-Type': 'application/json', 'Prefer': 'return=representation' }

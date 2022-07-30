@@ -7,7 +7,8 @@
 
 :root {
     --grid-maxWidth: 80rem;
-    --color-primary: #1A8D7E;
+    /*--color-primary: #1A8D7E; set by JS from userprofile */
+    accent-color: var(--color-primary);
 }
 
 .picon,
@@ -16,6 +17,11 @@ s {
     font-family: picon;
     text-decoration: none;
     vertical-align: bottom;
+}
+
+input[type=color] {
+    display: block;
+    width: 100%;
 }
 
 /* remove sharp angle from lessons media for kids safety */
@@ -99,10 +105,11 @@ s {
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    margin: 1em 0;
 }
 
 .carrousel th {
-    min-width: min(var(--grid-maxWidth), 100vw);
+    min-width: min(calc(var(--grid-maxWidth) * 0.75), 75vw);
     scroll-snap-align: start;
 }
 

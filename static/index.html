@@ -31,7 +31,7 @@ const routes = [
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({
-	data() { return {role: null, id: null} },
+	data() { return {role: null, id: null, theme: localStorage.theme || `#1A8D7E`} },
 	mounted() { this.log(); },
 	methods:{
 		is(...roles) { return roles.includes(this.role); },
@@ -51,6 +51,7 @@ console.debug(app);
 //}
 </script>
 <main class="container">
+	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full">
 		<router-link to="/lesson/"  v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
 		<router-link to="/vocab/"   v-if="is('admin','user')"><s>bookmark</s> คำศัพท์</router-link>
