@@ -12,11 +12,12 @@ for filename in os.listdir("csv"):
     category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
-    title: '''+ category.capitalize() +
-    '''
-    description: 
-    icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg
-tags: {easy,type:vocab}
+title: '''+ category.capitalize() +
+'''
+description: 
+icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg\
+
+tags: {easy,type:vocab, group:vocab}
 ---
 
 '''

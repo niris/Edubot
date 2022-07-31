@@ -1,8 +1,8 @@
 ---
-    title: Kitchen
-    description: 
-    icon: /media/icons/kitchen.svg
-tags: {easy,type:vocab}
+title: Kitchen
+description: 
+icon: /media/icons/kitchen.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Dish**
- - [x] จาน
- - [ ] ชาม
- - [ ] ช้อน
- - [ ] มีด
-
  เลือกคำศัพท์/ความหมายที่ตรงกับ **Bowl**
  - [ ] จาน
  - [x] ชาม
  - [ ] ช้อน
+ - [ ] มีด
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Fork**
+ - [x] จาน
+ - [ ] ช้อน
+ - [ ] มีด
  - [ ] ส้อม
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ส้อม**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ช้อน**
  - [ ] Bowl
  - [ ] Dish
- - [x] Fork
- - [ ] Spoon
+ - [ ] Fork
+ - [x] Spoon
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ชาม**
- - [x] Bowl
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ส้อม**
+ - [x] Dish
  - [ ] Fork
  - [ ] Knife
  - [ ] Spoon

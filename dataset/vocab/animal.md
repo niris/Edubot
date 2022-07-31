@@ -1,8 +1,8 @@
 ---
-    title: Animal
-    description: 
-    icon: /media/icons/animal.svg
-tags: {easy,type:vocab}
+title: Animal
+description: 
+icon: /media/icons/animal.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Fish**
- - [ ] นกยูง
- - [x] ปลา
- - [ ] ปู
- - [ ] ผึ้ง
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Bee**
+ - [ ] นกอินทรี
+ - [ ] นกฮูก
+ - [ ] บัฟฟาโล
+ - [x] ผึ้ง
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Starfish**
- - [ ] กระต่าย
- - [x] ผีเสื้อ
- - [ ] หมู
- - [ ] แกะ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Mouse**
+ - [ ] นกฮูก
+ - [ ] ม้า
+ - [ ] เป็ด
+ - [x] เมาส์
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เมาส์**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ฮอว์ก**
+ - [ ] Goat
+ - [x] Hawk
+ - [ ] Pig
+ - [ ] Rabbit
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นกแก้ว**
+ - [x] Bee
  - [ ] Bird
- - [x] Mouse
+ - [ ] Rabbit
  - [ ] Shellfish
- - [ ] Starfish
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ช้าง**
- - [x] Dragonfly
- - [ ] Goldfish
- - [ ] Parrot
- - [ ] Vulture

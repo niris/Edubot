@@ -1,8 +1,8 @@
 ---
-    title: Fruit
-    description: 
-    icon: /media/icons/fruit.svg
-tags: {easy,type:vocab}
+title: Fruit
+description: 
+icon: /media/icons/fruit.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Apple**
- - [ ] ชมพู่
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Eggplant**
+ - [ ] มะขาม
  - [ ] มะละกอ
- - [ ] มะเขือยาว
- - [x] แอปเปิ้ล
+ - [x] มะเขือยาว
+ - [ ] อะโวคาโด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Spring&#x20;onion**
- - [x] ต้นหอม
- - [ ] พริก
- - [ ] ฟักทอง
- - [ ] สตรอเบอร์รี่
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Lemon**
+ - [x] มะนาว
+ - [ ] มังคุด
+ - [ ] ส้มโอ
+ - [ ] แอปเปิ้ล
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **มะม่วง**
- - [ ] Chilli
- - [ ] Garlic
- - [x] Mango
- - [ ] Tomato
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ชมพู่**
+ - [ ] Grape
+ - [ ] Mango
+ - [x] Rose&#x20;apple
+ - [ ] Tamarind
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ถั่ว**
- - [ ] Apple
- - [ ] Cauliflower
- - [x] Durian
- - [ ] Onion
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สตรอเบอร์รี่**
+ - [ ] Longan
+ - [ ] Orange
+ - [ ] Spring&#x20;onion
+ - [x] Strawberry

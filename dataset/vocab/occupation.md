@@ -1,8 +1,8 @@
 ---
-    title: Occupation
-    description: 
-    icon: /media/icons/occupation.svg
-tags: {easy,type:vocab}
+title: Occupation
+description: 
+icon: /media/icons/occupation.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Photographer**
- - [x] ช่างภาพ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Waiter**
+ - [ ] คนสวน
+ - [ ] คู่มือ
+ - [x] บริกร
+ - [ ] แคชเชียร์
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Farmer**
+ - [ ] คู่มือ
+ - [x] ช่างทําผม
  - [ ] ตํารวจจราจร
- - [ ] ท่านประธาน
- - [ ] นักข่าวข่าว
+ - [ ] บริกร
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Waitress**
- - [ ] คนขับรถบัส
- - [ ] นักบัญชี
- - [x] ผู้รับเหมาก่อสร้าง
- - [ ] พยาบาล
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นักบิน**
+ - [x] Pilot
+ - [ ] Politician
+ - [ ] Postman
+ - [ ] Scientist
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ศิลปิน**
- - [ ] Architect
- - [x] Artist
- - [ ] Fisherman
- - [ ] Taxi&#x20;driver
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **นักดนตรี**
- - [x] Accountant
- - [ ] Astronaut
- - [ ] Building&#x20;contractor
- - [ ] Doctor
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ผู้พิพากษา**
+ - [ ] Dentist
+ - [ ] Hairdresser
+ - [ ] Secretary
+ - [x] Singer

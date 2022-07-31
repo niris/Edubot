@@ -1,8 +1,8 @@
 ---
-    title: Place
-    description: 
-    icon: /media/icons/place.svg
-tags: {easy,type:vocab}
+title: Place
+description: 
+icon: /media/icons/place.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Fire&#x20;engine**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **School**
+ - [ ] รถบัสโรงเรียน
  - [ ] สถานีดับเพลิง
- - [ ] สถานีรถไฟ
- - [x] เครื่องยนต์ไฟ
  - [ ] โรงพยาบาล
+ - [x] โรงเรียน
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Market**
- - [x] ตลาด
- - [ ] ระนาบ
- - [ ] สถานีดับเพลิง
- - [ ] โรงเรียน
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Airport**
+ - [ ] ตลาด
+ - [ ] ธนาคาร
+ - [x] พิพิธภัณฑ์
+ - [ ] เรือ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **โรงเรียน**
- - [ ] Ambulance
- - [ ] Mailbox
- - [x] School
- - [ ] Train
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **รถไฟ**
+ - [ ] Market
+ - [ ] Plane
+ - [ ] Ship
+ - [x] Train
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **กล่องจดหมาย**
- - [x] Ambulance
- - [ ] Fire&#x20;station
- - [ ] Museum
- - [ ] School
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **พอร์ต**
+ - [ ] Fire&#x20;engine
+ - [ ] Market
+ - [ ] Plane
+ - [x] Port

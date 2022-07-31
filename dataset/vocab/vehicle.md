@@ -1,8 +1,8 @@
 ---
-    title: Vehicle
-    description: 
-    icon: /media/icons/vehicle.svg
-tags: {easy,type:vocab}
+title: Vehicle
+description: 
+icon: /media/icons/vehicle.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Shool&#x20;bus**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Pick-up**
+ - [x] Name=สมุดที่อยู่ - KName
  - [ ] รถบรรทุก
- - [ ] รถยนต์
- - [x] รถเมล์สายด่วน
- - [ ] ระนาบ
+ - [ ] เรือ
+ - [ ] แท็กซี่
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **Bus**
- - [ ] จักรยาน
- - [ ] รถบรรทุก
+ - [ ] มอเตอร์ไซค์
  - [x] รถเมล์
- - [ ] เฮลิคอปเตอร์
+ - [ ] รถเมล์สายด่วน
+ - [ ] เรือ
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **มอเตอร์ไซค์**
+ - [ ] Boat
+ - [ ] Helicopter
+ - [x] Motorcycle
+ - [ ] Taxi
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ยานอวกาศ**
- - [ ] Car
- - [ ] Pick-up
- - [x] Spaceship
- - [ ] Subway
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เรือ**
- - [ ] Bicycle
+ - [x] Bicycle
+ - [ ] Helicopter
  - [ ] Plane
- - [ ] Subway
- - [x] Train
+ - [ ] Tricycle

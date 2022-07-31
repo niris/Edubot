@@ -1,8 +1,8 @@
 ---
-    title: Food
-    description: 
-    icon: /media/icons/food.svg
-tags: {easy,type:vocab}
+title: Food
+description: 
+icon: /media/icons/food.svg
+tags: {easy,type:vocab, group:vocab}
 ---
 
 <div class="carrousel">
@@ -21,26 +21,26 @@ tags: {easy,type:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Hot&#x20;dog**
- - [ ] ก๋วยเตี๋ยว
- - [ ] ซาลาเปา
- - [ ] มักกะโรนี
- - [x] ฮ็อทดอก
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Fried&#x20;egg**
+ - [ ] ข้าวผัด
+ - [ ] สปาเก็ตตี้
+ - [ ] ฮ็อทดอก
+ - [x] ไข่ทอด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **Sushi**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Hamburger**
  - [ ] ก๋วยเตี๋ยว
- - [ ] ซูชิ
- - [ ] เทมปุระ
- - [x] แฮมเบอร์เกอร์
+ - [ ] ข้าวผัด
+ - [ ] ฮ็อทดอก
+ - [x] ไข่ทอด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **แฮมเบอร์เกอร์**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **เทมปุระ**
+ - [ ] Fried&#x20;rice
+ - [ ] Hamburger
+ - [ ] Steamed&#x20;stuffed&#x20;bun
+ - [x] Tempura
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ซูชิ**
  - [x] Hamburger
- - [ ] Hot&#x20;dog
  - [ ] Macaroni
  - [ ] Steamed&#x20;stuffed&#x20;bun
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ข้าวผัด**
- - [ ] Fried&#x20;egg
- - [x] Fried&#x20;rice
- - [ ] Noodle
- - [ ] Steamed&#x20;stuffed&#x20;bun
+ - [ ] Sushi
