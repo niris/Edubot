@@ -180,17 +180,18 @@ const LessonList = {
 }
 
 const CategoriesList = {
-    props: ['tag'],
+    //props: ['tag'],
     template: `
     <div class=grid>
         <router-link  v-for="category in categories" :to="/category/+category" class="card" style="border-radius: 1em">
             <img :src='"/media/icons/"+category+".svg"' style="padding: 15%;" alt="cover">
-            <span class="is-center">{{category}}</span>
+            <span class="is-center text-capitalize">{{category}}</span>
         </router-link >
     </div>
     `
     ,
     data() { return { categories: ["conversation","grammar","reading","listening","game","test"] } },
+    
     /*watch: {
         tag: {
             handler: async function (value) {

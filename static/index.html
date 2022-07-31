@@ -23,7 +23,7 @@ import { BotChat } from '/static/Bot.js'
 const routes = [
 	{ path:'/',           component: Homepage },
 	{ path:'/vocab',    component: LessonList},
-	{ path:'/category',    component: CategoriesList,props:{tag:"lesson"} },
+	{ path:'/category',    component: CategoriesList},
 	{ path:'/category/:id',    component: LessonList,props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
 	{ path:'/register',   component: SignUp },
