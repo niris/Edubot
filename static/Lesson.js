@@ -190,7 +190,7 @@ const CategoriesList = {
     </div>
     `
     ,
-    data() { return { categories: ["conversation","grammar","reading","listening","game","test"] } },
+    data() { return { categories: ["vocab","conversation","grammar","reading","listening","game","test"] } },
     
     /*watch: {
         tag: {
