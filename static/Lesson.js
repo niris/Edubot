@@ -182,25 +182,16 @@ const LessonList = {
 const CategoriesList = {
     props: ['tag'],
     template: `
-    <p v-if="categories==null">
-        loading
-    </p>
-    <p v-else-if="categories.length===0">
-        No categories with tag {{$props.tag}}. You can Import them with
-        <pre>make lesson_init</pre>
-        then <a href=>refresh</a> this page.
-    </p>
-
     <div class=grid>
-        <router-link  v-for="category in categories" :to="/category/+category.title" class="card" style="border-radius: 1em">
-            <img :src='"/media/icons/"+category.title+".svg"' style="padding: 15%;" alt="cover">
-            <span class="is-center">{{category.title}}</span>
+        <router-link  v-for="category in categories" :to="/category/+category" class="card" style="border-radius: 1em">
+            <img :src='"/media/icons/"+category+".svg"' style="padding: 15%;" alt="cover">
+            <span class="is-center">{{category}}</span>
         </router-link >
     </div>
     `
     ,
-    data() { return { categories: null } },
-    watch: {
+    data() { return { categories: ["conversation","grammar","reading","listening","game","test"] } },
+    /*watch: {
         tag: {
             handler: async function (value) {
                 let lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{type:${value}}`)).json();
@@ -219,7 +210,7 @@ const CategoriesList = {
             },
             immediate: true
         }
-    },
+    },*/
 }
 
 export { LessonList, LessonShow,CategoriesList}

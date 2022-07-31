@@ -2,7 +2,7 @@
 title: การแนะนำตัว
 description: 
 icon: /media/icons/ecology.png
-tags: {type:lesson,group:grammar}
+tags: {type:lesson,group:conversation,group:listening}
 ---
 
 ## การแนะนำตัว

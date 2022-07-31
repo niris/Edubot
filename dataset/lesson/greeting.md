@@ -2,7 +2,7 @@
 title: การทักทาย
 description: 
 icon: /media/icons/ecology.png
-tags: {type:lesson,group:conversation}
+tags: {type:lesson,group:conversation,group:listening}
 ---
 
 <details>

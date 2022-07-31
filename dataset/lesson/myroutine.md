@@ -1,8 +1,8 @@
 ---
-title: การสะกดคำ
+title: verb todo
 description: 
 icon: /media/icons/ecology.png
-tags: {easy,demo,example,lesson}
+tags: {type:lesson,group:reading}
 ---
 
 <details>
@@ -13,4 +13,3 @@ tags: {easy,demo,example,lesson}
 <summary>แบบฝึกหัด</summary>
 
 <details>
-
