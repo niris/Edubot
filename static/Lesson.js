@@ -69,7 +69,7 @@ const LessonShow = {
     data() { return { lesson: {} } },
     computed: {
         markdownToHtml() {
-            const mi = markdownit({html : true});
+            const mi = markdownit({ html: true });
             mi.core.ruler.push("media", mediaRule());
             mi.core.ruler.push("checkbox", checkboxRule());
             mi.core.ruler.push("input", inputRule(JSON.parse(localStorage.exams || '[]')));
@@ -99,7 +99,7 @@ const LessonShow = {
                 }
             };
             target.onblur = function () {
-                if(!target.classList.contains('live'))return; // already stopped
+                if (!target.classList.contains('live')) return; // already stopped
                 dc?.close();
                 pc.getTransceivers?.().forEach((t) => t.stop?.());
                 pc.getSenders().forEach((s) => s.track.stop());
@@ -149,26 +149,47 @@ const LessonShow = {
 const LessonList = {
     props: ['tag'],
     template: `
-    <p v-if="!lessons.length">
-        No lessons. You can Import them with
+    <p v-if="categories==null">
+        loading
+    </p>
+    <p v-else-if="categories.length===0">
+        No categories with tag {{$props.tag}}. You can Import them with
         <pre>make lesson_init</pre>
         then <a href=>refresh</a> this page.
     </p>
+
+    <template v-for="category in categories">
+    <h2>{{category.title}}</h2>
     <div class=grid>
-        <template v-for="(l,index) in lessons" >
-            <router-link :to="/lesson/+l.id" v-if="l.tags.includes(this.$props.tag)" class="card" style="border-radius: 1em">
-                <img alt=cover :src="l.icon||'/media/icons/kitchen.png'" style="padding: 15%;">
-                <span class="is-center">{{l.title}}</span>
+            <router-link v-for="lesson in category.list" :to="/lesson/+lesson.id" class="card" style="border-radius: 1em">
+                <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
+                <span class="is-center">{{lesson.title}}</span>
             </router-link>
-        </template>
     </div>
+    </template>
     `
     ,
-    data() { return { lessons: []} },
-    async mounted() {
-        this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon`)).json();
-    },
-
+    data() { return { categories: null } },
+    watch: {
+        tag: {
+            handler: async function (value) {
+                let lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{type:${value}}`)).json();
+                this.categories=lessons.reduce(function (categories, lesson) {
+                    let title = lesson.tags.find(tag => tag.startsWith('group:'));
+                    if (title) {
+                        title=title.substring('group:'.length);
+                        let existing = categories.find(cat => cat.title == title);
+                        if (existing) 
+                            existing.list.push(lesson);
+                        else
+                            categories.push({ title: title, list: [lesson] })
+                    }
+                    return categories;
+                }, [])
+            },
+            immediate: true
+        }
+    }
 
 }
 

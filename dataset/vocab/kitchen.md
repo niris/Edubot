@@ -1,14 +1,17 @@
 ---
-    title: kitchen
+    title: Kitchen
     description: 
     icon: /media/icons/kitchen.svg
-tags: {easy,vocab}
+tags: {easy,type:vocab}
 ---
 
 <div class="carrousel">
 
+
 |![](/media/img/kitchen/knife.svg)|![](/media/img/kitchen/spoon.svg)|![](/media/img/kitchen/bowl.svg)|![](/media/img/kitchen/dish.svg)|![](/media/img/kitchen/fork.svg)|
-|-------------------------------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|
+| :----: | :----: | :----: | :----: | :----: |
+|Knife|Spoon|Bowl|Dish|Fork|
+|มีด|ช้อน|ชาม|จาน|ส้อม|
 |![](/media/audio/knife.mp3)|![](/media/audio/spoon.mp3)|![](/media/audio/bowl.mp3)|![](/media/audio/dish.mp3)|![](/media/audio/fork.mp3)|
 
 </div>
@@ -18,26 +21,26 @@ tags: {easy,vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **knife**
- - [ ] จาน
- - [ ] ช้อน
- - [x] มีด
- - [ ] ส้อม
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **fork**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Dish**
  - [x] จาน
  - [ ] ชาม
+ - [ ] ช้อน
  - [ ] มีด
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **Bowl**
+ - [ ] จาน
+ - [x] ชาม
+ - [ ] ช้อน
  - [ ] ส้อม
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **มีด**
- - [ ] dish
- - [ ] fork
- - [x] knife
- - [ ] spoon
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ส้อม**
+ - [ ] Bowl
+ - [ ] Dish
+ - [x] Fork
+ - [ ] Spoon
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ชาม**
- - [ ] bowl
- - [ ] dish
- - [ ] fork
- - [x] spoon
+ - [x] Bowl
+ - [ ] Fork
+ - [ ] Knife
+ - [ ] Spoon

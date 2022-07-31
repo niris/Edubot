@@ -26,12 +26,18 @@ input[type=color] {
 
 /* remove sharp angle from lessons media for kids safety */
 .lesson img,
-.lesson video,
+.lesson video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .lesson audio {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 50%;
 }
 
 .lesson .voice.live .voiceth.live {
