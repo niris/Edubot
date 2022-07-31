@@ -31,19 +31,18 @@ input[type=color] {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+
 }
 
-.lesson audio {
+.lesson audio  {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-
 .lesson .voice.live .voiceth.live {
     box-shadow: 0 0 0 5px var(--color-primary) !important;
 }
-
 
 .chatbot>output {
     display: flex;

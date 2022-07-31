@@ -18,12 +18,13 @@
 <script type=module>
 import { Homepage } from '/static/Homepage.js'
 import { SignUp, SignIn, SignMe } from '/static/Sign.js'
-import { LessonList, LessonShow } from '/static/Lesson.js'
+import { LessonList, LessonShow,CategoriesList } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
 const routes = [
 	{ path:'/',           component: Homepage },
-	{ path:'/lesson',    component: LessonList,props:{tag:"lesson"} },
-	{ path:'/vocab',    component: LessonList,props:{tag:"vocab"} },
+	{ path:'/vocab',    component: LessonList},
+	{ path:'/category',    component: CategoriesList,props:{tag:"lesson"} },
+	{ path:'/category/:id',    component: LessonList,props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
 	{ path:'/register',   component: SignUp },
 	{ path:'/login',      component: SignIn },
@@ -53,7 +54,7 @@ if ('serviceWorker' in navigator) {
 <main class="container">
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full">
-		<router-link to="/lesson/"  v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
+		<router-link to="/category"  v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
 		<router-link to="/vocab/"   v-if="is('admin','user')"><s>bookmark</s> คำศัพท์</router-link>
 		<router-link to="/user/"    v-if="is('admin')"><s>group</s> Users</router-link>
 		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>

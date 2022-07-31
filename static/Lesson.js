@@ -147,6 +147,39 @@ const LessonShow = {
 }
 //URL.createObjectURL(new Blob(Uint8Array.from(s.content.slice(2).match(/../g),a=>parseInt(a,16)), { type: "image/jpeg" } ))
 const LessonList = {
+    props: ['id'],
+    template: `
+    <p v-if="lessons==null">
+        loading
+    </p>
+    <p v-else-if="lessons.length===0">
+        No lesson with categorie {{$props.id}}. You can Import them with
+        <pre>make lesson_init</pre>
+        then <a href=>refresh</a> this page.
+    </p>
+    <div class=grid>
+            <router-link v-for="lesson in lessons" :to="/lesson/+lesson.id" class="card" style="border-radius: 1em">
+                <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
+                <span class="is-center">{{lesson.title}}</span>
+            </router-link>
+    </div>
+    `
+    ,
+    data() { return { lessons: null } },
+    watch: {
+        id: {
+            handler: async function (value) {
+                if(this.$props.id)
+                    this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{group:${value}}`)).json();
+                else
+                    this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{type:vocab}`)).json();
+            },
+            immediate: true
+        }
+    }
+}
+
+const CategoriesList = {
     props: ['tag'],
     template: `
     <p v-if="categories==null">
@@ -158,15 +191,12 @@ const LessonList = {
         then <a href=>refresh</a> this page.
     </p>
 
-    <template v-for="category in categories">
-    <h2>{{category.title}}</h2>
     <div class=grid>
-            <router-link v-for="lesson in category.list" :to="/lesson/+lesson.id" class="card" style="border-radius: 1em">
-                <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
-                <span class="is-center">{{lesson.title}}</span>
-            </router-link>
+        <router-link  v-for="category in categories" :to="/category/+category.title" class="card" style="border-radius: 1em">
+            <img :src='"/media/icons/"+category.title+".svg"' style="padding: 15%;" alt="cover">
+            <span class="is-center">{{category.title}}</span>
+        </router-link >
     </div>
-    </template>
     `
     ,
     data() { return { categories: null } },
@@ -189,8 +219,7 @@ const LessonList = {
             },
             immediate: true
         }
-    }
-
+    },
 }
 
-export { LessonList, LessonShow}
+export { LessonList, LessonShow,CategoriesList}
