@@ -169,7 +169,7 @@ const LessonList = {
     watch: {
         id: {
             handler: async function (value) {
-                if(this.$props.id)
+                if (this.$props.id)
                     this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{group:${value}}`)).json();
                 else
                     this.lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{type:vocab}`)).json();
@@ -190,28 +190,16 @@ const CategoriesList = {
     </div>
     `
     ,
-    data() { return { categories: ["vocab","conversation","grammar","reading","listening","game","test"] } },
-    
-    /*watch: {
-        tag: {
-            handler: async function (value) {
-                let lessons = await (await fetch(`/api/lesson?select=id,title,owner,draft,tags,icon&tags=cs.{type:${value}}`)).json();
-                this.categories=lessons.reduce(function (categories, lesson) {
-                    let title = lesson.tags.find(tag => tag.startsWith('group:'));
-                    if (title) {
-                        title=title.substring('group:'.length);
-                        let existing = categories.find(cat => cat.title == title);
-                        if (existing) 
-                            existing.list.push(lesson);
-                        else
-                            categories.push({ title: title, list: [lesson] })
-                    }
-                    return categories;
-                }, [])
-            },
-            immediate: true
-        }
-    },*/
+    data() { return { categories: [] } },
+    async mounted() {
+        let lessons = await (await fetch(`/api/lesson?select=tags&tags=cs.{type:lesson}`)).json();
+        this.categories = new Set(lessons.map(l => {
+            let title = l.tags.find(tag => tag.startsWith('group:'))
+            if (title) {
+                return  title.substring('group:'.length);;
+            }
+        }))
+    },
 }
 
-export { LessonList, LessonShow,CategoriesList}
+export { LessonList, LessonShow, CategoriesList }

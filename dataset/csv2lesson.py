@@ -12,7 +12,7 @@ for filename in os.listdir("csv"):
     category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
-title: '''+ category.capitalize() +
+title: '''+ category +
 '''
 description: 
 icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg\
@@ -32,7 +32,7 @@ tags: {easy,type:vocab, group:vocab}
         audio = []
         for row in csvreader:
             vocab = row[0].replace(" ", "&#x20;")
-            vocabs.append(vocab.capitalize())
+            vocabs.append(vocab)
             meanings.append(row[1])
             img.append('![]('+os.path.join("/media/img",category,vocab+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab+'.mp3')+')')

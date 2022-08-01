@@ -21,14 +21,14 @@ import { SignUp, SignIn, SignMe } from '/static/Sign.js'
 import { LessonList, LessonShow,CategoriesList } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
 const routes = [
-	{ path:'/',           component: Homepage },
-	{ path:'/vocab',    component: LessonList},
-	{ path:'/category',    component: CategoriesList},
-	{ path:'/category/:id',    component: LessonList,props: true},
+	{ path:'/',	component: Homepage },
+	{ path:'/vocab', component: LessonList},
+	{ path:'/category', component: CategoriesList},
+	{ path:'/category/:id', component: LessonList,props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
-	{ path:'/register',   component: SignUp },
-	{ path:'/login',      component: SignIn },
-	{ path:'/me',         component: SignMe },
+	{ path:'/register', component: SignUp },
+	{ path:'/login', component: SignIn },
+	{ path:'/me', component: SignMe },
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({
@@ -55,11 +55,11 @@ if ('serviceWorker' in navigator) {
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full">
 		<router-link to="/"   v-if="is('admin','user')"><s>house</s> หน้าแรก</router-link>
-		<router-link to="/category"  v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
-		<router-link to="/user/"    v-if="is('admin')"><s>group</s> Users</router-link>
-		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
+		<router-link to="/category" v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
+		<router-link to="/user/" v-if="is('admin')"><s>group</s> Users</router-link>
+		<router-link to="/me" v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
 		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
-		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>
+		<router-link to="/login" v-if="is(null)"><s>login</s> Sign In</router-link>
 	</nav>	
 	<router-view></router-view>
 	<bot-chat ref="bot"></bot-chat>
