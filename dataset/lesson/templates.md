@@ -2,7 +2,7 @@
 title: template
 description: 
 icon: /media/icons/ecology.png
-tags: {default}
+tags: {type:lesson,group:grammar}
 ---
 
 <details>

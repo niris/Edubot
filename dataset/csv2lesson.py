@@ -12,11 +12,12 @@ for filename in os.listdir("csv"):
     category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
-    title: '''+ category +
-    '''
-    description: 
-    icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg
-tags: {easy,vocab}
+title: '''+ category +
+'''
+description: 
+icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg\
+
+tags: {easy,type:vocab, group:vocab}
 ---
 
 '''
@@ -35,9 +36,11 @@ tags: {easy,vocab}
             meanings.append(row[1])
             img.append('![]('+os.path.join("/media/img",category,vocab+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab+'.mp3')+')')
-        newfile.write('|' + '|'.join(img) + '|\n|')
+        newfile.write('\n|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
-            newfile.write("-------------------------------|")
+            newfile.write(" :----: |")
+        newfile.write('\n|' + '|'.join(vocabs) + '|')
+        newfile.write('\n|' + '|'.join(meanings) + '|')
         newfile.write('\n|' + '|'.join(audio) + '|\n\n')
     newfile.write('</div>\n\n')
     newfile.write('\n\n# แบบฝึกหัด\n\n')

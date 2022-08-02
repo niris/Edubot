@@ -2,7 +2,7 @@
 title: ประโยคบอกเล่า
 description: 
 icon: /media/icons/ecology.png
-tags: {easy,grammar,lesson}
+tags: {type:lesson,group:grammar}
 ---
 
 ## ประโยคบอกเล่า

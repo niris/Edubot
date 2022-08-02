@@ -1,8 +1,8 @@
 ---
-title: Verb to have
+title: verb todo
 description: 
 icon: /media/icons/ecology.png
-tags: {type:lesson,group:grammar}
+tags: {type:lesson,group:reading}
 ---
 
 <details>

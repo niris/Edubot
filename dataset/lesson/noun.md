@@ -2,7 +2,7 @@
 title: Noun
 description: 
 icon: /media/icons/ecology.png
-tags: {default,lesson}
+tags: {type:lesson,group:grammar}
 ---
 
 <details>

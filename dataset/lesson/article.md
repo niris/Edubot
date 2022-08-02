@@ -2,7 +2,7 @@
 title: คำนำหน้านาม (a/an/the)
 description: 
 icon: /media/icons/ecology.png
-tags: {easy,lesson}
+tags: {type:lesson,group:grammar}
 ---
 
 ## คำนำหน้านาม (Article)

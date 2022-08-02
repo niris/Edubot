@@ -2,7 +2,7 @@
 title: ตัวอักษรภาษาอังกฤษ
 description: ตัวอักษรภาษาอังกฤษ
 icon: /media/icons/ecology.png
-tags: {easy,pronunciation, writing,lesson}
+tags: {type:lesson,group:grammar}
 ---
 
 ## ตัวอักษรภาษาอังกฤษมี 24 ตัว

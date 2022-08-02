@@ -17,17 +17,15 @@
 <script defer src="/static/markdown-it.min.js"></script>
 <script type=module>
 import { Homepage } from '/static/Homepage.js'
-import { SignUp, SignIn, SignMe } from '/static/Sign.js'
-import { LessonList, LessonShow } from '/static/Lesson.js'
+import { Sign } from '/static/Sign.js'
+import { LessonList, LessonShow,CategoriesList } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
 const routes = [
-	{ path:'/',           component: Homepage },
-	{ path:'/lesson',    component: LessonList,props:{tag:"lesson"} },
-	{ path:'/vocab',    component: LessonList,props:{tag:"vocab"} },
+	{ path:'/', redirect: '/sign', component: Homepage },
+	{ path:'/category', component: CategoriesList},
+	{ path:'/category/:tag', component: LessonList,props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
-	{ path:'/register',   component: SignUp },
-	{ path:'/login',      component: SignIn },
-	{ path:'/me',         component: SignMe },
+	{ path:'/sign', component: Sign },
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({
@@ -53,12 +51,11 @@ if ('serviceWorker' in navigator) {
 <main class="container">
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full">
-		<router-link to="/lesson/"  v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
-		<router-link to="/vocab/"   v-if="is('admin','user')"><s>bookmark</s> คำศัพท์</router-link>
-		<router-link to="/user/"    v-if="is('admin')"><s>group</s> Users</router-link>
-		<router-link to="/me"       v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
-		<router-link to="/register" v-if="is(null)"><s>star</s> Sign Up</router-link>
-		<router-link to="/login"    v-if="is(null)"><s>login</s> Sign In</router-link>
+		<router-link to="/category" v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
+		<router-link to="/category/type:vocab" v-if="is('admin','user')"><s>bookmark</s> vocab</router-link>
+		<router-link to="/user/" v-if="is('admin')"><s>group</s> Users</router-link>
+		<router-link to="/sign" v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
+		<router-link to="/sign" v-if="is(null)"><s>star</s> Sign Up</router-link>
 	</nav>	
 	<router-view></router-view>
 	<bot-chat ref="bot"></bot-chat>
