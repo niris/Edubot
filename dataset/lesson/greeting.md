@@ -1,7 +1,7 @@
 ---
 title: การทักทาย
 description: 
-icon: /media/icons/ecology.png
+icon: /media/icons/high-five.svg
 tags: {type:lesson,group:conversation,group:listening}
 ---
 
@@ -12,6 +12,8 @@ tags: {type:lesson,group:conversation,group:listening}
 
 Hi, Hello = สวัสดี ใช้พูดทักทายกันได้ทุกเวลา เป็นคำทักทายที่ไม่เป็นทางการ
 ลองพูดตามเลย
+
+?[voice](Hello)
 
 Good morning = สวัสดีตอนเช้า ใช้พูดทักทายในตอนเช้าถึงเที่ยง
 Good afternoon = สวัสดีตอนเช้า ใช้พูดทักทายในตอนเที่ยงถึงเย็น

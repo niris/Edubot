@@ -1,7 +1,7 @@
 ---
 title: การแนะนำตัว
 description: 
-icon: /media/icons/ecology.png
+icon: /media/icons/introduction.svg
 tags: {type:lesson,group:conversation,group:listening}
 ---
 

@@ -51,8 +51,8 @@ if ('serviceWorker' in navigator) {
 <main class="container">
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full">
-		<router-link to="/category" v-if="is('admin','user')"><s>book</s> บทเรียน</router-link>
-		<router-link to="/category/type:vocab" v-if="is('admin','user')"><s>bookmark</s> vocab</router-link>
+		<router-link to="/category" v-if="is('admin','user')"><s>book</s>บทเรียน</router-link>
+		<router-link to="/category/type:vocab" v-if="is('admin','user')"><s>bookmark</s>คำศัพท์</router-link>
 		<router-link to="/user/" v-if="is('admin')"><s>group</s> Users</router-link>
 		<router-link to="/sign" v-if="is('admin','user')"><s>bust</s> {{$root.id}}</router-link>
 		<router-link to="/sign" v-if="is(null)"><s>star</s> Sign Up</router-link>

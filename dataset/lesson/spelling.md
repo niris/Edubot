@@ -1,8 +1,8 @@
 ---
 title: การสะกดคำ
 description: 
-icon: /media/icons/ecology.png
-tags: {easy,demo,example,lesson}
+icon: /media/icons/lesson.svg
+tags: {easy,demo,example,lesson,subgroup:pos,group:grammar}
 ---
 
 <details>

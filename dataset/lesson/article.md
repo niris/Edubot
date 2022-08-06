@@ -1,8 +1,8 @@
 ---
 title: คำนำหน้านาม (a/an/the)
 description: 
-icon: /media/icons/ecology.png
-tags: {type:lesson,group:grammar}
+icon: /media/icons/lesson.svg
+tags: {type:lesson,group:grammar,subgroup:basic}
 ---
 
 ## คำนำหน้านาม (Article)

@@ -1,20 +1,19 @@
 {
   "labels": [
-    "engtothai",
-    "listening",
-    "thaitoeng",
-    "complaint",
-    "compliment",
     "oral",
     "writing",
-    "vocab"
+    "greeting",
+    "compliment",
+    "complaint",
+    "vocab",
+    "listening"
   ],
   "xsShape": [
-    163,
+    1234,
     512
   ],
   "ysShape": [
-    163,
-    8
+    1234,
+    7
   ]
 }

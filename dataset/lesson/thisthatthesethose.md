@@ -1,8 +1,8 @@
 ---
 title: A / An
 description: การใช้คำนำหน้านาม
-icon: /media/icons/ecology.png
-tags: {type:lesson,group:grammar}
+icon: /media/icons/lesson.svg
+tags: {type:lesson,group:grammar,subgroup:basic}
 ---
 
 ## Article

@@ -32,10 +32,10 @@ const DENSE_MODEL_URL = '/static/models/intent/model.json';
 const METADATA_URL = '/static/models/intent/intent_metadata.json';
 let cache; // out of Vue wrapping
 const loadScript = (src) => new Promise(function (onload, onerror) {
-    document.head.appendChild(Object.assign(document.createElement('script'), {src, onload, onerror}));
+    document.head.appendChild(Object.assign(document.createElement('script'), { src, onload, onerror }));
 });
 const BotChat = {
-    data: () => ({ moods: Object.keys(faces), mood: 1, logs: []}),
+    data: () => ({ moods: Object.keys(faces), mood: 1, logs: [] }),
     methods: {
         log: console.log,
         make(mood, time = 1500) {
@@ -44,8 +44,8 @@ const BotChat = {
         },
         async send({ target }) {
             const msg = target.req.value;
-            if(!window.tf)await loadScript('/static/tfjs.js');
-            if(!window.use)await loadScript('/static/universal-sentence-encoder.js');
+            if (!window.tf) await loadScript('/static/tfjs.js');
+            if (!window.use) await loadScript('/static/universal-sentence-encoder.js');
             if (!cache) {
                 const p = await Promise.all([
                     use.load(),
@@ -66,9 +66,15 @@ const BotChat = {
 
             target.req.value = '';
             this.logs.push({ msg });
-            if (msg.match(/(score|level|lv|exp)/i)) {
+            if (msg.match(/(score|level|lv|exp)/gi)) {
                 const score = JSON.parse(localStorage.exams || '[]').length;
                 return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
+            }
+            if (msg.match(/(แปลประโยค|แปล|แปลว่าอะไร|แปลว่า|ความหมายของ)/i)) {
+                const regex = /[A-z]+/gi;
+                const word = msg.match(regex)
+                console.log(word)
+                return this.logs.push({ bot: true, msg: word.join(" ") + " แปลว่า" });
             }
             const classification = await this.classify([tokenized_text]);
             const response = await this.getClassificationMessage(classification);
@@ -96,18 +102,18 @@ const BotChat = {
                 }
             };
             target.onblur = function () {
-                if(!target.classList.contains('live'))return; // already stopped
+                if (!target.classList.contains('live')) return; // already stopped
                 dc?.close();
                 pc.getTransceivers?.().forEach((t) => t.stop?.());
                 pc.getSenders().forEach((s) => s.track.stop());
                 setTimeout(() => pc.close(), 500);
                 target.disabled = false;
                 target.classList.remove('live');
-                send({target:target.form});
+                send({ target: target.form });
             }
-            if(!navigator.mediaDevices && location.protocol == 'http:')
+            if (!navigator.mediaDevices && location.protocol == 'http:')
                 return alert("Media access is only possible in HTTPS !");
-            if(!navigator.mediaDevices)
+            if (!navigator.mediaDevices)
                 return alert("Forbidden Media access !")
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
             stream.getTracks().forEach((t) => pc.addTrack(t, stream));
@@ -137,7 +143,7 @@ const BotChat = {
             return predsArr[0];
         },
         async getClassificationMessage(softmaxArr) {
-            const THRESHOLD = 0.0;
+            const THRESHOLD = 0.15;
             const max = Math.max(...softmaxArr);
             const maxIndex = softmaxArr.indexOf(max);
             const intentLabel = cache.metadata.labels[maxIndex];
@@ -145,7 +151,20 @@ const BotChat = {
             if (max < THRESHOLD) {
                 return '¯\\_(ツ)_/¯';
             } else {
-                return intentLabel
+                return this.getResponse(intentLabel);
+            }
+        },
+        getResponse(intent) {
+            switch (intent) {
+                case "greeting":
+                    const restgreeting = ["สวัสดีมีอะไรให้ช่วยไหม", "Bot, สวัสดีจ้า", "Hello! มีอะไรให้เราช่วยไหม"]
+                    return restgreeting[Math.floor(Math.random() * restgreeting.length)];
+                case "vocab":
+                    const restvocab = ["ไปฝึกศัพท์กันเลย", "โอเค!!!ไปฝึกศัพท์กันเลย", "Let's go!!!!!"]
+                    this.$router.push({ path: '/category/type:vocab' });
+                    return restvocab[Math.floor(Math.random() * restvocab.length)];
+                default:
+                    return "'¯\\_(ツ)_/¯'"
             }
         },
         async wordcut(w) {

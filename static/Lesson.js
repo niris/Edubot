@@ -163,12 +163,31 @@ const LessonList = {
                 <span class="is-center">{{lesson.title}}</span>
             </router-link>
     </div>
+    <div v-for="sg in subgroups">
+        <h1>{{sg.title}}</h1>
+        <div class=grid>
+            <router-link v-for="lesson in sg.list" :to="'/lesson/'+lesson.id" class="card" style="border-radius: 1em">
+                <img :src="$props.tag=='group:grammar'?'/media/icons/'+sg.title+'.svg':'lesson.icon'" style="padding: 15%;" alt="cover">
+                <span class="is-center">{{lesson.title}}</span>
+            </router-link>
+        </div>
+    </div>
     `,
-    data() { return { lessons: null } },
+    data() { return { lessons: null, subgroups: null} },
     watch: {
         tag: {
             handler: async function (tag) {
-                this.lessons = await (await fetch(`/api/lesson?select=id,title,icon&tags=cs.{${tag}}`)).json();
+                this.lessons = await (await fetch(`/api/lesson?select=id,title,icon,tags&tags=cs.{${tag}}`)).json();
+                //TODO: replace lessons with subgroups or delete it!
+                this.subgroups = this.lessons.reduce(function(subgroups,lesson){
+                    lesson.tags.filter(tag=>tag.startsWith('subgroup:')).forEach(l=>{
+                        let title = l.substring('subgroup:'.length)
+                        let existing = subgroups.find(sg=>sg.title==title);
+                        if(existing) existing.list.push(lesson);
+                        else subgroups.push({title:title,list:[lesson]})
+                    })                    
+                    return subgroups
+                },[])
             },
             immediate: true
         }
