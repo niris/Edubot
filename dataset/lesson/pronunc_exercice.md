@@ -2,7 +2,7 @@
 title: ฝึกการออกเสียง
 description: This is a basic exam demo
 icon: /media/icons/pronunciation.svg
-tags: {type:lesson,group:test,group:game}
+tags: {category:test,category:game}
 ---
 
 
@@ -18,7 +18,5 @@ tags: {type:lesson,group:test,group:game}
 
 # อ่านคำศัพท์ในรูปภาพ
 
-![image label](/media/img/animal/goldfish.svg) :
-?[voice](Goldfish)
-
-
+![image label](/media/img/animal/goldfish.svg)
+?[voice](A Goldfish)

@@ -2,7 +2,7 @@
 title: verbose
 description: 
 icon: /media/icons/lesson.svg
-tags: {type:lesson,group:grammar,subgroup:tense}
+tags: {category:grammar,group:tense}
 ---
 
 <details>

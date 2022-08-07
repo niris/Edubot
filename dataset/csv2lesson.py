@@ -17,7 +17,7 @@ title: '''+ category +
 description: 
 icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg\
 
-tags: {easy,type:vocab, group:vocab}
+tags: {easy, category:vocab}
 ---
 
 '''

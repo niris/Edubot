@@ -33,6 +33,7 @@ CREATE TABLE public.profile (
 	"alias" text,
 	"birth" date,
 	"grade" integer,
+	"theme" text DEFAULT '#126359',
 	"progress" JSON -- cleared lessons/exams
 );
 

@@ -2,7 +2,7 @@
 title: Fruit
 description: 
 icon: /media/icons/fruit.svg
-tags: {easy,type:vocab, group:vocab}
+tags: {easy, category:vocab}
 ---
 
 <div class="carrousel">

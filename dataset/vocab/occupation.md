@@ -2,7 +2,7 @@
 title: Occupation
 description: 
 icon: /media/icons/occupation.svg
-tags: {easy,type:vocab, group:vocab}
+tags: {easy, category:vocab}
 ---
 
 <div class="carrousel">

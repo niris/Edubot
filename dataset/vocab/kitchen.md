@@ -2,7 +2,7 @@
 title: Kitchen
 description: 
 icon: /media/icons/kitchen.svg
-tags: {easy,type:vocab, group:vocab}
+tags: {easy, category:vocab}
 ---
 
 <div class="carrousel">

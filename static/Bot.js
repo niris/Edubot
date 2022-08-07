@@ -51,7 +51,7 @@ const BotChat = {
                     use.load(),
                     tf.loadLayersModel(DENSE_MODEL_URL),
                     fetch(METADATA_URL),
-                    fetch('/static/dict.txt'),
+                    fetch(`/static/dict.txt`),
                 ]);
                 cache = {
                     useLoader: p[0],
@@ -67,7 +67,7 @@ const BotChat = {
             target.req.value = '';
             this.logs.push({ msg });
             if (msg.match(/(score|level|lv|exp)/gi)) {
-                const score = JSON.parse(localStorage.exams || '[]').length;
+                const score = JSON.parse(localStorage.progress || '[]').length;
                 return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
             }
             if (msg.match(/(แปลประโยค|แปล|แปลว่าอะไร|แปลว่า|ความหมายของ)/i)) {

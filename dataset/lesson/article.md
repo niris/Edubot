@@ -2,7 +2,7 @@
 title: คำนำหน้านาม (a/an/the)
 description: 
 icon: /media/icons/lesson.svg
-tags: {type:lesson,group:grammar,subgroup:basic}
+tags: {category:grammar,group:basic}
 ---
 
 ## คำนำหน้านาม (Article)

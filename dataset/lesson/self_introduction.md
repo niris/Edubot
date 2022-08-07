@@ -2,7 +2,7 @@
 title: การแนะนำตัว
 description: 
 icon: /media/icons/introduction.svg
-tags: {type:lesson,group:conversation,group:listening}
+tags: {category:conversation,category:listening}
 ---
 
 ## การแนะนำตัว

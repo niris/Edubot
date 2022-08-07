@@ -25,6 +25,7 @@ const listCheckboxRule = (validated) => function (state) {
 const inputRule = (validated) => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
         const matches = [...child.content.matchAll(/\?\[(.*?)\]\((.*?)\)/g)];
+        console.log(matches); //TODO: bug on single word ?!
         return matches.length ? matches.map(([_, content, value]) => [
             new state.Token("label_open", "label", 1),
             Object.assign(new state.Token("text_input", "input", 0), {
@@ -69,11 +70,12 @@ const LessonShow = {
     data() { return { lesson: {} } },
     computed: {
         markdownToHtml() {
+            const progress = Object.keys(JSON.parse(localStorage.progress || '{}'));
             const mi = markdownit({ html: true });
             mi.core.ruler.push("media", mediaRule());
             mi.core.ruler.push("checkbox", checkboxRule());
-            mi.core.ruler.push("input", inputRule(JSON.parse(localStorage.exams || '[]')));
-            mi.core.ruler.push("exam", listCheckboxRule(JSON.parse(localStorage.exams || '[]')));
+            mi.core.ruler.push("input", inputRule(progress));
+            mi.core.ruler.push("exam", listCheckboxRule(progress));
             const html = mi.render(this.lesson.content || '...');
             return html;
         }
@@ -136,7 +138,8 @@ const LessonShow = {
             }
             if (correct) {
                 console.log("TODO: POST /api/progress {name} ?");
-                localStorage.exams = JSON.stringify(JSON.parse(localStorage.exams || '[]').concat(target.name));
+                const progress = JSON.parse(localStorage.progress || '{}');
+                localStorage.progress = JSON.stringify(({...progress, [target.name]:1}));
                 (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             }
         }
@@ -147,47 +150,45 @@ const LessonShow = {
 }
 //URL.createObjectURL(new Blob(Uint8Array.from(s.content.slice(2).match(/../g),a=>parseInt(a,16)), { type: "image/jpeg" } ))
 const LessonList = {
+    __doc__: `List Lesson for a given .category and group them by they .group`,
     props: ['tag'],
     template: `
-    <p v-if="lessons==null">
-        loading
-    </p>
+    <progress v-if="lessons==null"/>
     <p v-else-if="lessons.length===0">
         No lesson with tag {{$props.tag}}. You can Import them with
         <pre>make lesson_init</pre>
         then <a href=>refresh</a> this page.
     </p>
     <div class=grid>
-            <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" class="card" style="border-radius: 1em">
-                <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
-                <span class="is-center">{{lesson.title}}</span>
-            </router-link>
+        <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" class="card">
+            <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
+            <span class="is-center">{{lesson.title}}</span>
+        </router-link>
     </div>
-    <div v-for="sg in subgroups">
-        <h1>{{sg.title}}</h1>
+    <template v-for="group in groups">
+        <h1 class=text-capitalize>{{group.title}}</h1>
         <div class=grid>
-            <router-link v-for="lesson in sg.list" :to="'/lesson/'+lesson.id" class="card" style="border-radius: 1em">
-                <img :src="$props.tag=='group:grammar'?'/media/icons/'+sg.title+'.svg':'lesson.icon'" style="padding: 15%;" alt="cover">
+            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" class="card">
+                <img :src="$props.tag=='category:grammar'?'/media/icons/'+group.title+'.svg':'lesson.icon'" style="padding: 15%;" alt="cover">
                 <span class="is-center">{{lesson.title}}</span>
             </router-link>
         </div>
-    </div>
+    </template>
     `,
-    data() { return { lessons: null, subgroups: null} },
+    data() { return { lessons: null, groups: null } },
     watch: {
         tag: {
             handler: async function (tag) {
-                this.lessons = await (await fetch(`/api/lesson?select=id,title,icon,tags&tags=cs.{${tag}}`)).json();
-                //TODO: replace lessons with subgroups or delete it!
-                this.subgroups = this.lessons.reduce(function(subgroups,lesson){
-                    lesson.tags.filter(tag=>tag.startsWith('subgroup:')).forEach(l=>{
-                        let title = l.substring('subgroup:'.length)
-                        let existing = subgroups.find(sg=>sg.title==title);
-                        if(existing) existing.list.push(lesson);
-                        else subgroups.push({title:title,list:[lesson]})
-                    })                    
-                    return subgroups
-                },[])
+                const lessons = await (await fetch(`/api/lesson?select=id,title,icon,tags&tags=cs.{category:${tag}}`)).json();
+                this.lessons = lessons.filter(lesson => !lesson.tags.find(tag => tag.startsWith('group:')));
+                this.groups = lessons.reduce(function (groups, lesson) {
+                    lesson.tags.filter(tag => tag.startsWith('group:')).map(tuple => tuple.substring('group:'.length)).forEach(title => {
+                        let existing = groups.find(group => group.title == title);
+                        existing ? existing.list.push(lesson) : groups.push({ title, list: [lesson] })
+                    })
+                    return groups
+                }, []);
+                console.log(this.lessons,this.groups);
             },
             immediate: true
         }
@@ -195,20 +196,21 @@ const LessonList = {
 }
 
 const CategoriesList = {
-    //props: ['tag'],
+    __doc__: `List "category:" tags from all lessons`,
     template: `
+    <progress v-if="categories===null"></progress>
+    <p v-else-if="categories.length===0">No category found.</p>
     <div class=grid>
-        <router-link  v-for="category in categories" :to="'/category/group:'+category" class="card" style="border-radius: 1em">
+        <router-link v-for="category in categories" :to="'/category/'+category" class="card">
             <img :src='"/media/icons/"+category+".svg"' style="padding: 15%;" alt="cover">
             <span class="is-center text-capitalize">{{category}}</span>
         </router-link >
     </div>
-    `
-    ,
-    data() { return { categories: [] } },
+    `,
+    data() { return { categories: null } },
     async mounted() {
-        const tags = (await (await fetch(`/api/lesson?select=tags&tags=cs.{type:lesson}`)).json()).map(lesson => lesson.tags);
-        this.categories = new Set(tags.flat().filter(tag => tag.startsWith('group:')).map(tag => tag.substring('group:'.length)))
+        const tags = (await (await fetch(`/api/lesson?select=tags`)).json()).map(lesson => lesson.tags).flat();
+        this.categories = new Set(tags.filter(tag => tag.startsWith('category:')).map(tag => tag.substring('category:'.length)));
     },
 }
 
