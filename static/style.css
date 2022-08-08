@@ -140,6 +140,7 @@ progress{
 }
 
 @media only screen and (max-width: 500px) {
+    main>nav>a>span{display:none}
     .grid {
         grid-template-columns: 1fr 1fr;
     }
