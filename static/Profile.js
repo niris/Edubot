@@ -7,7 +7,7 @@ const Profile = {
 		&nbsp;
 		<small class="tag is-large">Level:{{$root.level}}</small>
 		<blockquote v-if=delta><s>trophy</s> You have earned +{{delta}} !</blockquote>
-		<img :src=overlay style="max-width: 25vmin;margin: auto;display: block;background-repeat:no-repeat;background-image:url(/media/icons/treasure.svg)">
+		<img alt=treasure :src=overlay style="max-width: 25vmin;margin: auto;display: block;background-repeat:no-repeat;background-image:url(/media/icons/treasure.svg)">
 		<div style="position: relative;">
 		<progress :value=$root.percent/100 style="height:15vmin;"></progress>
 		<span style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:5vmin;mix-blend-mode: difference;color: white;">

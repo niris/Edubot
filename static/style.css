@@ -148,6 +148,7 @@ a.card:hover {box-shadow: 0 1px 15px var(--color-grey);}
 }
 
 @media only screen and (max-width: 500px) {
+    main>nav>a>span{display:none}
     .grid {
         grid-template-columns: 1fr 1fr;
     }
