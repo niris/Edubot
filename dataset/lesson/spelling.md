@@ -2,7 +2,7 @@
 title: การสะกดคำ
 description: 
 icon: /media/icons/lesson.svg
-tags: {easy,demo,example,lesson,group:pos,category:grammar}
+tags: {easy,demo,example,lesson,group:pos,category:grammar,lv:1}
 ---
 
 <details>

@@ -2,7 +2,7 @@
 title: Vehicle
 description: 
 icon: /media/icons/vehicle.svg
-tags: {easy, category:vocab}
+tags: {easy, category:vocab,lv:5}
 ---
 
 <div class="carrousel">

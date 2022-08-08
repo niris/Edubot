@@ -2,7 +2,7 @@
 title: Place
 description: 
 icon: /media/icons/place.svg
-tags: {easy, category:vocab}
+tags: {easy, category:vocab,lv:4}
 ---
 
 <div class="carrousel">

@@ -2,7 +2,7 @@
 title: Animal
 description: 
 icon: /media/icons/animal.svg
-tags: {easy, category:vocab}
+tags: {easy, category:vocab,lv:1}
 ---
 
 <div class="carrousel">

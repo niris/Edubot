@@ -2,7 +2,7 @@
 title: Adverb
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:grammar,group:pos}
+tags: {category:grammar,group:pos,lv:3}
 ---
 
 # Adverb

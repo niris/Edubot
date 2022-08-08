@@ -2,7 +2,7 @@
 title: Food
 description: 
 icon: /media/icons/food.svg
-tags: {easy, category:vocab}
+tags: {easy, category:vocab,lv:2}
 ---
 
 <div class="carrousel">

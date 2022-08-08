@@ -2,7 +2,7 @@
 title: ตัวอักษรภาษาอังกฤษ
 description: ตัวอักษรภาษาอังกฤษ
 icon: /media/icons/lesson.svg
-tags: {category:grammar,group:basic}
+tags: {category:grammar,group:basic,lv:1}
 ---
 
 ## ตัวอักษรภาษาอังกฤษมี 24 ตัว

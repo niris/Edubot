@@ -2,7 +2,7 @@
 title: การทักทาย
 description: 
 icon: /media/icons/high-five.svg
-tags: {category:conversation,category:listening}
+tags: {category:conversation,category:listening,lv:1}
 ---
 
 <details>
