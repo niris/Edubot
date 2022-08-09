@@ -169,7 +169,7 @@ const LessonList = {
         <h1 class=text-capitalize>{{group.title}}</h1>
         <div class=grid>
             <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" class="card">
-                <img :src="$props.tag=='category:grammar'?'/media/icons/'+group.title+'.svg':'lesson.icon'" style="padding: 15%;" alt="cover">
+                <img :src="lesson.icon" style="padding: 15%;" alt="cover">
                 <span class="is-center">{{lesson.title}}</span>
             </router-link>
         </div>

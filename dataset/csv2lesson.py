@@ -9,13 +9,14 @@ import random
 if not os.path.exists("vocab"):
     os.makedirs("vocab")
 for filename in os.listdir("csv"):
+    print(filename)
     category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
     newfile.write('''---
 title: '''+ category +
 '''
 description: 
-icon: /media/icons/''' + os.path.splitext(filename)[0] + '''.svg\
+icon: /media/icons/''' + os.path.splitext(filename)[0].replace(" ", "") + '''.svg\
 
 tags: {easy, category:vocab}
 ---
@@ -47,10 +48,11 @@ tags: {easy, category:vocab}
     
     def questionGenerator(questions,choices,number):
         questions_tmp = questions.copy()
+        choicess_tmp = choices.copy()
         for r in range(number):
-            choices_tmp = choices.copy()
+            choices_tmp = choicess_tmp.copy()
             answer_index = random.choice(range(len(questions_tmp)))
-            choices_list = [(choices[answer_index],True)]
+            choices_list = [(choices_tmp[answer_index],True)]
             choices_tmp.pop(answer_index)
             for r in range(3):
                 choice_index = random.choice(range(len(choices_tmp)))
@@ -65,6 +67,8 @@ tags: {easy, category:vocab}
                 else:
                     newfile.write(' - [ ] ' + c[0] + '\n')
             questions_tmp.pop(answer_index)
+            choicess_tmp.pop(answer_index)
+
     
     questionGenerator(vocabs,meanings,2)
     questionGenerator(meanings,vocabs,2)
