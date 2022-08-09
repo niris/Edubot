@@ -48,11 +48,12 @@ CREATE TRIGGER setup_profile AFTER INSERT ON auth.users FOR EACH ROW EXECUTE PRO
 
 grant SELECT ON TABLE public.profile TO "anon";
 grant ALL    ON TABLE public.profile TO "user", "admin";
-ALTER TABLE public.profile ENABLE ROW LEVEL SECURITY;
-DROP POLICY IF EXISTS "user_policy" ON public.profile;
-CREATE POLICY "user_policy" ON public.profile
-  USING ("id" = current_setting('request.jwt.claims', true)::json->>'id') -- visibility rule
-  WITH CHECK ("id" = current_setting('request.jwt.claims', true)::json->>'id'); -- mutation rule
+-- We want user to be able to see each other
+--ALTER TABLE public.profile DISABLE ROW LEVEL SECURITY;
+--DROP POLICY IF EXISTS "user_policy" ON public.profile;
+--CREATE POLICY "user_policy" ON public.profile
+--  USING ("id" = current_setting('request.jwt.claims', true)::json->>'id') -- visibility rule
+--  WITH CHECK ("id" = current_setting('request.jwt.claims', true)::json->>'id'); -- mutation rule
 
 -- debug dataset for role debugging
 insert into auth.users ("id","pass","role") values ('teacher','teacher','admin') ON CONFLICT DO NOTHING;
