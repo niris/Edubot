@@ -2,7 +2,7 @@
 title: ห้องนั่งเล่น
 description: 
 icon: /media/icons/livingroom.svg
-tags: {easy, category:vocab,group:house}
+tags: {category:vocab,group:house}
 ---
 
 <div class="carrousel">

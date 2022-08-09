@@ -2,7 +2,7 @@
 title: ยานพาหนะ
 description: 
 icon: /media/icons/vehicles.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

@@ -2,7 +2,7 @@
 title: โต๊ะอาหาร
 description: 
 icon: /media/icons/onthetable.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

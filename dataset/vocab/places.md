@@ -2,7 +2,7 @@
 title: สถานที่
 description: 
 icon: /media/icons/places.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

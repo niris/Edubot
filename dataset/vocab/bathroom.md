@@ -2,7 +2,7 @@
 title: ห้องน้ำ
 description: 
 icon: /media/icons/bathroom.svg
-tags: {easy, category:vocab,group:house}
+tags: {category:vocab,group:house}
 ---
 
 <div class="carrousel">

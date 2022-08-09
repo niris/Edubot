@@ -2,7 +2,7 @@
 title: อาชีพ
 description: 
 icon: /media/icons/occupations.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

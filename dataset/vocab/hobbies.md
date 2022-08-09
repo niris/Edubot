@@ -2,7 +2,7 @@
 title: งานอดิเรก
 description: 
 icon: /media/icons/hobbies.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

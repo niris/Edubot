@@ -2,7 +2,7 @@
 title: Basic lesson example
 description: This is a basic lesson demo
 icon: /media/icons/lesson.svg
-tags: {easy,demo,example,lesson}
+tags: {demo,example,lesson}
 ---
 
 # Basic lesson example

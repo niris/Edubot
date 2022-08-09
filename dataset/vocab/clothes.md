@@ -2,7 +2,7 @@
 title: เครื่องแต่งกาย
 description: 
 icon: /media/icons/clothes.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

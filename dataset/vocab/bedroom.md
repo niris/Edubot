@@ -2,7 +2,7 @@
 title: ห้องนอน
 description: 
 icon: /media/icons/bedroom.svg
-tags: {easy, category:vocab,group:house}
+tags: {category:vocab,group:house}
 ---
 
 <div class="carrousel">

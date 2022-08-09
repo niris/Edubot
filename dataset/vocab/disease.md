@@ -2,7 +2,7 @@
 title: การเจ็บป่วยต่างๆ
 description: 
 icon: /media/icons/disease.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

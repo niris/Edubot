@@ -2,7 +2,7 @@
 title: อุปกรณ์การเรียน
 description: 
 icon: /media/icons/schoolstuffs.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">

@@ -2,7 +2,7 @@
 title: ส่วนต่างๆของร่างกาย
 description: 
 icon: /media/icons/bodyparts.svg
-tags: {easy, category:vocab}
+tags: {category:vocab}
 ---
 
 <div class="carrousel">
