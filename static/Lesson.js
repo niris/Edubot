@@ -160,9 +160,10 @@ const LessonList = {
         then <a href=>refresh</a> this page.
     </p>
     <div class=grid>
-        <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" class="card">
+        <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" :class="hard(lesson)?'forbidden':'card'">
             <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
-            <span class="is-center">{{lesson.title}}</span>
+            <span class="is-center">{{lesson.title}}&nbsp;
+                <span v-for="tag in lesson.tags.filter(l=>l.startsWith('lv:'))" :class="'tag is-small ' + (hard(lesson)?'bg-error text-light':'text-success')">{{tag}}</span></span>
         </router-link>
     </div>
     <template v-for="group in groups">
@@ -175,6 +176,9 @@ const LessonList = {
         </div>
     </template>
     `,
+    methods:{
+        hard(lesson){return (lesson.tags.find(l=>l.startsWith('lv:'))||'lv:0') >`lv:${this.$root.level}`}
+    },
     data() { return { lessons: null, groups: null } },
     watch: {
         tag: {
@@ -188,7 +192,6 @@ const LessonList = {
                     })
                     return groups
                 }, []);
-                console.log(this.lessons,this.groups);
             },
             immediate: true
         }

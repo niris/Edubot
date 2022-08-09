@@ -5,13 +5,13 @@ const Profile = {
 	<form v-else @input=$event.target.form.submit.disabled=false @submit.prevent=update($event)>
 		<h1 style=display:inline-block>{{$root.id}}</h1>
 		&nbsp;
-		<small class="tag is-large">Level:{{level}}</small>
+		<small class="tag is-large">Level:{{$root.level}}</small>
 		<blockquote v-if=delta><s>trophy</s> You have earned +{{delta}} !</blockquote>
 		<img :src=overlay style="max-width: 25vmin;margin: auto;display: block;background-repeat:no-repeat;background-image:url(/media/icons/treasure.svg)">
 		<div style="position: relative;">
-		<progress :value=percent/100 style="height:15vmin;"></progress>
+		<progress :value=$root.percent/100 style="height:15vmin;"></progress>
 		<span style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:5vmin;mix-blend-mode: difference;color: white;">
-			{{percent}}%
+			{{$root.percent}}%
 		</span>
 		</div>
 		<button class="button error" type=button @click=signOut($event) class=is-full-width><s>logout</s> Sign Out</button>
@@ -36,11 +36,8 @@ const Profile = {
 		<button disabled name=submit type=submit class=is-full-width><s>check</s> Update</button>
 	</form>
 	`,
-	data() { return { me: {}, progress: {}, delta: 0} },
+	data() { return { me: {}, delta: 0} },
 	computed: {
-		xp() { return Object.keys(this.progress).length },
-		level() { return this.xp / 100 | 0 }, //level-up every 100 good response
-		percent() { return this.xp % 100 }, // TODO: use log(2) progression instead of linear(100)
 		overlay() { return this.delta ? shiny : empty}
 	},
 	async mounted() {
@@ -49,7 +46,7 @@ const Profile = {
 		// MERGE and display server<->local delta
 		const merge = {...this.me.progress, ...JSON.parse(localStorage.progress || '{}')};
 		this.delta = Object.keys(merge).length - Object.keys(this.me.progress).length;
-		this.progress = merge;
+		this.$root.progress = merge;
 		localStorage.progress = JSON.stringify(merge);
 		if (this.delta) {
 			this.me.progress = merge;

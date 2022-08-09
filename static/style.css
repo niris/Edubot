@@ -123,15 +123,23 @@ progress{
 }
 
 .carrousel th {
-    min-width: min(calc(var(--grid-maxWidth) * 0.75), 75vw);
+    min-width: min(calc(var(--grid-maxWidth) * 0.99), 99vw);
     scroll-snap-align: start;
 }
-
+.carrousel td {
+    text-transform: capitalize;
+}
 .carrousel img {
     max-height: 50vh;
     /* until all image are squared */
 }
-
+.forbidden {
+    opacity: .5;
+    pointer-events: none;
+    cursor: default;
+}
+a.card{transition: box-shadow 1s;}
+a.card:hover {box-shadow: 0 1px 15px var(--color-grey);}
 .grid {
     display: grid;
     padding: 1em;
