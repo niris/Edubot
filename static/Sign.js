@@ -4,11 +4,11 @@ const Sign = {
 		<img src="/static/favicon.svg" style="display:block;margin:5em auto;max-width:25vmin">
 		<label>
 			<div>Username</div>
-			<input required autocomplete=username name="id">
+			<input required autocomplete=username name="id" autocapitalize="none">
 		</label>
 		<label>
 			<div>Password</div>
-			<input required autocomplete=password name="pass" type="password">
+			<input required autocomplete=password name="pass" autocapitalize="none" type="password">
 		</label>
 		<hr>
 		<button type=submit class=is-full-width>Sign In</button>

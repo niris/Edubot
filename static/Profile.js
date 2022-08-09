@@ -21,16 +21,8 @@ const Profile = {
 			<input v-model=me.theme type=color>
 		</label>
 		<label>
-			<div>FirstName</div>
-			<input v-model=me.firstname autocomplete=given-name>
-		</label>
-		<label>
-			<div>LastName</div>
-			<input v-model=me.lastname autocomplete=family-name>
-		</label>
-		<label>
-			<div>Alias</div>
-			<input v-model=me.alias autocomplete=nickname>
+			<div>Nickname</div>
+			<input v-model=me.alias autocomplete=nickname placeholder="ชื่อ นามสกุล">
 		</label>
 		<label>
 			<div>Birthday</div>

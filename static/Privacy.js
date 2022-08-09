@@ -6,98 +6,29 @@ const Privacy = {
     to us that you fully understand:</p>
   <ul>
     <li> What personal data of yours we collect</li>
-    <li> Why we use your personal data</li>
-    <li> How we share your personal data</li>
-    <li> How long we keep your personal data</li>
-    <li> How we protect your personal data</li>
     <li> How you can exercise your rights</li>
   </ul>
-  <p>If you have any questions regarding this Privacy Policy,
-    settings, or our use of your personal data, you can contact our Customer Service and/or our Data Protection Officer
-    via this form.</p>
   <h2>What personal data of yours we collect</h2>
-  <p>“Personal data” refers to any information that enables us to directly or indirectly identify you.</p>
-  <p>Your personal data can be either directly provided by you,
-    indirectly provided by third parties, or automatically collected by us when you use Analytics by the App. Where
-    we ask you to provide your personal data, we specify those for which collection is mandatory. We thank you for
-    providing us with complete and accurate data. If you do not provide us with complete and accurate data, we may not
-    be able to provide you with the Analytics by the App. You will find the categories of personal data below that we
-    collect in the context of Analytics by the App, for each of them, an indicative list of personal data which may
-    be concerned. Personal data we collect when you sign up for Analytics by the App</p>
   <p>Account data </p>
   <ul>
-    <li>Your login details (user ID, email address and password)</li>
-    <li>Your profile information (username, profile picture)</li>
+    <li>Your login details (user ID, and password)</li>
+    <li>Your profile information (username, level)</li>
     <li>Your settings</li>
   </ul>
-  <p>Please note that during sign-up, you may be required to
-    complete a Google reCAPTCHA, which helps us to secure Analytics by the App. The use of Google reCAPTCHA is
-    subject to Google Privacy Policy and Google Terms of Service.</p>
-  <p>Personal data we collect when you use the Analytics by the App</p>
-  <p>Technical data</p>
+  <p>We use your account data and technical data for the purpose of:</p>
   <ul>
-    <li>Information on your device (type of device you are using,
-      unique device identifier, hardware model, version of the operating system, hardware and software settings, browser
-      type, cookie or similar technology, system language)</li>
-    <li>Information on your navigation on the Analytics by the App
-      (IP address, date and time of connection, pages that you accessed, the date and time you accessed these pages)
-    </li>
-    <li>Information on your internet connection (internet service
-      provider, type of connection: 3G, 4G, 5G, Wi-Fi, xDSL, cable, optical fiber etc.)</li>
-  </ul>
-  <p>Personal data we collect when you contact our Customer Service
-  </p>
-  <p>Request data</p>
-  <ul>
-    <li>Details on your claim or request (including date, time, subject
-      and petition)</li>
-    <li>Content of your exchanges with the Customer Service</li>
-    <li>All data deemed as necessary for handling your claim or request
-    </li>
-  </ul>
-  <p>Why we use your personal data</p>
-  <h2>Why we use your personal data</h2>
-  <p>We use your personal data to enable you to use Analytics by
-    the App, and also to meet our legal and regulatory obligations. In any case, we do not make any automated
-    decisions based solely on automatic processing which produce legal effects on you, or similarly significantly affect
-    you.</p>
-  <p>Further information on how we use cookies and similar
-    technologies can be found in your cookies settings.</p>
-  <p>Providing Analytics by the App</p>
-  <p>We use your account data and technical data for the purpose of
-    enabling you to use Analytics by the App.</p>
-  <p>This use of your personal data is necessary for us to provide
-    Analytics by the App to you, in accordance with the contract which binds us to you.</p>
-  <p>Improving, securing and monitoring Analytics by the App</p>
-  <p>We use your account data and technical data for the purpose
-    of:</p>
-  <ul>
-    <li>Improving existing features and overall performance of
-      Analytics by the App;</li>
-    <li>Developing new features and new services for Analytics by
-      the App;</li>
-    <li>Ensuring the ongoing security, confidentiality, integrity,
-      availability and resilience of Analytics by the App;</li>
-    <li>Measuring and analyzing audience and usage of Analytics by
-      the App.</li>
+    <li>Improving existing features and overall performance of the App;</li>
+    <li>Developing new features and new services for the App;</li>
+    <li>Ensuring the ongoing security, confidentiality, integrity, availability and resilience of the App;</li>
+    <li>Measuring and analyzing audience and usage of the App.</li>
   </ul>
   <p>This use of your personal data is necessary for us to meet our
-    legitimate interest of offering the best service possible to our Analytics by the App users.</p>
-  <p>Handling your requests to Customer Service</p>
-  <p>We use your account data, technical data and request data for
-    the purpose of managing your request to our Customer Service, for instance:</p>
-  <ul>
-    <li>When you contact our Customer Service and submit a technical or
-      functional query;</li>
-    <li>When you want to exercise the statutory rights that you hold
-      over your personal data.</li>
-  </ul>
+    legitimate interest of offering the best service possible to our the App users.</p>
   <p>This use of your personal data is necessary for us to comply
     with our obligations deriving from the contract which binds us to you, or when it comes to your statutory rights
     over your data, with the data protection laws and regulations which we are subject to.</p>
   <h2>How we share your personal data</h2>
-  <p>We share your personal data with the following categories of
-    recipient:</p>
+  <p>We share your personal data with the following categories of recipient:</p>
   <p>Technical providers</p>
   <p>Authorities Purchasers</p>
   <ul>
@@ -137,8 +68,8 @@ const Privacy = {
     data are specified below:</p>
   <p>Purpose</p>
   <ul>
-    <li>Providing Analytics by the App</li>
-    <li>Improving, securing and monitoring Analytics by the App</li>
+    <li>Providing the App</li>
+    <li>Improving, securing and monitoring the App</li>
     <li>Handling your requests to Customer Service</li>
   </ul>
   <p>Data</p>

@@ -5,7 +5,7 @@ const Leaderboard = {
   <thead><tr><th>Name</th><th>Level</th></tr></thead>
   <tbody>
   <tr v-for="profile in profiles">
-    <td>{{profile.id}} <small v-if="profile.firstname && profile.lastname">{{profile.firstname}} {{profile.lastname}}</small></td>
+    <td><s :style="{background:profile.theme,'border-radius': '100%'}">bust</s> {{profile.id}} <small v-if="profile.alias">{{profile.alias}}</small></td>
     <td>{{Object.keys(profile.progress).length/100|0}}</td>
   </tr>
   </tobdy>
