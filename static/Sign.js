@@ -12,6 +12,7 @@ const Sign = {
 		</label>
 		<hr>
 		<button type=submit class=is-full-width>Sign In</button>
+		<p class="is-center">See our &nbsp;<router-link to="/privacy">Privacy policy</router-link>.</p>
 	</form>
 	`,
 	mounted() {

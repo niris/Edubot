@@ -21,6 +21,8 @@ import { Profile } from '/static/Profile.js'
 import { Leaderboard } from '/static/Leaderboard.js'
 import { LessonList, LessonShow, CategoriesList } from '/static/Lesson.js'
 import { BotChat } from '/static/Bot.js'
+import { Privacy } from '/static/Privacy.js'
+
 const routes = [
 	{ path:'/', redirect: ()=> document.cookie ? '/me' : '/sign'},
 	{ path:'/sign', component: Sign },
@@ -29,6 +31,7 @@ const routes = [
 	{ path:'/category/:tag', component: LessonList, props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
 	{ path:'/leaderboard', component: Leaderboard},
+	{ path:'/privacy', component: Privacy},
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({
