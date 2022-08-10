@@ -70,7 +70,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 		<router-link to="/user/" v-if="is('admin')"><s>group</s><span>Users</span></router-link>
 		<router-link to="/me" v-if="is('admin','user')"><s>bust</s><span>{{$root.id}}</span> <span class="tag is-small" :title="'xp:'+xp">Lv:{{level}}</span></router-link>
 		<router-link to="/sign" v-if="is(null)"><s>star</s><span>Sign Up</span></router-link>
-		<router-link to="/leaderboard" v-if="is('admin','user')"><s>trophy</s><span>Leaderboard</span></router-link>
+		<router-link to="/leaderboard" v-if="is('admin','user')"><s>trophy</s><span>Top 10</span></router-link>
 	</nav>	
 	<router-view :key="$route.fullPath"></router-view>
 	<bot-chat ref="bot" v-if="is('admin','user')"></bot-chat>
