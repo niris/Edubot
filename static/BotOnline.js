@@ -16,7 +16,7 @@ const faces = {
         `${face}M2,3L2,4L3,4L3,3M6,5L6,4L5,4L5,5M3,6L3,7L5,7L5,6`
     ],
 };
-const BotFace = {
+const BotOnlineFace = {
     props: { mood: { type: String, default: 'quiet' } },
     data: () => ({ faces, frame: 0 }),
     methods: {
@@ -34,7 +34,7 @@ let cache; // out of Vue wrapping
 const loadScript = (src) => new Promise(function (onload, onerror) {
     document.head.appendChild(Object.assign(document.createElement('script'), { src, onload, onerror }));
 });
-const BotChat = {
+const BotOnlineChat = {
     data: () => ({ moods: Object.keys(faces), mood: 1, logs: [] }),
     methods: {
         log: console.log,
@@ -44,28 +44,9 @@ const BotChat = {
         },
         async send({ target }) {
             const msg = target.req.value;
-            const tokens = await this.wordcut(msg);
-            let tokenized_text = tokens.join(" ")
-            this.logs.push({ msg });
-
-            if (!window.tf) await loadScript('/static/tfjs.js');
-            if (!window.use) await loadScript('/static/universal-sentence-encoder.js');
-            if (!cache) {
-                const p = await Promise.all([
-                    use.load(),
-                    tf.loadLayersModel(DENSE_MODEL_URL),
-                    fetch(METADATA_URL),
-                    fetch(`/static/dict.txt`),
-                ]);
-                cache = {
-                    useLoader: p[0],
-                    model: p[1],
-                    metadata: await p[2].json(),
-                    dict: (await p[3].text()).split(/\n/)
-                };
-            }
 
             target.req.value = '';
+
             if (msg.match(/(score|level|lv|exp)/gi)) {
                 const score = JSON.parse(localStorage.progress || '[]').length;
                 return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
@@ -76,8 +57,10 @@ const BotChat = {
                 console.log(word)
                 return this.logs.push({ bot: true, msg: word.join(" ") + " แปลว่า" });
             }
-            const classification = await this.classify([tokenized_text]);
-            const response = await this.getClassificationMessage(classification);
+            else
+                this.logs.push({ msg });
+
+            const response = await this.classify(msg, 'th');
             setTimeout(() => this.logs.push({ bot: true, msg: `${response}` }), 500)
             this.make(this.moods[this.mood++ % this.moods.length]);
         },
@@ -132,61 +115,17 @@ const BotChat = {
             }
             setTimeout(target.onblur, 5000);
         },
-        async classify(sentences) {
-            const activations = await cache.useLoader.embed(sentences);
-            const prediction = cache.model.predict(activations);
-            const predsArr = await prediction.array();
-            //const preview = [predsArr[0].slice()];
-            //preview.unshift(cache.metadata.labels);
-            //console.table(preview);
-            tf.dispose([activations, prediction]);
-            return predsArr[0];
-        },
-        async getClassificationMessage(softmaxArr) {
-            const THRESHOLD = 0.15;
-            const max = Math.max(...softmaxArr);
-            const maxIndex = softmaxArr.indexOf(max);
-            const intentLabel = cache.metadata.labels[maxIndex];
-
-            if (max < THRESHOLD) {
-                return '¯\\_(ツ)_/¯';
-            } else {
-                return this.getResponse(intentLabel);
-            }
-        },
-        getResponse(intent) {
-            switch (intent) {
-                case "greeting":
-                    const restgreeting = ["สวัสดีมีอะไรให้ช่วยไหม", "Bot, สวัสดีจ้า", "Hello! มีอะไรให้เราช่วยไหม"]
-                    return restgreeting[Math.floor(Math.random() * restgreeting.length)];
-                case "vocab":
+        async classify(text, language_code) {
+            const res = await (await fetch(`/dialog?${new URLSearchParams({text, language_code})}`)).json()
+            console.log(res, res.intent)
+            switch (res.intent) {
+                case "Vocab":
                     const restvocab = ["ไปฝึกศัพท์กันเลย", "โอเค!!!ไปฝึกศัพท์กันเลย", "Let's go!!!!!"]
                     this.$router.push({ path: '/category/type:vocab' });
                     return restvocab[Math.floor(Math.random() * restvocab.length)];
                 default:
-                    return "'¯\\_(ツ)_/¯'"
+                    return res.response
             }
-        },
-        async wordcut(w) {
-            const arr = []
-            for (let i = 0; i < w.length;) {
-                let sub = []
-                cache.dict.forEach(v2 => {
-                    if (w[i] + w[i + 1] === v2[0] + v2[1]) sub.push([v2, v2.length])
-                })
-                sub.sort((a, b) => b[1] - a[1])
-                for (let ii = 0; ii < sub.length; ii++) {
-                    const l = sub[ii][1] + i
-                    const s = w.substring(i, l)
-                    if (sub[ii][0] === s) {
-                        i = l - 1
-                        arr.push(s)
-                        ii = sub.length
-                    }
-                }
-                i++
-            }
-            return arr
         },
         md: (txt) => markdownit('default').render(txt),
     },
@@ -194,7 +133,7 @@ const BotChat = {
     <form class=chatbot @submit.prevent=send>
         <output v-for="log in logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user text-grey')" v-html="md(log.msg)"></output>
         <details class=field>
-            <summary><BotFace ref=face></BotFace></summary>
+            <summary><BotOnlineFace ref=face></BotOnlineFace></summary>
             <nav>
                 <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=flush>
                 <input type=button @click="listen({target:$refs.req})" class="button icon-only picon" value=microphone>
@@ -203,6 +142,6 @@ const BotChat = {
             </nav>
         </details>
     </form>`,
-    components: { BotFace }
+    components: { BotOnlineFace }
 }
-export { BotFace, BotChat }
+export { BotOnlineFace, BotOnlineChat }
