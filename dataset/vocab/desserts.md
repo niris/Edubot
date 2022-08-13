@@ -2,7 +2,7 @@
 title: ขนมหวาน
 description: 
 icon: /media/icons/desserts.svg
-tags: {category:vocab}
+tags: {category:vocab, group:foods and drinks}
 ---
 
 <div class="carrousel">

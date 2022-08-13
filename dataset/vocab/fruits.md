@@ -2,7 +2,7 @@
 title: ผลไม้
 description: 
 icon: /media/icons/fruits.svg
-tags: {category:vocab}
+tags: {category:vocab,group:foods and drinks}
 ---
 
 <div class="carrousel">
