@@ -2,7 +2,7 @@
 title: สมาชิกในครอบครัว
 description: 
 icon: /media/icons/familymembers.svg
-tags: {category:vocab}
+tags: {category:vocab,group:house}
 ---
 
 <div class="carrousel">

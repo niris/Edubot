@@ -5,10 +5,11 @@ Generate multiple lesson from a csv
 import os
 import csv
 import random
+import shutil
 
 if not os.path.exists("vocab"):
     os.makedirs("vocab")
-for filename in os.listdir("csv"):
+for filename in os.listdir("csv/togenerate/vocab"):
     print(filename)
     category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
@@ -24,7 +25,7 @@ tags: {easy, category:vocab}
 '''
     )
     newfile.write('<div class="carrousel">\n\n')
-    with open(os.path.join("csv", filename), 'r') as f: 
+    with open(os.path.join("csv/togenerate/vocab", filename), 'r') as f: 
         print("filename " + filename)
         csvreader = csv.reader(f)
         vocabs = []
@@ -68,6 +69,7 @@ tags: {easy, category:vocab}
                     newfile.write(' - [ ] ' + c[0] + '\n')
             questions_tmp.pop(answer_index)
             choicess_tmp.pop(answer_index)
+    shutil.move(os.path.join("csv/togenerate/vocab",filename),"csv/togenerate/audio")
 
     
     questionGenerator(vocabs,meanings,2)

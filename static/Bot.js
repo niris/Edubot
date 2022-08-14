@@ -44,6 +44,10 @@ const BotChat = {
         },
         async send({ target }) {
             const msg = target.req.value;
+            const tokens = await this.wordcut(msg);
+            let tokenized_text = tokens.join(" ")
+            this.logs.push({ msg });
+
             if (!window.tf) await loadScript('/static/tfjs.js');
             if (!window.use) await loadScript('/static/universal-sentence-encoder.js');
             if (!cache) {
@@ -61,11 +65,7 @@ const BotChat = {
                 };
             }
 
-            const tokens = await this.wordcut(msg);
-            let tokenized_text = tokens.join(" ")
-
             target.req.value = '';
-            this.logs.push({ msg });
             if (msg.match(/(score|level|lv|exp)/gi)) {
                 const score = JSON.parse(localStorage.progress || '[]').length;
                 return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });

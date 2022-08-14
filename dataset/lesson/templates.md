@@ -2,7 +2,7 @@
 title: template
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:grammar}
+tags: {}
 ---
 
 <details>

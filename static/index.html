@@ -20,7 +20,7 @@ import { Sign } from '/static/Sign.js'
 import { Profile } from '/static/Profile.js'
 import { Leaderboard } from '/static/Leaderboard.js'
 import { LessonList, LessonShow, CategoriesList } from '/static/Lesson.js'
-import { BotChat } from '/static/Bot.js'
+import { BotOnlineChat } from '/static/BotOnline.js'
 import { Privacy } from '/static/Privacy.js'
 
 const routes = [
@@ -52,7 +52,7 @@ const app = Vue.createApp({
 	},
 });
 app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory(), linkActiveClass: 'active'}));
-app.component('bot-chat', BotChat);
+app.component('bot-chat', BotOnlineChat);
 app.mount('main');
 console.debug(app);
 if ('serviceWorker' in navigator) {
