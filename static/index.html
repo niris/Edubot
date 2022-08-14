@@ -35,14 +35,16 @@ const routes = [
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({
-	data() { return {role: null, id: null, progress: {}, theme: localStorage.theme || `#126359`} },
+	data() { return {
+		role: null, id: null, theme: localStorage.theme || `#126359`,
+		progress: JSON.parse(localStorage.progress || '{}')
+	} },
 	mounted() { this.log(); },
 	computed: {
-		xp() { return Object.keys(this.progress).length },
-		level() { return this.xp / 100 | 0 }, //level-up every 100 good response
-		percent() { return this.xp % 100 }, // TODO: use log(2) progression instead of linear(100)
+		xp() { return 1 + Object.keys(this.progress).length }, //XP:0 create log2(0)/pow(0) cornercase
 	},
 	methods: {
+		level(xp) { return Math.min(11, Math.log2(xp) | 0); },
 		is(...roles) { return roles.includes(this.role); },
 		log() {
 			const cookie = Object.fromEntries(document.cookie.split('; ').map(x => x.split('=')));
@@ -54,7 +56,6 @@ const app = Vue.createApp({
 app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory(), linkActiveClass: 'active'}));
 app.component('bot-chat', BotOnlineChat);
 app.mount('main');
-console.debug(app);
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/worker.js').then(console.debug);
 }
@@ -65,12 +66,12 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 <main class="container">
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full" style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
-		<router-link to="/category" v-if="is('admin','user')"><s>book</s><span>บทเรียน</span></router-link>
-		<router-link to="/category/vocab" v-if="is('admin','user')"><s>bookmark</s><span>คำศัพท์</span></router-link>
-		<router-link to="/user/" v-if="is('admin')"><s>group</s><span>Users</span></router-link>
-		<router-link to="/me" v-if="is('admin','user')"><s>bust</s><span>{{$root.id}}</span> <span class="tag is-small" :title="'xp:'+xp">Lv:{{level}}</span></router-link>
-		<router-link to="/sign" v-if="is(null)"><s>star</s><span>Sign Up</span></router-link>
-		<router-link to="/leaderboard" v-if="is('admin','user')"><s>trophy</s><span>Leaderboard</span></router-link>
+		<router-link to="/category" v-if="is('admin','user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
+		<router-link to="/category/vocab" v-if="is('admin','user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
+		<router-link to="/user/" v-if="is('admin')"><s>group</s>&nbsp;<span>Users</span></router-link>
+		<router-link to="/me" v-if="is('admin','user')"><s>bust</s>&nbsp;<span>{{$root.id}}</span> <span class="tag is-small" :title="'xp:'+xp">Lv:{{level(xp)}}</span></router-link>
+		<router-link to="/sign" v-if="is(null)"><s>star</s>&nbsp;<span>Sign Up</span></router-link>
+		<router-link to="/leaderboard" v-if="is('admin','user')"><s>trophy</s>&nbsp;<span>Leaderboard</span></router-link>
 	</nav>	
 	<router-view :key="$route.fullPath"></router-view>
 	<bot-chat ref="bot" v-if="is('admin','user')"></bot-chat>

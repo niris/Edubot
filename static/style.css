@@ -4,7 +4,11 @@
     /* avoid FOIT */
     font-display: swap;
 }
-
+@keyframes hscrolling {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+}
 :root {
     --grid-maxWidth: 80rem;
     /*--color-primary: #1A8D7E; set by JS from userprofile */
@@ -133,10 +137,15 @@ progress{
     max-height: 50vh;
     /* until all image are squared */
 }
-.forbidden {
+.done,.forbidden {
     opacity: .5;
     pointer-events: none;
     cursor: default;
+}
+.done::before{
+    content:'✓';
+    position: absolute;
+    font-size: 4em;
 }
 a.card{transition: box-shadow 1s;}
 a.card:hover {box-shadow: 0 1px 15px var(--color-grey);}
@@ -153,7 +162,23 @@ a.card:hover {box-shadow: 0 1px 15px var(--color-grey);}
         grid-template-columns: 1fr 1fr;
     }
 }
-
+li>label{
+    user-select: none;
+}
 .grid img[height][width]{
     aspect-ratio: attr(width) / attr(height);
+}
+@keyframes spirit {
+    0% { transform: translate(0, 150px); opacity: 0}
+    50% { transform: translate(0, -50px); opacity: 1}
+    100% { transform: translate(0, -100px); opacity: 0}
+}
+[data-delta]::before{
+    content:' +'attr(data-delta);
+    position: absolute;
+    font-size: 15em;
+    color: springgreen;
+    text-shadow: 0 0 5px black;
+    animation: spirit 2s;
+    animation-fill-mode: forwards;
 }

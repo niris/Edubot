@@ -136,12 +136,17 @@ const LessonShow = {
                 }
                 correct = [...inputs].every(c => c.checked == (c.dataset.checked !== undefined));
             }
-            if (correct) {
-                console.log("TODO: POST /api/progress {name} ?");
-                const progress = JSON.parse(localStorage.progress || '{}');
-                localStorage.progress = JSON.stringify(({...progress, [target.name]:1}));
-                (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
+            if (!correct) return;
+            const progress = JSON.parse(localStorage.progress || '{}');
+            progress[target.name] = 1;
+            (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
+            const remain = target.form.querySelector('input:not([disabled])');
+            if (!remain) {
+                progress[location.pathname] = 1;
             }
+            new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg').play();
+            this.$root.progress = progress;
+            localStorage.progress = JSON.stringify(progress);
         }
     },
     async mounted() {
@@ -160,24 +165,30 @@ const LessonList = {
         then <a href=>refresh</a> this page.
     </p>
     <div class=grid>
-        <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" :class="hard(lesson)?'forbidden':'card'">
+        <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" :class=reachable(lesson)>
             <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
             <span class="is-center">{{lesson.title}}&nbsp;
-                <span v-for="tag in lesson.tags.filter(l=>l.startsWith('lv:'))" :class="'tag is-small ' + (hard(lesson)?'bg-error text-light':'text-success')">{{tag}}</span></span>
+                <span v-for="tag in lesson.tags.filter(l=>l.startsWith('lv:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span></span>
         </router-link>
     </div>
     <template v-for="group in groups">
         <h1 class=text-capitalize>{{group.title}}</h1>
         <div class=grid>
-            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" class="card">
+            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class=reachable(lesson)>
                 <img :src="lesson.icon" style="padding: 15%;" alt="cover">
                 <span class="is-center">{{lesson.title}}</span>
             </router-link>
         </div>
     </template>
     `,
-    methods:{
-        hard(lesson){return (lesson.tags.find(l=>l.startsWith('lv:'))||'lv:0') >`lv:${this.$root.level}`}
+    methods: {
+        reachable(lesson) {
+            if((lesson.tags.find(l => l.startsWith('lv:')) || 'lv:0') > `lv:${this.$root.level(this.$root.xp)}`)
+                return 'forbidden';
+            if(JSON.parse(localStorage.progress)[`/lesson/${lesson.id}`] !== undefined)
+                return 'done';
+            return 'card'
+        }
     },
     data() { return { lessons: null, groups: null } },
     watch: {

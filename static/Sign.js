@@ -25,6 +25,7 @@ const Sign = {
 			if (auth.status == 409) {
 				auth = await fetch('/api/rpc/login', { method: 'POST', body });
 			} else {
+				console.log(body);
 				alert(`User ${body.username} created !`);
 			}
 			if (auth.ok) {

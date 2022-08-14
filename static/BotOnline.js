@@ -48,7 +48,7 @@ const BotOnlineChat = {
             target.req.value = '';
 
             if (msg.match(/(score|level|lv|exp)/gi)) {
-                const score = JSON.parse(localStorage.progress || '[]').length;
+                const score = Object.keys(JSON.parse(localStorage.progress || '{}')).length;
                 return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
             }
             if (msg.match(/(แปลประโยค|แปล|แปลว่าอะไร|แปลว่า|ความหมายของ)/i)) {
