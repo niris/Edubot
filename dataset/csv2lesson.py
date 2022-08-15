@@ -12,14 +12,14 @@ if not os.path.exists("vocab"):
 for filename in os.listdir("csv/togenerate/vocab"):
     print(filename)
     category = os.path.splitext(filename)[0]
-    newfile = open(os.path.join("vocab",os.path.splitext(filename)[0]+".md"), "w")
+    newfile = open(os.path.join("vocab",os.path.splitext(filename)[0].replace(" ", "")+".md"), "w")
     newfile.write('''---
 title: '''+ category +
 '''
 description: 
 icon: /media/icons/''' + os.path.splitext(filename)[0].replace(" ", "") + '''.svg\
 
-tags: {easy, category:vocab}
+tags: { category:2vocab,level:0 }
 ---
 
 '''
@@ -33,11 +33,11 @@ tags: {easy, category:vocab}
         img = []
         audio = []
         for row in csvreader:
-            vocab = row[0].replace(" ", "&#x20;")
+            vocab = row[0]
             vocabs.append(vocab)
             meanings.append(row[1])
-            img.append('![]('+os.path.join("/media/img",category,vocab+'.svg')+')')
-            audio.append('![]('+os.path.join("/media/audio",vocab+'.mp3')+')')
+            img.append('![]('+os.path.join("/media/img",category,vocab.replace(" ", "&#x20;")+'.svg')+')')
+            audio.append('![]('+os.path.join("/media/audio",vocab.replace(" ", "&#x20;")+'.mp3')+')')
         newfile.write('\n|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
             newfile.write(" :----: |")

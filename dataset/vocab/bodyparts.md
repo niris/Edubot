@@ -1,14 +1,14 @@
 ---
-title: ส่วนต่างๆของร่างกาย
+title: body parts
 description: 
 icon: /media/icons/bodyparts.svg
-tags: {category:vocab}
+tags: { category:2vocab,level:2 }
 ---
 
 <div class="carrousel">
 
 
-|![](/media/img/bodyparts/arm.svg)|![](/media/img/bodyparts/hand.svg)|![](/media/img/bodyparts/stomach.svg)|![](/media/img/bodyparts/leg.svg)|![](/media/img/bodyparts/ear.svg)|![](/media/img/bodyparts/neck.svg)|![](/media/img/bodyparts/nose.svg)|![](/media/img/bodyparts/hair.svg)|![](/media/img/bodyparts/chest.svg)|![](/media/img/bodyparts/face.svg)|![](/media/img/bodyparts/mouth.svg)|![](/media/img/bodyparts/eye.svg)|![](/media/img/bodyparts/shoulder.svg)|![](/media/img/bodyparts/head.svg)|![](/media/img/bodyparts/foot.svg)|
+|![](/media/img/body parts/arm.svg)|![](/media/img/body parts/hand.svg)|![](/media/img/body parts/stomach.svg)|![](/media/img/body parts/leg.svg)|![](/media/img/body parts/ear.svg)|![](/media/img/body parts/neck.svg)|![](/media/img/body parts/nose.svg)|![](/media/img/body parts/hair.svg)|![](/media/img/body parts/chest.svg)|![](/media/img/body parts/face.svg)|![](/media/img/body parts/mouth.svg)|![](/media/img/body parts/eye.svg)|![](/media/img/body parts/shoulder.svg)|![](/media/img/body parts/head.svg)|![](/media/img/body parts/foot.svg)|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 |arm|hand|stomach|leg|ear|neck|nose|hair|chest|face|mouth|eye|shoulder|head|foot|
 |แขน|มือ|ท้อง|ขา|หู|คอ|จมูก|ผม|หน้าอก|หน้า|ปาก|ตา|ไหล่|หัว|เท้า|
@@ -21,26 +21,26 @@ tags: {category:vocab}
 # แบบฝึกหัด
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **nose**
- - [ ] คอ
- - [x] จมูก
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **leg**
+ - [x] ขา
+ - [ ] จมูก
+ - [ ] ตา
+ - [ ] แขน
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **hair**
+ - [ ] ตา
+ - [x] ผม
  - [ ] มือ
- - [ ] หน้าอก
+ - [ ] เท้า
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **chest**
- - [ ] คอ
- - [ ] ปาก
- - [ ] หน้า
- - [x] หน้าอก
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ปาก**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **คอ**
  - [ ] chest
- - [ ] ear
- - [x] mouth
- - [ ] shoulder
+ - [ ] head
+ - [ ] mouth
+ - [x] neck
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เท้า**
- - [x] foot
- - [ ] hand
- - [ ] neck
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **แขน**
+ - [x] arm
+ - [ ] ear
+ - [ ] mouth
  - [ ] stomach
