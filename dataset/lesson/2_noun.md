@@ -2,7 +2,7 @@
 title: Noun
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:6grammar,group:pos,lv:2}
+tags: {category:6grammar,group:pos,level:2}
 ---
 
 <details>

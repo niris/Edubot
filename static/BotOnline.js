@@ -1,47 +1,10 @@
-const face = `M1,8L1,2L2,2L2,0L3,0L3,2L5,2L5,0L6,0L6,2L7,2L7,8`;
-const faces = {
-    sad: [`${face}M2,4L3,4L3,3M6,4L5,3L5,4M3,5L2,7L6,7L5,5`],
-    quiet: [`${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M3,6L3,7L5,7L5,6`],
-    happy: [`${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M2,5L3,7L5,7L6,5`],
-    surprised: [`${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M3,5L3,7L5,7L5,5`],
-    speaking: [
-        `${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M2,5L2,7L6,7L6,5`,
-        `${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M2,6L2,7L6,7L6,6`,
-    ],
-    wistle: [
-        `${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M2,5L2,6L4,6L4,5`,
-        `${face}M2,3L2,4L3,4L3,3M6,4L6,3L5,3L5,4M2,5L2,6L3,6L3,5`,
-    ],
-    confused: [
-        `${face}M2,3L2,4L3,4L3,3M6,5L6,4L5,4L5,5M3,6L3,7L5,7L5,6`
-    ],
-};
-const BotOnlineFace = {
-    props: { mood: { type: String, default: 'quiet' } },
-    data: () => ({ faces, frame: 0 }),
-    methods: {
-        toSvg: (path) => `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" fill="white"><path d="${path}"></path></svg>`
-    },
-    template: `<img width=64 height=64 :alt=mood :src=toSvg(faces[mood][frame%faces[mood].length])>`,
-    mounted() {
-        setInterval(() => this.frame++, 750);
-    }
-}
-
-const DENSE_MODEL_URL = '/static/models/intent/model.json';
-const METADATA_URL = '/static/models/intent/intent_metadata.json';
-let cache; // out of Vue wrapping
-const loadScript = (src) => new Promise(function (onload, onerror) {
-    document.head.appendChild(Object.assign(document.createElement('script'), { src, onload, onerror }));
-});
 const BotOnlineChat = {
-    data: () => ({ moods: Object.keys(faces), mood: 1, logs: [] }),
+    data: () => ({ logs: [] }),
+    computed: {
+        last_logs() {return this.logs.slice(-3)}
+    },
     methods: {
         log: console.log,
-        make(mood, time = 1500) {
-            this.$refs.face.$props.mood = mood;
-            setTimeout(() => this.$refs.face.$props.mood = "quiet", time);
-        },
         async send({ target }) {
             const msg = target.req.value;
 
@@ -62,7 +25,6 @@ const BotOnlineChat = {
 
             const response = await this.classify(msg, 'th');
             setTimeout(() => this.logs.push({ bot: true, msg: `${response}` }), 500)
-            this.make(this.moods[this.mood++ % this.moods.length]);
         },
         async listen({ target }) {
             const send = this.send;
@@ -131,9 +93,15 @@ const BotOnlineChat = {
     },
     template: `
     <form class=chatbot @submit.prevent=send>
-        <output v-for="log in logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user text-grey')" v-html="md(log.msg)"></output>
+        <output v-for="log in last_logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user text-grey')" v-html="md(log.msg)"></output>
         <details class=field>
-            <summary><BotOnlineFace ref=face></BotOnlineFace></summary>
+            <summary>
+            <svg class=bot xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 492 492">
+                <path style="opacity:.7" d="m 119,177 c 0,-11 26,-20 37,-23 24,-7 54,-11 83,-11 29,0 59,4 83,11 11,3 37,12 37,23 l -0,19 63,-25 c 3,-1 5,-3 5,-5 0,-1 -1,-4 -4,-5 L 255,68 c -8,-4 -22,-4 -30,0 L 55,160 c -3,1 -5,3 -4,5 0,1 2,3 5,5 l 63,25 z m 0,0"/>
+                <path style="opacity:.7" d="M 241,151 A 138,137 0 0 0 102,289 138,137 0 0 0 241,426 138,137 0 0 0 379,289 138,137 0 0 0 241,151 Z m 54,117 a 22,22 0 0 1 22,22 22,22 0 0 1 -22,22 22,22 0 0 1 -22,-22 22,22 0 0 1 22,-22 z m -107,0 a 22,22 0 0 1 22,22 22,22 0 0 1 -22,22 22,22 0 0 1 -22,-22 22,22 0 0 1 22,-22 z" />
+                <path style="opacity:.9" d="m 129,225 c -37,0 -68,30 -68,68 0,37 30,68 68,68 h 211 c 37,0 68,-30 68,-68 0,-37 -30,-68 -68,-68 z m 165,43 a 22,22 0 0 1 22,22 22,22 0 0 1 -22,22 22,22 0 0 1 -22,-22 22,22 0 0 1 22,-22 z m -108,0 a 22,22 0 0 1 22,22 22,22 0 0 1 -22,22 22,22 0 0 1 -22,-22 22,22 0 0 1 22,-22 z" />
+            </svg>
+            </summary>
             <nav>
                 <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=flush>
                 <input type=button @click="listen({target:$refs.req})" class="button icon-only picon" value=microphone>
@@ -142,6 +110,5 @@ const BotOnlineChat = {
             </nav>
         </details>
     </form>`,
-    components: { BotOnlineFace }
 }
-export { BotOnlineFace, BotOnlineChat }
+export { BotOnlineChat }

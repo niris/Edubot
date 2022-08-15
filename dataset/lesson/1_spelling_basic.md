@@ -2,7 +2,7 @@
 title: Noun
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:1phonics,lv:2}
+tags: {category:1phonics,level:2}
 ---
 
 <details>

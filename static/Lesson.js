@@ -123,7 +123,6 @@ const LessonShow = {
             setTimeout(target.onblur, 5000);
         },
         validate({ target }) {
-            this.$root.$refs.bot.make('happy');
             const inputs = target.form[target.name];
             let correct = false;
             if (inputs.constructor == HTMLInputElement) {
@@ -144,7 +143,7 @@ const LessonShow = {
             if (!remain) {
                 progress[location.pathname] = 1;
             }
-            new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg').play();
+            Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
             this.$root.progress = progress;
             localStorage.progress = JSON.stringify(progress);
         }
@@ -158,51 +157,57 @@ const LessonList = {
     __doc__: `List Lesson for a given .category and group them by they .group`,
     props: ['tag'],
     template: `
-    <progress v-if="lessons==null"/>
-    <p v-else-if="lessons.length===0">
-        No lesson with tag {{$props.tag}}. You can Import them with
+    <progress v-if="groups==null"/>
+    <p v-else-if="groups.length===0">
+        No group/lesson with tag {{$props.tag}}. You can Import them with
         <pre>make lesson_init</pre>
         then <a href=>refresh</a> this page.
     </p>
-    <div class=grid>
-        <router-link v-for="lesson in lessons" :to="'/lesson/'+lesson.id" :class=reachable(lesson)>
-            <img :src="lesson.icon||'/media/icons/kitchen.png'" style="padding: 15%;" alt="cover">
-            <span class="is-center">{{lesson.title}}&nbsp;
-                <span v-for="tag in lesson.tags.filter(l=>l.startsWith('lv:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span></span>
-        </router-link>
-    </div>
     <template v-for="group in groups">
         <h1 class=text-capitalize>{{group.title}}</h1>
         <div class=grid>
             <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class=reachable(lesson)>
+                <span style="text-align:center" v-for="tag in lesson.tags.filter(l=>l.startsWith('level:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span>
                 <img :src="lesson.icon" style="padding: 15%;" alt="cover">
-                <span class="is-center">{{lesson.title}}</span>
+                <span class="text-capitalize is-center">{{lesson.title}}</span>
             </router-link>
         </div>
     </template>
     `,
     methods: {
+        level(lesson) {
+            return +(lesson.tags.find(l => l.startsWith('level:')) || 'level:0').slice("level:".length)
+        },
         reachable(lesson) {
-            if((lesson.tags.find(l => l.startsWith('lv:')) || 'lv:0') > `lv:${this.$root.level(this.$root.xp)}`)
+            if (this.level(lesson) > this.$root.level(this.$root.xp))
                 return 'forbidden';
-            if(JSON.parse(localStorage.progress)[`/lesson/${lesson.id}`] !== undefined)
+            if (JSON.parse(localStorage.progress)[`/lesson/${lesson.id}`] !== undefined)
                 return 'done';
             return 'card'
         }
     },
-    data() { return { lessons: null, groups: null } },
+    data() { return { groups: null } },
     watch: {
         tag: {
             handler: async function (tag) {
                 const lessons = await (await fetch(`/api/lesson?select=id,title,icon,tags&tags=cs.{category:${tag}}`)).json();
-                this.lessons = lessons.filter(lesson => !lesson.tags.find(tag => tag.startsWith('group:')));
-                this.groups = lessons.reduce(function (groups, lesson) {
-                    lesson.tags.filter(tag => tag.startsWith('group:')).map(tuple => tuple.substring('group:'.length)).forEach(title => {
-                        let existing = groups.find(group => group.title == title);
-                        existing ? existing.list.push(lesson) : groups.push({ title, list: [lesson] })
-                    })
-                    return groups
-                }, []);
+                this.groups = lessons // fill missing group tag in lesson, group them by they group, sort group and lessons
+                    .map(lesson => ({ ...lesson, group: (lesson.tags.find(tag => tag.startsWith('group:')) || 'group:0').substring('group:'.length) }))
+                    .reduce(function (groups, lesson) {
+                        const existing = groups.find(group => group.path == lesson.group);
+                        existing ? existing.list.push(lesson) : groups.push({
+                            title: lesson.group.replace(/^[^a-zA-Z]+/, ''),
+                            path: lesson.group,
+                            list: [lesson]
+                        })
+                        return groups
+                    }, [])
+                    .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
+                    .map(group => ({
+                        ...group, list: group.list // sort grouped lessons by they level + name
+                            .sort((a, b) => a.title.localeCompare(b.title))
+                            .sort((a, b) => this.level(a) - this.level(b))
+                    }))
             },
             immediate: true
         }
@@ -215,16 +220,20 @@ const CategoriesList = {
     <progress v-if="categories===null"></progress>
     <p v-else-if="categories.length===0">No category found.</p>
     <div class=grid>
-        <router-link v-for="category in categories" :to="'/category/'+category" class="card">
-            <img :src='"/media/icons/"+category+".svg"' style="padding: 15%;" alt="cover">
-            <span class="is-center text-capitalize">{{category}}</span>
+        <router-link v-for="category in categories" :to="'/category/'+category.path" class="card">
+            <img :src='"/media/icons/"+category.name+".svg"' style="padding: 15%;" alt="cover">
+            <span class="is-center text-capitalize">{{category.name}}</span>
         </router-link >
     </div>
     `,
     data() { return { categories: null } },
     async mounted() {
-        const tags = (await (await fetch(`/api/lesson?select=tags`)).json()).map(lesson => lesson.tags).flat();
-        this.categories = new Set(tags.filter(tag => tag.startsWith('category:')).map(tag => tag.substring('category:'.length)));
+        const tags = await fetch(`/api/lesson?select=tags`).then(res => res.json())
+        const cats = new Set(tags.map(lesson => lesson.tags).flat()
+            .filter(tag => tag.startsWith('category:'))
+            .map(tag => tag.substring('category:'.length))
+            .sort());
+        this.categories = [...cats].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
     },
 }
 

@@ -3,6 +3,7 @@ title: colors
 description: 
 icon: /media/icons/colors.svg
 tags: { category:2vocab,level:0 }
+draft: true
 ---
 
 <div class="carrousel">

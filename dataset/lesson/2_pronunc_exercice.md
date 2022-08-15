@@ -2,7 +2,7 @@
 title: ฝึกการออกเสียง
 description: This is a basic exam demo
 icon: /media/icons/pronunciation.svg
-tags: {category:8test,lv:2}
+tags: {category:8test,level:2}
 ---
 
 

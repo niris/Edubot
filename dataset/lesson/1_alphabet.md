@@ -2,7 +2,7 @@
 title: ตัวอักษรภาษาอังกฤษ
 description: ตัวอักษรภาษาอังกฤษ
 icon: /media/icons/lesson.svg
-tags: {category:1phonics,lv:1}
+tags: {category:1phonics}
 ---
 
 

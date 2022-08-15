@@ -14,6 +14,9 @@
     /*--color-primary: #1A8D7E; set by JS from userprofile */
     accent-color: var(--color-primary);
 }
+body{
+    padding-bottom: 200px; /* give space to bot */
+}
 body.dark {
     --bg-color: #444;
     --bg-secondary-color: #222;
@@ -93,7 +96,8 @@ progress{
     display: flex;
 }
 
-.chatbot>details>summary>img {
+.chatbot>details>summary>svg {
+/*    fill:var(--color-primary);*/
     background-color: var(--color-primary);
     border-radius: 20px 20px 20px 0;
     z-index: 1;
@@ -173,10 +177,14 @@ li>label{
     50% { transform: translate(0, -50px); opacity: 1}
     100% { transform: translate(0, -100px); opacity: 0}
 }
+.lvUp{
+    background: var(--bg-color) url(/media/icons/sparkle.gif) center;
+    transform: scale(4) translateY(2em) !important;
+}
 [data-delta]::before{
     content:' +'attr(data-delta);
     position: absolute;
-    font-size: 15em;
+    font-size: 10em;
     color: springgreen;
     text-shadow: 0 0 5px black;
     animation: spirit 2s;

@@ -2,7 +2,7 @@
 title: Basic exam example
 description: This is a basic exam demo
 icon: /media/icons/test1.svg
-tags: {category:8test,lv:1}
+tags: {category:8test}
 ---
 
 # Basic exam page

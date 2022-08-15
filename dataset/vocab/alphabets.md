@@ -2,7 +2,7 @@
 title: alphabets
 description: 
 icon: /media/icons/alphabets.svg
-tags: { category:2vocab,level:1 }
+tags: { category:2vocab }
 ---
 
 <div class="carrousel">

@@ -1,15 +1,29 @@
 const empty = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMEAAAC4CAQAAADwZkAeAAABW0lEQVR42u3RMQEAAACCMO1f2hg+IwJrdK4WIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgwbsBnYcAuVYBeaIAAAAASUVORK5CYII='
 const shiny = "/media/icons/sparkle.gif"
+const motivations = [
+	'Welcome !',
+	'First step !',
+	'Keep going !',
+	'Good Job !',
+	'Keep up !',
+	'Like a Pro !',
+	'End soon !',
+	'Congratulation !',
+	'Over the limit',
+	'Among Gods',
+	'???',
+]
 const Profile = {
 	template: `
 	<form v-else @input=$event.target.form.submit.disabled=false @submit.prevent=update($event)>
-	<div @click="wide()":data-delta="delta||null" ref=scene :style="' user-select: none;padding: 1em; animation: hscrolling 60s ease-in-out 0s infinite; animation-timing-function: steps(300, end); background-position: 0 50%;  image-rendering: pixelated;background-image: url(/static/profile/lv'+$root.level($root.xp)+'.gif); background-size: cover; border-radius:1em'">
+	<div @click="wide()":data-delta="delta||null" ref=scene :style="' user-select: none;padding: 1em; animation: hscrolling 60s ease-in-out 0s infinite; animation-timing-function: steps(300, end); background-position: 0 50%;  image-rendering: pixelated;background-image: url(/static/profile/lv'+level($root.xp)+'.gif); background-size: cover; border-radius:1em'">
 		<img alt=treasure :src=overlay  style="max-width: 25vmin;margin: auto;display: block;background-repeat:no-repeat;background-image:url(/media/icons/treasure.svg)">
-		<div style="display: grid;grid-template-columns: 4fr;">
-		<progress style="grid-row: 1/1; grid-column: 1;height:15vmin;opacity:.8; margin: auto; width: 50%;" :value=percent></progress>
-		<span     style="grid-row: 1/1; grid-column: 1;font-size:5vmin;text-align: center;align-self: center;mix-blend-mode: difference;color: white;">
-			Lv:{{$root.level($root.xp)}}
+		<div style="display: grid;grid-template-columns: 4fr;text-align: center;align-items: center;">
+		<progress style="grid-row: 1/1; grid-column: 1;height:16vmin;opacity:.8; margin: auto; width: 50%;" :value=percent></progress>
+		<span     style="grid-row: 1/1; grid-column: 1;mix-blend-mode: difference;color: white;font-size:4vmin;">
+		Lv:{{level($root.xp)}}
 		</span>
+		<span style="color:white; font-weight: bold;text-shadow: 0.1em 0.1em 0.2em black;">{{motivations[level($root.xp)]}}</span>
 		</div>
 	</div>
 		<button class="button error" type=button @click=signOut($event) class=is-full-width><s>logout</s> Sign Out</button>
@@ -33,15 +47,17 @@ const Profile = {
 		<button disabled name=submit type=submit class=is-full-width><s>check</s> Update</button>
 	</form>
 	`,
-	data() { return { me: {}, delta: 0, localStorage, context: null, oldXp:-1} },
+	data() { return { me: {}, delta: 0, localStorage, context: null, motivations, oldXp:-1} },
 	computed: {
 		overlay() { return this.delta ? shiny : empty },
-		percent() { return (this.$root.xp - Math.pow(2, this.$root.level(this.$root.xp))) / Math.pow(2, this.$root.level(this.$root.xp)) },
+		percent() { return (this.$root.xp - Math.pow(2, this.level(this.$root.xp))) / Math.pow(2, this.level(this.$root.xp)) },
 	},
 	unmounted() {
-		this.context.suspend()
-		this.context.close()
-		this.context = null;
+		if (this.context) {
+			this.context.suspend();
+			this.context.close();
+			this.context = null;
+		}
 	},
 	mounted() { // making it async will give an incomplete $root after Routing redirection
 		if (!this.$root.id)
@@ -67,7 +83,7 @@ const Profile = {
 	methods: {
 		audio() {
 			if (!this.context || this.context.state == 'suspended' ||
-				this.$root.level(this.oldXp) != this.$root.level(this.$root.xp)) {
+				this.level(this.oldXp) != this.level(this.$root.xp)) {
 				if (this.context) {
 					this.context.suspend()
 					this.context.close()
@@ -80,7 +96,7 @@ const Profile = {
 				gain.gain.value = 0.1;
 				const source = this.context.createBufferSource();
 				source.connect(gain);
-				fetch('/static/profile/lv' + this.$root.level(this.$root.xp) + '.ogg')
+				fetch('/static/profile/lv' + this.level(this.$root.xp) + '.ogg')
 				.then(res => res.arrayBuffer())
 				.then(buf => this.context.decodeAudioData(buf))
 				.then(dec => {
@@ -94,6 +110,7 @@ const Profile = {
 			this.$refs.scene.requestFullscreen();
 			this.audio();
 		},
+		level(xp) { return Math.min(10, Math.log2(xp) | 0); }, // DUPLICATED in index.html
 		async update(event) {
 			this.me = await (await fetch(`/api/profile/${this.$root.id}`, {
 				method: 'PUT', body: JSON.stringify(this.me),

@@ -6,7 +6,7 @@
 <meta name=viewport content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
-<link rel=icon href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath d='M1,8L1,2L2,2L2,0L3,0L3,2L5,2L5,0L6,0L6,2L7,2L7,8M2,6L2,7L6,7L6,6M2,3L2,4L3,4L3,3M5,3L5,4L6,4L6,3'%3E%3C/path%3E%3C/svg%3E" sizes="any">
+<link rel=icon href="/static/favicon.svg" sizes="any">
 <link rel="apple-touch-icon" href="/static/favicon-192.png">
 <link rel="mask-icon" href="/static/favicon.svg" color="black">
 <link rel=stylesheet href="/static/chota.min.css" media="print" onload="media='all'">
@@ -42,9 +42,16 @@ const app = Vue.createApp({
 	mounted() { this.log(); },
 	computed: {
 		xp() { return 1 + Object.keys(this.progress).length }, //XP:0 create log2(0)/pow(0) cornercase
+		myLv() {return this.level(this.xp)}
+	},
+	watch: {
+		myLv() {
+			this.$refs.lv.classList.add('lvUp');
+			setTimeout(() => this.$refs.lv.classList.remove('lvUp'), 1000);
+		}
 	},
 	methods: {
-		level(xp) { return Math.min(11, Math.log2(xp) | 0); },
+		level(xp) { return Math.min(10, Math.log2(xp) | 0); }, // DUPLICATED in Profile.js
 		is(...roles) { return roles.includes(this.role); },
 		log() {
 			const cookie = Object.fromEntries(document.cookie.split('; ').map(x => x.split('=')));
@@ -67,9 +74,12 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full" style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
 		<router-link to="/category" v-if="is('admin','user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
-		<router-link to="/category/vocab" v-if="is('admin','user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
+		<router-link to="/category/2vocab" v-if="is('admin','user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
 		<router-link to="/user/" v-if="is('admin')"><s>group</s>&nbsp;<span>Users</span></router-link>
-		<router-link to="/me" v-if="is('admin','user')"><s>bust</s>&nbsp;<span>{{$root.id}}</span> <span class="tag is-small" :title="'xp:'+xp">Lv:{{level(xp)}}</span></router-link>
+		<router-link to="/me" v-if="is('admin','user')">
+			<s>bust</s>&nbsp;<span>{{$root.id}}</span>
+			<span ref=lv class="tag is-small" :title="'xp:'+xp" style="transform:scale(1) translateY(0);background-size: cover;transition: transform 1s;">Lv:{{myLv}}</span>
+		</router-link>
 		<router-link to="/sign" v-if="is(null)"><s>star</s>&nbsp;<span>Sign Up</span></router-link>
 		<router-link to="/leaderboard" v-if="is('admin','user')"><s>trophy</s>&nbsp;<span>Leaderboard</span></router-link>
 	</nav>	
