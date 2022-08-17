@@ -2,7 +2,7 @@
 title: clothes
 description: 
 icon: /media/icons/clothes.svg
-tags: { category:2vocab,level:7 }
+tags: { category:2vocab,level:6 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:7 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **dress**
- - [ ] กระโปรง
- - [x] ชุดกระโปรง
- - [ ] สูท
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **underwear**
+ - [ ] ชุดคลุมท้อง
+ - [x] ชุดชั้นใน
+ - [ ] ชุดดําน้ํา
  - [ ] เข็มขัด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **raincoat**
- - [ ] รองเท้าบูท
- - [ ] สูท
- - [x] เสื้อกันฝน
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **swim suit**
+ - [ ] กางเกงขาสั้น
+ - [ ] ชุดกระโปรง
+ - [x] ชุดว่ายน้ํา
  - [ ] เสื้อคลุมอาบน้ํา
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **รองเท้า**
+ - [ ] bathrobe
+ - [ ] maternity dress
+ - [x] shoes
+ - [ ] slippers
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ยีนส์**
  - [x] jean
- - [ ] shoes
+ - [ ] leggings
  - [ ] suit
- - [ ] underwear
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เข็มขัด**
- - [x] belt
- - [ ] evening dress
- - [ ] slippers
  - [ ] underwear

@@ -2,13 +2,13 @@
 title: family members
 description: 
 icon: /media/icons/familymembers.svg
-tags: { category:2vocab,level:0 }
+tags: { category:2vocab,level:1 }
 ---
 
 <div class="carrousel">
 
 
-|![](/media/img/family members/me.svg)|![](/media/img/family members/father.svg)|![](/media/img/family members/mother.svg)|![](/media/img/family members/grandmother.svg)|![](/media/img/family members/grandfather.svg)|![](/media/img/family members/brother.svg)|![](/media/img/family members/sister.svg)|![](/media/img/family members/uncle.svg)|![](/media/img/family members/aunt.svg)|
+|![](/media/img/family&#x20;members/me.svg)|![](/media/img/family&#x20;members/father.svg)|![](/media/img/family&#x20;members/mother.svg)|![](/media/img/family&#x20;members/grandmother.svg)|![](/media/img/family&#x20;members/grandfather.svg)|![](/media/img/family&#x20;members/brother.svg)|![](/media/img/family&#x20;members/sister.svg)|![](/media/img/family&#x20;members/uncle.svg)|![](/media/img/family&#x20;members/aunt.svg)|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 |me|father|mother|grandmother|grandfather|brother|sister|uncle|aunt|
 |ตัวฉัน|พ่อ|แม่|คุณย่า หรือ คุณยาย| คุณปู่ หรือ คุณตา|พี่ชาย หรือ น้องชาย|พี่สาว หรือ น้องสาว|ลุง หรือ น้าชาย|ป้า หรือ น้าสาว|
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:0 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **grandfather**
- - [x]  คุณปู่ หรือ คุณตา
- - [ ] ตัวฉัน
- - [ ] พี่สาว หรือ น้องสาว
- - [ ] แม่
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **brother**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **uncle**
+ - [ ] คุณย่า หรือ คุณยาย
  - [ ] ป้า หรือ น้าสาว
- - [x] พี่ชาย หรือ น้องชาย
- - [ ] พี่สาว หรือ น้องสาว
- - [ ] ลุง หรือ น้าชาย
+ - [ ] พ่อ
+ - [x] ลุง หรือ น้าชาย
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **mother**
+ - [ ]  คุณปู่ หรือ คุณตา
+ - [ ] ตัวฉัน
+ - [ ] พ่อ
+ - [x] แม่
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ป้า หรือ น้าสาว**
+ - [x] aunt
+ - [ ] grandfather
+ - [ ] grandmother
+ - [ ] sister
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **แม่**
- - [ ] aunt
+ - [ ] brother
  - [ ] father
  - [ ] grandmother
  - [x] mother
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **พ่อ**
- - [ ] aunt
- - [ ] brother
- - [x] father
- - [ ] uncle

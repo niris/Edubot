@@ -2,7 +2,7 @@
 title: hobbies
 description: 
 icon: /media/icons/hobbies.svg
-tags: { category:2vocab,level:7 }
+tags: { category:2vocab,level:6 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:7 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **playing sports**
- - [ ]  ถักไหมพรม
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **playing with pet**
  - [ ] ถ่ายภาพ
- - [ ] เล่นกับสัตว์เลี้ยง
- - [x] เล่นกีฬา
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **drawing**
+ - [ ] ทําสวน
  - [ ] ทําอาหาร
- - [ ] ร้องเพลง
- - [x] วาดภาพ
- - [ ] เล่นกับสัตว์เลี้ยง
+ - [x] เล่นกับสัตว์เลี้ยง
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ดูหนัง**
- - [ ] knitting
- - [ ] listening to music
- - [x] seeing a movie
- - [ ] singing
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **knitting**
+ - [x]  ถักไหมพรม
+ - [ ] ดูทีวี
+ - [ ] ท่องอินเทอร์เน็ต
+ - [ ] วาดภาพ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ถ่ายภาพ**
- - [ ] knitting
- - [ ] painting
- - [ ] surfing the internet
- - [x] taking photos
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ทําสวน**
+ - [ ] cooking
+ - [x] gardening
+ - [ ] playing with pet
+ - [ ] seeing a movie
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ ** ถักไหมพรม**
+ - [x] knitting
+ - [ ] reading
+ - [ ] seeing a movie
+ - [ ] taking photos

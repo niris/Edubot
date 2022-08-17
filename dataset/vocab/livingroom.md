@@ -2,13 +2,13 @@
 title: living room
 description: 
 icon: /media/icons/livingroom.svg
-tags: { category:2vocab,level:4 }
+tags: { category:2vocab,level:3 }
 ---
 
 <div class="carrousel">
 
 
-|![](/media/img/living room/sofa.svg)|![](/media/img/living room/table.svg)|![](/media/img/living room/television.svg)|![](/media/img/living room/picture&#x20;frame.svg)|![](/media/img/living room/carpet.svg)|![](/media/img/living room/vase.svg)|![](/media/img/living room/radio.svg)|![](/media/img/living room/fish&#x20;tank.svg)|
+|![](/media/img/living&#x20;room/sofa.svg)|![](/media/img/living&#x20;room/table.svg)|![](/media/img/living&#x20;room/television.svg)|![](/media/img/living&#x20;room/picture&#x20;frame.svg)|![](/media/img/living&#x20;room/carpet.svg)|![](/media/img/living&#x20;room/vase.svg)|![](/media/img/living&#x20;room/radio.svg)|![](/media/img/living&#x20;room/fish&#x20;tank.svg)|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 |sofa|table|television|picture frame|carpet|vase|radio|fish tank|
 |โซฟา|โต๊ะ|โทรทัศน์|กรอบภาพ|พรม|แจกัน|วิทยุ|ตู้ปลา|
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:4 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **vase**
- - [ ] กรอบภาพ
- - [ ] พรม
- - [ ] วิทยุ
- - [x] แจกัน
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **fish tank**
+ - [ ] กรอบภาพ
  - [x] ตู้ปลา
  - [ ] วิทยุ
- - [ ] โซฟา
+ - [ ] แจกัน
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **table**
+ - [ ] กรอบภาพ
+ - [ ] วิทยุ
+ - [x] โต๊ะ
  - [ ] โทรทัศน์
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **วิทยุ**
+ - [x] radio
+ - [ ] sofa
+ - [ ] table
+ - [ ] vase
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **พรม**
  - [x] carpet
- - [ ] sofa
- - [ ] table
- - [ ] television
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **โทรทัศน์**
  - [ ] fish tank
  - [ ] sofa
- - [x] television
- - [ ] vase
+ - [ ] television

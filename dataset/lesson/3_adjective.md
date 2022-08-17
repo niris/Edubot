@@ -2,6 +2,6 @@
 title: Adjective
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:6grammar,group:pos,level:3}
+tags: {category:6grammar,group:pos,level:4}
 ---
 

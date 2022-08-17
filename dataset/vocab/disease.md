@@ -2,7 +2,7 @@
 title: disease
 description: 
 icon: /media/icons/disease.svg
-tags: { category:2vocab,level:8 }
+tags: { category:2vocab,level:7 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:8 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **sore throat**
- - [ ] ความเจ็บปวด
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **sneeze**
+ - [x] จาม
  - [ ] ปวดหลัง
- - [x] เจ็บคอ
+ - [ ] เจ็บ
  - [ ] ไอ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **cough**
- - [ ] ความเจ็บปวด
- - [ ] จาม
- - [ ] ปวดหัว
- - [x] ไอ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **runny nose**
+ - [x] น้ํามูกไหล
+ - [ ] ปวดท้อง
+ - [ ] อ้วก
+ - [ ] เจ็บคอ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ไอ**
- - [x] cough
- - [ ] fever
- - [ ] runny nose
- - [ ] sore throat
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เลือดออก**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **เจ็บ**
  - [ ] backache
- - [x] bleed
- - [ ] fever
- - [ ] sneeze
+ - [x] hurt
+ - [ ] pain
+ - [ ] stomachache
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ปวดท้อง**
+ - [ ] bleed
+ - [ ] headaches
+ - [ ] pain
+ - [x] stomachache

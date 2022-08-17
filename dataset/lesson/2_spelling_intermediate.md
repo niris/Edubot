@@ -1,8 +1,8 @@
 ---
-title: การสะกดคำ (ระดับ 2)
+title: การสะกดคำ 2
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:1phonics,level:2}
+tags: {category:1phonics,level:5}
 ---
 
 <details>

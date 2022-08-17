@@ -2,7 +2,7 @@
 title: animals
 description: 
 icon: /media/icons/animals.svg
-tags: { category:2vocab }
+tags: { category:2vocab}
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **cow**
- - [ ] กระต่าย
- - [x] วัว
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **starfish**
+ - [ ] นก
+ - [ ] นกยูง
+ - [x] ปลาดาว
  - [ ] หนู
- - [ ] เป็ด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **bird**
- - [x] นก
- - [ ] นกฮูก
- - [ ] อีแร้ง
- - [ ] แพะ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **pig**
+ - [ ] ควาย
+ - [ ] ปู
+ - [ ] ผึ้ง
+ - [x] หมู
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **วัว**
- - [x] cow
- - [ ] goat
- - [ ] starfish
- - [ ] vulture
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นกกระจอกเทศ**
+ - [ ] buffalo
+ - [ ] goldfish
+ - [x] ostrich
+ - [ ] owl
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **นกแก้ว**
- - [ ] cat
- - [ ] duck
- - [ ] ostrich
- - [x] parrot
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **แกะ**
+ - [ ] dog
+ - [ ] mouse
+ - [x] sheep
+ - [ ] shrimp

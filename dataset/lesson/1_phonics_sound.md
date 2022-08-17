@@ -1,9 +1,11 @@
 ---
-title: การเทียบเสียงพยัญชนะ
+title: เทียบเสียงพยัญชนะ
 description: ตัวอักษรภาษาอังกฤษ
 icon: /media/icons/lesson.svg
-tags: {category:1phonics}
+tags: {category:1phonics,level:4}
 ---
+
+![icon](/media/icons/content.svg)
 
 |  พิมพ์ใหญ่   |   พิมพ์เล็ก           |   คำอ่าน  | เสียงภาษาไทย|
 |------------|-------------------|----------|----------|
@@ -32,5 +34,8 @@ tags: {category:1phonics}
 |    W    |    w    |    ดับเบิ้ลยู    |    ว    |
 |    X    |    x    |    เอ็กซ์    |    ซ    |
 |    Y    |    y    |    วาย    |    ย    |
-|    Z    |    z    |    แซด,ซี    |    ซ    |
+|    Z    |    z    |    แซด,ซี    |    ซ    | \\
 
+
+
+![icon](/media/icons/video.svg) <a href="https://www.youtube.com/watch?v=Pn8529gebfM">คลิกเพื่อฝึกเพิ่มเติมจากวิดีโอ  !</a>

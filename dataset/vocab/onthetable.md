@@ -8,7 +8,7 @@ tags: { category:2vocab,level:4 }
 <div class="carrousel">
 
 
-|![](/media/img/on the table/chili&#x20;sauce.svg)|![](/media/img/on the table/pepper.svg)|![](/media/img/on the table/napkin.svg)|![](/media/img/on the table/toothpick.svg)|![](/media/img/on the table/chopsticks.svg)|![](/media/img/on the table/tomato&#x20;sauce.svg)|![](/media/img/on the table/fish&#x20;sauce.svg)|![](/media/img/on the table/salt.svg)|![](/media/img/on the table/menu.svg)|
+|![](/media/img/on&#x20;the&#x20;table/chili&#x20;sauce.svg)|![](/media/img/on&#x20;the&#x20;table/pepper.svg)|![](/media/img/on&#x20;the&#x20;table/napkin.svg)|![](/media/img/on&#x20;the&#x20;table/toothpick.svg)|![](/media/img/on&#x20;the&#x20;table/chopsticks.svg)|![](/media/img/on&#x20;the&#x20;table/tomato&#x20;sauce.svg)|![](/media/img/on&#x20;the&#x20;table/fish&#x20;sauce.svg)|![](/media/img/on&#x20;the&#x20;table/salt.svg)|![](/media/img/on&#x20;the&#x20;table/menu.svg)|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 |chili sauce|pepper|napkin|toothpick|chopsticks|tomato sauce|fish sauce|salt|menu|
 |ซอสพริก|พริกไทย|ผ้าเช็ดปาก|ไม้จิ้มฟัน|ตะเกียบ|ซอสมะเขือเทศ|น้ำปลา|เกลือ|เมนู|
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:4 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **toothpick**
- - [ ] ตะเกียบ
- - [ ] ผ้าเช็ดปาก
- - [ ] เกลือ
- - [x] ไม้จิ้มฟัน
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **menu**
+ - [ ] ซอสมะเขือเทศ
+ - [ ] น้ำปลา
+ - [x] เมนู
+ - [ ] ไม้จิ้มฟัน
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **chopsticks**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **fish sauce**
  - [ ] ซอสพริก
- - [x] ตะเกียบ
- - [ ] ผ้าเช็ดปาก
+ - [x] น้ำปลา
+ - [ ] พริกไทย
  - [ ] เกลือ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ไม้จิ้มฟัน**
- - [ ] chopsticks
- - [ ] menu
- - [ ] tomato sauce
- - [x] toothpick
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ซอสพริก**
- - [x] chili sauce
- - [ ] chopsticks
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ซอสมะเขือเทศ**
  - [ ] fish sauce
- - [ ] tomato sauce
+ - [ ] menu
+ - [ ] pepper
+ - [x] tomato sauce
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **พริกไทย**
+ - [ ] chili sauce
+ - [ ] menu
+ - [x] pepper
+ - [ ] salt

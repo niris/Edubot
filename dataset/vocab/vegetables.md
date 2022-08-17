@@ -2,7 +2,7 @@
 title: vegetables
 description: 
 icon: /media/icons/vegetables.svg
-tags: { category:2vocab,level:0 }
+tags: { category:2vocab,level:2 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:0 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **sweet potato**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **lettuce**
  - [ ] ข้าวโพด
- - [x] มันฝรั่งหวาน
- - [ ] หอมแดง
- - [ ] แครอท
+ - [ ] ต้นหอม
+ - [x] ผักกาดหอม
+ - [ ] ผักคะน้า
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **cauliflower**
- - [x] ดอกกะหล่ําปลี
- - [ ] มะเขือยาว
- - [ ] เห็ด
- - [ ] แตงกวา
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **eggplant**
+ - [ ] ต้นหอม
+ - [ ] บรอคโคลี
+ - [ ] ฟักทอง
+ - [x] มะเขือยาว
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ผักคะน้า**
- - [ ] beetroot
- - [ ] corn
- - [x] kale
- - [ ] shallot
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **พริก**
  - [ ] asparagus
- - [ ] cabbage
- - [x] chili
- - [ ] ginger
+ - [x] kale
+ - [ ] radish
+ - [ ] sweet potato
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **เห็ด**
+ - [ ] broccoli
+ - [ ] celery
+ - [ ] corn
+ - [x] mushroom

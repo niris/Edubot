@@ -2,7 +2,7 @@
 title: bedroom
 description: 
 icon: /media/icons/bedroom.svg
-tags: { category:2vocab,level:4 }
+tags: { category:2vocab,level:3 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:4 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **bed**
- - [ ] ตู้เสื้อผ้า
- - [ ] นาฬิกาปลุก
- - [ ] หมอน
- - [x] เตียง
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **bolster**
- - [ ] นาฬิกาปลุก
- - [ ] ผ้าห่ม
- - [x] หมอนข้าง
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **blanket**
+ - [x] ผ้าห่ม
+ - [ ] หมอนข้าง
+ - [ ] เตียง
  - [ ] โคมไฟ
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **wardrobe**
+ - [x] ตู้เสื้อผ้า
+ - [ ] นาฬิกาปลุก
+ - [ ] โคมไฟ
+ - [ ] โต๊ะแต่งตัว
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ตู้เสื้อผ้า**
  - [ ] bed
- - [ ] blanket
- - [ ] dressing table
+ - [ ] bolster
+ - [ ] pillow
  - [x] wardrobe
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ผ้าห่ม**
- - [ ] bed
- - [x] blanket
- - [ ] bolster
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **โต๊ะแต่งตัว**
+ - [ ] blanket
+ - [x] dressing table
+ - [ ] lamp
  - [ ] pillow

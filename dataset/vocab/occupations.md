@@ -2,7 +2,7 @@
 title: occupations
 description: 
 icon: /media/icons/occupations.svg
-tags: { category:2vocab,level:6 }
+tags: { category:2vocab,level:5 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:6 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **astronaut**
- - [x] นักบินอวกาศ
- - [ ] พนักงานต้อนรับ
- - [ ] พนักงานต้อนรับบนเครื่องบินหญิง (แอร์โฮสเตส)
- - [ ] เภสัชกร
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **politician**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **scientist**
  - [ ] คนขับรถบัส
- - [ ] คนสวน
- - [x] นักการเมือง
- - [ ] นักวิทยาศาสตร์
+ - [ ] ตํารวจ
+ - [ ] ทหาร
+ - [x] นักวิทยาศาสตร์
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **คนสวน**
- - [ ] actor
- - [x] gardener
- - [ ] policeman
- - [ ] postman
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **hairdresser**
+ - [x] ช่างทําผม
+ - [ ] ทนาย
+ - [ ] ทหาร
+ - [ ] พ่อครัว/แม่ครัว
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **สถาปนิก**
- - [x] architect
- - [ ] postman
- - [ ] soldier
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ช่างทําผม**
+ - [ ] dentist
+ - [x] hairdresser
+ - [ ] president
  - [ ] steward
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นักข่าว**
+ - [ ] architect
+ - [ ] lawyer
+ - [x] news reporter
+ - [ ] programmer

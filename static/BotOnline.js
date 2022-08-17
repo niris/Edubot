@@ -14,12 +14,12 @@ const BotOnlineChat = {
                 const score = Object.keys(JSON.parse(localStorage.progress || '{}')).length;
                 return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
             }
-            if (msg.match(/(แปลประโยค|แปล|แปลว่าอะไร|แปลว่า|ความหมายของ)/i)) {
+            /*if (msg.match(/(แปลประโยค|แปล|แปลว่าอะไร|แปลว่า|ความหมายของ)/i)) {
                 const regex = /[A-z]+/gi;
                 const word = msg.match(regex)
                 console.log(word)
                 return this.logs.push({ bot: true, msg: word.join(" ") + " แปลว่า" });
-            }
+            }*/
             else
                 this.logs.push({ msg });
 
@@ -83,8 +83,14 @@ const BotOnlineChat = {
             switch (res.intent) {
                 case "Vocab":
                     const restvocab = ["ไปฝึกศัพท์กันเลย", "โอเค!!!ไปฝึกศัพท์กันเลย", "Let's go!!!!!"]
-                    this.$router.push({ path: '/category/type:vocab' });
+                    this.$router.push({ path: '/category/2vocab' });
                     return restvocab[Math.floor(Math.random() * restvocab.length)];
+                case "Oral":
+                    const restoral = ["ไปฝึกพูดกันเลย", "โอเค!!!ไปฝึกพูดกันเลย", "Let's go!!!!!"]
+                    this.$router.push({ path: '/category/1phonics' });
+                    return restoral[Math.floor(Math.random() * restoral.length)];
+                case "Skills":
+                    return "ไม่ทราบว่าอยากฝึกทักษะด้านไหน";
                 default:
                     return res.response
             }

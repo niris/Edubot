@@ -36,7 +36,7 @@ tags: { category:2vocab,level:0 }
             vocab = row[0]
             vocabs.append(vocab)
             meanings.append(row[1])
-            img.append('![]('+os.path.join("/media/img",category,vocab.replace(" ", "&#x20;")+'.svg')+')')
+            img.append('![]('+os.path.join("/media/img",category.replace(" ", "&#x20;"),vocab.replace(" ", "&#x20;")+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab.replace(" ", "&#x20;")+'.mp3')+')')
         newfile.write('\n|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
@@ -45,7 +45,7 @@ tags: { category:2vocab,level:0 }
         newfile.write('\n|' + '|'.join(meanings) + '|')
         newfile.write('\n|' + '|'.join(audio) + '|\n\n')
     newfile.write('</div>\n\n')
-    newfile.write('\n\n# แบบฝึกหัด\n\n')
+    newfile.write('\n\n# ![icon](/media/icons/quiz.svg) \n\n')
     
     def questionGenerator(questions,choices,number):
         questions_tmp = questions.copy()

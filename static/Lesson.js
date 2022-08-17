@@ -182,7 +182,7 @@ const LessonList = {
             if (this.level(lesson) > this.$root.level(this.$root.xp))
                 return 'forbidden';
             if (JSON.parse(localStorage.progress)[`/lesson/${lesson.id}`] !== undefined)
-                return 'done';
+                return 'done card';
             return 'card'
         }
     },

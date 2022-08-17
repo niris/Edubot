@@ -2,7 +2,7 @@
 title: stationary
 description: 
 icon: /media/icons/stationary.svg
-tags: { category:2vocab,level:2 }
+tags: { category:2vocab,level:1 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:2 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **colored paper**
- - [ ] กรรไกร
- - [x] กระดาษสี
- - [ ] สมุดวาดภาพ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **eraser**
+ - [x] ยางลบ
+ - [ ] สมุดบันทึก
  - [ ] สีเทียน
+ - [ ] เครื่องคิดเลข
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **sharpener**
- - [x] กบเหลาดินสอ
- - [ ] กรรไกร
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **cutter**
  - [ ] กาวแท่ง
- - [ ] สมุดทํางาน
+ - [ ] ปากกา
+ - [ ] พจนานุกรม
+ - [x] มีดคัตเตอร์
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ปากกา**
- - [ ] eraser
- - [x] pen
- - [ ] stapler
- - [ ] workbook
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สมุดทํางาน**
+ - [ ] cutter
+ - [ ] highlighter
+ - [ ] notebook
+ - [x] workbook
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **สีเทียน**
- - [x] crayon
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **หนังสือเรียน**
+ - [ ] correcting fluid
  - [ ] dictionary
- - [ ] drawing book
- - [ ] workbook
+ - [ ] pen
+ - [x] textbook

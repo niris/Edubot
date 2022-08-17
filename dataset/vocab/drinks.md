@@ -2,7 +2,7 @@
 title: drinks
 description: 
 icon: /media/icons/drinks.svg
-tags: { category:2vocab,level:3 }
+tags: { category:2vocab,level:2 }
 ---
 
 <div class="carrousel">
@@ -18,29 +18,29 @@ tags: { category:2vocab,level:3 }
 
 
 
-# แบบฝึกหัด
+# ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **soda**
- - [ ] กาน้ําชา
- - [ ] น้ําส้ม
- - [ ] น้ําแอปเปิ้ล
- - [x] โซดา
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **coconut drink**
- - [ ] กระป๋อง
- - [ ] กาแฟ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **coffee**
+ - [x] กาแฟ
  - [ ] น้ำดื่ม
- - [x] น้ำมะพร้าว
+ - [ ] น้ําผึ้ง
+ - [ ] น้ําสับปะรด
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **can**
+ - [x] กระป๋อง
+ - [ ] กาน้ําชา
+ - [ ] น้ําแตงโม
+ - [ ] โซดา
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **กระป๋อง**
  - [x] can
- - [ ] coffee
- - [ ] honey
- - [ ] watermelon juice
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **น้ําสับปะรด**
- - [ ] juice
- - [x] pineapple juice
- - [ ] smoothie
+ - [ ] soda
  - [ ] tea bag
+ - [ ] teapot
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **น้ําผลไม้**
+ - [ ] coconut drink
+ - [x] juice
+ - [ ] tea
+ - [ ] watermelon juice

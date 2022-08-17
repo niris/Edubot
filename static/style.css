@@ -63,6 +63,11 @@ progress{
     box-shadow: 0 0 0 5px var(--color-primary) !important;
 }
 
+img[alt=icon] {
+    width : 3em;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
 .chatbot>output {
     display: flex;
     margin-bottom: 1em;
@@ -141,10 +146,13 @@ progress{
     max-height: 50vh;
     /* until all image are squared */
 }
-.done,.forbidden {
+.forbidden {
     opacity: .5;
     pointer-events: none;
     cursor: default;
+}
+.done{
+    opacity: .75;
 }
 .done::before{
     content:'✓';
@@ -184,9 +192,8 @@ li>label{
 [data-delta]::before{
     content:' +'attr(data-delta);
     position: absolute;
-    font-size: 10em;
-    color: springgreen;
-    text-shadow: 0 0 5px black;
-    animation: spirit 2s;
+    font-size: 5em;
+    color: #76b1c5;
+    animation: spirit 3s;
     animation-fill-mode: forwards;
 }
