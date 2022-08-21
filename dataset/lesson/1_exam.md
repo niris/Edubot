@@ -3,6 +3,7 @@ title: Basic exam example
 description: This is a basic exam demo
 icon: /media/icons/test1.svg
 tags: {category:8test}
+draft: TRUE
 ---
 
 # Basic exam page

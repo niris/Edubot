@@ -64,9 +64,15 @@ progress{
 }
 
 img[alt=icon] {
-    width : 3em;
-    margin-left: 0;
+    width : 2em;
+    margin-left: 0.5em;
     margin-bottom: 1em;
+}
+
+img[alt=icon-collapsed] {
+    width : 2em;
+    margin-left: 0.5em;
+    margin-bottom: 0.1em;
 }
 .chatbot>output {
     display: flex;
@@ -196,4 +202,8 @@ li>label{
     color: #76b1c5;
     animation: spirit 3s;
     animation-fill-mode: forwards;
+}
+
+.link {
+    margin-bottom: 0 !important;
 }
