@@ -66,7 +66,9 @@ const mediaRule = (ext2tag = (ext, img) => ({
 
 const LessonShow = {
     props: ['id'],
-    template: `<form class=lesson @click=listen @input.prevent=validate v-html="markdownToHtml"></form>`,
+    template: `
+    <form class=lesson @click=listen @input.prevent=validate v-html="markdownToHtml"></form>
+    <router-link :to=$router.options.history.state.back class="button outline">&lt;&lt; Back</router-link>`,
     data() { return { lesson: {} } },
     computed: {
         markdownToHtml() {
@@ -142,6 +144,7 @@ const LessonShow = {
             const remain = target.form.querySelector('input:not([disabled])');
             if (!remain) {
                 progress[location.pathname] = 1;
+                setTimeout(this.$router.back, 1000)
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
             this.$root.progress = progress;
