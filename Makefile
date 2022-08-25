@@ -11,8 +11,11 @@ lesson_init :.a;
 	    TAGS=$$(sed -n 's/tags: //p' $$f);\
 	    ICON=$$(sed -n 's/icon: //p' $$f);\
 	    DATE=$$(sed -n 's/created: //p' $$f);\
+	    ID=$$(sed -n 's/id: //p' $$f);\
 	    printf "\ndeploy $$f ($$TITLE $$TAGS) ...\n";\
-	    sed '1{/^---$$/!q;};1,/^---$$/d' $$f | curl -b $< $(HOST)/api/lesson -d "tags=$$TAGS" -d "title=$$TITLE" -d "icon=$$ICON" --data-urlencode content@-;\
+	    [ -z "$$ID" ]\
+	    && sed '1{/^---$$/!q;};1,/^---$$/d' $$f | curl -b $< $(HOST)/api/lesson -d "tags=$$TAGS" -d "title=$$TITLE" -d "icon=$$ICON" --data-urlencode content@-\
+	    || sed '1{/^---$$/!q;};1,/^---$$/d' $$f | curl -b $< $(HOST)/api/lesson -d "tags=$$TAGS" -d "title=$$TITLE" -d "icon=$$ICON" -d "id=$$ID" --data-urlencode content@-;\
 	done;
 test:  .a
 	curl -b $< $(HOST)/api/lesson -d title="curl created" -d content="this lesson was created by teacher via curl"
