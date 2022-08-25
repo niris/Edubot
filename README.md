@@ -1,4 +1,4 @@
-# Edubot
+# AnglizBot
 
 Mobile-first Chatbot-powered vocabulary learning Website
 
