@@ -1,15 +1,15 @@
 ---
-title: Pronouns
+title: Personal Pronoun
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:6grammar,group:pos,level:4}
+tags: {category:6grammar,group:pos,level:2}
 ---
 
-<details>
-<summary>เนื้อหา</summary>
+## Pronoun คำสรรพนาม
+> สรรพนามใช้เรียกแทนนามที่กล่าวถึงมาแล้ว เพื่อหลีกเลี่ยงการใช้คำซ้ำซ้อน 
 
-<details>
+### Personal Pronoun 
+> เป็นสรรพนามสำหรับใช้แทนนามที่เป็น**ประธาน** หรือ **กรรม** ของประโยค 
 
-<summary>แบบฝึกหัด</summary>
+![image label](/media/img/lessons/personal-pronoun.svg)
 
-<details>

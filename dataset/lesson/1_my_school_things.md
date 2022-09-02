@@ -1,8 +1,8 @@
 ---
-title: 4-My school things
+title: 2-My school things
 description: 
 icon: /media/icons/schoolthings.svg
-tags: {category:3conversation}
+tags: {}
 ---
 
 

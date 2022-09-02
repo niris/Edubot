@@ -146,8 +146,11 @@ img[alt=icon-collapsed] {
     scroll-snap-align: start;
 }
 .carrousel td {
+    font-size: 1.25em;
+}
+
+.carrousel td:first-letter{
     text-transform: capitalize;
-    font-size: 2em;
 }
 .carrousel img {
     max-height: 50vh;
