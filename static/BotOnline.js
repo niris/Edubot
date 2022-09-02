@@ -1,5 +1,9 @@
 const BotOnlineChat = {
     data: () => ({ logs: [] }),
+    created () {
+        setTimeout(() => this.logs.push({ bot: true, msg: "AnglizBot Hello!" }), 500);
+        this.audio();
+    },
     computed: {
         last_logs() {return this.logs.slice(-3)}
     },
@@ -24,7 +28,8 @@ const BotOnlineChat = {
                 this.logs.push({ msg });
 
             const response = await this.classify(msg, 'th');
-            setTimeout(() => this.logs.push({ bot: true, msg: `${response}` }), 500)
+            setTimeout(() => this.logs.push({ bot: true, msg: `${response[0]}` }), 500);
+            if(response[1] == 0) this.logs = []
         },
         async listen({ target }) {
             const send = this.send;
@@ -84,18 +89,25 @@ const BotOnlineChat = {
                 case "Vocab":
                     const restvocab = ["ไปฝึกศัพท์กันเลย", "โอเค!!!ไปฝึกศัพท์กันเลย", "Let's go!!!!!"]
                     this.$router.push({ path: '/category/2vocab' });
-                    return restvocab[Math.floor(Math.random() * restvocab.length)];
+                    return [restvocab[Math.floor(Math.random() * restvocab.length)],0];
                 case "Oral":
                     const restoral = ["ไปฝึกพูดกันเลย", "โอเค!!!ไปฝึกพูดกันเลย", "Let's go!!!!!"]
                     this.$router.push({ path: '/category/1phonics' });
-                    return restoral[Math.floor(Math.random() * restoral.length)];
+                    return [restoral[Math.floor(Math.random() * restoral.length)],0];
                 case "Skills":
-                    return "ไม่ทราบว่าอยากฝึกทักษะด้านไหน";
+                    return ["ไม่ทราบว่าอยากฝึกทักษะด้านไหน",1];
                 default:
-                    return res.response
+                    return [res.response,1]
             }
         },
         md: (txt) => markdownit('default').render(txt),
+        audio() {
+            //console.log("audio!")
+            var audio = new Audio('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3');
+            audio.muted = true;
+            //console.log(audio)
+            //audio.play()
+		}
     },
     template: `
     <form class=chatbot @submit.prevent=send>
