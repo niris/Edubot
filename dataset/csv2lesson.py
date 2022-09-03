@@ -9,7 +9,7 @@ import shutil
 
 if not os.path.exists("vocab"):
     os.makedirs("vocab")
-for filename in os.listdir("csv/togenerate/vocab"):
+for filename in os.listdir("csv/_togenerate/vocab"):
     print(filename)
     category = os.path.splitext(filename)[0]
     newfile = open(os.path.join("vocab",os.path.splitext(filename)[0].replace(" ", "")+".md"), "w")
@@ -19,30 +19,31 @@ title: '''+ category +
 description: 
 icon: /media/icons/''' + os.path.splitext(filename)[0].replace(" ", "") + '''.svg\
 
-tags: { category:2vocab,level:0 }
+tags: { category:2vocab,level:0}
 ---
 
 '''
     )
     newfile.write('<div class="carrousel">\n\n')
-    with open(os.path.join("csv/togenerate/vocab", filename), 'r') as f: 
+    with open(os.path.join("csv/_togenerate/vocab", filename), 'r') as f: 
         print("filename " + filename)
         csvreader = csv.reader(f)
         vocabs = []
         meanings = []
+        vocabs_meanings = []
         img = []
         audio = []
         for row in csvreader:
             vocab = row[0]
             vocabs.append(vocab)
             meanings.append(row[1])
+            vocabs_meanings.append("**"+vocab+"**<br>"+row[1])
             img.append('![]('+os.path.join("/media/img",category.replace(" ", "&#x20;"),vocab.replace(" ", "&#x20;")+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab.replace(" ", "&#x20;")+'.mp3')+')')
         newfile.write('\n|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
             newfile.write(" :----: |")
-        newfile.write('\n|' + '|'.join(vocabs) + '|')
-        newfile.write('\n|' + '|'.join(meanings) + '|')
+        newfile.write('\n|' + '|'.join(vocabs_meanings) + '|')
         newfile.write('\n|' + '|'.join(audio) + '|\n\n')
     newfile.write('</div>\n\n')
     newfile.write('\n\n# ![icon](/media/icons/quiz.svg) \n\n')
@@ -69,7 +70,7 @@ tags: { category:2vocab,level:0 }
                     newfile.write(' - [ ] ' + c[0] + '\n')
             questions_tmp.pop(answer_index)
             choicess_tmp.pop(answer_index)
-    shutil.move(os.path.join("csv/togenerate/vocab",filename),"csv/togenerate/audio")
+    shutil.move(os.path.join("csv/_togenerate/vocab",filename),"csv/_togenerate/audio")
 
     
     questionGenerator(vocabs,meanings,2)

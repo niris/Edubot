@@ -2,7 +2,7 @@
 title: 2-goodbye
 description: 
 icon: /media/icons/goodbye.svg
-tags: { category:3conversation}
+tags: {}
 ---
 
 <div class="carrousel">

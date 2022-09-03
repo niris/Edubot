@@ -2,7 +2,7 @@
 title: numbers
 description: 
 icon: /media/icons/numbers.svg
-tags: { category:2vocab }
+tags: { category:2vocab,level:0}
 ---
 
 <div class="carrousel">
@@ -10,8 +10,7 @@ tags: { category:2vocab }
 
 |![](/media/img/numbers/zero.svg)|![](/media/img/numbers/one.svg)|![](/media/img/numbers/two.svg)|![](/media/img/numbers/three.svg)|![](/media/img/numbers/four.svg)|![](/media/img/numbers/five.svg)|![](/media/img/numbers/six.svg)|![](/media/img/numbers/seven.svg)|![](/media/img/numbers/eight.svg)|![](/media/img/numbers/nine.svg)|![](/media/img/numbers/ten.svg)|
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-|zero|one|two|three|four|five|six|seven|eight|nine|ten|
-|ศูนย์|หนึ่ง|สอง|สาม|สี่|ห้า|หก|เจ็ด|แปด|เก้า|สิบ|
+|**zero**<br>ศูนย์|**one**<br>หนึ่ง|**two**<br>สอง|**three**<br>สาม|**four**<br>สี่|**five**<br>ห้า|**six**<br>หก|**seven**<br>เจ็ด|**eight**<br>แปด|**nine**<br>เก้า|**ten**<br>สิบ|
 |![](/media/audio/zero.mp3)|![](/media/audio/one.mp3)|![](/media/audio/two.mp3)|![](/media/audio/three.mp3)|![](/media/audio/four.mp3)|![](/media/audio/five.mp3)|![](/media/audio/six.mp3)|![](/media/audio/seven.mp3)|![](/media/audio/eight.mp3)|![](/media/audio/nine.mp3)|![](/media/audio/ten.mp3)|
 
 </div>
@@ -21,26 +20,26 @@ tags: { category:2vocab }
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **one**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **six**
+ - [ ] สาม
+ - [x] หก
+ - [ ] เก้า
+ - [ ] แปด
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **seven**
  - [ ] สอง
- - [ ] สิบ
- - [ ] หก
- - [x] หนึ่ง
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **three**
- - [x] สาม
- - [ ] สิบ
- - [ ] สี่
- - [ ] หก
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ห้า**
- - [x] five
- - [ ] nine
- - [ ] six
- - [ ] ten
+ - [ ] สาม
+ - [ ] เก้า
+ - [x] เจ็ด
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **แปด**
  - [x] eight
+ - [ ] five
+ - [ ] seven
  - [ ] ten
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สิบ**
+ - [ ] six
+ - [x] ten
  - [ ] three
- - [ ] two
+ - [ ] zero

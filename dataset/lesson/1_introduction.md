@@ -1,8 +1,8 @@
 ---
-title: 3-Self introduction
+title: 2 - Self introduction
 description: 
 icon: /media/icons/introduction.svg
-tags: { category:3conversation,level:1}
+tags: { category:3conversation}
 ---
 
 <div class="carrousel">
