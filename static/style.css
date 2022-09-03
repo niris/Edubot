@@ -13,15 +13,17 @@
     --grid-maxWidth: 80rem;
     /*--color-primary: #1A8D7E; set by JS from userprofile */
     accent-color: var(--color-primary);
+    --blur: #fffe;
 }
 body{
     padding-bottom: 200px; /* give space to bot */
 }
 body.dark {
-    --bg-color: #444;
-    --bg-secondary-color: #222;
+    --bg-color: #222;
+    --bg-secondary-color: #111;
+    --blur: #000e;
     --font-color: #fff;
-    --color-grey: #000;/* shadow */
+    --color-grey: #777;/* shadow + text */
     --color-darkGrey: #777;
 }
 
@@ -85,8 +87,7 @@ img[alt=icon-collapsed] {
 }
 
 .chatbot>output.user {
-    border-radius: 20px 20px 0 20px;
-    color: var(--color-grey) !important;
+    border-radius: 20px 20px 20px 0;
     justify-content: flex-end;
 }
 
@@ -210,4 +211,9 @@ li>label{
 
 .link {
     margin-bottom: 0 !important;
+}
+.chatbot:focus-within {
+    z-index:2; /* over navbar*/
+    background-color:var(--blur);
+    box-shadow: 0 0 0 5000px var(--blur) !important;
 }

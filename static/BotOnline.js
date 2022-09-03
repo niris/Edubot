@@ -110,7 +110,7 @@ const BotOnlineChat = {
     },
     template: `
     <form class=chatbot @submit.prevent=send>
-        <output v-for="log in last_logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user text-grey')" v-html="md(log.msg)"></output>
+        <output v-for="log in last_logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user')" v-html="md(log.msg)"></output>
         <details class=field>
             <summary>
             <svg class=bot xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 492 492">

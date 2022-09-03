@@ -75,7 +75,6 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 	<nav class="tabs is-full" style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
 		<router-link to="/category" v-if="is('admin','user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
 		<router-link to="/category/2vocab" v-if="is('admin','user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
-		<router-link to="/user/" v-if="is('admin')"><s>group</s>&nbsp;<span>Users</span></router-link>
 		<router-link to="/me" v-if="is('admin','user')">
 			<s>bust</s>&nbsp;<span>{{$root.id}}</span>
 			<span ref=lv class="tag is-small" :title="'xp:'+xp" style="transform:scale(1) translateY(0);background-size: cover;transition: transform 1s;">Lv:{{myLv}}</span>

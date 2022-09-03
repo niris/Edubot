@@ -27,7 +27,11 @@ const Profile = {
 		</div>
 	</div>
 		<br>
-		<button class="button error" type=button @click=signOut($event) class=is-full-width><s>logout</s> Sign Out</button>
+		<div class="row">
+		<button class="col button" v-if="quiet" type=button @click=mute()><s>louder</s> unmute</button>
+		<button class="col button" v-if="!quiet" type=button @click=mute()><s>volume</s> mute</button>
+		<button class="col button error" type=button @click=signOut($event)><s>logout</s> Sign Out</button>
+		</div>
 		<h1>My Profile</h1>
 		<label>
 			<div>Nickname</div>
@@ -41,6 +45,10 @@ const Profile = {
 			<div>Grade</div>
 			<input v-model=me.grade type=number>
 		</label>
+		<label>
+			<div>Birthdate (needed for password recovery)</div>
+			<input v-model=me.birth type=date>
+		</label>
 		<!-- <button @click="for(var i=0;i< 1;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=1</button>
 		<button @click="for(var i=0;i<50;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=50</button>
 		<button @click="localStorage.progress=JSON.stringify($root.progress=me.progress={});update();">xp=0</button> -->
@@ -48,7 +56,7 @@ const Profile = {
 		<button disabled name=submit type=submit class=is-full-width><s>check</s> Update</button>
 	</form>
 	`,
-	data() { return { me: {}, delta: 0, localStorage, context: null, motivations, oldXp:-1} },
+	data() { return { me: {}, quiet:localStorage.quiet||'', delta: 0, localStorage, context: null, motivations, amp:{}, oldXp:-1} },
 	computed: {
 		overlay() { return this.delta ? shiny : empty },
 		percent() { return (this.$root.xp - Math.pow(2, this.level(this.$root.xp))) / Math.pow(2, this.level(this.$root.xp)) },
@@ -82,8 +90,13 @@ const Profile = {
 		'$root.progress': function (xp) {this.audio()},
 	},
 	methods: {
-		audio() {
-			if (!this.context || this.context.state == 'suspended' ||
+		mute(){
+			this.quiet = this.quiet ? '': '1'; // keep it as string for localstorage
+			localStorage.quiet = this.quiet;
+			this.audio(true);
+		},
+		audio(restart=false) {
+			if (restart || !this.context || this.context.state == 'suspended' ||
 				this.level(this.oldXp) != this.level(this.$root.xp)) {
 				if (this.context) {
 					this.context.suspend()
@@ -94,7 +107,8 @@ const Profile = {
 				this.context = new AudioContext();
 				const gain = this.context.createGain();
 				gain.connect(this.context.destination);
-				gain.gain.value = 0.1;
+				gain.gain.value = this.quiet ? 0 : 0.1;
+				console.log(gain.gain.value)
 				const source = this.context.createBufferSource();
 				source.connect(gain);
 				fetch('/static/profile/lv' + this.level(this.$root.xp) + '.ogg')
