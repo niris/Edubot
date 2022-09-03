@@ -2,7 +2,7 @@
 title: places
 description: 
 icon: /media/icons/places.svg
-tags: {category:1phonics,level:4}
+tags: {category:2vocab,level:4}
 ---
 
 <div class="carrousel">
