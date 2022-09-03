@@ -2,7 +2,7 @@
 title: เทียบเสียงพยัญชนะ
 description: ตัวอักษรภาษาอังกฤษ
 icon: /media/icons/lesson.svg
-tags: {category:1phonics,level:4}
+tags: {category:1phonics,level:1}
 ---
 
 ![icon](/media/icons/content.svg)

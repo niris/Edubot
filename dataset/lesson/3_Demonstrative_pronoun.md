@@ -2,7 +2,7 @@
 title: Demonstrative pronoun
 description: 
 icon: /media/icons/thisthatthose.svg
-tags: {category:6grammar,group:basic,level:2}
+tags: {category:6grammar,group:basic,level:4}
 ---
 
 ### Demonstrative pronoun สรรพนามบ่งชี้ 

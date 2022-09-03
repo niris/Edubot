@@ -2,7 +2,7 @@
 title: Past simple tense
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:6grammar,group:tense,level:2}
+tags: {category:6grammar,group:tense,level:9}
 ---
 
 ### Past simple tense

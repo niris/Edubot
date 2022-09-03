@@ -2,7 +2,7 @@
 title: Adjective
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:6grammar,group:pos,level:2}
+tags: {category:6grammar,group:pos,level:4}
 ---
 
 ### Adjective คำคุณศัพท์ 

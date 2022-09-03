@@ -2,7 +2,7 @@
 title: Basic exam example
 description: This is a basic exam demo
 icon: /media/icons/test1.svg
-tags: {category:8test}
+tags: {category:8test,level:9}
 draft: TRUE
 ---
 

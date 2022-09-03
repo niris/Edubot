@@ -2,7 +2,7 @@
 title: Personal Pronoun
 description: 
 icon: /media/icons/lesson.svg
-tags: {category:6grammar,group:pos,level:2}
+tags: {category:6grammar,group:pos,level:3}
 ---
 
 ## Pronoun คำสรรพนาม
