@@ -2,7 +2,6 @@ const BotOnlineChat = {
     data: () => ({ logs: [] }),
     created () {
         setTimeout(() => this.logs.push({ bot: true, msg: "AnglizBot Hello!" }), 500);
-        this.audio();
     },
     computed: {
         last_logs() {return this.logs.slice(-3)}
@@ -11,7 +10,6 @@ const BotOnlineChat = {
         log: console.log,
         async send({ target }) {
             const msg = target.req.value;
-
             target.req.value = '';
 
             if (msg.match(/(score|level|lv|exp)/gi)) {
@@ -101,13 +99,6 @@ const BotOnlineChat = {
             }
         },
         md: (txt) => markdownit('default').render(txt),
-        audio() {
-            //console.log("audio!")
-            var audio = new Audio('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3');
-            audio.muted = true;
-            //console.log(audio)
-            //audio.play()
-		}
     },
     template: `
     <form class=chatbot @submit.prevent=send>
