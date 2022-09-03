@@ -2,7 +2,7 @@
 title: vehicles
 description: 
 icon: /media/icons/vehicles.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:5}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **balloon**
- - [x] บอลลูน
- - [ ] รถแท็กซี่
- - [ ] เรือ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **submarine**
+ - [ ] ยานอวกาศ
+ - [ ] รถบรรทุก
+ - [x] เรือดำน้ำ
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **train**
+ - [ ] จักรยาน
+ - [x] รถไฟ
  - [ ] เรือใบ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ship**
- - [ ] จักรยาน
- - [ ] รถไฟฟ้า
- - [x] เรือ
- - [ ] เฮลิคอปเตอร์
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เรือดำน้ำ**
- - [ ] boat
- - [ ] ship
- - [x] submarine
- - [ ] train
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **รถแท็กซี่**
- - [ ] sail
- - [ ] ship
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **มอเตอร์ไซค์**
+ - [x] motorcycle
  - [ ] spaceship
- - [x] taxi
+ - [ ] van
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **รถบรรทุก**
+ - [ ] bicycle
+ - [ ] sail
+ - [x] truck

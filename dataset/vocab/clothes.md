@@ -2,7 +2,7 @@
 title: clothes
 description: 
 icon: /media/icons/clothes.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:6}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **maternity dress**
- - [x] ชุดคลุมท้อง
- - [ ] ชุดชั้นใน
- - [ ] ชุดดําน้ํา
- - [ ] รองเท้าบูท
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **skirt**
- - [x] กระโปรง
- - [ ] กางเกงขาสั้น
- - [ ] ชุดดําน้ํา
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **boots**
+ - [ ] ชุดว่ายน้ํา
  - [ ] ถุงเท้า
+ - [x] รองเท้าบูท
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ชุดนอน**
- - [x] pyjamas
- - [ ] shoes
- - [ ] slippers
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **suit**
+ - [ ] ถุงเท้า
+ - [ ] ยีนส์
+ - [x] สูท
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ชุดกระโปรง**
+ - [ ] boots
+ - [x] dress
  - [ ] socks
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **รองเท้า**
- - [ ] raincoat
- - [x] shoes
- - [ ] shorts
- - [ ] slippers
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สูท**
+ - [ ] diving suit
+ - [ ] skirt
+ - [x] suit

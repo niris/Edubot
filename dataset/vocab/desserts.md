@@ -2,7 +2,7 @@
 title: desserts
 description: 
 icon: /media/icons/desserts.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:2}
 ---
 
 <div class="carrousel">
@@ -21,25 +21,21 @@ tags: { category:2vocab,level:0}
 
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **jelly**
- - [ ] คุกกี้
+ - [ ] เค้ก
  - [x] เยลลี่
+ - [ ] ไอศครีม
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **cake**
+ - [x] เค้ก
  - [ ] โดนัท
  - [ ] ไอศครีม
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **pie**
- - [ ] ช็อกโกแลตบาร์
- - [x] พาย
- - [ ] โดนัท
- - [ ] ไอศครีม
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **โดนัท**
+ - [ ] cookie
+ - [x] donut
+ - [ ] fruit salad
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **สลัดผลไม้**
- - [ ] cookie
- - [ ] donut
+ - [ ] cake
  - [x] fruit salad
- - [ ] jelly
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **พุดดิ้ง**
- - [ ] chocolate bar
- - [ ] cookie
- - [ ] jelly
- - [x] pudding
+ - [ ] ice cream

@@ -2,7 +2,7 @@
 title: bedroom
 description: 
 icon: /media/icons/bedroom.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:3}
 ---
 
 <div class="carrousel">
@@ -22,24 +22,20 @@ tags: { category:2vocab,level:0}
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **wardrobe**
  - [x] ตู้เสื้อผ้า
- - [ ] หมอน
  - [ ] เตียง
  - [ ] โคมไฟ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **pillow**
- - [ ] ผ้าห่ม
- - [x] หมอน
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **lamp**
+ - [ ] นาฬิกาปลุก
  - [ ] หมอนข้าง
- - [ ] โคมไฟ
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **โคมไฟ**
- - [ ] alarm clock
- - [ ] dressing table
- - [x] lamp
- - [ ] pillow
+ - [x] โคมไฟ
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ตู้เสื้อผ้า**
- - [ ] blanket
- - [ ] dressing table
- - [ ] pillow
+ - [ ] alarm clock
+ - [ ] lamp
  - [x] wardrobe
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **เตียง**
+ - [x] bed
+ - [ ] bolster
+ - [ ] pillow

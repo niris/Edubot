@@ -2,7 +2,7 @@
 title: bathroom
 description: 
 icon: /media/icons/bathroom.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:3}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **soap**
- - [ ] กระดาษชําระ
- - [ ] ฝักบัวอาบน้ำ
- - [ ] ยาสีฟัน
- - [x] สบู่
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **faucet**
- - [x] ก๊อกน้ํา
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **toilet paper**
+ - [x] กระดาษชําระ
+ - [ ] สบู่
  - [ ] อ่างน้ํา
- - [ ] แชมพู
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **toilet**
+ - [ ] ก๊อกน้ํา
+ - [x] ห้องน้ํา
  - [ ] แปรงสีฟัน
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ยาสีฟัน**
- - [ ] hair conditioner
- - [ ] toilet
- - [x] toothpaste
- - [ ] towel
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สบู่**
+ - [ ] basin
+ - [x] soap
+ - [ ] toilet paper
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ก๊อกน้ํา**
- - [x] faucet
- - [ ] shampoo
- - [ ] shower
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ครีมนวดผม**
+ - [x] hair conditioner
+ - [ ] toilet
  - [ ] towel

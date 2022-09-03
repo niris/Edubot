@@ -2,7 +2,7 @@
 title: sports
 description: 
 icon: /media/icons/sports.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:5}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **golf**
- - [x] กอล์ฟ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **hiking**
  - [ ] ปิงปอง
- - [ ] ยิมนาสติก
- - [ ] แข่งเรือใบ
+ - [x] ปีนเขา
+ - [ ] ยูโด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **judo**
- - [ ] ฟุตบอล
- - [x] ยูโด
- - [ ] วอลเลย์บอล
- - [ ] แข่งเรือใบ
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ออกกําลังกาย**
- - [x] exercise
- - [ ] sailing
- - [ ] skiing
- - [ ] yoga
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **basketball**
+ - [x] บาสเก็ตบอล
+ - [ ] รักบี้
+ - [ ] ออกกําลังกาย
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **สกี**
- - [ ] hiking
  - [x] skiing
- - [ ] table tennis
+ - [ ] swimming
+ - [ ] volleyball
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ปีนเขา**
+ - [x] hiking
+ - [ ] judo
  - [ ] tennis

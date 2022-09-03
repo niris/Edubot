@@ -2,7 +2,7 @@
 title: hobbies
 description: 
 icon: /media/icons/hobbies.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:6}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **drawing**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **gardening**
  - [ ]  ถักไหมพรม
- - [ ] ฟังเพลง
- - [ ] ร้องเพลง
- - [x] วาดภาพ
+ - [x] ทําสวน
+ - [ ] อ่านหนังสือ
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **knitting**
  - [x]  ถักไหมพรม
- - [ ] ทําอาหาร
- - [ ] ร้องเพลง
- - [ ] เล่นกีฬา
+ - [ ] ถ่ายภาพ
+ - [ ] เล่นกับสัตว์เลี้ยง
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ถ่ายภาพ**
- - [ ] drawing
- - [ ] knitting
- - [ ] seeing a movie
- - [x] taking photos
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เล่นกับสัตว์เลี้ยง**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ดูหนัง**
  - [ ] gardening
- - [ ] listening to music
- - [x] playing with pet
- - [ ] reading
+ - [ ] playing sports
+ - [x] seeing a movie
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ ** ถักไหมพรม**
+ - [ ] drawing
+ - [x] knitting
+ - [ ] painting

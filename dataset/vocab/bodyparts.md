@@ -2,7 +2,7 @@
 title: body parts
 description: 
 icon: /media/icons/bodyparts.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:1}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **chest**
- - [ ] จมูก
- - [ ] ผม
- - [ ] หน้า
- - [x] หน้าอก
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **eye**
+ - [x] ตา
+ - [ ] หัว
+ - [ ] หู
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **hand**
- - [ ] ตา
- - [x] มือ
- - [ ] หน้า
- - [ ] ไหล่
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **head**
+ - [ ] คอ
+ - [x] หัว
+ - [ ] หู
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **มือ**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ท้อง**
+ - [ ] ear
  - [ ] hair
- - [x] hand
- - [ ] leg
- - [ ] mouth
+ - [x] stomach
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ตา**
- - [ ] arm
- - [x] eye
- - [ ] face
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **หู**
+ - [x] ear
+ - [ ] hair
  - [ ] nose

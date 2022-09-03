@@ -2,7 +2,7 @@
 title: drinks
 description: 
 icon: /media/icons/drinks.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:2}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **juice**
- - [x] น้ําผลไม้
- - [ ] น้ําผึ้ง
- - [ ] น้ําสับปะรด
- - [ ] น้ําแตงโม
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **can**
- - [x] กระป๋อง
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **pineapple juice**
+ - [ ] กาน้ําชา
  - [ ] น้ำมะพร้าว
- - [ ] น้ําสับปะรด
- - [ ] น้ําแอปเปิ้ล
+ - [x] น้ําสับปะรด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **น้ำมะพร้าว**
- - [ ] can
- - [x] coconut drink
- - [ ] coffee
- - [ ] dringking water
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **soda**
+ - [ ] กาน้ําชา
+ - [ ] น้ำดื่ม
+ - [x] โซดา
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **น้ําผึ้ง**
- - [ ] coffee
- - [ ] dringking water
- - [x] honey
- - [ ] pineapple juice
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ถุงชา**
+ - [ ] coconut drink
+ - [x] tea bag
+ - [ ] watermelon juice
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นม**
+ - [ ] coconut drink
+ - [x] milk
+ - [ ] teapot

@@ -2,7 +2,7 @@
 title: living room
 description: 
 icon: /media/icons/livingroom.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:3}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **television**
- - [ ] กรอบภาพ
- - [ ] ตู้ปลา
- - [ ] พรม
- - [x] โทรทัศน์
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **picture frame**
+ - [x] กรอบภาพ
+ - [ ] โซฟา
+ - [ ] โทรทัศน์
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **sofa**
- - [ ] กรอบภาพ
- - [ ] วิทยุ
  - [ ] แจกัน
  - [x] โซฟา
+ - [ ] โทรทัศน์
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **วิทยุ**
- - [ ] carpet
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **โต๊ะ**
  - [ ] fish tank
- - [x] radio
- - [ ] vase
+ - [x] table
+ - [ ] television
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **พรม**
- - [x] carpet
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **กรอบภาพ**
  - [ ] fish tank
- - [ ] picture frame
- - [ ] table
+ - [x] picture frame
+ - [ ] radio

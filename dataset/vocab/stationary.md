@@ -2,7 +2,7 @@
 title: stationary
 description: 
 icon: /media/icons/stationary.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:0}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **glue stick**
- - [x] กาวแท่ง
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **colored paper**
+ - [x] กระดาษสี
+ - [ ] ของเหลวแก้คําผิด
  - [ ] มีดคัตเตอร์
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **cutter**
+ - [x] มีดคัตเตอร์
  - [ ] ยางลบ
- - [ ] ไม้บรรทัด
+ - [ ] สีเทียน
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **drawing book**
- - [ ] กระดาษสี
- - [ ] พจนานุกรม
- - [ ] สมุดทํางาน
- - [x] สมุดวาดภาพ
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สมุดทํางาน**
+ - [ ] drawing book
+ - [ ] sharpener
+ - [x] workbook
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ปากกา**
- - [ ] colored paper
- - [x] pen
- - [ ] ruler
- - [ ] textbook
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ยางลบ**
- - [ ] correcting fluid
- - [x] eraser
- - [ ] highlighter
- - [ ] stapler
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ไม้บรรทัด**
+ - [ ] crayon
+ - [ ] cutter
+ - [x] ruler

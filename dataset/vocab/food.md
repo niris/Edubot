@@ -2,7 +2,7 @@
 title: food
 description: 
 icon: /media/icons/food.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:2}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **steamed stuffed bun**
- - [ ] ก๋วยเตี๋ยว
- - [x] ซาลาเปา
- - [ ] พิซซ่า
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **noodle**
+ - [x] ก๋วยเตี๋ยว
  - [ ] มักกะโรนี
+ - [ ] ไข่เจียว
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **fried egg**
- - [ ] ก๋วยเตี๋ยว
- - [ ] สปาเก็ตตี้
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **tempura**
+ - [ ] มักกะโรนี
+ - [x] เทมปุระ
  - [ ] แฮมเบอร์เกอร์
- - [x] ไข่เจียว
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เทมปุระ**
- - [ ] fried egg
- - [ ] hot dog
- - [ ] steamed stuffed bun
- - [x] tempura
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **แฮมเบอร์เกอร์**
- - [x] hamburger
- - [ ] macaroni
- - [ ] pizza
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ซาลาเปา**
+ - [ ] fried rice
  - [ ] spaghetti
+ - [x] steamed stuffed bun
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ฮ็อทดอก**
+ - [ ] hamburger
+ - [x] hot dog
+ - [ ] tempura

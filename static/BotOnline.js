@@ -92,8 +92,16 @@ const BotOnlineChat = {
                     const restoral = ["ไปฝึกพูดกันเลย", "โอเค!!!ไปฝึกพูดกันเลย", "Let's go!!!!!"]
                     this.$router.push({ path: '/category/1phonics' });
                     return [restoral[Math.floor(Math.random() * restoral.length)],0];
+                case "Listening":
+                    const restListening = ["ไปฝึกฟังกันเลย!!!", "โอเค!!!ไปฝึกฟังกันเลย", "Let's go!!!!!"]
+                    this.$router.push({ path: '/category/1phonics' });
+                    return [restListening[Math.floor(Math.random() * restListening.length)],0];
+                case "Reading":
+                    const restReading = ["ไปฝึกฟังอ่านกันเลย!!!", "โอเค!!!ไปฝึกอ่านกันเลย", "Let's go!!!!!"]
+                    this.$router.push({ path: '/category/1phonics' });
+                    return [restReading[Math.floor(Math.random() * restReading.length)],0];
                 case "Skills":
-                    return ["ไม่ทราบว่าอยากฝึกทักษะด้านไหน",1];
+                    return ["อยากฝึกทักษะด้านไหนเอ่ย",1];
                 default:
                     return [res.response,1]
             }

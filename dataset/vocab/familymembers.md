@@ -2,7 +2,7 @@
 title: family members
 description: 
 icon: /media/icons/familymembers.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:1}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **father**
- - [ ] ตัวฉัน
- - [ ] พี่สาว หรือ น้องสาว
- - [x] พ่อ
- - [ ] แม่
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **mother**
+ - [ ]  คุณปู่ หรือ คุณตา
+ - [ ] ป้า หรือ น้าสาว
+ - [x] แม่
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **grandmother**
- - [ ]  คุณปู่ หรือ คุณตา
  - [x] คุณย่า หรือ คุณยาย
- - [ ] ป้า หรือ น้าสาว
- - [ ] แม่
+ - [ ] ตัวฉัน
+ - [ ] พี่ชาย หรือ น้องชาย
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ ** คุณปู่ หรือ คุณตา**
- - [ ] brother
- - [x] grandfather
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ป้า หรือ น้าสาว**
+ - [x] aunt
+ - [ ] father
  - [ ] mother
- - [ ] sister
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **พ่อ**
- - [ ] brother
- - [x] father
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ลุง หรือ น้าชาย**
  - [ ] grandmother
- - [ ] uncle
+ - [ ] sister
+ - [x] uncle

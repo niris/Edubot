@@ -2,7 +2,7 @@
 title: numbers
 description: 
 icon: /media/icons/numbers.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:0}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **six**
- - [ ] สาม
- - [x] หก
- - [ ] เก้า
- - [ ] แปด
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ten**
+ - [x] สิบ
+ - [ ] หก
+ - [ ] เจ็ด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **seven**
- - [ ] สอง
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **eight**
  - [ ] สาม
- - [ ] เก้า
- - [x] เจ็ด
+ - [ ] หก
+ - [x] แปด
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **แปด**
- - [x] eight
- - [ ] five
- - [ ] seven
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ห้า**
+ - [x] five
  - [ ] ten
+ - [ ] two
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **สิบ**
- - [ ] six
- - [x] ten
- - [ ] three
- - [ ] zero
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **หก**
+ - [ ] eight
+ - [x] six
+ - [ ] two

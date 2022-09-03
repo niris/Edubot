@@ -2,7 +2,7 @@
 title: places
 description: 
 icon: /media/icons/places.svg
-tags: { category:2vocab,level:0}
+tags: {category:1phonics,level:4}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **museum**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **port**
  - [ ] ตลาด
- - [x] พิพิธภัณฑ์
- - [ ] สถานีดับเพลิง
- - [ ] โรงพยาบาล
+ - [x] ท่าเรือ
+ - [ ] โรงเรียน
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **school**
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **fire station**
+ - [ ] ตลาด
+ - [x] สถานีดับเพลิง
  - [ ] สถานีตํารวจ
- - [ ] สนามบิน
- - [ ] เอทีเอ็ม
- - [x] โรงเรียน
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เอทีเอ็ม**
- - [x] atm
- - [ ] hospital
- - [ ] post office
- - [ ] school
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ท่าเรือ**
- - [ ] fire station
- - [ ] hospital
+ - [ ] airport
  - [x] port
+ - [ ] school
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **โรงพยาบาล**
+ - [ ] atm
+ - [x] hospital
  - [ ] post office

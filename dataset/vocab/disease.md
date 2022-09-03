@@ -2,7 +2,7 @@
 title: disease
 description: 
 icon: /media/icons/disease.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:6}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **cough**
+ - [ ] น้ํามูกไหล
+ - [ ] เจ็บคอ
+ - [x] ไอ
+
  เลือกคำศัพท์/ความหมายที่ตรงกับ **pain**
  - [x] ความเจ็บปวด
  - [ ] ปวดท้อง
  - [ ] อ้วก
- - [ ] ไข้
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **runny nose**
- - [x] น้ํามูกไหล
- - [ ] ปวดท้อง
- - [ ] ปวดหลัง
- - [ ] เจ็บ
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ปวดหลัง**
- - [x] backache
- - [ ] fever
- - [ ] pain
- - [ ] sore throat
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ไอ**
- - [x] cough
- - [ ] headaches
- - [ ] pain
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **เลือดออก**
+ - [x] bleed
  - [ ] runny nose
+ - [ ] vomit
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ปวดท้อง**
+ - [ ] fever
+ - [x] stomachache
+ - [ ] vomit

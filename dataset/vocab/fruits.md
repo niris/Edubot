@@ -2,7 +2,7 @@
 title: fruits
 description: 
 icon: /media/icons/fruits.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:0}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **rose apple**
- - [x] ชมพู่
- - [ ] ทุเรียน
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **orange**
  - [ ] มะพร้าว
- - [ ] ส้มโอ
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **apple**
- - [ ] มังคุด
- - [ ] สัปปะรด
+ - [x] ส้ม
  - [ ] เชอร์รี่
- - [x] แอปเปิ้ล
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **มะขาม**
- - [ ] mango
- - [ ] orange
- - [ ] pineapple
- - [x] tamarind
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **strawberry**
+ - [ ] มะม่วง
+ - [ ] ลําไย
+ - [x] สตรอเบอร์รี่
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ส้ม**
- - [ ] banana
- - [x] orange
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **องุ่น**
+ - [x] grape
  - [ ] pineapple
  - [ ] rose apple
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สัปปะรด**
+ - [ ] banana
+ - [ ] papaya
+ - [x] pineapple

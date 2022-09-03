@@ -2,7 +2,7 @@
 title: vegetables
 description: 
 icon: /media/icons/vegetables.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:2}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **carrot**
- - [ ] ต้นหอม
- - [ ] ฟักทอง
- - [ ] หน่อไม้ฝรั่ง
- - [x] แครอท
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ginger**
- - [ ] กะหล่ําปลี
- - [x] ขิง
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **pumpkin**
  - [ ] ข้าวโพด
- - [ ] ดอกกะหล่ําปลี
+ - [x] ฟักทอง
+ - [ ] แครอท
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **มันฝรั่งหวาน**
- - [ ] ginger
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **kale**
+ - [x] ผักคะน้า
+ - [ ] มะเขือยาว
+ - [ ] หอมแดง
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **เห็ด**
+ - [ ] beetroot
+ - [ ] kale
+ - [x] mushroom
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **แตงกวา**
+ - [x] cucumber
  - [ ] lettuce
- - [ ] pumpkin
- - [x] sweet potato
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **หน่อไม้ฝรั่ง**
- - [x] asparagus
- - [ ] eggplant
- - [ ] pumpkin
- - [ ] shallot
+ - [ ] sweet potato

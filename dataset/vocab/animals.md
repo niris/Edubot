@@ -2,7 +2,7 @@
 title: animals
 description: 
 icon: /media/icons/animals.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:0}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **buffalo**
- - [x] ควาย
- - [ ] ปลาทอง
- - [ ] หนู
- - [ ] หมู
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **chicken**
+ - [ ] ควาย
+ - [ ] แมลงปอ
+ - [x] ไก่
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **turkey**
- - [ ] นกยูง
- - [ ] วัว
- - [ ] อีแร้ง
+ - [ ] หอย
+ - [ ] แมลงปอ
  - [x] ไก่งวง
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **กุ้ง**
- - [ ] dragonfly
- - [ ] mouse
- - [ ] peacock
- - [x] shrimp
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นก**
+ - [x] bird
+ - [ ] dog
+ - [ ] vulture
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **หมู**
- - [ ] bee
- - [ ] cat
- - [ ] ostrich
- - [x] pig
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นกอินทรี**
+ - [ ] chicken
+ - [x] eagle
+ - [ ] horse

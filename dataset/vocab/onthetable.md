@@ -2,7 +2,7 @@
 title: on the table
 description: 
 icon: /media/icons/onthetable.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:4}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **napkin**
- - [ ] ซอสพริก
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **chili sauce**
+ - [x] ซอสพริก
  - [ ] ซอสมะเขือเทศ
- - [x] ผ้าเช็ดปาก
+ - [ ] น้ำปลา
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **pepper**
+ - [ ] น้ำปลา
+ - [x] พริกไทย
  - [ ] เกลือ
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **tomato sauce**
- - [ ] ซอสพริก
- - [x] ซอสมะเขือเทศ
- - [ ] พริกไทย
- - [ ] เกลือ
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **ซอสพริก**
- - [x] chili sauce
- - [ ] napkin
- - [ ] pepper
- - [ ] toothpick
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **ผ้าเช็ดปาก**
+ - [ ] menu
+ - [x] napkin
+ - [ ] salt
 
  เลือกคำศัพท์/ความหมายที่ตรงกับ **ไม้จิ้มฟัน**
- - [ ] fish sauce
- - [ ] pepper
- - [ ] salt
+ - [ ] chili sauce
+ - [ ] tomato sauce
  - [x] toothpick

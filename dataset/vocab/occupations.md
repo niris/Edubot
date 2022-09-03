@@ -2,7 +2,7 @@
 title: occupations
 description: 
 icon: /media/icons/occupations.svg
-tags: { category:2vocab,level:0}
+tags: {category:2vocab,level:5}
 ---
 
 <div class="carrousel">
@@ -20,26 +20,22 @@ tags: { category:2vocab,level:0}
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **hairdresser**
- - [x] ช่างทําผม
- - [ ] นักข่าว
- - [ ] นักดนตรี
- - [ ] หมอฟัน
-
- เลือกคำศัพท์/ความหมายที่ตรงกับ **dancer**
- - [ ] นักบิน
- - [x] นักเต้น
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **actress**
+ - [x] นักแสดง
+ - [ ] พ่อครัว/แม่ครัว
  - [ ] หมอ
- - [ ] เกษตรกร
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **เกษตรกร**
- - [x] farmer
- - [ ] pilot
- - [ ] seller
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **photographer**
+ - [ ] ชาวประมง
+ - [x] ช่างภาพ
+ - [ ] ตํารวจจราจร
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **นายแบบ/นางแบบ**
+ - [ ] judge
+ - [x] model
  - [ ] steward
 
- เลือกคำศัพท์/ความหมายที่ตรงกับ **คนสวน**
- - [ ] architect
- - [x] gardener
- - [ ] receptionist
- - [ ] waitress
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **พนักงานต้อนรับ**
+ - [ ] dentist
+ - [ ] musician
+ - [x] receptionist
