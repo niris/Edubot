@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: MicrosoftSansSerif, 'Microsoft Sans Serif';
+        font-size: 80px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #bc834c;
+      }
+
+      .cls-4 {
+        fill: #e4c09d;
+      }
+
+      .cls-5 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-6 {
+        font-family: FreeSansBold, FreeSans;
+        font-size: 150px;
+      }
+
+      .cls-7 {
+        isolation: isolate;
+      }
+
+      .cls-8 {
+        opacity: .2;
+      }
+
+      .cls-9 {
+        fill: #d2a47c;
+      }
+
+      .cls-10 {
+        fill: #c49571;
+      }
+
+      .cls-11 {
+        fill: red;
+      }
+
+      .cls-3 {
+        mix-blend-mode: multiply;
+        opacity: .5;
+      }
+
+      .cls-12 {
+        fill: #663700;
+      }
+    </style>
+  </defs>
+  <g class="cls-7">
+    <g id="Box">
+      <g>
+        <g>
+          <g>
+            <polygon class="cls-2" points="727.52 259.07 464.47 206.46 284.4 279.46 597.71 342.1 727.52 259.07"/>
+            <polygon class="cls-4" points="727.52 259.07 464.47 206.46 501.33 57 771.98 111.11 727.52 259.07"/>
+            <polygon class="cls-10" points="597.71 628 727.52 528.71 727.52 259.07 597.71 342.1 597.71 628"/>
+            <polygon class="cls-3" points="464.47 206.46 464.47 503.23 284.4 549.1 284.4 279.46 464.47 206.46"/>
+            <polygon class="cls-4" points="727.52 259.07 831.01 247.75 725.79 329.95 597.71 342.1 727.52 259.07"/>
+            <polygon class="cls-4" points="387.37 123.95 464.47 206.46 284.4 279.46 196.55 163.72 387.37 123.95"/>
+            <polygon class="cls-9" points="597.71 628 284.4 549.1 284.4 279.46 597.71 342.1 597.71 628"/>
+            <polygon class="cls-4" points="476.04 456.36 170.24 387.32 284.4 279.46 597.71 342.1 476.04 456.36"/>
+          </g>
+          <g class="cls-8">
+            <g>
+              <path class="cls-12" d="M514.05,530.69l-22.2-20.02,14.36-18.59s3.25-2.86,7.47,.25c4.2,3.1,10.27,11.95,13.53,20.57l-13.14,17.8Z"/>
+              <path class="cls-12" d="M516.15,489.46l31.78,7.57s8.23,3.11,14.35,20.45l8.61-1.96-13.39,20.34-26.22-7.97,6.32-2.9s-7.08-25.03-21.43-35.53Z"/>
+            </g>
+            <g>
+              <path class="cls-12" d="M549.41,542.78l23.04-7.91,13.39,25.79s1.82,4.97-1.93,6.92c-3.75,1.96-13.07,1.9-21.54-.67l-12.96-24.13Z"/>
+              <path class="cls-12" d="M585.9,571.8l-14.04,25.94s-4.67,4.46-21.62-1.11l-.2,9.97-15.2-26.04,13.91-19.44,.38,7.96s24.08,9.45,36.77,2.71Z"/>
+            </g>
+            <g>
+              <path class="cls-12" d="M528.89,565.37v26.63l-26.66-6.51s-4.81-1.91-5.32-6.71c-.51-4.8,2.43-13.47,7.28-19.29l24.7,5.89Z"/>
+              <path class="cls-12" d="M492.67,577.55l-17.19-30.81s-3.48-8.37,6.56-19.73l-8.04-6.99,27.05,4.98,12.73,26.01-7.12-4.61s-15.8,14.82-13.99,31.16Z"/>
+            </g>
+          </g>
+        </g>
+        <text class="cls-6" transform="translate(356 802.79)"><tspan x="0" y="0">B</tspan><tspan class="cls-5" x="108.3" y="0">o</tspan><tspan class="cls-11" x="195.45" y="0">x</tspan></text>
+        <text class="cls-1" transform="translate(408.97 902.5)"><tspan x="0" y="0">บอคซฺ</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

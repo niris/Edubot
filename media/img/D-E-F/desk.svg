@@ -1,0 +1,67 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #ed2024;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-size: 72px;
+        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
+      }
+
+      .cls-5 {
+        fill: #e4c99c;
+        stroke: #ccab7a;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: #ad956d;
+        stroke: #99805b;
+      }
+
+      .cls-7 {
+        fill: #ccb288;
+        stroke: #b19569;
+      }
+    </style>
+  </defs>
+  <title>desk</title>
+  <text class="cls-1" transform="translate(304.37 804.59)">D<tspan class="cls-2" x="108.3" y="0">e</tspan><tspan class="cls-3" x="190.2" y="0">sk</tspan></text>
+  <text class="cls-4" transform="translate(432.44 892.8)">เดสค</text>
+  <g>
+    <polygon class="cls-5" points="212.84 343.17 236.47 556.21 247.59 561.35 263.09 556.19 274.64 341.31 212.4 328.3 212.84 343.17"/>
+    <polygon class="cls-5" points="375.33 357.07 380.3 522.13 398.62 532.54 414.76 522.66 421.66 361.32 375.33 357.07"/>
+    <line class="cls-5" x1="243.52" y1="334.81" x2="247.59" y2="561.35"/>
+    <line class="cls-5" x1="398.49" y1="359.2" x2="398.62" y2="532.54"/>
+    <polygon class="cls-5" points="595.37 409.96 599.25 643.17 615.23 653.65 636.8 642.04 662.67 382.88 595.37 409.96"/>
+    <line class="cls-5" x1="628" y1="414.46" x2="615.23" y2="653.65"/>
+    <polygon class="cls-5" points="725.95 352.17 716.96 573.86 725.02 581.44 753.33 559.45 777.73 303.47 725.95 352.17"/>
+    <line class="cls-5" x1="741.51" y1="348.88" x2="725.02" y2="581.44"/>
+    <polygon class="cls-5" points="787.71 322.75 613.99 456.38 605.88 446.83 604.76 305.54 813.83 202.17 805.58 214.16 787.71 322.75"/>
+    <polygon class="cls-5" points="158.3 221.88 180.81 345.31 613.99 456.38 625.03 315.89 158.3 221.88"/>
+    <polygon class="cls-6" points="174.49 239.4 189.83 332.9 595.77 433.83 605.57 332.53 174.49 239.4"/>
+    <line class="cls-6" x1="189.83" y1="332.9" x2="328.48" y2="272.67"/>
+    <polygon class="cls-7" points="136.31 219.41 143.04 209.03 457.08 107.2 820.57 191.79 825.73 207.29 624.45 323.35 136.31 219.41"/>
+    <polyline class="cls-7" points="820.57 191.79 618.15 308.27 143.04 209.03"/>
+  </g>
+</svg>

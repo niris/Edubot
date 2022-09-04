@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Neck" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        font-family: MicrosoftSansSerif, 'Microsoft Sans Serif';
+        font-size: 80px;
+      }
+
+      .cls-3 {
+        fill: #dbdbdb;
+      }
+
+      .cls-4 {
+        font-family: FreeSansBold, FreeSans;
+        font-size: 150px;
+      }
+
+      .cls-5 {
+        fill: #c59175;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        fill: #a8a8a8;
+        stroke: #848484;
+      }
+
+      .cls-7, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-8 {
+        fill: #d8a880;
+      }
+
+      .cls-8, .cls-9 {
+        stroke: #b27f66;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-8" d="M210.23,616.01l111.35-55.86,20.79-191.76-34.42-115.48,292.04-108.82s24,249.97,37.15,389.46l107.2,52.48"/>
+      <path class="cls-5" d="M382.34,411.69s77.73,1.11,105.49-12.21c27.76-13.32,85.5-71.07,85.5-71.07l36.64-36.64-4.44-44.42-209.87,132.14-13.32,32.2Z"/>
+      <path class="cls-8" d="M663.27,93.01s-5.55,57.74-6.66,83.28-19.99,52.19-19.99,52.19c0,0-113.26,141.02-171,168.78-57.74,27.76-171,14.44-212.09-6.66-41.08-21.1-77.73-178.77-77.73-178.77"/>
+      <path class="cls-8" d="M395.66,413.92s-6.66,15.55-4.44,22.21,5.55,12.21,6.66,14.44,2.22,31.09,2.22,31.09"/>
+      <path class="cls-9" d="M281.29,290.66s127.7,19.99,165.45-75.51"/>
+      <path class="cls-9" d="M427.86,214.04s16.66-2.22,23.32,3.33"/>
+    </g>
+    <path class="cls-7" d="M636.57,392.27s36-10,50-47l10,35s87.83-27.46,92.41-104.73l35.22,58.37s-18.63,49.37-112.63,77.37l18.82,22.21-93.82-41.21Z"/>
+    <path class="cls-3" d="M734.57,394.97c-2.7,1.65,54-21,81-58,0,0,8-5-6-23,0,0,5,10-1,17,0,0-20,31-74,64Z"/>
+  </g>
+  <text class="cls-4" transform="translate(319.19 802.1)"><tspan class="cls-1" x="0" y="0">N</tspan><tspan class="cls-6" x="105.3" y="0">e</tspan><tspan x="187.95" y="0">ck</tspan></text>
+  <text class="cls-2" transform="translate(441.83 902.44)"><tspan x="0" y="0">เนค</tspan></text>
+</svg>

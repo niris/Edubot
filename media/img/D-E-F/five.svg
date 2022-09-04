@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #ed2024;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-5 {
+        font-size: 72px;
+        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
+      }
+
+      .cls-6 {
+        fill: #fbad2e;
+        stroke: #dc8d27;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>five</title>
+  <text class="cls-1" transform="translate(351.59 803.28)">F<tspan class="cls-2" x="91.65" y="0">i</tspan><tspan class="cls-3" x="129.6" y="0">v</tspan><tspan class="cls-4" x="210.75" y="0">e</tspan></text>
+  <text class="cls-5" transform="translate(436.15 899.79)">ไฟฟ</text>
+  <path class="cls-6" d="M660.66,75.61H356L372.57,370s117.94,1.58,138.47,12.6,48.88,43.82,42.57,80.28-27.54,58-92.09,47.23-65.34-39.35-65.34-39.35l-85,78.71S408,654.15,527.63,628.17,675.61,529,689,484.91s-19.67-148-86.58-183.4-118.86-25.18-118.86-25.18l.79-50.21H667Z"/>
+</svg>

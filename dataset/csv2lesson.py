@@ -12,12 +12,13 @@ if not os.path.exists("vocab"):
 for filename in os.listdir("csv/_togenerate/vocab"):
     print(filename)
     fullname = os.path.splitext(filename)[0]
-    level = fullname.split("_")[0]
-    title = fullname.split("_")[1]
+    filename_splited = fullname.split("_")
+    level = filename_splited[0]
+    title = filename_splited[1]
     category = "2vocab"
-    if len(fullname.split("_")) > 2:
-        print(fullname.split("_")[2])
-        match fullname.split("_")[2]:
+    if len(filename_splited) > 2:
+        print(filename_splited[2])
+        match filename_splited[2]:
             case "0":
                 category = ""
             case "1":
@@ -29,19 +30,11 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             case default:
                 category = "2vocab"
     print("category ", category)
-    newfile = open(os.path.join("vocab",os.path.splitext(title)[0].replace(" ", "")+".md"), "w")
-    if category != "":
-        newfile.write('''---
-title: '''+ title +
-'''
-description: 
-icon: /media/icons/''' + os.path.splitext(title)[0].replace(" ", "") + '''.svg\
-
-tags: {category:''' + category + ",level:"+ level+'''}
----
-
-'''
-    )
+    os.path.splitext(title)[0].replace(" ", "")+".md"
+    if category != "" :
+        newfile = open(os.path.join("../media/md","[category:"+ category+ "]" + title +" [icon:" +os.path.splitext(title)[0].replace(" ", "")+"][level:"+level+"].md" ), "w")
+    else :
+        newfile = open(os.path.join("autogen", title + ".md" ), "w")
     newfile.write('<div class="carrousel">\n\n')
     with open(os.path.join("csv/_togenerate/vocab", filename), 'r') as f: 
         print("filename " + title)
@@ -61,7 +54,8 @@ tags: {category:''' + category + ",level:"+ level+'''}
         newfile.write('\n|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
             newfile.write(" :----: |")
-        newfile.write('\n|' + '|'.join(vocabs_meanings) + '|')
+        if category != "1phonics":
+            newfile.write('\n|' + '|'.join(vocabs_meanings) + '|')
         newfile.write('\n|' + '|'.join(audio) + '|\n\n')
     newfile.write('</div>\n\n')
     
@@ -91,7 +85,8 @@ tags: {category:''' + category + ",level:"+ level+'''}
 
     if category != "":
         newfile.write('\n\n# ![icon](/media/icons/quiz.svg) \n\n')
-        questionGenerator(vocabs,meanings,2)
-        questionGenerator(meanings,vocabs,2)
+        if category == "2vocab":
+            questionGenerator(vocabs,meanings,2)
+            questionGenerator(meanings,vocabs,2)
     newfile.close()
     f.close()

@@ -1,0 +1,40 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #ed2024;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        font-size: 72px;
+        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
+      }
+
+      .cls-7 {
+        fill: #5a5eaa;
+      }
+    </style>
+  </defs>
+  <title>circle</title>
+  <text class="cls-1" transform="translate(294.38 811.72)">C<tspan class="cls-2" x="108.3" y="0">i</tspan><tspan class="cls-3" x="150" y="0">rc</tspan><tspan class="cls-4" x="287.25" y="0">l</tspan><tspan class="cls-5" x="327.45" y="0">e</tspan></text>
+  <text class="cls-6" transform="translate(400.24 889.67)">เซอเคิล</text>
+  <circle class="cls-7" cx="504.48" cy="364.53" r="246.52"/>
+</svg>
