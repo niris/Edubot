@@ -24,8 +24,8 @@ import { BotOnlineChat } from '/static/BotOnline.js'
 import { Privacy } from '/static/Privacy.js'
 
 const routes = [
-	{ path:'/', redirect: ()=> document.cookie ? '/me' : '/sign'},
-	{ path:'/sign', component: Sign },
+	{ path:'/', redirect: ()=> document.cookie ? '/me' : '/sign/in'},
+	{ path:'/sign/:mode', component: Sign, props:true},
 	{ path:'/me', component: Profile },
 	{ path:'/category/', component: CategoriesList},
 	{ path:'/category/:tag', component: LessonList, props: true},
@@ -73,15 +73,15 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 <main class="container">
 	<component is="style">:root{--color-primary: {{theme}};}</component>
 	<nav class="tabs is-full" style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
-		<router-link to="/category" v-if="is('admin','user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
-		<router-link to="/category/2vocab" v-if="is('admin','user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
-		<router-link to="/me" v-if="is('admin','user')">
+		<router-link to="/category" v-if="is('user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
+		<router-link to="/category/2vocab" v-if="is('user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
+		<router-link to="/me" v-if="is('user')">
 			<s>bust</s>&nbsp;<span>{{$root.id}}</span>
 			<span ref=lv class="tag is-small" :title="'xp:'+xp" style="transform:scale(1) translateY(0);background-size: cover;transition: transform 1s;">Lv:{{myLv}}</span>
 		</router-link>
-		<router-link to="/sign" v-if="is(null)"><s>star</s>&nbsp;<span>Sign Up</span></router-link>
-		<router-link to="/leaderboard" v-if="is('admin','user')"><s>trophy</s>&nbsp;<span>Leaderboard</span></router-link>
+		<router-link to="/sign/in" v-if="is(null)"><s>star</s>&nbsp;<span>Sign</span></router-link>
+		<router-link to="/leaderboard" v-if="is('user')"><s>trophy</s>&nbsp;<span>Leaderboard</span></router-link>
 	</nav>	
 	<router-view :key="$route.fullPath"></router-view>
-	<bot-chat ref="bot" v-if="is('admin','user')"></bot-chat>
+	<bot-chat ref="bot" v-if="is('user')"></bot-chat>
 </main>	

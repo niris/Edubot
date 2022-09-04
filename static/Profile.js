@@ -42,12 +42,8 @@ const Profile = {
 			<input v-model=me.theme type=color>
 		</label>
 		<label>
-			<div>Grade</div>
-			<input v-model=me.grade type=number>
-		</label>
-		<label>
-			<div>Birthdate (needed for password recovery)</div>
-			<input v-model=me.birth type=date>
+		<div>Birthdate</div>
+		<input v-model=me.birth type=date>
 		</label>
 		<!-- <button @click="for(var i=0;i< 1;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=1</button>
 		<button @click="for(var i=0;i<50;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=50</button>

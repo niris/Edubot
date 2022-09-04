@@ -85,7 +85,7 @@ services:
       - ./nginx/privkey.pem:/etc/nginx/privkey.pem:ro
       - ./static:/etc/nginx/html/static:ro
       - ./media:/etc/nginx/html/media:ro
-    command: sh -c "
+    command: bash -c "
         envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT,$$VOSK_EN_HOST,$$VOSK_EN_PORT,$$VOSK_TH_HOST,$$VOSK_TH_PORT,$$DIALOGF_HOST,$$DIALOGF_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
         nginx -g 'daemon off; error_log /dev/stderr info;'"
     depends_on:

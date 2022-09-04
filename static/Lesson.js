@@ -177,7 +177,7 @@ const LessonList = {
     <template v-for="group in groups">
         <h1 class=text-capitalize>{{group.title}}</h1>
         <div class=grid>
-            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class=reachable(lesson)>
+            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class="'ovh '+reachable(lesson)">
                 <span style="text-align:center" v-for="tag in lesson.tags.filter(l=>l.startsWith('level:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span>
                 <img :src="'/media/icons/'+lesson.icon+'.svg'" style="padding: 15%;" alt="cover">
                 <span class="text-capitalize is-center">{{lesson.title}}</span>
@@ -232,7 +232,7 @@ const CategoriesList = {
     <progress v-if="categories===null"></progress>
     <p v-else-if="categories.length===0">No category found.</p>
     <div class=grid>
-        <router-link v-for="category in categories" :to="'/category/'+category.path" class="card">
+        <router-link v-for="category in categories" :to="'/category/'+category.path" class="card ovh">
             <img :src='"/media/icons/"+category.name+".svg"' style="padding: 15%;" alt="cover">
             <span class="is-center text-capitalize">{{category.name}}</span>
         </router-link >

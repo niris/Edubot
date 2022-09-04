@@ -175,14 +175,14 @@ a.card:hover {box-shadow: 0 1px 15px var(--color-grey);}
 .grid {
     display: grid;
     padding: 1em;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,minmax(30%,1fr));
     gap: 2em;
 }
 
 @media only screen and (max-width: 500px) {
     main>nav>a>span{display:none}
     .grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,minmax(45%,1fr))
     }
 }
 li>label{
@@ -220,3 +220,7 @@ li>label{
 a.card {
     background: var(--bg-secondary-color);
 }
+input:invalid{
+    --color-lightGrey: var(--color-error);
+}
+.ovh{overflow: hidden;word-break: break-word;}

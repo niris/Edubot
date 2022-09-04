@@ -9,11 +9,9 @@ ALTER DEFAULT PRIVILEGES REVOKE EXECUTE ON FUNCTIONS FROM PUBLIC;
 DROP TABLE IF EXISTS public.profile;
 CREATE TABLE public.profile (
 	"id" name DEFAULT current_setting('request.jwt.claims', true)::json->>'id' PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
-	"firstname" text,
-	"lastname" text,
 	"alias" text,
 	"birth" date,
-	"grade" integer,
+	"secret" text, -- favorite food
 	"theme" text DEFAULT '#126359',
 	"progress" JSON -- cleared lessons/exams
 );
@@ -35,12 +33,5 @@ grant ALL    ON TABLE public.profile TO "user";
 --CREATE POLICY "user_policy" ON public.profile
 --  USING ("id" = current_setting('request.jwt.claims', true)::json->>'id') -- visibility rule
 --  WITH CHECK ("id" = current_setting('request.jwt.claims', true)::json->>'id'); -- mutation rule
-
--- debug dataset for role debugging
-insert into auth.users ("id","pass","role") values ('student','student','user' ) ON CONFLICT DO NOTHING;
---do not deploy dataset as we want to see the empty lesson page by default
---insert into public.lesson ("title","draft","owner") values ('public',FALSE,'admin') ON CONFLICT DO NOTHING;
---insert into public.lesson ("title","draft","owner") values ('draft',TRUE,'admin') ON CONFLICT DO NOTHING;
--- CREATE VIEW u AS SELECT "id", "role", "progress" FROM auth.users;
 
 NOTIFY pgrst, 'reload schema';
