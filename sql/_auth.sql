@@ -2,12 +2,10 @@
 -- Certain public procs/views will refer to helpers and tables inside.
 create role "anon" nologin; -- PGRST_DB_ANON_ROLE will log into this
 create role "user" nologin;
-create role "admin" nologin;
 
 -- allow "root" to switch to our defined roles
 GRANT "anon" TO root;
 GRANT "user" TO root;
-GRANT "admin" TO root;
 
 create schema if not exists auth;
 create table if not exists auth.users (

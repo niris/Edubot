@@ -25,7 +25,7 @@ const listCheckboxRule = (validated) => function (state) {
 const inputRule = (validated) => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
         const matches = [...child.content.matchAll(/\?\[(.*?)\]\((.*?)\)/g)];
-        console.log(matches); //TODO: bug on single word ?!
+        console.debug(matches); //TODO: bug on single word ?!
         return matches.length ? matches.map(([_, content, value]) => [
             new state.Token("label_open", "label", 1),
             Object.assign(new state.Token("text_input", "input", 0), {
@@ -63,6 +63,12 @@ const mediaRule = (ext2tag = (ext, img) => ({
         .map(img => img.type == "image" ? Object.assign(img, ext2tag(getext(img), img)) : img)
         .map(img => img.type == "image" && img.nesting == 1 ? [img, new state.Token("image_close", img.tag, -1)] : [img]).flat());
 };
+const ls2json = (res) => res.map(file => ({
+    id: file.name,
+    title: file.name.slice(0, -3).replace(/\[.*?\]/g, '').trim(),
+    icon: file.name.match(/\[icon:(.*?)\]/)[1],
+    tags: file.name.match(/\[.*?\]/g).map(tag => tag.slice(1, -1))
+}))
 
 const LessonShow = {
     props: ['id'],
@@ -78,13 +84,16 @@ const LessonShow = {
             mi.core.ruler.push("checkbox", checkboxRule());
             mi.core.ruler.push("input", inputRule(progress));
             mi.core.ruler.push("exam", listCheckboxRule(progress));
-            const html = mi.render(this.lesson.content || '...');
+            const html = mi.render(this.lesson || '...');
             return html;
         }
     },
     methods: {
         async listen({ target }) {
             if (!(target.classList.contains("voice") || (target.classList.contains("voiceth")))) return;
+            if (!navigator.mediaDevices) {
+                return alert("No microphone found (blocked?)");
+            }
             const endpoint = target.classList.contains("voiceth") ? '/offerth' : '/offeren';
             target.value = '';
             target.placeholder = 'Connecting...';
@@ -110,7 +119,6 @@ const LessonShow = {
                 setTimeout(() => pc.close(), 500);
                 target.classList.remove('live');
             }
-
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
             stream.getTracks().forEach((t) => pc.addTrack(t, stream));
             await pc.setLocalDescription(await pc.createOffer());
@@ -143,7 +151,7 @@ const LessonShow = {
             (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             const remain = target.form.querySelector('input:not([disabled])');
             if (!remain) {
-                progress[location.pathname] = 1;
+                progress[decodeURIComponent(location.pathname)] = 1;
                 setTimeout(this.$router.back, 1000)
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
@@ -152,7 +160,7 @@ const LessonShow = {
         }
     },
     async mounted() {
-        this.lesson = await (await fetch(`/api/lesson/${this.$props.id}`)).json();
+        this.lesson = await (await fetch(`/media/md/${this.$props.id}`)).text();
     }
 }
 //URL.createObjectURL(new Blob(Uint8Array.from(s.content.slice(2).match(/../g),a=>parseInt(a,16)), { type: "image/jpeg" } ))
@@ -171,7 +179,7 @@ const LessonList = {
         <div class=grid>
             <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class=reachable(lesson)>
                 <span style="text-align:center" v-for="tag in lesson.tags.filter(l=>l.startsWith('level:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span>
-                <img :src="lesson.icon" style="padding: 15%;" alt="cover">
+                <img :src="'/media/icons/'+lesson.icon+'.svg'" style="padding: 15%;" alt="cover">
                 <span class="text-capitalize is-center">{{lesson.title}}</span>
             </router-link>
         </div>
@@ -193,8 +201,9 @@ const LessonList = {
     watch: {
         tag: {
             handler: async function (tag) {
-                const lessons = await (await fetch(`/api/lesson?select=id,title,icon,tags&tags=cs.{category:${tag}}`)).json();
-                this.groups = lessons // fill missing group tag in lesson, group them by they group, sort group and lessons
+                const lessons = await (await fetch(`/media/md`)).json();
+                this.groups = ls2json(lessons) // fill missing group tag in lesson, group them by they group, sort group and lessons
+                    .filter(lesson => lesson.tags.includes(`category:${tag}`))
                     .map(lesson => ({ ...lesson, group: (lesson.tags.find(tag => tag.startsWith('group:')) || 'group:0').substring('group:'.length) }))
                     .reduce(function (groups, lesson) {
                         const existing = groups.find(group => group.path == lesson.group);
@@ -231,7 +240,7 @@ const CategoriesList = {
     `,
     data() { return { categories: null } },
     async mounted() {
-        const tags = await fetch(`/api/lesson?select=tags`).then(res => res.json())
+        const tags = ls2json(await fetch(`/media/md`).then(res => res.json()))
         const cats = new Set(tags.map(lesson => lesson.tags).flat()
             .filter(tag => tag.startsWith('category:'))
             .map(tag => tag.substring('category:'.length))

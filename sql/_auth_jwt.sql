@@ -21,7 +21,7 @@ create or replace function me() returns json
 as $$
   select current_setting('request.jwt.claims', true)::json
 $$ language sql IMMUTABLE; -- IMMUTABLE can be GET
-GRANT EXECUTE ON FUNCTION me TO "user", "admin";
+GRANT EXECUTE ON FUNCTION me TO "user";
 
 -- POST /rpc/signin endpoint
 create or replace function login(id text, pass text) returns auth.jwt_token as $$
@@ -49,4 +49,4 @@ begin
   perform set_config('response.headers', '[{"Set-Cookie": "jwt=0; Path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT; HttpOnly"}, {"Set-Cookie": "id=0; Path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT;"}, {"Set-Cookie": "role=0; Path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT;"}]', true);
 end;
 $$ language plpgsql IMMUTABLE; -- IMMUTABLE can be GET
-GRANT EXECUTE ON FUNCTION logout TO "anon", "user", "admin";
+GRANT EXECUTE ON FUNCTION logout TO "anon", "user";
