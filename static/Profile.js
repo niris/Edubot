@@ -41,10 +41,17 @@ const Profile = {
 			<div>Theme</div>
 			<input v-model=me.theme type=color>
 		</label>
-		<label>
-		<div>Birthdate</div>
-		<input v-model=me.birth type=date>
-		</label>
+		<details>
+			<summary>Password reset info</summary>
+			<label>
+				<div>Birthdate</div>
+				<input v-model=me.birth type=date>
+			</label>
+			<label>
+				<div>Favorite food</div>
+				<input v-model=me.secret type=text>
+			</label>
+		</details>
 		<!-- <button @click="for(var i=0;i< 1;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=1</button>
 		<button @click="for(var i=0;i<50;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=50</button>
 		<button @click="localStorage.progress=JSON.stringify($root.progress=me.progress={});update();">xp=0</button> -->

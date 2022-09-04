@@ -223,4 +223,7 @@ a.card {
 input:invalid{
     --color-lightGrey: var(--color-error);
 }
+details>label>input{
+    width: -webkit-fill-available !important;
+}
 .ovh{overflow: hidden;word-break: break-word;}

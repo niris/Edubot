@@ -17,8 +17,7 @@ $$ language plpgsql security definer;
 GRANT EXECUTE ON FUNCTION register TO "anon";
 
 -- GET /rpc/me endpoint
-create or replace function me() returns json
-as $$
+create or replace function me() returns json as $$
   select current_setting('request.jwt.claims', true)::json
 $$ language sql IMMUTABLE; -- IMMUTABLE can be GET
 GRANT EXECUTE ON FUNCTION me TO "user";

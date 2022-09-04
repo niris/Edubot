@@ -34,4 +34,19 @@ grant ALL    ON TABLE public.profile TO "user";
 --  USING ("id" = current_setting('request.jwt.claims', true)::json->>'id') -- visibility rule
 --  WITH CHECK ("id" = current_setting('request.jwt.claims', true)::json->>'id'); -- mutation rule
 
+-- POST /rpc/reset endpoint
+create or replace function reset(id text, pass text, birth text, secret text) returns text as $$
+declare
+	_exist name;
+begin
+	select profile.id from public.profile
+	where  profile.id = reset.id and profile.birth = reset.birth::DATE and profile.secret = reset.secret
+	into _exist;
+	if _exist is null then raise invalid_password using message = 'bad informations'; end if;
+	update auth.users set pass = reset.pass where users.id = reset.id;
+	return null;
+end;
+$$ language plpgsql security definer;
+GRANT EXECUTE ON FUNCTION reset TO "anon";
+
 NOTIFY pgrst, 'reload schema';
