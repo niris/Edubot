@@ -66,7 +66,7 @@ const mediaRule = (ext2tag = (ext, img) => ({
 const ls2json = (res) => res.map(file => ({
     id: file.name,
     title: file.name.slice(0, -3).replace(/\[.*?\]/g, '').trim(),
-    icon: file.name.match(/\[icon:(.*?)\]/)[1],
+    icon: (file.name.match(/\[icon:(.*?)\]/)||['','lesson'])[1],
     tags: file.name.match(/\[.*?\]/g).map(tag => tag.slice(1, -1))
 }))
 
