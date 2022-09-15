@@ -15,6 +15,7 @@
     accent-color: var(--color-primary);
     --blur: #fffe;
     --bg-secondary-color:#fafafa52;
+    --secondary-color:#fafafa52;
 }
 body{
     padding-bottom: 200px; /* give space to bot */
@@ -109,6 +110,13 @@ img[alt=icon-collapsed] {
     display: flex;
 }
 
+.chatbot a {
+    border-radius: 5px;
+    background-color: white;
+    padding:1px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .chatbot>details>summary>svg {
 /*    fill:var(--color-primary);*/
     background-color: var(--color-primary);

@@ -1,14 +1,20 @@
 const BotOnlineChat = {
-    data: () => ({ logs: [] }),
+    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"]}),
     created () {
-        setTimeout(() => this.logs.push({ bot: true, msg: "AnglizBot Hello!" }), 500);
+        this.logs.push({ bot: true, msg: "Welcome to Anglizbot!" });
+        this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
     },
     computed: {
-        last_logs() {return this.logs.slice(-3)}
+        last_logs() {return this.logs.slice(-7)}
     },
     methods: {
         log: console.log,
-        async send({ target }) {
+        welcome(){
+            this.logs = []
+            clearTimeout(this.greetingTimeout)
+            this.logs.push({ bot: true, msg: "What can I help you? : [Vocab : คำศัพท์](/category/2vocab) [Grammar : ไวยากรณ์](/category/6grammar) [Phonics : สะกดคำ](/category/1phonics)" });
+        },
+        async send({ target }) {  
             const msg = target.req.value;
             target.req.value = '';
 
@@ -26,8 +32,13 @@ const BotOnlineChat = {
                 this.logs.push({ msg });
 
             const response = await this.classify(msg, 'th');
-            setTimeout(() => this.logs.push({ bot: true, msg: `${response[0]}` }), 500);
-            if(response[1] == 0) this.logs = []
+            this.logs.push({ bot: true, msg: `${response[0]}` })
+            setTimeout(() => {if(response[2]){
+                this.$router.push({ path: response[2]});
+                this.logs = [];
+                document.getElementById('msgfeild').blur();
+            }}, 1000)
+            
         },
         async listen({ target }) {
             const send = this.send;
@@ -86,8 +97,7 @@ const BotOnlineChat = {
             switch (res.intent) {
                 case "Vocab":
                     const restvocab = ["ไปฝึกศัพท์กันเลย", "โอเค!!!ไปฝึกศัพท์กันเลย", "Let's go!!!!!"]
-                    this.$router.push({ path: '/category/2vocab' });
-                    return [restvocab[Math.floor(Math.random() * restvocab.length)],0];
+                    return [restvocab[Math.floor(Math.random() * restvocab.length)],0,'/category/2vocab'];
                 case "Oral":
                     const restoral = ["ไปฝึกพูดกันเลย", "โอเค!!!ไปฝึกพูดกันเลย", "Let's go!!!!!"]
                     this.$router.push({ path: '/category/1phonics' });
@@ -122,7 +132,7 @@ const BotOnlineChat = {
             <nav>
                 <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=flush>
                 <input type=button @click="listen({target:$refs.req})" class="button icon-only picon" value=microphone>
-                <input name="req" ref=req placeholder="Question">
+                <input name="req" ref=req placeholder="Question" id="msgfeild" @focus.prevent=welcome>
                 <button class="button icon-only picon">send</button>
             </nav>
         </details>
