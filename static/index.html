@@ -60,7 +60,7 @@ const app = Vue.createApp({
 		}
 	},
 });
-app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHistory(), linkActiveClass: 'active'}));
+app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHashHistory(), linkActiveClass: 'active'}));
 app.component('bot-chat', BotOnlineChat);
 app.mount('main');
 if ('serviceWorker' in navigator) {

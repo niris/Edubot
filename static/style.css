@@ -13,7 +13,7 @@
     --grid-maxWidth: 80rem;
     /*--color-primary: #1A8D7E; set by JS from userprofile */
     accent-color: var(--color-primary);
-    --blur: #fffe;
+    --blur: #fff8;
     --bg-secondary-color:#fafafa52;
     --secondary-color:#fafafa52;
 }
@@ -36,7 +36,9 @@ s {
     text-decoration: none;
     vertical-align: bottom;
 }
-
+img{
+    height: auto;
+}
 input[type=color] {
     display: block;
     width: 100%;
@@ -78,20 +80,6 @@ img[alt=icon-collapsed] {
     margin-left: 0.5em;
     margin-bottom: 0.1em;
 }
-.chatbot>output {
-    display: flex;
-    margin-bottom: 1em;
-}
-
-.chatbot>output.bot {
-    border-radius: 20px 20px 0 20px;
-    background-color: var(--color-primary);
-}
-
-.chatbot>output.user {
-    border-radius: 20px 20px 20px 0;
-    justify-content: flex-end;
-}
 
 .chatbot {
     --size: 64px;
@@ -100,6 +88,13 @@ img[alt=icon-collapsed] {
     right: 0;
     padding: 16px;
     max-width: 400px;
+    opacity:.7;
+}
+.chatbot:focus-within {
+    z-index:2; /* over navbar*/
+    background-color:var(--blur);
+    box-shadow: 0 0 0 5000px var(--blur) !important;
+    opacity:1;
 }
 
 .chatbot>details>summary {
@@ -110,13 +105,6 @@ img[alt=icon-collapsed] {
     display: flex;
 }
 
-.chatbot a {
-    border-radius: 5px;
-    background-color: white;
-    padding:1px;
-    margin-right: auto;
-    margin-left: auto;
-}
 .chatbot>details>summary>svg {
 /*    fill:var(--color-primary);*/
     background-color: var(--color-primary);
@@ -125,6 +113,29 @@ img[alt=icon-collapsed] {
     fill: white;
     padding: 8px;
     box-shadow: 0 4px 8px black;
+}
+.chatbot>output {
+    display: block; /* flex is problematic with markdown */
+    margin-bottom: 1em;
+}
+
+.chatbot>output.user {
+    border-radius: 20px 20px 20px 0;
+    justify-content: flex-end;
+}
+
+.chatbot>output.bot {
+    border-radius: 20px 20px 0 20px;
+    background-color: var(--color-primary);
+}    
+
+.chatbot>output.bot a {
+    color: inherit;
+    border: 1px solid;
+    border-radius: 5px;
+    display: inline-block;
+    margin: .5em;
+    padding: .5em;
 }
 
 /*
@@ -150,7 +161,13 @@ img[alt=icon-collapsed] {
     scroll-snap-type: x mandatory;
     margin: 1em 0;
 }
-
+@keyframes swipe {
+    .1% {transform:translateX(min(calc(var(--grid-maxWidth) * -.5), -5vw));}
+    100% {transform:translateX(0px);}
+}
+.carrousel>table {
+    animation: swipe 2s cubic-bezier( .7, 0, .3, 1 ) ;
+}
 .carrousel th {
     min-width: min(calc(var(--grid-maxWidth) * 1), 100vw);
     scroll-snap-align: start;
@@ -227,11 +244,6 @@ li>label{
 
 .link {
     margin-bottom: 0 !important;
-}
-.chatbot:focus-within {
-    z-index:2; /* over navbar*/
-    background-color:var(--blur);
-    box-shadow: 0 0 0 5000px var(--blur) !important;
 }
 a.card {
     background: var(--bg-secondary-color);

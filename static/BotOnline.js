@@ -1,3 +1,7 @@
+const welcomeMessage = `How can I help you?
+- [Vocab : คำศัพท์](#/category/2vocab)
+- [Grammar : ไวยากรณ์](#/category/6grammar)
+- [Phonics : สะกดคำ](#/category/1phonics)`;
 const BotOnlineChat = {
     data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"]}),
     created () {
@@ -12,7 +16,7 @@ const BotOnlineChat = {
         welcome(){
             this.logs = []
             clearTimeout(this.greetingTimeout)
-            this.logs.push({ bot: true, msg: "What can I help you? : [Vocab : คำศัพท์](/category/2vocab) [Grammar : ไวยากรณ์](/category/6grammar) [Phonics : สะกดคำ](/category/1phonics)" });
+            this.logs.push({ bot: true, msg: welcomeMessage});
         },
         async send({ target }) {  
             const msg = target.req.value;
@@ -130,9 +134,9 @@ const BotOnlineChat = {
             </svg>
             </summary>
             <nav>
-                <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=flush>
+                <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=times>
                 <input type=button @click="listen({target:$refs.req})" class="button icon-only picon" value=microphone>
-                <input name="req" ref=req placeholder="Question" id="msgfeild" @focus.prevent=welcome>
+                <input name="req" ref=req placeholder="Question" autocomplete="off" id="msgfeild" @focus.prevent=welcome>
                 <button class="button icon-only picon">send</button>
             </nav>
         </details>
