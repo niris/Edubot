@@ -152,7 +152,7 @@ img[alt=icon-collapsed] {
 }
 
 .carrousel th {
-    min-width: min(calc(var(--grid-maxWidth) * 0.75), 75vw);
+    min-width: min(calc(var(--grid-maxWidth) * 1), 100vw);
     scroll-snap-align: start;
 }
 .carrousel td {
@@ -165,6 +165,13 @@ img[alt=icon-collapsed] {
 .carrousel img {
     max-height: 50vh;
     /* until all image are squared */
+}
+@keyframes swipe {
+    .1% {transform:translateX(min(calc(var(--grid-maxWidth) * -.5), -5vw));}
+    100% {transform:translateX(0px);}
+}
+.carrousel>table {
+    animation: swipe 2s cubic-bezier( .7, 0, .3, 1 ) ;
 }
 .forbidden {
     opacity: .5;
@@ -237,3 +244,4 @@ details>label>input{
     width: -webkit-fill-available !important;
 }
 .ovh{overflow: hidden;word-break: break-word;}
+
