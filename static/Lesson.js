@@ -142,6 +142,7 @@ const LessonShow = {
                 // bad/incomplete try : shall we tell student ? it break the point of multiple responses...
                 if (target.dataset.checked === undefined) {
                     console.log("wrong answer");
+                    this.$root.result = false;
                 }
                 correct = [...inputs].every(c => c.checked == (c.dataset.checked !== undefined));
             }
@@ -156,6 +157,7 @@ const LessonShow = {
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
             this.$root.progress = progress;
+            this.$root.result = true;
             localStorage.progress = JSON.stringify(progress);
         }
     },

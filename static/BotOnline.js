@@ -1,22 +1,48 @@
 const welcomeMessage = `How can I help you?
-- [Vocab : คำศัพท์](#/category/2vocab)
-- [Grammar : ไวยากรณ์](#/category/6grammar)
-- [Phonics : สะกดคำ](#/category/1phonics)`;
+- [Vocab : ฝึกคำศัพท์](#/category/2vocab)
+- [Phonics : ฝึกสะกดคำ](#/category/1phonics)
+- [Conversation : ฝึกประโยคสนทนา](#/category/3conversation)
+- [Grammar : ฝึกไวยากรณ์](#/category/6grammar)
+- [Chat with me! : คุยกับ AnglizBot](#)`;
+
+
 const BotOnlineChat = {
-    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"]}),
+    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"], encourageMsg:["Bravo!","Good job","Well done!"], mode:"normal", welcomeMsg:''}),
     created () {
-        this.logs.push({ bot: true, msg: "Welcome to Anglizbot!" });
+        this.logs.push({ bot: true, msg: "Welcome!" });
         this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
     },
     computed: {
-        last_logs() {return this.logs.slice(-7)}
+        last_logs() {return this.logs.slice(-5)}
     },
+    watch: { // update $root style (for display) and localstorage (in case we F5 in another page)
+		//'$root.progress': function (xp) {this.logs.push({bot:true, msg: this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)]});setTimeout(() => this.logs=[], 2000);},
+        '$root.result': function(res) {
+            if(this.$root.result==false){
+                this.logs.push({bot:true, msg:"Try again!"});
+                setTimeout(() => this.logs=[], 2000);
+            }
+            else{
+                this.logs.push({bot:true, msg: this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)]});
+                setTimeout(() => this.logs=[], 2000);
+            }
+        }
+	},
     methods: {
         log: console.log,
         welcome(){
             this.logs = []
             clearTimeout(this.greetingTimeout)
-            this.logs.push({ bot: true, msg: welcomeMessage});
+            //this.logs.push({ bot: true, msg: welcomeMessage});
+            this.mode = "welcome"
+            this.welcomeMsg = welcomeMessage
+            this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
+        },
+        minimize(){
+            clearTimeout(this.greetingTimeout)
+            this.welcomeMessage="Let's go!!!";
+            setTimeout(() => {this.welcomeMessage=[], 5000;this.mode = "normal"
+        });
         },
         async send({ target }) {  
             const msg = target.req.value;
@@ -35,7 +61,7 @@ const BotOnlineChat = {
             else
                 this.logs.push({ msg });
 
-            const response = await this.classify(msg, 'th');
+            const response = await this.classify(msg, 'en');
             this.logs.push({ bot: true, msg: `${response[0]}` })
             setTimeout(() => {if(response[2]){
                 this.$router.push({ path: response[2]});
@@ -98,24 +124,25 @@ const BotOnlineChat = {
         async classify(text, language_code) {
             const res = await (await fetch(`/dialog?${new URLSearchParams({text, language_code})}`)).json()
             console.log(res, res.intent)
+            let resMessage = ["OK, let's go!", "Let's go!!!!!"]
+            let randomMessage = resMessage[Math.floor(Math.random() * resMessage.length)]
             switch (res.intent) {
                 case "Vocab":
-                    const restvocab = ["ไปฝึกศัพท์กันเลย", "โอเค!!!ไปฝึกศัพท์กันเลย", "Let's go!!!!!"]
-                    return [restvocab[Math.floor(Math.random() * restvocab.length)],0,'/category/2vocab'];
+                    return [randomMessage,0,'/category/2vocab']
                 case "Oral":
-                    const restoral = ["ไปฝึกพูดกันเลย", "โอเค!!!ไปฝึกพูดกันเลย", "Let's go!!!!!"]
-                    this.$router.push({ path: '/category/1phonics' });
-                    return [restoral[Math.floor(Math.random() * restoral.length)],0];
+                    return [randomMessage,0,'/category/1phonics'];
                 case "Listening":
-                    const restListening = ["ไปฝึกฟังกันเลย!!!", "โอเค!!!ไปฝึกฟังกันเลย", "Let's go!!!!!"]
-                    this.$router.push({ path: '/category/1phonics' });
-                    return [restListening[Math.floor(Math.random() * restListening.length)],0];
+                    return [randomMessage,0];
                 case "Reading":
-                    const restReading = ["ไปฝึกฟังอ่านกันเลย!!!", "โอเค!!!ไปฝึกอ่านกันเลย", "Let's go!!!!!"]
-                    this.$router.push({ path: '/category/1phonics' });
-                    return [restReading[Math.floor(Math.random() * restReading.length)],0];
+                    return [randomMessage,0];
+                case "Phonics":
+                    return [randomMessage,0,'/category/1phonics'];
+                case "Grammar":
+                    return [randomMessage,0,'/category/6grammar'];
+                case "Conversation":
+                    return [randomMessage,0,'/category/3conversation'];        
                 case "Skills":
-                    return ["อยากฝึกทักษะด้านไหนเอ่ย",1];
+                    return ["What skill do you want to practice ? (อยากฝึกทักษะด้านไหนเอ่ย)",1];
                 default:
                     return [res.response,1]
             }
@@ -124,6 +151,7 @@ const BotOnlineChat = {
     },
     template: `
     <form class=chatbot @submit.prevent=send>
+        <output v-if="mode=='welcome'" class="card bot bg-primary text-white" v-html="md(welcomeMsg)" @click="minimize"></output>
         <output v-for="log in last_logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user')" v-html="md(log.msg)"></output>
         <details class=field>
             <summary>
@@ -136,7 +164,7 @@ const BotOnlineChat = {
             <nav>
                 <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=times>
                 <input type=button @click="listen({target:$refs.req})" class="button icon-only picon" value=microphone>
-                <input name="req" ref=req placeholder="Question" autocomplete="off" id="msgfeild" @focus.prevent=welcome>
+                <input name="req" ref=req placeholder="Question" autocomplete="off" id="msgfeild" @focus.prevent=welcome @input=minimize>
                 <button class="button icon-only picon">send</button>
             </nav>
         </details>

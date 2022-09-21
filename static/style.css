@@ -90,8 +90,10 @@ img[alt=icon-collapsed] {
     max-width: 400px;
     opacity:.7;
 }
+
+
 .chatbot:focus-within {
-    z-index:2; /* over navbar*/
+    z-index:2; 
     background-color:var(--blur);
     box-shadow: 0 0 0 5000px var(--blur) !important;
     opacity:1;

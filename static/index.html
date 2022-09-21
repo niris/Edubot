@@ -37,7 +37,8 @@ const routes = [
 const app = Vue.createApp({
 	data() { return {
 		role: null, id: null, theme: localStorage.theme || `#126359`,
-		progress: JSON.parse(localStorage.progress || '{}')
+		progress: JSON.parse(localStorage.progress || '{}'),
+		result:null
 	} },
 	mounted() { this.log(); },
 	computed: {
