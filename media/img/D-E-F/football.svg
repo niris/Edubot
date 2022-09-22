@@ -32,28 +32,23 @@
       }
 
       .cls-8 {
-        font-size: 72px;
-        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
-      }
-
-      .cls-9 {
         fill: #fff;
       }
 
-      .cls-10, .cls-9 {
+      .cls-8, .cls-9 {
         stroke: #1b1c1e;
       }
 
-      .cls-10, .cls-11, .cls-9 {
+      .cls-10, .cls-8, .cls-9 {
         stroke-miterlimit: 10;
         stroke-width: 3px;
       }
 
-      .cls-10 {
+      .cls-9 {
         fill: #393c45;
       }
 
-      .cls-11 {
+      .cls-10 {
         fill: none;
         stroke: #231f20;
         stroke-linecap: round;
@@ -61,23 +56,22 @@
     </style>
   </defs>
   <title>football</title>
-  <text class="cls-1" transform="translate(224.11 803.28)"><tspan class="cls-2">F</tspan><tspan class="cls-3" x="87.15" y="0">o</tspan><tspan class="cls-4" x="177.3" y="0">o</tspan><tspan class="cls-5" x="265.95" y="0">t</tspan><tspan class="cls-3" x="315.9" y="0">b</tspan><tspan class="cls-6" x="406.05" y="0">al</tspan><tspan class="cls-7" x="526.65" y="0">l</tspan></text>
-  <text class="cls-8" transform="translate(404.85 890.4)">ฟุทบอล</text>
+  <text class="cls-1" transform="translate(223.58 811.07)"><tspan class="cls-2">F</tspan><tspan class="cls-3" x="87.15" y="0">o</tspan><tspan class="cls-4" x="177.3" y="0">o</tspan><tspan class="cls-5" x="265.95" y="0">t</tspan><tspan class="cls-3" x="315.9" y="0">b</tspan><tspan class="cls-6" x="406.05" y="0">al</tspan><tspan class="cls-7" x="526.65" y="0">l</tspan></text>
   <g>
-    <circle class="cls-9" cx="503.23" cy="369.49" r="239.41"/>
-    <path class="cls-10" d="M666.63,289.57,586.8,365.44s-91.9-48.38-107.34-54c0,0,22.21-83.91,20.79-96.07l109.38-12.8S659.2,268.27,666.63,289.57Z"/>
-    <path class="cls-10" d="M585.74,461.66s-57.22,58.44-103.69,61.42l8.82,75.35s69.19,1.76,104.52-12.23c0,0,44.78-59.45,46.52-86.76C641.91,499.44,590.16,478.39,585.74,461.66Z"/>
-    <path class="cls-10" d="M390.43,477.13s-7.52-85.36.78-98.65c0,0-85.62-36.8-84.33-46.81l-43,43.49s8.36,66.52,31.4,113.1Z"/>
-    <path class="cls-10" d="M338.4,222s79.8-34,96.82-36l6.59-48s-71.9,26.17-112.18,66.56Z"/>
-    <path class="cls-9" d="M585.74,461.66s6.34-72.19,1.06-96.22"/>
-    <path class="cls-9" d="M482.05,523.08s-74.76-28.21-91.62-46"/>
-    <path class="cls-9" d="M391.21,378.48s62.08-59,88.25-67"/>
-    <path class="cls-9" d="M666.63,289.57c2.43-.28,41.89,0,72.61,30.93"/>
-    <path class="cls-9" d="M641.91,499.44s40.71-8.86,75-21.91"/>
-    <path class="cls-9" d="M306.88,331.67s.05-83.78,31.52-109.64"/>
-    <path class="cls-9" d="M500.25,215.41s-34.44-20.61-65-29.35"/>
-    <line class="cls-9" x1="607.2" y1="202.9" x2="625.7" y2="163.77"/>
-    <line class="cls-9" x1="490.87" y1="598.43" x2="478.73" y2="607.69"/>
-    <line class="cls-11" x1="595.39" y1="586.2" x2="597.73" y2="589.53"/>
+    <circle class="cls-8" cx="502.7" cy="377.28" r="239.41"/>
+    <path class="cls-9" d="M666.1,297.36l-79.83,75.87s-91.9-48.38-107.34-54c0,0,22.22-83.91,20.79-96.06l109.39-12.8S658.68,276.05,666.1,297.36Z"/>
+    <path class="cls-9" d="M585.21,469.45S528,527.89,481.52,530.87l8.82,75.35S559.54,608,594.86,594c0,0,44.79-59.45,46.52-86.76C641.38,507.23,589.64,486.18,585.21,469.45Z"/>
+    <path class="cls-9" d="M389.9,484.92s-7.52-85.36.78-98.66c0,0-85.62-36.79-84.33-46.8l-43,43.49s8.36,66.52,31.4,113.1Z"/>
+    <path class="cls-9" d="M337.88,229.82s79.8-34,96.81-36l6.59-48S369.38,172,329.1,212.43Z"/>
+    <path class="cls-8" d="M585.21,469.45s6.34-72.2,1.06-96.22"/>
+    <path class="cls-8" d="M481.52,530.87s-74.76-28.22-91.62-45.95"/>
+    <path class="cls-8" d="M390.68,386.26s62.09-59,88.25-67"/>
+    <path class="cls-8" d="M666.1,297.36c2.43-.28,41.89,0,72.61,30.93"/>
+    <path class="cls-8" d="M641.38,507.23s40.71-8.86,75-21.91"/>
+    <path class="cls-8" d="M306.35,339.46s.06-83.78,31.53-109.64"/>
+    <path class="cls-8" d="M499.72,223.2s-34.44-20.61-65-29.35"/>
+    <line class="cls-8" x1="606.68" y1="210.68" x2="625.18" y2="171.56"/>
+    <line class="cls-8" x1="490.34" y1="606.22" x2="478.2" y2="615.48"/>
+    <line class="cls-10" x1="594.86" y1="593.99" x2="597.2" y2="597.32"/>
   </g>
 </svg>

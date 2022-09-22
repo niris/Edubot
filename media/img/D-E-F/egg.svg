@@ -21,31 +21,27 @@
       }
 
       .cls-4 {
-        font-size: 72px;
-        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
-      }
-
-      .cls-5 {
         fill: #ca865a;
         stroke: #b7724b;
         stroke-miterlimit: 10;
         stroke-width: 3px;
       }
 
-      .cls-6 {
+      .cls-5 {
         fill: #bd7343;
       }
 
-      .cls-7 {
+      .cls-6 {
         fill: #d7a57e;
       }
     </style>
   </defs>
   <title>egg</title>
-  <text class="cls-1" transform="translate(362.49 801.27)">E<tspan class="cls-2" x="95.55" y="0">g</tspan><tspan class="cls-3" x="184.95" y="0">g</tspan></text>
-  <text class="cls-4" transform="translate(461.09 897.7)">เอก</text>
-  <path class="cls-5" d="M394.91,571s-119.74-72.78-77.48-270S492.35,76.78,528.74,85s117.4,46.14,163.17,231.44S580.39,591,580.39,591,487.65,634.39,394.91,571Z"/>
-  <path class="cls-6" d="M669.61,268.13s14.09,185.48-59.87,233.61-162.29,43.43-254.3,10.56c0,0,51.21,97.44,165.08,82.18S669.74,487.77,684.87,440.7,676.65,291.61,669.61,268.13Z"/>
-  <ellipse class="cls-7" cx="443.9" cy="237.2" rx="34.04" ry="13.5" transform="translate(98.96 603.71) rotate(-74.86)"/>
-  <ellipse class="cls-7" cx="407.21" cy="270.43" rx="15.19" ry="6.02" transform="translate(39.79 592.84) rotate(-74.86)"/>
+  <text class="cls-1" transform="translate(361.07 810.55)">E<tspan class="cls-2" x="95.55" y="0">g</tspan><tspan class="cls-3" x="184.95" y="0">g</tspan></text>
+  <g>
+    <path class="cls-4" d="M393.49,580.29S273.75,507.5,316,310.29s174.91-224.22,211.3-216,117.4,46.14,163.17,231.44S579,600.24,579,600.24,486.23,643.68,393.49,580.29Z"/>
+    <path class="cls-5" d="M668.19,277.42S682.28,462.89,608.32,511,446,554.46,354,521.59c0,0,51.21,97.43,165.08,82.17S668.32,497.06,683.45,450,675.23,300.89,668.19,277.42Z"/>
+    <ellipse class="cls-6" cx="442.48" cy="246.49" rx="34.04" ry="13.5" transform="translate(88.95 609.2) rotate(-74.86)"/>
+    <ellipse class="cls-6" cx="405.79" cy="279.71" rx="15.19" ry="6.02" transform="translate(29.77 598.33) rotate(-74.86)"/>
+  </g>
 </svg>

@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #231f20;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ed1c24;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </defs>
+  <title>en</title>
+  <text class="cls-1" transform="translate(159.29 504.09)">e + n = <tspan class="cls-2" x="517.05" y="0">e</tspan><tspan class="cls-3" x="598.2" y="0">n</tspan></text>
+</svg>

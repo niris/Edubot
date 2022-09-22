@@ -1,0 +1,47 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #ed1c24;
+        font-family: FreeSansBold, FreeSans;
+        letter-spacing: 0em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #ca865a;
+        stroke: #b7724b;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        fill: #bd7343;
+      }
+
+      .cls-6 {
+        fill: #d7a57e;
+      }
+    </style>
+  </defs>
+  <title>egg</title>
+  <text class="cls-1" transform="translate(373.9 802.26)">e<tspan class="cls-2" x="82.65" y="0">g</tspan><tspan class="cls-3" x="172.05" y="0">g</tspan></text>
+  <g>
+    <path class="cls-4" d="M390.58,578.38s-119.74-72.78-77.48-270S488,84.16,524.41,92.38s117.4,46.14,163.17,231.44S576.06,598.33,576.06,598.33,483.32,641.77,390.58,578.38Z"/>
+    <path class="cls-5" d="M665.28,275.51S679.36,461,605.41,509.12s-162.29,43.43-254.3,10.56c0,0,51.21,97.44,165.08,82.18S665.4,495.15,680.54,448.07,672.32,299,665.28,275.51Z"/>
+    <ellipse class="cls-6" cx="439.56" cy="244.58" rx="34.04" ry="13.5" transform="translate(88.64 604.98) rotate(-74.86)"/>
+    <ellipse class="cls-6" cx="402.87" cy="277.81" rx="15.19" ry="6.02" transform="translate(29.46 594.11) rotate(-74.86)"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #231f20;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2 {
+        fill: #ed1c24;
+      }
+    </style>
+  </defs>
+  <title>ad</title>
+  <text class="cls-1" transform="translate(157.68 513.04)">a + d = <tspan class="cls-2" x="517.05" y="0">ad</tspan></text>
+</svg>

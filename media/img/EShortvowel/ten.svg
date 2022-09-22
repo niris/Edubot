@@ -1,0 +1,34 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #231f20;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2, .cls-4 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #ed1c24;
+      }
+
+      .cls-6 {
+        fill: #4a96d1;
+        stroke: #2281c4;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>ten</title>
+  <text class="cls-1" transform="translate(113.11 802.26)">t + <tspan class="cls-2" x="220.95" y="0">e</tspan><tspan x="302.1" y="0">n = </tspan><tspan class="cls-3" x="564.75" y="0">t</tspan><tspan class="cls-4" x="613.95" y="0">e</tspan><tspan class="cls-5" x="695.1" y="0">n</tspan></text>
+  <path class="cls-6" d="M261.1,210.2c-1.33-4,64.4-21,78.41-43.4h75.6V606.44H315.7l22.41-340.23-68.61,33.6S268.1,231.21,261.1,210.2Z"/>
+  <path class="cls-6" d="M627.93,166.8s-128.81,18.2-145.61,133,29.4,299.63,123.21,288.43,155.41-42,159.61-161S759.54,180.8,627.93,166.8Zm26.6,281.42c-23.8,46.21-78.4,26.61-82.6-47.6S616.73,297,616.73,297C662.93,264.81,678.33,402,654.53,448.22Z"/>
+</svg>

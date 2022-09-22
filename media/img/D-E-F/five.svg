@@ -20,11 +20,6 @@
       }
 
       .cls-5 {
-        font-size: 72px;
-        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
-      }
-
-      .cls-6 {
         fill: #fbad2e;
         stroke: #dc8d27;
         stroke-miterlimit: 10;
@@ -33,7 +28,6 @@
     </style>
   </defs>
   <title>five</title>
-  <text class="cls-1" transform="translate(351.59 803.28)">F<tspan class="cls-2" x="91.65" y="0">i</tspan><tspan class="cls-3" x="129.6" y="0">v</tspan><tspan class="cls-4" x="210.75" y="0">e</tspan></text>
-  <text class="cls-5" transform="translate(436.15 899.79)">ไฟฟ</text>
-  <path class="cls-6" d="M660.66,75.61H356L372.57,370s117.94,1.58,138.47,12.6,48.88,43.82,42.57,80.28-27.54,58-92.09,47.23-65.34-39.35-65.34-39.35l-85,78.71S408,654.15,527.63,628.17,675.61,529,689,484.91s-19.67-148-86.58-183.4-118.86-25.18-118.86-25.18l.79-50.21H667Z"/>
+  <text class="cls-1" transform="translate(353.25 814.19)">F<tspan class="cls-2" x="91.65" y="0">i</tspan><tspan class="cls-3" x="129.6" y="0">v</tspan><tspan class="cls-4" x="210.75" y="0">e</tspan></text>
+  <path class="cls-5" d="M662.33,86.52H357.71l16.53,294.39s117.94,1.57,138.47,12.59,48.88,43.83,42.57,80.29-27.54,58-92.1,47.23-65.33-39.36-65.33-39.36l-85,78.71s96.82,104.69,216.46,78.71,148-99.17,161.36-143.25-19.68-148-86.58-183.4-118.86-25.19-118.86-25.19L486,237H668.62Z"/>
 </svg>

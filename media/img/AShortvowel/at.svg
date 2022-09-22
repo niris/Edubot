@@ -1,0 +1,25 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #231f20;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ed1c24;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <title>at</title>
+  <text class="cls-1" transform="translate(205.68 513.04)">a + t = <tspan class="cls-2" x="475.35" y="0">a</tspan><tspan class="cls-3" x="555.75" y="0">t</tspan></text>
+</svg>

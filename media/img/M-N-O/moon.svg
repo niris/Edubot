@@ -1,0 +1,44 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        fill: #ed2024;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #000;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-6 {
+        fill: #ffd53a;
+        stroke: #f3c52e;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #efc337;
+      }
+    </style>
+  </defs>
+  <title>moon</title>
+  <g>
+    <text class="cls-1" transform="translate(300.98 802.66)"><tspan class="cls-2">M</tspan><tspan class="cls-3" x="121.95" y="0">o</tspan><tspan class="cls-4" x="212.1" y="0">o</tspan><tspan class="cls-5" x="299.25" y="0">n</tspan></text>
+    <path class="cls-6" d="M458.82,99.37S308.56,245.72,436.9,418.68c0,0,141.66,176.08,338.87,11.73,0,0-64.32,191.74-277.51,173.74,0,0-191.66-16-224.53-232S458.82,99.37,458.82,99.37Z"/>
+    <path class="cls-7" d="M359.16,159.89s-79.3,81.92-42.78,232.7S519.86,580.94,563.16,578.85s74.61-5.22,117.92-28.17c0,0-53.11,46.43-124.18,49S408.73,595,327.34,497.46c0,0-61.57-70.44-50.09-195.65C277.25,301.81,281.43,218.33,359.16,159.89Z"/>
+  </g>
+</svg>

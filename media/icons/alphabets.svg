@@ -750,13 +750,13 @@
      showgrid="false"
      inkscape:zoom="1.29"
      inkscape:cx="500"
-     inkscape:cy="663.56589"
+     inkscape:cy="787.9845"
      inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-height="1056"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="1080"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g12">
+     inkscape:current-layer="g10">
     <inkscape:page
        x="0"
        y="0"
@@ -765,13 +765,25 @@
        height="1000" />
   </sodipodi:namedview>
   <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Page 2">
+    <ellipse
+       style="fill:#d5f6ff;fill-opacity:1;stroke-width:3.81993"
+       id="path3018-3"
+       cx="511.21997"
+       cy="478.88083"
+       rx="488.78003"
+       ry="450.6481" />
+  </g>
+  <g
      id="g10"
      inkscape:groupmode="layer"
      inkscape:label="Page 1"
      transform="matrix(1.3333333,0,0,-1.3333333,0,666.66667)">
     <g
        id="g12"
-       transform="scale(0.1)">
+       transform="matrix(0.10417827,0,0,0.12208843,-17.93718,-44.022554)">
       <path
          d="m 5458.8267,-985.81542 c 118.38,188.96101 205.27,327.98 299.75,512.609 -98.83,-5.43 -188.98,-14.12 -261.74,-24.97 l -20.63,127.07 c 82.53,17.36 243.27,29.31 426.82,31.49 l 18.47,-94.48 c -97.75,-185.73 -186.82,-346.46899 -295.41,-516.981 26.06,2.18 53.21,3.27 79.28,3.27 66.25,0 131.4,-6.52 188.97,-15.219 l -18.46,-129.23098 c -65.17,8.692 -140.11,16.289 -207.44,16.289 -34.76,0 -94.48,-7.597 -192.23,-23.898 l -17.38,114.05098"
          style="fill:#2b2f2d;fill-opacity:1;fill-rule:nonzero;stroke:none"

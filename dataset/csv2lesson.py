@@ -44,23 +44,16 @@ for filename in os.listdir("csv/_togenerate/vocab"):
         vocabs_meanings = []
         img = []
         audio = []
-        index = []
-        idx = 0
         for row in csvreader:
-            idx =+ 1
-            index.append(idx)
             vocab = row[0]
             vocabs.append(vocab)
             meanings.append(row[1])
             vocabs_meanings.append("**"+vocab+"**<br>"+row[1])
             img.append('![]('+os.path.join("/media/img",title.replace(" ", "&#x20;"),vocab.replace(" ", "&#x20;")+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab.replace(" ", "&#x20;")+'.mp3')+')')
-        
-        slide_nbs = list(map(lambda n: str(n) +"/"+ str(len(index)),list(range(1,len(index)+1))))
-        newfile.write('\n|' + '|'.join(slide_nbs) + '|\n|')
+        newfile.write('\n|' + '|'.join(img) + '|\n|')
         for i in range(len(img)):
             newfile.write(" :----: |")
-        newfile.write('\n|' + '|'.join(img) + '|')
         if category != "1phonics":
             newfile.write('\n|' + '|'.join(vocabs_meanings) + '|')
         newfile.write('\n|' + '|'.join(audio) + '|\n\n')

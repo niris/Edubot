@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ug" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: red;
+      }
+
+      .cls-3 {
+        font-family: FreeSansBold, FreeSans;
+        font-size: 150px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(147.73 524.83)"><tspan x="0" y="0">u + g = </tspan><tspan class="cls-1" x="525.3" y="0">u</tspan><tspan class="cls-2" x="614.7" y="0">g</tspan></text>
+</svg>

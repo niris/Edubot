@@ -24,17 +24,11 @@
       }
 
       .cls-6 {
-        font-size: 72px;
-        font-family: MicrosoftSansSerif, Microsoft Sans Serif;
-      }
-
-      .cls-7 {
         fill: #5a5eaa;
       }
     </style>
   </defs>
   <title>circle</title>
-  <text class="cls-1" transform="translate(294.38 811.72)">C<tspan class="cls-2" x="108.3" y="0">i</tspan><tspan class="cls-3" x="150" y="0">rc</tspan><tspan class="cls-4" x="287.25" y="0">l</tspan><tspan class="cls-5" x="327.45" y="0">e</tspan></text>
-  <text class="cls-6" transform="translate(400.24 889.67)">เซอเคิล</text>
-  <circle class="cls-7" cx="504.48" cy="364.53" r="246.52"/>
+  <text class="cls-1" transform="translate(295.38 812.36)">C<tspan class="cls-2" x="108.3" y="0">i</tspan><tspan class="cls-3" x="150" y="0">rc</tspan><tspan class="cls-4" x="287.25" y="0">l</tspan><tspan class="cls-5" x="327.45" y="0">e</tspan></text>
+  <circle class="cls-6" cx="505.48" cy="365.17" r="246.52"/>
 </svg>

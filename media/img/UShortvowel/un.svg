@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: red;
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        font-family: FreeSansBold, FreeSans;
+        font-size: 150px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(146.23 539.45)"><tspan x="0" y="0">u + n = </tspan><tspan class="cls-1" x="525.3" y="0">un</tspan></text>
+</svg>

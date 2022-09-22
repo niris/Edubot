@@ -1,0 +1,39 @@
+---
+title: EShortvowel
+description: 
+icon: /media/icons/EShortvowel.svgtags: {category:1phonics,level:2}
+---
+<div class="carrousel">
+
+
+|![](/media/img/EShortvowel/ed.svg)|![](/media/img/EShortvowel/bed.svg)|![](/media/img/EShortvowel/red.svg)|![](/media/img/EShortvowel/wed.svg)|![](/media/img/EShortvowel/eg.svg)|![](/media/img/EShortvowel/egg.svg)|![](/media/img/EShortvowel/leg.svg)|![](/media/img/EShortvowel/en.svg)|![](/media/img/EShortvowel/men.svg)|![](/media/img/EShortvowel/pen.svg)|![](/media/img/EShortvowel/ten.svg)|![](/media/img/EShortvowel/et.svg)|![](/media/img/EShortvowel/net.svg)|![](/media/img/EShortvowel/vet.svg)|![](/media/img/EShortvowel/wet.svg)|
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+|**ed**<br> |**bed**<br>เตียง|**red**<br>สีแดง|**wed**<br>วันพุธ|**eg**<br>|**egg**<br>ไข่|**leg**<br>ขา|**en**<br> |**men**<br>ผู้ชายหลายคน|**pen**<br>ปากกา|**ten**<br>สิบ|**et**<br> |**net**<br>สุทธิ|**vet**<br>สัตวแพทย์|**wet**<br>เปียก|
+|![](/media/audio/ed.mp3)|![](/media/audio/bed.mp3)|![](/media/audio/red.mp3)|![](/media/audio/wed.mp3)|![](/media/audio/eg.mp3)|![](/media/audio/egg.mp3)|![](/media/audio/leg.mp3)|![](/media/audio/en.mp3)|![](/media/audio/men.mp3)|![](/media/audio/pen.mp3)|![](/media/audio/ten.mp3)|![](/media/audio/et.mp3)|![](/media/audio/net.mp3)|![](/media/audio/vet.mp3)|![](/media/audio/wet.mp3)|
+
+</div>
+
+
+
+# ![icon](/media/icons/quiz.svg) 
+
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **egg**
+ - [ ] ผู้ชายหลายคน
+ - [ ] สัตวแพทย์
+ - [x] ไข่
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **eg**
+ - [x] 
+ - [ ] สีแดง
+ - [ ] เปียก
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ **สุทธิ**
+ - [ ] eg
+ - [x] net
+ - [ ] wet
+
+ เลือกคำศัพท์/ความหมายที่ตรงกับ ****
+ - [x] eg
+ - [ ] leg
+ - [ ] wet

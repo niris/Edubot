@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ix" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: FreeSansBold, FreeSans;
+        font-size: 150px;
+      }
+
+      .cls-2 {
+        fill: red;
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(200.45 553.92)"><tspan x="0" y="0">i + x = </tspan><tspan class="cls-2" x="467.1" y="0">ix</tspan></text>
+</svg>
