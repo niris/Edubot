@@ -182,7 +182,7 @@ const LessonList = {
             <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class="'ovh '+reachable(lesson)">
                 <span style="text-align:center" v-for="tag in lesson.tags.filter(l=>l.startsWith('level:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span>
                 <img :src="'/media/icons/'+lesson.icon+'.svg'" style="padding: 15%;" alt="lesson">
-                <span class="text-capitalize is-center">{{lesson.title}}</span>
+                <span class="text-capitalize is-center">{{lesson.title.replace(/^[^a-zA-Z]+/, '')}}</span>
             </router-link>
         </div>
     </template>

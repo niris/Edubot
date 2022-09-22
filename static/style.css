@@ -49,6 +49,12 @@ progress{
 .card{
     border-radius:1em;
 }
+
+.container td{
+    padding: 1.2rem 5rem;
+    margin-left:auto ;
+    margin-right: auto;
+}
 /* remove sharp angle from lessons media for kids safety */
 .lesson img,
 .lesson video {
