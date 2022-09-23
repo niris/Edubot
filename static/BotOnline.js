@@ -7,6 +7,7 @@ const welcomeMessage = `How can I help you?
 
 
 const BotOnlineChat = {
+    props:['topic'],
     data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"], encourageMsg:["Bravo!","Good job","Well done!"], mode:"normal", welcomeMsg:''}),
     created () {
         this.logs.push({ bot: true, msg: "Welcome !"});

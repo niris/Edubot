@@ -32,6 +32,7 @@ const routes = [
 	{ path:'/lesson/:id', component: LessonShow, props: true },
 	{ path:'/leaderboard', component: Leaderboard},
 	{ path:'/privacy', component: Privacy},
+	{ path:'/bot/:subject', component: BotOnlineChat,props:true},
 	{ path:'/:other(.*)*', component:{template:`<h1>404: Page not found 😟</h1>`}}
 ];
 const app = Vue.createApp({

@@ -76,7 +76,7 @@ progress{
 }
 
 img[alt=icon] {
-    width : 2em;
+    width : 2.5em;
     margin-left: 0.5em;
     margin-bottom: 1em;
 }
@@ -85,6 +85,13 @@ img[alt=icon-collapsed] {
     width : 2em;
     margin-left: 0.5em;
     margin-bottom: 0.1em;
+}
+
+img[alt=topicimg] {
+    width : 50%;
+    margin-right: -2em;
+    margin-top: -1em;
+    z-index: 1;
 }
 
 .chatbot {
