@@ -16,16 +16,16 @@
 
 ออกเสียงคำว่า **Good morning** :
 
-?[voice](good morning)
+🎙️ good morning
 
 
 ออกเสียงคำว่า **Good afternoon** :
 
-?[voice](good afternoon)
+🎙️ good afternoon
 
 ออกเสียงคำว่า **Hello, how are you?** :
 
-?[voice](hello how are you)
+🎙️ hello how are you
 
 เลือกข้อความที่ตรงกับเสียง : ![](/media/audio/hello.mp3)
  - [ ] Hi

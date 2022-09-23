@@ -21,7 +21,7 @@ const listCheckboxRule = (validated) => function (state) {
         }
     }
 };
-// convert ?[name](value) into HTML input
+// convert 🎙️ value into HTML input
 const inputRule = (validated) => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
         const matches = [...child.content.matchAll(/^(🎙️)\s*(.*)$/g)];

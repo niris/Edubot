@@ -120,7 +120,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
         for r in range(number):
             answer_index = random.choice(range(len(vocabs_tmp)))
             newfile.write("ออกเสียงคำว่า **"+ vocabs_tmp[answer_index] + "** :\n\n")
-            newfile.write("?[voice]("+ vocabs_tmp[answer_index].lower() +")\n\n")
+            newfile.write("🎙️ "+ vocabs_tmp[answer_index].lower( +")\n\n")
             vocabs_tmp.pop(answer_index)
 
 

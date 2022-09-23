@@ -25,13 +25,13 @@
 
 ออกเสียงคำว่า **See you later** :
 
-?[voice](see you later)
+🎙️ see you later
 
 
 ออกเสียงคำว่า **Good luck** :
 
-?[voice](good luck)
+🎙️ good luck
 
 ออกเสียงคำว่า **See you again tomorrow** :
 
-?[voice](see you again tomorrow)
+🎙️ see you again tomorrow
