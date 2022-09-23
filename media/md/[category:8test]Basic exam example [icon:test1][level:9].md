@@ -45,14 +45,14 @@ Look at this video:
 
 Say **hello everybody** in this field:
 
-?[voice](hello everybody)
+🎙️ hello everybody
 
 Say **good morning** in this field:
 
-?[voice](good morning)
+🎙️ good morning
 
 Say **hello everybody** in this field:
 
-?[voiceth](hello everybody)
+🎙️ hello everybody
 
 

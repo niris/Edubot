@@ -24,19 +24,17 @@ const listCheckboxRule = (validated) => function (state) {
 // convert ?[name](value) into HTML input
 const inputRule = (validated) => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
-        const matches = [...child.content.matchAll(/\?\[(.*?)\]\((.*?)\)/g)];
-        console.debug(matches); //TODO: bug on single word ?!
+        const matches = [...child.content.matchAll(/^(🎙️)\s*(.*)$/g)];
         return matches.length ? matches.map(([_, content, value]) => [
             new state.Token("label_open", "label", 1),
             Object.assign(new state.Token("text_input", "input", 0), {
                 attrs: [
                     [validated.includes('h' + hashCode(value)) ? "disabled" : "readonly", ""],
-                    ["class", content],
+                    ["class", "voice"],
                     [validated.includes('h' + hashCode(value)) ? "value" : "data-value", value],
                     ["name", 'h' + hashCode(value)]
                 ]
             }),
-            //Object.assign(new state.Token("text", "", 0), { content }),
             new state.Token("label_close", "label", -1),
         ]).flat() : [child];
     }).flat());
@@ -73,9 +71,12 @@ const ls2json = (res) => res.map(file => ({
 const LessonShow = {
     props: ['id'],
     template: `
-    <form class=lesson @click=listen @input.prevent=validate v-html="markdownToHtml"></form>
+    <form v-if=isExam  id=lesson class=lesson @click=listen @submit.prevent=validateForm v-html="markdownToHtml"></form>
+    <form v-if=!isExam id=lesson class=lesson @click=listen @input.prevent=validateInput v-html="markdownToHtml"></form>
+    <button v-if=isExam form=lesson class="button primary is-full-width">Validate</button>
+    <hr>
     <router-link :to=$router.options.history.state.back class="button outline">&lt;&lt; Back</router-link>`,
-    data() { return { lesson: {} } },
+    data() { return { lesson: "", isExam: false} },
     computed: {
         markdownToHtml() {
             const progress = Object.keys(JSON.parse(localStorage.progress || '{}'));
@@ -84,8 +85,7 @@ const LessonShow = {
             mi.core.ruler.push("checkbox", checkboxRule());
             mi.core.ruler.push("input", inputRule(progress));
             mi.core.ruler.push("exam", listCheckboxRule(progress));
-            const html = mi.render(this.lesson || '...');
-            return html;
+            return this.lesson ? mi.render(this.lesson) : '...';
         }
     },
     methods: {
@@ -132,7 +132,20 @@ const LessonShow = {
             // stop listening after 5 seconds to avoid flooding
             setTimeout(target.onblur, 5000);
         },
-        validate({ target }) {
+        validateForm({ target }) {
+            if ([...target.elements].filter(e=>e.constructor == HTMLInputElement).some((input) => 
+                (input.type == 'checkbox' && (input.dataset.checked==='') != input.checked) ||
+                (input.type == 'text' && inputs.dataset.value != inputs.value)
+            )) return alert('You made a mistake');
+            Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
+            const progress = JSON.parse(localStorage.progress || '{}');
+            progress[decodeURIComponent(location.hash)] = 1;
+            this.$root.progress = progress;
+            localStorage.progress = JSON.stringify(progress);
+            setTimeout(this.$router.back, 1000)
+        },
+        validateInput({ target }) {
+            if(!target.name)return;
             const inputs = target.form[target.name];
             let correct = false;
             if (inputs.constructor == HTMLInputElement) {
@@ -152,7 +165,7 @@ const LessonShow = {
             (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             const remain = target.form.querySelector('input:not([disabled])');
             if (!remain) {
-                progress[decodeURIComponent(location.pathname)] = 1;
+                progress[decodeURIComponent(location.hash)] = 1;
                 setTimeout(this.$router.back, 1000)
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
@@ -162,6 +175,7 @@ const LessonShow = {
         }
     },
     async mounted() {
+        this.isExam = this.$props.id.includes('[mode:exam]');
         this.lesson = await (await fetch(`/media/md/${this.$props.id}`)).text();
     }
 }
