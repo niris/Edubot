@@ -1,7 +1,7 @@
 const cacheList = ["/"]; // add more if needed
 const cacheName = "edubot-2022-08";
 self.addEventListener('install', event => {
-  event.waitUntil((async () => (await caches.open(CACHE_NAME)).addAll(['/']))());
+  event.waitUntil((async () => (await caches.open(cacheName)).addAll(['/']))());
 });
 //self.addEventListener('activate', e => e.waitUntil(self.clients.claim()));
 self.addEventListener('fetch', event => {

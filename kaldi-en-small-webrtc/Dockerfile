@@ -1,17 +1,14 @@
 FROM alphacep/kaldi-vosk-server:latest
 
 ENV MODEL_VERSION 0.15
-ENV VOSK_MODEL_PATH /opt/vosk-model-small-en/model
-ENV VOSK_SERVER_PORT 2701
-RUN mkdir /opt/vosk-model-small-en \
-   && cd /opt/vosk-model-small-en \
-   && wget -q https://alphacephei.com/vosk/models/vosk-model-small-en-us-${MODEL_VERSION}.zip \
-   && unzip vosk-model-small-en-us-${MODEL_VERSION}.zip \
-   && mv vosk-model-small-en-us-${MODEL_VERSION} model \
-   && rm -rf vosk-model-small-en-us-${MODEL_VERSION}.zip \
-   && pip install aiohttp aiortc \
-   && sed -i 's/frame.planes/frame[0].planes/' /opt/vosk-server/webrtc/asr_server_webrtc.py
+ENV MODEL_BASENAME vosk-model-small-en-us
+RUN mkdir /opt/${MODEL_BASENAME} \
+   && cd /opt/${MODEL_BASENAME} \
+   && wget -q http://alphacephei.com/kaldi/models/${MODEL_BASENAME}-${MODEL_VERSION}.zip \
+   && unzip ${MODEL_BASENAME}-${MODEL_VERSION}.zip \
+   && mv ${MODEL_BASENAME}-${MODEL_VERSION} model \
+   && rm -rf ${MODEL_BASENAME}-${MODEL_VERSION}.zip
 
-EXPOSE 2701
-WORKDIR /opt/vosk-server/webrtc
-CMD [ "./asr_server_webrtc.py"]
+EXPOSE 2700
+WORKDIR /opt/vosk-server/websocket
+CMD [ "python3", "./asr_server.py", "/opt/vosk-model-small-en-us/model" ]

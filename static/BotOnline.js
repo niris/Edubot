@@ -1,3 +1,5 @@
+import listen from '/static/stt.js'
+
 const welcomeMessage = `How can I help you?
 - [Vocab : ฝึกคำศัพท์](#/category/2vocab)
 - [Phonics : ฝึกสะกดคำ](#/category/1phonics)
@@ -30,7 +32,6 @@ const BotOnlineChat = {
         }
 	},
     methods: {
-        log: console.log,
         welcome(){
             this.logs = []
             clearTimeout(this.greetingTimeout)
@@ -74,59 +75,12 @@ const BotOnlineChat = {
             }}, 1000)
             
         },
-        async listen({ target }) {
-            const send = this.send;
-            const endpoint = '/offerth';
-            target.value = '';
-            target.placeholder = 'Connecting...';
-            const pc = new RTCPeerConnection({ sdpSemantics: 'unified-plan' });
-            const dc = pc.createDataChannel('result');
-            dc.onmessage = (messageEvent) => {
-                target.classList.add('live');
-                target.placeholder = "Speak...";
-                target.disabled = true;
-                const voskResult = JSON.parse(messageEvent.data || '{}');
-                const base = target.value.replace(/ *\(.*?\)/, '');
-                if (voskResult.text) {
-                    target.value = `${base} ${voskResult.text}`.trim();
-                    target.dispatchEvent(new Event("input", { bubbles: true }));
-                } else if (voskResult.partial) {
-                    target.value = `${base} (${voskResult.partial})`.trim();
-                }
-            };
-            target.onblur = function () {
-                if (!target.classList.contains('live')) return; // already stopped
-                dc?.close();
-                pc.getTransceivers?.().forEach((t) => t.stop?.());
-                pc.getSenders().forEach((s) => s.track.stop());
-                setTimeout(() => pc.close(), 500);
-                target.disabled = false;
-                target.classList.remove('live');
-                send({ target: target.form });
-            }
-            if (!navigator.mediaDevices && location.protocol == 'http:')
-                return alert("Media access is only possible in HTTPS !");
-            if (!navigator.mediaDevices)
-                return alert("Forbidden Media access !")
-            const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-            stream.getTracks().forEach((t) => pc.addTrack(t, stream));
-            await pc.setLocalDescription(await pc.createOffer());
-            while (pc.iceGatheringState !== 'complete') await new Promise(r => setTimeout(r, 500));
-            try {
-                const offer = await fetch(endpoint, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ sdp: pc.localDescription.sdp, type: pc.localDescription.type }),
-                }).then((res) => res.json());
-                await pc.setRemoteDescription(offer);
-                // stop listening after 5 seconds to avoid flooding
-            } catch {
-                alert('Voice server unreachable. Please restart voice server');
-            }
-            setTimeout(target.onblur, 5000);
+        async record({ target }) {
+            await listen(target, 3000);
+            this.send({target:target.form});
         },
         async classify(text, language_code) {
-            const res = await (await fetch(`/dialog?${new URLSearchParams({text, language_code})}`)).json()
+            const res = await (await fetch(`/bot?${new URLSearchParams({text, language_code})}`)).json()
             console.log(res, res.intent)
             let resMessage = ["OK, let's go!", "Let's go!"]
             let randomMessage = resMessage[Math.floor(Math.random() * resMessage.length)]
@@ -167,7 +121,7 @@ const BotOnlineChat = {
             </summary>
             <nav>
                 <input type=button v-if="logs.length" @click.prevent="logs=[]" class="button icon-only picon" value=times>
-                <input type=button @click="listen({target:$refs.req})" class="button icon-only picon" value=microphone>
+                <input type=button @click="record({target:$refs.req})" class="button icon-only picon" value=microphone>
                 <input name="req" ref=req placeholder="Question" autocomplete="off" id="msgfeild" @input=minimize @focus="minimize">
                 <button class="button icon-only picon">send</button>
             </nav>

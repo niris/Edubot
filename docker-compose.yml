@@ -2,8 +2,8 @@ version: '3'
 services:
   postgres:
     image: postgres:14
-    ports:
-      - "5432:5432"
+    expose:
+      - "5432"
     environment:
       POSTGRES_DB: root
       POSTGRES_USER: root
@@ -13,8 +13,8 @@ services:
       - ./pgdata:/var/lib/postgresql/data
   api:
     image: postgrest/postgrest:v9.0.0
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     links:
       - postgres:postgres
     environment:
@@ -29,26 +29,11 @@ services:
     depends_on:
       - postgres
   vosken:
-    image: sirinyao/kaldi-en-webrtc:v1
-    ports:
-      - "2701:2701"
-    healthcheck:
-      test: wget --no-verbose --tries=1 --spider http://localhost:2701/offer || exit 1
-      interval: 60s
-      retries: 5
-      start_period: 20s
-      timeout: 10s
-  voskth:
-    image: sirinyao/kaldi-th-webrtc:v1
-    restart: unless-stopped
-    ports:
-      - "2700:2700"
-    healthcheck:
-      test: wget --no-verbose --tries=1 --spider http://localhost:2700/offer || exit 1
-      interval: 60s
-      retries: 5
-      start_period: 20s
-      timeout: 10s
+    build:
+      context: kaldi-en-small-webrtc
+      dockerfile: Dockerfile
+    expose:
+      - "2700"
   dialogflow:
     image: sirinyao/dialogflow:v1
     restart: unless-stopped
@@ -56,8 +41,8 @@ services:
       - ./dialogflow-py/app.py:/app.py:ro
       - ./dialogflow-py/conf.json:/conf.json:ro
     command: flask run
-    ports:
-      - "2800:2800"
+    expose:
+      - "2800"
     stop_signal: SIGINT
     environment:
       - FLASK_RUN_HOST=0.0.0.0
@@ -71,14 +56,9 @@ services:
     links:
       - api:api
     environment:
-      - POSTGREST_HOST=api
-      - POSTGREST_PORT=3000
-      - VOSK_TH_HOST=voskth
-      - VOSK_TH_PORT=2700
-      - VOSK_EN_HOST=vosken
-      - VOSK_EN_PORT=2701
-      - DIALOGF_HOST=dialogflow
-      - DIALOGF_PORT=2800
+      - PROXY_API=http://api:3000/
+      - PROXY_STT=http://vosken:2700/
+      - PROXY_BOT=http://dialogflow:2800/
     volumes:
       - ./nginx/nginx.conf:/nginx.tpl:ro
       - ./nginx/fullchain.pem:/etc/nginx/fullchain.pem:ro
@@ -86,10 +66,10 @@ services:
       - ./static:/etc/nginx/html/static:ro
       - ./media:/etc/nginx/html/media:ro
     command: bash -c "
-        envsubst '$$POSTGREST_HOST,$$POSTGREST_PORT,$$VOSK_EN_HOST,$$VOSK_EN_PORT,$$VOSK_TH_HOST,$$VOSK_TH_PORT,$$DIALOGF_HOST,$$DIALOGF_PORT' < /nginx.tpl > /etc/nginx/nginx.conf &&
+        envsubst '$$PROXY_API,$$PROXY_STT,$$PROXY_BOT' < /nginx.tpl > /etc/nginx/nginx.conf &&
         nginx -g 'daemon off; error_log /dev/stderr info;'"
     depends_on:
       - api
       - dialogflow
       - vosken
-      - voskth
+

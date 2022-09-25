@@ -26,8 +26,9 @@ api[fa:fa-database PostgREST]
 db[fa:fa-database Postgres]
 vosk[fa:fa-microphone VOSK]
 bot[fa:fa-robot dialogflow]
-user --> |HTTP/S| httpd
+user --> |HTTPS| httpd
+user --> |voice/WSS| httpd
 httpd --> |REST| api --> |SQL| db
-httpd --> |Voice| vosk
+httpd --> |voice/ws| vosk
 httpd --> |Prompt| bot
 ```

@@ -1,3 +1,5 @@
+import listen from '/static/stt.js'
+
 // hash a question into a localStorage id
 const hashCode = s => s.split('').reduce((a, b) => (a = ((a << 5) - a) + b.charCodeAt(0), a & a), 0);
 // convert list + checkbox into interactiv exam
@@ -71,8 +73,8 @@ const ls2json = (res) => res.map(file => ({
 const LessonShow = {
     props: ['id'],
     template: `
-    <form v-if=isExam  id=lesson class=lesson @click=listen @submit.prevent=validateForm v-html="markdownToHtml"></form>
-    <form v-if=!isExam id=lesson class=lesson @click=listen @input.prevent=validateInput v-html="markdownToHtml"></form>
+    <form v-if=isExam  id=lesson class=lesson @click=clicked @submit.prevent=validateForm v-html="markdownToHtml"></form>
+    <form v-if=!isExam id=lesson class=lesson @click=clicked @input.prevent=validateInput v-html="markdownToHtml"></form>
     <button v-if=isExam form=lesson class="button primary is-full-width">Validate</button>
     <hr>
     <router-link :to=$router.options.history.state.back class="button outline">&lt;&lt; Back</router-link>`,
@@ -89,48 +91,10 @@ const LessonShow = {
         }
     },
     methods: {
-        async listen({ target }) {
-            if (!(target.classList.contains("voice") || (target.classList.contains("voiceth")))) return;
-            if (!navigator.mediaDevices) {
-                return alert("No microphone found (blocked?)");
-            }
-            const endpoint = target.classList.contains("voiceth") ? '/offerth' : '/offeren';
-            target.value = '';
-            target.placeholder = 'Connecting...';
-            const pc = new RTCPeerConnection({ sdpSemantics: 'unified-plan' });
-            const dc = pc.createDataChannel('result');
-            dc.onmessage = (messageEvent) => {
-                target.classList.add('live');
-                target.placeholder = "Speak...";
-                const voskResult = JSON.parse(messageEvent.data || '{}');
-                const base = target.value.replace(/ *\(.*?\)/, '');
-                if (voskResult.text) {
-                    target.value = `${base} ${voskResult.text}`.trim();
-                    target.dispatchEvent(new Event("input", { bubbles: true }));
-                } else if (voskResult.partial) {
-                    target.value = `${base} (${voskResult.partial})`.trim();
-                }
-            };
-            target.onblur = function () {
-                if (!target.classList.contains('live')) return; // already stopped
-                dc?.close();
-                pc.getTransceivers?.().forEach((t) => t.stop?.());
-                pc.getSenders().forEach((s) => s.track.stop());
-                setTimeout(() => pc.close(), 500);
-                target.classList.remove('live');
-            }
-            const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-            stream.getTracks().forEach((t) => pc.addTrack(t, stream));
-            await pc.setLocalDescription(await pc.createOffer());
-            while (pc.iceGatheringState !== 'complete') await new Promise(r => setTimeout(r, 500));
-            const offer = await fetch(endpoint, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ sdp: pc.localDescription.sdp, type: pc.localDescription.type }),
-            }).then((res) => res.json());
-            await pc.setRemoteDescription(offer);
-            // stop listening after 5 seconds to avoid flooding
-            setTimeout(target.onblur, 5000);
+        async clicked({ target }) {
+            if (!target.classList.contains("voice")) return;
+            await listen(target, 5000);
+            this.validateInput({ target });
         },
         validateForm({ target }) {
             if ([...target.elements].filter(e=>e.constructor == HTMLInputElement).some((input) => 
