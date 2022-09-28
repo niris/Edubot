@@ -27,16 +27,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="220.61732"
-     inkscape:cy="506.99556"
+     inkscape:cx="222.03153"
+     inkscape:cy="507.70267"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1056"
+     inkscape:window-height="1031"
      inkscape:window-x="0"
-     inkscape:window-y="1080"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:lockguides="true"
@@ -72,12 +72,6 @@
          cy="117.00092"
          rx="68.568169"
          ry="19.4216" />
-      <path
-         sodipodi:nodetypes="ccccc"
-         id="path1929-2"
-         style="fill:#a1e1cc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.00618362"
-         d="m 12.769015,1.4169766 c 8.096648,-2.0603482 46.740325,-1.9072257 57.509116,0.6787764 10.331316,2.4808263 11.573023,9.807686 2.911727,12.204228 -6.7704,1.873151 -48.606763,4.062511 -60.420843,1.540337 -12.08428011,-2.579931 -9.479753,-12.0110584 0,-14.4233414"
-         inkscape:connector-curvature="0" />
       <text
          transform="scale(0.93339443,1.0713584)"
          id="text35640-1"
@@ -85,12 +79,6 @@
          x="21.684183"
          style="font-weight:bold;font-size:22.3622px;font-family:FreeSans;-inkscape-font-specification:'FreeSans Bold';opacity:0.8;fill:#a1e1e1;fill-opacity:1;fill-rule:evenodd;stroke-width:0.162107;paint-order:fill markers stroke"
          xml:space="preserve" />
-      <path
-         sodipodi:nodetypes="cccc"
-         id="path1931-1"
-         style="fill:#a1e1cc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.00510515"
-         d="m 44.428343,20.776482 -6.820335,-6.611034 15.008364,2.255403 z"
-         inkscape:connector-curvature="0" />
       <g
          id="g8408"
          transform="matrix(0.00761,0,0,-0.00832879,-130.61671,134.48546)"
