@@ -18,19 +18,6 @@ const BotOnlineChat = {
     computed: {
         last_logs() {return this.logs.slice(-5)}
     },
-    watch: { // update $root style (for display) and localstorage (in case we F5 in another page)
-		//'$root.progress': function (xp) {this.logs.push({bot:true, msg: this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)]});setTimeout(() => this.logs=[], 2000);},
-        '$root.result': function(res) {
-            if(this.$root.result==false){
-                this.logs.push({bot:true, msg:"Try again!"});
-                setTimeout(() => this.logs=[], 2000);
-            }
-            else{
-                this.logs.push({bot:true, msg: this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)]});
-                setTimeout(() => this.logs=[], 2000);
-            }
-        }
-	},
     methods: {
         welcome(){
             this.logs = []
@@ -46,6 +33,17 @@ const BotOnlineChat = {
             setTimeout(() => {this.welcomeMessage=[], 5000;this.mode = "normal"
         });
         },
+        response(result){
+            if(result==false){
+                this.logs.push({bot:true, msg:"Try again !"});
+                setTimeout(() => this.logs=[], 2000);
+            }
+            else{
+                this.logs.push({bot:true, msg: this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)]});
+                setTimeout(() => this.logs=[], 2000);
+            }
+        }
+        ,
         async send({ target }) {  
             this.welcomeMessage=[];
             this.mode = "normal";
