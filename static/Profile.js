@@ -30,11 +30,11 @@ const Profile = {
 		<div class="row">
 		<button class="col button" v-if="quiet" type=button @click=mute()><s>louder</s> unmute</button>
 		<button class="col button" v-if="!quiet" type=button @click=mute()><s>volume</s> mute</button>
-		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'basic')"><s>refresh</s> App</button>
-		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'media')"><s>refresh</s> Lesson</button>
-		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'flush')"><s>broom</s> Clear</button>
+		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'install')"><s>download</s> Store Lessons</button>
+		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'remove')"><s>broom</s> Flush Lesson</button>
 		<button class="col button error" type=button @click=signOut($event)><s>logout</s> Sign Out</button>
 		</div>
+		<template v-if=me>
 		<h1>My Profile</h1>
 		<label>
 			<div>Nickname</div>
@@ -60,6 +60,7 @@ const Profile = {
 		<button @click="localStorage.progress=JSON.stringify($root.progress=me.progress={});update();">xp=0</button> -->
 		<hr>
 		<button disabled name=submit type=submit class=is-full-width><s>check</s> Update</button>
+		</template>
 	</form>
 	`,
 	data() { return { me: {}, quiet:localStorage.quiet||'', delta: 0, localStorage, context: null, motivations, amp:{}, oldXp:-1} },
@@ -89,10 +90,10 @@ const Profile = {
 				this.update();
 				new Audio('/static/level.ogg').play();
 			}
-		});
+		}).catch(() => this.me = null);
 	},
 	watch: { // update $root style (for display) and localstorage (in case we F5 in another page)
-		'me.theme': function (val) { return localStorage.theme = this.$root.theme = val },
+		'me.theme': function (val) { return localStorage.theme = this.$root.theme = val || '#126359' },
 		'$root.progress': function (xp) {this.audio()},
 	},
 	methods: {

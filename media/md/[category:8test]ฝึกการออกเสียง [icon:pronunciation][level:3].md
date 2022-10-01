@@ -12,5 +12,5 @@
 
 # อ่านคำศัพท์ในรูปภาพ
 
-![icon](/media/img/animals/dog.svg)
+![icon](/media/img/animals__dog.svg)
 🎙️ dog

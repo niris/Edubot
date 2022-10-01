@@ -21,23 +21,24 @@ const BotOnlineChat = {
     methods: {
         welcome(){
             this.logs = []
-            clearTimeout(this.greetingTimeout)
             //this.logs.push({ bot: true, msg: welcomeMessage});
             this.mode = "welcome"
             this.welcomeMsg = welcomeMessage
+            clearTimeout(this.greetingTimeout)
             this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
         },
         minimize(){
-            clearTimeout(this.greetingTimeout)
             this.welcomeMessage="Let's go!!!";
-            setTimeout(() => {
+            clearTimeout(this.greetingTimeout)
+            this.greetingTimeout = setTimeout(() => {
                 this.welcomeMessage=[];
                 this.mode = "normal"
             }, 5000);
         },
         say(msg) {
-            this.logs.push({bot:true, msg});
-            setTimeout(() => this.logs=[], 2000);
+            this.logs = [{bot:true, msg}];
+            clearTimeout(this.greetingTimeout)
+            this.greetingTimeout = setTimeout(() => this.logs=[], 2000);
         },
         response(succeed) {
             this.say(succeed ? this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)] : "Try again !");
@@ -45,30 +46,21 @@ const BotOnlineChat = {
         async send({ target }) {  
             this.welcomeMessage=[];
             this.mode = "normal";
-            clearTimeout(this.greetingTimeout)
             const msg = target.req.value;
             target.req.value = '';
 
-            if (msg.match(/(score|level|lv|exp)/gi)) {
-                const score = Object.keys(JSON.parse(localStorage.progress || '{}')).length;
-                return this.logs.push({ bot: true, msg: `Your score: **${score}** ~~ruby~~` });
-            }
-            /*if (msg.match(/(แปลประโยค|แปล|แปลว่าอะไร|แปลว่า|ความหมายของ)/i)) {
-                const regex = /[A-z]+/gi;
-                const word = msg.match(regex)
-                console.log(word)
-                return this.logs.push({ bot: true, msg: word.join(" ") + " แปลว่า" });
-            }*/
-            else
-                this.logs.push({ msg });
+            this.logs.push({ msg });
 
             const response = await this.classify(msg, 'en');
             this.logs.push({ bot: true, msg: `${response[0]}` })
-            if (response[2]) setTimeout(() => {
-                this.$router.push({ path: response[2]});
-                this.logs = [];
-                document.getElementById('msgfeild').blur();
-            }, 1000)
+            if (response[2]) {
+                clearTimeout(this.greetingTimeout)
+                this.greetingTimeout = setTimeout(() => {
+                    this.$router.push({ path: response[2]});
+                    this.logs = [];
+                    document.getElementById('msgfeild').blur();
+                }, 1000)
+            }
             
         },
         async record({ target }) {

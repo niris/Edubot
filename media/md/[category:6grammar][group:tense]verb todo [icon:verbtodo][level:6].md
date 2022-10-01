@@ -2,7 +2,7 @@
 
 Verb to do มี 2 รูป คือ do และ does ซึ่งผันตามประธานในประโยค ดังนี้ 
 
-![image label](/media/img/lessons/verb-to-do.svg)
+![image label](/media/img/lessons__verb-to-do.svg)
 
 
 **Verb to be สามารถใช้ได้ 2 กรณี**  

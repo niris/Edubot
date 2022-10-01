@@ -1,16 +1,17 @@
 
 const cacheName = "edubot-2022-09-30";
+console.log("activating...");
 //TODO: split into cache-first and online-first
-const basicUrls = [
+const fetchFirst = [
   '/',
   '/static/*',
 ];
-const mediaUrls = [
+const cacheFirst = [
   '/media/md/',
   '/media/md/*',
   '/media/icons/*',
   '/media/audio/*',
-  // '/media/img' // TODO
+  '/media/img/*',
 ];
 function chunk(array, size = 50) {
   return (new Array(Math.ceil(array.length / size))).fill().map((c, i) => array.slice(i * size, (i + 1) * size));
@@ -19,8 +20,10 @@ async function sync(kind) {
   const cache = await caches.open(cacheName);
   const chunks = chunk(await walk(kind));
   console.log('sync', chunks);
-  for (let chunk of chunks)
-    await cache.addAll(chunk);
+  for (let c in chunks) {
+    await cache.addAll(chunks[c]);
+    send({ bot: `${(100 * c / chunks.length).toPrecision(2)}%` });
+  }
 }
 async function keep(except) {
   (await caches.keys()).filter(key => key != except).forEach(key => caches.delete(key))
@@ -41,34 +44,34 @@ function walk(urls, query = `?sw=${+new Date}`) {
 - fill current cache
 */
 self.addEventListener('activate', event => event.waitUntil(async () => {
-  await clients.claim();
   console.log("activating...");
+  await clients.claim();
   await keep(cacheName);
-  await sync(basicUrls);
-  await sync(mediaUrls);
 }));
 self.addEventListener('install', (event) => event.waitUntil(async () => {
-  console.log("installing...");
-  await sync(basicUrls);
-  await sync(mediaUrls);
+  console.log("installing... ?");
 }));
 
 /* Called at PWA ressource fetching : be online-first since the user may not have yet installed us */
 self.addEventListener("fetch", (event) => event.respondWith((async () => {
   const cachedResponse = event.request.method == "GET" ? await caches.match(event.request, { ignoreSearch: true }) : null;
-  console.log(`${event.request.method} ${event.request.url} => ${cachedResponse?'cache':'online'}`)
+  console.log(`${event.request.method} ${event.request.url} => ${cachedResponse ? 'cache' : 'online'}`)
   if (cachedResponse) return cachedResponse;
   return fetch(event.request);//.catch((e) => caches.match(event.request))
 })()));
+
 function send(msg) {
   console.log('send', msg);
-  self.clients.matchAll().then(all => all.map(client => client.postMessage(msg)))
+  self.clients.matchAll().then(clients => clients.map(client => client.postMessage(msg)))
 };
-onmessage = function (event) {
-  console.log(event, self, this);
-  if (event.data.action === 'basic') return sync(basicUrls).then(() => send({ info: 'Done' }));
-  if (event.data.action === 'media') return sync(mediaUrls).then(() => send({ info: 'Done' }));
-  if (event.data.action === 'flush') return keep("nothing").then(() => send({ info: 'Done' }));
-  if (event.data.action === 'reload') return keep("nothing").then(() => sync(basicUrls).then(() => sync(mediaUrls))).then(() => send({ info: 'Done' }));
-  console.log("unhandled", event.data);
+onmessage = async function (event) {
+  if (event.data.action === 'install') {
+    await keep("nothing");
+    await sync(fetchFirst);
+    await sync(cacheFirst);
+    send({ bot: 'Ready for Offline' });
+  }else if (event.data.action === 'remove') {
+    await keep("nothing");
+    send({ bot: 'All clean !' });
+  }
 };

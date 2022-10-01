@@ -47,10 +47,9 @@ const app = Vue.createApp({
 			console.log(register);
 			register.onupdatefound = () => this.$root.$refs.bot.say("An update is available !")
 			this.worker = register.active;
-
 			navigator.serviceWorker.addEventListener("message", ({data}) => {
 				console.log("message", data);
-				if (data.info) this.$root.$refs.bot.say(data.info);
+				if (data.bot) this.$root.$refs.bot.say(data.bot);
 			})
 		}
 	},

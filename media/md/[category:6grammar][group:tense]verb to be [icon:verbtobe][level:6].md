@@ -3,7 +3,7 @@
 
 > Verb to be มี 3 รูป คือ is am และ are ซึ่งผันตามประธานในประโยค ดังนี้ 
 
-![image label](/media/img/lessons/verb-to-be.svg)
+![image label](/media/img/lessons__verb-to-be.svg)
 
 > Verb to be สามารถใช้ได้ 2 กรณี \
     เป็นกริยาแท้ในประโยคจะแปลว่า เป็น อยู่ คือ \

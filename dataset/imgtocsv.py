@@ -16,4 +16,4 @@ for folder in os.listdir("../media/img/_togenerate"):
         eng2th = Translate('en', 'th')
         newfile.write(vocab+","+eng2th.translate(vocab)+"\n")    
     newfile.close()
-    shutil.move(os.path.join("../media/img/_togenerate",folder),"../media/img")
+    shutil.move(os.path.join("../media/img/_togenerate",folder),"..__media/img")
