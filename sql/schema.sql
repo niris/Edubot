@@ -16,6 +16,11 @@ CREATE TABLE public.profile (
 	"progress" JSON -- cleared lessons/exams
 );
 
+CREATE or replace VIEW public.leaderboard AS
+SELECT id, alias, progress
+FROM public.profile;
+grant SELECT ON TABLE public.leaderboard TO "user";
+
 CREATE or replace FUNCTION auth.also_create_profile() returns trigger as $$
 begin
 	INSERT into public.profile("id", "progress") VALUES (NEW.id, '{}');
@@ -25,14 +30,14 @@ $$ language plpgsql;
 DROP TRIGGER IF EXISTS setup_profile ON auth.users;
 CREATE TRIGGER setup_profile AFTER INSERT ON auth.users FOR EACH ROW EXECUTE PROCEDURE auth.also_create_profile();
 
-grant SELECT ON TABLE public.profile TO "anon";
-grant ALL    ON TABLE public.profile TO "user";
--- We want user to be able to see each other
---ALTER TABLE public.profile DISABLE ROW LEVEL SECURITY;
---DROP POLICY IF EXISTS "user_policy" ON public.profile;
---CREATE POLICY "user_policy" ON public.profile
---  USING ("id" = current_setting('request.jwt.claims', true)::json->>'id') -- visibility rule
---  WITH CHECK ("id" = current_setting('request.jwt.claims', true)::json->>'id'); -- mutation rule
+-- We dont want user to be able to see each other:
+GRANT SELECT ON TABLE public.profile TO "anon";
+GRANT ALL    ON TABLE public.profile TO "user";
+ALTER TABLE public.profile ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "user_policy" ON public.profile;
+CREATE POLICY "user_policy" ON public.profile
+  USING ("id" = current_setting('request.jwt.claims', true)::json->>'id') -- visibility rule
+  WITH CHECK ("id" = current_setting('request.jwt.claims', true)::json->>'id'); -- mutation rule
 
 -- POST /rpc/reset endpoint
 create or replace function reset(id text, pass text, birth text, secret text) returns text as $$

@@ -12,7 +12,7 @@ const Leaderboard = {
   `,
   data() { return { profiles: null } },
   async mounted() {
-    this.profiles = (await (await fetch(`/api/profile`)).json())
+    this.profiles = (await (await fetch(`/api/leaderboard`)).json())
       .sort((a,b) => Object.keys(b.progress).length - Object.keys(a.progress).length)
       .slice(0,10)
   }
