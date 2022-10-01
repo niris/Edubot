@@ -1,7 +1,7 @@
 const Leaderboard = {
   template: `<h1 style="font-weight:bold;line-height:1;text-align:center;">Top 10 players</h1>
   <progress v-if=profiles===undefined />
-  <blockquote v-if=profiles===null>Error</blockquote>
+  <blockquote v-if=profiles===null>Impossible to get the list</blockquote>
   <table>
   <tbody>
   <tr v-for="profile in profiles">

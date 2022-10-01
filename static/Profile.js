@@ -30,12 +30,12 @@ const Profile = {
 		<div class="row">
 		<button class="col button" v-if="quiet" type=button @click=mute()><s>louder</s> unmute</button>
 		<button class="col button" v-if="!quiet" type=button @click=mute()><s>volume</s> mute</button>
-		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'install')"><s>download</s> Store Lessons</button>
-		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'remove')"><s>broom</s> Flush Lesson</button>
-		<button class="col button error" type=button @click=signOut($event)><s>logout</s> Sign Out</button>
+		<button class="col button primary" v-if="me && $root.worker" type=button @click="worker($event,'install')"><s>download</s> Store Lessons</button>
+		<button class="col button primary" v-if="me && $root.worker" type=button @click="worker($event,'remove')"><s>broom</s> Flush Lesson</button>
+		<button class="col button error" v-if=me type=button @click=signOut($event)><s>logout</s> Sign Out</button>
 		</div>
 		<template v-if=me>
-		<h1>My Profile</h1>
+		<h1>My profile</h1>
 		<label>
 			<div>Nickname</div>
 			<input v-model=me.alias autocomplete=nickname placeholder="ชื่อ นามสกุล">

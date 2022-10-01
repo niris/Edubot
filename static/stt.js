@@ -11,10 +11,16 @@ export default async function (field, ms = 5000) {
   field.value = ""
   await new Promise(next => socket.onopen = next); // wait for socket to open
   field.disabled = true;
-
+  const sampleRate = 16000;
   // setup microphone stream
-  const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-  const audioContext = new AudioContext();
+  const audioStream = await navigator.mediaDevices.getUserMedia({ audio: {
+    echoCancellation: true,
+    noiseSuppression: true,
+    suppressLocalAudioPlayback: true,
+    channelCount: 1,
+    sampleRate
+  }, video: false });
+  const audioContext = new AudioContext({sampleRate});
   await audioContext.audioWorklet.addModule('/static/data-conversion-processor.js');
   const audioProcess = new AudioWorkletNode(audioContext, 'data-conversion-processor', {});
   audioProcess.port.onmessage = (event) => socket.send(event.data)

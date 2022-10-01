@@ -48,9 +48,11 @@ self.addEventListener('activate', event => event.waitUntil(async () => {
   await clients.claim();
   await keep(cacheName);
 }));
-self.addEventListener('install', (event) => event.waitUntil(async () => {
+self.addEventListener('install', (event) => {
   console.log("installing... ?");
-}));
+  self.skipWaiting();// take control of any previous worker
+  // event.waitUntil(async () => { })
+});
 
 /* Called at PWA ressource fetching : be online-first since the user may not have yet installed us */
 self.addEventListener("fetch", (event) => event.respondWith((async () => {
