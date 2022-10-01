@@ -30,6 +30,9 @@ const Profile = {
 		<div class="row">
 		<button class="col button" v-if="quiet" type=button @click=mute()><s>louder</s> unmute</button>
 		<button class="col button" v-if="!quiet" type=button @click=mute()><s>volume</s> mute</button>
+		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'basic')"><s>refresh</s> App</button>
+		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'media')"><s>refresh</s> Lesson</button>
+		<button class="col button primary" v-if="$root.worker" type=button @click="worker($event,'flush')"><s>broom</s> Clear</button>
 		<button class="col button error" type=button @click=signOut($event)><s>logout</s> Sign Out</button>
 		</div>
 		<h1>My Profile</h1>
@@ -93,6 +96,11 @@ const Profile = {
 		'$root.progress': function (xp) {this.audio()},
 	},
 	methods: {
+		worker({target}, action){
+			target.disabled = true;
+			this.$root.worker.postMessage({action});
+			target.disabled = false;
+		},
 		mute(){
 			this.quiet = this.quiet ? '': '1'; // keep it as string for localstorage
 			localStorage.quiet = this.quiet;
@@ -111,7 +119,6 @@ const Profile = {
 				const gain = this.context.createGain();
 				gain.connect(this.context.destination);
 				gain.gain.value = this.quiet ? 0 : 0.1;
-				console.log(gain.gain.value)
 				const source = this.context.createBufferSource();
 				source.connect(gain);
 				fetch('/static/lv' + this.level(this.$root.xp) + '.ogg')

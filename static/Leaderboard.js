@@ -1,6 +1,7 @@
 const Leaderboard = {
   template: `<h1 style="font-weight:bold;line-height:1;text-align:center;">Top 10 players</h1>
-  <progress v-if=profiles==null />
+  <progress v-if=profiles===undefined />
+  <blockquote v-if=profiles===null>Error</blockquote>
   <table>
   <tbody>
   <tr v-for="profile in profiles">
@@ -10,11 +11,16 @@ const Leaderboard = {
   </tobdy>
   </table>
   `,
-  data() { return { profiles: null } },
+  data() { return { profiles: undefined } },
   async mounted() {
-    this.profiles = (await (await fetch(`/api/leaderboard`)).json())
-      .sort((a,b) => Object.keys(b.progress).length - Object.keys(a.progress).length)
-      .slice(0,10)
+    try {
+      this.profiles = (await (await fetch(`/api/leaderboard`)).json())
+        .sort((a, b) => Object.keys(b.progress).length - Object.keys(a.progress).length)
+        .slice(0, 10)
+    } catch (e) {
+      this.profiles = null;
+    }
+
   }
 
 }

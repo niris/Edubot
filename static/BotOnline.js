@@ -30,20 +30,18 @@ const BotOnlineChat = {
         minimize(){
             clearTimeout(this.greetingTimeout)
             this.welcomeMessage="Let's go!!!";
-            setTimeout(() => {this.welcomeMessage=[], 5000;this.mode = "normal"
-        });
+            setTimeout(() => {
+                this.welcomeMessage=[];
+                this.mode = "normal"
+            }, 5000);
         },
-        response(result){
-            if(result==false){
-                this.logs.push({bot:true, msg:"Try again !"});
-                setTimeout(() => this.logs=[], 2000);
-            }
-            else{
-                this.logs.push({bot:true, msg: this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)]});
-                setTimeout(() => this.logs=[], 2000);
-            }
-        }
-        ,
+        say(msg) {
+            this.logs.push({bot:true, msg});
+            setTimeout(() => this.logs=[], 2000);
+        },
+        response(succeed) {
+            this.say(succeed ? this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)] : "Try again !");
+        },
         async send({ target }) {  
             this.welcomeMessage=[];
             this.mode = "normal";
@@ -66,11 +64,11 @@ const BotOnlineChat = {
 
             const response = await this.classify(msg, 'en');
             this.logs.push({ bot: true, msg: `${response[0]}` })
-            setTimeout(() => {if(response[2]){
+            if (response[2]) setTimeout(() => {
                 this.$router.push({ path: response[2]});
                 this.logs = [];
                 document.getElementById('msgfeild').blur();
-            }}, 1000)
+            }, 1000)
             
         },
         async record({ target }) {
@@ -78,7 +76,12 @@ const BotOnlineChat = {
             this.send({target:target.form});
         },
         async classify(text, language_code) {
-            const res = await (await fetch(`/bot?${new URLSearchParams({text, language_code})}`)).json()
+            let res;
+            try {
+                res = await (await fetch(`/bot?${new URLSearchParams({text, language_code})}`)).json()
+            } catch (e){
+                res = {intent: 'error', response: 'No Internet'};
+            }
             console.log(res, res.intent)
             let resMessage = ["OK, let's go!", "Let's go!"]
             let randomMessage = resMessage[Math.floor(Math.random() * resMessage.length)]

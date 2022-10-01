@@ -37,10 +37,23 @@ const routes = [
 ];
 const app = Vue.createApp({
 	data() { return {
-		role: null, id: null, theme: localStorage.theme || `#126359`,
+		role: null, id: null, worker:null, theme: localStorage.theme || `#126359`,
 		progress: JSON.parse(localStorage.progress || '{}'),
 	} },
-	mounted() { this.log(); },
+	async mounted() {
+		this.log();
+		if ('serviceWorker' in navigator) {
+			const register = await navigator.serviceWorker.register('/worker.js');
+			console.log(register);
+			register.onupdatefound = () => this.$root.$refs.bot.say("An update is available !")
+			this.worker = register.active;
+
+			navigator.serviceWorker.addEventListener("message", ({data}) => {
+				console.log("message", data);
+				if (data.info) this.$root.$refs.bot.say(data.info);
+			})
+		}
+	},
 	computed: {
 		xp() { return 1 + Object.keys(this.progress).length }, //XP:0 create log2(0)/pow(0) cornercase
 		myLv() {return this.level(this.xp)}
@@ -64,9 +77,7 @@ const app = Vue.createApp({
 app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHashHistory(), linkActiveClass: 'active'}));
 app.component('bot-chat', BotOnlineChat);
 app.mount('main');
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/worker.js').then(console.log);
-}
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 	document.body.classList.add('dark');
 }
