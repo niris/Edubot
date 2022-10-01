@@ -65,7 +65,7 @@ app.use(VueRouter.createRouter({routes, history: VueRouter.createWebHashHistory(
 app.component('bot-chat', BotOnlineChat);
 app.mount('main');
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/worker.js').then(console.debug);
+	navigator.serviceWorker.register('/worker.js').then(console.log);
 }
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 	document.body.classList.add('dark');

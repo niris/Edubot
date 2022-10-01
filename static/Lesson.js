@@ -181,7 +181,7 @@ const LessonList = {
     watch: {
         tag: {
             handler: async function (tag) {
-                const lessons = await (await fetch(`/media/md`)).json();
+                const lessons = await (await fetch(`/media/md/`)).json();
                 this.groups = ls2json(lessons) // fill missing group tag in lesson, group them by they group, sort group and lessons
                     .filter(lesson => lesson.tags.includes(`category:${tag}`))
                     .map(lesson => ({ ...lesson, group: (lesson.tags.find(tag => tag.startsWith('group:')) || 'group:0').substring('group:'.length) }))
@@ -220,7 +220,7 @@ const CategoriesList = {
     `,
     data() { return { categories: null } },
     async mounted() {
-        const tags = ls2json(await fetch(`/media/md`).then(res => res.json()))
+        const tags = ls2json(await fetch(`/media/md/`).then(res => res.json()))
         const cats = new Set(tags.map(lesson => lesson.tags).flat()
             .filter(tag => tag.startsWith('category:'))
             .map(tag => tag.substring('category:'.length))

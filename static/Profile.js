@@ -16,7 +16,7 @@ const motivations = [
 const Profile = {
 	template: `
 	<form v-else @input=$event.target.form.submit.disabled=false @submit.prevent=update($event)>
-	<div @click="wide()":data-delta="delta||null" ref=scene :style="' user-select: none;padding: 1em; animation: hscrolling 60s ease-in-out 0s infinite; animation-timing-function: steps(300, end); background-position: 0 50%;  image-rendering: pixelated;background-image: url(/static/profile/lv'+level($root.xp)+'.gif); background-size: cover; border-radius:1em;'">
+	<div @click="wide()":data-delta="delta||null" ref=scene :style="' user-select: none;padding: 1em; animation: hscrolling 60s ease-in-out 0s infinite; animation-timing-function: steps(300, end); background-position: 0 50%;  image-rendering: pixelated;background-image: url(/static/lv'+level($root.xp)+'.gif); background-size: cover; border-radius:1em;'">
 		<img alt=treasure :src=overlay  style="max-width: 25vmin;margin: auto;display: block;background-repeat:no-repeat;background-image:url(/media/icons/treasure.svg)">
 		<div style="display: grid;grid-template-columns: 4fr;text-align: center;align-items: center;">
 		<progress style="grid-row: 1/1; grid-column: 1;height:16vmin;opacity:.8; margin: auto; width: 50%;" :value=percent></progress>
@@ -114,7 +114,7 @@ const Profile = {
 				console.log(gain.gain.value)
 				const source = this.context.createBufferSource();
 				source.connect(gain);
-				fetch('/static/profile/lv' + this.level(this.$root.xp) + '.ogg')
+				fetch('/static/lv' + this.level(this.$root.xp) + '.ogg')
 				.then(res => res.arrayBuffer())
 				.then(buf => this.context.decodeAudioData(buf))
 				.then(dec => {
