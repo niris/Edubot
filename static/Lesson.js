@@ -103,7 +103,7 @@ const LessonShow = {
             )) return alert('You made a mistake');
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
             const progress = JSON.parse(localStorage.progress || '{}');
-            progress[decodeURIComponent(location.hash)] = 1;
+            progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
             this.$root.progress = progress;
             localStorage.progress = JSON.stringify(progress);
             setTimeout(this.$router.back, 1000)
@@ -129,7 +129,7 @@ const LessonShow = {
             (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             const remain = target.form.querySelector('input:not([disabled])');
             if (!remain) {
-                progress[decodeURIComponent(location.hash)] = 1;
+                progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
                 setTimeout(this.$router.back, 1000)
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
@@ -172,7 +172,7 @@ const LessonList = {
         reachable(lesson) {
             if (this.level(lesson) > this.$root.level(this.$root.xp))
                 return 'forbidden';
-            if (JSON.parse(localStorage.progress||'[]')[`/lesson/${lesson.id}`] !== undefined)
+            if (JSON.parse(localStorage.progress||'[]')[`/lesson/${decodeURIComponent(lesson.id)}`] !== undefined)
                 return 'done card';
             return 'card'
         }

@@ -16,7 +16,7 @@ const cacheFirst = [
 function chunk(array, size = 50) {
   return (new Array(Math.ceil(array.length / size))).fill().map((c, i) => array.slice(i * size, (i + 1) * size));
 }
-async function sync(kind) {
+async function sync(kind, reporter=()=>{}) {
   const cache = await caches.open(cacheName);
   const chunks = chunk(await walk(kind));
   console.log('sync', chunks);
@@ -47,11 +47,14 @@ self.addEventListener('activate', event => event.waitUntil(async () => {
   console.log("activating...");
   await clients.claim();
   await keep(cacheName);
+  await sync(['/']);
 }));
 self.addEventListener('install', (event) => {
   console.log("installing... ?");
   self.skipWaiting();// take control of any previous worker
-  // event.waitUntil(async () => { })
+  event.waitUntil(async () => {
+    await sync(['/']);
+  })
 });
 
 /* Called at PWA ressource fetching : be online-first since the user may not have yet installed us */
@@ -69,8 +72,8 @@ function send(msg) {
 onmessage = async function (event) {
   if (event.data.action === 'install') {
     await keep("nothing");
-    await sync(fetchFirst);
-    await sync(cacheFirst);
+    await sync(fetchFirst, send);
+    await sync(cacheFirst, send);
     send({ bot: 'Ready for Offline' });
   }else if (event.data.action === 'remove') {
     await keep("nothing");
