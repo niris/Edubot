@@ -1,0 +1,33 @@
+
+# ![](/media/img/lessons/myfamily.svg) 
+
+> I have a dog and a cat.  
+> My dog's name is Snoopy.
+> My cat's name is Kitty.
+> They are very cute.
+> I love them.
+
+
+# ![icon](/media/icons/quiz.svg) 
+
+## **Fill in the blank (เติมคำในช่องว่าง)**
+
+I have _____ cat
+ - [x] 1
+ - [ ] 2
+ - [ ] 3
+
+I have _____ pets
+ - [ ] 1
+ - [x] 2
+ - [ ] 3
+
+My dog's name is_____ 
+ - [ ] Puppy
+ - [x] Snoopy
+ - [ ] Kitty
+
+Kitty is my _____ 
+ - [ ] dog
+ - [ ] rabbit
+ - [x] cat

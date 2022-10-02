@@ -10,13 +10,14 @@ const welcomeMessage = `How can I help you?
 
 const BotOnlineChat = {
     props:['topic'],
-    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"], encourageMsg:["Bravo!","Good job","Well done!"], mode:"normal", welcomeMsg:''}),
+    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"], encourageMsg:["Bravo!","Good job","Well done!"], mode:"normal", welcomeMsg:'', result:true}),
     created () {
         this.logs.push({ bot: true, msg: "Welcome !"});
         this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
     },
     computed: {
-        last_logs() {return this.logs.slice(-5)}
+        last_logs() {return this.logs.slice(-5)},
+        bg(){return this.result==true?'bg-primary':'bg-error'}
     },
     methods: {
         welcome(){
@@ -103,7 +104,6 @@ const BotOnlineChat = {
     template: `
     <form class=chatbot @submit.prevent=send>
         <output v-if="mode=='welcome'" class="card bot bg-primary text-white" v-html="md(welcomeMsg)" @click="minimize"></output>
-        <output v-for="log in last_logs" :class="'card '+(log.bot?'bot bg-primary text-white':'user')" v-html="md(log.msg)" @click="minimize"></output>
         <details class=field>
             <summary>
             <svg class=bot xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 492 492" @click=welcome>
