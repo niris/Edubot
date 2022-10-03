@@ -10,7 +10,7 @@ const welcomeMessage = `How can I help you?
 
 const BotOnlineChat = {
     props:['topic'],
-    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"], encourageMsg:["Bravo!","Good job","Well done!"], mode:"normal", welcomeMsg:'', result:true}),
+    data: () => ({ logs: [] , greetingTimeout:0, suggestions:["English", "ภาษาไทย"], encourageMsg:["Bravo!","Good job","Well done!"], mode:"chat", welcomeMsg:'', result:true}),
     created () {
         this.logs.push({ bot: true, msg: "Welcome !"});
         this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
@@ -22,19 +22,18 @@ const BotOnlineChat = {
     methods: {
         welcome(){
             this.logs = []
-            //this.logs.push({ bot: true, msg: welcomeMessage});
             this.mode = "welcome"
             this.welcomeMsg = welcomeMessage
             clearTimeout(this.greetingTimeout)
-            this.greetingTimeout = setTimeout(() => this.logs=[], 5000);
+            this.greetingTimeout = setTimeout(() => this.logs=[], 2000);
         },
         minimize(){
             this.welcomeMessage="Let's go!!!";
             clearTimeout(this.greetingTimeout)
             this.greetingTimeout = setTimeout(() => {
                 this.welcomeMessage=[];
-                this.mode = "normal"
-            }, 5000);
+                this.mode = "chat"
+            }, 100);
         },
         say(msg) {
             this.logs = [{bot:true, msg}];
@@ -42,11 +41,12 @@ const BotOnlineChat = {
             this.greetingTimeout = setTimeout(() => this.logs=[], 2000);
         },
         response(succeed) {
+            this.result=succeed;
             this.say(succeed ? this.encourageMsg[Math.floor(Math.random() * this.encourageMsg.length)] : "Try again !");
         },
         async send({ target }) {  
             this.welcomeMessage=[];
-            this.mode = "normal";
+            this.mode = "chat";
             const msg = target.req.value;
             target.req.value = '';
 
@@ -104,6 +104,7 @@ const BotOnlineChat = {
     template: `
     <form class=chatbot @submit.prevent=send>
         <output v-if="mode=='welcome'" class="card bot bg-primary text-white" v-html="md(welcomeMsg)" @click="minimize"></output>
+        <output v-for="log in last_logs" :class="'card '+(log.bot?'bot '+ bg + ' text-white':'user')" v-html="md(log.msg)" @click="minimize"></output>
         <details class=field>
             <summary>
             <svg class=bot xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 492 492" @click=welcome>
