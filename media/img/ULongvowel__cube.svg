@@ -1,0 +1,58 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 120px;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #ec1e24;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #f1686b;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        fill: #add172;
+      }
+
+      .cls-8 {
+        fill: #de8948;
+      }
+
+      .cls-9 {
+        fill: none;
+        stroke: #d27d41;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>cube</title>
+  <text class="cls-1" transform="translate(369.21 804.7)"><tspan class="cls-2">c</tspan><tspan class="cls-3" x="65.52" y="0">u</tspan><tspan x="138.84" y="0">b</tspan><tspan class="cls-4" x="212.16" y="0">e</tspan></text>
+  <g>
+    <polygon class="cls-5" points="255.74 246.15 503.83 359.24 752.3 246.15 504.02 132.28 255.74 246.15"/>
+    <path class="cls-6" d="M575.43,192.93l-10.95,20.35s-122.48-18-113.87,34.44c0,0,5.09,40.69,114.26,24.65l8.22,17.22S478,306,418.91,278.24s-14.08-73.57,36.79-83S575.43,192.93,575.43,192.93Z"/>
+    <polygon class="cls-7" points="255.74 532.98 504.02 647.24 503.83 359.24 255.74 246.15 255.74 532.98"/>
+    <path class="cls-6" d="M400.13,365.11l-46.56-20L307.78,514.59l30.13,15.26L350,484.46l29.84,11.34,7.73,57.53L419.7,567.8Zm-44.61,88.43,19.18-70.82,3.13,79.82Z"/>
+    <polygon class="cls-8" points="752.3 532.59 504.02 647.24 503.83 359.24 752.3 246.15 752.3 532.59"/>
+    <path class="cls-6" d="M661.91,428.11s46.57-45.39,3.92-83c0,0-25.05-8.22-74.74,22.31v196s64.17-16.83,83.34-47.35S697.13,437.11,661.91,428.11Zm-42.26-41.87s34.05-13.31,33.26,12.91-33.26,34.44-33.26,34.44Zm0,134.22v-54s37.18-19.18,37.18,13.3S619.65,520.46,619.65,520.46Z"/>
+    <polygon class="cls-9" points="255.74 532.98 504.02 647.24 752.3 532.59 752.3 246.15 504.02 132.28 255.74 246.15 255.74 532.98"/>
+    <polyline class="cls-9" points="255.74 246.15 503.83 359.24 752.3 246.15"/>
+    <line class="cls-9" x1="503.83" y1="359.24" x2="504.02" y2="647.24"/>
+  </g>
+</svg>

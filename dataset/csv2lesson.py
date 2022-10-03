@@ -54,7 +54,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             vocabs.append(vocab)
             meanings.append(row[1])
             vocabs_meanings.append("**"+vocab+"**<br>"+row[1])
-            img.append('![]('+os.path.join("/media/img",title.replace(" ", "&#x20;"),vocab.replace(" ", "&#x20;")+'.svg')+')')
+            img.append('![]('+os.path.join("/media/img",title.replace(" ", "&#x20;") + '__'+ vocab.replace(" ", "&#x20;")+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab.replace(" ", "&#x20;")+'.mp3')+')')
         
         slide_nbs = list(map(lambda n: str(n) +"/"+ str(len(index)),list(range(1,len(index)+1))))
@@ -120,7 +120,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
         for r in range(number):
             answer_index = random.choice(range(len(vocabs_tmp)))
             newfile.write("ออกเสียงคำว่า **"+ vocabs_tmp[answer_index] + "** :\n\n")
-            newfile.write("🎙️ "+ vocabs_tmp[answer_index].lower( +")\n\n"))
+            newfile.write("🎙️ "+ vocabs_tmp[answer_index].lower() +"\n\n")
             vocabs_tmp.pop(answer_index)
 
 

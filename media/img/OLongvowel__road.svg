@@ -1,0 +1,47 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 130px;
+        fill: #231f20;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2, .cls-3 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #ed2024;
+      }
+
+      .cls-5 {
+        fill: #000;
+      }
+
+      .cls-6 {
+        fill: #616262;
+        stroke: #484848;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        stroke: #eaeaea;
+      }
+    </style>
+  </defs>
+  <title>road</title>
+  <text class="cls-1" transform="translate(-0.58 804.46)">r + <tspan class="cls-2" x="198.77" y="0">o</tspan><tspan x="276.25" y="0">a + d = </tspan><tspan class="cls-2" x="724.36" y="0">r</tspan><tspan class="cls-3" x="772.98" y="0">o</tspan><tspan class="cls-4" x="850.45" y="0">a</tspan><tspan class="cls-5" x="922.73" y="0">d</tspan></text>
+  <g>
+    <polygon class="cls-6" points="165.08 529.91 940.99 402.38 758.17 335.55 59.02 430.79 165.08 529.91"/>
+    <polygon class="cls-7" points="141.09 462.36 267.35 444.68 273.67 453.52 153.72 471.83 141.09 462.36"/>
+    <polygon class="cls-7" points="318.49 437.74 444.76 420.06 451.07 428.9 331.12 447.21 318.49 437.74"/>
+    <polygon class="cls-7" points="500.32 412.48 626.58 394.81 632.89 403.64 512.94 421.95 500.32 412.48"/>
+    <polygon class="cls-7" points="682.77 385.34 809.04 367.66 815.35 376.5 695.4 394.81 682.77 385.34"/>
+  </g>
+</svg>

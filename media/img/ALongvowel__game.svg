@@ -1,0 +1,81 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 130px;
+        fill: #231f20;
+        font-family: FreeSansBold, FreeSans;
+      }
+
+      .cls-2, .cls-5 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: #ed2024;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        fill: #373737;
+        stroke: #1b1b1b;
+      }
+
+      .cls-10, .cls-11, .cls-12, .cls-13, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-9 {
+        fill: #dbdad9;
+        stroke: #9e9d9e;
+      }
+
+      .cls-10 {
+        fill: #5bb1c9;
+        stroke: #25a4c1;
+      }
+
+      .cls-11 {
+        fill: #d54a37;
+        stroke: #e23b28;
+      }
+
+      .cls-12 {
+        fill: #f8b019;
+        stroke: #faa21b;
+      }
+
+      .cls-13 {
+        fill: #a5c739;
+        stroke: #c5d92d;
+      }
+    </style>
+  </defs>
+  <title>game</title>
+  <text class="cls-1" transform="translate(15.87 812.39)">g + <tspan class="cls-2" x="227.63" y="0">a</tspan><tspan class="cls-3" x="298.61" y="0">m</tspan><tspan x="413.53" y="0">e = </tspan><tspan class="cls-4" x="634.01" y="0">g</tspan><tspan class="cls-5" x="711.49" y="0">a</tspan><tspan class="cls-6" x="782.47" y="0">m</tspan><tspan class="cls-7" x="897.39" y="0">e</tspan></text>
+  <g>
+    <path class="cls-8" d="M280.58,223.52c0-3.91-7.05-41.48,10.17-44.61s122.09,0,122.09,0,11-.39,11,12.52v27.79Z"/>
+    <path class="cls-8" d="M721.72,223.52c0-3.91,7-41.48-10.18-44.61s-122.14,0-122.14,0-11-.39-11,12.52v27.79Z"/>
+    <path class="cls-8" d="M723.14,200.52H279.23S176,231.09,172.84,312s-2.61,266.61-2.61,266.61,15.13,91.3,108.52,41.21L368,498.22l264.52,1L714.4,614.57s64.18,62.08,113.22-20.35a52.61,52.61,0,0,0,3.13-20.35c-.52-11.48-2.61-255.13-2.61-255.13S825.8,231,723.14,200.52Z"/>
+    <circle class="cls-9" cx="329.49" cy="347.17" r="104.61"/>
+    <circle class="cls-9" cx="671.24" cy="349.76" r="104.61"/>
+    <rect class="cls-9" x="459.27" y="330.22" width="81.91" height="43.83" rx="12"/>
+    <circle class="cls-10" cx="329.49" cy="292.43" r="25.83"/>
+    <circle class="cls-11" cx="329.49" cy="404.37" r="25.83"/>
+    <circle class="cls-12" cx="385.6" cy="347.17" r="25.83"/>
+    <circle class="cls-13" cx="271.62" cy="347.17" r="25.83"/>
+    <polygon class="cls-8" points="648.14 280.13 648.14 323.44 604.32 323.44 604.32 373 648.14 373 648.14 416.3 695.62 416.3 695.62 373 738.93 373 738.93 326.04 695.1 326.04 695.1 280.13 648.14 280.13"/>
+  </g>
+</svg>

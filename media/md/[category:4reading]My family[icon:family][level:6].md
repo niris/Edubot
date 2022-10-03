@@ -1,5 +1,5 @@
 
-# ![](/media/img/lessons/myfamily.svg) 
+# ![](/media/img/lessons__myfamily.svg) 
 
 > My name is Lilly. I'am 8 years old.  
 > There are 5 people in my family.  

@@ -1,11 +1,11 @@
 
-# ![](/media/img/lessons/myfamily.svg) 
+# ![](/media/img/lessons__mypet.svg) 
 
 > I have a dog and a cat.  
-> My dog's name is Snoopy.
-> My cat's name is Kitty.
-> They are very cute.
-> I love them.
+> My dog's name is Snoopy.  
+> My cat's name is Kitty.  
+> They are very cute.  
+> I love them.  
 
 
 # ![icon](/media/icons/quiz.svg) 

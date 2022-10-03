@@ -14,6 +14,9 @@ for folder in os.listdir("../media/img/_togenerate"):
     for file in os.listdir(os.path.join("../media/img/_togenerate",folder)):
         vocab = os.path.splitext(file)[0]
         eng2th = Translate('en', 'th')
-        newfile.write(vocab+","+eng2th.translate(vocab)+"\n")    
+        newfile.write(vocab+","+eng2th.translate(vocab)+"\n")
+        print("file" + file)    
+        os.rename(os.path.join("../media/img/_togenerate",folder,file), os.path.join("../media/img/_togenerate",folder,folder+'__'+file))
+        shutil.move(os.path.join("../media/img/_togenerate",folder,folder+'__'+file),"../media/img")
     newfile.close()
-    shutil.move(os.path.join("../media/img/_togenerate",folder),"..__media/img")
+    os.rmdir(os.path.join("../media/img/_togenerate",folder))
