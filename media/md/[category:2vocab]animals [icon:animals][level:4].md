@@ -14,34 +14,34 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์ที่ตรงกับ **Eagle**
- - [x] นกอินทรี
- - [ ] นกแก้ว
- - [ ] ไก่
-
- เลือกคำศัพท์ที่ตรงกับ **Goldfish**
- - [x] ปลาทอง
+ เลือกคำศัพท์ที่ตรงกับ **Parrot**
+ - [x] นกแก้ว
  - [ ] ผึ้ง
- - [ ] แกะ
+ - [ ] แพะ
 
- เลือกคำศัพท์ที่ตรงกับ **นกแก้ว**
- - [ ] Bat
- - [x] Parrot
- - [ ] Pig
+ เลือกคำศัพท์ที่ตรงกับ **Pig**
+ - [ ] ควาย
+ - [x] หมู
+ - [ ] แมว
 
- เลือกคำศัพท์ที่ตรงกับ **ปลา**
- - [ ] Duck
- - [x] Fish
- - [ ] Shellfish
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/rabbit.mp3) 
+ เลือกคำศัพท์ที่ตรงกับ **ปลาดาว**
  - [ ] Bee
- - [x] Rabbit
- - [ ] Sheep
+ - [ ] Crab
+ - [x] Starfish
+
+ เลือกคำศัพท์ที่ตรงกับ **ผึ้ง**
+ - [ ] Bat
+ - [x] Bee
+ - [ ] Vulture
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dragonfly.mp3) 
+ - [x] Dragonfly
+ - [ ] Parrot
+ - [ ] Vulture
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/shrimp.mp3) 
- - [ ] Cow
- - [ ] Elephant
- - [x] Shrimp
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/shellfish.mp3) 
+ - [ ] Duck
+ - [ ] Parrot
+ - [x] Shellfish
 

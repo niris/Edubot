@@ -1,0 +1,54 @@
+
+# ![](/media/img/lessons__myfamily.svg) 
+
+> My name is Lilly. I'am 8 years old.  
+> There are 5 people in my family.  
+> My father's name is Peter. He is a teacher. He is 45 years old.  
+> My mother's name is Anna. She is a nurse. She is 42 years old.  
+> I have 1 brother and 1 sister.  
+> My brother's name is  Tom. She is 5 years old.  
+> My sister's name is Jenny. She is 10 years old.  
+
+
+
+# ![icon](/media/icons/quiz.svg) 
+
+## **Fill in the blank (เติมคำในช่องว่าง)**
+
+My name is _____
+ - [ ] Peter
+ - [x] Lilly
+ - [ ] Anna
+
+My mother is a ___.
+ - [ ] teacher
+ - [ ] docter
+ - [x] nurse
+
+I have __ brother and 1 sister.
+ - [x] 1
+ - [ ] 2
+ - [ ] 3 
+
+My brother is ___ years old.
+ - [x] 5
+ - [ ] 8
+ - [ ] 10 
+
+## **True or false (ถูกหรือผิด)**
+
+My father is a docter.
+ - [ ] True
+ - [x] False
+
+My mother is a nurse.
+ - [x] True
+ - [ ] False
+
+My brother's name is Peter.
+ - [ ] True
+ - [x] False
+
+My sister is 10 years old.
+ - [x] True
+ - [ ] False

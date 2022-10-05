@@ -14,34 +14,32 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์ที่ตรงกับ **Nine**
- - [ ] ยี่สิบ
- - [ ] หก
- - [x] เก้า
-
- เลือกคำศัพท์ที่ตรงกับ **Three**
- - [x] สาม
+ เลือกคำศัพท์ที่ตรงกับ **eight**
+ - [ ] สิบ
  - [ ] สิบเอ็ด
- - [ ] สี่
+ - [x] แปด
+
+ เลือกคำศัพท์ที่ตรงกับ **seven**
+ - [ ] สิบสาม
+ - [ ] สิบแปด
+ - [x] เจ็ด
 
  เลือกคำศัพท์ที่ตรงกับ **สอง**
- - [ ] Fourteen
- - [ ] Three
- - [x] Two
+ - [ ] fourteen
+ - [ ] thirteen
+ - [x] two
 
- เลือกคำศัพท์ที่ตรงกับ **สี่**
- - [ ] Eighteen
- - [x] Four
- - [ ] Nineteen
+ เลือกคำศัพท์ที่ตรงกับ **หก**
+ - [ ] eighteen
+ - [x] six
+ - [ ] twelve
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ten.mp3) 
- - [ ] Eleven
- - [ ] Sixteen
- - [x] Ten
+ เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/twenty.mp3) 
+ - [ ] six
+ - [x] twenty
+ - [ ] two
 
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sixteen.mp3) 
- - [ ] Five
- - [x] Sixteen
- - [ ] Three
-
+ เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/twelve.mp3) 
+ - [ ] eight
+ - [ ] ten
+ - [x] twelve
