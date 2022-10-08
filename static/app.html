@@ -37,6 +37,7 @@ const routes = [
 ];
 const app = Vue.createApp({
 	data() { return {
+		levels: [0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260],
 		role: null, id: null, worker:null, theme: localStorage.theme || `#126359`,
 		progress: JSON.parse(localStorage.progress || '{}'),
 	} },
@@ -64,7 +65,7 @@ const app = Vue.createApp({
 		}
 	},
 	methods: {
-		level(xp) { return Math.min(10, Math.log2(xp) | 0); }, // DUPLICATED in Profile.js
+		level(xp) { return this.levels.findIndex(lv => lv > xp) - 1; }, // DUPLICATED in Profile.js
 		is(...roles) { return roles.includes(this.role); },
 		log() {
 			const cookie = Object.fromEntries(document.cookie.split('; ').map(x => x.split('=')));

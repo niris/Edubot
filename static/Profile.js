@@ -66,7 +66,10 @@ const Profile = {
 	data() { return { me: {}, quiet:localStorage.quiet||'', delta: 0, localStorage, context: null, motivations, amp:{}, oldXp:-1} },
 	computed: {
 		overlay() { return this.delta ? shiny : empty },
-		percent() { return (this.$root.xp - Math.pow(2, this.level(this.$root.xp))) / Math.pow(2, this.level(this.$root.xp)) },
+		percent() {
+			const lv = this.level(this.$root.xp);
+			return 1 - ((this.$root.levels[lv+1] - this.$root.xp)/(this.$root.levels[lv+1] - this.$root.levels[lv]))
+		},
 	},
 	unmounted() {
 		if (this.context) {
@@ -136,7 +139,7 @@ const Profile = {
 			this.$refs.scene.requestFullscreen();
 			this.audio();
 		},
-		level(xp) { return Math.min(10, Math.log2(xp) | 0); }, // DUPLICATED in index.html
+		level(xp) { return this.$root.level(xp); },
 		async update(event) {
 			this.me = await (await fetch(`/api/profile/${this.$root.id}`, {
 				method: 'PUT', body: JSON.stringify(this.me),
