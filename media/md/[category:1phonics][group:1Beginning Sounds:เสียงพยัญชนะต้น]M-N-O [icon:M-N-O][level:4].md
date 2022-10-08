@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Noodles.mp3) 
- - [x] Noodles
- - [ ] Octopus
- - [ ] Mango
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Ostrich.mp3) 
+ - [ ] Neck
+ - [x] Ostrich
+ - [ ] Mouse
+</div>
 
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Neck.mp3) 
+ - [x] Neck
+ - [ ] Owl
+ - [ ] Mushroom
+</div>
+
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Owl.mp3) 
- - [ ] Olive
+ - [ ] Oval
  - [x] Owl
- - [ ] Milk
+ - [ ] Mushroom
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Octopus.mp3) 
- - [x] Octopus
- - [ ] Milk
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mother.mp3) 
  - [ ] Moon
+ - [x] Mother
+ - [ ] Mushroom
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mango.mp3) 
- - [ ] Night
- - [ ] Ostrich
- - [x] Mango
+ออกเสียงคำว่า **Mouse** :
 
+🎙️ mouse
 
-เลือกเสียงที่ตรงกับคำศัพท์ Neck 
- - [x] ![](/media/audio/Neck.mp3)
- - [ ] ![](/media/audio/mango.mp3)
- - [ ] ![](/media/audio/moon.mp3)
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Moon** :
 
-เลือกเสียงที่ตรงกับคำศัพท์ Mango 
- - [ ] ![](/media/audio/Octopus.mp3)
- - [x] ![](/media/audio/mango.mp3)
- - [ ] ![](/media/audio/mushroom.mp3)
+🎙️ moon
 
+</div>

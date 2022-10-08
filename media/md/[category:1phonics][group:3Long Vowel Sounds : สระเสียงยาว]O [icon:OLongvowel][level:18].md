@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/home.mp3) 
- - [ ] Boat
- - [x] Home
- - [ ] Soap
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/boat.mp3) 
- - [x] Boat
- - [ ] Road
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/road.mp3) 
+ - [ ] Home
+ - [x] Road
  - [ ] Rope
+</div>
 
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/soap.mp3) 
- - [ ] Arrow
- - [ ] Rose
- - [x] Soap
-
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/arrow.mp3) 
  - [x] Arrow
+ - [ ] Home
  - [ ] Rose
- - [ ] Window
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Home 
- - [x] ![](/media/audio/home.mp3)
- - [ ] ![](/media/audio/pillow.mp3)
- - [ ] ![](/media/audio/window.mp3)
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/boat.mp3) 
+ - [x] Boat
+ - [ ] Home
+ - [ ] Rose
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Arrow 
- - [x] ![](/media/audio/arrow.mp3)
- - [ ] ![](/media/audio/rose.mp3)
- - [ ] ![](/media/audio/window.mp3)
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pillow.mp3) 
+ - [ ] Home
+ - [x] Pillow
+ - [ ] Soap
+</div>
 
+<div class=question>
+
+ออกเสียงคำว่า **Boat** :
+
+🎙️ boat
+
+</div>
+<div class=question>
+
+ออกเสียงคำว่า **Rope** :
+
+🎙️ rope
+
+</div>

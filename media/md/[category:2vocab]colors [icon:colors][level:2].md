@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **Blue**
+ - [ ] สีน้ําตาล
+ - [x] สีน้ําเงิน
+ - [ ] สีเขียว
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Brown**
  - [ ] สีขาว
  - [x] สีน้ําตาล
- - [ ] สีแดง
-
- เลือกคำศัพท์ที่ตรงกับ **Blue**
- - [ ] สีขาว
- - [ ] สีดํา
- - [x] สีน้ําเงิน
-
- เลือกคำศัพท์ที่ตรงกับ **สีดํา**
- - [x] Black
- - [ ] Brown
- - [ ] Green
+ - [ ] สีส้ม
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **สีน้ําตาล**
  - [x] Brown
+ - [ ] Orange
  - [ ] Pink
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **สีเขียว**
+ - [x] Green
+ - [ ] Orange
  - [ ] White
+</div>
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pink.mp3) 
- - [ ] Orange
- - [x] Pink
- - [ ] Red
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/white.mp3) 
  - [ ] Green
- - [ ] Orange
- - [x] White
+ - [x] Pink
+ - [ ] Yellow
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/orange.mp3) 
+ - [ ] Brown
+ - [x] Orange
+ - [ ] Red
+</div>
 

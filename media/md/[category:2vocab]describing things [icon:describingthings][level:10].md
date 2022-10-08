@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **Hot**
+ - [x] ร้อน
+ - [ ] เต็ม
+ - [ ] เปียก
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Dry**
- - [ ] ราคาแพง
- - [ ] เย็น
- - [x] แห้ง
-
- เลือกคำศัพท์ที่ตรงกับ **Thick**
- - [ ] บาง
- - [x] หนา
+ - [ ] มาก
  - [ ] เล็ก
+ - [x] แห้ง
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **บาง**
- - [ ] Dry
- - [ ] Few
- - [x] Thin
+ เลือกคำศัพท์ที่ตรงกับ **ใหญ่**
+ - [x] Big
+ - [ ] Small
+ - [ ] Thin
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **หนัก**
- - [ ] Empty
- - [x] Heavy
- - [ ] Huge
+ เลือกคำศัพท์ที่ตรงกับ **เล็ก**
+ - [ ] Full
+ - [x] Small
+ - [ ] Tiny
+</div>
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/quiet.mp3) 
- - [ ] Cold
- - [ ] Loud
- - [x] Quiet
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/thick.mp3) 
- - [ ] Dirty
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/thin.mp3) 
  - [ ] Heavy
- - [x] Thick
+ - [x] Thin
+ - [ ] Wet
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/expensive.mp3) 
+ - [ ] Dry
+ - [x] Expensive
+ - [ ] Many
+</div>
 

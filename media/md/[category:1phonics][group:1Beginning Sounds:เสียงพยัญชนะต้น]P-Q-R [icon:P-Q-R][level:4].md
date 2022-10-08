@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Quarter.mp3) 
- - [x] Quarter
- - [ ] Queen
- - [ ] Quill
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pumpkin.mp3) 
+ - [ ] Papaya
+ - [x] Pumpkin
+ - [ ] Question
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Queue.mp3) 
- - [x] Queue
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Rabbit.mp3) 
+ - [ ] Pig
+ - [x] Rabbit
  - [ ] Rain
- - [ ] Ruler
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Question.mp3) 
- - [ ] Pumpkin
- - [x] Question
- - [ ] Rain
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Queen.mp3) 
+ - [x] Queen
+ - [ ] Question
+ - [ ] Rainbow
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Ruler.mp3) 
- - [ ] Quill
- - [ ] Rabbit
- - [x] Ruler
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Quill.mp3) 
+ - [ ] Pig
+ - [x] Quill
+ - [ ] Rubber
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Rainbow 
- - [ ] ![](/media/audio/Queen.mp3)
- - [ ] ![](/media/audio/Rabbit.mp3)
- - [x] ![](/media/audio/Rainbow.mp3)
+ออกเสียงคำว่า **Rabbit** :
 
+🎙️ rabbit
 
-เลือกเสียงที่ตรงกับคำศัพท์ Pig 
- - [x] ![](/media/audio/Pig.mp3)
- - [ ] ![](/media/audio/Rabbit.mp3)
- - [ ] ![](/media/audio/Ruler.mp3)
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Penguin** :
+
+🎙️ penguin
+
+</div>

@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/day.mp3) 
- - [x] Day
- - [ ] Game
- - [ ] Wait
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cave.mp3) 
+ - [x] Cave
+ - [ ] Nail
+ - [ ] Pave
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/skate.mp3) 
- - [ ] Cave
- - [ ] Rain
- - [x] Skate
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/play.mp3) 
+ - [ ] Date
+ - [x] Play
+ - [ ] Wave
+</div>
 
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/wait.mp3) 
- - [ ] Game
- - [ ] Gate
+ - [ ] Same
+ - [ ] Skate
  - [x] Wait
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/nail.mp3) 
- - [ ] Lake
- - [x] Nail
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/race.mp3) 
+ - [ ] Game
  - [ ] Pave
+ - [x] Race
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Cave 
- - [x] ![](/media/audio/cave.mp3)
- - [ ] ![](/media/audio/day.mp3)
- - [ ] ![](/media/audio/say.mp3)
+ออกเสียงคำว่า **Pace** :
 
+🎙️ pace
 
-เลือกเสียงที่ตรงกับคำศัพท์ Game 
- - [ ] ![](/media/audio/date.mp3)
- - [ ] ![](/media/audio/day.mp3)
- - [x] ![](/media/audio/game.mp3)
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Wave** :
+
+🎙️ wave
+
+</div>

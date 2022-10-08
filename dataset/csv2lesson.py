@@ -7,6 +7,7 @@ import csv
 import random
 import shutil
 import sys
+import re
 
 
 for filename in os.listdir("csv/_togenerate/vocab"):
@@ -53,7 +54,8 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             vocab = row[0]
             vocabs.append(vocab)
             meanings.append(row[1])
-            vocabs_meanings.append("**"+vocab+"**<br>"+row[1])
+            fullstop = "?" if re.search('^When|^What|^How|^Who|^Do|^Does|^Is|^Am|^Are',vocab) else "."
+            vocabs_meanings.append("**"+vocab+ (fullstop if category=="3conversation" else "")+"**<br>"+row[1])
             img.append('![]('+os.path.join("/media/img",title.replace(" ", "&#x20;") + '__'+ vocab.replace(" ", "&#x20;")+'.svg')+')')
             audio.append('![]('+os.path.join("/media/audio",vocab.replace(" ", "&#x20;")+'.mp3')+')')
         
@@ -81,12 +83,14 @@ for filename in os.listdir("csv/_togenerate/vocab"):
                 choices_tmp.pop(choice_index)
 
             choices_list.sort()
+            newfile.write("<div class=question>\n")
             newfile.write('\n เลือกคำศัพท์ที่ตรงกับ **' + questions_tmp[answer_index].capitalize() + '**\n')
             for c in choices_list:
                 if c[1]==True:
                     newfile.write(' - [x] ' + c[0].capitalize() + '\n')
                 else:
                     newfile.write(' - [ ] ' + c[0].capitalize() + '\n')
+            newfile.write("</div>\n")
             questions_tmp.pop(answer_index)
             choicess_tmp.pop(answer_index)
     
@@ -106,12 +110,14 @@ for filename in os.listdir("csv/_togenerate/vocab"):
 
             choices_list.sort()                
             desc = "เลือกคำศัพท์ตรงกับเสียง" if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์"
+            newfile.write("<div class=question>\n")
             newfile.write('\n' + desc + ' '+ (audio_tmp[answer_index] if inverse == False else audio_tmp[answer_index].capitalize()) + ' \n')
             for c in choices_list:
                 if c[1]==True:
                     newfile.write(' - [x] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
                 else:
                     newfile.write(' - [ ] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n') 
+            newfile.write("</div>\n")
             newfile.write('\n')
             vocabs_tmp.pop(answer_index)
             audio_tmp.pop(answer_index)
@@ -120,8 +126,10 @@ for filename in os.listdir("csv/_togenerate/vocab"):
         vocab_tmp = vocab.copy()
         for r in range(number):
             answer_index = random.choice(range(len(vocab_tmp)))
+            newfile.write("<div class=question>\n\n")
             newfile.write("ออกเสียงคำว่า **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
             newfile.write("🎙️ "+ vocab_tmp[answer_index].lower() +"\n\n")
+            newfile.write("</div>\n")
             vocab_tmp.pop(answer_index)
 
 
@@ -135,7 +143,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             listening(vocabs,audio,2,False)
         if category == "1phonics":
             listening(vocabs,audio,4, False)
-            listening(audio,vocabs,2,True)
+            pronunc(vocabs,2)
         if category == "3conversation":
             listening(vocabs,audio,3, False)
             pronunc(vocabs,3)

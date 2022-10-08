@@ -10,7 +10,7 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-## **Fill in the blank (เติมคำในช่องว่าง)**
+<div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>
 
 I have _____ cat
  - [x] 1

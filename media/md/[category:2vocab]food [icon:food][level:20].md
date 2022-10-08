@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Pizza**
- - [x] พิซซ่า
- - [ ] ฮ็อทดอก
- - [ ] เทมปุระ
-
- เลือกคำศัพท์ที่ตรงกับ **Macaroni**
- - [ ] ข้าวผัด
+ เลือกคำศัพท์ที่ตรงกับ **Tempura**
  - [ ] ซาลาเปา
- - [x] มักกะโรนี
+ - [ ] ซูชิ
+ - [x] เทมปุระ
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **เทมปุระ**
- - [ ] Fried egg
- - [ ] Fried rice
- - [x] Tempura
+ เลือกคำศัพท์ที่ตรงกับ **Noodle**
+ - [x] ก๋วยเตี๋ยว
+ - [ ] ฮ็อทดอก
+ - [ ] ไข่เจียว
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ฮ็อทดอก**
- - [x] Hot dog
- - [ ] Steamed stuffed bun
- - [ ] Sushi
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pizza.mp3) 
- - [ ] Fried egg
+ เลือกคำศัพท์ที่ตรงกับ **พิซซ่า**
  - [x] Pizza
  - [ ] Sushi
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fried&#x20;rice.mp3) 
- - [x] Fried rice
- - [ ] Hot dog
  - [ ] Tempura
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **ก๋วยเตี๋ยว**
+ - [x] Noodle
+ - [ ] Sushi
+ - [ ] Tempura
+</div>
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/spaghetti.mp3) 
+ - [ ] Hot dog
+ - [ ] Pizza
+ - [x] Spaghetti
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hot&#x20;dog.mp3) 
+ - [ ] Fried rice
+ - [x] Hot dog
+ - [ ] Tempura
+</div>
 

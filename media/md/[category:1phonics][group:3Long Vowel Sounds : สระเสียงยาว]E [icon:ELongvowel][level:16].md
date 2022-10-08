@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jeep.mp3) 
- - [ ] Bee
- - [ ] Eat
+ - [ ] Happy
  - [x] Jeep
+ - [ ] Sea
+</div>
 
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sea.mp3) 
+ - [ ] Honey
+ - [ ] Monkey
+ - [x] Sea
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/feet.mp3) 
+ - [ ] Candy
+ - [x] Feet
+ - [ ] Monkey
+</div>
+
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/meat.mp3) 
- - [ ] Bee
- - [ ] Eat
- - [x] Meat
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bunny.mp3) 
- - [x] Bunny
- - [ ] Eat
- - [ ] Monkey
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/candy.mp3) 
- - [x] Candy
- - [ ] Eat
  - [ ] Key
+ - [x] Meat
+ - [ ] Monkey
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Jeep 
- - [x] ![](/media/audio/jeep.mp3)
- - [ ] ![](/media/audio/key.mp3)
- - [ ] ![](/media/audio/sea.mp3)
+ออกเสียงคำว่า **Bunny** :
 
+🎙️ bunny
 
-เลือกเสียงที่ตรงกับคำศัพท์ Bunny 
- - [x] ![](/media/audio/bunny.mp3)
- - [ ] ![](/media/audio/honey.mp3)
- - [ ] ![](/media/audio/monkey.mp3)
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Feet** :
+
+🎙️ feet
+
+</div>

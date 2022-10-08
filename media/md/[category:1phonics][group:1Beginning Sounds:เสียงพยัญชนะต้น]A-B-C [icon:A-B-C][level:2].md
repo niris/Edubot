@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/apple.mp3) 
- - [x] Apple
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/animals.mp3) 
+ - [x] Animals
+ - [ ] Bed
  - [ ] Boat
- - [ ] Candy
+</div>
 
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/circle.mp3) 
+ - [ ] Ax
+ - [ ] Bed
+ - [x] Circle
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bus.mp3) 
+ - [ ] Ax
+ - [x] Bus
+ - [ ] City
+</div>
+
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bed.mp3) 
  - [ ] Ax
  - [x] Bed
- - [ ] Cat
+ - [ ] Crab
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/banana.mp3) 
- - [x] Banana
- - [ ] Boat
- - [ ] Butterfly
+ออกเสียงคำว่า **Animals** :
 
+🎙️ animals
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ankle.mp3) 
- - [x] Ankle
- - [ ] Ax
- - [ ] Circle
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Ankle** :
 
-เลือกเสียงที่ตรงกับคำศัพท์ Candy 
- - [x] ![](/media/audio/candy.mp3)
- - [ ] ![](/media/audio/circle.mp3)
- - [ ] ![](/media/audio/crab.mp3)
+🎙️ ankle
 
-
-เลือกเสียงที่ตรงกับคำศัพท์ City 
- - [ ] ![](/media/audio/bed.mp3)
- - [x] ![](/media/audio/city.mp3)
- - [ ] ![](/media/audio/crab.mp3)
-
+</div>

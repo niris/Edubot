@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Fire station**
- - [ ] ธนาคาร
- - [x] สถานีดับเพลิง
- - [ ] เอทีเอ็ม
+ เลือกคำศัพท์ที่ตรงกับ **Bank**
+ - [ ] ตลาด
+ - [x] ธนาคาร
+ - [ ] พิพิธภัณฑ์
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Hospital**
- - [ ] สนามบิน
- - [ ] เอทีเอ็ม
- - [x] โรงพยาบาล
-
- เลือกคำศัพท์ที่ตรงกับ **เอทีเอ็ม**
- - [x] Atm
- - [ ] Fire station
- - [ ] Train station
+ เลือกคำศัพท์ที่ตรงกับ **Port**
+ - [x] ท่าเรือ
+ - [ ] สถานีดับเพลิง
+ - [ ] สถานีตํารวจ
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **สถานีดับเพลิง**
  - [x] Fire station
- - [ ] Port
- - [ ] School
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fire&#x20;station.mp3) 
- - [ ] Airport
- - [x] Fire station
  - [ ] Police station
+ - [ ] Train station
+</div>
+<div class=question>
 
+ เลือกคำศัพท์ที่ตรงกับ **เอทีเอ็ม**
+ - [ ] Airport
+ - [x] Atm
+ - [ ] Police station
+</div>
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/market.mp3) 
- - [x] Market
- - [ ] Port
- - [ ] School
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/school.mp3) 
+ - [ ] Market
+ - [ ] Police station
+ - [x] School
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/airport.mp3) 
+ - [x] Airport
+ - [ ] Fire station
+ - [ ] Museum
+</div>
 

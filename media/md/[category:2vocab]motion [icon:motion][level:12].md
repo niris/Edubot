@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-
- เลือกคำศัพท์ที่ตรงกับ **Stand**
- - [x] ยืน
- - [ ] ให้
- - [ ] ไป
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Throw**
- - [ ] ผลัก
- - [ ] รับ
+ - [ ] นั่ง
+ - [ ] เข้า
  - [x] โยน
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ปิด**
- - [x] Close
- - [ ] Go
- - [ ] Walk
+ เลือกคำศัพท์ที่ตรงกับ **Push**
+ - [x] ผลัก
+ - [ ] เดิน
+ - [ ] เปิด
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **รับ**
- - [ ] Exit
- - [ ] Give
- - [x] Take
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hold.mp3) 
- - [x] Hold
- - [ ] Run
- - [ ] Sit
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/close.mp3) 
- - [x] Close
+ เลือกคำศัพท์ที่ตรงกับ **โยน**
  - [ ] Pull
+ - [ ] Push
+ - [x] Throw
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **ออก**
+ - [x] Exit
+ - [ ] Go
+ - [ ] Sit
+</div>
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/take.mp3) 
+ - [ ] Give
  - [ ] Stand
+ - [x] Take
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/give.mp3) 
+ - [ ] Close
+ - [x] Give
+ - [ ] Open
+</div>
 

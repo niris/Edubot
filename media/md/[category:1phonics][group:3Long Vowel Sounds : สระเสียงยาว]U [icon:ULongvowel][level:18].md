@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/glue.mp3) 
+ - [ ] Cube
+ - [x] Glue
+ - [ ] Huge
+</div>
+
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/blue.mp3) 
  - [x] Blue
- - [ ] Clue
+ - [ ] Fruit
  - [ ] Suit
+</div>
 
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fruit.mp3) 
- - [ ] Boot
- - [ ] Food
- - [x] Fruit
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cube.mp3) 
- - [ ] Boot
- - [x] Cube
- - [ ] Suit
-
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/boot.mp3) 
  - [x] Boot
- - [ ] Clue
+ - [ ] Cute
+ - [ ] Fruit
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/huge.mp3) 
+ - [ ] Cute
  - [ ] Food
+ - [x] Huge
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Boot 
- - [ ] ![](/media/audio/blue.mp3)
- - [x] ![](/media/audio/boot.mp3)
- - [ ] ![](/media/audio/suit.mp3)
+ออกเสียงคำว่า **Moon** :
 
+🎙️ moon
 
-เลือกเสียงที่ตรงกับคำศัพท์ Blue 
- - [x] ![](/media/audio/blue.mp3)
- - [ ] ![](/media/audio/cube.mp3)
- - [ ] ![](/media/audio/fruit.mp3)
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Blue** :
+
+🎙️ blue
+
+</div>

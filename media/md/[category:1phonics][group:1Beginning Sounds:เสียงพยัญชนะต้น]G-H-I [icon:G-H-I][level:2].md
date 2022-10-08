@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/head.mp3) 
+ - [ ] Hat
+ - [x] Head
+ - [ ] Itch
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/gym.mp3) 
+ - [x] Gym
+ - [ ] Horse
+ - [ ] Itch
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/girl.mp3) 
+ - [x] Girl
+ - [ ] Iguana
+ - [ ] Ink
+</div>
+
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/guitar.mp3) 
  - [ ] Goat
  - [x] Guitar
- - [ ] Horse
+ - [ ] Ink
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/girl.mp3) 
- - [ ] Ginger
- - [x] Girl
- - [ ] Gym
+ออกเสียงคำว่า **Goat** :
 
+🎙️ goat
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/iguana.mp3) 
- - [ ] Hen
- - [ ] Icecream
- - [x] Iguana
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Icecream** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/head.mp3) 
- - [ ] Ginger
- - [x] Head
- - [ ] House
+🎙️ icecream
 
-
-เลือกเสียงที่ตรงกับคำศัพท์ Girl 
- - [x] ![](/media/audio/girl.mp3)
- - [ ] ![](/media/audio/gym.mp3)
- - [ ] ![](/media/audio/icecream.mp3)
-
-
-เลือกเสียงที่ตรงกับคำศัพท์ Horse 
- - [ ] ![](/media/audio/ginger.mp3)
- - [x] ![](/media/audio/horse.mp3)
- - [ ] ![](/media/audio/ink.mp3)
-
+</div>

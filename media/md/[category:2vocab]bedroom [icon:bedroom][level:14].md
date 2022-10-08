@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **Bolster**
+ - [ ] นาฬิกาปลุก
+ - [ ] หมอน
+ - [x] หมอนข้าง
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Pillow**
- - [x] หมอน
- - [ ] หมอนข้าง
- - [ ] โต๊ะแต่งตัว
-
- เลือกคำศัพท์ที่ตรงกับ **Alarm clock**
- - [x] นาฬิกาปลุก
  - [ ] ผ้าห่ม
- - [ ] โต๊ะแต่งตัว
+ - [x] หมอน
+ - [ ] โคมไฟ
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **ผ้าห่ม**
+ - [ ] Bed
+ - [x] Blanket
+ - [ ] Dressing table
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **โต๊ะแต่งตัว**
- - [ ] Blanket
  - [x] Dressing table
  - [ ] Lamp
-
- เลือกคำศัพท์ที่ตรงกับ **โคมไฟ**
- - [ ] Bed
- - [x] Lamp
  - [ ] Pillow
+</div>
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/wardrobe.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/blanket.mp3) 
  - [ ] Alarm clock
- - [ ] Bolster
- - [x] Wardrobe
+ - [x] Blanket
+ - [ ] Lamp
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pillow.mp3) 
- - [ ] Blanket
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bolster.mp3) 
+ - [ ] Alarm clock
+ - [x] Bolster
  - [ ] Dressing table
- - [x] Pillow
+</div>
 

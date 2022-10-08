@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Can**
- - [x] กระป๋อง
- - [ ] น้ําผลไม้
- - [ ] น้ําแตงโม
+ เลือกคำศัพท์ที่ตรงกับ **Orange juice**
+ - [ ] ถุงชา
+ - [x] น้ําส้ม
+ - [ ] สมูทตี้
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Juice**
- - [ ] น้ำมะพร้าว
+ - [ ] กาแฟ
  - [x] น้ําผลไม้
- - [ ] น้ําสับปะรด
+ - [ ] สมูทตี้
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **โซดา**
- - [ ] Coconut drink
- - [ ] Coffee
- - [x] Soda
+ เลือกคำศัพท์ที่ตรงกับ **น้ําส้ม**
+ - [ ] Honey
+ - [x] Orange juice
+ - [ ] Soda
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **ชา**
- - [ ] Dringking water
- - [ ] Orange juice
- - [x] Tea
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/honey.mp3) 
- - [ ] Apple juice
- - [x] Honey
- - [ ] Juice
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pineapple&#x20;juice.mp3) 
- - [ ] Coconut drink
  - [ ] Coffee
- - [x] Pineapple juice
+ - [ ] Juice
+ - [x] Tea
+</div>
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/orange&#x20;juice.mp3) 
+ - [ ] Coconut drink
+ - [x] Orange juice
+ - [ ] Teapot
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/apple&#x20;juice.mp3) 
+ - [x] Apple juice
+ - [ ] Milk
+ - [ ] Tea bag
+</div>
 

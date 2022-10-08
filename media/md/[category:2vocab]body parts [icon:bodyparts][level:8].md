@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Face**
- - [ ] ปาก
- - [ ] มือ
- - [x] หน้า
+ เลือกคำศัพท์ที่ตรงกับ **Mouth**
+ - [ ] ขา
+ - [x] ปาก
+ - [ ] หน้าอก
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Ear**
- - [ ] ตา
- - [x] หู
- - [ ] เท้า
+ เลือกคำศัพท์ที่ตรงกับ **Hand**
+ - [ ] จมูก
+ - [x] มือ
+ - [ ] หู
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ท้อง**
- - [ ] Hand
- - [ ] Head
- - [x] Stomach
+ เลือกคำศัพท์ที่ตรงกับ **ไหล่**
+ - [ ] Arm
+ - [ ] Eye
+ - [x] Shoulder
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **หู**
- - [x] Ear
- - [ ] Neck
- - [ ] Shoulder
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/chest.mp3) 
- - [x] Chest
+ เลือกคำศัพท์ที่ตรงกับ **แขน**
+ - [x] Arm
  - [ ] Eye
  - [ ] Foot
+</div>
+<div class=question>
 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/head.mp3) 
+ - [x] Head
+ - [ ] Leg
+ - [ ] Shoulder
+</div>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ear.mp3) 
- - [ ] Arm
- - [x] Ear
- - [ ] Hand
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/nose.mp3) 
+ - [ ] Ear
+ - [x] Nose
+ - [ ] Shoulder
+</div>
 

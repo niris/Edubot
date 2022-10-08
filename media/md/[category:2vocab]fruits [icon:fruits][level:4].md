@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Garlic**
- - [x] กระเทียม
- - [ ] ส้ม
- - [ ] แอปเปิ้ล
+ เลือกคำศัพท์ที่ตรงกับ **Orange**
+ - [ ] มะนาว
+ - [x] ส้ม
+ - [ ] เชอร์รี่
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Tamarind**
+ เลือกคำศัพท์ที่ตรงกับ **Grape**
+ - [ ] กระเทียม
  - [ ] พริก
- - [x] มะขาม
- - [ ] แครอท
+ - [x] องุ่น
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **เห็ด**
+ เลือกคำศัพท์ที่ตรงกับ **แตงกวา**
+ - [ ] Broccoli
+ - [x] Cucumber
  - [ ] Mango
- - [x] Mushroom
- - [ ] Pumpkin
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ขิง**
+ เลือกคำศัพท์ที่ตรงกับ **บรอคโคลี**
+ - [x] Broccoli
+ - [ ] Garlic
+ - [ ] Mangosteen
+</div>
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pomelo.mp3) 
+ - [ ] Apple
+ - [ ] Papaya
+ - [x] Pomelo
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/corn.mp3) 
+ - [ ] Apple
  - [ ] Chili
- - [x] Ginger
- - [ ] Strawberry
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/coco.mp3) 
- - [ ] Carrot
- - [x] Coco
- - [ ] Durian
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/avocado.mp3) 
- - [x] Avocado
- - [ ] Chili
- - [ ] Strawberry
+ - [x] Corn
+</div>
 

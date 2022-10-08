@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/donkey.mp3) 
- - [x] Donkey
- - [ ] Eggplant
- - [ ] Farmer
-
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish.mp3) 
- - [ ] Elephant
+ - [ ] Egg
  - [ ] Exercise
  - [x] Fish
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/elbow.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dish.mp3) 
  - [ ] Desk
- - [x] Elbow
+ - [x] Dish
  - [ ] Football
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/elephant.mp3) 
- - [ ] Eggplant
- - [x] Elephant
- - [ ] Envelope
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/eggplant.mp3) 
+ - [ ] Donkey
+ - [x] Eggplant
+ - [ ] Elbow
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Eggplant 
- - [x] ![](/media/audio/eggplant.mp3)
- - [ ] ![](/media/audio/envelope.mp3)
- - [ ] ![](/media/audio/fork.mp3)
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dog.mp3) 
+ - [x] Dog
+ - [ ] Duck
+ - [ ] Fork
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Elephant 
- - [ ] ![](/media/audio/desk.mp3)
- - [x] ![](/media/audio/elephant.mp3)
- - [ ] ![](/media/audio/flower.mp3)
+ออกเสียงคำว่า **Envelope** :
 
+🎙️ envelope
+
+</div>
+<div class=question>
+
+ออกเสียงคำว่า **Elephant** :
+
+🎙️ elephant
+
+</div>

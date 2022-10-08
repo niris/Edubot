@@ -1,56 +1,167 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<path style="fill:#F3705A;" d="M295.467,25.6v157.867c0,13.867-11.733,25.6-25.6,25.6H134.4L34.133,261.333v-52.267H25.6
-	c-13.867,0-25.6-11.733-25.6-25.6V25.6C0,11.733,11.733,0,25.6,0h245.333C284.8,0,295.467,11.733,295.467,25.6z"/>
-<g>
-	<circle style="fill:#FFFFFF;" cx="69.333" cy="104.533" r="27.733"/>
-	<circle style="fill:#FFFFFF;" cx="148.267" cy="104.533" r="27.733"/>
-	<circle style="fill:#FFFFFF;" cx="227.2" cy="104.533" r="27.733"/>
+
+<svg
+   version="1.1"
+   id="Capa_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 512 512"
+   style="enable-background:new 0 0 512 512;"
+   xml:space="preserve"
+   sodipodi:docname="conversation.svg"
+   inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1087" /><sodipodi:namedview
+   id="namedview1085"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.7128906"
+   inkscape:cx="256"
+   inkscape:cy="396.40593"
+   inkscape:window-width="1920"
+   inkscape:window-height="1031"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Capa_1" />
+<path
+   style="fill:#F3705A;"
+   d="M295.467,25.6v157.867c0,13.867-11.733,25.6-25.6,25.6H134.4L34.133,261.333v-52.267H25.6  c-13.867,0-25.6-11.733-25.6-25.6V25.6C0,11.733,11.733,0,25.6,0h245.333C284.8,0,295.467,11.733,295.467,25.6z"
+   id="path1024" />
+<g
+   id="g1032">
+	<circle
+   style="fill:#FFFFFF;"
+   cx="69.333"
+   cy="104.533"
+   r="27.733"
+   id="circle1026" />
+	<circle
+   style="fill:#FFFFFF;"
+   cx="148.267"
+   cy="104.533"
+   r="27.733"
+   id="circle1028" />
+	<circle
+   style="fill:#FFFFFF;"
+   cx="227.2"
+   cy="104.533"
+   r="27.733"
+   id="circle1030" />
 </g>
-<path style="fill:#FFD15C;" d="M216.533,88.533v156.8c0,13.867,11.733,25.6,25.6,25.6h136.533L478.933,323.2v-52.267h7.467
-	c13.867,0,25.6-11.733,25.6-25.6v-156.8c0-13.867-11.733-25.6-25.6-25.6H241.067C227.2,62.933,216.533,74.667,216.533,88.533z"/>
-<g>
-	<circle style="fill:#FFFFFF;" cx="442.667" cy="167.467" r="27.733"/>
-	<circle style="fill:#FFFFFF;" cx="363.733" cy="167.467" r="27.733"/>
-	<circle style="fill:#FFFFFF;" cx="284.8" cy="167.467" r="27.733"/>
+<path
+   style="fill:#FFD15C;"
+   d="M216.533,88.533v156.8c0,13.867,11.733,25.6,25.6,25.6h136.533L478.933,323.2v-52.267h7.467  c13.867,0,25.6-11.733,25.6-25.6v-156.8c0-13.867-11.733-25.6-25.6-25.6H241.067C227.2,62.933,216.533,74.667,216.533,88.533z"
+   id="path1034" />
+<g
+   id="g1042">
+	<circle
+   style="fill:#FFFFFF;"
+   cx="442.667"
+   cy="167.467"
+   r="27.733"
+   id="circle1036" />
+	<circle
+   style="fill:#FFFFFF;"
+   cx="363.733"
+   cy="167.467"
+   r="27.733"
+   id="circle1038" />
+	<circle
+   style="fill:#FFFFFF;"
+   cx="284.8"
+   cy="167.467"
+   r="27.733"
+   id="circle1040" />
 </g>
-<path style="fill:#66C6B9;" d="M371.2,277.333V435.2c0,13.867-11.733,25.6-25.6,25.6h-84.267l-38.4,51.2l-38.4-52.267h-83.2
-	c-13.867,0-25.6-11.733-25.6-25.6v-156.8c0-13.867,11.733-25.6,25.6-25.6h245.333C360.533,251.733,371.2,263.467,371.2,277.333z"/>
-<g>
-	<circle style="fill:#FFFFFF;" cx="301.867" cy="356.267" r="27.733"/>
-	<circle style="fill:#FFFFFF;" cx="224" cy="356.267" r="27.733"/>
-	<circle style="fill:#FFFFFF;" cx="145.067" cy="356.267" r="27.733"/>
+<path
+   style="fill:#66c6b9"
+   d="m 379.7335,235.2 v 157.867 c 0,13.867 -11.733,25.6 -25.6,25.6 h -84.267 l -38.4,51.2 -38.4,-52.267 h -83.2 c -13.867,0 -25.6,-11.733 -25.6,-25.6 V 235.2 c 0,-13.867 11.733,-25.6 25.6,-25.6 h 245.333 c 13.867,0 24.534,11.734 24.534,25.6 z"
+   id="path1044" />
+<g
+   id="g1052">
+	<circle
+   style="fill:#FFFFFF;"
+   cx="301.867"
+   cy="356.267"
+   r="27.733"
+   id="circle1046" />
+	<circle
+   style="fill:#FFFFFF;"
+   cx="224"
+   cy="356.267"
+   r="27.733"
+   id="circle1048" />
+	<circle
+   style="fill:#FFFFFF;"
+   cx="145.067"
+   cy="356.267"
+   r="27.733"
+   id="circle1050" />
 </g>
-<g>
+<g
+   id="g1054">
 </g>
-<g>
+<g
+   id="g1056">
 </g>
-<g>
+<g
+   id="g1058">
 </g>
-<g>
+<g
+   id="g1060">
 </g>
-<g>
+<g
+   id="g1062">
 </g>
-<g>
+<g
+   id="g1064">
 </g>
-<g>
+<g
+   id="g1066">
 </g>
-<g>
+<g
+   id="g1068">
 </g>
-<g>
+<g
+   id="g1070">
 </g>
-<g>
+<g
+   id="g1072">
 </g>
-<g>
+<g
+   id="g1074">
 </g>
-<g>
+<g
+   id="g1076">
 </g>
-<g>
+<g
+   id="g1078">
 </g>
-<g>
+<g
+   id="g1080">
 </g>
-<g>
+<g
+   id="g1082">
 </g>
-</svg>
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:th;-inkscape-font-specification:th;opacity:0.8;fill:#b7c4c8;fill-rule:evenodd;stroke-width:0.863916;paint-order:fill markers stroke"
+   x="165.93057"
+   y="508.13141"
+   id="text392"><tspan
+     sodipodi:role="line"
+     id="tspan390"
+     x="165.93057"
+     y="508.13141"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3333px;font-family:'TH SarabunPSK';-inkscape-font-specification:'TH SarabunPSK Bold';fill:#808080;stroke-width:0.863916">สนทนา</tspan></text></svg>

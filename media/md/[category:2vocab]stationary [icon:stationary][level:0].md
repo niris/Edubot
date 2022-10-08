@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Colored paper**
- - [ ] กรรไกร
- - [x] กระดาษสี
- - [ ] กาวแท่ง
+ เลือกคำศัพท์ที่ตรงกับ **Glue stick**
+ - [x] กาวแท่ง
+ - [ ] ดินสอสี
+ - [ ] ปากกาเน้นข้อความ
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Sharpener**
- - [x] กบเหลาดินสอ
- - [ ] ดินสอ
- - [ ] สมุดทํางาน
+ เลือกคำศัพท์ที่ตรงกับ **Notebook**
+ - [ ] ของเหลวแก้คําผิด
+ - [x] สมุดบันทึก
+ - [ ] ไม้บรรทัด
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **เครื่องคิดเลข**
- - [x] Calculator
+ เลือกคำศัพท์ที่ตรงกับ **ไม้บรรทัด**
  - [ ] Correcting fluid
- - [ ] Stapler
+ - [ ] Pen
+ - [x] Ruler
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **กบเหลาดินสอ**
+ เลือกคำศัพท์ที่ตรงกับ **กรรไกร**
  - [ ] Crayon
- - [x] Sharpener
- - [ ] Stapler
+ - [ ] Dictionary
+ - [x] Scissors
+</div>
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/glue&#x20;stick.mp3) 
- - [x] Glue stick
- - [ ] Highlighter
- - [ ] Notebook
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/drawing&#x20;book.mp3) 
+ - [x] Drawing book
+ - [ ] Ruler
+ - [ ] Workbook
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/workbook.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/correcting&#x20;fluid.mp3) 
  - [ ] Calculator
- - [ ] Sharpener
- - [x] Workbook
+ - [x] Correcting fluid
+ - [ ] Glue stick
+</div>
 

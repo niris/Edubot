@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Cough**
+ เลือกคำศัพท์ที่ตรงกับ **Backache**
+ - [ ] จาม
+ - [x] ปวดหลัง
+ - [ ] เลือดออก
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **Headaches**
  - [ ] ความเจ็บปวด
- - [ ] อ้วก
- - [x] ไอ
+ - [x] ปวดหัว
+ - [ ] เลือดออก
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Fever**
- - [ ] ปวดท้อง
- - [ ] ปวดหัว
- - [x] ไข้
+ เลือกคำศัพท์ที่ตรงกับ **เจ็บคอ**
+ - [ ] Fever
+ - [ ] Runny nose
+ - [x] Sore throat
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ปวดท้อง**
- - [ ] Bleed
- - [ ] Sneeze
- - [x] Stomachache
-
- เลือกคำศัพท์ที่ตรงกับ **น้ํามูกไหล**
- - [x] Runny nose
- - [ ] Sore throat
- - [ ] Vomit
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bleed.mp3) 
- - [x] Bleed
- - [ ] Cough
- - [ ] Hurt
-
+ เลือกคำศัพท์ที่ตรงกับ **จาม**
+ - [ ] Backache
+ - [ ] Headaches
+ - [x] Sneeze
+</div>
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/runny&#x20;nose.mp3) 
- - [ ] Pain
+ - [ ] Bleed
  - [x] Runny nose
  - [ ] Sneeze
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/headaches.mp3) 
+ - [x] Headaches
+ - [ ] Sore throat
+ - [ ] Stomachache
+</div>
 

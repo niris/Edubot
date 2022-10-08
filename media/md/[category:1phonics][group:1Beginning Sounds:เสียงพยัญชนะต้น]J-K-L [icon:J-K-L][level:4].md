@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/juice.mp3) 
+ - [ ] Jeans
+ - [x] Juice
+ - [ ] Koala
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/kangaroo.mp3) 
+ - [ ] Jam
+ - [x] Kangaroo
+ - [ ] Koala
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jam.mp3) 
+ - [ ] Jaguar
+ - [x] Jam
+ - [ ] Lion
+</div>
+
+<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jellyfish.mp3) 
  - [x] Jellyfish
- - [ ] King
- - [ ] Lemon
+ - [ ] Kid
+ - [ ] Lion
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/lemon.mp3) 
- - [ ] Key
- - [ ] Kitchen
- - [x] Lemon
+ออกเสียงคำว่า **Laugh** :
 
+🎙️ laugh
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jaguar.mp3) 
- - [x] Jaguar
- - [ ] Kitchen
- - [ ] Lollipop
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Jam** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/koala.mp3) 
- - [ ] Jam
- - [ ] Jeans
- - [x] Koala
+🎙️ jam
 
-
-เลือกเสียงที่ตรงกับคำศัพท์ Laugh 
- - [ ] ![](/media/audio/jeans.mp3)
- - [x] ![](/media/audio/laugh.mp3)
- - [ ] ![](/media/audio/lotus.mp3)
-
-
-เลือกเสียงที่ตรงกับคำศัพท์ Jar 
- - [x] ![](/media/audio/jar.mp3)
- - [ ] ![](/media/audio/key.mp3)
- - [ ] ![](/media/audio/lemon.mp3)
-
+</div>

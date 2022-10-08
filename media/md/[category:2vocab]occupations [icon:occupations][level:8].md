@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Doctor**
- - [ ] พนักงานเสริ์ฟหญิง
- - [x] หมอ
- - [ ] หมอฟัน
+ เลือกคำศัพท์ที่ตรงกับ **Musician**
+ - [ ] ทหาร
+ - [x] นักดนตรี
+ - [ ] พนักงานต้อนรับบนเครื่องบินผู้ชาย (สจ๊วต)
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Soldier**
- - [x] ทหาร
- - [ ] นักเต้น
- - [ ] ประธานาธิบดี
+ เลือกคำศัพท์ที่ตรงกับ **Singer**
+ - [x] นักร้อง
+ - [ ] ผู้พิพากษา
+ - [ ] ผู้รับเหมาก่อสร้าง
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **นักร้อง**
- - [ ] Engineer
- - [ ] Photographer
- - [x] Singer
+ เลือกคำศัพท์ที่ตรงกับ **ช่างภาพ**
+ - [x] Photographer
+ - [ ] Singer
+ - [ ] Waiter
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **พ่อครัว/แม่ครัว**
- - [ ] Accountant
- - [ ] Actress
- - [x] Cook
+ เลือกคำศัพท์ที่ตรงกับ **ศิลปิน**
+ - [x] Artist
+ - [ ] Doctor
+ - [ ] Teacher
+</div>
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/gardener.mp3) 
- - [x] Gardener
- - [ ] Programmer
- - [ ] Waitress
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dancer.mp3) 
+ - [ ] Cashier
+ - [x] Dancer
+ - [ ] Farmer
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/soldier.mp3) 
- - [ ] Fisherman
- - [ ] Musician
- - [x] Soldier
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/programmer.mp3) 
+ - [ ] Pilot
+ - [x] Programmer
+ - [ ] Steward
+</div>
 

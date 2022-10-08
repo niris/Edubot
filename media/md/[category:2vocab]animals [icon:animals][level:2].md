@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Ostrich**
- - [x] นกกระจอกเทศ
- - [ ] เป็ด
- - [ ] แพะ
+ เลือกคำศัพท์ที่ตรงกับ **Crab**
+ - [ ] นกแก้ว
+ - [ ] ปลาดาว
+ - [x] ปู
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Parrot**
- - [ ] กระต่าย
- - [x] นกแก้ว
- - [ ] วัว
-
- เลือกคำศัพท์ที่ตรงกับ **แมลงปอ**
- - [x] Dragonfly
- - [ ] Elephant
- - [ ] Pig
+ เลือกคำศัพท์ที่ตรงกับ **Mouse**
+ - [ ] นกฮูก
+ - [ ] นกแก้ว
+ - [x] หนู
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **ไก่งวง**
- - [ ] Mouse
- - [ ] Rabbit
+ - [ ] Bird
+ - [ ] Dog
  - [x] Turkey
+</div>
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sheep.mp3) 
- - [ ] Butterfly
- - [x] Sheep
- - [ ] Starfish
+ เลือกคำศัพท์ที่ตรงกับ **กระต่าย**
+ - [ ] Chicken
+ - [ ] Ostrich
+ - [x] Rabbit
+</div>
+<div class=question>
 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cow.mp3) 
+ - [x] Cow
+ - [ ] Rabbit
+ - [ ] Turkey
+</div>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ostrich.mp3) 
- - [ ] Bat
- - [ ] Buffalo
- - [x] Ostrich
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bee.mp3) 
+ - [x] Bee
+ - [ ] Owl
+ - [ ] Turkey
+</div>
 

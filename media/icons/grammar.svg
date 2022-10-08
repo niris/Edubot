@@ -1,1 +1,98 @@
-<svg id="Flat" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m40 24h384v288h-384z" fill="#606669"/><path d="m376 328h48a0 0 0 0 1 0 0v144a16 16 0 0 1 -16 16h-16a16 16 0 0 1 -16-16v-144a0 0 0 0 1 0 0z" fill="#ff9494"/><path d="m376 352h48v56h-48z" fill="#ed6f6d"/><path d="m72 56h320v224h-320z" fill="#6a7073"/><path d="m24 280h416v32h-416z" fill="#596063"/><g fill="#e7ecf0"><path d="m167.761 118.06a8 8 0 0 0 -7.761-6.06h-24a8 8 0 0 0 -7.761 6.06l-16 64a8 8 0 0 0 15.522 3.88l6.485-25.94h27.508l6.485 25.94a8 8 0 0 0 15.522-3.88zm-29.515 25.94 4-16h11.508l4 16z"/><path d="m240 112h-16a8 8 0 0 0 -8 8v64a8 8 0 0 0 8 8h16a23.984 23.984 0 0 0 17.869-40 23.984 23.984 0 0 0 -17.869-40zm-8 16h8a8 8 0 0 1 0 16h-8zm8 48h-8v-16h8a8 8 0 0 1 0 16z"/><path d="m344 176h-24a8.009 8.009 0 0 1 -8-8v-32a8.009 8.009 0 0 1 8-8h24a8 8 0 0 0 0-16h-24a24.028 24.028 0 0 0 -24 24v32a24.028 24.028 0 0 0 24 24h24a8 8 0 0 0 0-16z"/><path d="m136 248h48a16 16 0 0 1 16 16v16a0 0 0 0 1 0 0h-80a0 0 0 0 1 0 0v-16a16 16 0 0 1 16-16z"/></g><circle cx="400" cy="288" fill="#ff9494" r="88"/><circle cx="400" cy="288" fill="#e7ecf0" r="56"/><path d="m392 320a8 8 0 0 1 -5.657-2.343l-16-16a8 8 0 0 1 11.314-11.314l8.755 8.755 18.728-31.214a8 8 0 0 1 13.72 8.232l-24 40a8 8 0 0 1 -6.86 3.884z" fill="#75ab7d"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Flat"
+   height="512"
+   viewBox="0 0 512 512"
+   width="512"
+   version="1.1"
+   sodipodi:docname="grammar.svg"
+   inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1508" />
+  <sodipodi:namedview
+     id="namedview1506"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.7128906"
+     inkscape:cx="256"
+     inkscape:cy="349.70125"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Flat" />
+  <path
+     d="m40 24h384v288h-384z"
+     fill="#606669"
+     id="path1479" />
+  <path
+     d="m376 328h48a0 0 0 0 1 0 0v144a16 16 0 0 1 -16 16h-16a16 16 0 0 1 -16-16v-144a0 0 0 0 1 0 0z"
+     fill="#ff9494"
+     id="path1481" />
+  <path
+     d="m376 352h48v56h-48z"
+     fill="#ed6f6d"
+     id="path1483" />
+  <path
+     d="m72 56h320v224h-320z"
+     fill="#6a7073"
+     id="path1485" />
+  <path
+     d="m24 280h416v32h-416z"
+     fill="#596063"
+     id="path1487" />
+  <g
+     fill="#e7ecf0"
+     id="g1497">
+    <path
+       d="m167.761 118.06a8 8 0 0 0 -7.761-6.06h-24a8 8 0 0 0 -7.761 6.06l-16 64a8 8 0 0 0 15.522 3.88l6.485-25.94h27.508l6.485 25.94a8 8 0 0 0 15.522-3.88zm-29.515 25.94 4-16h11.508l4 16z"
+       id="path1489" />
+    <path
+       d="m240 112h-16a8 8 0 0 0 -8 8v64a8 8 0 0 0 8 8h16a23.984 23.984 0 0 0 17.869-40 23.984 23.984 0 0 0 -17.869-40zm-8 16h8a8 8 0 0 1 0 16h-8zm8 48h-8v-16h8a8 8 0 0 1 0 16z"
+       id="path1491" />
+    <path
+       d="m344 176h-24a8.009 8.009 0 0 1 -8-8v-32a8.009 8.009 0 0 1 8-8h24a8 8 0 0 0 0-16h-24a24.028 24.028 0 0 0 -24 24v32a24.028 24.028 0 0 0 24 24h24a8 8 0 0 0 0-16z"
+       id="path1493" />
+    <path
+       d="m136 248h48a16 16 0 0 1 16 16v16a0 0 0 0 1 0 0h-80a0 0 0 0 1 0 0v-16a16 16 0 0 1 16-16z"
+       id="path1495" />
+  </g>
+  <circle
+     cx="400"
+     cy="288"
+     fill="#ff9494"
+     r="88"
+     id="circle1499" />
+  <circle
+     cx="400"
+     cy="288"
+     fill="#e7ecf0"
+     r="56"
+     id="circle1501" />
+  <path
+     d="m392 320a8 8 0 0 1 -5.657-2.343l-16-16a8 8 0 0 1 11.314-11.314l8.755 8.755 18.728-31.214a8 8 0 0 1 13.72 8.232l-24 40a8 8 0 0 1 -6.86 3.884z"
+     fill="#75ab7d"
+     id="path1503" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:th;-inkscape-font-specification:th;opacity:0.8;fill:#b7c4c8;fill-rule:evenodd;stroke-width:0.863916;paint-order:fill markers stroke"
+     x="89.792389"
+     y="429.04892"
+     id="text392"><tspan
+       sodipodi:role="line"
+       id="tspan390"
+       x="89.792389"
+       y="429.04892"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3333px;font-family:'TH SarabunPSK';-inkscape-font-specification:'TH SarabunPSK Bold';fill:#808080;stroke-width:0.863916">ไวยากรณ์</tspan></text>
+</svg>

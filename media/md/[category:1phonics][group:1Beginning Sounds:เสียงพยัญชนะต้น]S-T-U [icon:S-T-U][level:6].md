@@ -12,39 +12,49 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Uncle.mp3) 
- - [ ] Soap
- - [ ] Tiger
- - [x] Uncle
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Taxi.mp3) 
+ - [ ] Seven
+ - [x] Taxi
+ - [ ] University
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/University.mp3) 
- - [ ] Taxi
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Tiger.mp3) 
+ - [ ] Star
+ - [x] Tiger
  - [ ] Tomato
- - [x] University
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Star.mp3) 
- - [ ] Snake
- - [x] Star
- - [ ] Train
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Train.mp3) 
+ - [ ] Star
+ - [ ] Three
+ - [x] Train
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Snake.mp3) 
- - [ ] Singer
- - [x] Snake
- - [ ] Tiger
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Tomato.mp3) 
+ - [ ] Soap
+ - [x] Tomato
+ - [ ] Umbrella
+</div>
 
+<div class=question>
 
-เลือกเสียงที่ตรงกับคำศัพท์ Up 
- - [ ] ![](/media/audio/Teacher.mp3)
- - [ ] ![](/media/audio/Tiger.mp3)
- - [x] ![](/media/audio/Up.mp3)
+ออกเสียงคำว่า **Snake** :
 
+🎙️ snake
 
-เลือกเสียงที่ตรงกับคำศัพท์ University 
- - [ ] ![](/media/audio/Train.mp3)
- - [ ] ![](/media/audio/Uncle.mp3)
- - [x] ![](/media/audio/University.mp3)
+</div>
+<div class=question>
 
+ออกเสียงคำว่า **Train** :
+
+🎙️ train
+
+</div>

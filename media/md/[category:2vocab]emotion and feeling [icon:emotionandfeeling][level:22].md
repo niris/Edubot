@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Hate**
- - [ ] รัก
- - [ ] หัวเราะ
- - [x] เกลียด
-
- เลือกคำศัพท์ที่ตรงกับ **Love**
- - [x] รัก
+ เลือกคำศัพท์ที่ตรงกับ **Like**
+ - [x] ชอบ
  - [ ] ร้องไห้
- - [ ] ไม่ชอบ
+ - [ ] เกลียด
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **Smile**
+ - [x] ยิ้ม
+ - [ ] รัก
+ - [ ] เกลียด
+</div>
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **ร้องไห้**
  - [x] Cry
- - [ ] Love
+ - [ ] Hate
+ - [ ] Laugh
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **ชอบ**
+ - [ ] Laugh
+ - [x] Like
  - [ ] Smile
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ไม่ชอบ**
- - [x] Dislike
- - [ ] Hate
- - [ ] Laugh
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dislike.mp3) 
- - [x] Dislike
- - [ ] Laugh
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hate.mp3) 
+ - [ ] Cry
+ - [x] Hate
  - [ ] Like
+</div>
 
+<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/laugh.mp3) 
- - [ ] Hate
- - [x] Laugh
- - [ ] Like
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/love.mp3) 
+ - [ ] Dislike
+ - [x] Love
+ - [ ] Smile
+</div>
 

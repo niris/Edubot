@@ -13,7 +13,7 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-## **Fill in the blank (เติมคำในช่องว่าง)**
+<div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>
 
 My name is _____
  - [ ] Peter
@@ -35,7 +35,8 @@ My brother is ___ years old.
  - [ ] 8
  - [ ] 10 
 
-## **True or false (ถูกหรือผิด)**
+<div class="title">True or False</div><div class="desc">ถูก หรือ ผิด</div>  
+<br>
 
 My father is a docter.
  - [ ] True

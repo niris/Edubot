@@ -13,35 +13,47 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Grandfather**
  - [x]  ปู่ หรือ ตา
- - [ ] พี่สาว หรือ น้องสาว
- - [ ] แม่
-
- เลือกคำศัพท์ที่ตรงกับ **Me**
- - [x] ตัวฉัน
- - [ ] พี่สาว หรือ น้องสาว
+ - [ ] ตัวฉัน
  - [ ] พ่อ
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **พี่ชาย หรือ น้องชาย**
- - [x] Brother
+ เลือกคำศัพท์ที่ตรงกับ **Aunt**
+ - [ ] ตัวฉัน
+ - [x] ป้า หรือ น้าสาว
+ - [ ] พ่อ
+</div>
+<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **พี่สาว หรือ น้องสาว**
  - [ ] Grandfather
- - [ ] Uncle
+ - [ ] Mother
+ - [x] Sister
+</div>
+<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ลุง หรือ น้าชาย**
+ เลือกคำศัพท์ที่ตรงกับ **ย่า หรือ ยาย**
+ - [ ] Brother
+ - [x] Grandmother
+ - [ ] Mother
+</div>
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/aunt.mp3) 
+ - [x] Aunt
+ - [ ] Father
+ - [ ] Uncle
+</div>
+
+<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/uncle.mp3) 
  - [ ] Father
  - [ ] Me
  - [x] Uncle
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/grandmother.mp3) 
- - [ ] Aunt
- - [x] Grandmother
- - [ ] Sister
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sister.mp3) 
- - [ ] Aunt
- - [ ] Me
- - [x] Sister
+</div>
 
