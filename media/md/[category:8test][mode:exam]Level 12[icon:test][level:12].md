@@ -1,89 +1,89 @@
 ## Exercise Level 12
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hug.mp3) 
- - [ ] Aut
- - [x] Hug
- - [ ] Run
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ub.mp3) 
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/cup.mp3) 
  - [ ] Bum
- - [x] Ub
- - [ ] Um
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ugg.mp3) 
- - [ ] Cup
- - [x] Ugg
+ - [x] Cup
  - [ ] Up
 
 
- เลือกคำศัพท์ที่ตรงกับ **Train station**
- - [x] สถานีรถไฟ
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/gum.mp3) 
+ - [x] Gum
+ - [ ] Rub
+ - [ ] Ugg
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/up2.mp3) 
+ - [ ] Ugg
+ - [ ] Um
+ - [x] Up2
+
+
+ เลือกคำศัพท์ที่ตรงกับ  **Entrance**
  - [ ] ออก
- - [ ] โรงพยาบาล
+ - [x] เข้า
+ - [ ] เดิน
 
- เลือกคำศัพท์ที่ตรงกับ **Sit**
- - [ ] ดึง
- - [x] นั่ง
- - [ ] ผลัก
+ เลือกคำศัพท์ที่ตรงกับ  **Pull**
+ - [x] ดึง
+ - [ ] เปิด
+ - [ ] ไป
 
- เลือกคำศัพท์ที่ตรงกับ **Market**
- - [x] ตลาด
- - [ ] โรงพยาบาล
- - [ ] ให้
+ เลือกคำศัพท์ที่ตรงกับ  **Open**
+ - [ ] กระโดด
+ - [ ] ปิด
+ - [x] เปิด
 
- เลือกคำศัพท์ที่ตรงกับ **Take**
- - [x] รับ
- - [ ] ออก
- - [ ] เอทีเอ็ม
+ เลือกคำศัพท์ที่ตรงกับ  **Police station**
+ - [ ] รับ
+ - [x] สถานีตํารวจ
+ - [ ] โรงเรียน
 
- เลือกคำศัพท์ที่ตรงกับ **โยน**
- - [ ] Port
- - [ ] Sit
- - [x] Throw
-
- เลือกคำศัพท์ที่ตรงกับ **ท่าเรือ**
- - [x] Port
- - [ ] Sit
- - [ ] Take
-
- เลือกคำศัพท์ที่ตรงกับ **เข้า**
- - [x] Entrance
- - [ ] School
- - [ ] Take
-
- เลือกคำศัพท์ที่ตรงกับ **สถานีดับเพลิง**
+ เลือกคำศัพท์ที่ตรงกับ  **สถานีดับเพลิง**
  - [x] Fire station
- - [ ] Hospital
- - [ ] Push
+ - [ ] Give
+ - [ ] Throw
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/museum.mp3) 
- - [x] Museum
- - [ ] Pull
- - [ ] Push
+ เลือกคำศัพท์ที่ตรงกับ  **ผลัก**
+ - [ ] Jump
+ - [ ] Post office
+ - [x] Push
 
+ เลือกคำศัพท์ที่ตรงกับ  **กระโดด**
+ - [ ] Hold
+ - [x] Jump
+ - [ ] Stop
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hold.mp3) 
- - [x] Hold
- - [ ] Run
- - [ ] Walk
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/exit.mp3) 
- - [x] Exit
- - [ ] Go
- - [ ] Walk
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/entrance.mp3) 
+ เลือกคำศัพท์ที่ตรงกับ  **ให้**
  - [ ] Catch
- - [x] Entrance
- - [ ] School
+ - [x] Give
+ - [ ] Market
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/jump.mp3) 
+ - [ ] Give
+ - [x] Jump
+ - [ ] Market
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Do&#x20;do&#x20;have&#x20;a&#x20;time.mp3) 
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/stop.mp3) 
+ - [ ] Go
+ - [ ] Pull
+ - [x] Stop
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/catch.mp3) 
+ - [ ] Bank
+ - [x] Catch
+ - [ ] Museum
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/go.mp3) 
+ - [x] Go
+ - [ ] Museum
+ - [ ] Throw
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/Excuse&#x20;me!&#x20;What&#x20;time&#x20;is&#x20;it.mp3) 
  - [ ] Could you tell me the time please
- - [x] Do do have a time
- - [ ] Excuse me! what time is it
+ - [ ] Do do have a time
+ - [x] Excuse me! what time is it
 

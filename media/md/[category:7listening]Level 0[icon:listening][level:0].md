@@ -1,37 +1,37 @@
 ## Listening Exercise Level 0
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/scissors.mp3) 
- - [ ] Have a nice weekend
- - [ ] Fourteen
- - [x] Scissors
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/good&#x20;afternoon.mp3) 
+ - [ ] Crayon
+ - [x] Good afternoon
+ - [ ] Ruler
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Good&#x20;night.mp3) 
- - [x] Good night
- - [ ] Drawing book
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/eight.mp3) 
+ - [x] Eight
+ - [ ] Sharpener
+ - [ ] Workbook
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/notebook.mp3) 
+ - [ ] Cutter
  - [ ] Good morning
+ - [x] Notebook
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/crayon.mp3) 
- - [x] Crayon
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/eighteen.mp3) 
  - [ ] Dictionary
- - [ ] Eight
+ - [x] Eighteen
+ - [ ] Nine
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Hello&#x20;my&#x20;name&#x20;is&#x20;kate.mp3) 
- - [ ] Have a nice weekend
- - [ ] Hello my name is alize i am 5 years old
- - [x] Hello my name is kate
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/stapler.mp3) 
+ - [ ] Fourteen
+ - [x] Stapler
+ - [ ] Two
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Have&#x20;a&#x20;nice&#x20;weekend.mp3) 
- - [x] Have a nice weekend
- - [ ] Eraser
- - [ ] Six
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/four.mp3) 
- - [x] Four
- - [ ] Good afternoon
- - [ ] Pencil
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/crayon.mp3) 
+ - [x] Crayon
+ - [ ] Good morning
+ - [ ] Pen
 

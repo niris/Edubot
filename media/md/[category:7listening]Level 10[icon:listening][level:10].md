@@ -1,37 +1,37 @@
 ## Listening Exercise Level 10
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bored.mp3) 
- - [ ] My father is a doctor
- - [x] Bored
- - [ ] Dirty
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/angry.mp3) 
- - [x] Angry
- - [ ] Calm
- - [ ] Excited
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/full.mp3) 
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/I&#x20;want&#x20;to&#x20;be&#x20;a&#x20;dentist.mp3) 
  - [ ] How many brothers and sisters do you have
+ - [ ] I have 2 brothers and 1 sister
+ - [x] I want to be a dentist
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/healthy.mp3) 
+ - [ ] There are 4 people in my family
  - [ ] Full
- - [x] Full
+ - [x] Healthy
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;many&#x20;brothers&#x20;and&#x20;sisters&#x20;do&#x20;you&#x20;have.mp3) 
- - [x] How many brothers and sisters do you have
- - [ ] Happy
- - [ ] Loud
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/What&#x20;does&#x20;your&#x20;father&#x20;do.mp3) 
+ - [x] What does your father do
+ - [ ] What does your mother do
+ - [ ] Light
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/short.mp3) 
- - [ ] Few
- - [x] Short
- - [ ] Sick
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/thin.mp3) 
- - [ ] What do you want to be when you grow up
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/old.mp3) 
+ - [ ] Clean
  - [ ] Excited
- - [x] Thin
+ - [x] Old
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/sick.mp3) 
+ - [ ] What does your mother do
+ - [ ] Cold
+ - [x] Sick
+
+
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/empty.mp3) 
+ - [ ] How many people are there in your family
+ - [x] Empty
+ - [ ] Thick
 

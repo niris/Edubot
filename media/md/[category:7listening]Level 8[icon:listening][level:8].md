@@ -1,37 +1,37 @@
 ## Listening Exercise Level 8
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/model.mp3) 
- - [ ] Doctor
- - [x] Model
- - [ ] Scientist
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/I'm&#x20;130&#x20;centimeters&#x20;tall.mp3) 
+ - [x] I'm 130 centimeters tall
+ - [ ] I'm a student
+ - [ ] Shoulder
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/nose.mp3) 
- - [ ] Carpenter
- - [x] Nose
- - [ ] Waitress
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/pilot.mp3) 
+ - [ ] Arm
+ - [ ] Leg
+ - [x] Pilot
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/translator.mp3) 
- - [ ] Cook
- - [ ] Eye
- - [x] Translator
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/How&#x20;much&#x20;do&#x20;you&#x20;weigh.mp3) 
+ - [x] How much do you weigh
+ - [ ] Accountant
+ - [ ] Neck
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/actress.mp3) 
- - [ ] I weigh 25 kilograms
- - [x] Actress
- - [ ] Teacher
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/I'm&#x20;from&#x20;China.mp3) 
+ - [x] I'm from china
+ - [ ] Farmer
+ - [ ] Receptionist
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/musician.mp3) 
- - [ ] Chest
- - [ ] Judge
- - [x] Musician
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/accountant.mp3) 
+ - [ ] I'm from thailand
+ - [x] Accountant
+ - [ ] Gardener
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/neck.mp3) 
- - [ ] Building contractor
- - [x] Neck
- - [ ] Programmer
+เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/lawyer.mp3) 
+ - [x] Lawyer
+ - [ ] Photographer
+ - [ ] Traffic cop
 
