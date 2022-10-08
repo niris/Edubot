@@ -29,6 +29,17 @@ body.dark {
     --color-darkGrey: #777;
 }
 
+h1 {
+    font-size: 1.25em;
+}
+
+.container > .title {
+    color:var(--color-primary);
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-top:1em
+}
+
 .picon,
 del,
 s {
@@ -205,6 +216,8 @@ img[alt=topicimg] {
 .carrousel>table {
     animation: swipe 2s cubic-bezier( .7, 0, .3, 1 ) ;
 }
+
+
 .forbidden {
     opacity: .5;
     pointer-events: none;
@@ -277,6 +290,7 @@ details>label>input{
 .voice[readonly]:disabled {
     animation: RecordingProgress 5s ease;
 }
+
 
 /* only way I found to animate input background */
 @keyframes RecordingProgress {

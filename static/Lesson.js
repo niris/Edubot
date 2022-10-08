@@ -155,7 +155,8 @@ const LessonList = {
         then <a href=>refresh</a> this page.
     </p>
     <template v-for="group in groups">
-        <h1 class=text-capitalize>{{group.title}}</h1>
+        <div class="title text-capitalize">{{group.title.split(":")[0]}}</div>
+        <div class="text-grey">{{group.title.split(":")[1]}}</div>
         <div class=grid>
             <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class="'ovh '+reachable(lesson)">
                 <span style="text-align:center" v-for="tag in lesson.tags.filter(l=>l.startsWith('level:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span>
