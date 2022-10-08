@@ -22,7 +22,7 @@ My name is _____
 
 My mother is a ___.
  - [ ] teacher
- - [ ] docter
+ - [ ] doctor
  - [x] nurse
 
 I have __ brother and 1 sister.
@@ -38,7 +38,7 @@ My brother is ___ years old.
 <div class="title">True or False</div><div class="desc">ถูก หรือ ผิด</div>  
 <br>
 
-My father is a docter.
+My father is a doctor.
  - [ ] True
  - [x] False
 
