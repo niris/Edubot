@@ -1,32 +1,8 @@
 const empty = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMEAAAC4CAQAAADwZkAeAAABW0lEQVR42u3RMQEAAACCMO1f2hg+IwJrdK4WIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgAQIEFiBAYAECBBYgQGABAgQWIEBgwbsBnYcAuVYBeaIAAAAASUVORK5CYII='
 const shiny = "/media/icons/sparkle.gif"
-const motivations = [
-	'Welcome !',
-	'First step !',
-	'Keep going !',
-	'Good Job !',
-	'Keep up !',
-	'Like a Pro !',
-	'End soon !',
-	'Congratulation !',
-	'Over the limit',
-	'Among Gods',
-	'???',
-]
 const Profile = {
 	template: `
 	<form v-else @input=$event.target.form.submit.disabled=false @submit.prevent=update($event)>
-	<div @click="wide()":data-delta="delta||null" ref=scene :style="' user-select: none;padding: 1em; animation: hscrolling 60s ease-in-out 0s infinite; animation-timing-function: steps(300, end); background-position: 0 50%;  image-rendering: pixelated;background-image: url(/static/lv'+level($root.xp)+'.gif); background-size: cover; border-radius:1em;'">
-		<img alt=treasure :src=overlay  style="max-width: 25vmin;margin: auto;display: block;background-repeat:no-repeat;background-image:url(/media/icons/treasure.svg)">
-		<div style="display: grid;grid-template-columns: 4fr;text-align: center;align-items: center;">
-		<progress style="grid-row: 1/1; grid-column: 1;height:16vmin;opacity:.8; margin: auto; width: 50%;" :value=percent></progress>
-		<span     style="grid-row: 1/1; grid-column: 1;mix-blend-mode: difference;color: white;font-size:4vmin;">
-		Lv:{{level($root.xp)}}
-		</span>
-		<span style="color:white; font-weight: bold;text-shadow: 0.1em 0.1em 0.2em black;">{{motivations[level($root.xp)]}}</span>
-		</div>
-	</div>
-		<br>
 		<div class="row">
 		<button class="col button" v-if="quiet" type=button @click=mute()><s>louder</s> unmute</button>
 		<button class="col button" v-if="!quiet" type=button @click=mute()><s>volume</s> mute</button>
@@ -55,15 +31,12 @@ const Profile = {
 				<input v-model=me.secret type=text>
 			</label>
 		</details>
-		<!-- <button @click="for(var i=0;i< 1;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=1</button>
-		<button @click="for(var i=0;i<50;i++)me.progress[Math.random()]=0;localStorage.progress=JSON.stringify($root.progress=me.progress);update();">xp {{$root.xp}}+=50</button>
-		<button @click="localStorage.progress=JSON.stringify($root.progress=me.progress={});update();">xp=0</button> -->
 		<hr>
 		<button disabled name=submit type=submit class=is-full-width><s>check</s> Update</button>
 		</template>
 	</form>
 	`,
-	data() { return { me: {}, quiet:localStorage.quiet||'', delta: 0, localStorage, context: null, motivations, amp:{}, oldXp:-1} },
+	data() { return { me: {}, quiet:localStorage.quiet||'', delta: 0, localStorage, context: null, amp:{}, oldXp:-1} },
 	computed: {
 		overlay() { return this.delta ? shiny : empty },
 		percent() {

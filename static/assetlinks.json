@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "app.anglizbot.twa",
+            "sha256_cert_fingerprints": [
+                "97:F4:6E:42:95:38:7E:3E:49:28:D7:02:A2:BA:6E:A9:7C:A7:84:78:4F:0D:04:3D:3F:08:F6:2E:C2:6A:70:5E"
+            ]
+        }
+    }
+]

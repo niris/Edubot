@@ -119,6 +119,6 @@ def pronunc(vocab,number,file):
         file.write("ออกเสียงคำว่า  **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
         file.write("🎙️ "+ vocab_tmp[answer_index].lower() +"\n\n")
         vocab_tmp.pop(answer_index)
-for i in range(0,26,2):
+for i in range(13):
     generate_exo(str(i))
     generate_listening(str(i))

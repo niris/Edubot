@@ -14,34 +14,34 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์ที่ตรงกับ **Sheep**
- - [ ] นกฮูก
+ เลือกคำศัพท์ที่ตรงกับ **Shellfish**
  - [ ] ปลาทอง
- - [x] แกะ
+ - [ ] ปู
+ - [x] หอย
 
- เลือกคำศัพท์ที่ตรงกับ **Starfish**
- - [x] ปลาดาว
- - [ ] หอย
- - [ ] แมลงปอ
+ เลือกคำศัพท์ที่ตรงกับ **Dog**
+ - [ ] ปลา
+ - [ ] ปู
+ - [x] หมา
 
  เลือกคำศัพท์ที่ตรงกับ **วัว**
  - [x] Cow
- - [ ] Goldfish
+ - [ ] Turkey
+ - [ ] Vulture
+
+ เลือกคำศัพท์ที่ตรงกับ **ปู**
+ - [x] Crab
+ - [ ] Dog
+ - [ ] Shellfish
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bat.mp3) 
+ - [x] Bat
+ - [ ] Rabbit
+ - [ ] Shrimp
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mouse.mp3) 
+ - [x] Mouse
+ - [ ] Ostrich
  - [ ] Sheep
-
- เลือกคำศัพท์ที่ตรงกับ **แมว**
- - [x] Cat
- - [ ] Chicken
- - [ ] Starfish
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/buffalo.mp3) 
- - [x] Buffalo
- - [ ] Eagle
- - [ ] Horse
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dog.mp3) 
- - [x] Dog
- - [ ] Dragonfly
- - [ ] Duck
 

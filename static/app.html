@@ -18,6 +18,7 @@
 <script type=module>
 import { Sign } from '/static/Sign.js'
 import { Profile } from '/static/Profile.js'
+import { Roadmap } from '/static/Roadmap.js'
 import { Leaderboard } from '/static/Leaderboard.js'
 import { LessonList, LessonShow, CategoriesList } from '/static/Lesson.js'
 import { BotOnlineChat } from '/static/BotOnline.js'
@@ -27,6 +28,7 @@ const routes = [
 	{ path:'/', redirect: ()=> document.cookie ? '/me' : '/sign/in'},
 	{ path:'/sign/:mode', component: Sign, props:true},
 	{ path:'/me', component: Profile },
+	{ path:'/roadmap', component: Roadmap },
 	{ path:'/category/', component: CategoriesList},
 	{ path:'/category/:tag', component: LessonList, props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
@@ -37,10 +39,18 @@ const routes = [
 ];
 const app = Vue.createApp({
 	data() { return {
-		levels: [0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260],
+		mds: [],
 		role: null, id: null, worker:null, theme: localStorage.theme || `#126359`,
 		progress: JSON.parse(localStorage.progress || '{}'),
 	} },
+	async created() {
+		this.mds = (await fetch(`/media/md/`).then(res => res.json())).map(file => {
+			const tags = {};
+			const title = file.name.slice(0,-3).replace(/\[(\w+):(.*?)\]/g,(a,k,v)=>{tags[k]=v;return ''}).trim();
+			return {...file,title,...tags}
+		});
+		console.log(this.mds)
+	},
 	async mounted() {
 		this.log();
 		if ('serviceWorker' in navigator) {
@@ -55,8 +65,9 @@ const app = Vue.createApp({
 		}
 	},
 	computed: {
-		xp() { return 1 + Object.keys(this.progress).length }, //XP:0 create log2(0)/pow(0) cornercase
-		myLv() {return this.level(this.xp)}
+		worlds() { return this.$root.mds.reduce((acc, md) => (acc[md.level] = [...acc[md.level] || [], md], acc), {}); },
+		myLv() { return this.level(this.progress);},
+		myXp() { return Object.keys(this.progress).filter(p=>p.startsWith(`lv${this.myLv}`)).length;}
 	},
 	watch: {
 		myLv() {
@@ -65,7 +76,7 @@ const app = Vue.createApp({
 		}
 	},
 	methods: {
-		level(xp) { return this.levels.findIndex(lv => lv > xp) - 1; }, // DUPLICATED in Profile.js
+		level(progress) { return 1 + Object.keys(progress||{}).filter(r=>r.match(/\[mode:exam\]/)).map(r=>+(r.match(/\[level:(\d+)\]/)||['','-1'])[1]).reduce((a,b)=>Math.max(a,b),-1); },
 		is(...roles) { return roles.includes(this.role); },
 		log() {
 			const cookie = Object.fromEntries(document.cookie.split('; ').map(x => x.split('=')));
@@ -84,16 +95,18 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 </script>
 <main class="container">
 	<component is="style">:root{--color-primary: {{theme}};}</component>
-	<nav class="tabs is-full" style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
+	<nav class="tabs is-full"
+		style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
 		<router-link to="/category" v-if="is('user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
-		<router-link to="/category/2vocab" v-if="is('user')"><s>book</s>&nbsp;<span>คำศัพท์</span></router-link>
+		<router-link to="/roadmap" v-if="is('user')"><s>options</s>&nbsp;<span>map</span></router-link>
 		<router-link to="/me" v-if="is('user')">
 			<s>bust</s>&nbsp;<span>{{$root.id}}</span>
-			<span ref=lv class="tag is-small" :title="'xp:'+xp" style="transform:scale(1) translateY(0);background-size: cover;transition: transform 1s;">Lv:{{myLv}}</span>
+			<span ref=lv class="tag is-small" :title="'xp:'+xp"
+				style="transform:scale(1) translateY(0);background-size: cover;transition: transform 1s;">Lv:{{myLv}}</span>
 		</router-link>
 		<router-link to="/sign/in" v-if="is(null)"><s>star</s>&nbsp;<span>Sign</span></router-link>
 		<router-link to="/leaderboard" v-if="is('user')"><s>trophy</s>&nbsp;<span>Leaderboard</span></router-link>
-	</nav>	
+	</nav>
 	<router-view :key="$route.fullPath"></router-view>
 	<bot-chat ref="bot" v-if="is('user')"></bot-chat>
-</main>	
+</main>

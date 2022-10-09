@@ -1,15 +1,23 @@
 import listen from '/static/stt.js'
 
 // hash a question into a localStorage id
-const hashCode = s => s.split('').reduce((a, b) => (a = ((a << 5) - a) + b.charCodeAt(0), a & a), 0);
+const hashCode = (s,lv) => `lv${lv}/` + s.split('').reduce((a, b) => (a = ((a << 5) - a) + b.charCodeAt(0), a & a), 0);
+// add lazy attribut to img
+function lazy_img(md) {
+    var defaultImageRenderer = md.renderer.rules.image;
+    md.renderer.rules.image = function (tokens, idx, options, env, self) {
+      tokens[idx].attrSet('loading', 'lazy');
+      return defaultImageRenderer(tokens, idx, options, env, self);
+    };
+};
 // convert list + checkbox into interactiv exam
-const listCheckboxRule = (validated) => function (state) {
+const listCheckboxRule = (validated,level) => function (state) {
     const all = state.tokens;
     for (let i = 0; i < all.length; i++) {
         // search for a paragraph-prefixed bullet list
         if (i < 1 || all[i].type !== "bullet_list_open" || all[i - 1].type !== "paragraph_close") continue;
         // extract it prefix text
-        const name = 'h' + hashCode(all[i - 2].content);
+        const name = hashCode(all[i - 2].content, level);
         for (let j = i; all[j].type !== "bullet_list_close" && j < all.length; j++) {
             if (all[j].type !== "inline" || all[j].children.length != 4 || all[j].children[1].type != 'checkbox_input') continue;
             const checkbox = all[j].children[1];
@@ -17,6 +25,7 @@ const listCheckboxRule = (validated) => function (state) {
             // disable if already done, else hide result
             if (validated.includes(name)) {
                 checkbox.attrSet('disabled', '');
+                checkbox.attrs.find(([k, v]) => k == "checked") && checkbox.attrs.push(['data-checked','']);
             } else {
                 checkbox.attrs = checkbox.attrs.map(([k, v]) => k == "checked" ? [`data-${k}`, v] : [k, v]);
             }
@@ -24,18 +33,18 @@ const listCheckboxRule = (validated) => function (state) {
     }
 };
 // convert 🎙️ value into HTML input
-const inputRule = (validated) => function (state) {
+const inputRule = (validated, level) => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
         const matches = [...child.content.matchAll(/^(🎙️)\s*(.*)$/g)];
         return matches.length ? matches.map(([_, content, value]) => [
             new state.Token("label_open", "label", 1),
             Object.assign(new state.Token("text_input", "input", 0), {
                 attrs: [
-                    [validated.includes('h' + hashCode(value)) ? "disabled" : "readonly", ""],
+                    [validated.includes(hashCode(value,level)) ? "disabled" : "readonly", ""],
                     ["class", "voice"],
-                    [validated.includes('h' + hashCode(value)) ? "value" : "data-value", value],
-                    ["name", 'h' + hashCode(value)]
-                ]
+                    ["data-value", value],
+                    ["name", hashCode(value,level)]
+                ].concat(validated.includes(hashCode(value,level)) ? [["value", value]] : [])
             }),
             new state.Token("label_close", "label", -1),
         ]).flat() : [child];
@@ -63,12 +72,6 @@ const mediaRule = (ext2tag = (ext, img) => ({
         .map(img => img.type == "image" ? Object.assign(img, ext2tag(getext(img), img)) : img)
         .map(img => img.type == "image" && img.nesting == 1 ? [img, new state.Token("image_close", img.tag, -1)] : [img]).flat());
 };
-const ls2json = (res) => res.map(file => ({
-    id: file.name,
-    title: file.name.slice(0, -3).replace(/\[.*?\]/g, '').trim(),
-    icon: (file.name.match(/\[icon:(.*?)\]/)||['','lesson'])[1],
-    tags: file.name.match(/\[.*?\]/g).map(tag => tag.slice(1, -1))
-}))
 
 const LessonShow = {
     props: ['id'],
@@ -78,15 +81,16 @@ const LessonShow = {
     <button v-if=isExam form=lesson class="button primary is-full-width">Validate</button>
     <hr>
     <router-link :to=$router.options.history.state.back class="button outline">&lt;&lt; Back</router-link>`,
-    data() { return { lesson: "", isExam: false} },
+    data() { return { lesson: "", isExam: false, level:0} },
     computed: {
         markdownToHtml() {
             const progress = Object.keys(JSON.parse(localStorage.progress || '{}'));
             const mi = markdownit({ html: true });
+            //mi.use(lazy_img);
             mi.core.ruler.push("media", mediaRule());
-            mi.core.ruler.push("checkbox", checkboxRule());
-            mi.core.ruler.push("input", inputRule(progress));
-            mi.core.ruler.push("exam", listCheckboxRule(progress));
+            mi.core.ruler.push("checkbox", checkboxRule(this.level));
+            mi.core.ruler.push("input", inputRule(progress, this.level));
+            mi.core.ruler.push("exam", listCheckboxRule(progress, this.level));
             return this.lesson ? mi.render(this.lesson) : '...';
         }
     },
@@ -97,10 +101,17 @@ const LessonShow = {
             this.validateInput({ target });
         },
         validateForm({ target }) {
-            if ([...target.elements].filter(e=>e.constructor == HTMLInputElement).some((input) => 
-                (input.type == 'checkbox' && (input.dataset.checked==='') != input.checked) ||
-                (input.type == 'text' && inputs.dataset.value != inputs.value)
-            )) return alert('You made a mistake');
+            const elems = Object.keys(target.elements).filter(e=>e.startsWith('lv')).map(n=>target.elements[n]);
+            const radio = elems.filter(e => e.constructor == RadioNodeList);
+            const texts = elems.filter(e => e.constructor == HTMLInputElement && e.type == 'text');
+            const valid = [...texts.filter(input => input.dataset.value == input.value),
+                           ...radio.filter(checks => [...checks].every(check => (check.dataset.checked==='') === check.checked))];
+            console.log(elems, valid);
+            const ratio = valid.length / (radio.length + texts.length);
+            const bargain = .75;
+            if (ratio < bargain) {
+                return alert(`You have ${(100*ratio)|0}% accuracy\nBut you need ${(100*bargain)|0}%`);
+            }
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
             const progress = JSON.parse(localStorage.progress || '{}');
             progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
@@ -139,6 +150,7 @@ const LessonShow = {
         }
     },
     async mounted() {
+        this.level = +(this.$props.id.match(/\[level:(\d+)\]/)||['','0'])[1];
         this.isExam = this.$props.id.includes('[mode:exam]');
         this.lesson = await (await fetch(`/media/md/${this.$props.id}`)).text();
     }
@@ -158,8 +170,8 @@ const LessonList = {
         <div class="title text-capitalize">{{group.title.split(":")[0]}}</div>
         <div class="text-grey">{{group.title.split(":")[1]}}</div>
         <div class=grid>
-            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.id" :class="'ovh '+reachable(lesson)">
-                <span style="text-align:center" v-for="tag in lesson.tags.filter(l=>l.startsWith('level:'))" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{tag}}</span>
+            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.name" :class="'ovh '+reachable(lesson)">
+                <span style="text-align:center" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{lesson.level}}</span>
                 <img :src="'/media/icons/'+lesson.icon+'.svg'" style="padding: 15%;" width=500 height=500 alt="lesson" loading=lazy>
                 <span class="text-capitalize is-center">{{lesson.title.replace(/^[^a-zA-Z]+/, '')}}</span>
             </router-link>
@@ -167,44 +179,34 @@ const LessonList = {
     </template>
     `,
     methods: {
-        level(lesson) {
-            return +(lesson.tags.find(l => l.startsWith('level:')) || 'level:0').slice("level:".length)
-        },
         reachable(lesson) {
-            if (this.level(lesson) > this.$root.level(this.$root.xp))
+            if (lesson.level > this.$root.myLv)
                 return 'forbidden';
-            if (JSON.parse(localStorage.progress||'[]')[`/lesson/${decodeURIComponent(lesson.id)}`] !== undefined)
+            if (JSON.parse(localStorage.progress||'[]')[`/lesson/${decodeURIComponent(lesson.name)}`] !== undefined)
                 return 'done card';
             return 'card'
         }
     },
-    data() { return { groups: null } },
-    watch: {
-        tag: {
-            handler: async function (tag) {
-                const lessons = await (await fetch(`/media/md/`)).json();
-                this.groups = ls2json(lessons) // fill missing group tag in lesson, group them by they group, sort group and lessons
-                    .filter(lesson => lesson.tags.includes(`category:${tag}`))
-                    .map(lesson => ({ ...lesson, group: (lesson.tags.find(tag => tag.startsWith('group:')) || 'group:0').substring('group:'.length) }))
-                    .reduce(function (groups, lesson) {
-                        const existing = groups.find(group => group.path == lesson.group);
-                        existing ? existing.list.push(lesson) : groups.push({
-                            title: lesson.group.replace(/^[^a-zA-Z]+/, ''),
-                            path: lesson.group,
-                            list: [lesson]
-                        })
-                        return groups
-                    }, [])
-                    .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
-                    .map(group => ({
-                        ...group, list: group.list // sort grouped lessons by they level + name
-                            .sort((a, b) => a.title.localeCompare(b.title))
-                            .sort((a, b) => this.level(a) - this.level(b))
-                    }))
-            },
-            immediate: true
+    computed: { 
+        groups() {
+            return this.$root.mds.filter(lesson => lesson.category==this.tag)
+            .reduce(function (groups, lesson) {
+                const existing = groups.find(group => group.path == lesson.group);
+                existing ? existing.list.push(lesson) : groups.push({
+                    title: (lesson.group||'').replace(/^[^a-zA-Z]+/, ''),
+                    path: lesson.group,
+                    list: [lesson]
+                })
+                return groups
+            }, [])
+            .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
+            .map(group => ({
+                ...group, list: group.list // sort grouped lessons by they level + name
+                    .sort((a, b) => a.title.localeCompare(b.title))
+                    .sort((a, b) => a.level - b.level)
+            }))
         }
-    }
+    },
 }
 
 const CategoriesList = {
@@ -219,15 +221,11 @@ const CategoriesList = {
         </router-link >
     </div>
     `,
-    data() { return { categories: null } },
-    async mounted() {
-        const tags = ls2json(await fetch(`/media/md/`).then(res => res.json()))
-        const cats = new Set(tags.map(lesson => lesson.tags).flat()
-            .filter(tag => tag.startsWith('category:'))
-            .map(tag => tag.substring('category:'.length))
-            .sort());
-        this.categories = [...cats].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
-    },
+    computed: {
+        categories() {
+            return [...new Set(this.$root.mds.map(t=>t.category))].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
+        },
+    }
 }
 
 export { LessonList, LessonShow, CategoriesList }
