@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Orange**
- - [ ] มะนาว
- - [x] ส้ม
+ เลือกคำศัพท์ที่ตรงกับ **Papaya**
+ - [ ] ขิง
+ - [ ] บรอคโคลี
+ - [x] มะละกอ
+
+ เลือกคำศัพท์ที่ตรงกับ **Garlic**
+ - [x] กระเทียม
+ - [ ] อะโวคาโด
  - [ ] เชอร์รี่
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Grape**
- - [ ] กระเทียม
- - [ ] พริก
- - [x] องุ่น
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **กระเทียม**
+ - [x] Garlic
+ - [ ] Longan
+ - [ ] Papaya
 
- เลือกคำศัพท์ที่ตรงกับ **แตงกวา**
- - [ ] Broccoli
- - [x] Cucumber
- - [ ] Mango
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **บรอคโคลี**
- - [x] Broccoli
- - [ ] Garlic
- - [ ] Mangosteen
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **ข้าวโพด**
+ - [x] Corn
+ - [ ] Grape
+ - [ ] Strawberry
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pomelo.mp3) 
- - [ ] Apple
- - [ ] Papaya
+ - [ ] Cabbage
+ - [ ] Carrot
  - [x] Pomelo
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/corn.mp3) 
- - [ ] Apple
- - [ ] Chili
- - [x] Corn
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/banana.mp3) 
+ - [x] Banana
+ - [ ] Broccoli
+ - [ ] Mangosteen
 

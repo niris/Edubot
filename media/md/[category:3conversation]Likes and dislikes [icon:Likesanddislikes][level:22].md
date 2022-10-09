@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Who&#x20;is&#x20;your&#x20;favorite&#x20;actor.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;sport&#x20;do&#x20;you&#x20;like.mp3) 
  - [ ] I like dogs
- - [ ] What sport do you like
- - [x] Who is your favorite actor
-</div>
+ - [x] What sport do you like
+ - [ ] Yes i like cooking
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;like&#x20;pop&#x20;music.mp3) 
- - [x] I like pop music
- - [ ] Lisa is my favorite singer
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;kind&#x20;of&#x20;music&#x20;do&#x20;you&#x20;like.mp3) 
+ - [ ] Do you like cats
+ - [ ] Do you like swimming
+ - [x] What kind of music do you like
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Lisa&#x20;is&#x20;my&#x20;favorite&#x20;singer.mp3) 
+ - [ ] Do you like cats
+ - [x] Lisa is my favorite singer
  - [ ] What animal do you like
-</div>
 
-<div class=question>
+ออกเสียงคำว่า **Lisa is my favorite singer** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Do&#x20;you&#x20;like&#x20;cats.mp3) 
- - [x] Do you like cats
- - [ ] Do you like listening to music
- - [ ] Who is your favorite singer
-</div>
+🎙️ lisa is my favorite singer
 
-<div class=question>
+ออกเสียงคำว่า **What animal do you like** :
 
-ออกเสียงคำว่า **I like tennis** :
+🎙️ what animal do you like
 
-🎙️ i like tennis
+ออกเสียงคำว่า **Do you like cats** :
 
-</div>
-<div class=question>
+🎙️ do you like cats
 
-ออกเสียงคำว่า **James is my favorite actor** :
-
-🎙️ james is my favorite actor
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Who is your favorite actor** :
-
-🎙️ who is your favorite actor
-
-</div>

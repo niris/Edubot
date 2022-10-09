@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Table**
- - [ ] พรม
- - [ ] แจกัน
- - [x] โต๊ะ
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Fish tank**
+ - [ ] กรอบภาพ
+ - [x] ตู้ปลา
+ - [ ] วิทยุ
 
  เลือกคำศัพท์ที่ตรงกับ **Vase**
- - [ ] ตู้ปลา
  - [ ] วิทยุ
  - [x] แจกัน
-</div>
-<div class=question>
+ - [ ] โต๊ะ
 
- เลือกคำศัพท์ที่ตรงกับ **ตู้ปลา**
+ เลือกคำศัพท์ที่ตรงกับ **แจกัน**
+ - [ ] Radio
+ - [ ] Sofa
+ - [x] Vase
+
+ เลือกคำศัพท์ที่ตรงกับ **วิทยุ**
  - [ ] Carpet
- - [x] Fish tank
- - [ ] Television
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **พรม**
- - [x] Carpet
- - [ ] Picture frame
- - [ ] Table
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/radio.mp3) 
  - [x] Radio
  - [ ] Table
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sofa.mp3) 
+ - [x] Sofa
+ - [ ] Table
  - [ ] Television
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish&#x20;tank.mp3) 
- - [x] Fish tank
- - [ ] Picture frame
- - [ ] Sofa
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/vase.mp3) 
+ - [ ] Carpet
+ - [ ] Fish tank
+ - [x] Vase
 

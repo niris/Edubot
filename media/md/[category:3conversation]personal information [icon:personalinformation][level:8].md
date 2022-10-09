@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;tall&#x20;are&#x20;you.mp3) 
- - [x] How tall are you
- - [ ] I'm a student
- - [ ] When were you born
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;much&#x20;do&#x20;you&#x20;weigh.mp3) 
- - [x] How much do you weigh
- - [ ] I was born on february 14 2013
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;old&#x20;are&#x20;you.mp3) 
+ - [x] How old are you
  - [ ] I'm 130 centimeters tall
-</div>
+ - [ ] When were you born
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;from&#x20;China.mp3) 
- - [ ] How old are you
- - [ ] I weigh 25 kilograms
- - [x] I'm from china
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;from&#x20;Thailand.mp3) 
+ - [ ] I'm from china
+ - [x] I'm from thailand
+ - [ ] When were you born
 
-<div class=question>
 
-ออกเสียงคำว่า **I weigh 25 kilograms** :
-
-🎙️ i weigh 25 kilograms
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **I was born on february 14 2013** :
-
-🎙️ i was born on february 14 2013
-
-</div>
-<div class=question>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;weigh&#x20;25&#x20;kilograms.mp3) 
+ - [ ] How much do you weigh
+ - [x] I weigh 25 kilograms
+ - [ ] I'm from england
 
 ออกเสียงคำว่า **How much do you weigh** :
 
 🎙️ how much do you weigh
 
-</div>
+ออกเสียงคำว่า **I weigh 25 kilograms** :
+
+🎙️ i weigh 25 kilograms
+
+ออกเสียงคำว่า **I'm from england** :
+
+🎙️ i'm from england
+

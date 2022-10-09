@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/May&#x20;I&#x20;introduce&#x20;myself.mp3) 
- - [x] May i introduce myself
- - [ ] My name is jenny
- - [ ] Nice to see you
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;glad&#x20;to&#x20;meet&#x20;you.mp3) 
+ - [x] I'm glad to meet you
+ - [ ] It's good to see you
+ - [ ] This is elsa
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/This&#x20;is&#x20;Elsa.mp3) 
- - [ ] I'm glad to see you
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/It's&#x20;nice&#x20;to&#x20;meet&#x20;you.mp3) 
+ - [ ] It's good to see you
+ - [x] It's nice to meet you
  - [ ] Nice to meet you too
- - [x] This is elsa
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;glad&#x20;to&#x20;see&#x20;you.mp3) 
- - [ ] I'm glad to meet you
- - [x] I'm glad to see you
- - [ ] It's nice to meet you
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Let&#x20;me&#x20;introduce&#x20;myself.mp3) 
+ - [ ] I want to introduce my friend elsa
+ - [x] Let me introduce myself
+ - [ ] This is elsa
 
-<div class=question>
+ออกเสียงคำว่า **Nice to see you** :
+
+🎙️ nice to see you
+
+ออกเสียงคำว่า **May i introduce myself** :
+
+🎙️ may i introduce myself
 
 ออกเสียงคำว่า **I want to introduce my friend elsa** :
 
 🎙️ i want to introduce my friend elsa
 
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Let me introduce myself** :
-
-🎙️ let me introduce myself
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **I'm anna** :
-
-🎙️ i'm anna
-
-</div>

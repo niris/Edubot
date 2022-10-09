@@ -12,49 +12,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Vase.mp3) 
- - [ ] Ox
- - [ ] Six
- - [x] Vase
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Wolf.mp3) 
- - [ ] Six
- - [ ] Window
- - [x] Wolf
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Exit.mp3) 
- - [x] Exit
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Vegetable.mp3) 
  - [ ] Van
- - [ ] Vulture
-</div>
+ - [x] Vegetable
+ - [ ] Walk
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Violin.mp3) 
+ - [ ] Box
  - [x] Violin
  - [ ] Window
- - [ ] Xylophone
-</div>
 
-<div class=question>
 
-ออกเสียงคำว่า **Wolf** :
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Van.mp3) 
+ - [x] Van
+ - [ ] Vest
+ - [ ] Window
 
-🎙️ wolf
 
-</div>
-<div class=question>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Xylophone.mp3) 
+ - [ ] Water
+ - [ ] Watermelon
+ - [x] Xylophone
 
-ออกเสียงคำว่า **Exit** :
+ออกเสียงคำว่า **Xylophone** :
 
-🎙️ exit
+🎙️ xylophone
 
-</div>
+ออกเสียงคำว่า **Whale** :
+
+🎙️ whale
+

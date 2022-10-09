@@ -12,49 +12,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Taxi.mp3) 
- - [ ] Seven
- - [x] Taxi
- - [ ] University
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Soap.mp3) 
+ - [ ] Snake
+ - [x] Soap
+ - [ ] Teacher
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Tiger.mp3) 
- - [ ] Star
+ - [ ] Singer
+ - [ ] Teacher
  - [x] Tiger
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Taxi.mp3) 
+ - [ ] Singer
+ - [ ] Socks
+ - [x] Taxi
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/University.mp3) 
+ - [ ] Teacher
  - [ ] Tomato
-</div>
+ - [x] University
 
-<div class=question>
+ออกเสียงคำว่า **Socks** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Train.mp3) 
- - [ ] Star
- - [ ] Three
- - [x] Train
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Tomato.mp3) 
- - [ ] Soap
- - [x] Tomato
- - [ ] Umbrella
-</div>
-
-<div class=question>
-
-ออกเสียงคำว่า **Snake** :
-
-🎙️ snake
-
-</div>
-<div class=question>
+🎙️ socks
 
 ออกเสียงคำว่า **Train** :
 
 🎙️ train
 
-</div>

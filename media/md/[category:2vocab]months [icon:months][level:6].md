@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **August**
- - [ ] กุมภาพันธ์
- - [ ] มีนาคม
- - [x] สิงหาคม
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **November**
+ - [ ] ตุลาคม
+ - [x] พฤศจิกายน
+ - [ ] เมษายน
 
- เลือกคำศัพท์ที่ตรงกับ **December**
- - [ ] กุมภาพันธ์
- - [x] ธันวาคม
+ เลือกคำศัพท์ที่ตรงกับ **June**
  - [ ] พฤษภาคม
-</div>
-<div class=question>
+ - [x] มิถุนายน
+ - [ ] มีนาคม
 
  เลือกคำศัพท์ที่ตรงกับ **ธันวาคม**
- - [ ] August
+ - [ ] April
  - [x] December
- - [ ] July
-</div>
-<div class=question>
+ - [ ] October
 
- เลือกคำศัพท์ที่ตรงกับ **มกราคม**
- - [x] January
- - [ ] July
- - [ ] November
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/July.mp3) 
- - [ ] December
- - [ ] February
- - [x] July
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/March.mp3) 
+ เลือกคำศัพท์ที่ตรงกับ **ตุลาคม**
+ - [ ] August
  - [ ] June
- - [x] March
- - [ ] November
-</div>
+ - [x] October
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/November.mp3) 
+ - [ ] December
+ - [ ] June
+ - [x] November
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/February.mp3) 
+ - [x] February
+ - [ ] June
+ - [ ] October
 

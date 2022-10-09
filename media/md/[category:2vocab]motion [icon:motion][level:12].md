@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Throw**
- - [ ] นั่ง
- - [ ] เข้า
- - [x] โยน
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Hold**
+ - [x] ถือค้างไว้
+ - [ ] ปิด
+ - [ ] ออก
 
- เลือกคำศัพท์ที่ตรงกับ **Push**
- - [x] ผลัก
+ เลือกคำศัพท์ที่ตรงกับ **Catch**
+ - [x] จับ/คว้า
+ - [ ] ออก
  - [ ] เดิน
- - [ ] เปิด
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **โยน**
- - [ ] Pull
- - [ ] Push
- - [x] Throw
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **ออก**
- - [x] Exit
+ เลือกคำศัพท์ที่ตรงกับ **เข้า**
+ - [x] Entrance
  - [ ] Go
- - [ ] Sit
-</div>
-<div class=question>
+ - [ ] Run
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/take.mp3) 
- - [ ] Give
+ เลือกคำศัพท์ที่ตรงกับ **วิ่ง**
+ - [ ] Exit
+ - [ ] Jump
+ - [x] Run
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hold.mp3) 
+ - [x] Hold
+ - [ ] Run
  - [ ] Stand
- - [x] Take
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/give.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/stop.mp3) 
  - [ ] Close
- - [x] Give
- - [ ] Open
-</div>
+ - [ ] Give
+ - [x] Stop
 

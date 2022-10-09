@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;great.mp3) 
- - [ ] How are you
- - [ ] How are you doing
+ - [ ] I'm o.k.
  - [x] I'm great
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;are&#x20;you.mp3) 
- - [x] How are you
  - [ ] I'm very well
- - [ ] Not bad
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;very&#x20;well.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Not&#x20;bad.mp3) 
+ - [ ] I'm o.k.
+ - [ ] I'm good
+ - [x] Not bad
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;good.mp3) 
+ - [ ] How are you
  - [ ] I'm fine
- - [x] I'm very well
- - [ ] Not bad
-</div>
+ - [x] I'm good
 
-<div class=question>
+ออกเสียงคำว่า **How are you** :
 
-ออกเสียงคำว่า **Not bad** :
+🎙️ how are you
 
-🎙️ not bad
+ออกเสียงคำว่า **I'm o.k.** :
 
-</div>
-<div class=question>
+🎙️ i'm o.k.
 
-ออกเสียงคำว่า **I'm great** :
+ออกเสียงคำว่า **I'm very well** :
 
-🎙️ i'm great
+🎙️ i'm very well
 
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **How are you doing** :
-
-🎙️ how are you doing
-
-</div>

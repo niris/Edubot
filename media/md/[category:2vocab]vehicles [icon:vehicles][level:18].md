@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Shool bus**
- - [x] รถโรงเรียน
- - [ ] เครื่องบิน
+ เลือกคำศัพท์ที่ตรงกับ **Motorcycle**
+ - [x] มอเตอร์ไซค์
+ - [ ] ยานอวกาศ
  - [ ] เรือใบ
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Car**
- - [ ] จักรยาน
- - [ ] รถกระบะ
- - [x] รถยนต์
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Spaceship**
+ - [x] ยานอวกาศ
+ - [ ] รถไฟ
+ - [ ] สามล้อ
 
- เลือกคำศัพท์ที่ตรงกับ **ยานอวกาศ**
- - [x] Spaceship
- - [ ] Taxi
- - [ ] Tricycle
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **เรือใบ**
+ - [ ] Boat
+ - [x] Sail
+ - [ ] Truck
 
- เลือกคำศัพท์ที่ตรงกับ **เรือ**
- - [x] Boat
- - [ ] Car
+ เลือกคำศัพท์ที่ตรงกับ **รถไฟ**
+ - [ ] Bus
+ - [ ] Subway
+ - [x] Train
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bus.mp3) 
+ - [x] Bus
+ - [ ] Motorcycle
  - [ ] Plane
-</div>
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/plane.mp3) 
- - [ ] Car
- - [x] Plane
- - [ ] Taxi
-</div>
 
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/motorcycle.mp3) 
- - [x] Motorcycle
- - [ ] Taxi
- - [ ] Van
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/car.mp3) 
+ - [x] Car
+ - [ ] Train
+ - [ ] Tricycle
 

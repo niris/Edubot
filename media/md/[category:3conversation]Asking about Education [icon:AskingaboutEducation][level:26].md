@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;like&#x20;English.mp3) 
- - [ ] I don't like maths
- - [x] I like english
- - [ ] What is your favorite subject
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;subject&#x20;do&#x20;you&#x20;like.mp3) 
+ - [ ] I like english
+ - [ ] What subject do you dislike
+ - [x] What subject do you like
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;subject&#x20;do&#x20;you&#x20;dislike.mp3) 
+ - [ ] I like english
+ - [ ] My favorite subject is english
+ - [x] What subject do you dislike
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;don't&#x20;like&#x20;Maths.mp3) 
  - [x] I don't like maths
- - [ ] My favorite subject is english
+ - [ ] I like english
  - [ ] What is your favorite subject
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;subject&#x20;do&#x20;you&#x20;dislike.mp3) 
- - [ ] My favorite subject is english
- - [x] What subject do you dislike
- - [ ] What subject do you like
-</div>
-
-<div class=question>
-
-ออกเสียงคำว่า **What is your favorite subject** :
-
-🎙️ what is your favorite subject
-
-</div>
-<div class=question>
 
 ออกเสียงคำว่า **What subject do you like** :
 
 🎙️ what subject do you like
 
-</div>
-<div class=question>
+ออกเสียงคำว่า **What subject do you dislike** :
 
-ออกเสียงคำว่า **My favorite subject is english** :
+🎙️ what subject do you dislike
 
-🎙️ my favorite subject is english
+ออกเสียงคำว่า **I don't like maths** :
 
-</div>
+🎙️ i don't like maths
+

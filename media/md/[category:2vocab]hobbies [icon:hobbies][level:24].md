@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
  เลือกคำศัพท์ที่ตรงกับ **Gardening**
- - [ ] ถักไหมพรม
+ - [ ] ถ่ายภาพ
  - [x] ทําสวน
  - [ ] วาดภาพ
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Cooking**
- - [ ] ดูหนัง
- - [ ] ถ่ายภาพ
- - [x] ทําอาหาร
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Playing with pet**
+ - [ ] ทําอาหาร
+ - [x] เล่นกับสัตว์เลี้ยง
+ - [ ] เล่นกีฬา
 
- เลือกคำศัพท์ที่ตรงกับ **เล่นกับสัตว์เลี้ยง**
- - [ ] Listening to music
- - [x] Playing with pet
- - [ ] Taking photos
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **วาดภาพ**
+ เลือกคำศัพท์ที่ตรงกับ **ดูทีวี**
  - [ ] Cooking
- - [x] Drawing
- - [ ] Watching tv
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cooking.mp3) 
- - [x] Cooking
- - [ ] Drawing
- - [ ] Surfing the internet
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/knitting.mp3) 
- - [x] Knitting
- - [ ] Painting
  - [ ] Singing
-</div>
+ - [x] Watching tv
+
+ เลือกคำศัพท์ที่ตรงกับ **ดูหนัง**
+ - [ ] Listening to music
+ - [ ] Playing with pet
+ - [x] Seeing a movie
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/taking&#x20;photos.mp3) 
+ - [ ] Gardening
+ - [x] Taking photos
+ - [ ] Watching tv
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/listening&#x20;to&#x20;music.mp3) 
+ - [ ] Knitting
+ - [x] Listening to music
+ - [ ] Reading
 

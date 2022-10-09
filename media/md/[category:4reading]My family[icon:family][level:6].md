@@ -3,8 +3,10 @@
 
 > My name is Lilly. I'am 8 years old.  
 > There are 5 people in my family.  
-> My father's name is Peter. He is a teacher. He is 45 years old.  
-> My mother's name is Anna. She is a nurse. She is 42 years old.  
+> My father's name is Peter.  
+> He is a teacher. He is 45 years old.  
+> My mother's name is Anna.  
+> She is a nurse. She is 42 years old.  
 > I have 1 brother and 1 sister.  
 > My brother's name is  Tom. She is 5 years old.  
 > My sister's name is Jenny. She is 10 years old.  
@@ -30,10 +32,6 @@ I have __ brother and 1 sister.
  - [ ] 2
  - [ ] 3 
 
-My brother is ___ years old.
- - [x] 5
- - [ ] 8
- - [ ] 10 
 
 <div class="title">True or False</div><div class="desc">ถูก หรือ ผิด</div>  
 <br>
@@ -41,10 +39,6 @@ My brother is ___ years old.
 My father is a doctor.
  - [ ] True
  - [x] False
-
-My mother is a nurse.
- - [x] True
- - [ ] False
 
 My brother's name is Peter.
  - [ ] True

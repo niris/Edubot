@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Belt**
- - [ ] รองเท้า
+ เลือกคำศัพท์ที่ตรงกับ **Evening dress**
+ - [ ] กระโปรง
+ - [x] ชุดราตรี
  - [ ] รองเท้าแตะ
- - [x] เข็มขัด
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Bathrobe**
- - [ ] ชุดว่ายน้ํา
- - [ ] ถุงเท้า
- - [x] เสื้อคลุมอาบน้ํา
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Shoes**
+ - [ ] ชุดนอน
+ - [x] รองเท้า
+ - [ ] รองเท้าบูท
 
- เลือกคำศัพท์ที่ตรงกับ **สูท**
- - [ ] Pyjamas
+ เลือกคำศัพท์ที่ตรงกับ **กางเกงขาสั้น**
  - [ ] Shoes
- - [x] Suit
-</div>
-<div class=question>
+ - [x] Shorts
+ - [ ] Slippers
 
- เลือกคำศัพท์ที่ตรงกับ **ถุงเท้า**
+ เลือกคำศัพท์ที่ตรงกับ **รองเท้า**
+ - [ ] Jean
+ - [x] Shoes
+ - [ ] Underwear
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/underwear.mp3) 
+ - [ ] Boots
+ - [ ] Swim suit
+ - [x] Underwear
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/suit.mp3) 
  - [ ] Pyjamas
- - [ ] Raincoat
- - [x] Socks
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/evening&#x20;dress.mp3) 
- - [ ] Boots
- - [x] Evening dress
  - [ ] Socks
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/swim&#x20;suit.mp3) 
- - [ ] Boots
- - [ ] Shorts
- - [x] Swim suit
-</div>
+ - [x] Suit
 

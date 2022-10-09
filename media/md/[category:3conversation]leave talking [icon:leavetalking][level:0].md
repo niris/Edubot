@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Good&#x20;luck.mp3) 
- - [x] Good luck
- - [ ] See you again
- - [ ] See you later
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Have&#x20;a&#x20;nice&#x20;weekend.mp3) 
- - [ ] Good night
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Bye.mp3) 
+ - [x] Bye
  - [ ] Goodbye
- - [x] Have a nice weekend
-</div>
+ - [ ] See you again
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Have&#x20;a&#x20;nice&#x20;day.mp3) 
- - [ ] Bye
- - [ ] Good night
  - [x] Have a nice day
-</div>
+ - [ ] Have a nice weekend
+ - [ ] See you again tomorrow
 
-<div class=question>
 
-ออกเสียงคำว่า **Bye** :
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/See&#x20;you&#x20;later.mp3) 
+ - [ ] See you again
+ - [ ] See you again tomorrow
+ - [x] See you later
 
-🎙️ bye
+ออกเสียงคำว่า **Have a nice weekend** :
 
-</div>
-<div class=question>
+🎙️ have a nice weekend
 
-ออกเสียงคำว่า **See you again** :
+ออกเสียงคำว่า **Goodbye** :
 
-🎙️ see you again
+🎙️ goodbye
 
-</div>
-<div class=question>
+ออกเสียงคำว่า **Good night** :
 
-ออกเสียงคำว่า **See you again tomorrow** :
+🎙️ good night
 
-🎙️ see you again tomorrow
-
-</div>

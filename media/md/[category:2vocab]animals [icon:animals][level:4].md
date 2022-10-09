@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Turkey**
- - [ ] นกอินทรี
- - [ ] ม้า
- - [x] ไก่งวง
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Sheep**
+ - [ ] นกฮูก
+ - [ ] ปลาทอง
+ - [x] แกะ
 
- เลือกคำศัพท์ที่ตรงกับ **Butterfly**
- - [ ] นกยูง
- - [ ] ปลาดาว
- - [x] ผีเสื้อ
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Starfish**
+ - [x] ปลาดาว
+ - [ ] หอย
+ - [ ] แมลงปอ
 
- เลือกคำศัพท์ที่ตรงกับ **ไก่งวง**
+ เลือกคำศัพท์ที่ตรงกับ **วัว**
+ - [x] Cow
+ - [ ] Goldfish
+ - [ ] Sheep
+
+ เลือกคำศัพท์ที่ตรงกับ **แมว**
+ - [x] Cat
+ - [ ] Chicken
+ - [ ] Starfish
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/buffalo.mp3) 
+ - [x] Buffalo
  - [ ] Eagle
- - [ ] Mouse
- - [x] Turkey
-</div>
-<div class=question>
+ - [ ] Horse
 
- เลือกคำศัพท์ที่ตรงกับ **ปลาดาว**
- - [ ] Cat
- - [ ] Shellfish
- - [x] Starfish
-</div>
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish.mp3) 
- - [x] Fish
- - [ ] Turkey
- - [ ] Vulture
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sheep.mp3) 
- - [ ] Bee
- - [ ] Crab
- - [x] Sheep
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dog.mp3) 
+ - [x] Dog
+ - [ ] Dragonfly
+ - [ ] Duck
 

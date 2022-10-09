@@ -12,49 +12,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zucchini.mp3) 
- - [ ] Yogurt
- - [ ] Zero
- - [x] Zucchini
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zero.mp3) 
- - [ ] Yolk
- - [x] Zero
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zip.mp3) 
+ - [ ] Yoyo
+ - [x] Zip
  - [ ] Zoo
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zoo.mp3) 
- - [ ] Yacht
- - [ ] Yellow
- - [x] Zoo
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Yogurt.mp3) 
+ - [x] Yogurt
+ - [ ] Yolk
+ - [ ] Zero
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Yellow.mp3) 
+ - [ ] Yacht
  - [x] Yellow
- - [ ] Yogurt
- - [ ] Yoyo
-</div>
+ - [ ] Zoo
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zebra.mp3) 
+ - [ ] Yolk
+ - [ ] Yoyo
+ - [x] Zebra
 
 ออกเสียงคำว่า **Zucchini** :
 
 🎙️ zucchini
 
-</div>
-<div class=question>
+ออกเสียงคำว่า **Zoo** :
 
-ออกเสียงคำว่า **Yogurt** :
+🎙️ zoo
 
-🎙️ yogurt
-
-</div>

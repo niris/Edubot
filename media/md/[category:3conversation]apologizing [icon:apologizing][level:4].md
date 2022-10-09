@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;beg&#x20;your&#x20;pardon.mp3) 
- - [ ] Excuse me please
- - [x] I beg your pardon
- - [ ] I'm sorry i'm late
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Don't&#x20;mention&#x20;it.mp3) 
- - [x] Don't mention it
- - [ ] Pardon
- - [ ] That's all right
-</div>
-
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pardon.mp3) 
+ - [ ] Don't mention it
  - [ ] I'm sorry i'm late
  - [x] Pardon
- - [ ] That's all right
-</div>
 
-<div class=question>
 
-ออกเสียงคำว่า **That's all right** :
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/That's&#x20;all&#x20;right.mp3) 
+ - [ ] Don't worry
+ - [ ] Excuse me please
+ - [x] That's all right
 
-🎙️ that's all right
 
-</div>
-<div class=question>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;sorry&#x20;I'm&#x20;late.mp3) 
+ - [ ] Don't mention it
+ - [ ] Excuse me please
+ - [x] I'm sorry i'm late
 
-ออกเสียงคำว่า **Forgive me** :
+ออกเสียงคำว่า **I'm sorry** :
 
-🎙️ forgive me
+🎙️ i'm sorry
 
-</div>
-<div class=question>
+ออกเสียงคำว่า **Excuse me for interrupting** :
+
+🎙️ excuse me for interrupting
 
 ออกเสียงคำว่า **I'm sorry i'm late** :
 
 🎙️ i'm sorry i'm late
 
-</div>

@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Musician**
- - [ ] ทหาร
- - [x] นักดนตรี
- - [ ] พนักงานต้อนรับบนเครื่องบินผู้ชาย (สจ๊วต)
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Taxi driver**
+ - [x] คนขับแท็กซี่
+ - [ ] นักบินอวกาศ
+ - [ ] เกษตรกร
 
- เลือกคำศัพท์ที่ตรงกับ **Singer**
- - [x] นักร้อง
- - [ ] ผู้พิพากษา
- - [ ] ผู้รับเหมาก่อสร้าง
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Bus driver**
+ - [x] คนขับรถบัส
+ - [ ] ตํารวจ
+ - [ ] เลขานุการ
 
- เลือกคำศัพท์ที่ตรงกับ **ช่างภาพ**
- - [x] Photographer
- - [ ] Singer
- - [ ] Waiter
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **ศิลปิน**
- - [x] Artist
- - [ ] Doctor
- - [ ] Teacher
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dancer.mp3) 
- - [ ] Cashier
- - [x] Dancer
- - [ ] Farmer
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/programmer.mp3) 
- - [ ] Pilot
+ เลือกคำศัพท์ที่ตรงกับ **โปรแกรมเมอร์**
+ - [ ] Astronaut
+ - [ ] Dancer
  - [x] Programmer
- - [ ] Steward
-</div>
+
+ เลือกคำศัพท์ที่ตรงกับ **นักแสดงชาย**
+ - [x] Actor
+ - [ ] Nurse
+ - [ ] Postman
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/carpenter.mp3) 
+ - [x] Carpenter
+ - [ ] Farmer
+ - [ ] Policeman
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/seller.mp3) 
+ - [x] Seller
+ - [ ] Taxi driver
+ - [ ] Waiter
 

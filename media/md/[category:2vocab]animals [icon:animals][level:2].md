@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Crab**
- - [ ] นกแก้ว
- - [ ] ปลาดาว
- - [x] ปู
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Shellfish**
+ - [ ] ปลาทอง
+ - [ ] ปู
+ - [x] หอย
 
- เลือกคำศัพท์ที่ตรงกับ **Mouse**
- - [ ] นกฮูก
- - [ ] นกแก้ว
- - [x] หนู
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Dog**
+ - [ ] ปลา
+ - [ ] ปู
+ - [x] หมา
 
- เลือกคำศัพท์ที่ตรงกับ **ไก่งวง**
- - [ ] Bird
- - [ ] Dog
- - [x] Turkey
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **กระต่าย**
- - [ ] Chicken
- - [ ] Ostrich
- - [x] Rabbit
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cow.mp3) 
+ เลือกคำศัพท์ที่ตรงกับ **วัว**
  - [x] Cow
+ - [ ] Turkey
+ - [ ] Vulture
+
+ เลือกคำศัพท์ที่ตรงกับ **ปู**
+ - [x] Crab
+ - [ ] Dog
+ - [ ] Shellfish
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bat.mp3) 
+ - [x] Bat
  - [ ] Rabbit
- - [ ] Turkey
-</div>
+ - [ ] Shrimp
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bee.mp3) 
- - [x] Bee
- - [ ] Owl
- - [ ] Turkey
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mouse.mp3) 
+ - [x] Mouse
+ - [ ] Ostrich
+ - [ ] Sheep
 

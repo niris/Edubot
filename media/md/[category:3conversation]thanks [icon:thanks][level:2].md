@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Don't&#x20;mention&#x20;it.mp3) 
- - [x] Don't mention it
- - [ ] Thank you very much
- - [ ] That's all right
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you&#x20;very&#x20;much.mp3) 
+ - [ ] Don't mention it
+ - [ ] Thank you
+ - [x] Thank you very much
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thanks&#x20;a&#x20;lot.mp3) 
- - [ ] Thanks
- - [x] Thanks a lot
- - [ ] You're welcome
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thanks.mp3) 
+ - [x] Thanks
+ - [ ] That's ok
+ - [ ] With pleasure
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you.mp3) 
  - [x] Thank you
- - [ ] Thank you very much
+ - [ ] Thanks a lot
  - [ ] That's ok
-</div>
 
-<div class=question>
+ออกเสียงคำว่า **Don't mention it** :
 
-ออกเสียงคำว่า **That's all right** :
-
-🎙️ that's all right
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Thank you for your help** :
-
-🎙️ thank you for your help
-
-</div>
-<div class=question>
+🎙️ don't mention it
 
 ออกเสียงคำว่า **Thank you very much** :
 
 🎙️ thank you very much
 
-</div>
+ออกเสียงคำว่า **Thanks** :
+
+🎙️ thanks
+

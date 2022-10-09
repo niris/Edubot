@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Bored**
- - [ ] ผอม
- - [ ] อ้วน
- - [x] เบื่อ
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Old**
+ - [ ] หิว
+ - [ ] เงียบ
+ - [x] แก่ชรา
 
  เลือกคำศัพท์ที่ตรงกับ **Excited**
  - [x] ตื่นเต้น
- - [ ] สุขภาพดี
- - [ ] อ้วน
-</div>
-<div class=question>
+ - [ ] เบื่อ
+ - [ ] แย่/เลว
 
- เลือกคำศัพท์ที่ตรงกับ **อ้วน**
- - [ ] Bored
- - [x] Fat
- - [ ] Sick
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **ตื่นเต้น**
- - [x] Excited
- - [ ] Full
- - [ ] Hungry
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/healthy.mp3) 
- - [x] Healthy
- - [ ] Old
+ เลือกคำศัพท์ที่ตรงกับ **ผอม**
  - [ ] Sad
-</div>
+ - [ ] Tall
+ - [x] Thin
 
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **สุขภาพดี**
+ - [ ] Excited
+ - [x] Healthy
+ - [ ] Tall
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/angry.mp3) 
- - [x] Angry
- - [ ] Bad
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/full.mp3) 
+ - [x] Full
  - [ ] Good
-</div>
+ - [ ] Quiet
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bored.mp3) 
+ - [ ] Bad
+ - [x] Bored
+ - [ ] Fat
 

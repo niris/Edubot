@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/good&#x20;afternoon.mp3) 
- - [x] Good afternoon
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/good&#x20;morning.mp3) 
  - [ ] Good evening
- - [ ] Good morning
-</div>
+ - [x] Good morning
+ - [ ] Hello
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/good&#x20;evening.mp3) 
  - [x] Good evening
- - [ ] Good morning
+ - [ ] Hello
  - [ ] Hi
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hello.mp3) 
- - [ ] Good morning
- - [x] Hello
- - [ ] Hi
-</div>
-
-<div class=question>
-
-ออกเสียงคำว่า **Hello** :
-
-🎙️ hello
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Hi** :
-
-🎙️ hi
-
-</div>
-<div class=question>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hi.mp3) 
+ - [ ] Good afternoon
+ - [ ] Hello
+ - [x] Hi
 
 ออกเสียงคำว่า **Good morning** :
 
 🎙️ good morning
 
-</div>
+ออกเสียงคำว่า **Hello** :
+
+🎙️ hello
+
+ออกเสียงคำว่า **Good afternoon** :
+
+🎙️ good afternoon
+

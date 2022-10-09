@@ -83,14 +83,12 @@ for filename in os.listdir("csv/_togenerate/vocab"):
                 choices_tmp.pop(choice_index)
 
             choices_list.sort()
-            newfile.write("<div class=question>\n")
             newfile.write('\n เลือกคำศัพท์ที่ตรงกับ **' + questions_tmp[answer_index].capitalize() + '**\n')
             for c in choices_list:
                 if c[1]==True:
                     newfile.write(' - [x] ' + c[0].capitalize() + '\n')
                 else:
                     newfile.write(' - [ ] ' + c[0].capitalize() + '\n')
-            newfile.write("</div>\n")
             questions_tmp.pop(answer_index)
             choicess_tmp.pop(answer_index)
     
@@ -110,14 +108,12 @@ for filename in os.listdir("csv/_togenerate/vocab"):
 
             choices_list.sort()                
             desc = "เลือกคำศัพท์ตรงกับเสียง" if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์"
-            newfile.write("<div class=question>\n")
             newfile.write('\n' + desc + ' '+ (audio_tmp[answer_index] if inverse == False else audio_tmp[answer_index].capitalize()) + ' \n')
             for c in choices_list:
                 if c[1]==True:
                     newfile.write(' - [x] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
                 else:
                     newfile.write(' - [ ] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n') 
-            newfile.write("</div>\n")
             newfile.write('\n')
             vocabs_tmp.pop(answer_index)
             audio_tmp.pop(answer_index)
@@ -126,10 +122,8 @@ for filename in os.listdir("csv/_togenerate/vocab"):
         vocab_tmp = vocab.copy()
         for r in range(number):
             answer_index = random.choice(range(len(vocab_tmp)))
-            newfile.write("<div class=question>\n\n")
             newfile.write("ออกเสียงคำว่า **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
             newfile.write("🎙️ "+ vocab_tmp[answer_index].lower() +"\n\n")
-            newfile.write("</div>\n")
             vocab_tmp.pop(answer_index)
 
 

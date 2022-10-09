@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Have&#x20;a&#x20;good&#x20;trip.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Happy&#x20;easter&#x20;day.mp3) 
+ - [ ] Best wishes for happy new year
+ - [x] Happy easter day
+ - [ ] Have a nice day
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Happy&#x20;new&#x20;year.mp3) 
  - [ ] Happy birthday
- - [ ] Happy new year
- - [x] Have a good trip
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Best&#x20;wishes&#x20;for&#x20;happy&#x20;new&#x20;year.mp3) 
- - [x] Best wishes for happy new year
- - [ ] Happy easter day
+ - [x] Happy new year
  - [ ] Merry christmas
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Merry&#x20;Christmas.mp3) 
- - [ ] Happy new year
- - [ ] May god bless you
- - [x] Merry christmas
-</div>
-
-<div class=question>
-
-ออกเสียงคำว่า **Happy new year** :
-
-🎙️ happy new year
-
-</div>
-<div class=question>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/May&#x20;god&#x20;bless&#x20;you.mp3) 
+ - [ ] Best wishes for happy new year
+ - [ ] Get well soon
+ - [x] May god bless you
 
 ออกเสียงคำว่า **Have a nice day** :
 
 🎙️ have a nice day
 
-</div>
-<div class=question>
+ออกเสียงคำว่า **Happy birthday** :
+
+🎙️ happy birthday
 
 ออกเสียงคำว่า **Get well soon** :
 
 🎙️ get well soon
 
-</div>

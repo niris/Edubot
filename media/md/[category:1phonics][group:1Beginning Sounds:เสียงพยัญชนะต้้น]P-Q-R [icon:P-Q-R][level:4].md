@@ -12,49 +12,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Rainbow.mp3) 
+ - [ ] Pumpkin
+ - [ ] Queue
+ - [x] Rainbow
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pumpkin.mp3) 
- - [ ] Papaya
  - [x] Pumpkin
- - [ ] Question
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Rabbit.mp3) 
- - [ ] Pig
- - [x] Rabbit
  - [ ] Rain
-</div>
+ - [ ] Ruler
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Queen.mp3) 
- - [x] Queen
- - [ ] Question
- - [ ] Rainbow
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pig.mp3) 
+ - [x] Pig
+ - [ ] Quarter
+ - [ ] Quill
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Quill.mp3) 
- - [ ] Pig
+ - [ ] Queue
  - [x] Quill
- - [ ] Rubber
-</div>
+ - [ ] Rabbit
 
-<div class=question>
+ออกเสียงคำว่า **Pizza** :
 
-ออกเสียงคำว่า **Rabbit** :
+🎙️ pizza
 
-🎙️ rabbit
+ออกเสียงคำว่า **Ruler** :
 
-</div>
-<div class=question>
+🎙️ ruler
 
-ออกเสียงคำว่า **Penguin** :
-
-🎙️ penguin
-
-</div>

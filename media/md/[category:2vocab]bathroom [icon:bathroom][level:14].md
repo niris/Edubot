@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Basin**
- - [ ] ยาสีฟัน
- - [x] อ่างน้ํา
+ เลือกคำศัพท์ที่ตรงกับ **Soap**
+ - [x] สบู่
+ - [ ] อ่างน้ํา
  - [ ] แปรงสีฟัน
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Faucet**
- - [x] ก๊อกน้ํา
- - [ ] สบู่
+ เลือกคำศัพท์ที่ตรงกับ **Shower**
+ - [ ] ครีมนวดผม
+ - [x] ฝักบัวอาบน้ำ
  - [ ] แปรงสีฟัน
-</div>
-<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **ผ้าเช็ดตัว**
+ - [ ] Soap
+ - [ ] Toothpaste
+ - [x] Towel
 
  เลือกคำศัพท์ที่ตรงกับ **ฝักบัวอาบน้ำ**
+ - [ ] Faucet
  - [ ] Hair conditioner
  - [x] Shower
- - [ ] Toilet paper
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **กระดาษชําระ**
- - [x] Toilet paper
- - [ ] Toothpaste
- - [ ] Towel
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hair&#x20;conditioner.mp3) 
- - [x] Hair conditioner
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/toilet.mp3) 
+ - [ ] Basin
  - [ ] Shower
+ - [x] Toilet
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/basin.mp3) 
+ - [x] Basin
+ - [ ] Shampoo
  - [ ] Toothpaste
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/towel.mp3) 
- - [ ] Faucet
- - [ ] Shower
- - [x] Towel
-</div>
 

@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Toothpick**
+ เลือกคำศัพท์ที่ตรงกับ **Pepper**
+ - [ ] ซอสพริก
  - [ ] ตะเกียบ
- - [ ] เกลือ
- - [x] ไม้จิ้มฟัน
-</div>
-<div class=question>
+ - [x] พริกไทย
 
- เลือกคำศัพท์ที่ตรงกับ **Chopsticks**
- - [x] ตะเกียบ
+ เลือกคำศัพท์ที่ตรงกับ **Tomato sauce**
+ - [x] ซอสมะเขือเทศ
+ - [ ] น้ำปลา
  - [ ] ผ้าเช็ดปาก
- - [ ] เกลือ
-</div>
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **ซอสพริก**
- - [x] Chili sauce
- - [ ] Chopsticks
+ เลือกคำศัพท์ที่ตรงกับ **ไม้จิ้มฟัน**
+ - [ ] Chili sauce
  - [ ] Tomato sauce
-</div>
-<div class=question>
+ - [x] Toothpick
 
- เลือกคำศัพท์ที่ตรงกับ **ซอสมะเขือเทศ**
- - [ ] Fish sauce
- - [ ] Salt
- - [x] Tomato sauce
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **ตะเกียบ**
+ - [ ] Chili sauce
+ - [x] Chopsticks
+ - [ ] Menu
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/menu.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pepper.mp3) 
+ - [ ] Chili sauce
  - [ ] Chopsticks
- - [x] Menu
- - [ ] Pepper
-</div>
+ - [x] Pepper
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/napkin.mp3) 
- - [ ] Fish sauce
- - [x] Napkin
- - [ ] Salt
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish&#x20;sauce.mp3) 
+ - [x] Fish sauce
+ - [ ] Menu
+ - [ ] Toothpick
 

@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Glue stick**
- - [x] กาวแท่ง
- - [ ] ดินสอสี
- - [ ] ปากกาเน้นข้อความ
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Drawing book**
+ - [ ] ปากกา
+ - [x] สมุดวาดภาพ
+ - [ ] หนังสือเรียน
 
- เลือกคำศัพท์ที่ตรงกับ **Notebook**
- - [ ] ของเหลวแก้คําผิด
- - [x] สมุดบันทึก
- - [ ] ไม้บรรทัด
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Stapler**
+ - [ ] กาวแท่ง
+ - [ ] หนังสือเรียน
+ - [x] เครื่องเย็บกระดาษ
 
- เลือกคำศัพท์ที่ตรงกับ **ไม้บรรทัด**
- - [ ] Correcting fluid
- - [ ] Pen
- - [x] Ruler
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **กบเหลาดินสอ**
+ - [ ] Highlighter
+ - [ ] Pencil
+ - [x] Sharpener
 
- เลือกคำศัพท์ที่ตรงกับ **กรรไกร**
- - [ ] Crayon
- - [ ] Dictionary
- - [x] Scissors
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/drawing&#x20;book.mp3) 
- - [x] Drawing book
- - [ ] Ruler
- - [ ] Workbook
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/correcting&#x20;fluid.mp3) 
- - [ ] Calculator
- - [x] Correcting fluid
+ เลือกคำศัพท์ที่ตรงกับ **หนังสือเรียน**
  - [ ] Glue stick
-</div>
+ - [ ] Ruler
+ - [x] Textbook
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/textbook.mp3) 
+ - [ ] Cutter
+ - [ ] Notebook
+ - [x] Textbook
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/stapler.mp3) 
+ - [ ] Dictionary
+ - [ ] Ruler
+ - [x] Stapler
 

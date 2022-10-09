@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;year&#x20;is&#x20;this.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/The&#x20;next&#x20;year&#x20;is&#x20;2023.mp3) 
+ - [x] The next year is 2023
  - [ ] This month is may
  - [ ] What month is this month
- - [x] What year is this
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/The&#x20;last&#x20;month&#x20;was&#x20;April.mp3) 
- - [x] The last month was april
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/This&#x20;month&#x20;is&#x20;May.mp3) 
+ - [x] This month is may
  - [ ] What month is the next month
- - [ ] What month was the last month
-</div>
+ - [ ] What year is this
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/The&#x20;last&#x20;year&#x20;was&#x20;2021.mp3) 
- - [x] The last year was 2021
- - [ ] What year is the next year
- - [ ] What year was the last year
-</div>
-
-<div class=question>
-
-ออกเสียงคำว่า **What year is this** :
-
-🎙️ what year is this
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **What year is the next year** :
-
-🎙️ what year is the next year
-
-</div>
-<div class=question>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;month&#x20;is&#x20;this&#x20;month.mp3) 
+ - [ ] What month is the next month
+ - [x] What month is this month
+ - [ ] What year is this
 
 ออกเสียงคำว่า **The next month is june** :
 
 🎙️ the next month is june
 
-</div>
+ออกเสียงคำว่า **What year is the next year** :
+
+🎙️ what year is the next year
+
+ออกเสียงคำว่า **What year is this** :
+
+🎙️ what year is this
+

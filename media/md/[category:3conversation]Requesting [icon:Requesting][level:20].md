@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;sorry&#x20;I'm&#x20;afraid&#x20;I&#x20;can't.mp3) 
- - [ ] I'm really sorry
- - [x] I'm sorry i'm afraid i can't
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Can&#x20;you&#x20;help&#x20;me.mp3) 
+ - [x] Can you help me
+ - [ ] I'm afraid not
  - [ ] Would you mind opening the window for me
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/May&#x20;I&#x20;borrow&#x20;your&#x20;ruler.mp3) 
- - [ ] Can you help me
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Would&#x20;you&#x20;please&#x20;help&#x20;me&#x20;carry&#x20;this&#x20;book.mp3) 
+ - [ ] Can you give me that pencil
+ - [ ] I'm sorry i'm afraid i can't
+ - [x] Would you please help me carry this book
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Would&#x20;you&#x20;mind&#x20;opening&#x20;the&#x20;window&#x20;for&#x20;me.mp3) 
+ - [ ] All right
  - [ ] Certainly
- - [x] May i borrow your ruler
-</div>
+ - [x] Would you mind opening the window for me
 
-<div class=question>
+ออกเสียงคำว่า **Would you please help me carry this book** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/All&#x20;right.mp3) 
- - [x] All right
- - [ ] Can you help me
- - [ ] I'm really sorry
-</div>
+🎙️ would you please help me carry this book
 
-<div class=question>
+ออกเสียงคำว่า **Of course** :
 
-ออกเสียงคำว่า **May i borrow your ruler** :
-
-🎙️ may i borrow your ruler
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **I'm really sorry** :
-
-🎙️ i'm really sorry
-
-</div>
-<div class=question>
+🎙️ of course
 
 ออกเสียงคำว่า **No problem** :
 
 🎙️ no problem
 
-</div>

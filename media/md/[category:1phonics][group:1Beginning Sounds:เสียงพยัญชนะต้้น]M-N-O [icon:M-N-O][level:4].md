@@ -12,49 +12,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Ostrich.mp3) 
- - [ ] Neck
- - [x] Ostrich
- - [ ] Mouse
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Neck.mp3) 
- - [x] Neck
- - [ ] Owl
- - [ ] Mushroom
-</div>
-
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Owl.mp3) 
- - [ ] Oval
  - [x] Owl
- - [ ] Mushroom
-</div>
+ - [ ] Moon
+ - [ ] Mother
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mother.mp3) 
- - [ ] Moon
+ - [ ] Octopus
+ - [ ] Ostrich
  - [x] Mother
- - [ ] Mushroom
-</div>
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Nine.mp3) 
+ - [x] Nine
+ - [ ] Ostrich
+ - [ ] Moon
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mouse.mp3) 
+ - [ ] Noodles
+ - [x] Mouse
+ - [ ] Mushroom
+
+ออกเสียงคำว่า **Night** :
+
+🎙️ night
 
 ออกเสียงคำว่า **Mouse** :
 
 🎙️ mouse
 
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Moon** :
-
-🎙️ moon
-
-</div>

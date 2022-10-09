@@ -78,7 +78,7 @@ def questionGenerator(questions,choices,number,file):
             choices_list.append((choices_tmp[choice_index],False))
             choices_tmp.pop(choice_index)
         choices_list.sort()
-        file.write('\n เลือกคำศัพท์ที่ตรงกับ **' + questions_tmp[answer_index].capitalize() + '**\n')
+        file.write('\n เลือกคำศัพท์ที่ตรงกับ  **' + questions_tmp[answer_index].capitalize() + '**\n')
         for c in choices_list:
             if c[1]==True:
                 file.write(' - [x] ' + c[0].capitalize() + '\n')
@@ -101,7 +101,7 @@ def listening(vocab,audio,number,inverse,file):
             choices_list.append((choices_tmp[choice_index],False))
             choices_tmp.pop(choice_index)
         choices_list.sort()                
-        desc = "เลือกคำศัพท์ตรงกับเสียง" if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์"
+        desc = "เลือกคำศัพท์ตรงกับเสียง " if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์ "
         file.write('\n' + desc + ' '+ (audio_tmp[answer_index] if inverse == False else audio_tmp[answer_index].capitalize()) + ' \n')
         for c in choices_list:
             if c[1]==True:
@@ -116,7 +116,7 @@ def pronunc(vocab,number,file):
     vocab_tmp = vocab.copy()
     for r in range(number):
         answer_index = random.choice(range(len(vocab_tmp)))
-        file.write("ออกเสียงคำว่า **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
+        file.write("ออกเสียงคำว่า  **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
         file.write("🎙️ "+ vocab_tmp[answer_index].lower() +"\n\n")
         vocab_tmp.pop(answer_index)
 for i in range(0,26,2):

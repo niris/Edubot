@@ -12,49 +12,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/elbow.mp3) 
+ - [ ] Duck
+ - [ ] Eggplant
+ - [x] Elbow
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish.mp3) 
- - [ ] Egg
+ - [ ] Doctor
  - [ ] Exercise
  - [x] Fish
-</div>
 
-<div class=question>
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dish.mp3) 
- - [ ] Desk
- - [x] Dish
- - [ ] Football
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/farmer.mp3) 
+ - [ ] Doctor
+ - [ ] Donkey
+ - [x] Farmer
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/eggplant.mp3) 
- - [ ] Donkey
+ - [ ] Dish
+ - [ ] Dog
  - [x] Eggplant
- - [ ] Elbow
-</div>
 
-<div class=question>
+ออกเสียงคำว่า **Donkey** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dog.mp3) 
- - [x] Dog
- - [ ] Duck
- - [ ] Fork
-</div>
+🎙️ donkey
 
-<div class=question>
+ออกเสียงคำว่า **Doctor** :
 
-ออกเสียงคำว่า **Envelope** :
+🎙️ doctor
 
-🎙️ envelope
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Elephant** :
-
-🎙️ elephant
-
-</div>

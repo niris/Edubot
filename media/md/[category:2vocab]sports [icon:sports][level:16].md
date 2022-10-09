@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
 
- เลือกคำศัพท์ที่ตรงกับ **Hiking**
- - [ ] บาสเก็ตบอล
- - [ ] ปิงปอง
- - [x] ปีนเขา
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Exercise**
+ - [ ] คาราเต้
+ - [x] ออกกําลังกาย
+ - [ ] แข่งเรือใบ
 
- เลือกคำศัพท์ที่ตรงกับ **Karate**
- - [x] คาราเต้
- - [ ] ยูโด
- - [ ] วิ่งออกกําลังกาย
-</div>
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **Yoga**
+ - [ ] ปีนเขา
+ - [ ] ฮอกกี้
+ - [x] โยคะ
 
- เลือกคำศัพท์ที่ตรงกับ **รักบี้**
- - [x] Rugby
- - [ ] Tennis
- - [ ] Volleyball
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **ยูโด**
- - [ ] Gymnastics
- - [x] Judo
- - [ ] Sailing
-</div>
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/soccer.mp3) 
- - [ ] Golf
+ เลือกคำศัพท์ที่ตรงกับ **ปิงปอง**
  - [ ] Karate
- - [x] Soccer
-</div>
+ - [ ] Soccer
+ - [x] Table tennis
 
-<div class=question>
+ เลือกคำศัพท์ที่ตรงกับ **ฮอกกี้**
+ - [x] Hockey
+ - [ ] Jogging
+ - [ ] Judo
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/judo.mp3) 
- - [ ] Basketball
- - [x] Judo
- - [ ] Rugby
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hiking.mp3) 
+ - [ ] Exercise
+ - [x] Hiking
+ - [ ] Skiing
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hockey.mp3) 
+ - [ ] Exercise
+ - [x] Hockey
+ - [ ] Sailing
 

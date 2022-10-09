@@ -13,47 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
+
+ เลือกคำศัพท์ที่ตรงกับ **Read**
+ - [ ] ทำอาหาร
+ - [x] อ่าน
+ - [ ] เล่น
 
  เลือกคำศัพท์ที่ตรงกับ **Cook**
  - [x] ทำอาหาร
- - [ ] นอน
- - [ ] พูด
-</div>
-<div class=question>
-
- เลือกคำศัพท์ที่ตรงกับ **Clean**
- - [x] ทำความสะอาด
- - [ ] พูด
  - [ ] ว่ายน้ํา
-</div>
-<div class=question>
+ - [ ] เรียน
 
  เลือกคำศัพท์ที่ตรงกับ **อ่าน**
+ - [ ] Clean
  - [x] Read
- - [ ] Study
- - [ ] Write
-</div>
-<div class=question>
+ - [ ] Sleep
 
  เลือกคำศัพท์ที่ตรงกับ **พูด**
- - [ ] Sing
+ - [ ] Cook
  - [x] Speak
- - [ ] Wash
-</div>
-<div class=question>
+ - [ ] Wake up
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/swim.mp3) 
- - [ ] Study
- - [x] Swim
- - [ ] Wash
-</div>
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/listen.mp3) 
+ - [ ] Cook
+ - [x] Listen
+ - [ ] Swim
 
-<div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sleep.mp3) 
+ - [ ] Read
  - [x] Sleep
  - [ ] Wash
- - [ ] Write
-</div>
 

@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/My&#x20;mother&#x20;is&#x20;a&#x20;nurse.mp3) 
+ - [ ] I live in bangkok
+ - [ ] I want to be a dentist
+ - [x] My mother is a nurse
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;does&#x20;your&#x20;mother&#x20;do.mp3) 
+ - [ ] How many people are there in your family
+ - [ ] What do you want to be when you grow up
+ - [x] What does your mother do
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;does&#x20;your&#x20;father&#x20;do.mp3) 
- - [ ] How many people are there in your family
- - [ ] I live in bangkok
- - [x] What does your father do
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/My&#x20;father&#x20;is&#x20;a&#x20;doctor.mp3) 
- - [ ] I live in bangkok
- - [x] My father is a doctor
- - [ ] My mother is a nurse
-</div>
-
-<div class=question>
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;many&#x20;people&#x20;are&#x20;there&#x20;in&#x20;your&#x20;family.mp3) 
- - [x] How many people are there in your family
  - [ ] I have 2 brothers and 1 sister
- - [ ] What does your mother do
-</div>
+ - [ ] I want to be a dentist
+ - [x] What does your father do
 
-<div class=question>
+ออกเสียงคำว่า **How many brothers and sisters do you have** :
 
-ออกเสียงคำว่า **What do you want to be when you grow up** :
+🎙️ how many brothers and sisters do you have
 
-🎙️ what do you want to be when you grow up
+ออกเสียงคำว่า **I have 2 brothers and 1 sister** :
 
-</div>
-<div class=question>
+🎙️ i have 2 brothers and 1 sister
 
-ออกเสียงคำว่า **What does your mother do** :
+ออกเสียงคำว่า **How many people are there in your family** :
 
-🎙️ what does your mother do
+🎙️ how many people are there in your family
 
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **Where do you live** :
-
-🎙️ where do you live
-
-</div>

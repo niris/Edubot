@@ -13,48 +13,33 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class=question>
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/When&#x20;is&#x20;your&#x20;Birthday.mp3) 
+ - [ ] Today is monday
+ - [ ] What day is christmas
+ - [x] When is your birthday
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;day&#x20;is&#x20;today.mp3) 
+ - [ ] Today is the 14 of july
+ - [x] What day is today
+ - [ ] What is the date today
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/It&#x20;is&#x20;the&#x20;25&#x20;of&#x20;December.mp3) 
  - [x] It is the 25 of december
- - [ ] What day is tomorrow
- - [ ] What day was yesterday
-</div>
+ - [ ] Today is the 14 of july
+ - [ ] What is the date today
 
-<div class=question>
+ออกเสียงคำว่า **What day was yesterday** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Today&#x20;is&#x20;the&#x20;14&#x20;of&#x20;July.mp3) 
- - [x] Today is the 14 of july
- - [ ] What day is tomorrow
- - [ ] What day was yesterday
-</div>
+🎙️ what day was yesterday
 
-<div class=question>
+ออกเสียงคำว่า **Yesterday was sunday** :
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;day&#x20;is&#x20;tomorrow.mp3) 
- - [ ] My birthday is on february
- - [ ] Today is monday
- - [x] What day is tomorrow
-</div>
-
-<div class=question>
+🎙️ yesterday was sunday
 
 ออกเสียงคำว่า **Today is the 14 of july** :
 
 🎙️ today is the 14 of july
 
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **What is the date today** :
-
-🎙️ what is the date today
-
-</div>
-<div class=question>
-
-ออกเสียงคำว่า **It is the 25 of december** :
-
-🎙️ it is the 25 of december
-
-</div>
