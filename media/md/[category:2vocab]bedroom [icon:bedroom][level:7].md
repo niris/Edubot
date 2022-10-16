@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Bolster**
- - [ ] ตู้เสื้อผ้า
- - [x] หมอนข้าง
- - [ ] เตียง
+ - ( ) ตู้เสื้อผ้า
+ - (x) หมอนข้าง
+ - ( ) เตียง
 
  เลือกคำศัพท์ที่ตรงกับ **Wardrobe**
- - [x] ตู้เสื้อผ้า
- - [ ] ผ้าห่ม
- - [ ] หมอน
+ - (x) ตู้เสื้อผ้า
+ - ( ) ผ้าห่ม
+ - ( ) หมอน
 
  เลือกคำศัพท์ที่ตรงกับ **โคมไฟ**
- - [ ] Blanket
- - [x] Lamp
- - [ ] Pillow
+ - ( ) Blanket
+ - (x) Lamp
+ - ( ) Pillow
 
  เลือกคำศัพท์ที่ตรงกับ **ผ้าห่ม**
- - [x] Blanket
- - [ ] Dressing table
- - [ ] Wardrobe
+ - (x) Blanket
+ - ( ) Dressing table
+ - ( ) Wardrobe
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/blanket.mp3) 
- - [x] Blanket
- - [ ] Bolster
- - [ ] Dressing table
+ - (x) Blanket
+ - ( ) Bolster
+ - ( ) Dressing table
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dressing&#x20;table.mp3) 
- - [x] Dressing table
- - [ ] Lamp
- - [ ] Pillow
+ - (x) Dressing table
+ - ( ) Lamp
+ - ( ) Pillow
 

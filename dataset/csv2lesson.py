@@ -85,10 +85,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             choices_list.sort()
             newfile.write('\n เลือกคำศัพท์ที่ตรงกับ **' + questions_tmp[answer_index].capitalize() + '**\n')
             for c in choices_list:
-                if c[1]==True:
-                    newfile.write(' - [x] ' + c[0].capitalize() + '\n')
-                else:
-                    newfile.write(' - [ ] ' + c[0].capitalize() + '\n')
+                newfile.write(' - (' + ('x' if c[1] else ' ') + ') ' + c[0].capitalize() + '\n')
             questions_tmp.pop(answer_index)
             choicess_tmp.pop(answer_index)
     
@@ -110,10 +107,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             desc = "เลือกคำศัพท์ตรงกับเสียง" if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์"
             newfile.write('\n' + desc + ' '+ (audio_tmp[answer_index] if inverse == False else audio_tmp[answer_index].capitalize()) + ' \n')
             for c in choices_list:
-                if c[1]==True:
-                    newfile.write(' - [x] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
-                else:
-                    newfile.write(' - [ ] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n') 
+                newfile.write(' - (' + ('x' if c[1] else ' ') + ') ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
             newfile.write('\n')
             vocabs_tmp.pop(answer_index)
             audio_tmp.pop(answer_index)

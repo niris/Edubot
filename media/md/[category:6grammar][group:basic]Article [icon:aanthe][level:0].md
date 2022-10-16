@@ -54,18 +54,18 @@
 
 I have __ umbrella.
 
-- [ ] a
-- [x] an
-- [ ] the
+- ( ) a
+- (x) an
+- ( ) the
 
 This is __ book.
 
-- [x] a
-- [ ] an
-- [ ] the
+- (x) a
+- ( ) an
+- ( ) the
 
 I found __ dog in front of my house.
 
-- [x] a
-- [ ] an
-- [ ] the
+- (x) a
+- ( ) an
+- ( ) the

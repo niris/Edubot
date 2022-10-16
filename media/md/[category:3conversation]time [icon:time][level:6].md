@@ -15,7 +15,7 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Do&#x20;do&#x20;have&#x20;a&#x20;time.mp3) 
- - [ ] Could you tell me the time please
- - [x] Do do have a time
- - [ ] Excuse me! what time is it
+ - ( ) Could you tell me the time please
+ - (x) Do do have a time
+ - ( ) Excuse me! what time is it
 

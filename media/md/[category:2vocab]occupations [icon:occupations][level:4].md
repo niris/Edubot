@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Taxi driver**
- - [x] คนขับแท็กซี่
- - [ ] นักบินอวกาศ
- - [ ] เกษตรกร
+ - (x) คนขับแท็กซี่
+ - ( ) นักบินอวกาศ
+ - ( ) เกษตรกร
 
  เลือกคำศัพท์ที่ตรงกับ **Bus driver**
- - [x] คนขับรถบัส
- - [ ] ตํารวจ
- - [ ] เลขานุการ
+ - (x) คนขับรถบัส
+ - ( ) ตํารวจ
+ - ( ) เลขานุการ
 
  เลือกคำศัพท์ที่ตรงกับ **โปรแกรมเมอร์**
- - [ ] Astronaut
- - [ ] Dancer
- - [x] Programmer
+ - ( ) Astronaut
+ - ( ) Dancer
+ - (x) Programmer
 
  เลือกคำศัพท์ที่ตรงกับ **นักแสดงชาย**
- - [x] Actor
- - [ ] Nurse
- - [ ] Postman
+ - (x) Actor
+ - ( ) Nurse
+ - ( ) Postman
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/carpenter.mp3) 
- - [x] Carpenter
- - [ ] Farmer
- - [ ] Policeman
+ - (x) Carpenter
+ - ( ) Farmer
+ - ( ) Policeman
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/seller.mp3) 
- - [x] Seller
- - [ ] Taxi driver
- - [ ] Waiter
+ - (x) Seller
+ - ( ) Taxi driver
+ - ( ) Waiter
 

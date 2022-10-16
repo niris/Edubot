@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Pepper**
- - [ ] ซอสพริก
- - [ ] ตะเกียบ
- - [x] พริกไทย
+ - ( ) ซอสพริก
+ - ( ) ตะเกียบ
+ - (x) พริกไทย
 
  เลือกคำศัพท์ที่ตรงกับ **Tomato sauce**
- - [x] ซอสมะเขือเทศ
- - [ ] น้ำปลา
- - [ ] ผ้าเช็ดปาก
+ - (x) ซอสมะเขือเทศ
+ - ( ) น้ำปลา
+ - ( ) ผ้าเช็ดปาก
 
  เลือกคำศัพท์ที่ตรงกับ **ไม้จิ้มฟัน**
- - [ ] Chili sauce
- - [ ] Tomato sauce
- - [x] Toothpick
+ - ( ) Chili sauce
+ - ( ) Tomato sauce
+ - (x) Toothpick
 
  เลือกคำศัพท์ที่ตรงกับ **ตะเกียบ**
- - [ ] Chili sauce
- - [x] Chopsticks
- - [ ] Menu
+ - ( ) Chili sauce
+ - (x) Chopsticks
+ - ( ) Menu
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pepper.mp3) 
- - [ ] Chili sauce
- - [ ] Chopsticks
- - [x] Pepper
+ - ( ) Chili sauce
+ - ( ) Chopsticks
+ - (x) Pepper
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish&#x20;sauce.mp3) 
- - [x] Fish sauce
- - [ ] Menu
- - [ ] Toothpick
+ - (x) Fish sauce
+ - ( ) Menu
+ - ( ) Toothpick
 

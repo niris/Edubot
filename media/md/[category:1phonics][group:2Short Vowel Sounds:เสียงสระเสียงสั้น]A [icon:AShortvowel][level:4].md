@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bad.mp3) 
- - [x] Bad
- - [ ] Cat
- - [ ] Rag
+ - (x) Bad
+ - ( ) Cat
+ - ( ) Rag
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ad.mp3) 
- - [x] Ad
- - [ ] Am
- - [ ] App
+ - (x) Ad
+ - ( ) Am
+ - ( ) App
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jam.mp3) 
- - [ ] Bag
- - [ ] Ham
- - [x] Jam
+ - ( ) Bag
+ - ( ) Ham
+ - (x) Jam
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hat.mp3) 
- - [ ] Ag
- - [ ] Dad
- - [x] Hat
+ - ( ) Ag
+ - ( ) Dad
+ - (x) Hat
 
 ออกเสียงคำว่า **Dad** :
 

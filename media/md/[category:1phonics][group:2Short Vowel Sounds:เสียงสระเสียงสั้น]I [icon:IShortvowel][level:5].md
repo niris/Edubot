@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/win.mp3) 
- - [ ] Lid
- - [ ] Pin
- - [x] Win
+ - ( ) Lid
+ - ( ) Pin
+ - (x) Win
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/big.mp3) 
- - [x] Big
- - [ ] Ip
- - [ ] Six
+ - (x) Big
+ - ( ) Ip
+ - ( ) Six
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/in.mp3) 
- - [ ] Id
- - [x] In
- - [ ] It
+ - ( ) Id
+ - (x) In
+ - ( ) It
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hip.mp3) 
- - [x] Hip
- - [ ] Hit
- - [ ] It
+ - (x) Hip
+ - ( ) Hit
+ - ( ) It
 
 ออกเสียงคำว่า **Six** :
 

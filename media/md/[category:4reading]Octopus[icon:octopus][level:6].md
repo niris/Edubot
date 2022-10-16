@@ -9,26 +9,26 @@
 # ![icon](/media/icons/quiz.svg) 
 
 What is Octo ?
- - [ ] A dolphin
- - [x] An octopus
- - [ ] A shark
+ - ( ) A dolphin
+ - (x) An octopus
+ - ( ) A shark
 
 Octo has a ______ head
- - [ ] Small
- - [ ] Fat
- - [x] Big
+ - ( ) Small
+ - ( ) Fat
+ - (x) Big
 
 How many arms does Octo have ?
- - [ ] 7
- - [x] 8
- - [ ] 9
+ - ( ) 7
+ - (x) 8
+ - ( ) 9
 
 What does Octo eat ?
- - [ ] Worms
- - [x] Crabs  
- - [ ] Clams
+ - ( ) Worms
+ - (x) Crabs  
+ - ( ) Clams
 
 How many hearts does Octo have ? 
- - [ ] 2
- - [x] 3
- - [ ] 4
+ - ( ) 2
+ - (x) 3
+ - ( ) 4

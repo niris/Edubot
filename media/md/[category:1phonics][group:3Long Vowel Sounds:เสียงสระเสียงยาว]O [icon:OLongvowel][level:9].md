@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/road.mp3) 
- - [ ] Arrow
- - [ ] Home
- - [x] Road
+ - ( ) Arrow
+ - ( ) Home
+ - (x) Road
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/window.mp3) 
- - [ ] Rope
- - [ ] Soap
- - [x] Window
+ - ( ) Rope
+ - ( ) Soap
+ - (x) Window
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/boat.mp3) 
- - [x] Boat
- - [ ] Home
- - [ ] Soap
+ - (x) Boat
+ - ( ) Home
+ - ( ) Soap
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/home.mp3) 
- - [ ] Arrow
- - [x] Home
- - [ ] Rope
+ - ( ) Arrow
+ - (x) Home
+ - ( ) Rope
 
 ออกเสียงคำว่า **Rose** :
 

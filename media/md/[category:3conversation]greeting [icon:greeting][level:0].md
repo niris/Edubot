@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/good&#x20;morning.mp3) 
- - [ ] Good evening
- - [x] Good morning
- - [ ] Hello
+ - ( ) Good evening
+ - (x) Good morning
+ - ( ) Hello
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/good&#x20;evening.mp3) 
- - [x] Good evening
- - [ ] Hello
- - [ ] Hi
+ - (x) Good evening
+ - ( ) Hello
+ - ( ) Hi
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hi.mp3) 
- - [ ] Good afternoon
- - [ ] Hello
- - [x] Hi
+ - ( ) Good afternoon
+ - ( ) Hello
+ - (x) Hi
 
 ออกเสียงคำว่า **Good morning** :
 

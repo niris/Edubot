@@ -15,31 +15,31 @@
 <div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>
 
 How old is peter ?
- - [x] 12 years old
- - [ ] 13 years old
- - [ ] 15 years old
+ - (x) 12 years old
+ - ( ) 13 years old
+ - ( ) 15 years old
 
 How many sister does Peter have?
- - [x] 1
- - [ ] 2
- - [ ] 3
+ - (x) 1
+ - ( ) 2
+ - ( ) 3
 
 Peter always goes to school by ______
- - [ ] Bike
- - [x] Bus
- - [ ] Car
+ - ( ) Bike
+ - (x) Bus
+ - ( ) Car
 
 What time does Peter's school start?
-- [ ] 8 O'clock
-- [x] 9 O'clock
-- [ ] 10 O'clock
+- ( ) 8 O'clock
+- (x) 9 O'clock
+- ( ) 10 O'clock
 
 What is Peter's favorite subject ?
-- [ ] Maths
-- [ ] Computer
-- [x] English
+- ( ) Maths
+- ( ) Computer
+- (x) English
 
 What does Peter like to do in his freetime ?
-- [ ] Watching television
-- [x] Reading books
-- [ ] Writing
+- ( ) Watching television
+- (x) Reading books
+- ( ) Writing

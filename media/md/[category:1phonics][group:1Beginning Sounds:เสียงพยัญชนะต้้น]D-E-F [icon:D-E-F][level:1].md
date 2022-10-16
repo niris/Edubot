@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/elbow.mp3) 
- - [ ] Duck
- - [ ] Eggplant
- - [x] Elbow
+ - ( ) Duck
+ - ( ) Eggplant
+ - (x) Elbow
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fish.mp3) 
- - [ ] Doctor
- - [ ] Exercise
- - [x] Fish
+ - ( ) Doctor
+ - ( ) Exercise
+ - (x) Fish
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/farmer.mp3) 
- - [ ] Doctor
- - [ ] Donkey
- - [x] Farmer
+ - ( ) Doctor
+ - ( ) Donkey
+ - (x) Farmer
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/eggplant.mp3) 
- - [ ] Dish
- - [ ] Dog
- - [x] Eggplant
+ - ( ) Dish
+ - ( ) Dog
+ - (x) Eggplant
 
 ออกเสียงคำว่า **Donkey** :
 

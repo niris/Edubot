@@ -15,13 +15,13 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Everything&#x20;will&#x20;be&#x20;O.K..mp3) 
- - [ ] Don't worry
- - [x] Everything will be o.k.
- - [ ] I'll be there for you
+ - ( ) Don't worry
+ - (x) Everything will be o.k.
+ - ( ) I'll be there for you
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'll&#x20;be&#x20;there&#x20;for&#x20;you.mp3) 
- - [ ] Calm down.
- - [ ] Don't worry
- - [x] I'll be there for you
+ - ( ) Calm down.
+ - ( ) Don't worry
+ - (x) I'll be there for you
 

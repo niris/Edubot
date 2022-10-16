@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;glad&#x20;to&#x20;meet&#x20;you.mp3) 
- - [x] I'm glad to meet you
- - [ ] It's good to see you
- - [ ] This is elsa
+ - (x) I'm glad to meet you
+ - ( ) It's good to see you
+ - ( ) This is elsa
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/It's&#x20;nice&#x20;to&#x20;meet&#x20;you.mp3) 
- - [ ] It's good to see you
- - [x] It's nice to meet you
- - [ ] Nice to meet you too
+ - ( ) It's good to see you
+ - (x) It's nice to meet you
+ - ( ) Nice to meet you too
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Let&#x20;me&#x20;introduce&#x20;myself.mp3) 
- - [ ] I want to introduce my friend elsa
- - [x] Let me introduce myself
- - [ ] This is elsa
+ - ( ) I want to introduce my friend elsa
+ - (x) Let me introduce myself
+ - ( ) This is elsa
 
 ออกเสียงคำว่า **Nice to see you** :
 

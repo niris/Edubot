@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/kid.mp3) 
- - [x] Kid
- - [ ] Koala
- - [ ] Lemon
+ - (x) Kid
+ - ( ) Koala
+ - ( ) Lemon
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/koala.mp3) 
- - [ ] Jellyfish
- - [ ] Key
- - [x] Koala
+ - ( ) Jellyfish
+ - ( ) Key
+ - (x) Koala
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/lemon.mp3) 
- - [ ] Jaguar
- - [ ] Jam
- - [x] Lemon
+ - ( ) Jaguar
+ - ( ) Jam
+ - (x) Lemon
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/lion.mp3) 
- - [ ] Kitchen
- - [x] Lion
- - [ ] Lotus
+ - ( ) Kitchen
+ - (x) Lion
+ - ( ) Lotus
 
 ออกเสียงคำว่า **King** :
 

@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Rainbow.mp3) 
- - [ ] Pumpkin
- - [ ] Queue
- - [x] Rainbow
+ - ( ) Pumpkin
+ - ( ) Queue
+ - (x) Rainbow
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pumpkin.mp3) 
- - [x] Pumpkin
- - [ ] Rain
- - [ ] Ruler
+ - (x) Pumpkin
+ - ( ) Rain
+ - ( ) Ruler
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pig.mp3) 
- - [x] Pig
- - [ ] Quarter
- - [ ] Quill
+ - (x) Pig
+ - ( ) Quarter
+ - ( ) Quill
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Quill.mp3) 
- - [ ] Queue
- - [x] Quill
- - [ ] Rabbit
+ - ( ) Queue
+ - (x) Quill
+ - ( ) Rabbit
 
 ออกเสียงคำว่า **Pizza** :
 

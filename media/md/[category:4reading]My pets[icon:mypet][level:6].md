@@ -13,21 +13,21 @@
 <div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>
 
 > I have _____ cat
- - [x] 1
- - [ ] 2
- - [ ] 3
+ - (x) 1
+ - ( ) 2
+ - ( ) 3
 
 I have _____ pets
- - [ ] 1
- - [x] 2
- - [ ] 3
+ - ( ) 1
+ - (x) 2
+ - ( ) 3
 
 My dog's name is_____ 
- - [ ] Puppy
- - [x] Snoopy
- - [ ] Kitty
+ - ( ) Puppy
+ - (x) Snoopy
+ - ( ) Kitty
 
 Kitty is my _____ 
- - [ ] dog
- - [ ] rabbit
- - [x] cat
+ - ( ) dog
+ - ( ) rabbit
+ - (x) cat

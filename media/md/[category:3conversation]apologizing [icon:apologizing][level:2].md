@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pardon.mp3) 
- - [ ] Don't mention it
- - [ ] I'm sorry i'm late
- - [x] Pardon
+ - ( ) Don't mention it
+ - ( ) I'm sorry i'm late
+ - (x) Pardon
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/That's&#x20;all&#x20;right.mp3) 
- - [ ] Don't worry
- - [ ] Excuse me please
- - [x] That's all right
+ - ( ) Don't worry
+ - ( ) Excuse me please
+ - (x) That's all right
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;sorry&#x20;I'm&#x20;late.mp3) 
- - [ ] Don't mention it
- - [ ] Excuse me please
- - [x] I'm sorry i'm late
+ - ( ) Don't mention it
+ - ( ) Excuse me please
+ - (x) I'm sorry i'm late
 
 ออกเสียงคำว่า **I'm sorry** :
 

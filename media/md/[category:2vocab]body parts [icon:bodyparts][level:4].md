@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Stomach**
- - [ ] ขา
- - [x] ท้อง
- - [ ] หน้า
+ - ( ) ขา
+ - (x) ท้อง
+ - ( ) หน้า
 
  เลือกคำศัพท์ที่ตรงกับ **Face**
- - [ ] ผม
- - [x] หน้า
- - [ ] หน้าอก
+ - ( ) ผม
+ - (x) หน้า
+ - ( ) หน้าอก
 
  เลือกคำศัพท์ที่ตรงกับ **ท้อง**
- - [ ] Head
- - [ ] Neck
- - [x] Stomach
+ - ( ) Head
+ - ( ) Neck
+ - (x) Stomach
 
  เลือกคำศัพท์ที่ตรงกับ **ไหล่**
- - [ ] Foot
- - [ ] Mouth
- - [x] Shoulder
+ - ( ) Foot
+ - ( ) Mouth
+ - (x) Shoulder
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/nose.mp3) 
- - [ ] Hair
- - [x] Nose
- - [ ] Stomach
+ - ( ) Hair
+ - (x) Nose
+ - ( ) Stomach
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/arm.mp3) 
- - [x] Arm
- - [ ] Foot
- - [ ] Hand
+ - (x) Arm
+ - ( ) Foot
+ - ( ) Hand
 

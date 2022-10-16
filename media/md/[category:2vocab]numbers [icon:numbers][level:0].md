@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Twenty**
- - [x] ยี่สิบ
- - [ ] สิบเอ็ด
- - [ ] สิบแปด
+ - (x) ยี่สิบ
+ - ( ) สิบเอ็ด
+ - ( ) สิบแปด
 
  เลือกคำศัพท์ที่ตรงกับ **Nineteen**
- - [ ] สิบสี่
- - [ ] สิบหก
- - [x] สิบเก้า
+ - ( ) สิบสี่
+ - ( ) สิบหก
+ - (x) สิบเก้า
 
  เลือกคำศัพท์ที่ตรงกับ **สิบแปด**
- - [x] Eighteen
- - [ ] Eleven
- - [ ] Seventeen
+ - (x) Eighteen
+ - ( ) Eleven
+ - ( ) Seventeen
 
  เลือกคำศัพท์ที่ตรงกับ **สิบสี่**
- - [ ] Five
- - [x] Fourteen
- - [ ] Three
+ - ( ) Five
+ - (x) Fourteen
+ - ( ) Three
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/thirteen.mp3) 
- - [ ] Eighteen
- - [ ] Ten
- - [x] Thirteen
+ - ( ) Eighteen
+ - ( ) Ten
+ - (x) Thirteen
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/seven.mp3) 
- - [x] Seven
- - [ ] Ten
- - [ ] Twelve
+ - (x) Seven
+ - ( ) Ten
+ - ( ) Twelve
 

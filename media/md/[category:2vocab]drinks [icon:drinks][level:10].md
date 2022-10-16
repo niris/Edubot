@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Juice**
- - [x] น้ําผลไม้
- - [ ] น้ําส้ม
- - [ ] น้ําแอปเปิ้ล
+ - (x) น้ําผลไม้
+ - ( ) น้ําส้ม
+ - ( ) น้ําแอปเปิ้ล
 
  เลือกคำศัพท์ที่ตรงกับ **Orange juice**
- - [ ] น้ำดื่ม
- - [x] น้ําส้ม
- - [ ] โซดา
+ - ( ) น้ำดื่ม
+ - (x) น้ําส้ม
+ - ( ) โซดา
 
  เลือกคำศัพท์ที่ตรงกับ **กาน้ําชา**
- - [ ] Apple juice
- - [x] Teapot
- - [ ] Watermelon juice
+ - ( ) Apple juice
+ - (x) Teapot
+ - ( ) Watermelon juice
 
  เลือกคำศัพท์ที่ตรงกับ **ชา**
- - [ ] Coffee
- - [ ] Drinking water
- - [x] Tea
+ - ( ) Coffee
+ - ( ) Drinking water
+ - (x) Tea
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/drinking&#x20;water.mp3) 
- - [ ] Apple juice
- - [x] Drinking water
- - [ ] Smoothie
+ - ( ) Apple juice
+ - (x) Drinking water
+ - ( ) Smoothie
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/milk.mp3) 
- - [ ] Coconut drink
- - [x] Milk
- - [ ] Soda
+ - ( ) Coconut drink
+ - (x) Milk
+ - ( ) Soda
 

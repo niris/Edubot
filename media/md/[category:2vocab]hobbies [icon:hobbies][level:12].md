@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Gardening**
- - [ ] ถ่ายภาพ
- - [x] ทําสวน
- - [ ] วาดภาพ
+ - ( ) ถ่ายภาพ
+ - (x) ทําสวน
+ - ( ) วาดภาพ
 
  เลือกคำศัพท์ที่ตรงกับ **Playing with pet**
- - [ ] ทําอาหาร
- - [x] เล่นกับสัตว์เลี้ยง
- - [ ] เล่นกีฬา
+ - ( ) ทําอาหาร
+ - (x) เล่นกับสัตว์เลี้ยง
+ - ( ) เล่นกีฬา
 
  เลือกคำศัพท์ที่ตรงกับ **ดูทีวี**
- - [ ] Cooking
- - [ ] Singing
- - [x] Watching tv
+ - ( ) Cooking
+ - ( ) Singing
+ - (x) Watching tv
 
  เลือกคำศัพท์ที่ตรงกับ **ดูหนัง**
- - [ ] Listening to music
- - [ ] Playing with pet
- - [x] Seeing a movie
+ - ( ) Listening to music
+ - ( ) Playing with pet
+ - (x) Seeing a movie
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/taking&#x20;photos.mp3) 
- - [ ] Gardening
- - [x] Taking photos
- - [ ] Watching tv
+ - ( ) Gardening
+ - (x) Taking photos
+ - ( ) Watching tv
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/listening&#x20;to&#x20;music.mp3) 
- - [ ] Knitting
- - [x] Listening to music
- - [ ] Reading
+ - ( ) Knitting
+ - (x) Listening to music
+ - ( ) Reading
 

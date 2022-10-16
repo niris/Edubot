@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;sport&#x20;do&#x20;you&#x20;like.mp3) 
- - [ ] I like dogs
- - [x] What sport do you like
- - [ ] Yes i like cooking
+ - ( ) I like dogs
+ - (x) What sport do you like
+ - ( ) Yes i like cooking
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;kind&#x20;of&#x20;music&#x20;do&#x20;you&#x20;like.mp3) 
- - [ ] Do you like cats
- - [ ] Do you like swimming
- - [x] What kind of music do you like
+ - ( ) Do you like cats
+ - ( ) Do you like swimming
+ - (x) What kind of music do you like
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Lisa&#x20;is&#x20;my&#x20;favorite&#x20;singer.mp3) 
- - [ ] Do you like cats
- - [x] Lisa is my favorite singer
- - [ ] What animal do you like
+ - ( ) Do you like cats
+ - (x) Lisa is my favorite singer
+ - ( ) What animal do you like
 
 ออกเสียงคำว่า **Lisa is my favorite singer** :
 

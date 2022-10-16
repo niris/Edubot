@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Vegetable.mp3) 
- - [ ] Van
- - [x] Vegetable
- - [ ] Walk
+ - ( ) Van
+ - (x) Vegetable
+ - ( ) Walk
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Violin.mp3) 
- - [ ] Box
- - [x] Violin
- - [ ] Window
+ - ( ) Box
+ - (x) Violin
+ - ( ) Window
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Van.mp3) 
- - [x] Van
- - [ ] Vest
- - [ ] Window
+ - (x) Van
+ - ( ) Vest
+ - ( ) Window
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Xylophone.mp3) 
- - [ ] Water
- - [ ] Watermelon
- - [x] Xylophone
+ - ( ) Water
+ - ( ) Watermelon
+ - (x) Xylophone
 
 ออกเสียงคำว่า **Xylophone** :
 

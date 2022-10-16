@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/not.mp3) 
- - [ ] Hot
- - [x] Not
- - [ ] Og
+ - ( ) Hot
+ - (x) Not
+ - ( ) Og
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/box.mp3) 
- - [x] Box
- - [ ] Hot
- - [ ] Ox
+ - (x) Box
+ - ( ) Hot
+ - ( ) Ox
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ox.mp3) 
- - [ ] Cop
- - [ ] Jog
- - [x] Ox
+ - ( ) Cop
+ - ( ) Jog
+ - (x) Ox
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ox.mp3) 
- - [ ] Fox
- - [ ] Hop
- - [x] Ox
+ - ( ) Fox
+ - ( ) Hop
+ - (x) Ox
 
 ออกเสียงคำว่า **Fox** :
 

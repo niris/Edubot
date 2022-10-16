@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/key.mp3) 
- - [ ] Jeep
- - [x] Key
- - [ ] Meat
+ - ( ) Jeep
+ - (x) Key
+ - ( ) Meat
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/happy.mp3) 
- - [ ] Candy
- - [ ] Feet
- - [x] Happy
+ - ( ) Candy
+ - ( ) Feet
+ - (x) Happy
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jeep.mp3) 
- - [ ] Eat
- - [ ] Feet
- - [x] Jeep
+ - ( ) Eat
+ - ( ) Feet
+ - (x) Jeep
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bunny.mp3) 
- - [x] Bunny
- - [ ] Eat
- - [ ] Feet
+ - (x) Bunny
+ - ( ) Eat
+ - ( ) Feet
 
 ออกเสียงคำว่า **Candy** :
 

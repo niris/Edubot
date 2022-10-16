@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Drawing book**
- - [ ] ปากกา
- - [x] สมุดวาดภาพ
- - [ ] หนังสือเรียน
+ - ( ) ปากกา
+ - (x) สมุดวาดภาพ
+ - ( ) หนังสือเรียน
 
  เลือกคำศัพท์ที่ตรงกับ **Stapler**
- - [ ] กาวแท่ง
- - [ ] หนังสือเรียน
- - [x] เครื่องเย็บกระดาษ
+ - ( ) กาวแท่ง
+ - ( ) หนังสือเรียน
+ - (x) เครื่องเย็บกระดาษ
 
  เลือกคำศัพท์ที่ตรงกับ **กบเหลาดินสอ**
- - [ ] Highlighter
- - [ ] Pencil
- - [x] Sharpener
+ - ( ) Highlighter
+ - ( ) Pencil
+ - (x) Sharpener
 
  เลือกคำศัพท์ที่ตรงกับ **หนังสือเรียน**
- - [ ] Glue stick
- - [ ] Ruler
- - [x] Textbook
+ - ( ) Glue stick
+ - ( ) Ruler
+ - (x) Textbook
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/textbook.mp3) 
- - [ ] Cutter
- - [ ] Notebook
- - [x] Textbook
+ - ( ) Cutter
+ - ( ) Notebook
+ - (x) Textbook
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/stapler.mp3) 
- - [ ] Dictionary
- - [ ] Ruler
- - [x] Stapler
+ - ( ) Dictionary
+ - ( ) Ruler
+ - (x) Stapler
 

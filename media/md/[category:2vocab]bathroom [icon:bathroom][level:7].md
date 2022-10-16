@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Soap**
- - [x] สบู่
- - [ ] อ่างน้ํา
- - [ ] แปรงสีฟัน
+ - (x) สบู่
+ - ( ) อ่างน้ํา
+ - ( ) แปรงสีฟัน
 
  เลือกคำศัพท์ที่ตรงกับ **Shower**
- - [ ] ครีมนวดผม
- - [x] ฝักบัวอาบน้ำ
- - [ ] แปรงสีฟัน
+ - ( ) ครีมนวดผม
+ - (x) ฝักบัวอาบน้ำ
+ - ( ) แปรงสีฟัน
 
  เลือกคำศัพท์ที่ตรงกับ **ผ้าเช็ดตัว**
- - [ ] Soap
- - [ ] Toothpaste
- - [x] Towel
+ - ( ) Soap
+ - ( ) Toothpaste
+ - (x) Towel
 
  เลือกคำศัพท์ที่ตรงกับ **ฝักบัวอาบน้ำ**
- - [ ] Faucet
- - [ ] Hair conditioner
- - [x] Shower
+ - ( ) Faucet
+ - ( ) Hair conditioner
+ - (x) Shower
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/toilet.mp3) 
- - [ ] Basin
- - [ ] Shower
- - [x] Toilet
+ - ( ) Basin
+ - ( ) Shower
+ - (x) Toilet
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/basin.mp3) 
- - [x] Basin
- - [ ] Shampoo
- - [ ] Toothpaste
+ - (x) Basin
+ - ( ) Shampoo
+ - ( ) Toothpaste
 

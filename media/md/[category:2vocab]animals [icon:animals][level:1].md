@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Shellfish**
- - [ ] ปลาทอง
- - [ ] ปู
- - [x] หอย
+ - ( ) ปลาทอง
+ - ( ) ปู
+ - (x) หอย
 
  เลือกคำศัพท์ที่ตรงกับ **Dog**
- - [ ] ปลา
- - [ ] ปู
- - [x] หมา
+ - ( ) ปลา
+ - ( ) ปู
+ - (x) หมา
 
  เลือกคำศัพท์ที่ตรงกับ **วัว**
- - [x] Cow
- - [ ] Turkey
- - [ ] Vulture
+ - (x) Cow
+ - ( ) Turkey
+ - ( ) Vulture
 
  เลือกคำศัพท์ที่ตรงกับ **ปู**
- - [x] Crab
- - [ ] Dog
- - [ ] Shellfish
+ - (x) Crab
+ - ( ) Dog
+ - ( ) Shellfish
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bat.mp3) 
- - [x] Bat
- - [ ] Rabbit
- - [ ] Shrimp
+ - (x) Bat
+ - ( ) Rabbit
+ - ( ) Shrimp
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mouse.mp3) 
- - [x] Mouse
- - [ ] Ostrich
- - [ ] Sheep
+ - (x) Mouse
+ - ( ) Ostrich
+ - ( ) Sheep
 

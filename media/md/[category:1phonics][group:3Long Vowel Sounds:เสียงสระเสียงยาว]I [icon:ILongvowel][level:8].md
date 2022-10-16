@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/light.mp3) 
- - [ ] Dive
- - [x] Light
- - [ ] Nine
+ - ( ) Dive
+ - (x) Light
+ - ( ) Nine
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/like.mp3) 
- - [ ] Fine
- - [x] Like
- - [ ] Night
+ - ( ) Fine
+ - (x) Like
+ - ( ) Night
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/lime.mp3) 
- - [ ] High
- - [x] Lime
- - [ ] Pipe
+ - ( ) High
+ - (x) Lime
+ - ( ) Pipe
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/die.mp3) 
- - [x] Die
- - [ ] Lie
- - [ ] Nine
+ - (x) Die
+ - ( ) Lie
+ - ( ) Nine
 
 ออกเสียงคำว่า **Five** :
 

@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Hospital**
- - [ ] สนามบิน
- - [x] โรงพยาบาล
- - [ ] โรงเรียน
+ - ( ) สนามบิน
+ - (x) โรงพยาบาล
+ - ( ) โรงเรียน
 
  เลือกคำศัพท์ที่ตรงกับ **Post office**
- - [x] ที่ทำการไปรษณีย์
- - [ ] ธนาคาร
- - [ ] สถานีดับเพลิง
+ - (x) ที่ทำการไปรษณีย์
+ - ( ) ธนาคาร
+ - ( ) สถานีดับเพลิง
 
  เลือกคำศัพท์ที่ตรงกับ **เอทีเอ็ม**
- - [x] Atm
- - [ ] Market
- - [ ] School
+ - (x) Atm
+ - ( ) Market
+ - ( ) School
 
  เลือกคำศัพท์ที่ตรงกับ **ท่าเรือ**
- - [ ] Museum
- - [x] Port
- - [ ] Train station
+ - ( ) Museum
+ - (x) Port
+ - ( ) Train station
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/post&#x20;office.mp3) 
- - [ ] Atm
- - [ ] Port
- - [x] Post office
+ - ( ) Atm
+ - ( ) Port
+ - (x) Post office
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/museum.mp3) 
- - [ ] Hospital
- - [ ] Market
- - [x] Museum
+ - ( ) Hospital
+ - ( ) Market
+ - (x) Museum
 

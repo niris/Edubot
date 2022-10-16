@@ -16,25 +16,25 @@
 <div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Fantastic.mp3) 
- - [x] Fantastic
- - [ ] Thanks a lot
- - [ ] Well done
+ - (x) Fantastic
+ - ( ) Thanks a lot
+ - ( ) Well done
 </div>
 
 <div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/That's&#x20;great.mp3) 
- - [ ] I'm glad you like it
- - [x] That's great
- - [ ] You look so cute
+ - ( ) I'm glad you like it
+ - (x) That's great
+ - ( ) You look so cute
 </div>
 
 <div class=question>
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/You&#x20;look&#x20;very&#x20;handsome.mp3) 
- - [ ] Excellent
- - [ ] You look so cute
- - [x] You look very handsome
+ - ( ) Excellent
+ - ( ) You look so cute
+ - (x) You look very handsome
 </div>
 
 <div class=question>

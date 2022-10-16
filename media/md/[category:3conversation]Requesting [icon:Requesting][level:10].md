@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Can&#x20;you&#x20;help&#x20;me.mp3) 
- - [x] Can you help me
- - [ ] I'm afraid not
- - [ ] Would you mind opening the window for me
+ - (x) Can you help me
+ - ( ) I'm afraid not
+ - ( ) Would you mind opening the window for me
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Would&#x20;you&#x20;please&#x20;help&#x20;me&#x20;carry&#x20;this&#x20;book.mp3) 
- - [ ] Can you give me that pencil
- - [ ] I'm sorry i'm afraid i can't
- - [x] Would you please help me carry this book
+ - ( ) Can you give me that pencil
+ - ( ) I'm sorry i'm afraid i can't
+ - (x) Would you please help me carry this book
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Would&#x20;you&#x20;mind&#x20;opening&#x20;the&#x20;window&#x20;for&#x20;me.mp3) 
- - [ ] All right
- - [ ] Certainly
- - [x] Would you mind opening the window for me
+ - ( ) All right
+ - ( ) Certainly
+ - (x) Would you mind opening the window for me
 
 ออกเสียงคำว่า **Would you please help me carry this book** :
 

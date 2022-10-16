@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Evening dress**
- - [ ] กระโปรง
- - [x] ชุดราตรี
- - [ ] รองเท้าแตะ
+ - ( ) กระโปรง
+ - (x) ชุดราตรี
+ - ( ) รองเท้าแตะ
 
  เลือกคำศัพท์ที่ตรงกับ **Shoes**
- - [ ] ชุดนอน
- - [x] รองเท้า
- - [ ] รองเท้าบูท
+ - ( ) ชุดนอน
+ - (x) รองเท้า
+ - ( ) รองเท้าบูท
 
  เลือกคำศัพท์ที่ตรงกับ **กางเกงขาสั้น**
- - [ ] Shoes
- - [x] Shorts
- - [ ] Slippers
+ - ( ) Shoes
+ - (x) Shorts
+ - ( ) Slippers
 
  เลือกคำศัพท์ที่ตรงกับ **รองเท้า**
- - [ ] Jean
- - [x] Shoes
- - [ ] Underwear
+ - ( ) Jean
+ - (x) Shoes
+ - ( ) Underwear
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/underwear.mp3) 
- - [ ] Boots
- - [ ] Swim suit
- - [x] Underwear
+ - ( ) Boots
+ - ( ) Swim suit
+ - (x) Underwear
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/suit.mp3) 
- - [ ] Pyjamas
- - [ ] Socks
- - [x] Suit
+ - ( ) Pyjamas
+ - ( ) Socks
+ - (x) Suit
 

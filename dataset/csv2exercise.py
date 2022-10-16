@@ -80,10 +80,7 @@ def questionGenerator(questions,choices,number,file):
         choices_list.sort()
         file.write('\n เลือกคำศัพท์ที่ตรงกับ  **' + questions_tmp[answer_index].capitalize() + '**\n')
         for c in choices_list:
-            if c[1]==True:
-                file.write(' - [x] ' + c[0].capitalize() + '\n')
-            else:
-                file.write(' - [ ] ' + c[0].capitalize() + '\n')
+            file.write(' - (' + ('x' if c[1] else ' ') + ') ' + c[0].capitalize() + '\n')
         questions_tmp.pop(answer_index)
         choicess_tmp.pop(answer_index)
 
@@ -104,10 +101,7 @@ def listening(vocab,audio,number,inverse,file):
         desc = "เลือกคำศัพท์ตรงกับเสียง " if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์ "
         file.write('\n' + desc + ' '+ (audio_tmp[answer_index] if inverse == False else audio_tmp[answer_index].capitalize()) + ' \n')
         for c in choices_list:
-            if c[1]==True:
-                file.write(' - [x] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
-            else:
-                file.write(' - [ ] ' + (c[0].capitalize() if inverse == False else c[0]) + '\n') 
+            file.write(' - (' + ('x' if c[1] else ' ') + ') ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
         file.write('\n')
         vocabs_tmp.pop(answer_index)
         audio_tmp.pop(answer_index)

@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **November**
- - [ ] ตุลาคม
- - [x] พฤศจิกายน
- - [ ] เมษายน
+ - ( ) ตุลาคม
+ - (x) พฤศจิกายน
+ - ( ) เมษายน
 
  เลือกคำศัพท์ที่ตรงกับ **June**
- - [ ] พฤษภาคม
- - [x] มิถุนายน
- - [ ] มีนาคม
+ - ( ) พฤษภาคม
+ - (x) มิถุนายน
+ - ( ) มีนาคม
 
  เลือกคำศัพท์ที่ตรงกับ **ธันวาคม**
- - [ ] April
- - [x] December
- - [ ] October
+ - ( ) April
+ - (x) December
+ - ( ) October
 
  เลือกคำศัพท์ที่ตรงกับ **ตุลาคม**
- - [ ] August
- - [ ] June
- - [x] October
+ - ( ) August
+ - ( ) June
+ - (x) October
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/November.mp3) 
- - [ ] December
- - [ ] June
- - [x] November
+ - ( ) December
+ - ( ) June
+ - (x) November
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/February.mp3) 
- - [x] February
- - [ ] June
- - [ ] October
+ - (x) February
+ - ( ) June
+ - ( ) October
 

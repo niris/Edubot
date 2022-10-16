@@ -11,21 +11,21 @@
 <div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>
 
 My name is ______
- - [x] Lilly
- - [ ] Lisa
- - [ ] Anna
+ - (x) Lilly
+ - ( ) Lisa
+ - ( ) Anna
 
 I am_____ years old 
- - [x] 7
- - [ ] 8
- - [ ] 9
+ - (x) 7
+ - ( ) 8
+ - ( ) 9
 
 I am _____
- - [ ] a student
- - [x] a nurse
- - [ ] a cat
+ - ( ) a student
+ - (x) a nurse
+ - ( ) a cat
 
 I am from______
- - [ ] New york
- - [ ] Tokyo
- - [x] Bangkok
+ - ( ) New york
+ - ( ) Tokyo
+ - (x) Bangkok

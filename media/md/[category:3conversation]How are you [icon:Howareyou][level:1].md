@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;great.mp3) 
- - [ ] I'm o.k.
- - [x] I'm great
- - [ ] I'm very well
+ - ( ) I'm o.k.
+ - (x) I'm great
+ - ( ) I'm very well
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Not&#x20;bad.mp3) 
- - [ ] I'm o.k.
- - [ ] I'm good
- - [x] Not bad
+ - ( ) I'm o.k.
+ - ( ) I'm good
+ - (x) Not bad
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;good.mp3) 
- - [ ] How are you
- - [ ] I'm fine
- - [x] I'm good
+ - ( ) How are you
+ - ( ) I'm fine
+ - (x) I'm good
 
 ออกเสียงคำว่า **How are you** :
 

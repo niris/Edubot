@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Fish tank**
- - [ ] กรอบภาพ
- - [x] ตู้ปลา
- - [ ] วิทยุ
+ - ( ) กรอบภาพ
+ - (x) ตู้ปลา
+ - ( ) วิทยุ
 
  เลือกคำศัพท์ที่ตรงกับ **Vase**
- - [ ] วิทยุ
- - [x] แจกัน
- - [ ] โต๊ะ
+ - ( ) วิทยุ
+ - (x) แจกัน
+ - ( ) โต๊ะ
 
  เลือกคำศัพท์ที่ตรงกับ **แจกัน**
- - [ ] Radio
- - [ ] Sofa
- - [x] Vase
+ - ( ) Radio
+ - ( ) Sofa
+ - (x) Vase
 
  เลือกคำศัพท์ที่ตรงกับ **วิทยุ**
- - [ ] Carpet
- - [x] Radio
- - [ ] Table
+ - ( ) Carpet
+ - (x) Radio
+ - ( ) Table
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sofa.mp3) 
- - [x] Sofa
- - [ ] Table
- - [ ] Television
+ - (x) Sofa
+ - ( ) Table
+ - ( ) Television
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/vase.mp3) 
- - [ ] Carpet
- - [ ] Fish tank
- - [x] Vase
+ - ( ) Carpet
+ - ( ) Fish tank
+ - (x) Vase
 

@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Hot dog**
- - [ ] มักกะโรนี
- - [x] ฮ็อทดอก
- - [ ] เทมปุระ
+ - ( ) มักกะโรนี
+ - (x) ฮ็อทดอก
+ - ( ) เทมปุระ
 
  เลือกคำศัพท์ที่ตรงกับ **Tempura**
- - [ ] ซาลาเปา
- - [x] เทมปุระ
- - [ ] ไข่เจียว
+ - ( ) ซาลาเปา
+ - (x) เทมปุระ
+ - ( ) ไข่เจียว
 
  เลือกคำศัพท์ที่ตรงกับ **พิซซ่า**
- - [ ] Fried egg
- - [ ] Fried rice
- - [x] Pizza
+ - ( ) Fried egg
+ - ( ) Fried rice
+ - (x) Pizza
 
  เลือกคำศัพท์ที่ตรงกับ **ฮ็อทดอก**
- - [x] Hot dog
- - [ ] Steamed stuffed bun
- - [ ] Sushi
+ - (x) Hot dog
+ - ( ) Steamed stuffed bun
+ - ( ) Sushi
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fried&#x20;rice.mp3) 
- - [x] Fried rice
- - [ ] Sushi
- - [ ] Tempura
+ - (x) Fried rice
+ - ( ) Sushi
+ - ( ) Tempura
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/spaghetti.mp3) 
- - [ ] Hot dog
- - [x] Spaghetti
- - [ ] Steamed stuffed bun
+ - ( ) Hot dog
+ - (x) Spaghetti
+ - ( ) Steamed stuffed bun
 

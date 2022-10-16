@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Motorcycle**
- - [x] มอเตอร์ไซค์
- - [ ] ยานอวกาศ
- - [ ] เรือใบ
+ - (x) มอเตอร์ไซค์
+ - ( ) ยานอวกาศ
+ - ( ) เรือใบ
 
  เลือกคำศัพท์ที่ตรงกับ **Spaceship**
- - [x] ยานอวกาศ
- - [ ] รถไฟ
- - [ ] สามล้อ
+ - (x) ยานอวกาศ
+ - ( ) รถไฟ
+ - ( ) สามล้อ
 
  เลือกคำศัพท์ที่ตรงกับ **เรือใบ**
- - [ ] Boat
- - [x] Sail
- - [ ] Truck
+ - ( ) Boat
+ - (x) Sail
+ - ( ) Truck
 
  เลือกคำศัพท์ที่ตรงกับ **รถไฟ**
- - [ ] Bus
- - [ ] Subway
- - [x] Train
+ - ( ) Bus
+ - ( ) Subway
+ - (x) Train
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bus.mp3) 
- - [x] Bus
- - [ ] Motorcycle
- - [ ] Plane
+ - (x) Bus
+ - ( ) Motorcycle
+ - ( ) Plane
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/car.mp3) 
- - [x] Car
- - [ ] Train
- - [ ] Tricycle
+ - (x) Car
+ - ( ) Train
+ - ( ) Tricycle
 

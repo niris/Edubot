@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Sheep**
- - [ ] นกฮูก
- - [ ] ปลาทอง
- - [x] แกะ
+ - ( ) นกฮูก
+ - ( ) ปลาทอง
+ - (x) แกะ
 
  เลือกคำศัพท์ที่ตรงกับ **Starfish**
- - [x] ปลาดาว
- - [ ] หอย
- - [ ] แมลงปอ
+ - (x) ปลาดาว
+ - ( ) หอย
+ - ( ) แมลงปอ
 
  เลือกคำศัพท์ที่ตรงกับ **วัว**
- - [x] Cow
- - [ ] Goldfish
- - [ ] Sheep
+ - (x) Cow
+ - ( ) Goldfish
+ - ( ) Sheep
 
  เลือกคำศัพท์ที่ตรงกับ **แมว**
- - [x] Cat
- - [ ] Chicken
- - [ ] Starfish
+ - (x) Cat
+ - ( ) Chicken
+ - ( ) Starfish
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/buffalo.mp3) 
- - [x] Buffalo
- - [ ] Eagle
- - [ ] Horse
+ - (x) Buffalo
+ - ( ) Eagle
+ - ( ) Horse
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/dog.mp3) 
- - [x] Dog
- - [ ] Dragonfly
- - [ ] Duck
+ - (x) Dog
+ - ( ) Dragonfly
+ - ( ) Duck
 

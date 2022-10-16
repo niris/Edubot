@@ -14,31 +14,31 @@
 # ![icon](/media/icons/quiz.svg) 
 
 What time did I wake up this morning ?
- - [ ] 5 O'clock
- - [x] 7 O'clock
- - [ ] 8 O'clock
+ - ( ) 5 O'clock
+ - (x) 7 O'clock
+ - ( ) 8 O'clock
 
 What did I eat for breakfast?
- - [x] Eggs and bread
- - [ ] Fruit salad
- - [ ] Apple pie
+ - (x) Eggs and bread
+ - ( ) Fruit salad
+ - ( ) Apple pie
 
 How did I go to school this morning?
- - [ ] By taxi
- - [x] By bus
- - [ ] By car
+ - ( ) By taxi
+ - (x) By bus
+ - ( ) By car
 
 What did I eat for lunch ?
- - [ ] Eggs and bread
- - [x] Fruit salad
- - [ ] Apple pie
+ - ( ) Eggs and bread
+ - (x) Fruit salad
+ - ( ) Apple pie
 
 What did I do after school ?
- - [ ] I watched TV
- - [x] I played football
- - [ ] I read a book
+ - ( ) I watched TV
+ - (x) I played football
+ - ( ) I read a book
 
 Where did I eat dinner ?
- - [ ] At home
- - [ ] At school
- - [x] At a restaurant
+ - ( ) At home
+ - ( ) At school
+ - (x) At a restaurant

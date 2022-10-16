@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pace.mp3) 
- - [ ] Date
- - [ ] Nail
- - [x] Pace
+ - ( ) Date
+ - ( ) Nail
+ - (x) Pace
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cave.mp3) 
- - [x] Cave
- - [ ] Race
- - [ ] Skate
+ - (x) Cave
+ - ( ) Race
+ - ( ) Skate
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/day.mp3) 
- - [x] Day
- - [ ] Play
- - [ ] Rain
+ - (x) Day
+ - ( ) Play
+ - ( ) Rain
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/race.mp3) 
- - [x] Race
- - [ ] Rain
- - [ ] Snake
+ - (x) Race
+ - ( ) Rain
+ - ( ) Snake
 
 ออกเสียงคำว่า **Pave** :
 

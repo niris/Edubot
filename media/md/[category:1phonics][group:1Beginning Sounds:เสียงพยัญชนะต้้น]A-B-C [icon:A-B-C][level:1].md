@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/circle.mp3) 
- - [ ] Banana
- - [x] Circle
- - [ ] Crab
+ - ( ) Banana
+ - (x) Circle
+ - ( ) Crab
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bus.mp3) 
- - [ ] Ankle
- - [ ] Ant
- - [x] Bus
+ - ( ) Ankle
+ - ( ) Ant
+ - (x) Bus
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cow.mp3) 
- - [ ] Animals
- - [x] Cow
- - [ ] Crab
+ - ( ) Animals
+ - (x) Cow
+ - ( ) Crab
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/cat.mp3) 
- - [ ] Ax
- - [x] Cat
- - [ ] City
+ - ( ) Ax
+ - (x) Cat
+ - ( ) City
 
 ออกเสียงคำว่า **Crab** :
 

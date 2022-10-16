@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you&#x20;very&#x20;much.mp3) 
- - [ ] Don't mention it
- - [ ] Thank you
- - [x] Thank you very much
+ - ( ) Don't mention it
+ - ( ) Thank you
+ - (x) Thank you very much
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thanks.mp3) 
- - [x] Thanks
- - [ ] That's ok
- - [ ] With pleasure
+ - (x) Thanks
+ - ( ) That's ok
+ - ( ) With pleasure
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you.mp3) 
- - [x] Thank you
- - [ ] Thanks a lot
- - [ ] That's ok
+ - (x) Thank you
+ - ( ) Thanks a lot
+ - ( ) That's ok
 
 ออกเสียงคำว่า **Don't mention it** :
 

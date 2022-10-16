@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/suit.mp3) 
- - [ ] Food
- - [ ] Moon
- - [x] Suit
+ - ( ) Food
+ - ( ) Moon
+ - (x) Suit
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/glue.mp3) 
- - [ ] Boot
- - [ ] Cube
- - [x] Glue
+ - ( ) Boot
+ - ( ) Cube
+ - (x) Glue
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/huge.mp3) 
- - [ ] Cute
- - [x] Huge
- - [ ] Moon
+ - ( ) Cute
+ - (x) Huge
+ - ( ) Moon
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/fruit.mp3) 
- - [ ] Cube
- - [ ] Cute
- - [x] Fruit
+ - ( ) Cube
+ - ( ) Cute
+ - (x) Fruit
 
 ออกเสียงคำว่า **Food** :
 

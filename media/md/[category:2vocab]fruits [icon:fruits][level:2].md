@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Papaya**
- - [ ] ขิง
- - [ ] บรอคโคลี
- - [x] มะละกอ
+ - ( ) ขิง
+ - ( ) บรอคโคลี
+ - (x) มะละกอ
 
  เลือกคำศัพท์ที่ตรงกับ **Garlic**
- - [x] กระเทียม
- - [ ] อะโวคาโด
- - [ ] เชอร์รี่
+ - (x) กระเทียม
+ - ( ) อะโวคาโด
+ - ( ) เชอร์รี่
 
  เลือกคำศัพท์ที่ตรงกับ **กระเทียม**
- - [x] Garlic
- - [ ] Longan
- - [ ] Papaya
+ - (x) Garlic
+ - ( ) Longan
+ - ( ) Papaya
 
  เลือกคำศัพท์ที่ตรงกับ **ข้าวโพด**
- - [x] Corn
- - [ ] Grape
- - [ ] Strawberry
+ - (x) Corn
+ - ( ) Grape
+ - ( ) Strawberry
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pomelo.mp3) 
- - [ ] Cabbage
- - [ ] Carrot
- - [x] Pomelo
+ - ( ) Cabbage
+ - ( ) Carrot
+ - (x) Pomelo
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/banana.mp3) 
- - [x] Banana
- - [ ] Broccoli
- - [ ] Mangosteen
+ - (x) Banana
+ - ( ) Broccoli
+ - ( ) Mangosteen
 

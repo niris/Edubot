@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;old&#x20;are&#x20;you.mp3) 
- - [x] How old are you
- - [ ] I'm 130 centimeters tall
- - [ ] When were you born
+ - (x) How old are you
+ - ( ) I'm 130 centimeters tall
+ - ( ) When were you born
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;from&#x20;Thailand.mp3) 
- - [ ] I'm from china
- - [x] I'm from thailand
- - [ ] When were you born
+ - ( ) I'm from china
+ - (x) I'm from thailand
+ - ( ) When were you born
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;weigh&#x20;25&#x20;kilograms.mp3) 
- - [ ] How much do you weigh
- - [x] I weigh 25 kilograms
- - [ ] I'm from england
+ - ( ) How much do you weigh
+ - (x) I weigh 25 kilograms
+ - ( ) I'm from england
 
 ออกเสียงคำว่า **How much do you weigh** :
 

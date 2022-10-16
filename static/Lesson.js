@@ -19,7 +19,7 @@ const listCheckboxRule = (validated,level) => function (state) {
         // extract it prefix text
         const name = hashCode(all[i - 2].content, level);
         for (let j = i; all[j].type !== "bullet_list_close" && j < all.length; j++) {
-            if (all[j].type !== "inline" || all[j].children.length != 4 || all[j].children[1].type != 'checkbox_input') continue;
+            if (all[j].type !== "inline" || all[j].children.length != 4 || !['checkbox_input','radio_input'].includes(all[j].children[1].type)) continue;
             const checkbox = all[j].children[1];
             checkbox.attrSet('name', name);
             // disable if already done, else hide result
@@ -50,13 +50,25 @@ const inputRule = (validated, level) => function (state) {
         ]).flat() : [child];
     }).flat());
 };
-// convert [ ] label into HTML checkbox
+// convert ( ) label into HTML checkbox
 const checkboxRule = () => function (state) {
     state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
         const matches = [...child.content.matchAll(/\[(x|X|\s|\*|\_|\-)\]\s([^\[]*)/g)];
         return matches.length ? matches.map(([_, value, content]) => [
             new state.Token("label_open", "label", 1),
             Object.assign(new state.Token("checkbox_input", "input", 0), { attrs: [["type", "checkbox"]].concat((value.toLowerCase() === "x") ? [["checked", ""]] : []) }),
+            Object.assign(new state.Token("text", "", 0), { content }),
+            new state.Token("label_close", "label", -1),
+        ]).flat() : [child];
+    }).flat());
+};
+// convert ( ) label into HTML radio
+const radioRule = () => function (state) {
+    state.tokens.filter(t => t.type === "inline").forEach(i => i.children = i.children.map(child => {
+        const matches = [...child.content.matchAll(/\((x|X|\s|\*|\_|\-)\)\s([^\[]*)/g)];
+        return matches.length ? matches.map(([_, value, content]) => [
+            new state.Token("label_open", "label", 1),
+            Object.assign(new state.Token("radio_input", "input", 0), { attrs: [["type", "radio"]].concat((value.toLowerCase() === "x") ? [["checked", ""]] : []) }),
             Object.assign(new state.Token("text", "", 0), { content }),
             new state.Token("label_close", "label", -1),
         ]).flat() : [child];
@@ -89,6 +101,7 @@ const LessonShow = {
             mi.use(lazy_img);
             mi.core.ruler.push("media", mediaRule());
             mi.core.ruler.push("checkbox", checkboxRule(this.level));
+            mi.core.ruler.push("radio", radioRule(this.level));
             mi.core.ruler.push("input", inputRule(progress, this.level));
             mi.core.ruler.push("exam", listCheckboxRule(progress, this.level));
             return this.lesson ? mi.render(this.lesson) : '...';

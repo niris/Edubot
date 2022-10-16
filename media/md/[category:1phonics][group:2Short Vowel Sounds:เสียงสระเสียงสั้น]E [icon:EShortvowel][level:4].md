@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/wet.mp3) 
- - [ ] Eg
- - [ ] Pen
- - [x] Wet
+ - ( ) Eg
+ - ( ) Pen
+ - (x) Wet
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bed.mp3) 
- - [x] Bed
- - [ ] Net
- - [ ] Vet
+ - (x) Bed
+ - ( ) Net
+ - ( ) Vet
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/red.mp3) 
- - [ ] Egg
- - [ ] Leg
- - [x] Red
+ - ( ) Egg
+ - ( ) Leg
+ - (x) Red
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/wed.mp3) 
- - [ ] Eg
- - [ ] Ten
- - [x] Wed
+ - ( ) Eg
+ - ( ) Ten
+ - (x) Wed
 
 ออกเสียงคำว่า **Egg** :
 

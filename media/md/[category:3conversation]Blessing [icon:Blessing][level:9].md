@@ -15,21 +15,21 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Happy&#x20;easter&#x20;day.mp3) 
- - [ ] Best wishes for happy new year
- - [x] Happy easter day
- - [ ] Have a nice day
+ - ( ) Best wishes for happy new year
+ - (x) Happy easter day
+ - ( ) Have a nice day
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Happy&#x20;new&#x20;year.mp3) 
- - [ ] Happy birthday
- - [x] Happy new year
- - [ ] Merry christmas
+ - ( ) Happy birthday
+ - (x) Happy new year
+ - ( ) Merry christmas
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/May&#x20;god&#x20;bless&#x20;you.mp3) 
- - [ ] Best wishes for happy new year
- - [ ] Get well soon
- - [x] May god bless you
+ - ( ) Best wishes for happy new year
+ - ( ) Get well soon
+ - (x) May god bless you
 
 ออกเสียงคำว่า **Have a nice day** :
 

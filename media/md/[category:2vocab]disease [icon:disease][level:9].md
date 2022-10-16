@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Stomachache**
- - [ ] ความเจ็บปวด
- - [x] ปวดท้อง
- - [ ] ไอ
+ - ( ) ความเจ็บปวด
+ - (x) ปวดท้อง
+ - ( ) ไอ
 
  เลือกคำศัพท์ที่ตรงกับ **Headaches**
- - [ ] จาม
- - [x] ปวดหัว
- - [ ] เลือดออก
+ - ( ) จาม
+ - (x) ปวดหัว
+ - ( ) เลือดออก
 
  เลือกคำศัพท์ที่ตรงกับ **น้ํามูกไหล**
- - [ ] Headaches
- - [x] Runny nose
- - [ ] Stomachache
+ - ( ) Headaches
+ - (x) Runny nose
+ - ( ) Stomachache
 
  เลือกคำศัพท์ที่ตรงกับ **อ้วก**
- - [ ] Pain
- - [ ] Sneeze
- - [x] Vomit
+ - ( ) Pain
+ - ( ) Sneeze
+ - (x) Vomit
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sneeze.mp3) 
- - [ ] Cough
- - [x] Sneeze
- - [ ] Sore throat
+ - ( ) Cough
+ - (x) Sneeze
+ - ( ) Sore throat
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/stomachache.mp3) 
- - [ ] Backache
- - [ ] Pain
- - [x] Stomachache
+ - ( ) Backache
+ - ( ) Pain
+ - (x) Stomachache
 

@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Soap.mp3) 
- - [ ] Snake
- - [x] Soap
- - [ ] Teacher
+ - ( ) Snake
+ - (x) Soap
+ - ( ) Teacher
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Tiger.mp3) 
- - [ ] Singer
- - [ ] Teacher
- - [x] Tiger
+ - ( ) Singer
+ - ( ) Teacher
+ - (x) Tiger
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Taxi.mp3) 
- - [ ] Singer
- - [ ] Socks
- - [x] Taxi
+ - ( ) Singer
+ - ( ) Socks
+ - (x) Taxi
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/University.mp3) 
- - [ ] Teacher
- - [ ] Tomato
- - [x] University
+ - ( ) Teacher
+ - ( ) Tomato
+ - (x) University
 
 ออกเสียงคำว่า **Socks** :
 

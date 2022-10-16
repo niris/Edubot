@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/horse.mp3) 
- - [ ] Goat
- - [ ] Hen
- - [x] Horse
+ - ( ) Goat
+ - ( ) Hen
+ - (x) Horse
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/goat.mp3) 
- - [x] Goat
- - [ ] Hamburger
- - [ ] House
+ - (x) Goat
+ - ( ) Hamburger
+ - ( ) House
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hat.mp3) 
- - [ ] Girl
- - [ ] Hamburger
- - [x] Hat
+ - ( ) Girl
+ - ( ) Hamburger
+ - (x) Hat
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hamburger.mp3) 
- - [x] Hamburger
- - [ ] Head
- - [ ] Itch
+ - (x) Hamburger
+ - ( ) Head
+ - ( ) Itch
 
 ออกเสียงคำว่า **Horse** :
 

@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Aunt**
- - [ ] ตัวฉัน
- - [x] ป้า หรือ น้าสาว
- - [ ] แม่
+ - ( ) ตัวฉัน
+ - (x) ป้า หรือ น้าสาว
+ - ( ) แม่
 
  เลือกคำศัพท์ที่ตรงกับ **Grandmother**
- - [ ]  ปู่ หรือ ตา
- - [ ] พี่สาว หรือ น้องสาว
- - [x] ย่า หรือ ยาย
+ - ( )  ปู่ หรือ ตา
+ - ( ) พี่สาว หรือ น้องสาว
+ - (x) ย่า หรือ ยาย
 
  เลือกคำศัพท์ที่ตรงกับ ** ปู่ หรือ ตา**
- - [ ] Aunt
- - [x] Grandfather
- - [ ] Mother
+ - ( ) Aunt
+ - (x) Grandfather
+ - ( ) Mother
 
  เลือกคำศัพท์ที่ตรงกับ **ตัวฉัน**
- - [ ] Father
- - [x] Me
- - [ ] Mother
+ - ( ) Father
+ - (x) Me
+ - ( ) Mother
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/sister.mp3) 
- - [ ] Aunt
- - [ ] Grandmother
- - [x] Sister
+ - ( ) Aunt
+ - ( ) Grandmother
+ - (x) Sister
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/grandfather.mp3) 
- - [x] Grandfather
- - [ ] Me
- - [ ] Mother
+ - (x) Grandfather
+ - ( ) Me
+ - ( ) Mother
 

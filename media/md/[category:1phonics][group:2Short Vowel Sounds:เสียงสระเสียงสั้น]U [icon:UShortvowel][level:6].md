@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/rub.mp3) 
- - [ ] Bug
- - [ ] Hug
- - [x] Rub
+ - ( ) Bug
+ - ( ) Hug
+ - (x) Rub
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/jug.mp3) 
- - [ ] Hum
- - [x] Jug
- - [ ] Run
+ - ( ) Hum
+ - (x) Jug
+ - ( ) Run
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bug.mp3) 
- - [x] Bug
- - [ ] Hug
- - [ ] Ub
+ - (x) Bug
+ - ( ) Hug
+ - ( ) Ub
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/bum.mp3) 
- - [ ] Aut
- - [x] Bum
- - [ ] Up
+ - ( ) Aut
+ - (x) Bum
+ - ( ) Up
 
 ออกเสียงคำว่า **Hut** :
 

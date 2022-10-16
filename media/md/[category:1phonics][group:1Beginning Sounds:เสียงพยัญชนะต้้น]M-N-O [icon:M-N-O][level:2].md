@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Owl.mp3) 
- - [x] Owl
- - [ ] Moon
- - [ ] Mother
+ - (x) Owl
+ - ( ) Moon
+ - ( ) Mother
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mother.mp3) 
- - [ ] Octopus
- - [ ] Ostrich
- - [x] Mother
+ - ( ) Octopus
+ - ( ) Ostrich
+ - (x) Mother
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Nine.mp3) 
- - [x] Nine
- - [ ] Ostrich
- - [ ] Moon
+ - (x) Nine
+ - ( ) Ostrich
+ - ( ) Moon
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mouse.mp3) 
- - [ ] Noodles
- - [x] Mouse
- - [ ] Mushroom
+ - ( ) Noodles
+ - (x) Mouse
+ - ( ) Mushroom
 
 ออกเสียงคำว่า **Night** :
 

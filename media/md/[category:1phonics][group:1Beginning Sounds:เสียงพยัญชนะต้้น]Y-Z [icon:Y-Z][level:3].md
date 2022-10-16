@@ -14,27 +14,27 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zip.mp3) 
- - [ ] Yoyo
- - [x] Zip
- - [ ] Zoo
+ - ( ) Yoyo
+ - (x) Zip
+ - ( ) Zoo
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Yogurt.mp3) 
- - [x] Yogurt
- - [ ] Yolk
- - [ ] Zero
+ - (x) Yogurt
+ - ( ) Yolk
+ - ( ) Zero
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Yellow.mp3) 
- - [ ] Yacht
- - [x] Yellow
- - [ ] Zoo
+ - ( ) Yacht
+ - (x) Yellow
+ - ( ) Zoo
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Zebra.mp3) 
- - [ ] Yolk
- - [ ] Yoyo
- - [x] Zebra
+ - ( ) Yolk
+ - ( ) Yoyo
+ - (x) Zebra
 
 ออกเสียงคำว่า **Zucchini** :
 

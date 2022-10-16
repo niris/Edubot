@@ -15,33 +15,33 @@
 
 
  เลือกคำศัพท์ที่ตรงกับ **Exercise**
- - [ ] คาราเต้
- - [x] ออกกําลังกาย
- - [ ] แข่งเรือใบ
+ - ( ) คาราเต้
+ - (x) ออกกําลังกาย
+ - ( ) แข่งเรือใบ
 
  เลือกคำศัพท์ที่ตรงกับ **Yoga**
- - [ ] ปีนเขา
- - [ ] ฮอกกี้
- - [x] โยคะ
+ - ( ) ปีนเขา
+ - ( ) ฮอกกี้
+ - (x) โยคะ
 
  เลือกคำศัพท์ที่ตรงกับ **ปิงปอง**
- - [ ] Karate
- - [ ] Soccer
- - [x] Table tennis
+ - ( ) Karate
+ - ( ) Soccer
+ - (x) Table tennis
 
  เลือกคำศัพท์ที่ตรงกับ **ฮอกกี้**
- - [x] Hockey
- - [ ] Jogging
- - [ ] Judo
+ - (x) Hockey
+ - ( ) Jogging
+ - ( ) Judo
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hiking.mp3) 
- - [ ] Exercise
- - [x] Hiking
- - [ ] Skiing
+ - ( ) Exercise
+ - (x) Hiking
+ - ( ) Skiing
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/hockey.mp3) 
- - [ ] Exercise
- - [x] Hockey
- - [ ] Sailing
+ - ( ) Exercise
+ - (x) Hockey
+ - ( ) Sailing
 
