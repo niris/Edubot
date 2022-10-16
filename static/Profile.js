@@ -121,7 +121,7 @@ const Profile = {
 			if (event) event.target.submit.disabled = true;
 		},
 		async signOut({ target }) {
-			await fetch('/logout'); // because /api/rpc/logout : https://gitter.im/begriffs/postgrest?at=62e86c60cf6cfd27af645fb8
+			await fetch('/api/rpc/logout');
 			localStorage.clear();
 			this.$root.log();
 			this.me.theme = '#126359';

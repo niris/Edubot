@@ -86,7 +86,7 @@ const LessonShow = {
         markdownToHtml() {
             const progress = Object.keys(JSON.parse(localStorage.progress || '{}'));
             const mi = markdownit({ html: true });
-            //mi.use(lazy_img);
+            mi.use(lazy_img);
             mi.core.ruler.push("media", mediaRule());
             mi.core.ruler.push("checkbox", checkboxRule(this.level));
             mi.core.ruler.push("input", inputRule(progress, this.level));
@@ -109,9 +109,11 @@ const LessonShow = {
             console.log(elems, valid);
             const ratio = valid.length / (radio.length + texts.length);
             const bargain = .75;
+            const info = `You have ${(100*ratio)|0}% accuracy`;
             if (ratio < bargain) {
-                return alert(`You have ${(100*ratio)|0}% accuracy\nBut you need ${(100*bargain)|0}%`);
+                return alert(`${info}\nBut you need ${(100*bargain)|0}%`);
             }
+            alert(`${info}\nCongratulation !`)
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
             const progress = JSON.parse(localStorage.progress || '{}');
             progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
