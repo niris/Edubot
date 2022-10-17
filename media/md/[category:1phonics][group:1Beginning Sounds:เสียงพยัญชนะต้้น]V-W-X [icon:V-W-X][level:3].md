@@ -40,7 +40,7 @@
 
 🎙️ xylophone
 
-ออกเสียงคำว่า **Whale** :
+ออกเสียงคำว่า **Water** :
 
-🎙️ whale
+🎙️ water
 

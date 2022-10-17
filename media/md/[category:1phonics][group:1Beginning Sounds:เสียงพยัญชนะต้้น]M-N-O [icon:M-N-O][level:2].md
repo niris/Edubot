@@ -40,7 +40,7 @@
 
 🎙️ night
 
-ออกเสียงคำว่า **Mouse** :
+ออกเสียงคำว่า **Mushroom** :
 
-🎙️ mouse
+🎙️ mushroom
 

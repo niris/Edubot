@@ -21,12 +21,12 @@ Its name is_____
  - (x) Snoopy
  - ( ) Kitty
 
-My dog is_____
+My dog color is_____
  - ( ) White
  - (x) Brown
  - ( ) Black
 
-My dog is_____
- - ( ) Small and white
- - ( ) Big and black
- - (x) Big and brown
+My dog size is_____
+ - ( ) Small
+ - ( ) Medium
+ - (x) Big

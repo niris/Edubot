@@ -39,7 +39,7 @@
 
 🎙️ may i introduce myself
 
-ออกเสียงคำว่า **I want to introduce my friend elsa** :
+ออกเสียงคำว่า **I want to introduce my friend** :
 
-🎙️ i want to introduce my friend elsa
+🎙️ i want to introduce my friend
 

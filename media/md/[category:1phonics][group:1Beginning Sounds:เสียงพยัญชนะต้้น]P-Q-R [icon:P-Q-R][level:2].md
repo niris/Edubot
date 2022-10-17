@@ -40,7 +40,7 @@
 
 🎙️ pizza
 
-ออกเสียงคำว่า **Ruler** :
+ออกเสียงคำว่า **Rainbow** :
 
-🎙️ ruler
+🎙️ rainbow
 

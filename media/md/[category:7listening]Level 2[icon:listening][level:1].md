@@ -7,7 +7,7 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/kale.mp3) 
- - ( ) I'm o.k.
+ - ( ) I'm okay
  - ( ) Thanks
  - (x) Kale
 

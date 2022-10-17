@@ -31,15 +31,15 @@
  - ( ) I want to be a dentist
  - (x) What does your father do
 
-ออกเสียงคำว่า **How many brothers and sisters do you have** :
+ออกเสียงคำว่า **I live in bangkok** :
 
-🎙️ how many brothers and sisters do you have
+🎙️ i live in bangkok
 
-ออกเสียงคำว่า **I have 2 brothers and 1 sister** :
+ออกเสียงคำว่า **I have three brothers** :
 
-🎙️ i have 2 brothers and 1 sister
+🎙️ i have three brothers
 
-ออกเสียงคำว่า **How many people are there in your family** :
+ออกเสียงคำว่า **How many people in your family** :
 
-🎙️ how many people are there in your family
+🎙️ how many people in your family
 

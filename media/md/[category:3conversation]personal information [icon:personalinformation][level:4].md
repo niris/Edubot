@@ -31,13 +31,13 @@
  - (x) I weigh 25 kilograms
  - ( ) I'm from england
 
-ออกเสียงคำว่า **How much do you weigh** :
+ออกเสียงคำว่า **How old are you** :
 
-🎙️ how much do you weigh
+🎙️ how old are you
 
-ออกเสียงคำว่า **I weigh 25 kilograms** :
+ออกเสียงคำว่า **I'm seven years old** :
 
-🎙️ i weigh 25 kilograms
+🎙️ i'm seven years old
 
 ออกเสียงคำว่า **I'm from england** :
 
