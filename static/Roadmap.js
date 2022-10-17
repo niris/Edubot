@@ -1,6 +1,90 @@
-const Roadmap = {
+const CategoryList = {
+    __doc__: `List "category:" tags from all lessons`,
     template: `
-    <div style="background: radial-gradient(var(--color-lightGrey) 20%, transparent 20%) 50% 0px / 50px 50px repeat-y;padding-top: 150px;">
+    <progress v-if="categories===null"></progress>
+    <p v-else-if="categories.length===0">No category found.</p>
+    <div class=is-right>
+        <router-link :to="'/'" class="button outline"><s>options</s> Level View</router-link>
+    </div>
+    <div class=grid>
+        <router-link v-for="category in categories" :to="'/category/'+category.path" class="card truncate">
+            <img :src='"/media/icons/"+category.name+".svg"' style="padding: 15%;" width=500 height=500 alt="category" loading=lazy>
+            <span class="is-center text-capitalize">{{category.name}}</span>
+        </router-link >
+    </div>
+    `,
+    computed: {
+        categories() {
+            return [...new Set(this.$root.mds.map(t=>t.category))].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
+        },
+    }
+}
+
+const CategoryGroupList = {
+    __doc__: `List Lessons for a given .category and group them by they .group`,
+    props: ['category'],
+    template: `
+    <progress v-if="groups==null"/>
+    <p v-else-if="groups.length===0">
+        No group/lesson with category {{$props.category}}. You can Import them with
+        <pre>make lesson_init</pre>
+        then <a href=>refresh</a> this page.
+    </p>
+    <template v-for="group in groups">
+        <div class="title text-capitalize">{{group.title.split(":")[0]}}</div>
+        <div class="text-grey">{{group.title.split(":")[1]}}</div>
+        <div class=grid>
+            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.name" :class="'truncate '+reachable(lesson)">
+                <span style="text-align:center" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{lesson.level}}</span>
+                <img :src="'/media/icons/'+lesson.icon+'.svg'" style="padding: 15%;" width=500 height=500 alt="lesson" loading=lazy>
+                <span class="text-capitalize is-center">{{lesson.title.replace(/^[^a-zA-Z]+/, '')}}</span>
+            </router-link>
+        </div>
+    </template>
+    `,
+    methods: {
+        reachable(lesson) {
+            if (lesson.level > this.$root.myLv)
+                return 'forbidden';
+            if (this.$root.progress[`/lesson/${decodeURIComponent(lesson.name)}`] !== undefined)
+                return 'done card';
+            return 'card'
+        }
+    },
+    computed: { 
+        groups() {
+            return this.$root.mds.filter(lesson => lesson.category==this.category)
+            .reduce(function (groups, lesson) {
+                const existing = groups.find(group => group.path == lesson.group);
+                existing ? existing.list.push(lesson) : groups.push({
+                    title: (lesson.group||'').replace(/^[^a-zA-Z]+/, ''),
+                    path: lesson.group,
+                    list: [lesson]
+                })
+                return groups
+            }, [])
+            .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
+            .map(group => ({
+                ...group, list: group.list // sort grouped lessons by they level + name
+                    .sort((a, b) => a.title.localeCompare(b.title))
+                    .sort((a, b) => a.level - b.level)
+            }))
+        }
+    },
+}
+
+const Roadmap = {
+    __doc__: `List lessons grouped by level`,
+    template: `
+<div class=is-right>
+    <router-link :to="'/category/'" class="button outline"><s>app</s> Category View</router-link>
+</div>
+<div style="background: radial-gradient(var(--color-lightGrey) 20%, transparent 20%) 50% 0px / 20px 20px repeat-y;">
+    <div class="is-center" style="flex-direction:column;background: var(--bg-color);">
+        <img class="is-center" width=128 src="/media/icons/ninja.svg">
+        <strong class="text-center">{{$root.myId}}</strong>
+        <div class="text-center">Lv:{{$root.myLv}}, Xp:{{$root.myXp}}</div>
+    </div>
     <template v-for="(world,level) in $root.worlds">
         <div :class='{stages:true,disabled:level>$root.myLv}'>
             <router-link :to="'/lesson/'+lesson.name" v-for="lesson in world.filter(l=>l.mode!='exam')" :class="{stage:true,disabled:('/lesson/'+lesson.name) in this.$root.progress}">
@@ -14,7 +98,7 @@ const Roadmap = {
             </router-link>
         </div >
     </template>
-    </div>
-    `
+</div>
+`
 }
-export { Roadmap };
+export { Roadmap, CategoryList, CategoryGroupList};

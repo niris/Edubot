@@ -12,14 +12,14 @@ CREATE TABLE public.profile (
 	"alias" text,
 	"birth" date,
 	"secret" text, -- favorite food
-	"theme" text DEFAULT '#126359',
+	"theme" text DEFAULT '', -- empty so frontend can fallback
 	"progress" JSON -- cleared lessons/exams
 );
 
 CREATE or replace VIEW public.leaderboard AS
 SELECT id, alias, progress
 FROM public.profile;
-grant SELECT ON TABLE public.leaderboard TO "user";
+grant SELECT ON TABLE public.leaderboard TO "anon";
 
 CREATE or replace FUNCTION auth.also_create_profile() returns trigger as $$
 begin

@@ -89,7 +89,7 @@ const Sign = {
 				return alert((await auth.json()).message);
 			}
 			this.$root.log();
-			this.$router.push({ path: '/me' });
+			this.$router.push({ path: '/' });
 		},
 		async reset({ target }) {
 			const auth = await fetch('/api/rpc/reset', {
@@ -133,7 +133,7 @@ const Sign = {
 			}
 			// setup all done
 			alert(`Welcome ${this.$root.id} !`);
-			this.$router.push({ path: '/me' });
+			this.$router.push({ path: '/' });
 		},
 	}
 }

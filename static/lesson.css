@@ -1,0 +1,91 @@
+.lesson td{
+    padding: 1.2rem 5rem;
+    margin-left:auto ;
+    margin-right: auto;
+}
+/* remove sharp angle from lessons media for kids safety */
+.lesson img,
+.lesson video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+.lesson audio  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.lesson .voice.live .voiceth.live {
+    box-shadow: 0 0 0 5px var(--color-primary) !important;
+}
+
+.lesson>ul {
+    padding: 0;
+    list-style-type: none;
+}
+.lesson>ul>li>label{
+    display: block;
+    box-shadow: 0 1px 2px;
+    border-radius: 0.3em;
+    font-size: 1.4em;
+    margin: 1em;
+    padding: 0.5em;
+}
+.lesson>ul>li>label>input[type=radio],
+.lesson>ul>li>label>input[type=checkbox]{
+    margin-right: 1em;
+}
+.lesson .carrousel {
+    box-shadow: inset 0 0.125em 0.5em -0.25em black;
+    border-radius: 1em;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin: 1em 0;
+}
+@keyframes swipe {
+    .1% {transform:translateX(min(calc(var(--grid-maxWidth) * -.5), -5vw));}
+    100% {transform:translateX(0px);}
+}
+.lesson .carrousel>table {
+    animation: swipe 2s cubic-bezier( .7, 0, .3, 1 ) ;
+}
+.lesson .carrousel th {
+    min-width: min(calc(var(--grid-maxWidth) * 1), 100vw);
+    scroll-snap-align: start;
+}
+.lesson .carrousel td {
+    font-size: 1.25em;
+}
+
+.lesson .carrousel td:first-letter{
+    text-transform: capitalize;
+}
+.lesson .carrousel img {
+    max-height: 50vh;
+    /* until all image are squared */
+}
+@keyframes swipe {
+    .1% {transform:translateX(min(calc(var(--grid-maxWidth) * -.5), -5vw));}
+    100% {transform:translateX(0px);}
+}
+.lesson .carrousel>table {
+    animation: swipe 2s cubic-bezier( .7, 0, .3, 1 ) ;
+}
+
+
+.lesson img[alt=icon] {
+    width : 2.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+}
+
+.lesson img[alt=icon-collapsed] {
+    width : 2em;
+    margin-left: 0.5em;
+    margin-bottom: 0.1em;
+}

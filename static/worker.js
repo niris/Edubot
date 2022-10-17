@@ -1,5 +1,4 @@
-
-const cacheName = "edubot-2022-09-30";
+const cacheName = "edubot-2022-10-06";
 console.log("activating...");
 //TODO: split into cache-first and online-first
 const fetchFirst = [
@@ -70,6 +69,7 @@ function send(msg) {
   self.clients.matchAll().then(clients => clients.map(client => client.postMessage(msg)))
 };
 onmessage = async function (event) {
+  console.log(event.data.action);
   if (event.data.action === 'install') {
     await keep("nothing");
     await sync(fetchFirst, send);

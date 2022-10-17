@@ -2,7 +2,7 @@
 <html lang=en>
 <meta charset="utf-8">
 <title>AnglizBot</title>
-<meta name=description content="EduBot">
+<meta name=description content="AnglizBot">
 <meta name=viewport content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
@@ -11,6 +11,8 @@
 <link rel="mask-icon" href="/static/favicon.svg" color="black">
 <link rel=stylesheet href="/static/chota.min.css" media="print" onload="media='all'">
 <link rel=stylesheet href="/static/style.css" media="print" onload="media='all'">
+<link rel=stylesheet href="/static/chatbot.css" media="print" onload="media='all'">
+<link rel=stylesheet href="/static/lesson.css" media="print" onload="media='all'">
 <link rel="manifest" href="/static/manifest.json">
 <script defer src="/static/vue.global.prod.js"></script>
 <script defer src="/static/vue-router.global.prod.js"></script>
@@ -18,19 +20,18 @@
 <script type=module>
 import { Sign } from '/static/Sign.js'
 import { Profile } from '/static/Profile.js'
-import { Roadmap } from '/static/Roadmap.js'
 import { Leaderboard } from '/static/Leaderboard.js'
-import { LessonList, LessonShow, CategoriesList } from '/static/Lesson.js'
+import { LessonShow } from '/static/Lesson.js'
 import { BotOnlineChat } from '/static/BotOnline.js'
+import { Roadmap, CategoryGroupList, CategoryList } from '/static/Roadmap.js'
 import { Privacy } from '/static/Privacy.js'
 
 const routes = [
-	{ path:'/', redirect: ()=> document.cookie ? '/me' : '/sign/in'},
+	{ path:'/', component: Roadmap },
 	{ path:'/sign/:mode', component: Sign, props:true},
-	{ path:'/me', component: Profile },
-	{ path:'/roadmap', component: Roadmap },
-	{ path:'/category/', component: CategoriesList},
-	{ path:'/category/:tag', component: LessonList, props: true},
+	{ path:'/settings', component: Profile },
+	{ path:'/category/', component: CategoryList},
+	{ path:'/category/:category', component: CategoryGroupList, props: true},
 	{ path:'/lesson/:id', component: LessonShow, props: true },
 	{ path:'/leaderboard', component: Leaderboard},
 	{ path:'/privacy', component: Privacy},
@@ -40,7 +41,7 @@ const routes = [
 const app = Vue.createApp({
 	data() { return {
 		mds: [],
-		role: null, id: null, worker:null, theme: localStorage.theme || `#126359`,
+		role: null, id: null, worker:null, theme: localStorage.theme,
 		progress: JSON.parse(localStorage.progress || '{}'),
 	} },
 	async created() {
@@ -49,14 +50,13 @@ const app = Vue.createApp({
 			const title = file.name.slice(0,-3).replace(/\[(\w+):(.*?)\]/g,(a,k,v)=>{tags[k]=v;return ''}).trim();
 			return {...file,title,...tags}
 		});
-		console.log(this.mds)
 	},
 	async mounted() {
 		this.log();
 		if ('serviceWorker' in navigator) {
 			const register = await navigator.serviceWorker.register('/worker.js');
-			console.log(register);
 			register.onupdatefound = () => this.$root.$refs.bot.say("An update is available !")
+			console.log(register);
 			this.worker = register.active;
 			navigator.serviceWorker.addEventListener("message", ({data}) => {
 				console.log("message", data);
@@ -66,17 +66,28 @@ const app = Vue.createApp({
 	},
 	computed: {
 		worlds() { return this.$root.mds.reduce((acc, md) => (acc[md.level] = [...acc[md.level] || [], md], acc), {}); },
+		myId() { return this.id || 'Guest';},
 		myLv() { return this.level(this.progress);},
 		myXp() { return Object.keys(this.progress).filter(p=>p.startsWith(`lv${this.myLv}`)).length;}
 	},
 	watch: {
+		theme(val) { localStorage.theme = val; },
+		progress: {
+			handler(val) { localStorage.progress = JSON.stringify(val);},
+			deep: true
+		},
 		myLv() {
 			this.$refs.lv.classList.add('lvUp');
 			setTimeout(() => this.$refs.lv.classList.remove('lvUp'), 1000);
 		}
 	},
 	methods: {
-		level(progress) { return 1 + Object.keys(progress||{}).filter(r=>r.match(/\[mode:exam\]/)).map(r=>+(r.match(/\[level:(\d+)\]/)||['','-1'])[1]).reduce((a,b)=>Math.max(a,b),-1); },
+		level(progress) { // return the highest completed exam level (none (0) is level 1)
+			return 1 + Object.keys(progress||{})
+			.filter(r=>r.match(/\[mode:exam\]/))
+			.map(r=>+(r.match(/\[level:(\d+)\]/)||['','-1'])[1])
+			.reduce((a,b)=>Math.max(a,b),-1);
+		},
 		is(...roles) { return roles.includes(this.role); },
 		log() {
 			const cookie = Object.fromEntries(document.cookie.split('; ').map(x => x.split('=')));
@@ -93,20 +104,15 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 	document.body.classList.add('dark');
 }
 </script>
-<main class="container">
-	<component is="style">:root{--color-primary: {{theme}};}</component>
+<main class="container" style="opacity:0;">
+	<component is="style">:root{--color-primary: {{this.theme || '#126359'}};}</component>
 	<nav class="tabs is-full"
 		style="z-index: 1;margin-bottom: 2em;position: sticky;top: 0;background: var(--bg-color);">
-		<router-link to="/category" v-if="is('user')"><s>app</s>&nbsp;<span>บทเรียน</span></router-link>
-		<router-link to="/roadmap" v-if="is('user')"><s>options</s>&nbsp;<span>map</span></router-link>
-		<router-link to="/me" v-if="is('user')">
-			<s>bust</s>&nbsp;<span>{{$root.id}}</span>
-			<span ref=lv class="tag is-small" :title="'xp:'+xp"
-				style="transform:scale(1) translateY(0);background-size: cover;transition: transform 1s;">Lv:{{myLv}}</span>
+		<router-link to="/"><s>bust</s> {{$root.myId}} <span ref=lv class="tag is-small">Lv:{{myLv}}</span>
 		</router-link>
-		<router-link to="/sign/in" v-if="is(null)"><s>star</s>&nbsp;<span>Sign</span></router-link>
-		<router-link to="/leaderboard" v-if="is('user')"><s>trophy</s>&nbsp;<span>Leaderboard</span></router-link>
+		<router-link to="/leaderboard"><s>trophy</s> Leaderboard</router-link>
+		<router-link to="/settings"><s>cog</s> Settings</router-link>
 	</nav>
 	<router-view :key="$route.fullPath"></router-view>
-	<bot-chat ref="bot" v-if="is('user')"></bot-chat>
+	<bot-chat ref="bot"></bot-chat>
 </main>

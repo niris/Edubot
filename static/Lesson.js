@@ -93,17 +93,16 @@ const LessonShow = {
     <button v-if=isExam form=lesson class="button primary is-full-width">Validate</button>
     <hr>
     <router-link :to=$router.options.history.state.back class="button outline">&lt;&lt; Back</router-link>`,
-    data() { return { lesson: "", isExam: false, level:0} },
+    data() { return { lesson: "", isExam: false, level:0, validated: Object.keys(this.$root.progress)} },
     computed: {
         markdownToHtml() {
-            const progress = Object.keys(JSON.parse(localStorage.progress || '{}'));
             const mi = markdownit({ html: true });
             mi.use(lazy_img);
             mi.core.ruler.push("media", mediaRule());
             mi.core.ruler.push("checkbox", checkboxRule(this.level));
             mi.core.ruler.push("radio", radioRule(this.level));
-            mi.core.ruler.push("input", inputRule(progress, this.level));
-            mi.core.ruler.push("exam", listCheckboxRule(progress, this.level));
+            mi.core.ruler.push("input", inputRule(this.validated, this.level));
+            mi.core.ruler.push("exam", listCheckboxRule(this.validated, this.level));
             return this.lesson ? mi.render(this.lesson) : '...';
         }
     },
@@ -128,10 +127,7 @@ const LessonShow = {
             }
             alert(`${info}\nCongratulation !`)
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
-            const progress = JSON.parse(localStorage.progress || '{}');
-            progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
-            this.$root.progress = progress;
-            localStorage.progress = JSON.stringify(progress);
+            this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
             setTimeout(this.$router.back, 1000)
         },
         validateInput({ target }) {
@@ -150,18 +146,15 @@ const LessonShow = {
                 correct = [...inputs].every(c => c.checked == (c.dataset.checked !== undefined));
             }
             if (!correct) return;
-            const progress = JSON.parse(localStorage.progress || '{}');
-            progress[target.name] = 1;
+            this.$root.progress[target.name] = 1;
             (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             const remain = target.form.querySelector('input:not([disabled])');
             if (!remain) {
-                progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
+                this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
                 setTimeout(this.$router.back, 1000)
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
-            this.$root.progress = progress;
             this.$root.$refs.bot.response(true);
-            localStorage.progress = JSON.stringify(progress);
         }
     },
     async mounted() {
@@ -170,77 +163,5 @@ const LessonShow = {
         this.lesson = await (await fetch(`/media/md/${this.$props.id}`)).text();
     }
 }
-//URL.createObjectURL(new Blob(Uint8Array.from(s.content.slice(2).match(/../g),a=>parseInt(a,16)), { type: "image/jpeg" } ))
-const LessonList = {
-    __doc__: `List Lesson for a given .category and group them by they .group`,
-    props: ['tag'],
-    template: `
-    <progress v-if="groups==null"/>
-    <p v-else-if="groups.length===0">
-        No group/lesson with tag {{$props.tag}}. You can Import them with
-        <pre>make lesson_init</pre>
-        then <a href=>refresh</a> this page.
-    </p>
-    <template v-for="group in groups">
-        <div class="title text-capitalize">{{group.title.split(":")[0]}}</div>
-        <div class="text-grey">{{group.title.split(":")[1]}}</div>
-        <div class=grid>
-            <router-link v-for="lesson in group.list" :to="'/lesson/'+lesson.name" :class="'ovh '+reachable(lesson)">
-                <span style="text-align:center" :class="'tag is-small ' + ((reachable(lesson)=='forbidden')?'bg-error text-light':'text-success')">{{lesson.level}}</span>
-                <img :src="'/media/icons/'+lesson.icon+'.svg'" style="padding: 15%;" width=500 height=500 alt="lesson" loading=lazy>
-                <span class="text-capitalize is-center">{{lesson.title.replace(/^[^a-zA-Z]+/, '')}}</span>
-            </router-link>
-        </div>
-    </template>
-    `,
-    methods: {
-        reachable(lesson) {
-            if (lesson.level > this.$root.myLv)
-                return 'forbidden';
-            if (JSON.parse(localStorage.progress||'[]')[`/lesson/${decodeURIComponent(lesson.name)}`] !== undefined)
-                return 'done card';
-            return 'card'
-        }
-    },
-    computed: { 
-        groups() {
-            return this.$root.mds.filter(lesson => lesson.category==this.tag)
-            .reduce(function (groups, lesson) {
-                const existing = groups.find(group => group.path == lesson.group);
-                existing ? existing.list.push(lesson) : groups.push({
-                    title: (lesson.group||'').replace(/^[^a-zA-Z]+/, ''),
-                    path: lesson.group,
-                    list: [lesson]
-                })
-                return groups
-            }, [])
-            .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
-            .map(group => ({
-                ...group, list: group.list // sort grouped lessons by they level + name
-                    .sort((a, b) => a.title.localeCompare(b.title))
-                    .sort((a, b) => a.level - b.level)
-            }))
-        }
-    },
-}
 
-const CategoriesList = {
-    __doc__: `List "category:" tags from all lessons`,
-    template: `
-    <progress v-if="categories===null"></progress>
-    <p v-else-if="categories.length===0">No category found.</p>
-    <div class=grid>
-        <router-link v-for="category in categories" :to="'/category/'+category.path" class="card ovh">
-            <img :src='"/media/icons/"+category.name+".svg"' style="padding: 15%;" width=500 height=500 alt="category" loading=lazy>
-            <span class="is-center text-capitalize">{{category.name}}</span>
-        </router-link >
-    </div>
-    `,
-    computed: {
-        categories() {
-            return [...new Set(this.$root.mds.map(t=>t.category))].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
-        },
-    }
-}
-
-export { LessonList, LessonShow, CategoriesList }
+export { LessonShow }
