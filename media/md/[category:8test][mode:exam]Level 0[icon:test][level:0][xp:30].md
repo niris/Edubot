@@ -103,7 +103,7 @@
 
 🎙️ see you again tomorrow
 
-ออกเสียงคำว่า  **Hello** :
+ออกเสียงคำว่า  **Good Luck** :
 
-🎙️ hello
+🎙️ good luck
 

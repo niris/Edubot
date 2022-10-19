@@ -41,7 +41,8 @@ const routes = [
 const app = Vue.createApp({
 	data() { return {
 		mds: [],
-		role: null, id: null, worker:null, theme: localStorage.theme,
+		role: null, id: null, worker:null,
+		theme: localStorage.theme, alias: localStorage.alias,
 		progress: JSON.parse(localStorage.progress || '{}'),
 	} },
 	async created() {
@@ -67,11 +68,12 @@ const app = Vue.createApp({
 	computed: {
 		worlds() { return this.$root.mds.reduce((acc, md) => (acc[md.level] = [...acc[md.level] || [], md], acc), {}); },
 		myId() { return this.id || 'Guest';},
-		myLv() { return this.level(this.progress);},
-		myXp() { return Object.keys(this.progress).filter(p=>p.startsWith(`lv${this.myLv}`)).length;}
+		myLv() { return this.lv(this.progress);},
+		myXp() { return this.xp(this.progress);},
 	},
 	watch: {
 		theme(val) { localStorage.theme = val; },
+		alias(val) { localStorage.alias = val; },
 		progress: {
 			handler(val) { localStorage.progress = JSON.stringify(val);},
 			deep: true
@@ -79,15 +81,22 @@ const app = Vue.createApp({
 		myLv() {
 			this.$refs.lv.classList.add('lvUp');
 			setTimeout(() => this.$refs.lv.classList.remove('lvUp'), 1000);
+			if (!this.myId){
+				this.$root.$refs.bot.say("Level UP ! Create an account to save it !");
+			}
 		}
 	},
 	methods: {
-		level(progress) { // return the highest completed exam level (none (0) is level 1)
+		lv(progress) { // return the highest completed exam level (none (0) is level 1)
 			return 1 + Object.keys(progress||{})
 			.filter(r=>r.match(/\[mode:exam\]/))
 			.map(r=>+(r.match(/\[level:(\d+)\]/)||['','-1'])[1])
 			.reduce((a,b)=>Math.max(a,b),-1);
 		},
+		xp(progress) {
+			return Object.keys(progress).filter(p=>p.startsWith(`lv${this.lv(progress)}`)).length;
+		},
+		avatar(alias) { return alias || 'ninja';},
 		is(...roles) { return roles.includes(this.role); },
 		log() {
 			const cookie = Object.fromEntries(document.cookie.split('; ').map(x => x.split('=')));

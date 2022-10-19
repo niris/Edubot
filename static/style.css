@@ -17,6 +17,7 @@
     --bg-secondary-color:#fafafa52;
     --secondary-color:#fafafa52;
     --radius: 1em;
+    scroll-behavior: smooth;
 }
 body{
     padding-bottom: 200px; /* give space to bot */
@@ -39,7 +40,6 @@ h1>small{
     font-size: 1.25em;
 }
 
-
 .picon,
 del,
 s {
@@ -57,7 +57,8 @@ input[type=color] {
 progress{
     width: 100%;
 }
-.card{
+.button {z-index: initial !important;}
+.card {
     border-radius:1em;
 }
 .grid {
@@ -96,7 +97,7 @@ li>label{
     transition: transform 1s;
 }
 .container>nav.tabs>a .lvUp{
-    background: var(--bg-color) url(/media/icons/sparkle.gif) center;
+    background: var(--bg-color) url(/static/sparkle.gif) center;
     transform: scale(4) translateY(2em) !important;
 }
 
@@ -124,7 +125,6 @@ a.card:hover {box-shadow: 0 1px 15px var(--color-grey);}
 a.card {
     transition: box-shadow 1s;
     background: var(--bg-secondary-color);
-    
 }
 input:invalid{
     --color-lightGrey: var(--color-error);
@@ -139,6 +139,14 @@ details>label>input{
 .voice[readonly]:disabled {
     animation: RecordingProgress 4.5s ease;
     animation-delay: .5s; /* Add a small delay to prevent student from speaking before recording */
+}
+
+
+.podium>:last-child {
+    order: 3;
+}
+.podium>:first-child {
+    order: 2;
 }
 
 .stages,
@@ -170,16 +178,28 @@ details>label>input{
     border-radius: 100%;
     justify-content: center;
 }
+.stage.complete::before{
+    content:'✓';
+    position: absolute;
+    color:var(--color-success);
+    font-size: 4em;
+    line-height: 1em;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
+}
 .stage.disabled,
-.boss.disabled img,
+.boss.disabled{
+    pointer-events: none;
+}
 .stages.disabled img,
 .stages.disabled span{
     opacity:.25;
 }
-.boss.disabled,
 .stages.disabled>a {
-    pointer-events: none;
-    filter: blur(3px) saturate(0);
+    filter: blur(2px) saturate(0);
+}
+.boss.disabled img{
+    background: var(--bg-color);
+    border-radius: 100%;
 }
 
 /* only way I found to animate input background */

@@ -89,7 +89,7 @@ const Sign = {
 				return alert((await auth.json()).message);
 			}
 			this.$root.log();
-			this.$router.push({ path: '/' });
+			this.$router.push({ path: '/settings' });// so we can sync progress
 		},
 		async reset({ target }) {
 			const auth = await fetch('/api/rpc/reset', {
@@ -120,7 +120,7 @@ const Sign = {
 			}
 			this.$root.log();
 			// also update profile info right away
-			const pro = await fetch(`/api/profile/${this.$root.id}`, {
+			const pro = await fetch(`/api/profile?id=eq.${this.$root.id}`, {
 				method: 'PUT',
 				body: new URLSearchParams({
 					id: this.$root.id,
@@ -133,7 +133,7 @@ const Sign = {
 			}
 			// setup all done
 			alert(`Welcome ${this.$root.id} !`);
-			this.$router.push({ path: '/' });
+			this.$router.push({ path: '/settings' });// so we can sync progress
 		},
 	}
 }

@@ -15,7 +15,7 @@ const CategoryList = {
     `,
     computed: {
         categories() {
-            return [...new Set(this.$root.mds.map(t=>t.category))].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
+            return [...new Set(this.$root.mds.map(t => t.category))].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
         },
     }
 }
@@ -51,24 +51,24 @@ const CategoryGroupList = {
             return 'card'
         }
     },
-    computed: { 
+    computed: {
         groups() {
-            return this.$root.mds.filter(lesson => lesson.category==this.category)
-            .reduce(function (groups, lesson) {
-                const existing = groups.find(group => group.path == lesson.group);
-                existing ? existing.list.push(lesson) : groups.push({
-                    title: (lesson.group||'').replace(/^[^a-zA-Z]+/, ''),
-                    path: lesson.group,
-                    list: [lesson]
-                })
-                return groups
-            }, [])
-            .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
-            .map(group => ({
-                ...group, list: group.list // sort grouped lessons by they level + name
-                    .sort((a, b) => a.title.localeCompare(b.title))
-                    .sort((a, b) => a.level - b.level)
-            }))
+            return this.$root.mds.filter(lesson => lesson.category == this.category)
+                .reduce(function (groups, lesson) {
+                    const existing = groups.find(group => group.path == lesson.group);
+                    existing ? existing.list.push(lesson) : groups.push({
+                        title: (lesson.group || '').replace(/^[^a-zA-Z]+/, ''),
+                        path: lesson.group,
+                        list: [lesson]
+                    })
+                    return groups
+                }, [])
+                .sort((a, b) => a.path.localeCompare(b.path)) // sort groups by they numbered named
+                .map(group => ({
+                    ...group, list: group.list // sort grouped lessons by they level + name
+                        .sort((a, b) => a.title.localeCompare(b.title))
+                        .sort((a, b) => a.level - b.level)
+                }))
         }
     },
 }
@@ -81,24 +81,31 @@ const Roadmap = {
 </div>
 <div style="background: radial-gradient(var(--color-lightGrey) 20%, transparent 20%) 50% 0px / 20px 20px repeat-y;">
     <div class="is-center" style="flex-direction:column;background: var(--bg-color);">
-        <img class="is-center" width=128 src="/media/icons/ninja.svg">
-        <strong class="text-center">{{$root.myId}}</strong>
+        <img class="is-center" width=128 :src="'/media/icons/'+$root.avatar($root.alias)+'.svg'">
+        <strong class="text-center text-capitalize" style="font-size: 2em;">{{$root.myId}}</strong>
         <div class="text-center">Lv:{{$root.myLv}}, Xp:{{$root.myXp}}</div>
     </div>
     <template v-for="(world,level) in $root.worlds">
         <div :class='{stages:true,disabled:level>$root.myLv}'>
-            <router-link :to="'/lesson/'+lesson.name" v-for="lesson in world.filter(l=>l.mode!='exam')" :class="{stage:true,disabled:('/lesson/'+lesson.name) in this.$root.progress}">
+            <router-link :to="'/lesson/'+lesson.name" v-for="lesson in world.filter(l=>l.mode!='exam')" :class="{stage:true,complete:('/lesson/'+lesson.name) in this.$root.progress}">
                 <img :src="'/media/icons/'+lesson.icon+'.svg'" width=64 height=64 alt="lesson" loading=lazy>
                 <span>{{lesson.title}}</span>
             </router-link>
         </div>
         <div class=bosses>
-            <router-link :to="'/lesson/'+exam.name" v-for="exam in world.filter(l=>l.mode=='exam')" :class='{boss:true,disabled:(exam.xp>$root.myXp)||(level!=$root.myLv)}'>
-                <img :src="'/media/icons/'+exam.icon+'.svg'" width=64 height=64 alt="exam" loading=lazy :title="exam.xp+'>'+$root.myXp">
+            <router-link :to="'/lesson/'+exam.name" v-for="exam in world.filter(l=>l.mode=='exam')"
+                :style="'background-image: conic-gradient(var(--color-success) '+(100*$root.myXp/exam.xp)+'%, #BBB8 0deg)'"
+                :class='{boss:true,"is-hidden":(level!=$root.myLv), disabled:(exam.xp>$root.myXp)}'>
+                <img :src="'/media/icons/'+((exam.xp>$root.myXp)?'lock':exam.icon)+'.svg'" width=64 height=64 alt="exam" loading=lazy>
             </router-link>
-        </div >
+        </div>
     </template>
+    <img src="/static/crown.svg">
 </div>
-`
+`,
+    mounted() {
+        const pos = document.querySelectorAll('.stages:not(.disabled)');
+        if(pos.length)pos[pos.length-1].scrollIntoView({ behavior: 'smooth' })
+    },
 }
-export { Roadmap, CategoryList, CategoryGroupList};
+export { Roadmap, CategoryList, CategoryGroupList };

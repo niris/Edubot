@@ -1,12 +1,19 @@
 const Leaderboard = {
-  template: `<h1 style="font-weight:bold;line-height:1;text-align:center;">Top 10 players</h1>
+  template: `
   <progress v-if=profiles===undefined />
   <blockquote v-if=profiles===null>Impossible to get the list</blockquote>
-  <table>
+  <div class=podium v-if=profiles style="display: flex;justify-content: center;">
+    <div v-for="(profile,i) in profiles.slice(0,3)" :style="{transform: 'translateY('+i*32+'px)'}">
+      <img width=92 :src="'/media/icons/'+$root.avatar(profile.alias)+'.svg'">
+      <div class="text-capitalize text-center">{{profile.id}}: {{profile.lv}} ({{profile.xp}})</div>
+    </div>
+  </div>
+  <img src="/static/podium.svg">
+  <table v-if=profiles>
   <tbody>
-  <tr v-for="profile in profiles">
-    <td><s :style="{color:profile.theme}">bust</s> <span class="text-capitalize">{{profile.id}}</span> <small v-if="profile.alias">{{profile.alias}}</small></td>
-    <td>{{$root.level(Object.keys(profile.progress).length)}} <small>({{Object.keys(profile.progress).length}})</small></td>
+  <tr v-for="profile in profiles.slice(3)">
+    <td><s :style="{color:profile.theme}">bust</s> <span class="text-capitalize">{{profile.id}}</span></td>
+    <td>Lv:{{profile.lv}} Xp:{{profile.xp}}</td>
   </tr>
   </tobdy>
   </table>
@@ -15,13 +22,13 @@ const Leaderboard = {
   async mounted() {
     try {
       this.profiles = (await (await fetch(`/api/leaderboard`)).json())
-        .sort((a, b) => Object.keys(b.progress).length - Object.keys(a.progress).length)
+        .map(profile => ({...profile, lv:this.$root.lv(profile.progress), xp:this.$root.xp(profile.progress)}))
+        .sort((a, b) => b.xp - a.xp)
+        .sort((a, b) => b.lv - a.lv)
         .slice(0, 10)
     } catch (e) {
       this.profiles = null;
     }
-
   }
-
 }
 export { Leaderboard }
