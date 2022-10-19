@@ -17,7 +17,7 @@ CREATE TABLE public.profile (
 );
 
 CREATE or replace VIEW public.leaderboard AS
-SELECT id, alias, progress
+SELECT id, alias, progress, theme
 FROM public.profile;
 grant SELECT ON TABLE public.leaderboard TO "anon";
 

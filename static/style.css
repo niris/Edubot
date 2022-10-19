@@ -141,7 +141,11 @@ details>label>input{
     animation-delay: .5s; /* Add a small delay to prevent student from speaking before recording */
 }
 
-
+.podium {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
 .podium>:last-child {
     order: 3;
 }

@@ -2,17 +2,22 @@ const Leaderboard = {
   template: `
   <progress v-if=profiles===undefined />
   <blockquote v-if=profiles===null>Impossible to get the list</blockquote>
-  <div class=podium v-if=profiles style="display: flex;justify-content: center;">
-    <div v-for="(profile,i) in profiles.slice(0,3)" :style="{transform: 'translateY('+i*32+'px)'}">
+  <div class=podium v-if=profiles>
+    <div v-for="(profile,i) in profiles.slice(0,3)" :style="{transform: 'translateY('+i*1.5+'em)'}">
       <img width=92 :src="'/media/icons/'+$root.avatar(profile.alias)+'.svg'">
-      <div class="text-capitalize text-center">{{profile.id}}: {{profile.lv}} ({{profile.xp}})</div>
+      <div class="text-capitalize text-center">
+        <strong style="display:block">{{profile.id}}</strong>
+        {{profile.lv}} ({{profile.xp}})
+      </div>
     </div>
   </div>
-  <img src="/static/podium.svg">
+  <img src="/static/podium.svg" style="max-height: 100px;margin: auto;display: block;">
+  <hr style="margin:4em">
   <table v-if=profiles>
   <tbody>
   <tr v-for="profile in profiles.slice(3)">
-    <td><s :style="{color:profile.theme}">bust</s> <span class="text-capitalize">{{profile.id}}</span></td>
+    <td width=32><img width=32 :src="'/media/icons/'+$root.avatar(profile.alias)+'.svg'"></td>
+    <th class="text-capitalize" :style="{color:profile.theme}">{{profile.id}}</th>
     <td>Lv:{{profile.lv}} Xp:{{profile.xp}}</td>
   </tr>
   </tobdy>

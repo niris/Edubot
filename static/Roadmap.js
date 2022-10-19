@@ -87,9 +87,11 @@ const Roadmap = {
     </div>
     <template v-for="(world,level) in $root.worlds">
         <div :class='{stages:true,disabled:level>$root.myLv}'>
-            <router-link :to="'/lesson/'+lesson.name" v-for="lesson in world.filter(l=>l.mode!='exam')" :class="{stage:true,complete:('/lesson/'+lesson.name) in this.$root.progress}">
+            <router-link :to="'/lesson/'+lesson.name" v-for="lesson in world.filter(l=>l.mode!='exam')" :class="{stage:true,complete:('/lesson/'+lesson.name) in this.$root.progress}" style="position:relative">
                 <img :src="'/media/icons/'+lesson.icon+'.svg'" width=64 height=64 alt="lesson" loading=lazy>
-                <span>{{lesson.title}}</span>
+                <img :src="'/media/icons/'+base(lesson.category)+'.svg'" width=32 height=32 alt="cat" loading=lazy style="position:absolute;top:45px;right:-10px;background:var(--bg-color);border-radius:100%;box-shadow:0 1px 2px grey">
+                <br>
+                <span class="text-capitalize">{{lesson.title}}</span>
             </router-link>
         </div>
         <div class=bosses>
@@ -103,6 +105,7 @@ const Roadmap = {
     <img src="/static/crown.svg">
 </div>
 `,
+    methods:{base(path){return path.replace(/^\d+/,'')}},
     mounted() {
         const pos = document.querySelectorAll('.stages:not(.disabled)');
         if(pos.length)pos[pos.length-1].scrollIntoView({ behavior: 'smooth' })
