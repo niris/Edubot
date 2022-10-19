@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="-512 240 1536 272"
+   viewBox="-512 240 874 272"
    version="1.1"
    id="svg12"
    sodipodi:docname="podium.svg"
    inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)"
+   width="874"
+   height="272"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +24,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.82486979"
-     inkscape:cx="768"
-     inkscape:cy="-61.82794"
+     inkscape:cx="769.21231"
+     inkscape:cy="132.14207"
      inkscape:window-width="1920"
      inkscape:window-height="1031"
      inkscape:window-x="0"
@@ -31,28 +33,28 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg12" />
   <path
-     style="fill:#ff7f2a;stroke-width:0.850673"
-     d="m 517.49936,402.7297 h -151 c -8.291,0 -15,4.85493 -15,10.85467 V 512 h 166 c 8.291,0 15,-4.85493 15,-10.85467 v -87.56096 c 0,-5.99974 -6.709,-10.85467 -15,-10.85467 z"
+     style="fill:#ff7f2a;stroke-width:1.03853"
+     d="M 339.64367,403.49276 H 114.59001 c -12.35709,0 -22.35632,4.85493 -22.35632,10.85467 v 98.41563 h 247.40998 c 12.35709,0 22.35633,-4.85493 22.35633,-10.85467 v -87.56096 c 0,-5.99974 -9.99924,-10.85467 -22.35633,-10.85467 z"
      id="path2" />
   <path
-     style="fill:#c4c8b7"
-     d="M166,331H15c-8.291,0-15,6.709-15,15v151c0,8.291,6.709,15,15,15h166V346 C181,337.709,174.291,331,166,331z"
+     style="fill:#c4c8b7;stroke-width:1.26322"
+     d="m -245.78444,331.76306 h -240.95313 c -13.23008,0 -23.93574,6.709 -23.93574,15 v 151 c 0,8.291 10.70566,15 23.93574,15 h 264.88887 v -166 c 0,-8.291 -10.70566,-15 -23.93574,-15 z"
      id="path4" />
   <path
-     style="fill:#FEDB41;"
-     d="M361,256v256H151V256c0-8.401,6.599-15,15-15h180C354.401,241,361,247.599,361,256z"
+     style="fill:#fedb41;stroke-width:1.22362"
+     d="m 92.23369,256.76306 v 256 H -222.1862 v -256 c 0,-8.401 9.88027,-15 22.45857,-15 H 69.77513 c 12.57829,0 22.45856,6.599 22.45856,15 z"
      id="path6" />
   <path
-     style="fill:#FFCC33;"
-     d="M361,256v256H256V241h90C354.401,241,361,247.599,361,256z"
+     style="fill:#ffcc33"
+     d="m -63.90161,261.58065 v 256 h -105 v -271 h 90 c 8.401,0 15,6.599 15,15 z"
      id="path8" />
   <path
      style="fill:#006680"
-     d="M271,316v90c0,8.399-6.599,15-15,15c-8.401,0-15-6.601-15-15v-53.701l-4.501,4.2  c-5.7,6-15.298,6-20.999,0c-6-5.7-6-15.3,0-21l30-30c3-2.999,6.6-4.499,10.5-4.499C263.5,301,271,307,271,316z"
+     d="m -45,317.26306 v 90 c 0,8.399 -6.599,15 -15,15 -8.401,0 -15,-6.601 -15,-15 v -53.701 l -4.501,4.2 c -5.7,6 -15.298,6 -20.999,0 -6,-5.7 -6,-15.3 0,-21 l 30,-30 c 3,-2.999 6.6,-4.499 10.5,-4.499 7.5,0 15,6 15,15 z"
      id="path10" />
   <g
      aria-label="3"
-     transform="scale(1.0003928,0.99960736)"
+     transform="matrix(1.0003928,0,0,0.99960736,-226.00969,1.263066)"
      id="text471-4"
      style="font-size:130.477px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';opacity:0.8;fill:#006680;fill-rule:evenodd;stroke-width:1.52088;paint-order:fill markers stroke">
     <path
@@ -62,7 +64,7 @@
   </g>
   <g
      aria-label="2"
-     transform="matrix(1.2530578,0,0,1.1322015,-14.590018,-60.667747)"
+     transform="matrix(1.2530578,0,0,1.1322015,-452.33722,-55.087098)"
      id="text471-4-9"
      style="font-size:130.477px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans';opacity:0.8;fill:#006680;fill-rule:evenodd;stroke-width:1.52088;paint-order:fill markers stroke">
     <path
