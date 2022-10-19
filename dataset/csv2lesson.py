@@ -130,8 +130,8 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             questionGenerator(meanings,vocabs,2)
             listening(vocabs,audio,2,False)
         if category == "1phonics":
-            listening(vocabs,audio,4, False)
-            pronunc(vocabs,2)
+            listening(vocabs,audio,6, False)
+            #pronunc(vocabs,2)
         if category == "3conversation":
             listening(vocabs,audio,3, False)
             pronunc(vocabs,3)

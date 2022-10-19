@@ -6,17 +6,19 @@ import os
 import csv
 import random
 import shutil
+from typing import ClassVar
 
 if not os.path.exists("exo"):
     os.makedirs("exo")
 
 def generate_exo(level):
-    exo = open(os.path.join("..","media","md","[category:8test][mode:exam]Level "+level+"[icon:test][level:"+level+"].md" ), "w")
+    exo = open(os.path.join("..","media","md","[category:8test][mode:exam]Level "+level+"[icon:test][level:"+level+"][xp:30].md" ), "w")
     exo.write("## Exercise Level " + level + "\n")
+    print("level ", level)
     with open("csv/_togenerate/exo/all.csv", 'r') as f:
-        csvreader = csv.reader(f)
-        filtered = list(filter(lambda p: level == p[0], csvreader))
+        csvreader = csv.reader(f,delimiter=';')
 
+        filtered = list(filter(lambda p: level == p[0], csvreader))
         phonics_filtered = filter(lambda q: "1" == q[1], filtered)
         phonics = []
         phonics_audio = []
@@ -24,7 +26,8 @@ def generate_exo(level):
             phonics.append(row[3])
             phonics_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
         print(len(phonics)," ", len(phonics_audio))
-        listening(phonics,phonics_audio,3,False,exo)
+        if(phonics):
+            listening(phonics,phonics_audio,2,False,exo)
 
 
         vocabs_filtered = filter(lambda p: "2" == p[1], filtered)
@@ -35,9 +38,14 @@ def generate_exo(level):
             vocabs.append(row[3])
             meanings.append(row[4])
             vocab_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
-        questionGenerator(vocabs,meanings,4,exo)
-        questionGenerator(meanings,vocabs,4,exo)
-        listening(vocabs,vocab_audio,4,False,exo)
+        
+        print(len(vocabs)," ", len(meanings), " ",  len(vocab_audio))
+
+        if(vocabs and meanings):
+            questionGenerator(vocabs,meanings,3,exo)
+            questionGenerator(meanings,vocabs,3,exo)
+        if(vocabs and vocab_audio):
+            listening(vocabs,vocab_audio,4,False,exo)
         
         conversation_filtered = filter(lambda q: "3" == q[1], filtered)
         conversations = []
@@ -45,8 +53,9 @@ def generate_exo(level):
         for row in conversation_filtered:
             conversations.append(row[3])
             conver_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
-        listening(conversations,conver_audio,3,False,exo)
-        pronunc(conversations,2,exo)
+        if(conversations):
+            listening(conversations,conver_audio,3,False,exo)
+            pronunc(conversations,2,exo)
     exo.close()
 
 def generate_listening(level):
@@ -62,7 +71,8 @@ def generate_listening(level):
         for row in vocabs_filtered:
             vocabs.append(row[3])
             vocabs_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
-        listening(vocabs,vocabs_audio,6,False,exo)
+        if(vocabs):
+            listening(vocabs,vocabs_audio,5,False,exo)
     exo.close()
 
 def questionGenerator(questions,choices,number,file):
@@ -87,6 +97,10 @@ def questionGenerator(questions,choices,number,file):
 def listening(vocab,audio,number,inverse,file):
     vocabs_tmp = vocab.copy()
     audio_tmp = audio.copy()
+    print("len", len(audio_tmp))
+    if(len(audio_tmp) < 4):
+        number = 1
+
     for r in range(number):
         choices_tmp = vocabs_tmp.copy()
         answer_index = random.choice(range(len(audio_tmp)))
@@ -113,6 +127,7 @@ def pronunc(vocab,number,file):
         file.write("ออกเสียงคำว่า  **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
         file.write("🎙️ "+ vocab_tmp[answer_index].lower() +"\n\n")
         vocab_tmp.pop(answer_index)
-for i in range(13):
+
+for i in range(0,15):
     generate_exo(str(i))
     generate_listening(str(i))
