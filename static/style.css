@@ -182,6 +182,9 @@ details>label>input{
     border-radius: 100%;
     justify-content: center;
 }
+.stage.complete{
+    opacity:.5;
+}
 .stage.complete::before{
     content:'✓';
     position: absolute;
@@ -190,7 +193,6 @@ details>label>input{
     line-height: 1em;
     text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
 }
-.stage.disabled,
 .boss.disabled{
     pointer-events: none;
 }
@@ -200,6 +202,7 @@ details>label>input{
 }
 .stages.disabled>a {
     filter: blur(2px) saturate(0);
+    pointer-events: none;
 }
 .boss.disabled img{
     background: var(--bg-color);

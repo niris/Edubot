@@ -46,6 +46,8 @@ const CategoryGroupList = {
         reachable(lesson) {
             if (lesson.level > this.$root.myLv)
                 return 'forbidden';
+            if (lesson.mode == "exam" && this.$root.myLv == lesson.level && lesson.xp > this.$root.myXp)
+                return 'forbidden';
             if (this.$root.progress[`/lesson/${decodeURIComponent(lesson.name)}`] !== undefined)
                 return 'done card';
             return 'card'

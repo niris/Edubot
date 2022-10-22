@@ -125,8 +125,9 @@ const LessonShow = {
             if (ratio < bargain) {
                 return alert(`${info}\nBut you need ${(100*bargain)|0}%`);
             }
-            alert(`${info}\nCongratulation !`)
+            alert(`${info}\nCongratulation !`);
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
+            valid.forEach(target => this.$root.progress[target.name||target[0].name] = 1)
             this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
             setTimeout(this.$router.back, 1000)
         },

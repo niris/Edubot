@@ -48,7 +48,7 @@
  - ( ) Grandfather
  - (x) Sweet potato
 
- เลือกคำศัพท์ที่ตรงกับ  ** ปู่ หรือ ตา**
+ เลือกคำศัพท์ที่ตรงกับ  **ปู่ หรือ ตา**
  - ( ) Corn
  - (x) Grandfather
  - ( ) Grandmother
