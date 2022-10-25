@@ -3,78 +3,78 @@ const Sign = {
 	template: `
 	<img src="/static/favicon.svg" style="display:block;margin:5em auto;max-width:25vmin">
 	<form v-if="$props.mode=='in' && $root.is(null)" @submit.prevent=sign($event)>
-		<h1>Login</h1>
+		<h1>Login<small> ลงชื่อเข้าใช้ </small></h1>
 		<label>
-			<div>Username</div>
-			<input required autocomplete=username name="id" autocapitalize="none">
+			<div>Username <small> ชื่อผู้ใช้ </small></div>
+			<input required autocomplete=username name="id" autocapitalize="none" placeholder="ชื่อผู้ใช้">
 		</label>
 		<label>
-			<div>Password</div>
-			<input required autocomplete="current-password" name="pass" autocapitalize="none" type="password">
+			<div>Password <small> รหัสผ่าน </small></div>
+			<input required autocomplete="current-password" name="pass" autocapitalize="none" type="password" placeholder="รหัสผ่าน">
 		</label>
-		<p class="is-center"><router-link to="/sign/reset">I forgot my password</router-link>.</p>
-		<button type=submit class=is-full-width><s>login</s> Sign In</button>
+		<p class="is-center"><router-link to="/sign/reset">ลืมรหัสผ่าน</router-link></p>
+		<button type=submit class=is-full-width><s>login</s> ลงชื่อเข้าใช้ </button>
 		<br><br>
-		<p class="is-center">No account ?&nbsp;<router-link to="/sign/up">register</router-link>.</p>
+		<p class="is-center">ยังไม่เคยลงทะเบียนไว้ใช่ไหม ?&nbsp;<router-link to="/sign/up">สร้างบัญชีใหม่ได้เลย!</router-link></p>
 	</form>
 
 	<form v-if="$props.mode=='reset' && $root.is(null)" @submit.prevent=reset($event)>
-		<h1>Reset</h1>
+		<h1>Reset Password <small>แก้ไขรหัสผ่าน</small></h1>
 		<label>
-			<div>Username</div>
+			<div>Username <small>ชื่อผู้ใช้</small></div>
 			<input required autocomplete=username name="id" autocapitalize="none">
 		</label>
 		<label>
-			<div>Birthday</div>
+			<div>Birthdate<small> วันเกิด </small></div>
 			<input required name="birth" autocapitalize="none" type="date">
 		</label>
 		<label>
-			<div>Favorite food</div>
-			<input required name="secret" autocapitalize="none" type="test">
+			<div>Favorite Food<small> อาหารโปรด </small></div>
+			<input required name="secret" autocapitalize="none" type="test" >
 		</label>
 		<hr>
 		<label>
-			<div>New Password</div>
-			<input required name="pass" oninput="form._pass.oninput()" autocapitalize="none" type="password">
+			<div>New password <small> รหัสผ่านใหม่ </small></div>
+			<input required name="pass" oninput="form._pass.oninput()" autocapitalize="none" type="password" placeholder="ใส่รหัสผ่านที่ต้องการ">
 		</label>
 		<label>
-			<div>New Password (again)</div>
-			<input required name="_pass" oninput="setCustomValidity(value===form.pass.value?'':'password missmatch')" autocapitalize="none" type="password">
+			<div>Retype password <small> ป้อนรหัสผ่านใหม่อีกครั้ง </small> </div>
+			<input required name="_pass" oninput="setCustomValidity(value===form.pass.value?'':'password missmatch')" autocapitalize="none" type="password" placeholder="ใส่รหัสผ่านอีกครั้งเพื่อยืนยัน">
 		</label>
 		<br>
-		<button type=submit class=is-full-width><s>refresh</s> Reset</button>
+		<button type=submit class=is-full-width><s>refresh</s> แก้ไขรหัสผ่าน </button>
 	</form>
 
 	<form v-if="$props.mode=='up' && $root.is(null)" @submit.prevent=register($event)>
-		<h1>Register</h1>
+		<h1>Register <small> ลงทะเบียน </small></h1>
 		<label>
-			<div>Username</div>
-			<input required autocomplete=username name="id" autocapitalize="none">
+			<div>Username <small> ชื่อผู้ใช้ </small></div>
+			<input required autocomplete=username name="id" autocapitalize="none" placeholder="ใส่ชื่อผู้ใช้ที่ต้องการ">
 		</label>
 		<label>
-			<div>Password</div>
-			<input required name="pass" oninput="form._pass.oninput()" autocapitalize="none" type="password">
+			<div>Password <small> รหัสผ่าน </small></div>
+			<input required name="pass" oninput="form._pass.oninput()" autocapitalize="none" type="password" placeholder="ใส่รหัสผ่านที่ต้องการ">
 		</label>
 		<label>
-			<div>Password (again)</div>
-			<input required name="_pass" oninput="setCustomValidity(value===form.pass.value?'':'password missmatch')" autocapitalize="none" type="password">
+			<div>Retype Password <small> ป้อนรหัสผ่านอีกครั้ง </small></div>
+			<input required name="_pass" oninput="setCustomValidity(value===form.pass.value?'':'password missmatch')" autocapitalize="none" type="password" placeholder="ใส่รหัสผ่านอีกครั้งเพื่อยืนยัน">
 		</label>
-		<h4 class=is-center>Security question (in case of password lost)</h4>
+		<h3> Security Questions <small> คำถามเพื่อความปลอดภัย</small></h3>
 		<label>
-			<div>Birthday</div>
+			<div>Birtdate <small> วันเกิด </small></div>
 			<input required name="birth" autocapitalize="none" type="date">
 		</label>
 		<label>
-			<div>Favorite food</div>
+			<div>Favorite Food <small> อาหารโปรด </small></div>
 			<input required name="secret" autocapitalize="none" type="test">
 		</label>
 		<br>
 		<button type=submit class=is-full-width><s>+</s> Register</button>
 		<br><br>
-		<p class="is-center">Already have an account ?&nbsp;<router-link to="/sign/in">sign in</router-link>.</p>
+		<p class="is-center">เคยลงทะเบียนไว้แล้วใช่ไหม ? &nbsp;<router-link to="/sign/in">ลงชื่อเข้าใช้ได้เลย</router-link></p>
 	</form>
 	<br>
-	<p class="is-center">See our &nbsp;<router-link to="/privacy">Privacy policy</router-link>.</p>
+	<p class="is-center"><router-link to="/privacy">นโยบายความเป็นส่วนตัว (Privacy Policy)</router-link></p>
 	`,
 	mounted() {
 		if (this.$root.id) return this.$router.push('/');
@@ -104,7 +104,7 @@ const Sign = {
 			if (!auth.ok) {
 				return alert((await auth.json()).message);
 			}
-			alert("New password set ! You can now login.");
+			alert("New password set ! You can now login. \n รหัสผ่านใหม่ถูกตั้งค่าแล้ว สามารถเข้าใช้งานได้เลย" );
 			this.$router.push({ path: '/sign/in' });
 		},
 		async register({ target }) {

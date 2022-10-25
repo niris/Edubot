@@ -29,7 +29,7 @@ declare
   result auth.jwt_token;
 begin
   select auth.valid(id, pass) into _role;
-  if _role is null then raise invalid_password using message = 'bad credential'; end if;
+  if _role is null then raise invalid_password using message = 'ใส่ชื่อผู้ใช้/รหัสผ่านไม่ถูกต้อง'; end if;
   select sign(row_to_json(r), current_setting('app.settings.jwt_secret')) as token from (
     select
       _role as role,

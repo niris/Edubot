@@ -20,6 +20,7 @@ CREATE or replace VIEW public.leaderboard AS
 SELECT id, alias, progress, theme
 FROM public.profile;
 grant SELECT ON TABLE public.leaderboard TO "anon";
+grant SELECT ON TABLE public.leaderboard TO "user";
 
 CREATE or replace FUNCTION auth.also_create_profile() returns trigger as $$
 begin
@@ -47,7 +48,7 @@ begin
 	select profile.id from public.profile
 	where  profile.id = reset.id and profile.birth = reset.birth::DATE and profile.secret = reset.secret
 	into _exist;
-	if _exist is null then raise invalid_password using message = 'bad informations'; end if;
+	if _exist is null then raise invalid_password using message = 'ใส่ข้อมูลคำถามเพื่อความปลอดภัยไม่ถูกต้อง'; end if;
 	update auth.users set pass = reset.pass where users.id = reset.id;
 	return null;
 end;

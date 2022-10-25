@@ -1,7 +1,8 @@
 const Leaderboard = {
   template: `
   <progress v-if=profiles===undefined />
-  <blockquote v-if=profiles===null>Impossible to get the list</blockquote>
+  <blockquote v-if=profiles===null>ดูข้อมูลไม่ได้ ต้อง <router-link to="/sign/in">ลงชื่อเข้าใช้</router-link> ก่อนนะ
+  </blockquote>
   <div class=podium v-if=profiles>
     <div v-for="(profile,i) in profiles.slice(0,3)" :style="{transform: 'translateY('+i*1.5+'em)'}">
       <img width=92 :src="'/media/icons/'+$root.avatar(profile.alias)+'.svg'">
