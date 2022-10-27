@@ -66,7 +66,7 @@ const Profile = {
 				.then(res => res.json()).then(([profile]) => {
 					this.profile = profile;
 					this.$root.progress = profile.progress;
-					new Audio('/static/level.ogg', { volume: .1 }).play();
+					new Audio('/static/level.ogg', { volume: .05 }).play();
 					this.$root.$refs.bot.say("Progress synchronized !");
 				});
 		},

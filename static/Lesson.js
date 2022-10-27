@@ -123,9 +123,9 @@ const LessonShow = {
             const bargain = .75;
             const info = `You have ${(100*ratio)|0}% accuracy`;
             if (ratio < bargain) {
-                return alert(`${info}\nBut you need ${(100*bargain)|0}%`);
+                return this.$root.$refs.bot.say(`${info}\nBut you need ${(100*bargain)|0}%`);
             }
-            alert(`${info}\nCongratulation !`);
+            this.$root.$refs.bot.say(`${info}\nCongratulation !`);
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
             valid.forEach(target => this.$root.progress[target.name||target[0].name] = 1)
             this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;

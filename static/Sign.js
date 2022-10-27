@@ -86,7 +86,7 @@ const Sign = {
 				body: new URLSearchParams(new FormData(target)),
 			});
 			if (!auth.ok) {
-				return alert((await auth.json()).message);
+				return this.$root.$refs.bot.say((await auth.json()).message);
 			}
 			this.$root.log();
 			this.$router.push({ path: '/settings' });// so we can sync progress
@@ -102,9 +102,9 @@ const Sign = {
 				}),
 			});
 			if (!auth.ok) {
-				return alert((await auth.json()).message);
+				return this.$root.$refs.bot.say((await auth.json()).message);
 			}
-			alert("New password set ! You can now login. \n รหัสผ่านใหม่ถูกตั้งค่าแล้ว สามารถเข้าใช้งานได้เลย" );
+			this.$root.$refs.bot.say("New password set ! You can now login. \n รหัสผ่านใหม่ถูกตั้งค่าแล้ว สามารถเข้าใช้งานได้เลย" );
 			this.$router.push({ path: '/sign/in' });
 		},
 		async register({ target }) {
@@ -116,7 +116,7 @@ const Sign = {
 				})
 			});
 			if (!auth.ok) {
-				return alert((await auth.json()).message);
+				return this.$root.$refs.bot.say((await auth.json()).message);
 			}
 			this.$root.log();
 			// also update profile info right away
@@ -129,10 +129,10 @@ const Sign = {
 				}),
 			});
 			if (!pro.ok) {
-				return alert((await pro.json()).message);
+				return this.$root.$refs.bot.say((await pro.json()).message);
 			}
 			// setup all done
-			alert(`Welcome ${this.$root.id} !`);
+			this.$root.$refs.bot.say(`Welcome ${this.$root.id} !`);
 			this.$router.push({ path: '/settings' });// so we can sync progress
 		},
 	}
