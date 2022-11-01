@@ -16,7 +16,7 @@ def generate_exo(level):
     exo.write("## Exercise Level " + level + "\n")
     print("level ", level)
     with open("csv/_togenerate/exo/all.csv", 'r') as f:
-        csvreader = csv.reader(f,delimiter=';')
+        csvreader = csv.reader(f)
 
         filtered = list(filter(lambda p: level == p[0], csvreader))
         phonics_filtered = filter(lambda q: "1" == q[1], filtered)
@@ -59,13 +59,13 @@ def generate_exo(level):
     exo.close()
 
 def generate_listening(level):
-    exo = open(os.path.join("..","media","md","[category:7listening]Level "+level+"[icon:listening][level:"+level+"].md" ), "w")
+    exo = open(os.path.join("..","media","md","[category:6listening]Level "+level+"[icon:listening][level:"+level+"].md" ), "w")
     exo.write("## Listening Exercise Level " + level + "\n")
     with open("csv/_togenerate/exo/all.csv", 'r') as f:
         csvreader = csv.reader(f)
         filtered = list(filter(lambda p: level == p[0], csvreader))
-
         vocabs_filtered = filter(lambda q: "2" == q[1] or "3" == q[1] , filtered)
+        print(vocabs_filtered)
         vocabs = []
         vocabs_audio = []
         for row in vocabs_filtered:
@@ -73,6 +73,24 @@ def generate_listening(level):
             vocabs_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
         if(vocabs):
             listening(vocabs,vocabs_audio,5,False,exo)
+    exo.close()
+
+def generate_pronunc(level):
+    print("test" + level)
+    exo = open(os.path.join("..","media","md","[category:7pronunciation]Level "+level+"[icon:pronunciation][level:"+level+"].md" ), "w")
+    exo.write("## Pronunciation Exercise " + level + "\n")
+    with open("csv/_togenerate/exo/all.csv", 'r') as f:
+        csvreader = csv.reader(f)
+        filtered = list(filter(lambda p: level == p[0], csvreader))
+        vocabs_filtered = filter(lambda q: "2" == q[1] or "3" == q[1] , filtered)
+        vocabs = []
+        vocabs_audio = []
+        for row in vocabs_filtered:
+            vocabs.append(row[3])
+            vocabs_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
+        if(vocabs):
+            pronunc_audio(vocabs,vocabs_audio,3,exo)
+    f.close()    
     exo.close()
 
 def questionGenerator(questions,choices,number,file):
@@ -88,7 +106,7 @@ def questionGenerator(questions,choices,number,file):
             choices_list.append((choices_tmp[choice_index],False))
             choices_tmp.pop(choice_index)
         choices_list.sort()
-        file.write('\n เลือกคำศัพท์ที่ตรงกับ  **' + questions_tmp[answer_index].capitalize() + '**\n')
+        file.write('\n เลือกคำศัพท์ที่ตรงกับ : **' + questions_tmp[answer_index].capitalize() + '**\n')
         for c in choices_list:
             file.write(' - (' + ('x' if c[1] else ' ') + ') ' + c[0].capitalize() + '\n')
         questions_tmp.pop(answer_index)
@@ -112,7 +130,7 @@ def listening(vocab,audio,number,inverse,file):
             choices_list.append((choices_tmp[choice_index],False))
             choices_tmp.pop(choice_index)
         choices_list.sort()                
-        desc = "เลือกคำศัพท์ตรงกับเสียง " if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์ "
+        desc = "เลือกคำศัพท์ที่ตรงกับเสียง : " if inverse == False else "เลือกเสียงที่ตรงกับคำศัพท์ : "
         file.write('\n' + desc + ' '+ (audio_tmp[answer_index] if inverse == False else audio_tmp[answer_index].capitalize()) + ' \n')
         for c in choices_list:
             file.write(' - (' + ('x' if c[1] else ' ') + ') ' + (c[0].capitalize() if inverse == False else c[0]) + '\n')
@@ -121,13 +139,34 @@ def listening(vocab,audio,number,inverse,file):
         audio_tmp.pop(answer_index)
 
 def pronunc(vocab,number,file):
+    print("test_pronunc")
     vocab_tmp = vocab.copy()
+
     for r in range(number):
         answer_index = random.choice(range(len(vocab_tmp)))
-        file.write("ออกเสียงคำว่า  **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
-        file.write("🎙️ "+ vocab_tmp[answer_index].lower() +"\n\n")
+        file.write("ออกเสียงคำว่า : **"+ vocab_tmp[answer_index].capitalize() + "** \n\n")
+        file.write("🎙️ "+ vocab_tmp[answer_index].lower()  +"\n\n")
         vocab_tmp.pop(answer_index)
 
+def pronunc_audio(vocab,audio,number,file):
+    print("test_pronunc")
+    vocab_tmp = vocab.copy()
+    audio_tmp = audio.copy()
+
+    for r in range(number):
+        answer_index = random.choice(range(len(vocab_tmp)))
+        file.write("ออกเสียงตามสิ่งที่ได้ยิน **"+ audio_tmp[answer_index] + "** \n\n")
+        file.write("🎙️ "+ vocab_tmp[answer_index].lower()  +"\n\n")
+        vocab_tmp.pop(answer_index)
+
+    for r in range(number):
+        answer_index = random.choice(range(len(vocab_tmp)))
+        file.write("ออกเสียงคำว่า **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
+        file.write("🎙️ "+ vocab_tmp[answer_index].lower()  +"\n\n")
+        vocab_tmp.pop(answer_index)
+    
+  
 for i in range(0,15):
     generate_exo(str(i))
-    generate_listening(str(i))
+    #generate_listening(str(i))
+    #generate_pronunc(str(i))

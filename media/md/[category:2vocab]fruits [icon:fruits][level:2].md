@@ -14,34 +14,34 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์ที่ตรงกับ **Papaya**
- - ( ) ขิง
- - ( ) บรอคโคลี
- - (x) มะละกอ
+ เลือกคำศัพท์ที่ตรงกับ **Coco**
+ - ( ) พริก
+ - (x) มะพร้าว
+ - ( ) แตงกวา
 
- เลือกคำศัพท์ที่ตรงกับ **Garlic**
- - (x) กระเทียม
+ เลือกคำศัพท์ที่ตรงกับ **Ginger**
+ - (x) ขิง
  - ( ) อะโวคาโด
- - ( ) เชอร์รี่
+ - ( ) แอปเปิ้ล
 
- เลือกคำศัพท์ที่ตรงกับ **กระเทียม**
- - (x) Garlic
- - ( ) Longan
- - ( ) Papaya
-
- เลือกคำศัพท์ที่ตรงกับ **ข้าวโพด**
- - (x) Corn
- - ( ) Grape
- - ( ) Strawberry
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pomelo.mp3) 
+ เลือกคำศัพท์ที่ตรงกับ **แอปเปิ้ล**
+ - (x) Apple
+ - ( ) Banana
  - ( ) Cabbage
- - ( ) Carrot
- - (x) Pomelo
+
+ เลือกคำศัพท์ที่ตรงกับ **แครอท**
+ - ( ) Banana
+ - (x) Carrot
+ - ( ) Cherry
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/mango.mp3) 
+ - ( ) Chili
+ - ( ) Cucumber
+ - (x) Mango
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/banana.mp3) 
- - (x) Banana
- - ( ) Broccoli
- - ( ) Mangosteen
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pumpkin.mp3) 
+ - ( ) Papaya
+ - ( ) Pomelo
+ - (x) Pumpkin
 

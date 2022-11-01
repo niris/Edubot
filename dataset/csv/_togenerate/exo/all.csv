@@ -1,1126 +1,1128 @@
-9;1;ULongvowel;blue;น้ําเงิน
-9;1;ULongvowel;clue;คําใบ้
-9;1;ULongvowel;glue;กาว
-9;1;ULongvowel;fruit;ผลไม้
-9;1;ULongvowel;suit;สูท
-9;1;ULongvowel;cube;สี่เหลี่ยม
-9;1;ULongvowel;huge;ใหญ่มาก
-9;1;ULongvowel;cute;น่ารักดี
-9;1;ULongvowel;boot;บูต
-9;1;ULongvowel;food;อาหาร
-9;1;ULongvowel;moon;ดวงจันทร์
-10;2;drinks;drinking water;น้ำดื่ม
-10;2;drinks;milk;นม
-10;2;drinks;coffee;กาแฟ
-10;2;drinks;juice;น้ําผลไม้
-10;2;drinks;orange juice;น้ําส้ม
-10;2;drinks;apple juice;น้ําแอปเปิ้ล
-10;2;drinks;pineapple juice;น้ําสับปะรด
-10;2;drinks;watermelon juice;น้ําแตงโม
-10;2;drinks;coconut drink;น้ำมะพร้าว
-10;2;drinks;smoothie;สมูทตี้
-10;2;drinks;honey;น้ําผึ้ง
-10;2;drinks;soda;โซดา
-10;2;drinks;tea;ชา
-10;2;drinks;tea bag;ถุงชา
-10;2;drinks;teapot;กาน้ําชา
-10;2;drinks;can;กระป๋อง
-13;3;Asking about Education;What subject do you like;วิชาไหนที่คุณชอบ
-13;3;Asking about Education;I like English;ฉันชอบวิชาภาษาอังกฤษ
-13;3;Asking about Education;What subject do you dislike;วิชาไหนที่คุณไม่ชอบ
-13;3;Asking about Education;I don't like Maths;ฉันไม่ชอบวิชาคณิตศาสตร์
-13;3;Asking about Education;What is your favorite subject;วิชาโปรดของคุณคืออะไร
-13;3;Asking about Education;My favorite subject is English;วิชาโปรดของฉันคือภาษาอังกฤษ
-2;3;apologizing;I'm sorry;ฉันขอโทษ
-2;3;apologizing;Excuse me please;ขอโทษนะครับ/คะ
-2;3;apologizing;Excuse me for interrupting;ขอโทษที่รบกวนนะครับ/คะ
-2;3;apologizing;I beg your pardon;ต้องขอโทษด้วยครับ/คะ
-2;3;apologizing;I'm sorry I'm late;ฉันขอโทษที่มาสาย
-2;3;apologizing;I apologize to you;ขอโทษนะครับ/คะ
-2;3;apologizing;Pardon;ขอโทษนะครับ/คะ
-2;3;apologizing;Forgive me;ยกโทษให้ฉันด้วย
-2;3;apologizing;Don't mention it; ไม่เป็นไร
-2;3;apologizing;That's all right;ไม่เป็นไร
-2;3;apologizing;No problem;ไม่มีปัญหา
-2;3;apologizing;Don't worry;อย่ากังวลไปเลย
-0;0;the;the sun;ดวงอาทิตย์
-0;0;the;the moon;พระจันทร์
-0;0;the;the earth;โลก
-0;0;the;the eiffel;หอไอเฟล
-0;0;the;the airport;สนามบิน
-0;0;the;the train station;สถานีรถไฟ
-0;0;the;the market;ตลาด
-0;0;the;the sea;ทะเล
-3;1;Y-Z;Yolk;ไข่แดง
-3;1;Y-Z;Yogurt;โยเกิร์ต
-3;1;Y-Z;Yellow;สีเหลือง
-3;1;Y-Z;Yoyo;โย่โย่
-3;1;Y-Z;Zip;ซิป
-3;1;Y-Z;Yacht;เรือยอร์ช
-3;1;Y-Z;Zoo;สวนสัตว์
-3;1;Y-Z;Zebra;ซีบร้า
-3;1;Y-Z;Zero;ศูนย์
-3;1;Y-Z;Zucchini;บวบ
-0;2;numbers;one;หนึ่ง
-0;2;numbers;two;สอง
-0;2;numbers;three;สาม
-0;2;numbers;four;สี่
-0;2;numbers;five;ห้า
-0;2;numbers;six;หก
-0;2;numbers;seven;เจ็ด
-0;2;numbers;eight;แปด
-0;2;numbers;nine;เก้า
-0;2;numbers;ten;สิบ
-0;2;numbers;eleven;สิบเอ็ด
-0;2;numbers;twelve;สิบสอง
-0;2;numbers;thirteen;สิบสาม
-0;2;numbers;fourteen;สิบสี่
-0;2;numbers;fifteen;สิบห้า
-0;2;numbers;sixteen;สิบหก
-0;2;numbers;seventeen;สิบเจ็ด
-0;2;numbers;eighteen;สิบแปด
-0;2;numbers;nineteen;สิบเก้า
-0;2;numbers;twenty;ยี่สิบ
-5;2;describing people;tall;สูง
-5;2;describing people;short;เตี้ย
-5;2;describing people;fat;อ้วน
-5;2;describing people;thin;ผอม
-5;2;describing people;young;หนุ่มสาว
-5;2;describing people;old;แก่ชรา
-5;2;describing people;good;ดี
-5;2;describing people;bad;แย่/เลว
-5;2;describing people;happy;มีความสุข
-5;2;describing people;sad;เศร้า
-5;2;describing people;angry;โกรธ
-5;2;describing people;calm;สงบ
-5;2;describing people;excited;ตื่นเต้น
-5;2;describing people;bored;เบื่อ
-5;2;describing people;hungry;หิว
-5;2;describing people;full;อิ่ม
-5;2;describing people;quiet;เงียบ
-5;2;describing people;loud;เสียงดัง
-5;2;describing people;healthy;สุขภาพดี
-5;2;describing people;sick;ป่วย
-2;1;J-K-L;jam;แยม
-2;1;J-K-L;jeans;กางเกงยีนส์
-2;1;J-K-L;jellyfish;แมงกะพรุน
-2;1;J-K-L;juice;น้ําผลไม้
-2;1;J-K-L;jar;เหยือก
-2;1;J-K-L;jaguar; เสือดาว
-2;1;J-K-L;king;คิง
-2;1;J-K-L;koala;โคอาลา
-2;1;J-K-L;kitchen;ห้องครัว
-2;1;J-K-L;key;กุญแจ
-2;1;J-K-L;kangaroo;จิงโจ้
-2;1;J-K-L;kid;เด็ก
-2;1;J-K-L;lion;สิงโต
-2;1;J-K-L;lemon;มะนาว
-2;1;J-K-L;lotus;ดอกบัว
-2;1;J-K-L;lollipop;อมยิ้ม
-2;1;J-K-L;laugh;หัวเราะ
-8;1;ILongvowel;die;ตาย
-8;1;ILongvowel;lie;โกหก
-8;1;ILongvowel;tie;ผูกเชือก
-8;1;ILongvowel;bike;จักรยาน
-8;1;ILongvowel;like;เช่น
-8;1;ILongvowel;lime;มะนาว
-8;1;ILongvowel;time;เวลา
-8;1;ILongvowel;fine;ได้
-8;1;ILongvowel;line;บรรทัด
-8;1;ILongvowel;nine;เก้า
-8;1;ILongvowel;wine;ไวน์
-8;1;ILongvowel;pipe;ท่อ
-8;1;ILongvowel;kite;ว่าว
-8;1;ILongvowel;dive;ดําน้ํา
-8;1;ILongvowel;five;ห้า
-8;1;ILongvowel;live;ถ่ายทอดสด
-8;1;ILongvowel;high;สูง
-8;1;ILongvowel;light;แสง
-8;1;ILongvowel;night;ราตรีสวัสดิ์
-8;1;ILongvowel;fly;บิน
-8;1;ILongvowel;cry;ร้องไห้
-8;1;ILongvowel;sky;ท้องฟ้า
-0;0;an;an apple;แอปเปิ้ล 1 ผล
-0;0;an;an owl;นกฮูก 1 ตัว
-0;0;an;an artist;ศิลปิน 1 คน
-0;0;an;an orange;ส้ม 1 ลูก
-0;0;an;an eraser;ยางลบ 1 อัน
-0;0;an;an actor;นักแสดง 1 คน
-0;0;an;an engineer;วิศวกร 1 คน
-0;0;an;an ice cream;ไอศกรีม 1 อัน
-0;0;an;an eagle;นกอินทรี 1 ตัว
-0;0;possesive pronoun;this ruler is mine;ไม้บรรทัดนี่เป็นของฉัน
-0;0;possesive pronoun;this pencil is yours ;ดินสอนี่เป็นของคุณ
-0;0;possesive pronoun;These notebooks are ours;สมุดบันทึกเหล่านี้เป็นของเรา
-0;0;possesive pronoun;those notebooks are theirs;สมุดบันทึกเหล่านั้นเป็นของพวกเขา
-0;0;possesive pronoun;That book is his;หนังสือเล่มนั้นเป็นของเขา
-0;0;possesive pronoun;those rulers are hers;ไม้บรรทัดเหล่านั้นเป็นของเธอ
-0;0;possesive pronoun;that is my dog. That house is its;นั่นคือหมาของฉัน บ้านนั้นเป็นของมัน
-0;0;possesive adjective;this is my ruler;นี่คือไม้บรรทัดของฉัน
-0;0;possesive adjective;this is your pencil;นี่คือดินสอของคุณ
-0;0;possesive adjective;These are our notebooks;นี่คือสมุดบันทึกของพวกเรา
-0;0;possesive adjective;those are their notebooks;นั่นคือสมุดบันทึกของพวกเขา
-0;0;possesive adjective;That is his book;นั่นคือหนังสือของเขา
-0;0;possesive adjective;those are her rulers;นั่นคือไม้บรรทัดของเธอ
-0;0;possesive adjective;that is my dog that is its house;นั่นคือหมาของฉัน นั่นคือบ้านของมัน
-1;1;G-H-I;goat;แพะ
-1;1;G-H-I;girl;ผู้หญิง
-1;1;G-H-I;guitar;กีตาร์
-1;1;G-H-I;giraffe;ยีราฟ
-1;1;G-H-I;gym;ยิม
-1;1;G-H-I;ginger;ขิง
-1;1;G-H-I;house;บ้าน
-1;1;G-H-I;head;หัว
-1;1;G-H-I;hat;หมวก
-1;1;G-H-I;horse;ม้า
-1;1;G-H-I;hen;แม่ไก่
-1;1;G-H-I;hamburger;แฮมเบอร์เกอร์
-1;1;G-H-I;icecream;ไอศกรีม
-1;1;G-H-I;insect;แมลง
-1;1;G-H-I;image;รูปภาพ
-1;1;G-H-I;ink;หมึก
-1;1;G-H-I;iguana;อิกัวน่า
-1;1;G-H-I;itch;คัน
-4;1;EShortvowel;ed; 
-4;1;EShortvowel;bed;เตียง
-4;1;EShortvowel;red;สีแดง
-4;1;EShortvowel;wed;วันพุธ
-4;1;EShortvowel;eg;
-4;1;EShortvowel;egg;ไข่
-4;1;EShortvowel;leg;ขา
-4;1;EShortvowel;en; 
-4;1;EShortvowel;men;ผู้ชายหลายคน
-4;1;EShortvowel;pen;ปากกา
-4;1;EShortvowel;ten;สิบ
-4;1;EShortvowel;et; 
-4;1;EShortvowel;net;สุทธิ
-4;1;EShortvowel;vet;สัตวแพทย์
-4;1;EShortvowel;wet;เปียก
-3;1;V-W-X;Violin;ไวโอลิน
-3;1;V-W-X;Van;แวน
-3;1;V-W-X;Vase;แจกัน
-3;1;V-W-X;Vegetable;ผัก
-3;1;V-W-X;Vulture;แร้ง
-3;1;V-W-X;Vest;เสื้อกั๊ก
-3;1;V-W-X;Whale;วาฬ
-3;1;V-W-X;Walk;เดิน
-3;1;V-W-X;Water;น้ํา
-3;1;V-W-X;Watermelon;แตงโม
-3;1;V-W-X;Window;หน้าต่าง
-3;1;V-W-X;Wolf;หมาป่า
-3;1;V-W-X;Ox;วัวตัวผู้
-3;1;V-W-X;Xylophone;ไซโลโฟน
-3;1;V-W-X;Six;หก
-3;1;V-W-X;Box;กล่อง
-3;1;V-W-X;Exit;ทางออก
-5;1;IShortvowel;ibbe; 
-5;1;IShortvowel;bib;ผ้ากันเปื้อน
-5;1;IShortvowel;nib;ปลายปากกา
-5;1;IShortvowel;rib;ซี่โครง
-5;1;IShortvowel;id; 
-5;1;IShortvowel;kid;เด็ก
-5;1;IShortvowel;lid;ฝา
-5;1;IShortvowel;rid;กําจัด
-5;1;IShortvowel;igg; 
-5;1;IShortvowel;big;ใหญ่
-5;1;IShortvowel;dig;ขุด
-5;1;IShortvowel;pig;หมู
-5;1;IShortvowel;in; 
-5;1;IShortvowel;bin;ถังขยะ
-5;1;IShortvowel;pin;พิน
-5;1;IShortvowel;win;ชนะ
-5;1;IShortvowel;ip; 
-5;1;IShortvowel;dip;จุ่ม
-5;1;IShortvowel;hip;ฮิป
-5;1;IShortvowel;lip;ริมฝีปาก
-5;1;IShortvowel;it; 
-5;1;IShortvowel;hit;ชน
-5;1;IShortvowel;pit;หลุม
-5;1;IShortvowel;sit;นั่ง
-5;1;IShortvowel;ix; 
-5;1;IShortvowel;fix;แก้ไข
-5;1;IShortvowel;mix;ผสม
-5;1;IShortvowel;six;หก
-8;2;sports;tennis;เทนนิส
-8;2;sports;judo;ยูโด
-8;2;sports;yoga;โยคะ
-8;2;sports;swimming;ว่ายน้ํา
-8;2;sports;hiking;ปีนเขา
-8;2;sports;karate;คาราเต้
-8;2;sports;hockey;ฮอกกี้
-8;2;sports;golf;กอล์ฟ
-8;2;sports;gymnastics;ยิมนาสติก
-8;2;sports;exercise;ออกกําลังกาย
-8;2;sports;skiing;สกี
-8;2;sports;jogging;วิ่งออกกําลังกาย
-8;2;sports;soccer;ฟุตบอล
-8;2;sports;rugby;รักบี้
-8;2;sports;table tennis;ปิงปอง
-8;2;sports;volleyball;วอลเลย์บอล
-8;2;sports;basketball;บาสเก็ตบอล
-8;2;sports;sailing;แข่งเรือใบ
-0;0;definite pronoun;this is an eraser;นี่คือยางลบ
-0;0;definite pronoun;this is a pencil;นี่คือดินสอ
-0;0;definite pronoun;this is a ruler;นี่คือไม้บรรทัด
-0;0;definite pronoun;this is a notebook;นี่คือสมุดบันทึก
-0;0;definite pronoun;that is a ruler;นั่นคือไม้บรรทัด
-0;0;definite pronoun;that is a notebook;นี่คือสมุดบันทึก
-0;0;definite pronoun;these are rulers;นี่คือไม้บรรทัดหลายอัน
-0;0;definite pronoun;these are notebooks;นี่คือสมุดบันทึกหลายเล่ม
-0;0;definite pronoun;those are notebooks;นั่นคือสมุดบันทึกหลายเล่ม
-0;0;definite pronoun;those are rulers;นั่นคือไม้บรรทัดหลายอัน
-11;2;emotion and feeling;like;ชอบ
-11;2;emotion and feeling;dislike;ไม่ชอบ
-11;2;emotion and feeling;hate;เกลียด
-11;2;emotion and feeling;love;รัก
-11;2;emotion and feeling;smile;ยิ้ม
-11;2;emotion and feeling;laugh;หัวเราะ
-11;2;emotion and feeling;cry;ร้องไห้
-1;3;thanks;Thanks;ขอบคุณ
-1;3;thanks;You're welcome;ด้วยความยินดี
-1;3;thanks;Thank you;ขอบคุณ
-1;3;thanks;That's all right;ไม่เป็นไร
-1;3;thanks;Thank you for your help;ขอบคุณสำหรับความช่วยเหลือ
-1;3;thanks;My pleasure;ด้วยความยินดี
-1;3;thanks;Many thanks;ขอบคุณมากๆ
-1;3;thanks;That's OK;ไม่เป็นไร
-1;3;thanks;Thanks a lot;ขอบคุณมาก
-1;3;thanks;With pleasure;ด้วยความยินดี
-1;3;thanks;Thank you very much;ขอบคุณมาก
-1;3;thanks;Don't mention it;ไม่เป็นไร
-4;2;body parts;head;หัว
-4;2;body parts;hair;ผม
-4;2;body parts;face;หน้า
-4;2;body parts;eye;ตา
-4;2;body parts;nose;จมูก
-4;2;body parts;mouth;ปาก
-4;2;body parts;ear;หู
-4;2;body parts;neck;คอ
-4;2;body parts;shoulder;ไหล่
-4;2;body parts;chest;หน้าอก
-4;2;body parts;arm;แขน
-4;2;body parts;hand;มือ
-4;2;body parts;stomach;ท้อง
-4;2;body parts;leg;ขา
-4;2;body parts;foot;เท้า
-9;2;disease;bleed;เลือดออก
-9;2;disease;cough;ไอ
-9;2;disease;stomachache;ปวดท้อง
-9;2;disease;sneeze;จาม
-9;2;disease;fever;ไข้
-9;2;disease;pain;ความเจ็บปวด
-9;2;disease;vomit;อ้วก
-9;2;disease;runny nose;น้ํามูกไหล
-9;2;disease;backache;ปวดหลัง
-9;2;disease;headaches;ปวดหัว
-9;2;disease;sore throat;เจ็บคอ
-9;2;disease;hurt;เจ็บ
-7;2;bedroom;bed;เตียง
-7;2;bedroom;alarm clock;นาฬิกาปลุก
-7;2;bedroom;lamp;โคมไฟ
-7;2;bedroom;dressing table;โต๊ะแต่งตัว
-7;2;bedroom;bolster;หมอนข้าง
-7;2;bedroom;blanket;ผ้าห่ม
-7;2;bedroom;pillow;หมอน
-7;2;bedroom;wardrobe;ตู้เสื้อผ้า
-6;3;time;Could you tell me the time please;ช่วยกรุณาบอกเวลาฉันหน่อยได้ไหม
-6;3;time;Do do have a time;ตอนนี้เวลาเท่าไหร่แล้ว/กี่โมงแล้ว
-6;3;time;Excuse me! What time is it;ขอโทษนะครับ/คะ ตอนนี้กี่โมงแล้ว
-7;2;living room;sofa;โซฟา
-7;2;living room;table;โต๊ะ
-7;2;living room;television;โทรทัศน์
-7;2;living room;picture frame;กรอบภาพ
-7;2;living room;carpet;พรม
-7;2;living room;vase;แจกัน
-7;2;living room;radio;วิทยุ
-7;2;living room;fish tank;ตู้ปลา
-10;2;desserts;cookie;คุกกี้
-10;2;desserts;fruit salad;สลัดผลไม้
-10;2;desserts;ice cream;ไอศครีม
-10;2;desserts;pudding;พุดดิ้ง
-10;2;desserts;chocolate bar;ช็อกโกแลตบาร์
-10;2;desserts;cake;เค้ก
-10;2;desserts;donut;โดนัท
-10;2;desserts;pie;พาย
-10;2;desserts;jelly;เยลลี่
-4;2;occupations;teacher;คุณครู
-4;2;occupations;doctor;หมอ
-4;2;occupations;nurse;พยาบาล
-4;2;occupations;dentist;หมอฟัน
-4;2;occupations;pharmacist;เภสัชกร
-4;2;occupations;veterinarian;สัตวแพทย์
-4;2;occupations;policeman;ตํารวจ
-4;2;occupations;soldier;ทหาร
-4;2;occupations;postman;บุรุษไปรษณีย์
-4;2;occupations;farmer;เกษตรกร
-4;2;occupations;fisherman;ชาวประมง
-4;2;occupations;gardener;คนสวน
-4;2;occupations;cook;พ่อครัว/แม่ครัว
-4;2;occupations;carpenter;ช่างไม้
-4;2;occupations;receptionist;พนักงานต้อนรับ
-4;2;occupations;translator;ล่าม
-4;2;occupations;guide;มัคคุเทศก์
-4;2;occupations;artist;ศิลปิน
-4;2;occupations;actor;นักแสดงชาย
-4;2;occupations;actress;นักแสดงหญิง
-4;2;occupations;model;นายแบบ/นางแบบ
-4;2;occupations;dancer;นักเต้น
-4;2;occupations;singer;นักร้อง
-4;2;occupations;musician;นักดนตรี
-4;2;occupations;photographer;ช่างภาพ
-4;2;occupations;scientist;นักวิทยาศาสตร์
-4;2;occupations;engineer;วิศวกร
-4;2;occupations;astronaut;นักบินอวกาศ
-4;2;occupations;waiter;พนักงานเสริ์ฟชาย
-4;2;occupations;waitress;พนักงานเสริ์ฟหญิง
-4;2;occupations;bus driver;คนขับรถบัส
-4;2;occupations;taxi driver;คนขับแท็กซี่
-4;2;occupations;building contractor;ผู้รับเหมาก่อสร้าง
-4;2;occupations;traffic cop;ตํารวจจราจร
-4;2;occupations;pilot;นักบิน
-4;2;occupations;air hostess;พนักงานต้อนรับบนเครื่องบินหญิง (แอร์โฮสเตส)
-4;2;occupations;steward;พนักงานต้อนรับบนเครื่องบินผู้ชาย (สจ๊วต)
-4;2;occupations;lawyer;ทนายความ
-4;2;occupations;programmer;โปรแกรมเมอร์
-4;2;occupations;architect;สถาปนิก
-4;2;occupations;secretary;เลขานุการ
-4;2;occupations;news reporter;นักข่าว
-4;2;occupations;seller;พนักงานขาย
-4;2;occupations;cashier;แคชเชียร์
-4;2;occupations;accountant;นักบัญชี
-4;2;occupations;judge;ผู้พิพากษา
-4;2;occupations;politician;นักการเมือง
-4;2;occupations;prime minister;นายกรัฐมนตรี
-4;2;occupations;president;ประธานาธิบดี
-12;2;hobbies;seeing a movie;ดูหนัง
-12;2;hobbies;reading;อ่านหนังสือ
-12;2;hobbies;gardening;ทําสวน
-12;2;hobbies;surfing the internet;ท่องอินเทอร์เน็ต
-12;2;hobbies;listening to music;ฟังเพลง
-12;2;hobbies;drawing;วาดภาพ
-12;2;hobbies;cooking;ทําอาหาร
-12;2;hobbies;playing sports;เล่นกีฬา
-12;2;hobbies;watching tv;ดูทีวี
-12;2;hobbies;knitting;ถักไหมพรม
-12;2;hobbies;singing;ร้องเพลง
-12;2;hobbies;taking photos;ถ่ายภาพ
-12;2;hobbies;painting;วาดภาพ
-12;2;hobbies;playing with pet;เล่นกับสัตว์เลี้ยง
-0;0;personal pronoun;I am a student;ฉันเป็นนักเรียน
-0;0;personal pronoun;You are tall;คุณตัวสูง
-0;0;personal pronoun;We are watching television;เรากําลังดูทีวี
-0;0;personal pronoun;They are my parents;พวกเขาเป็นพ่อแม่ของฉัน
-0;0;personal pronoun;He is my teacher;เขาเป็นครูของฉัน
-0;0;personal pronoun;She is my sister;หล่อนเป็นน้องสาวของฉัน
-0;0;personal pronoun;She is reading a book;หล่อนกําลังอ่านหนังสือ
-0;0;personal pronoun;It is very big;มันใหญ่มาก
-0;0;personal pronoun;They are my parents. They love me;พวกเขาเป็นพ่อแม่ของฉัน พวกเขารักฉัน
-0;0;personal pronoun;We love you;พวกเรารักเธอ
-0;0;personal pronoun;They are our parents. They love us;พวกเขาเป็นพ่อแม่ของเรา พวกเขารักเรา
-0;0;personal pronoun;They are my parents. I love them;พวกเขาเป็นพ่อแม่ของฉัน ฉันรักพวกเขา
-0;0;personal pronoun;He is my teacher. I like him;เขาเป็นครูของฉัน ฉันชอบเขา
-0;0;personal pronoun;She is my sister. I love her;หล่อนเป็นพี่สาวของฉัน ฉันรักหล่อน
-0;0;personal pronoun;I like it;ฉันชอบมัน
-3;3;Self and others introduction;May I introduce myself;ฉันขออนุญาตแนะนําตัวเอง
-3;3;Self and others introduction;Let me introduce myself;ฉันขออนุญาตแนะนําตัวเอง
-3;3;Self and others introduction;My name is Jenny;ฉันชื่อเจนนี่
-3;3;Self and others introduction;Nice to see you;ดีใจที่ได้เจอคุณ
-3;3;Self and others introduction;I'm Anna;ฉันชื่อแอนนา
-3;3;Self and others introduction;It's nice to meet you;ยินดีที่ได้รู้จัก
-3;3;Self and others introduction;Nice to meet you;ยินดีที่ได้รู้จัก
-3;3;Self and others introduction;Nice to meet you too;ยินดีที่ได้รู้จักเช่นกัน
-3;3;Self and others introduction;I want to introduce my friend Elsa;ฉันอยากแนะนําเพื่อนชื่อเอลซ่า
-3;3;Self and others introduction;I'm glad to meet you;ยินดีที่ได้รู้จัก
-3;3;Self and others introduction;I'm glad to see you;ฉันดีใจที่ได้เจอคุณ
-3;3;Self and others introduction;This is Elsa;นี่คือเอลซ่า
-3;3;Self and others introduction;It's good to see you;ดีใจที่ได้เจอคุณ
-0;1;alphabets;a;เอ
-0;1;alphabets;b;บี
-0;1;alphabets;c;ซี
-0;1;alphabets;d;ดี
-0;1;alphabets;e;อี
-0;1;alphabets;f;เอฟ
-0;1;alphabets;g;จี
-0;1;alphabets;h;เอช
-0;1;alphabets;i;ไอ
-0;1;alphabets;j;เจ
-0;1;alphabets;k;เค
-0;1;alphabets;l;แอล
-0;1;alphabets;m;เอ็ม
-0;1;alphabets;n;เอ็น
-0;1;alphabets;o;โอ
-0;1;alphabets;p;พี
-0;1;alphabets;q;คิว
-0;1;alphabets;r;อาร์
-0;1;alphabets;s;เอส
-0;1;alphabets;t;ที
-0;1;alphabets;u;ยู
-0;1;alphabets;v;วี
-0;1;alphabets;w;ดับเบิลยู
-0;1;alphabets;x;เอ็กซ์
-0;1;alphabets;y;วาย
-0;1;alphabets;z;แซด
-9;3;Blessing;Happy birthday;สุขสันต์วันเกิด
-9;3;Blessing;Happy new year;สุขสันต์วันปีใหม่
-9;3;Blessing;Merry Christmas;สุขสันต์วันคริสต์มาส
-9;3;Blessing;Happy easter day;สุขสันต์วันอีสเตอร์
-9;3;Blessing;Best wishes for happy new year;ขอส่งความปรารถนาที่ดีที่สุดสําหรับปีใหม่
-9;3;Blessing;Have a nice day;ขอให้มีวันที่ดี
-9;3;Blessing;Have a good trip;ขอให้เที่ยวให้สนุก
-9;3;Blessing;May god bless you; ขอให้พระเจ้าคุ้มครอง
-9;3;Blessing;Get well soon;ขอให้หายป่วยไวๆ
-9;1;OLongvowel;home;บ้าน
-9;1;OLongvowel;rope;เชือก
-9;1;OLongvowel;rose;กุหลาบ
-9;1;OLongvowel;road;ถนน
-9;1;OLongvowel;soap;สบู่
-9;1;OLongvowel;boat;เรือ
-9;1;OLongvowel;arrow;ลูกศร
-9;1;OLongvowel;pillow;หมอน
-9;1;OLongvowel;window;หน้าต่าง
-8;3;Asking for month and year;What month is this month;เดือนนี้เดือนอะไร
-8;3;Asking for month and year;This month is May;เดือนนี้พฤษภาคม
-8;3;Asking for month and year;What month was the last month;เดือนก่อนคือเดือนอะไร
-8;3;Asking for month and year;The last month was April;เดือนก่อนคือเมษายน
-8;3;Asking for month and year;What month is the next month;เดือนหน้าเดือนอะไร
-8;3;Asking for month and year;The next month is June;เดือนหน้าคือเดือมิถุนายน
-8;3;Asking for month and year;What year is this;ปีนี้คือปีอะไร
-8;3;Asking for month and year;This year is 2022;ปีนี้คือปี 2022
-8;3;Asking for month and year;What year was the last year;ปีที่แล้วคือปีอะไร
-8;3;Asking for month and year;The last year was 2021;ปีที่แล้วคือปี 2021
-8;3;Asking for month and year;What year is the next year;ปีหน้าคือปีอะไร
-8;3;Asking for month and year;The next year is 2023;ปีหน้าคือปี 2023
-1;1;A-B-C;apple;แอปเปิ้ล
-1;1;A-B-C;ant;มด
-1;1;A-B-C;ankle;ข้อเท้า
-1;1;A-B-C;animals;สัตว์
-1;1;A-B-C;ambulance;รถพยาบาล
-1;1;A-B-C;ax;ขวาน
-1;1;A-B-C;bus;รถเมล์
-1;1;A-B-C;banana;กล้วย
-1;1;A-B-C;bird;นก
-1;1;A-B-C;bed;เตียง
-1;1;A-B-C;boat;เรือ
-1;1;A-B-C;butterfly;ผีเสื้อ
-1;1;A-B-C;crab;ปู
-1;1;A-B-C;cow;วัว
-1;1;A-B-C;cat;แมว
-1;1;A-B-C;candy;ลูกอม
-1;1;A-B-C;city;เมือง
-1;1;A-B-C;circle;วงกลม
-5;1;OShortvowel;og; 
-5;1;OShortvowel;dog;หมา
-5;1;OShortvowel;jog;วิ่งจ็อกกิ้ง
-5;1;OShortvowel;log;บันทึก
-5;1;OShortvowel;op; 
-5;1;OShortvowel;cop;ตํารวจ
-5;1;OShortvowel;hop;กระโดด
-5;1;OShortvowel;mop;ไม้ถูพื้น
-5;1;OShortvowel;ott; 
-5;1;OShortvowel;hot;ร้อน
-5;1;OShortvowel;not;ไม่ใช่
-5;1;OShortvowel;pot;หม้อ
-5;1;OShortvowel;ox; 
-5;1;OShortvowel;ox_pic;วัว
-5;1;OShortvowel;box;กล่อง
-5;1;OShortvowel;fox;จิ้งจอก
-1;2;family members;me;ตัวฉัน
-1;2;family members;father;พ่อ
-1;2;family members;mother;แม่
-1;2;family members;grandmother;ย่า หรือ ยาย
-1;2;family members;grandfather;ปู่ หรือ ตา
-1;2;family members;brother;พี่ชาย หรือ น้องชาย
-1;2;family members;sister;พี่สาว หรือ น้องสาว
-1;2;family members;uncle;ลุง หรือ น้าชาย
-1;2;family members;aunt;ป้า หรือ น้าสาว
-9;2;vehicles;subway;รถไฟใต้ดิน
-9;2;vehicles;helicopter;เฮลิคอปเตอร์
-9;2;vehicles;van;รถตู้
-9;2;vehicles;motorcycle;มอเตอร์ไซค์
-9;2;vehicles;truck;รถบรรทุก
-9;2;vehicles;ship;เรือ
-9;2;vehicles;tricycle;สามล้อ
-9;2;vehicles;bicycle;จักรยาน
-9;2;vehicles;spaceship;ยานอวกาศ
-9;2;vehicles;bus;รถเมล์
-9;2;vehicles;plane;เครื่องบิน
-9;2;vehicles;car;รถยนต์
-9;2;vehicles;balloon;บอลลูน
-9;2;vehicles;pick-up;รถกระบะ
-9;2;vehicles;submarine;เรือดำน้ำ
-9;2;vehicles;train;รถไฟ
-9;2;vehicles;boat;เรือ
-9;2;vehicles;taxi;รถแท็กซี่
-9;2;vehicles;sky train;รถไฟฟ้า
-9;2;vehicles;shool bus;รถโรงเรียน
-9;2;vehicles;sail;เรือใบ
-2;1;P-Q-R;Pig;หมู
-2;1;P-Q-R;Penguin;เพนกวิน
-2;1;P-Q-R;Papaya;มะละกอ
-2;1;P-Q-R;Pumpkin;ฟักทอง
-2;1;P-Q-R;Pizza;พิซซ่า
-2;1;P-Q-R;Queue;เข้าคิว
-2;1;P-Q-R;Queen;ควีน
-2;1;P-Q-R;Question;คําถาม
-2;1;P-Q-R;Quarter;หนึ่งส่วนสี่
-2;1;P-Q-R;Quill;ขนนก
-2;1;P-Q-R;Rain;ฝน
-2;1;P-Q-R;Rainbow;รุ้ง
-2;1;P-Q-R;Rabbit;กระต่าย
-2;1;P-Q-R;Rubber;ยางลบ
-2;1;P-Q-R;Ruler;ไม้บรรทัด
-6;1;UShortvowel;ub; 
-6;1;UShortvowel;tub;อ่าง
-6;1;UShortvowel;rub;ถู
-6;1;UShortvowel;ugg; 
-6;1;UShortvowel;bug;ข้อผิดพลาด
-6;1;UShortvowel;hug;กอด
-6;1;UShortvowel;jug;เหยือก
-6;1;UShortvowel;um; 
-6;1;UShortvowel;bum;ก้น
-6;1;UShortvowel;gum;หมากฝรั่ง
-6;1;UShortvowel;hum;ฮัม
-6;1;UShortvowel;un; 
-6;1;UShortvowel;gun;ปืน
-6;1;UShortvowel;run;วิ่ง
-6;1;UShortvowel;sun;ดวงอาทิตย์
-6;1;UShortvowel;up;
-6;1;UShortvowel;up2;ขึ้น
-6;1;UShortvowel;cup;ถ้วย
-6;1;UShortvowel;pup;ลูกสุนัข
-6;1;UShortvowel;aut; 
-6;1;UShortvowel;cut;ตัด
-6;1;UShortvowel;hut;ฮัท
-6;1;UShortvowel;nut;ถั่ว
-11;2;clothes;shoes;รองเท้า
-11;2;clothes;socks;ถุงเท้า
-11;2;clothes;belt;เข็มขัด
-11;2;clothes;skirt;กระโปรง
-11;2;clothes;shorts;กางเกงขาสั้น
-11;2;clothes;jean;ยีนส์
-11;2;clothes;pyjamas;ชุดนอน
-11;2;clothes;slippers;รองเท้าแตะ
-11;2;clothes;leggings;กางเกงเลกกิ้ง
-11;2;clothes;bathrobe;เสื้อคลุมอาบน้ํา
-11;2;clothes;swim suit;ชุดว่ายน้ํา
-11;2;clothes;boots;รองเท้าบูท
-11;2;clothes;underwear;ชุดชั้นใน
-11;2;clothes;dress;ชุดกระโปรง
-11;2;clothes;evening dress;ชุดราตรี
-11;2;clothes;diving suit;ชุดดําน้ํา
-11;2;clothes;raincoat;เสื้อกันฝน
-11;2;clothes;suit;สูท
-0;0;a;a notebook;สมุดบันทึก 1 เล่ม
-0;0;a;a pumpkin;ฟักทอง 1 ผล
-0;0;a;a lemon;มะนาว 1 ผล
-0;0;a;a bird;นก 1 ตัว
-0;0;a;a bat;ค้างคาว 1 ตัว
-0;0;a;a teacher;ครู 1 คน
-0;0;a;a policeman;ตํารวจ 1 นาย
-0;0;a;a pan;กระทะ 1 อัน
-0;0;a;a pencil;ดินสอ 1 แท่ง
-4;1;AShortvowel;ad;โฆษณา
-4;1;AShortvowel;bad;แย่
-4;1;AShortvowel;dad;พ่อ
-4;1;AShortvowel;sad;เศร้า
-4;1;AShortvowel;ag; 
-4;1;AShortvowel;bag;ถุง
-4;1;AShortvowel;rag;เศษผ้า
-4;1;AShortvowel;tag;ป้ายกํากับ
-4;1;AShortvowel;am; 
-4;1;AShortvowel;ham;แฮม
-4;1;AShortvowel;jam;แยม
-4;1;AShortvowel;ram;แรม
-4;1;AShortvowel;an;
-4;1;AShortvowel;man;ผู้ชาย
-4;1;AShortvowel;pan;กระทะ
-4;1;AShortvowel;van;รถตู้
-4;1;AShortvowel;app;
-4;1;AShortvowel;cap;ฝา
-4;1;AShortvowel;map;แผนที่
-4;1;AShortvowel;tap;แตะ
-4;1;AShortvowel;at; 
-4;1;AShortvowel;bat;ค้างคาว
-4;1;AShortvowel;cat;แมว
-4;1;AShortvowel;hat;หมวก
-3;0;days;Sunday;วันอาทิตย์
-3;0;days;Monday;วันจันทร์
-3;0;days;Tuesday;วันอังคาร
-3;0;days;Wednesday;วันพุธ
-3;0;days;Thursday;วันพฤหัสบดี
-3;0;days;Friday;วันศุกร์
-3;0;days;Saturday;วันเสาร์
-11;3;Likes and dislikes;What animal do you like;คุณชอบสัตว์อะไร
-11;3;Likes and dislikes;I like dogs;ฉันชอบหมา
-11;3;Likes and dislikes;What sport do you like;คุณชอบกีฬาอะไร
-11;3;Likes and dislikes;I like tennis;ฉันชอบเทนนิส
-11;3;Likes and dislikes;What kind of music do you like;คุณชอบเพลงแนวไหน
-11;3;Likes and dislikes;I like pop music;ฉันชอบเพลงป๊อป
-11;3;Likes and dislikes;Who is your favorite actor;ใครคือนักแสดงคนโปรดของคุณ
-11;3;Likes and dislikes;James is my favorite actor;เจมส์เป็นนักแสดงคนโปรดของฉัน
-11;3;Likes and dislikes;Who is your favorite singer;ใครคือนักร้องคนโปรดของคุณ
-11;3;Likes and dislikes;Lisa is my favorite singer;ลิซ่าเป็นนักร้องคนโปรดของฉัน
-11;3;Likes and dislikes;Do you like cats;คุณชอบแมวไหม
-11;3;Likes and dislikes;Yes I like cats;ค่ะ ฉันชอบแมว
-11;3;Likes and dislikes;Do you like listening to music;คุณชอบฟังเพลงไหม
-11;3;Likes and dislikes;Yes I like listening to music;ใช่ ฉันชอบฟังเพลง
-11;3;Likes and dislikes;Do you like swimming;คุณชอบว่ายน้ําไหม
-11;3;Likes and dislikes;Yes I like swimming;ใช่ ฉันชอบว่ายน้ำ
-11;3;Likes and dislikes;Do you like cooking;คุณชอบทําอาหารไหม
-11;3;Likes and dislikes;Yes I like cooking;ใช่ ฉันชอบทําอาหาร
-10;2;food;fried egg;ไข่เจียว
-10;2;food;pizza;พิซซ่า
-10;2;food;hamburger;แฮมเบอร์เกอร์
-10;2;food;hot dog;ฮ็อทดอก
-10;2;food;tempura;เทมปุระ
-10;2;food;macaroni;มักกะโรนี
-10;2;food;fried rice;ข้าวผัด
-10;2;food;noodle;ก๋วยเตี๋ยว
-10;2;food;spaghetti;สปาเก็ตตี้
-10;2;food;sushi;ซูชิ
-10;2;food;steamed stuffed bun;ซาลาเปา
-6;2;places;school;โรงเรียน
-6;2;places;hospital;โรงพยาบาล
-6;2;places;bank;ธนาคาร
-6;2;places;market;ตลาด
-6;2;places;police station;สถานีตํารวจ
-6;2;places;train station;สถานีรถไฟ
-6;2;places;fire station;สถานีดับเพลิง
-6;2;places;post office;ที่ทำการไปรษณีย์
-6;2;places;airport;สนามบิน
-6;2;places;port;ท่าเรือ
-6;2;places;museum;พิพิธภัณฑ์
-6;2;places;atm;เอทีเอ็ม
-0;0;singular;a notebook;สมุดบันทึก 1 เล่ม
-0;0;singular;a pumpkin;ฟักทอง 1 ผล
-0;0;singular;a lemon;มะนาว 1 ผล
-0;0;singular;an apple;แอปเปิ้ล 1 ผล
-0;0;singular;an owl;นกฮูก 1 ตัว
-0;0;singular;an artist;ศิลปิน 1 คน
-5;2;describing things;big;ใหญ่
-5;2;describing things;small;เล็ก
-5;2;describing things;huge;ใหญ่มาก
-5;2;describing things;tiny;เล็ก
-5;2;describing things;thick;หนา
-5;2;describing things;thin;บาง
-5;2;describing things;heavy;หนัก
-5;2;describing things;light;เบา
-5;2;describing things;cheap;ราคาถูก
-5;2;describing things;expensive;ราคาแพง
-5;2;describing things;few;น้อย
-5;2;describing things;many;มาก
-5;2;describing things;full;เต็ม
-5;2;describing things;empty;ว่าง
-5;2;describing things;clean;สะอาด
-5;2;describing things;dirty;สกปรก
-5;2;describing things;quiet;เงียบ
-5;2;describing things;loud;เสียงดัง
-5;2;describing things;wet;เปียก
-5;2;describing things;dry;แห้ง
-5;2;describing things;hot;ร้อน
-5;2;describing things;cold;เย็น
-1;2;animals;dog;หมา
-1;2;animals;cat;แมว
-1;2;animals;chicken;ไก่
-1;2;animals;duck;เป็ด
-1;2;animals;bird;นก
-1;2;animals;pig;หมู
-1;2;animals;rabbit;กระต่าย
-1;2;animals;mouse;หนู
-1;2;animals;cow;วัว
-1;2;animals;buffalo;ควาย
-1;2;animals;horse;ม้า
-1;2;animals;sheep;แกะ
-1;2;animals;goat;แพะ
-1;2;animals;elephant;ช้าง
-1;2;animals;fish;ปลา
-1;2;animals;crab;ปู
-1;2;animals;shrimp;กุ้ง
-1;2;animals;starfish;ปลาดาว
-1;2;animals;goldfish;ปลาทอง
-1;2;animals;butterfly;ผีเสื้อ
-1;2;animals;dragonfly;แมลงปอ
-1;2;animals;bee;ผึ้ง
-1;2;animals;bat;ค้างคาว
-1;2;animals;parrot;นกแก้ว
-1;2;animals;peacock;นกยูง
-1;2;animals;shellfish;หอย
-1;2;animals;eagle;นกอินทรี
-1;2;animals;owl;นกฮูก
-1;2;animals;vulture;อีแร้ง
-1;2;animals;ostrich;นกกระจอกเทศ
-1;2;animals;turkey;ไก่งวง
-0;3;leave talking;Goodbye;กล่าวลา
-0;3;leave talking;Bye;กล่าวลากับเพื่อน คนสนิท
-0;3;leave talking;Good night;กล่าวลาก่อนเข้านอน
-0;3;leave talking;Have a nice day;ขอให้มีวันที่ดี
-0;3;leave talking;See you again tomorrow;เจอกันพรุ่งนี้
-0;3;leave talking;Good luck; โชคดี
-0;3;leave talking;See you again;แล้วเจอกันใหม่
-0;3;leave talking;See you later;แล้วเจอกันใหม่
-0;3;leave talking;Have a nice weekend; ขอให้มีช่วงสุดสัปดาห์ที่ดี
-5;3;family;How many people are there in your family;ครอบครัวคุณมีกี่คน
-5;3;family;There are 4 people in my family;ครอบครัวฉันมี 4 คน
-5;3;family;How many brothers and sisters do you have;คุณมีพี่น้องกี่คน?
-5;3;family;I have 2 brothers and 1 sister;ฉันมีพี่ชาย 2 คนและน้องสาว 1 คน
-5;3;family;What does your father do;พ่อของคุณทําอาชีพอะไร?
-5;3;family;My father is a doctor;พ่อฉันเป็นหมอ
-5;3;family;What does your mother do;แม่ของคุณทําอาชีพอะไร?
-5;3;family;My mother is a nurse;แม่ฉันเป็นพยาบาล
-5;3;family;What do you want to be when you grow up;คุณอยากเป็นอะไรเมื่อโตขึ้น
-5;3;family;I want to be a dentist;ฉันอยากเป็นหมอฟัน
-5;3;family;Where do you live;คุณอาศัยอยู่ที่ไหน?
-5;3;family;I live in Bangkok;ฉันอาศัยอยู่ในกรุงเทพมหานคร
-2;2;fruits;apple;แอปเปิ้ล
-2;2;fruits;orange;ส้ม
-2;2;fruits;mango;มะม่วง
-2;2;fruits;coco;มะพร้าว
-2;2;fruits;strawberry;สตรอเบอร์รี่
-2;2;fruits;banana;กล้วย
-2;2;fruits;grape;องุ่น
-2;2;fruits;tamarind;มะขาม
-2;2;fruits;lemon;มะนาว
-2;2;fruits;pomelo;ส้มโอ
-2;2;fruits;papaya;มะละกอ
-2;2;fruits;cherry;เชอร์รี่
-2;2;fruits;durian;ทุเรียน
-2;2;fruits;longan;ลําไย
-2;2;fruits;mangosteen;มังคุด
-2;2;fruits;pineapple;สัปปะรด
-2;2;fruits;rose apple;ชมพู่
-2;2;fruits;avocado;อะโวคาโด
-2;2;fruits;carrot;แครอท
-2;2;fruits;tomato; มะเขือเทศ
-2;2;fruits;pumpkin;ฟักทอง
-2;2;fruits;mushroom;เห็ด
-2;2;fruits;cucumber;แตงกวา
-2;2;fruits;garlic;กระเทียม
-2;2;fruits;chili;พริก
-2;2;fruits;corn;ข้าวโพด
-2;2;fruits;cabbage;กะหล่ําปลี
-2;2;fruits;ginger;ขิง
-2;2;fruits;broccoli;บรอคโคลี
-3;1;S-T-U;Snake;งู
-3;1;S-T-U;Seven;เจ็ด
-3;1;S-T-U;Soap;สบู่
-3;1;S-T-U;Star;ดาว
-3;1;S-T-U;Singer;นักร้อง
-3;1;S-T-U;Socks;ถุงเท้า
-3;1;S-T-U;Tiger;เสือ
-3;1;S-T-U;Taxi;แท็กซี่
-3;1;S-T-U;Tomato;มะเขือเทศ
-3;1;S-T-U;Teacher;อาจารย์ครับ
-3;1;S-T-U;Train;รถไฟ
-3;1;S-T-U;Three;สาม
-3;1;S-T-U;Umbrella;ร่ม
-3;1;S-T-U;Uncle;ลุง
-3;1;S-T-U;Up;ขึ้น
-3;1;S-T-U;University;มหาวิทยาลัย
-1;2;colors;white;สีขาว
-1;2;colors;black;สีดํา
-1;2;colors;blue;สีน้ําเงิน
-1;2;colors;green;สีเขียว
-1;2;colors;pink;สีชมพู
-1;2;colors;red;สีแดง
-1;2;colors;orange;สีส้ม
-1;2;colors;brown;สีน้ําตาล
-1;2;colors;yellow;สีเหลือง
-1;2;colors;purple;สีม่วง
-10;2;on the table;chili sauce;ซอสพริก
-10;2;on the table;pepper;พริกไทย
-10;2;on the table;napkin;ผ้าเช็ดปาก
-10;2;on the table;toothpick;ไม้จิ้มฟัน
-10;2;on the table;chopsticks;ตะเกียบ
-10;2;on the table;tomato sauce;ซอสมะเขือเทศ
-10;2;on the table;fish sauce;น้ำปลา
-10;2;on the table;salt;เกลือ
-10;2;on the table;menu;เมนู
-2;1;M-N-O;mango;มะม่วง
-2;1;M-N-O;mouse;หนู
-2;1;M-N-O;moon;ดวงจันทร์
-2;1;M-N-O;mother;แม่
-2;1;M-N-O;mushroom;เห็ด
-2;1;M-N-O;milk;นม
-2;1;M-N-O;Notebook;สมุดบันทึก
-2;1;M-N-O;Neck;คอ
-2;1;M-N-O;Nine;เก้า
-2;1;M-N-O;Noodles;บะหมี่
-2;1;M-N-O;Night;กลางคืน
-2;1;M-N-O;Ostrich;นกกระจอกเทศ
-2;1;M-N-O;Owl;นกฮูก
-2;1;M-N-O;Olive;มะกอก
-2;1;M-N-O;Octopus;ปลาหมึกยักษ์
-2;1;M-N-O;Oval;วงรี
-0;3;greeting;hello;กล่าวทักทายเพื่อน/คนที่คุ้นเคย
-0;3;greeting;hi;กล่าวทักทายเพื่อน/คนที่คุ้นเคย
-0;3;greeting;good morning;กล่าวทักทายในตอนเช้า
-0;3;greeting;good afternoon;กล่าวทักทายในตอนบ่าย
-0;3;greeting;good evening;กล่าวทักทายในตอนเย็น
-8;2;activity;read;อ่าน
-8;2;activity;write;เขียน
-8;2;activity;speak;พูด
-8;2;activity;listen;ฟังสิ
-8;2;activity;study;เรียน
-8;2;activity;eat;กิน
-8;2;activity;sleep;นอน
-8;2;activity;wake up;ตื่น
-8;2;activity;play;เล่น
-8;2;activity;sing;ร้องเพลง
-8;2;activity;paint;ระบายสี
-8;2;activity;swim;ว่ายน้ํา
-8;2;activity;cook;ทำอาหาร
-8;2;activity;wash;ล้าง
-8;2;activity;clean;ทำความสะอาด
-1;3;How are you;How are you; คุณสบายดีไหม
-1;3;How are you;How are you doing;คุณสบายดีไหม
-1;3;How are you;How are things with you;คุณเป็นอย่างไรบ้าง
-1;3;How are you;How have you been;คุณเป็นอย่างไรบ้าง
-1;3;How are you;I'm fine;ฉันสบายดี
-1;3;How are you;I'm good;ฉันสบายดี
-1;3;How are you;I'm great;ฉันสบายดี
-1;3;How are you;I'm very well;ฉันสบายดีมาก
-1;3;How are you;I'm O.K.;ฉันสบายดี
-1;3;How are you;Not bad;ไม่เลว
-0;0;adjectif;big;ใหญ่
-0;0;adjectif;small;เล็ก
-0;0;adjectif;huge;ใหญ่มาก
-0;0;adjectif;tiny;เล็ก
-0;0;adjectif;thick;หนา
-0;0;adjectif;thin2;บาง
-0;0;adjectif;heavy;หนัก
-0;0;adjectif;light;เบา
-0;0;adjectif;cheap;ราคาถูก
-0;0;adjectif;expensive;ราคาแพง
-0;0;adjectif;few;น้อย
-0;0;adjectif;many;มาก
-0;0;adjectif;full;เต็ม
-0;0;adjectif;empty;ว่าง
-0;0;adjectif;tall;สูง
-0;0;adjectif;short;เตี้ย
-0;0;adjectif;fat;อ้วน
-0;0;adjectif;thin;ผอม
-0;0;adjectif;young;หนุ่มสาว
-0;0;adjectif;old;แก่ชรา
-0;0;adjectif;good;ดี
-0;0;adjectif;bad;แย่/เลว
-0;0;adjectif;clean;สะอาด
-0;0;adjectif;dirty;สกปรก
-0;0;adjectif;happy;มีความสุข
-0;0;adjectif;sad;เศร้า
-0;0;adjectif;angry;โกรธ
-0;0;adjectif;calm;สงบ
-0;0;adjectif;excited;ตื่นเต้น
-0;0;adjectif;bored;เบื่อ
-0;0;adjectif;hungry;หิว
-0;0;adjectif;full2;อิ่ม
-0;0;adjectif;quiet;เงียบ
-0;0;adjectif;loud;ดัง
-0;0;adjectif;healthy;สุขภาพดี
-0;0;adjectif;sick;ป่วย
-0;0;adjectif;poor;จน
-0;0;adjectif;rich;รวย
-0;0;adjectif;wet;เปียก
-0;0;adjectif;dry;แห้ง
-0;0;adjectif;hot;ร้อน
-0;0;adjectif;cold;เย็น
-4;3;personal information;How much do you weigh;คุณหนักเท่าไหร่
-4;3;personal information;I weigh 25 kilograms;ฉันหนัก 25 กิโลกรัม
-4;3;personal information;How old are you;คุณอายุเท่าไหร่
-4;3;personal information;I'm 10 years old;ฉันอายุ 10 ขวบ
-4;3;personal information;How tall are you;คุณสูงเท่าไหร่
-4;3;personal information;I'm 130 centimeters tall;ฉันสูง 130 เซนติเมตร
-4;3;personal information;When were you born;คุณเกิดเมื่อไหร่
-4;3;personal information;I was born on February 14 2013;ฉันเกิดวันที่ 14 กุมภาพันธ์ 2013
-4;3;personal information;I'm a student;ฉันเป็นนักเรียน
-4;3;personal information;I'm from Thailand;ฉันมาจากประเทศไทย
-4;3;personal information;I'm from England;ฉันมาจากประเทศอังกฤษ
-4;3;personal information;I'm from China;ฉันมาจากประเทศจีน
-0;2;stationary;pen;ปากกา
-0;2;stationary;pencil;ดินสอ
-0;2;stationary;notebook;สมุดบันทึก
-0;2;stationary;ruler;ไม้บรรทัด
-0;2;stationary;crayon;ดินสอสี
-0;2;stationary;scissors;กรรไกร
-0;2;stationary;eraser;ยางลบ
-0;2;stationary;cutter;มีดคัตเตอร์
-0;2;stationary;dictionary;พจนานุกรม
-0;2;stationary;textbook;หนังสือเรียน
-0;2;stationary;colored paper;กระดาษสี
-0;2;stationary;workbook;สมุดทํางาน
-0;2;stationary;drawing book;สมุดวาดภาพ
-0;2;stationary;sharpener;กบเหลาดินสอ
-0;2;stationary;glue stick;กาวแท่ง
-0;2;stationary;calculator;เครื่องคิดเลข
-0;2;stationary;stapler;เครื่องเย็บกระดาษ
-0;2;stationary;highlighter;ปากกาเน้นข้อความ
-0;2;stationary;correcting fluid;ของเหลวแก้คําผิด
-7;2;bathroom;toilet;ห้องน้ํา
-7;2;bathroom;soap;สบู่
-7;2;bathroom;toilet paper;กระดาษชําระ
-7;2;bathroom;toothpaste;ยาสีฟัน
-7;2;bathroom;toothbrush;แปรงสีฟัน
-7;2;bathroom;shampoo;แชมพู
-7;2;bathroom;hair conditioner;ครีมนวดผม
-7;2;bathroom;basin;อ่างน้ํา
-7;2;bathroom;faucet;ก๊อกน้ํา
-7;2;bathroom;towel;ผ้าเช็ดตัว
-7;2;bathroom;shower;ฝักบัวอาบน้ำ
-1;1;D-E-F;dog;หมา
-1;1;D-E-F;duck;เป็ด
-1;1;D-E-F;donkey;ลา
-1;1;D-E-F;doctor;หมอ
-1;1;D-E-F;desk;โต๊ะเขียนหนังสือ
-1;1;D-E-F;dish;จาน
-1;1;D-E-F;elephant;ช้าง
-1;1;D-E-F;egg;ไข่
-1;1;D-E-F;elbow;ข้อศอก
-1;1;D-E-F;exercise;ออกกําลังกาย
-1;1;D-E-F;eggplant;มะเขือยาว
-1;1;D-E-F;envelope;ซองจดหมาย
-1;1;D-E-F;fish;ปลา
-1;1;D-E-F;flower;ดอกไม้
-1;1;D-E-F;farmer;เกษตรกร
-1;1;D-E-F;football;ฟุตบอล
-1;1;D-E-F;fork;ส้อม
-1;1;D-E-F;five;ห้า
-1;2;vegetables;broccoli;บรอคโคลี
-1;2;vegetables;cauliflower;ดอกกะหล่ําปลี
-1;2;vegetables;kale;ผักคะน้า
-1;2;vegetables;carrot;แครอท
-1;2;vegetables;beetroot;บีทรูท
-1;2;vegetables;radish;หัวไชเท้า
-1;2;vegetables;corn;ข้าวโพด
-1;2;vegetables;chili;พริก
-1;2;vegetables;eggplant;มะเขือยาว
-1;2;vegetables;garlic;กระเทียม
-1;2;vegetables;pumpkin;ฟักทอง
-1;2;vegetables;cucumber;แตงกวา
-1;2;vegetables;cabbage;กะหล่ําปลี
-1;2;vegetables;mushroom;เห็ด
-1;2;vegetables;ginger;ขิง
-1;2;vegetables;lettuce;ผักกาดหอม
-1;2;vegetables;celery;ขึ้นฉ่าย
-1;2;vegetables;asparagus;หน่อไม้ฝรั่ง
-1;2;vegetables;leek;ต้นหอม
-1;2;vegetables;shallot;หอมแดง
-1;2;vegetables;sweet potato;มันฝรั่งหวาน
-8;1;ELongvowel;bee;ผึ้ง
-8;1;ELongvowel;feet;เท้า
-8;1;ELongvowel;jeep;จี๊ป
-8;1;ELongvowel;sea;ทะเล
-8;1;ELongvowel;eat;กินสิ
-8;1;ELongvowel;meat;เนื้อ
-8;1;ELongvowel;candy;ลูกอม
-8;1;ELongvowel;honey;น้ําผึ้ง
-8;1;ELongvowel;key;กุญแจ
-8;1;ELongvowel;monkey;ลิง
-8;1;ELongvowel;bunny;กระต่าย
-8;1;ELongvowel;happy;มีความสุข
-3;2;months;January;มกราคม
-3;2;months;February;กุมภาพันธ์
-3;2;months;March;มีนาคม
-3;2;months;April;เมษายน
-3;2;months;May;พฤษภาคม
-3;2;months;June;มิถุนายน
-3;2;months;July;กรกฏาคม
-3;2;months;August;สิงหาคม
-3;2;months;September;กันยายน
-3;2;months;October;ตุลาคม
-3;2;months;November;พฤศจิกายน
-3;2;months;December;ธันวาคม
-8;3;Asking for days;What is the date today;วันนี้เป็นวันที่เท่าไหร่
-8;3;Asking for days;Today is the 14 of July;วันนี้เป็นวันที่ 14 กรกฎาคม
-8;3;Asking for days;What day is today;วันนี้เป็นวันอะไร
-8;3;Asking for days;Today is Monday;วันนี้เป็นวันจันทร์
-8;3;Asking for days;What day is tomorrow;พรุ่งนี้เป็นวันอะไร
-8;3;Asking for days;Tomorrow is Tuesday;พรุ่งนี้วันอังคาร
-8;3;Asking for days;What day was yesterday;เมื่อวานนี้เป็นวันอะไร
-8;3;Asking for days;Yesterday was Sunday;เมื่อวานเป็นวันอาทิตย์
-8;3;Asking for days;When is your Birthday;วันเกิดของคุณคือวันที่เท่าไหร่
-8;3;Asking for days;My birthday is on February;14 2013
-8;3;Asking for days;What day is Christmas;วันคริสมาสคือวันอะไร
-8;3;Asking for days;It is the 25 of December;วันที่ 25 ธันวาคม
-11;3;Encouragement;Everything will be O.K.;ทุกอย่างโอเคค่ะ
-11;3;Encouragement;Don't worry;อย่าห่วงไปเลย
-11;3;Encouragement;I'll be there for you;ฉันจะอยู่ที่นั่นเพื่อคุณ
-11;3;Encouragement;Calm down.;ใจเย็นก่อน
-10;3;Requesting;Can you give me that pencil;ช่วยส่งดินสอให้ได้ไหม
-10;3;Requesting;May I borrow your ruler;ฉันขอยืมไม้บรรทัดคุณได้ไหม
-10;3;Requesting;Would you please help me carry this book;กรุณาช่วยถือหนังสือเล่มนี้ให้หน่อยได้ไหม
-10;3;Requesting;Can you help me;คุณพอจะช่วยอะไรฉันได้ไหม
-10;3;Requesting;Would you mind opening the window for me;please
-10;3;Requesting;No problem;ไม่มีปัญหา
-10;3;Requesting;Of course;แน่นอน
-10;3;Requesting;Certainly;แน่นอน
-10;3;Requesting;All right;ได้เลย
-10;3;Requesting;I'm really sorry;ฉันขอโทษจริงๆ
-10;3;Requesting;I'm sorry I'm afraid I can't;ฉันขอโทษ ฉันเกรงว่าฉันทําไม่ได้
-10;3;Requesting;I'm afraid not;ฉันเกรงว่าจะไม่ได้
-0;3;asking about personal information;My name is Jim;ผมชื่อจิม
-0;3;asking about personal information;I am bob;ผมชื่อบ๊อบ
-0;3;asking about personal information;Hello my name is kate;สวัสดีค่ะ ฉันชื่อเคทค่ะ
-0;3;asking about personal information;i am 10 years old;ฉันอายุ 10 ปี
-0;3;asking about personal information;Hello my name is alize i am 5 years old;สวัสดีค่ะ ฉันชื่อ อลิซ อายุ 5 ปี
-7;1;ALongvowel;day;วัน
-7;1;ALongvowel;play;เล่น
-7;1;ALongvowel;say;พูดว่า
-7;1;ALongvowel;pace;อัตราเร็ว
-7;1;ALongvowel;race;การแข่งขัน
-7;1;ALongvowel;face;หน้า
-7;1;ALongvowel;cake;เค้ก
-7;1;ALongvowel;lake;ทะเลสาบ
-7;1;ALongvowel;snake;งู
-7;1;ALongvowel;game;เกม
-7;1;ALongvowel;name;ชื่อ
-7;1;ALongvowel;same;เหมือนกัน
-7;1;ALongvowel;date;วันที่
-7;1;ALongvowel;gate;ประตู
-7;1;ALongvowel;skate;สเก็ต
-7;1;ALongvowel;cave;ถ้ํา
-7;1;ALongvowel;pave;ปู
-7;1;ALongvowel;wave;คลื่น
-7;1;ALongvowel;nail;ตะปู
-7;1;ALongvowel;rain;ฝน
-7;1;ALongvowel;wait;รอสักครู่
-0;0;singularplural;a bird;นก 1 ตัว
-0;0;singularplural;3 birds;นกหลายตัว
-0;0;singularplural;a pencil;ดินสอ 1 แท่ง
-0;0;singularplural;5 pencils;ดินสอหลายแท่ง
-0;0;singularplural;an apple;แอปเปิ้ล 1 ผล
-0;0;singularplural;2 apples;แอปเปิ้ลหลายผล
-0;0;singularplural;an orange;ส้ม 1 ผล
-0;0;singularplural;3 oranges;ส้มหลายผล
-0;0;singularplural;a bus;รถบัส 1 คัน
-0;0;singularplural;2 buses;รถบัสหลายคัน
-0;0;singularplural;a dress;ชุดกระโปรง 1 ตัว
-0;0;singularplural;2 dresses;ชุดกระโปรงหลายตัว
-0;0;singularplural;a dish;จาน 1 อัน
-0;0;singularplural;4 dishes;จานหลายอัน
-0;0;singularplural;a toothbrush;แปรงสีฟัน 1 อัน
-0;0;singularplural;3 toothbrushes;แปรงสีฟันหลายอัน
-0;0;singularplural;an ostrich;นกกระจอกเทศ 1 ตัว
-0;0;singularplural;3 ostriches;นกกระจอกเทศหลายตัว
-0;0;singularplural;a policeman;ตํารวจ 1 นาย
-0;0;singularplural;2 policemen;ตํารวจหลายนาย
-0;0;singularplural;a fish;ปลา 1 ตัว
-0;0;singularplural;4 fish;ปลาหลายตัว
-0;0;singularplural;a sheep;แกะ 1 ตัว
-0;0;singularplural;3 sheep;แกะหลายตัว
-6;2;motion;go;ไป
-6;2;motion;walk;เดิน
-6;2;motion;run;วิ่ง
-6;2;motion;jump;กระโดด
-6;2;motion;stop;หยุด
-6;2;motion;stand;ยืน
-6;2;motion;sit;นั่ง
-6;2;motion;close;ปิด
-6;2;motion;open;เปิด
-6;2;motion;entrance;เข้า
-6;2;motion;exit;ออก
-6;2;motion;give;ให้
-6;2;motion;take;รับ
-6;2;motion;push;ผลัก
-6;2;motion;pull;ดึง
-6;2;motion;catch;จับ/คว้า
-6;2;motion;throw;โยน
-6;2;motion;hold;ถือค้างไว้
+9,1,ULongvowel,blue,น้ําเงิน
+9,1,ULongvowel,clue,คําใบ้
+9,1,ULongvowel,glue,กาว
+9,1,ULongvowel,fruit,ผลไม้
+9,1,ULongvowel,suit,สูท
+9,1,ULongvowel,cube,สี่เหลี่ยม
+9,1,ULongvowel,huge,ใหญ่มาก
+9,1,ULongvowel,cute,น่ารักดี
+9,1,ULongvowel,boot,บูต
+9,1,ULongvowel,food,อาหาร
+9,1,ULongvowel,moon,ดวงจันทร์
+12,2,bedroom,bed,เตียง
+12,2,bedroom,alarm clock,นาฬิกาปลุก
+12,2,bedroom,lamp,โคมไฟ
+12,2,bedroom,dressing table,โต๊ะแต่งตัว
+12,2,bedroom,bolster,หมอนข้าง
+12,2,bedroom,blanket,ผ้าห่ม
+12,2,bedroom,pillow,หมอน
+12,2,bedroom,wardrobe,ตู้เสื้อผ้า
+10,2,drinks,drinking water,น้ำดื่ม
+10,2,drinks,milk,นม
+10,2,drinks,coffee,กาแฟ
+10,2,drinks,juice,น้ําผลไม้
+10,2,drinks,orange juice,น้ําส้ม
+10,2,drinks,apple juice,น้ําแอปเปิ้ล
+10,2,drinks,pineapple juice,น้ําสับปะรด
+10,2,drinks,watermelon juice,น้ําแตงโม
+10,2,drinks,coconut drink,น้ำมะพร้าว
+10,2,drinks,smoothie,สมูทตี้
+10,2,drinks,honey,น้ําผึ้ง
+10,2,drinks,soda,โซดา
+10,2,drinks,tea,ชา
+10,2,drinks,tea bag,ถุงชา
+10,2,drinks,teapot,กาน้ําชา
+10,2,drinks,can,กระป๋อง
+9,2,sports,tennis,เทนนิส
+9,2,sports,judo,ยูโด
+9,2,sports,yoga,โยคะ
+9,2,sports,swimming,ว่ายน้ํา
+9,2,sports,hiking,ปีนเขา
+9,2,sports,karate,คาราเต้
+9,2,sports,hockey,ฮอกกี้
+9,2,sports,golf,กอล์ฟ
+9,2,sports,gymnastics,ยิมนาสติก
+9,2,sports,exercise,ออกกําลังกาย
+9,2,sports,skiing,สกี
+9,2,sports,jogging,วิ่งออกกําลังกาย
+9,2,sports,soccer,ฟุตบอล
+9,2,sports,rugby,รักบี้
+9,2,sports,table tennis,ปิงปอง
+9,2,sports,volleyball,วอลเลย์บอล
+9,2,sports,basketball,บาสเก็ตบอล
+9,2,sports,sailing,แข่งเรือใบ
+13,3,Asking about Education,What subject do you like,วิชาไหนที่คุณชอบ
+13,3,Asking about Education,I like English,ฉันชอบวิชาภาษาอังกฤษ
+13,3,Asking about Education,What subject do you dislike,วิชาไหนที่คุณไม่ชอบ
+13,3,Asking about Education,I don't like Maths,ฉันไม่ชอบวิชาคณิตศาสตร์
+13,3,Asking about Education,What is your favorite subject,วิชาโปรดของคุณคืออะไร
+13,3,Asking about Education,My favorite subject is English,วิชาโปรดของฉันคือภาษาอังกฤษ
+13,2,clothes,shoes,รองเท้า
+13,2,clothes,socks,ถุงเท้า
+13,2,clothes,belt,เข็มขัด
+13,2,clothes,skirt,กระโปรง
+13,2,clothes,shorts,กางเกงขาสั้น
+13,2,clothes,jean,ยีนส์
+13,2,clothes,pyjamas,ชุดนอน
+13,2,clothes,slippers,รองเท้าแตะ
+13,2,clothes,leggings,กางเกงเลกกิ้ง
+13,2,clothes,bathrobe,เสื้อคลุมอาบน้ํา
+13,2,clothes,swim suit,ชุดว่ายน้ํา
+13,2,clothes,boots,รองเท้าบูท
+13,2,clothes,underwear,ชุดชั้นใน
+13,2,clothes,dress,ชุดกระโปรง
+13,2,clothes,evening dress,ชุดราตรี
+13,2,clothes,diving suit,ชุดดําน้ํา
+13,2,clothes,raincoat,เสื้อกันฝน
+13,2,clothes,suit,สูท
+2,3,apologizing,I'm sorry,ฉันขอโทษ
+2,3,apologizing,Excuse me please,ขอโทษนะครับ/คะ
+2,3,apologizing,Excuse me for interrupting,ขอโทษที่รบกวนนะครับ/คะ
+2,3,apologizing,I beg your pardon,ต้องขอโทษด้วยครับ/คะ
+2,3,apologizing,I'm sorry I'm late,ฉันขอโทษที่มาสาย
+2,3,apologizing,I apologize to you,ขอโทษนะครับ/คะ
+2,3,apologizing,Pardon,ขอโทษนะครับ/คะ
+2,3,apologizing,Forgive me,ยกโทษให้ฉันด้วย
+2,3,apologizing,Don't mention it, ไม่เป็นไร
+2,3,apologizing,That's all right,ไม่เป็นไร
+2,3,apologizing,No problem,ไม่มีปัญหา
+2,3,apologizing,Don't worry,อย่ากังวลไปเลย
+0,0,the,the sun,ดวงอาทิตย์
+0,0,the,the moon,พระจันทร์
+0,0,the,the earth,โลก
+0,0,the,the eiffel,หอไอเฟล
+0,0,the,the airport,สนามบิน
+0,0,the,the train station,สถานีรถไฟ
+0,0,the,the market,ตลาด
+0,0,the,the sea,ทะเล
+3,1,Y-Z,Yolk,ไข่แดง
+3,1,Y-Z,Yogurt,โยเกิร์ต
+3,1,Y-Z,Yellow,สีเหลือง
+3,1,Y-Z,Yoyo,โย่โย่
+3,1,Y-Z,Zip,ซิป
+3,1,Y-Z,Yacht,เรือยอร์ช
+3,1,Y-Z,Zoo,สวนสัตว์
+3,1,Y-Z,Zebra,ซีบร้า
+3,1,Y-Z,Zero,ศูนย์
+3,1,Y-Z,Zucchini,บวบ
+6,2,occupations,teacher,คุณครู
+6,2,occupations,doctor,หมอ
+6,2,occupations,nurse,พยาบาล
+6,2,occupations,dentist,หมอฟัน
+6,2,occupations,pharmacist,เภสัชกร
+6,2,occupations,veterinarian,สัตวแพทย์
+6,2,occupations,policeman,ตํารวจ
+6,2,occupations,soldier,ทหาร
+6,2,occupations,postman,บุรุษไปรษณีย์
+6,2,occupations,farmer,เกษตรกร
+6,2,occupations,fisherman,ชาวประมง
+6,2,occupations,gardener,คนสวน
+6,2,occupations,cook,พ่อครัว/แม่ครัว
+6,2,occupations,carpenter,ช่างไม้
+6,2,occupations,receptionist,พนักงานต้อนรับ
+6,2,occupations,translator,ล่าม
+6,2,occupations,guide,มัคคุเทศก์
+6,2,occupations,artist,ศิลปิน
+6,2,occupations,actor,นักแสดงชาย
+6,2,occupations,actress,นักแสดงหญิง
+6,2,occupations,model,นายแบบ/นางแบบ
+6,2,occupations,dancer,นักเต้น
+6,2,occupations,singer,นักร้อง
+6,2,occupations,musician,นักดนตรี
+6,2,occupations,photographer,ช่างภาพ
+6,2,occupations,scientist,นักวิทยาศาสตร์
+6,2,occupations,engineer,วิศวกร
+6,2,occupations,astronaut,นักบินอวกาศ
+6,2,occupations,waiter,พนักงานเสริ์ฟชาย
+6,2,occupations,waitress,พนักงานเสริ์ฟหญิง
+6,2,occupations,bus driver,คนขับรถบัส
+6,2,occupations,taxi driver,คนขับแท็กซี่
+6,2,occupations,building contractor,ผู้รับเหมาก่อสร้าง
+6,2,occupations,traffic cop,ตํารวจจราจร
+6,2,occupations,pilot,นักบิน
+6,2,occupations,air hostess,พนักงานต้อนรับบนเครื่องบินหญิง (แอร์โฮสเตส)
+6,2,occupations,steward,พนักงานต้อนรับบนเครื่องบินผู้ชาย (สจ๊วต)
+6,2,occupations,lawyer,ทนายความ
+6,2,occupations,programmer,โปรแกรมเมอร์
+6,2,occupations,architect,สถาปนิก
+6,2,occupations,secretary,เลขานุการ
+6,2,occupations,news reporter,นักข่าว
+6,2,occupations,seller,พนักงานขาย
+6,2,occupations,cashier,แคชเชียร์
+6,2,occupations,accountant,นักบัญชี
+6,2,occupations,judge,ผู้พิพากษา
+6,2,occupations,politician,นักการเมือง
+6,2,occupations,prime minister,นายกรัฐมนตรี
+6,2,occupations,president,ประธานาธิบดี
+0,2,numbers,one,หนึ่ง
+0,2,numbers,two,สอง
+0,2,numbers,three,สาม
+0,2,numbers,four,สี่
+0,2,numbers,five,ห้า
+0,2,numbers,six,หก
+0,2,numbers,seven,เจ็ด
+0,2,numbers,eight,แปด
+0,2,numbers,nine,เก้า
+0,2,numbers,ten,สิบ
+0,2,numbers,eleven,สิบเอ็ด
+0,2,numbers,twelve,สิบสอง
+0,2,numbers,thirteen,สิบสาม
+0,2,numbers,fourteen,สิบสี่
+0,2,numbers,fifteen,สิบห้า
+0,2,numbers,sixteen,สิบหก
+0,2,numbers,seventeen,สิบเจ็ด
+0,2,numbers,eighteen,สิบแปด
+0,2,numbers,nineteen,สิบเก้า
+0,2,numbers,twenty,ยี่สิบ
+4,2,stationary,pen,ปากกา
+4,2,stationary,pencil,ดินสอ
+4,2,stationary,notebook,สมุดบันทึก
+4,2,stationary,ruler,ไม้บรรทัด
+4,2,stationary,crayon,ดินสอสี
+4,2,stationary,scissors,กรรไกร
+4,2,stationary,eraser,ยางลบ
+4,2,stationary,cutter,มีดคัตเตอร์
+4,2,stationary,dictionary,พจนานุกรม
+4,2,stationary,textbook,หนังสือเรียน
+4,2,stationary,colored paper,กระดาษสี
+4,2,stationary,workbook,สมุดทํางาน
+4,2,stationary,drawing book,สมุดวาดภาพ
+4,2,stationary,sharpener,กบเหลาดินสอ
+4,2,stationary,glue stick,กาวแท่ง
+4,2,stationary,calculator,เครื่องคิดเลข
+4,2,stationary,stapler,เครื่องเย็บกระดาษ
+4,2,stationary,highlighter,ปากกาเน้นข้อความ
+4,2,stationary,correcting fluid,ของเหลวแก้คําผิด
+12,2,bathroom,toilet,ห้องน้ํา
+12,2,bathroom,soap,สบู่
+12,2,bathroom,toilet paper,กระดาษชําระ
+12,2,bathroom,toothpaste,ยาสีฟัน
+12,2,bathroom,toothbrush,แปรงสีฟัน
+12,2,bathroom,shampoo,แชมพู
+12,2,bathroom,hair conditioner,ครีมนวดผม
+12,2,bathroom,basin,อ่างน้ํา
+12,2,bathroom,faucet,ก๊อกน้ํา
+12,2,bathroom,towel,ผ้าเช็ดตัว
+12,2,bathroom,shower,ฝักบัวอาบน้ำ
+2,1,J-K-L,jam,แยม
+2,1,J-K-L,jeans,กางเกงยีนส์
+2,1,J-K-L,jellyfish,แมงกะพรุน
+2,1,J-K-L,juice,น้ําผลไม้
+2,1,J-K-L,jar,เหยือก
+2,1,J-K-L,jaguar, เสือดาว
+2,1,J-K-L,king,คิง
+2,1,J-K-L,koala,โคอาลา
+2,1,J-K-L,kitchen,ห้องครัว
+2,1,J-K-L,key,กุญแจ
+2,1,J-K-L,kangaroo,จิงโจ้
+2,1,J-K-L,kid,เด็ก
+2,1,J-K-L,lion,สิงโต
+2,1,J-K-L,lemon,มะนาว
+2,1,J-K-L,lotus,ดอกบัว
+2,1,J-K-L,lollipop,อมยิ้ม
+2,1,J-K-L,laugh,หัวเราะ
+8,1,ILongvowel,lie,โกหก
+8,1,ILongvowel,tie,ผูกเชือก
+8,1,ILongvowel,dice,ลูกเต๋า
+8,1,ILongvowel,bike,จักรยาน
+8,1,ILongvowel,like,เช่น
+8,1,ILongvowel,lime,มะนาว
+8,1,ILongvowel,time,เวลา
+8,1,ILongvowel,fine,ได้
+8,1,ILongvowel,line,บรรทัด
+8,1,ILongvowel,nine,เก้า
+8,1,ILongvowel,wine,ไวน์
+8,1,ILongvowel,pipe,ท่อ
+8,1,ILongvowel,kite,ว่าว
+8,1,ILongvowel,dive,ดําน้ํา
+8,1,ILongvowel,five,ห้า
+8,1,ILongvowel,live,ถ่ายทอดสด
+8,1,ILongvowel,high,สูง
+8,1,ILongvowel,light,แสง
+8,1,ILongvowel,night,ราตรีสวัสดิ์
+8,1,ILongvowel,fly,บิน
+8,1,ILongvowel,cry,ร้องไห้
+8,1,ILongvowel,sky,ท้องฟ้า
+0,0,an,an apple,แอปเปิ้ล 1 ผล
+0,0,an,an owl,นกฮูก 1 ตัว
+0,0,an,an artist,ศิลปิน 1 คน
+0,0,an,an orange,ส้ม 1 ลูก
+0,0,an,an eraser,ยางลบ 1 อัน
+0,0,an,an actor,นักแสดง 1 คน
+0,0,an,an engineer,วิศวกร 1 คน
+0,0,an,an ice cream,ไอศกรีม 1 อัน
+0,0,an,an eagle,นกอินทรี 1 ตัว
+6,2,describing people,tall,สูง
+6,2,describing people,short,เตี้ย
+6,2,describing people,fat,อ้วน
+6,2,describing people,thin,ผอม
+6,2,describing people,young,หนุ่มสาว
+6,2,describing people,old,แก่ชรา
+6,2,describing people,good,ดี
+6,2,describing people,bad,แย่/เลว
+6,2,describing people,happy,มีความสุข
+6,2,describing people,sad,เศร้า
+6,2,describing people,angry,โกรธ
+6,2,describing people,calm,สงบ
+6,2,describing people,excited,ตื่นเต้น
+6,2,describing people,bored,เบื่อ
+6,2,describing people,hungry,หิว
+6,2,describing people,full,อิ่ม
+6,2,describing people,quiet,เงียบ
+6,2,describing people,loud,เสียงดัง
+6,2,describing people,healthy,สุขภาพดี
+6,2,describing people,sick,ป่วย
+0,0,possesive pronoun,this ruler is mine,ไม้บรรทัดนี่เป็นของฉัน
+0,0,possesive pronoun,this pencil is yours ,ดินสอนี่เป็นของคุณ
+0,0,possesive pronoun,These notebooks are ours,สมุดบันทึกเหล่านี้เป็นของเรา
+0,0,possesive pronoun,those notebooks are theirs,สมุดบันทึกเหล่านั้นเป็นของพวกเขา
+0,0,possesive pronoun,That book is his,หนังสือเล่มนั้นเป็นของเขา
+0,0,possesive pronoun,those rulers are hers,ไม้บรรทัดเหล่านั้นเป็นของเธอ
+0,0,possesive pronoun,that is my dog. That house is its,นั่นคือหมาของฉัน บ้านนั้นเป็นของมัน
+4,2,family members,me,ตัวฉัน
+4,2,family members,father,พ่อ
+4,2,family members,mother,แม่
+4,2,family members,grandmother,ย่า หรือ ยาย
+4,2,family members,grandfather, ปู่ หรือ ตา
+4,2,family members,brother,พี่ชาย หรือ น้องชาย
+4,2,family members,sister,พี่สาว หรือ น้องสาว
+4,2,family members,uncle,ลุง หรือ น้าชาย
+4,2,family members,aunt,ป้า หรือ น้าสาว
+0,0,possesive adjective,this is my ruler,นี่คือไม้บรรทัดของฉัน
+0,0,possesive adjective,this is your pencil,นี่คือดินสอของคุณ
+0,0,possesive adjective,These are our notebooks,นี่คือสมุดบันทึกของพวกเรา
+0,0,possesive adjective,those are their notebooks,นั่นคือสมุดบันทึกของพวกเขา
+0,0,possesive adjective,That is his book,นั่นคือหนังสือของเขา
+0,0,possesive adjective,those are her rulers,นั่นคือไม้บรรทัดของเธอ
+0,0,possesive adjective,that is my dog that is its house,นั่นคือหมาของฉัน นั่นคือบ้านของมัน
+1,1,G-H-I,goat,แพะ
+1,1,G-H-I,girl,ผู้หญิง
+1,1,G-H-I,guitar,กีตาร์
+1,1,G-H-I,giraffe,ยีราฟ
+1,1,G-H-I,gym,ยิม
+1,1,G-H-I,ginger,ขิง
+1,1,G-H-I,house,บ้าน
+1,1,G-H-I,head,หัว
+1,1,G-H-I,hat,หมวก
+1,1,G-H-I,horse,ม้า
+1,1,G-H-I,hen,แม่ไก่
+1,1,G-H-I,hamburger,แฮมเบอร์เกอร์
+1,1,G-H-I,icecream,ไอศกรีม
+1,1,G-H-I,insect,แมลง
+1,1,G-H-I,image,รูปภาพ
+1,1,G-H-I,ink,หมึก
+1,1,G-H-I,iguana,อิกัวน่า
+1,1,G-H-I,itch,คัน
+4,1,EShortvowel,ed, 
+4,1,EShortvowel,bed,เตียง
+4,1,EShortvowel,red,สีแดง
+4,1,EShortvowel,wed,วันพุธ
+4,1,EShortvowel,eg,
+4,1,EShortvowel,egg,ไข่
+4,1,EShortvowel,leg,ขา
+4,1,EShortvowel,en, 
+4,1,EShortvowel,men,ผู้ชายหลายคน
+4,1,EShortvowel,pen,ปากกา
+4,1,EShortvowel,ten,สิบ
+4,1,EShortvowel,et, 
+4,1,EShortvowel,net,สุทธิ
+4,1,EShortvowel,vet,สัตวแพทย์
+4,1,EShortvowel,wet,เปียก
+3,1,V-W-X,Violin,ไวโอลิน
+3,1,V-W-X,Van,แวน
+3,1,V-W-X,Vase,แจกัน
+3,1,V-W-X,Vegetable,ผัก
+3,1,V-W-X,Vulture,แร้ง
+3,1,V-W-X,Vest,เสื้อกั๊ก
+3,1,V-W-X,Whale,วาฬ
+3,1,V-W-X,Walk,เดิน
+3,1,V-W-X,Water,น้ํา
+3,1,V-W-X,Watermelon,แตงโม
+3,1,V-W-X,Window,หน้าต่าง
+3,1,V-W-X,Wolf,หมาป่า
+3,1,V-W-X,Ox,วัวตัวผู้
+3,1,V-W-X,Xylophone,ไซโลโฟน
+3,1,V-W-X,Six,หก
+3,1,V-W-X,Box,กล่อง
+3,1,V-W-X,Exit,ทางออก
+5,1,IShortvowel,ibbe, 
+5,1,IShortvowel,bib,ผ้ากันเปื้อน
+5,1,IShortvowel,nib,ปลายปากกา
+5,1,IShortvowel,rib,ซี่โครง
+5,1,IShortvowel,id, 
+5,1,IShortvowel,kid,เด็ก
+5,1,IShortvowel,lid,ฝา
+5,1,IShortvowel,rid,กําจัด
+5,1,IShortvowel,igg, 
+5,1,IShortvowel,big,ใหญ่
+5,1,IShortvowel,dig,ขุด
+5,1,IShortvowel,pig,หมู
+5,1,IShortvowel,in, 
+5,1,IShortvowel,bin,ถังขยะ
+5,1,IShortvowel,pin,พิน
+5,1,IShortvowel,win,ชนะ
+5,1,IShortvowel,ip, 
+5,1,IShortvowel,dip,จุ่ม
+5,1,IShortvowel,hip,ฮิป
+5,1,IShortvowel,lip,ริมฝีปาก
+5,1,IShortvowel,it, 
+5,1,IShortvowel,hit,ชน
+5,1,IShortvowel,pit,หลุม
+5,1,IShortvowel,sit,นั่ง
+5,1,IShortvowel,ix, 
+5,1,IShortvowel,fix,แก้ไข
+5,1,IShortvowel,mix,ผสม
+5,1,IShortvowel,six,หก
+0,0,definite pronoun,this is an eraser,นี่คือยางลบ
+0,0,definite pronoun,this is a pencil,นี่คือดินสอ
+0,0,definite pronoun,this is a ruler,นี่คือไม้บรรทัด
+0,0,definite pronoun,this is a notebook,นี่คือสมุดบันทึก
+0,0,definite pronoun,that is a ruler,นั่นคือไม้บรรทัด
+0,0,definite pronoun,that is a notebook,นี่คือสมุดบันทึก
+0,0,definite pronoun,these are rulers,นี่คือไม้บรรทัดหลายอัน
+0,0,definite pronoun,these are notebooks,นี่คือสมุดบันทึกหลายเล่ม
+0,0,definite pronoun,those are notebooks,นั่นคือสมุดบันทึกหลายเล่ม
+0,0,definite pronoun,those are rulers,นั่นคือไม้บรรทัดหลายอัน
+1,3,thanks,Thanks,ขอบคุณ
+1,3,thanks,You're welcome,ด้วยความยินดี
+1,3,thanks,Thank you,ขอบคุณ
+1,3,thanks,That's all right,ไม่เป็นไร
+1,3,thanks,Thank you for your help,ขอบคุณสำหรับความช่วยเหลือ
+1,3,thanks,My pleasure,ด้วยความยินดี
+1,3,thanks,Many thanks,ขอบคุณมากๆ
+1,3,thanks,That's OK,ไม่เป็นไร
+1,3,thanks,Thanks a lot,ขอบคุณมาก
+1,3,thanks,With pleasure,ด้วยความยินดี
+1,3,thanks,Thank you very much,ขอบคุณมาก
+1,3,thanks,Don't mention it,ไม่เป็นไร
+6,3,time,Could you tell me the time please,ช่วยกรุณาบอกเวลาฉันหน่อยได้ไหม
+6,3,time,Do do have a time,ตอนนี้เวลาเท่าไหร่แล้ว/กี่โมงแล้ว
+6,3,time,Excuse me! What time is it,ขอโทษนะครับ/คะ ตอนนี้กี่โมงแล้ว
+10,2,desserts,cookie,คุกกี้
+10,2,desserts,fruit salad,สลัดผลไม้
+10,2,desserts,ice cream,ไอศครีม
+10,2,desserts,pudding,พุดดิ้ง
+10,2,desserts,chocolate bar,ช็อกโกแลตบาร์
+10,2,desserts,cake,เค้ก
+10,2,desserts,donut,โดนัท
+10,2,desserts,pie,พาย
+10,2,desserts,jelly,เยลลี่
+8,2,motion,go,ไป
+8,2,motion,walk,เดิน
+8,2,motion,run,วิ่ง
+8,2,motion,jump,กระโดด
+8,2,motion,stop,หยุด
+8,2,motion,stand,ยืน
+8,2,motion,sit,นั่ง
+8,2,motion,close,ปิด
+8,2,motion,open,เปิด
+8,2,motion,entrance,เข้า
+8,2,motion,exit,ออก
+8,2,motion,give,ให้
+8,2,motion,take,รับ
+8,2,motion,push,ผลัก
+8,2,motion,pull,ดึง
+8,2,motion,catch,จับ/คว้า
+8,2,motion,throw,โยน
+8,2,motion,hold,ถือค้างไว้
+11,2,living room,sofa,โซฟา
+11,2,living room,table,โต๊ะ
+11,2,living room,television,โทรทัศน์
+11,2,living room,picture frame,กรอบภาพ
+11,2,living room,carpet,พรม
+11,2,living room,vase,แจกัน
+11,2,living room,radio,วิทยุ
+11,2,living room,fish tank,ตู้ปลา
+7,2,places,school,โรงเรียน
+7,2,places,hospital,โรงพยาบาล
+7,2,places,bank,ธนาคาร
+7,2,places,market,ตลาด
+7,2,places,police station,สถานีตํารวจ
+7,2,places,train station,สถานีรถไฟ
+7,2,places,fire station,สถานีดับเพลิง
+7,2,places,post office,ที่ทำการไปรษณีย์
+7,2,places,airport,สนามบิน
+7,2,places,port,ท่าเรือ
+7,2,places,museum,พิพิธภัณฑ์
+7,2,places,atm,เอทีเอ็ม
+7,2,describing things,big,ใหญ่
+7,2,describing things,small,เล็ก
+7,2,describing things,huge,ใหญ่มาก
+7,2,describing things,tiny,เล็ก
+7,2,describing things,thick,หนา
+7,2,describing things,thin,บาง
+7,2,describing things,heavy,หนัก
+7,2,describing things,light,เบา
+7,2,describing things,cheap,ราคาถูก
+7,2,describing things,expensive,ราคาแพง
+7,2,describing things,few,น้อย
+7,2,describing things,many,มาก
+7,2,describing things,full,เต็ม
+7,2,describing things,empty,ว่าง
+7,2,describing things,clean,สะอาด
+7,2,describing things,dirty,สกปรก
+7,2,describing things,quiet,เงียบ
+7,2,describing things,loud,เสียงดัง
+7,2,describing things,wet,เปียก
+7,2,describing things,dry,แห้ง
+7,2,describing things,hot,ร้อน
+7,2,describing things,cold,เย็น
+13,2,disease,bleed,เลือดออก
+13,2,disease,cough,ไอ
+13,2,disease,stomachache,ปวดท้อง
+13,2,disease,sneeze,จาม
+13,2,disease,fever,ไข้
+13,2,disease,pain,ความเจ็บปวด
+13,2,disease,vomit,อ้วก
+13,2,disease,runny nose,น้ํามูกไหล
+13,2,disease,backache,ปวดหลัง
+13,2,disease,headaches,ปวดหัว
+13,2,disease,sore throat,เจ็บคอ
+13,2,disease,hurt,เจ็บ
+0,0,personal pronoun,I am a student,ฉันเป็นนักเรียน
+0,0,personal pronoun,You are tall,คุณตัวสูง
+0,0,personal pronoun,We are watching television,เรากําลังดูทีวี
+0,0,personal pronoun,They are my parents,พวกเขาเป็นพ่อแม่ของฉัน
+0,0,personal pronoun,He is my teacher,เขาเป็นครูของฉัน
+0,0,personal pronoun,She is my sister,หล่อนเป็นน้องสาวของฉัน
+0,0,personal pronoun,She is reading a book,หล่อนกําลังอ่านหนังสือ
+0,0,personal pronoun,It is very big,มันใหญ่มาก
+0,0,personal pronoun,They are my parents. They love me,พวกเขาเป็นพ่อแม่ของฉัน พวกเขารักฉัน
+0,0,personal pronoun,We love you,พวกเรารักเธอ
+0,0,personal pronoun,They are our parents. They love us,พวกเขาเป็นพ่อแม่ของเรา พวกเขารักเรา
+0,0,personal pronoun,They are my parents. I love them,พวกเขาเป็นพ่อแม่ของฉัน ฉันรักพวกเขา
+0,0,personal pronoun,He is my teacher. I like him,เขาเป็นครูของฉัน ฉันชอบเขา
+0,0,personal pronoun,She is my sister. I love her,หล่อนเป็นพี่สาวของฉัน ฉันรักหล่อน
+0,0,personal pronoun,I like it,ฉันชอบมัน
+11,2,on the table,chili sauce,ซอสพริก
+11,2,on the table,pepper,พริกไทย
+11,2,on the table,napkin,ผ้าเช็ดปาก
+11,2,on the table,toothpick,ไม้จิ้มฟัน
+11,2,on the table,chopsticks,ตะเกียบ
+11,2,on the table,tomato sauce,ซอสมะเขือเทศ
+11,2,on the table,fish sauce,น้ำปลา
+11,2,on the table,salt,เกลือ
+11,2,on the table,menu,เมนู
+3,3,Self and others introduction,May I introduce myself,ฉันขออนุญาตแนะนําตัวเอง
+3,3,Self and others introduction,Let me introduce myself,ฉันขออนุญาตแนะนําตัวเอง
+3,3,Self and others introduction,My name is Jenny,ฉันชื่อเจนนี่
+3,3,Self and others introduction,Nice to see you,ดีใจที่ได้เจอคุณ
+3,3,Self and others introduction,I'm Anna,ฉันชื่อแอนนา
+3,3,Self and others introduction,It's nice to meet you,ยินดีที่ได้รู้จัก
+3,3,Self and others introduction,Nice to meet you,ยินดีที่ได้รู้จัก
+3,3,Self and others introduction,Nice to meet you too,ยินดีที่ได้รู้จักเช่นกัน
+3,3,Self and others introduction,I want to introduce my friend Elsa,ฉันอยากแนะนําเพื่อนชื่อเอลซ่า
+3,3,Self and others introduction,I'm glad to meet you,ยินดีที่ได้รู้จัก
+3,3,Self and others introduction,I'm glad to see you,ฉันดีใจที่ได้เจอคุณ
+3,3,Self and others introduction,This is Elsa,นี่คือเอลซ่า
+3,3,Self and others introduction,It's good to see you,ดีใจที่ได้เจอคุณ
+0,1,alphabets,a,เอ
+0,1,alphabets,b,บี
+0,1,alphabets,c,ซี
+0,1,alphabets,d,ดี
+0,1,alphabets,e,อี
+0,1,alphabets,f,เอฟ
+0,1,alphabets,g,จี
+0,1,alphabets,h,เอช
+0,1,alphabets,i,ไอ
+0,1,alphabets,j,เจ
+0,1,alphabets,k,เค
+0,1,alphabets,l,แอล
+0,1,alphabets,m,เอ็ม
+0,1,alphabets,n,เอ็น
+0,1,alphabets,o,โอ
+0,1,alphabets,p,พี
+0,1,alphabets,q,คิว
+0,1,alphabets,r,อาร์
+0,1,alphabets,s,เอส
+0,1,alphabets,t,ที
+0,1,alphabets,u,ยู
+0,1,alphabets,v,วี
+0,1,alphabets,w,ดับเบิลยู
+0,1,alphabets,x,เอ็กซ์
+0,1,alphabets,y,วาย
+0,1,alphabets,z,แซด
+9,3,Blessing,Happy birthday,สุขสันต์วันเกิด
+9,3,Blessing,Happy new year,สุขสันต์วันปีใหม่
+9,3,Blessing,Merry Christmas,สุขสันต์วันคริสต์มาส
+9,3,Blessing,Happy easter day,สุขสันต์วันอีสเตอร์
+9,3,Blessing,Best wishes for happy new year,ขอส่งความปรารถนาที่ดีที่สุดสําหรับปีใหม่
+9,3,Blessing,Have a nice day,ขอให้มีวันที่ดี
+9,3,Blessing,Have a good trip,ขอให้เที่ยวให้สนุก
+9,3,Blessing,May god bless you, ขอให้พระเจ้าคุ้มครอง
+9,3,Blessing,Get well soon,ขอให้หายป่วยไวๆ
+9,1,OLongvowel,home,บ้าน
+9,1,OLongvowel,rope,เชือก
+9,1,OLongvowel,rose,กุหลาบ
+9,1,OLongvowel,road,ถนน
+9,1,OLongvowel,soap,สบู่
+9,1,OLongvowel,boat,เรือ
+9,1,OLongvowel,arrow,ลูกศร
+9,1,OLongvowel,pillow,หมอน
+9,1,OLongvowel,window,หน้าต่าง
+8,3,Asking for month and year,What month is this month,เดือนนี้เดือนอะไร
+8,3,Asking for month and year,This month is May,เดือนนี้พฤษภาคม
+8,3,Asking for month and year,What month was the last month,เดือนก่อนคือเดือนอะไร
+8,3,Asking for month and year,The last month was April,เดือนก่อนคือเมษายน
+8,3,Asking for month and year,What month is the next month,เดือนหน้าเดือนอะไร
+8,3,Asking for month and year,The next month is June,เดือนหน้าคือเดือมิถุนายน
+8,3,Asking for month and year,What year is this,ปีนี้คือปีอะไร
+8,3,Asking for month and year,This year is 2022,ปีนี้คือปี 2022
+8,3,Asking for month and year,What year was the last year,ปีที่แล้วคือปีอะไร
+8,3,Asking for month and year,The last year was 2021,ปีที่แล้วคือปี 2021
+8,3,Asking for month and year,What year is the next year,ปีหน้าคือปีอะไร
+8,3,Asking for month and year,The next year is 2023,ปีหน้าคือปี 2023
+1,1,A-B-C,apple,แอปเปิ้ล
+1,1,A-B-C,ant,มด
+1,1,A-B-C,ankle,ข้อเท้า
+1,1,A-B-C,animals,สัตว์
+1,1,A-B-C,ambulance,รถพยาบาล
+1,1,A-B-C,ax,ขวาน
+1,1,A-B-C,bus,รถเมล์
+1,1,A-B-C,banana,กล้วย
+1,1,A-B-C,bird,นก
+1,1,A-B-C,bed,เตียง
+1,1,A-B-C,boat,เรือ
+1,1,A-B-C,butterfly,ผีเสื้อ
+1,1,A-B-C,crab,ปู
+1,1,A-B-C,cow,วัว
+1,1,A-B-C,cat,แมว
+1,1,A-B-C,candy,ลูกอม
+1,1,A-B-C,city,เมือง
+1,1,A-B-C,circle,วงกลม
+5,1,OShortvowel,og, 
+5,1,OShortvowel,dog,หมา
+5,1,OShortvowel,jog,วิ่งจ็อกกิ้ง
+5,1,OShortvowel,log,บันทึก
+5,1,OShortvowel,op, 
+5,1,OShortvowel,cop,ตํารวจ
+5,1,OShortvowel,hop,กระโดด
+5,1,OShortvowel,mop,ไม้ถูพื้น
+5,1,OShortvowel,ott, 
+5,1,OShortvowel,hot,ร้อน
+5,1,OShortvowel,not,ไม่ใช่
+5,1,OShortvowel,pot,หม้อ
+5,1,OShortvowel,ox, 
+5,1,OShortvowel,ox_pic,วัว
+5,1,OShortvowel,box,กล่อง
+5,1,OShortvowel,fox,จิ้งจอก
+9,2,vehicles,subway,รถไฟใต้ดิน
+9,2,vehicles,helicopter,เฮลิคอปเตอร์
+9,2,vehicles,van,รถตู้
+9,2,vehicles,motorcycle,มอเตอร์ไซค์
+9,2,vehicles,truck,รถบรรทุก
+9,2,vehicles,ship,เรือ
+9,2,vehicles,tricycle,สามล้อ
+9,2,vehicles,bicycle,จักรยาน
+9,2,vehicles,spaceship,ยานอวกาศ
+9,2,vehicles,bus,รถเมล์
+9,2,vehicles,plane,เครื่องบิน
+9,2,vehicles,car,รถยนต์
+9,2,vehicles,balloon,บอลลูน
+9,2,vehicles,pick-up,รถกระบะ
+9,2,vehicles,submarine,เรือดำน้ำ
+9,2,vehicles,train,รถไฟ
+9,2,vehicles,boat,เรือ
+9,2,vehicles,taxi,รถแท็กซี่
+9,2,vehicles,sky train,รถไฟฟ้า
+9,2,vehicles,shool bus,รถโรงเรียน
+9,2,vehicles,sail,เรือใบ
+2,1,P-Q-R,Pig,หมู
+2,1,P-Q-R,Penguin,เพนกวิน
+2,1,P-Q-R,Papaya,มะละกอ
+2,1,P-Q-R,Pumpkin,ฟักทอง
+2,1,P-Q-R,Pizza,พิซซ่า
+2,1,P-Q-R,Queue,เข้าคิว
+2,1,P-Q-R,Queen,ควีน
+2,1,P-Q-R,Question,คําถาม
+2,1,P-Q-R,Quarter,หนึ่งส่วนสี่
+2,1,P-Q-R,Quill,ขนนก
+2,1,P-Q-R,Rain,ฝน
+2,1,P-Q-R,Rainbow,รุ้ง
+2,1,P-Q-R,Rabbit,กระต่าย
+2,1,P-Q-R,Rubber,ยางลบ
+2,1,P-Q-R,Ruler,ไม้บรรทัด
+6,1,UShortvowel,ub, 
+6,1,UShortvowel,tub,อ่าง
+6,1,UShortvowel,rub,ถู
+6,1,UShortvowel,ugg, 
+6,1,UShortvowel,bug,ข้อผิดพลาด
+6,1,UShortvowel,hug,กอด
+6,1,UShortvowel,jug,เหยือก
+6,1,UShortvowel,um, 
+6,1,UShortvowel,bum,ก้น
+6,1,UShortvowel,gum,หมากฝรั่ง
+6,1,UShortvowel,hum,ฮัม
+6,1,UShortvowel,un, 
+6,1,UShortvowel,gun,ปืน
+6,1,UShortvowel,run,วิ่ง
+6,1,UShortvowel,sun,ดวงอาทิตย์
+6,1,UShortvowel,up,
+6,1,UShortvowel,up2,ขึ้น
+6,1,UShortvowel,cup,ถ้วย
+6,1,UShortvowel,pup,ลูกสุนัข
+6,1,UShortvowel,aut, 
+6,1,UShortvowel,cut,ตัด
+6,1,UShortvowel,hut,ฮัท
+6,1,UShortvowel,nut,ถั่ว
+0,0,a,a notebook,สมุดบันทึก 1 เล่ม
+0,0,a,a pumpkin,ฟักทอง 1 ผล
+0,0,a,a lemon,มะนาว 1 ผล
+0,0,a,a bird,นก 1 ตัว
+0,0,a,a bat,ค้างคาว 1 ตัว
+0,0,a,a teacher,ครู 1 คน
+0,0,a,a policeman,ตํารวจ 1 นาย
+0,0,a,a pan,กระทะ 1 อัน
+0,0,a,a pencil,ดินสอ 1 แท่ง
+4,1,AShortvowel,ad,โฆษณา
+4,1,AShortvowel,bad,แย่
+4,1,AShortvowel,dad,พ่อ
+4,1,AShortvowel,sad,เศร้า
+4,1,AShortvowel,ag, 
+4,1,AShortvowel,bag,ถุง
+4,1,AShortvowel,rag,เศษผ้า
+4,1,AShortvowel,tag,ป้ายกํากับ
+4,1,AShortvowel,am, 
+4,1,AShortvowel,ham,แฮม
+4,1,AShortvowel,jam,แยม
+4,1,AShortvowel,ram,แรม
+4,1,AShortvowel,an,
+4,1,AShortvowel,man,ผู้ชาย
+4,1,AShortvowel,pan,กระทะ
+4,1,AShortvowel,van,รถตู้
+4,1,AShortvowel,app,
+4,1,AShortvowel,cap,ฝา
+4,1,AShortvowel,map,แผนที่
+4,1,AShortvowel,tap,แตะ
+4,1,AShortvowel,at, 
+4,1,AShortvowel,bat,ค้างคาว
+4,1,AShortvowel,cat,แมว
+4,1,AShortvowel,hat,หมวก
+3,0,days,Sunday,วันอาทิตย์
+3,0,days,Monday,วันจันทร์
+3,0,days,Tuesday,วันอังคาร
+3,0,days,Wednesday,วันพุธ
+3,0,days,Thursday,วันพฤหัสบดี
+3,0,days,Friday,วันศุกร์
+3,0,days,Saturday,วันเสาร์
+11,3,Likes and dislikes,What animal do you like,คุณชอบสัตว์อะไร
+11,3,Likes and dislikes,I like dogs,ฉันชอบหมา
+11,3,Likes and dislikes,What sport do you like,คุณชอบกีฬาอะไร
+11,3,Likes and dislikes,I like tennis,ฉันชอบเทนนิส
+11,3,Likes and dislikes,What kind of music do you like,คุณชอบเพลงแนวไหน
+11,3,Likes and dislikes,I like pop music,ฉันชอบเพลงป๊อป
+11,3,Likes and dislikes,Who is your favorite actor,ใครคือนักแสดงคนโปรดของคุณ
+11,3,Likes and dislikes,James is my favorite actor,เจมส์เป็นนักแสดงคนโปรดของฉัน
+11,3,Likes and dislikes,Who is your favorite singer,ใครคือนักร้องคนโปรดของคุณ
+11,3,Likes and dislikes,Lisa is my favorite singer,ลิซ่าเป็นนักร้องคนโปรดของฉัน
+11,3,Likes and dislikes,Do you like cats,คุณชอบแมวไหม
+11,3,Likes and dislikes,Yes I like cats,ค่ะ ฉันชอบแมว
+11,3,Likes and dislikes,Do you like listening to music,คุณชอบฟังเพลงไหม
+11,3,Likes and dislikes,Yes I like listening to music,ใช่ ฉันชอบฟังเพลง
+11,3,Likes and dislikes,Do you like swimming,คุณชอบว่ายน้ําไหม
+11,3,Likes and dislikes,Yes I like swimming,ใช่ ฉันชอบว่ายน้ำ
+11,3,Likes and dislikes,Do you like cooking,คุณชอบทําอาหารไหม
+11,3,Likes and dislikes,Yes I like cooking,ใช่ ฉันชอบทําอาหาร
+10,2,food,fried egg,ไข่เจียว
+10,2,food,pizza,พิซซ่า
+10,2,food,hamburger,แฮมเบอร์เกอร์
+10,2,food,hot dog,ฮ็อทดอก
+10,2,food,tempura,เทมปุระ
+10,2,food,macaroni,มักกะโรนี
+10,2,food,fried rice,ข้าวผัด
+10,2,food,noodle,ก๋วยเตี๋ยว
+10,2,food,spaghetti,สปาเก็ตตี้
+10,2,food,sushi,ซูชิ
+10,2,food,steamed stuffed bun,ซาลาเปา
+14,3,Compliment,Good job,ทําได้ดีมาก
+14,3,Compliment,Fantastic,ยอดเยี่ยม
+14,3,Compliment,That's great,เยี่ยมไปเลย
+14,3,Compliment,Excellent,ยอดเยี่ยม
+14,3,Compliment,Perfect,ยอดเยี่ยม
+14,3,Compliment,Nice work,ทําได้ดีมาก
+14,3,Compliment,Well done,ทําได้ดีมาก
+14,3,Compliment,You look very good in that shirt,คุณดูดีในเสื้อตัวนั้นนะ
+14,3,Compliment,You look good,คุณดูดีนะ
+14,3,Compliment,You look great,คุณดูดีนะ
+14,3,Compliment,You look very handsome,คุณดูดีมากเลย
+14,3,Compliment,You look so cute,คุณดูน่ารักมาก
+14,3,Compliment,Thank you,ขอบคุณ
+14,3,Compliment,Thanks a lot,ขอบคุณมากครับ
+14,3,Compliment,Thank for your compliment,ขอบคุณสําหรับคําชม
+14,3,Compliment,I'm glad you like it,ฉันดีใจที่คุณชอบมัน
+3,2,days,Sunday,วันอาทิตย์
+3,2,days,Monday,วันจันทร์
+3,2,days,Tuesday,วันอังคาร
+3,2,days,Wednesday,วันพุธ
+3,2,days,Thursday,วันพฤหัสบดี
+3,2,days,Friday,วันศุกร์
+3,2,days,Saturday,วันเสาร์
+0,0,singular,a notebook,สมุดบันทึก 1 เล่ม
+0,0,singular,a pumpkin,ฟักทอง 1 ผล
+0,0,singular,a lemon,มะนาว 1 ผล
+0,0,singular,an apple,แอปเปิ้ล 1 ผล
+0,0,singular,an owl,นกฮูก 1 ตัว
+0,0,singular,an artist,ศิลปิน 1 คน
+1,2,animals,dog,หมา
+1,2,animals,cat,แมว
+1,2,animals,chicken,ไก่
+1,2,animals,duck,เป็ด
+1,2,animals,bird,นก
+1,2,animals,pig,หมู
+1,2,animals,rabbit,กระต่าย
+1,2,animals,mouse,หนู
+1,2,animals,cow,วัว
+1,2,animals,buffalo,ควาย
+1,2,animals,horse,ม้า
+1,2,animals,sheep,แกะ
+1,2,animals,goat,แพะ
+1,2,animals,elephant,ช้าง
+1,2,animals,fish,ปลา
+1,2,animals,crab,ปู
+1,2,animals,shrimp,กุ้ง
+1,2,animals,starfish,ปลาดาว
+1,2,animals,goldfish,ปลาทอง
+1,2,animals,butterfly,ผีเสื้อ
+1,2,animals,dragonfly,แมลงปอ
+1,2,animals,bee,ผึ้ง
+1,2,animals,bat,ค้างคาว
+1,2,animals,parrot,นกแก้ว
+1,2,animals,peacock,นกยูง
+1,2,animals,shellfish,หอย
+1,2,animals,eagle,นกอินทรี
+1,2,animals,owl,นกฮูก
+1,2,animals,vulture,อีแร้ง
+1,2,animals,ostrich,นกกระจอกเทศ
+1,2,animals,turkey,ไก่งวง
+0,3,leave talking,Goodbye,กล่าวลา
+0,3,leave talking,Bye,กล่าวลากับเพื่อน คนสนิท
+0,3,leave talking,Good night,กล่าวลาก่อนเข้านอน
+0,3,leave talking,Have a nice day,ขอให้มีวันที่ดี
+0,3,leave talking,See you again tomorrow,เจอกันพรุ่งนี้
+0,3,leave talking,Good luck, โชคดี
+0,3,leave talking,See you again,แล้วเจอกันใหม่
+0,3,leave talking,See you later,แล้วเจอกันใหม่
+0,3,leave talking,Have a nice weekend, ขอให้มีช่วงสุดสัปดาห์ที่ดี
+5,3,family,How many people are there in your family,ครอบครัวคุณมีกี่คน
+5,3,family,There are 4 people in my family,ครอบครัวฉันมี 4 คน
+5,3,family,How many brothers and sisters do you have,คุณมีพี่น้องกี่คน?
+5,3,family,I have 2 brothers and 1 sister,ฉันมีพี่ชาย 2 คนและน้องสาว 1 คน
+5,3,family,What does your father do,พ่อของคุณทําอาชีพอะไร?
+5,3,family,My father is a doctor,พ่อฉันเป็นหมอ
+5,3,family,What does your mother do,แม่ของคุณทําอาชีพอะไร?
+5,3,family,My mother is a nurse,แม่ฉันเป็นพยาบาล
+5,3,family,What do you want to be when you grow up,คุณอยากเป็นอะไรเมื่อโตขึ้น
+5,3,family,I want to be a dentist,ฉันอยากเป็นหมอฟัน
+5,3,family,Where do you live,คุณอาศัยอยู่ที่ไหน?
+5,3,family,I live in Bangkok,ฉันอาศัยอยู่ในกรุงเทพมหานคร
+2,2,fruits,apple,แอปเปิ้ล
+2,2,fruits,orange,ส้ม
+2,2,fruits,mango,มะม่วง
+2,2,fruits,coco,มะพร้าว
+2,2,fruits,strawberry,สตรอเบอร์รี่
+2,2,fruits,banana,กล้วย
+2,2,fruits,grape,องุ่น
+2,2,fruits,tamarind,มะขาม
+2,2,fruits,lemon,มะนาว
+2,2,fruits,pomelo,ส้มโอ
+2,2,fruits,papaya,มะละกอ
+2,2,fruits,cherry,เชอร์รี่
+2,2,fruits,durian,ทุเรียน
+2,2,fruits,longan,ลําไย
+2,2,fruits,mangosteen,มังคุด
+2,2,fruits,pineapple,สัปปะรด
+2,2,fruits,rose apple,ชมพู่
+2,2,fruits,avocado,อะโวคาโด
+2,2,fruits,carrot,แครอท
+2,2,fruits,tomato, มะเขือเทศ
+2,2,fruits,pumpkin,ฟักทอง
+2,2,fruits,mushroom,เห็ด
+2,2,fruits,cucumber,แตงกวา
+2,2,fruits,garlic,กระเทียม
+2,2,fruits,chili,พริก
+2,2,fruits,corn,ข้าวโพด
+2,2,fruits,cabbage,กะหล่ําปลี
+2,2,fruits,ginger,ขิง
+2,2,fruits,broccoli,บรอคโคลี
+3,1,S-T-U,Snake,งู
+3,1,S-T-U,Seven,เจ็ด
+3,1,S-T-U,Soap,สบู่
+3,1,S-T-U,Star,ดาว
+3,1,S-T-U,Singer,นักร้อง
+3,1,S-T-U,Socks,ถุงเท้า
+3,1,S-T-U,Tiger,เสือ
+3,1,S-T-U,Taxi,แท็กซี่
+3,1,S-T-U,Tomato,มะเขือเทศ
+3,1,S-T-U,Teacher,อาจารย์ครับ
+3,1,S-T-U,Train,รถไฟ
+3,1,S-T-U,Three,สาม
+3,1,S-T-U,Umbrella,ร่ม
+3,1,S-T-U,Uncle,ลุง
+3,1,S-T-U,Up,ขึ้น
+3,1,S-T-U,University,มหาวิทยาลัย
+2,1,M-N-O,mango,มะม่วง
+2,1,M-N-O,mouse,หนู
+2,1,M-N-O,moon,ดวงจันทร์
+2,1,M-N-O,mother,แม่
+2,1,M-N-O,mushroom,เห็ด
+2,1,M-N-O,milk,นม
+2,1,M-N-O,Notebook,สมุดบันทึก
+2,1,M-N-O,Neck,คอ
+2,1,M-N-O,Nine,เก้า
+2,1,M-N-O,Noodles,บะหมี่
+2,1,M-N-O,Night,กลางคืน
+2,1,M-N-O,Ostrich,นกกระจอกเทศ
+2,1,M-N-O,Owl,นกฮูก
+2,1,M-N-O,Olive,มะกอก
+2,1,M-N-O,Octopus,ปลาหมึกยักษ์
+2,1,M-N-O,Oval,วงรี
+14,2,emotion and feeling,like,ชอบ
+14,2,emotion and feeling,dislike,ไม่ชอบ
+14,2,emotion and feeling,hate,เกลียด
+14,2,emotion and feeling,love,รัก
+14,2,emotion and feeling,smile,ยิ้ม
+14,2,emotion and feeling,laugh,หัวเราะ
+14,2,emotion and feeling,cry,ร้องไห้
+0,3,greeting,hello,กล่าวทักทายเพื่อน/คนที่คุ้นเคย
+0,3,greeting,hi,กล่าวทักทายเพื่อน/คนที่คุ้นเคย
+0,3,greeting,good morning,กล่าวทักทายในตอนเช้า
+0,3,greeting,good afternoon,กล่าวทักทายในตอนบ่าย
+0,3,greeting,good evening,กล่าวทักทายในตอนเย็น
+8,2,activity,read,อ่าน
+8,2,activity,write,เขียน
+8,2,activity,speak,พูด
+8,2,activity,listen,ฟังสิ
+8,2,activity,study,เรียน
+8,2,activity,eat,กิน
+8,2,activity,sleep,นอน
+8,2,activity,wake up,ตื่น
+8,2,activity,play,เล่น
+8,2,activity,sing,ร้องเพลง
+8,2,activity,paint,ระบายสี
+8,2,activity,swim,ว่ายน้ํา
+8,2,activity,cook,ทำอาหาร
+8,2,activity,wash,ล้าง
+8,2,activity,clean,ทำความสะอาด
+1,3,How are you,How are you, คุณสบายดีไหม
+1,3,How are you,How are you doing,คุณสบายดีไหม
+1,3,How are you,How are things with you,คุณเป็นอย่างไรบ้าง
+1,3,How are you,How have you been,คุณเป็นอย่างไรบ้าง
+1,3,How are you,I'm fine,ฉันสบายดี
+1,3,How are you,I'm good,ฉันสบายดี
+1,3,How are you,I'm great,ฉันสบายดี
+1,3,How are you,I'm very well,ฉันสบายดีมาก
+1,3,How are you,I'm O.K.,ฉันสบายดี
+1,3,How are you,Not bad,ไม่เลว
+0,0,adjectif,big,ใหญ่
+0,0,adjectif,small,เล็ก
+0,0,adjectif,huge,ใหญ่มาก
+0,0,adjectif,tiny,เล็ก
+0,0,adjectif,thick,หนา
+0,0,adjectif,thin2,บาง
+0,0,adjectif,heavy,หนัก
+0,0,adjectif,light,เบา
+0,0,adjectif,cheap,ราคาถูก
+0,0,adjectif,expensive,ราคาแพง
+0,0,adjectif,few,น้อย
+0,0,adjectif,many,มาก
+0,0,adjectif,full,เต็ม
+0,0,adjectif,empty,ว่าง
+0,0,adjectif,tall,สูง
+0,0,adjectif,short,เตี้ย
+0,0,adjectif,fat,อ้วน
+0,0,adjectif,thin,ผอม
+0,0,adjectif,young,หนุ่มสาว
+0,0,adjectif,old,แก่ชรา
+0,0,adjectif,good,ดี
+0,0,adjectif,bad,แย่/เลว
+0,0,adjectif,clean,สะอาด
+0,0,adjectif,dirty,สกปรก
+0,0,adjectif,happy,มีความสุข
+0,0,adjectif,sad,เศร้า
+0,0,adjectif,angry,โกรธ
+0,0,adjectif,calm,สงบ
+0,0,adjectif,excited,ตื่นเต้น
+0,0,adjectif,bored,เบื่อ
+0,0,adjectif,hungry,หิว
+0,0,adjectif,full2,อิ่ม
+0,0,adjectif,quiet,เงียบ
+0,0,adjectif,loud,ดัง
+0,0,adjectif,healthy,สุขภาพดี
+0,0,adjectif,sick,ป่วย
+0,0,adjectif,poor,จน
+0,0,adjectif,rich,รวย
+0,0,adjectif,wet,เปียก
+0,0,adjectif,dry,แห้ง
+0,0,adjectif,hot,ร้อน
+0,0,adjectif,cold,เย็น
+4,3,personal information,How much do you weigh,คุณหนักเท่าไหร่
+4,3,personal information,I weigh 25 kilograms,ฉันหนัก 25 กิโลกรัม
+4,3,personal information,How old are you,คุณอายุเท่าไหร่
+4,3,personal information,I'm 10 years old,ฉันอายุ 10 ขวบ
+4,3,personal information,How tall are you,คุณสูงเท่าไหร่
+4,3,personal information,I'm 130 centimeters tall,ฉันสูง 130 เซนติเมตร
+4,3,personal information,When were you born,คุณเกิดเมื่อไหร่
+4,3,personal information,I was born on February 14 2013,ฉันเกิดวันที่ 14 กุมภาพันธ์ 2013
+4,3,personal information,I'm a student,ฉันเป็นนักเรียน
+4,3,personal information,I'm from Thailand,ฉันมาจากประเทศไทย
+4,3,personal information,I'm from England,ฉันมาจากประเทศอังกฤษ
+4,3,personal information,I'm from China,ฉันมาจากประเทศจีน
+1,1,D-E-F,dog,หมา
+1,1,D-E-F,duck,เป็ด
+1,1,D-E-F,donkey,ลา
+1,1,D-E-F,doctor,หมอ
+1,1,D-E-F,desk,โต๊ะเขียนหนังสือ
+1,1,D-E-F,dish,จาน
+1,1,D-E-F,elephant,ช้าง
+1,1,D-E-F,egg,ไข่
+1,1,D-E-F,elbow,ข้อศอก
+1,1,D-E-F,exercise,ออกกําลังกาย
+1,1,D-E-F,eggplant,มะเขือยาว
+1,1,D-E-F,envelope,ซองจดหมาย
+1,1,D-E-F,fish,ปลา
+1,1,D-E-F,flower,ดอกไม้
+1,1,D-E-F,farmer,เกษตรกร
+1,1,D-E-F,football,ฟุตบอล
+1,1,D-E-F,fork,ส้อม
+1,1,D-E-F,five,ห้า
+8,1,ELongvowel,bee,ผึ้ง
+8,1,ELongvowel,feet,เท้า
+8,1,ELongvowel,jeep,จี๊ป
+8,1,ELongvowel,sea,ทะเล
+8,1,ELongvowel,eat,กินสิ
+8,1,ELongvowel,meat,เนื้อ
+8,1,ELongvowel,candy,ลูกอม
+8,1,ELongvowel,honey,น้ําผึ้ง
+8,1,ELongvowel,key,กุญแจ
+8,1,ELongvowel,monkey,ลิง
+8,1,ELongvowel,bunny,กระต่าย
+8,1,ELongvowel,happy,มีความสุข
+3,2,months,January,มกราคม
+3,2,months,February,กุมภาพันธ์
+3,2,months,March,มีนาคม
+3,2,months,April,เมษายน
+3,2,months,May,พฤษภาคม
+3,2,months,June,มิถุนายน
+3,2,months,July,กรกฏาคม
+3,2,months,August,สิงหาคม
+3,2,months,September,กันยายน
+3,2,months,October,ตุลาคม
+3,2,months,November,พฤศจิกายน
+3,2,months,December,ธันวาคม
+5,2,body parts,head,หัว
+5,2,body parts,hair,ผม
+5,2,body parts,face,หน้า
+5,2,body parts,eye,ตา
+5,2,body parts,nose,จมูก
+5,2,body parts,mouth,ปาก
+5,2,body parts,ear,หู
+5,2,body parts,neck,คอ
+5,2,body parts,shoulder,ไหล่
+5,2,body parts,chest,หน้าอก
+5,2,body parts,arm,แขน
+5,2,body parts,hand,มือ
+5,2,body parts,stomach,ท้อง
+5,2,body parts,leg,ขา
+5,2,body parts,foot,เท้า
+8,3,Asking for days,What is the date today,วันนี้เป็นวันที่เท่าไหร่
+8,3,Asking for days,Today is the 14 of July,วันนี้เป็นวันที่ 14 กรกฎาคม
+8,3,Asking for days,What day is today,วันนี้เป็นวันอะไร
+8,3,Asking for days,Today is Monday,วันนี้เป็นวันจันทร์
+8,3,Asking for days,What day is tomorrow,พรุ่งนี้เป็นวันอะไร
+8,3,Asking for days,Tomorrow is Tuesday,พรุ่งนี้วันอังคาร
+8,3,Asking for days,What day was yesterday,เมื่อวานนี้เป็นวันอะไร
+8,3,Asking for days,Yesterday was Sunday,เมื่อวานเป็นวันอาทิตย์
+8,3,Asking for days,When is your Birthday,วันเกิดของคุณคือวันที่เท่าไหร่
+8,3,Asking for days,My birthday is on February,14 2013
+8,3,Asking for days,What day is Christmas,วันคริสมาสคือวันอะไร
+8,3,Asking for days,It is the 25 of December,วันที่ 25 ธันวาคม
+11,3,Encouragement,Everything will be O.K.,ทุกอย่างโอเคค่ะ
+11,3,Encouragement,Don't worry,อย่าห่วงไปเลย
+11,3,Encouragement,I'll be there for you,ฉันจะอยู่ที่นั่นเพื่อคุณ
+11,3,Encouragement,Calm down.,ใจเย็นก่อน
+10,3,Requesting,Can you give me that pencil,ช่วยส่งดินสอให้ได้ไหม
+10,3,Requesting,May I borrow your ruler,ฉันขอยืมไม้บรรทัดคุณได้ไหม
+10,3,Requesting,Would you please help me carry this book,กรุณาช่วยถือหนังสือเล่มนี้ให้หน่อยได้ไหม
+10,3,Requesting,Can you help me,คุณพอจะช่วยอะไรฉันได้ไหม
+10,3,Requesting,Would you mind opening the window for me,please
+10,3,Requesting,No problem,ไม่มีปัญหา
+10,3,Requesting,Of course,แน่นอน
+10,3,Requesting,Certainly,แน่นอน
+10,3,Requesting,All right,ได้เลย
+10,3,Requesting,I'm really sorry,ฉันขอโทษจริงๆ
+10,3,Requesting,I'm sorry I'm afraid I can't,ฉันขอโทษ ฉันเกรงว่าฉันทําไม่ได้
+10,3,Requesting,I'm afraid not,ฉันเกรงว่าจะไม่ได้
+0,3,asking about personal information,My name is Jim,ผมชื่อจิม
+0,3,asking about personal information,I am bob,ผมชื่อบ๊อบ
+0,3,asking about personal information,Hello my name is kate,สวัสดีค่ะ ฉันชื่อเคทค่ะ
+0,3,asking about personal information,i am 10 years old,ฉันอายุ 10 ปี
+0,3,asking about personal information,Hello my name is alize i am 5 years old,สวัสดีค่ะ ฉันชื่อ อลิซ อายุ 5 ปี
+7,1,ALongvowel,day,วัน
+7,1,ALongvowel,play,เล่น
+7,1,ALongvowel,say,พูดว่า
+7,1,ALongvowel,pace,อัตราเร็ว
+7,1,ALongvowel,race,การแข่งขัน
+7,1,ALongvowel,face,หน้า
+7,1,ALongvowel,cake,เค้ก
+7,1,ALongvowel,lake,ทะเลสาบ
+7,1,ALongvowel,snake,งู
+7,1,ALongvowel,game,เกม
+7,1,ALongvowel,name,ชื่อ
+7,1,ALongvowel,same,เหมือนกัน
+7,1,ALongvowel,date,วันที่
+7,1,ALongvowel,gate,ประตู
+7,1,ALongvowel,skate,สเก็ต
+7,1,ALongvowel,cave,ถ้ํา
+7,1,ALongvowel,pave,ปู
+7,1,ALongvowel,wave,คลื่น
+7,1,ALongvowel,nail,ตะปู
+7,1,ALongvowel,rain,ฝน
+7,1,ALongvowel,wait,รอสักครู่
+0,0,singularplural,a bird,นก 1 ตัว
+0,0,singularplural,3 birds,นกหลายตัว
+0,0,singularplural,a pencil,ดินสอ 1 แท่ง
+0,0,singularplural,5 pencils,ดินสอหลายแท่ง
+0,0,singularplural,an apple,แอปเปิ้ล 1 ผล
+0,0,singularplural,2 apples,แอปเปิ้ลหลายผล
+0,0,singularplural,an orange,ส้ม 1 ผล
+0,0,singularplural,3 oranges,ส้มหลายผล
+0,0,singularplural,a bus,รถบัส 1 คัน
+0,0,singularplural,2 buses,รถบัสหลายคัน
+0,0,singularplural,a dress,ชุดกระโปรง 1 ตัว
+0,0,singularplural,2 dresses,ชุดกระโปรงหลายตัว
+0,0,singularplural,a dish,จาน 1 อัน
+0,0,singularplural,4 dishes,จานหลายอัน
+0,0,singularplural,a toothbrush,แปรงสีฟัน 1 อัน
+0,0,singularplural,3 toothbrushes,แปรงสีฟันหลายอัน
+0,0,singularplural,an ostrich,นกกระจอกเทศ 1 ตัว
+0,0,singularplural,3 ostriches,นกกระจอกเทศหลายตัว
+0,0,singularplural,a policeman,ตํารวจ 1 นาย
+0,0,singularplural,2 policemen,ตํารวจหลายนาย
+0,0,singularplural,a fish,ปลา 1 ตัว
+0,0,singularplural,4 fish,ปลาหลายตัว
+0,0,singularplural,a sheep,แกะ 1 ตัว
+0,0,singularplural,3 sheep,แกะหลายตัว
+0,2,colors,white,สีขาว
+0,2,colors,black,สีดํา
+0,2,colors,blue,สีน้ําเงิน
+0,2,colors,green,สีเขียว
+0,2,colors,pink,สีชมพู
+0,2,colors,red,สีแดง
+0,2,colors,orange,สีส้ม
+0,2,colors,brown,สีน้ําตาล
+0,2,colors,yellow,สีเหลือง
+0,2,colors,purple,สีม่วง
+14,2,hobbies,seeing a movie,ดูหนัง
+14,2,hobbies,reading,อ่านหนังสือ
+14,2,hobbies,gardening,ทําสวน
+14,2,hobbies,surfing the internet,ท่องอินเทอร์เน็ต
+14,2,hobbies,listening to music,ฟังเพลง
+14,2,hobbies,drawing,วาดภาพ
+14,2,hobbies,cooking,ทําอาหาร
+14,2,hobbies,playing sports,เล่นกีฬา
+14,2,hobbies,watching tv,ดูทีวี
+14,2,hobbies,knitting,ถักไหมพรม
+14,2,hobbies,singing,ร้องเพลง
+14,2,hobbies,taking photos,ถ่ายภาพ
+14,2,hobbies,painting,วาดภาพ
+14,2,hobbies,playing with pet,เล่นกับสัตว์เลี้ยง

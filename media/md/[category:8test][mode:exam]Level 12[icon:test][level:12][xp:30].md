@@ -1,55 +1,55 @@
 ## Exercise Level 12
 
- เลือกคำศัพท์ที่ตรงกับ  **Knitting**
- - (x) ถักไหมพรม
- - ( ) ทําอาหาร
- - ( ) เล่นกีฬา
+ เลือกคำศัพท์ที่ตรงกับ : **Pillow**
+ - ( ) ก๊อกน้ํา
+ - (x) หมอน
+ - ( ) แชมพู
 
- เลือกคำศัพท์ที่ตรงกับ  **Surfing the internet**
- - ( ) ถ่ายภาพ
- - (x) ท่องอินเทอร์เน็ต
- - ( ) วาดภาพ
+ เลือกคำศัพท์ที่ตรงกับ : **Toilet paper**
+ - (x) กระดาษชําระ
+ - ( ) ตู้เสื้อผ้า
+ - ( ) ห้องน้ํา
 
- เลือกคำศัพท์ที่ตรงกับ  **Painting**
- - ( ) ดูหนัง
- - ( ) ถ่ายภาพ
- - (x) วาดภาพ
+ เลือกคำศัพท์ที่ตรงกับ : **Soap**
+ - ( ) ตู้เสื้อผ้า
+ - ( ) ผ้าห่ม
+ - (x) สบู่
 
- เลือกคำศัพท์ที่ตรงกับ  **ทําสวน**
- - (x) Gardening
- - ( ) Playing with pet
- - ( ) Watching tv
+ เลือกคำศัพท์ที่ตรงกับ : **หมอน**
+ - ( ) Alarm clock
+ - ( ) Basin
+ - (x) Pillow
 
- เลือกคำศัพท์ที่ตรงกับ  **ร้องเพลง**
- - ( ) Listening to music
- - (x) Singing
- - ( ) Taking photos
+ เลือกคำศัพท์ที่ตรงกับ : **ก๊อกน้ํา**
+ - ( ) Bed
+ - (x) Faucet
+ - ( ) Soap
 
- เลือกคำศัพท์ที่ตรงกับ  **ทําอาหาร**
- - (x) Cooking
- - ( ) Surfing the internet
- - ( ) Taking photos
+ เลือกคำศัพท์ที่ตรงกับ : **อ่างน้ํา**
+ - (x) Basin
+ - ( ) Shampoo
+ - ( ) Towel
 
-เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/gardening.mp3) 
- - ( ) Cooking
- - (x) Gardening
- - ( ) Knitting
-
-
-เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/taking&#x20;photos.mp3) 
- - ( ) Playing with pet
- - ( ) Surfing the internet
- - (x) Taking photos
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/blanket.mp3) 
+ - ( ) Alarm clock
+ - (x) Blanket
+ - ( ) Shower
 
 
-เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/surfing&#x20;the&#x20;internet.mp3) 
- - ( ) Playing sports
- - ( ) Singing
- - (x) Surfing the internet
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/soap.mp3) 
+ - ( ) Dressing table
+ - (x) Soap
+ - ( ) Toothpaste
 
 
-เลือกคำศัพท์ตรงกับเสียง  ![](/media/audio/listening&#x20;to&#x20;music.mp3) 
- - (x) Listening to music
- - ( ) Singing
- - ( ) Watching tv
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/toilet&#x20;paper.mp3) 
+ - ( ) Shower
+ - (x) Toilet paper
+ - ( ) Towel
+
+
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/toothpaste.mp3) 
+ - ( ) Alarm clock
+ - (x) Toothpaste
+ - ( ) Wardrobe
 

@@ -14,34 +14,34 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
- เลือกคำศัพท์ที่ตรงกับ **Jelly**
+ เลือกคำศัพท์ที่ตรงกับ **Pudding**
  - ( ) ช็อกโกแลตบาร์
+ - (x) พุดดิ้ง
  - ( ) เค้ก
- - (x) เยลลี่
 
  เลือกคำศัพท์ที่ตรงกับ **Fruit salad**
  - (x) สลัดผลไม้
- - ( ) โดนัท
- - ( ) ไอศครีม
+ - ( ) เค้ก
+ - ( ) เยลลี่
+
+ เลือกคำศัพท์ที่ตรงกับ **คุกกี้**
+ - (x) Cookie
+ - ( ) Ice cream
+ - ( ) Pie
 
  เลือกคำศัพท์ที่ตรงกับ **เยลลี่**
- - ( ) Donut
- - (x) Jelly
- - ( ) Pudding
-
- เลือกคำศัพท์ที่ตรงกับ **พุดดิ้ง**
- - ( ) Donut
  - ( ) Fruit salad
+ - ( ) Ice cream
+ - (x) Jelly
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/donut.mp3) 
+ - ( ) Cake
+ - (x) Donut
+ - ( ) Jelly
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pudding.mp3) 
+ - ( ) Chocolate bar
+ - ( ) Pie
  - (x) Pudding
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/pie.mp3) 
- - ( ) Jelly
- - (x) Pie
- - ( ) Pudding
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/chocolate&#x20;bar.mp3) 
- - (x) Chocolate bar
- - ( ) Donut
- - ( ) Jelly
 

@@ -22,7 +22,7 @@ for filename in os.listdir("csv/_togenerate/audio"):
     with open(os.path.join("csv/_togenerate/audio", filename), 'r') as f: 
         csvreader = csv.reader(f)
         for row in csvreader:
-            newfile.write(level + ";" + category + ";" + title+";" + row[0]+";"+row[1]+"\n")
+            newfile.write(level + "," + category + "," + title+"," + row[0]+","+row[1]+"\n")
     f.close()      
    
 newfile.close()
