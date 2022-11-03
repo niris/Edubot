@@ -14,32 +14,20 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;great.mp3) 
- - ( ) I'm okay
- - (x) I'm great
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;are&#x20;you.mp3) 
+ - (x) How are you
+ - ( ) How have you been
+ - ( ) I'm good
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;have&#x20;you&#x20;been.mp3) 
+ - ( ) How are you doing
+ - (x) How have you been
  - ( ) I'm very well
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Not&#x20;bad.mp3) 
- - ( ) I'm okay
- - ( ) I'm good
- - (x) Not bad
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;good.mp3) 
- - ( ) How are you
- - ( ) I'm fine
- - (x) I'm good
-
-ออกเสียงคำว่า **How are you** :
-
-🎙️ how are you
-
-ออกเสียงคำว่า **I'm okay** :
-
-🎙️ i'm okay
-
-ออกเสียงคำว่า **I'm very well** :
-
-🎙️ i'm very well
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;are&#x20;you&#x20;doing.mp3) 
+ - (x) How are you doing
+ - ( ) I'm o.k.
+ - ( ) I'm very well
 

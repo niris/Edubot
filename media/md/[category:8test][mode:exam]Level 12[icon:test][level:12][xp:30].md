@@ -1,55 +1,55 @@
 ## Exercise Level 12
 
- เลือกคำศัพท์ที่ตรงกับ : **Pillow**
- - ( ) ก๊อกน้ํา
- - (x) หมอน
- - ( ) แชมพู
+ เลือกคำศัพท์ที่ตรงกับ : **Towel**
+ - ( ) ผ้าห่ม
+ - (x) ผ้าเช็ดตัว
+ - ( ) สบู่
 
- เลือกคำศัพท์ที่ตรงกับ : **Toilet paper**
- - (x) กระดาษชําระ
+ เลือกคำศัพท์ที่ตรงกับ : **Blanket**
  - ( ) ตู้เสื้อผ้า
- - ( ) ห้องน้ํา
+ - (x) ผ้าห่ม
+ - ( ) อ่างน้ํา
 
  เลือกคำศัพท์ที่ตรงกับ : **Soap**
- - ( ) ตู้เสื้อผ้า
- - ( ) ผ้าห่ม
+ - ( ) ก๊อกน้ํา
+ - ( ) ครีมนวดผม
  - (x) สบู่
 
- เลือกคำศัพท์ที่ตรงกับ : **หมอน**
- - ( ) Alarm clock
- - ( ) Basin
- - (x) Pillow
-
- เลือกคำศัพท์ที่ตรงกับ : **ก๊อกน้ํา**
- - ( ) Bed
- - (x) Faucet
- - ( ) Soap
-
- เลือกคำศัพท์ที่ตรงกับ : **อ่างน้ํา**
- - (x) Basin
+ เลือกคำศัพท์ที่ตรงกับ : **ยาสีฟัน**
  - ( ) Shampoo
- - ( ) Towel
-
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/blanket.mp3) 
- - ( ) Alarm clock
- - (x) Blanket
  - ( ) Shower
+ - (x) Toothpaste
 
-
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/soap.mp3) 
+ เลือกคำศัพท์ที่ตรงกับ : **หมอนข้าง**
+ - (x) Bolster
  - ( ) Dressing table
- - (x) Soap
- - ( ) Toothpaste
+ - ( ) Toilet
 
+ เลือกคำศัพท์ที่ตรงกับ : **แชมพู**
+ - ( ) Basin
+ - ( ) Pillow
+ - (x) Shampoo
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/toilet&#x20;paper.mp3) 
+ - ( ) Faucet
  - ( ) Shower
  - (x) Toilet paper
- - ( ) Towel
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/toothpaste.mp3) 
- - ( ) Alarm clock
- - (x) Toothpaste
- - ( ) Wardrobe
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/shampoo.mp3) 
+ - ( ) Bed
+ - ( ) Bolster
+ - (x) Shampoo
+
+
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/toilet.mp3) 
+ - ( ) Lamp
+ - ( ) Soap
+ - (x) Toilet
+
+
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/towel.mp3) 
+ - ( ) Bed
+ - ( ) Lamp
+ - (x) Towel
 

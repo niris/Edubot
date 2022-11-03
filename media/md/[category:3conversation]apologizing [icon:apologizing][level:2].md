@@ -14,16 +14,10 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Pardon.mp3) 
- - ( ) Don't mention it
- - ( ) I'm sorry i'm late
- - (x) Pardon
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/That's&#x20;all&#x20;right.mp3) 
- - ( ) Don't worry
- - ( ) Excuse me please
- - (x) That's all right
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Forgive&#x20;me.mp3) 
+ - (x) Forgive me
+ - ( ) I apologize to you
+ - ( ) Pardon
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;sorry&#x20;I'm&#x20;late.mp3) 
@@ -31,15 +25,15 @@
  - ( ) Excuse me please
  - (x) I'm sorry i'm late
 
-ออกเสียงคำว่า **I'm sorry** :
 
-🎙️ i'm sorry
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/No&#x20;problem.mp3) 
+ - ( ) Don't mention it
+ - ( ) Don't worry
+ - (x) No problem
 
-ออกเสียงคำว่า **Excuse me for interrupting** :
 
-🎙️ excuse me for interrupting
-
-ออกเสียงคำว่า **I'm sorry i'm late** :
-
-🎙️ i'm sorry i'm late
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;apologize&#x20;to&#x20;you.mp3) 
+ - ( ) Excuse me for interrupting
+ - (x) I apologize to you
+ - ( ) I beg your pardon
 

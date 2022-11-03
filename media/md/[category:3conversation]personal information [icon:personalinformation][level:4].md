@@ -14,32 +14,20 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;old&#x20;are&#x20;you.mp3) 
- - (x) How old are you
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/When&#x20;were&#x20;you&#x20;born.mp3) 
  - ( ) I'm 130 centimeters tall
- - ( ) When were you born
+ - ( ) I'm from china
+ - (x) When were you born
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;from&#x20;Thailand.mp3) 
- - ( ) I'm from china
- - (x) I'm from thailand
- - ( ) When were you born
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;weigh&#x20;25&#x20;kilograms.mp3) 
  - ( ) How much do you weigh
- - (x) I weigh 25 kilograms
+ - ( ) I weigh 25 kilograms
+ - (x) I'm from thailand
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;tall&#x20;are&#x20;you.mp3) 
+ - (x) How tall are you
+ - ( ) I'm a student
  - ( ) I'm from england
-
-ออกเสียงคำว่า **How old are you** :
-
-🎙️ how old are you
-
-ออกเสียงคำว่า **I'm seven years old** :
-
-🎙️ i'm seven years old
-
-ออกเสียงคำว่า **I'm from england** :
-
-🎙️ i'm from england
 

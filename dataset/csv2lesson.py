@@ -134,7 +134,7 @@ for filename in os.listdir("csv/_togenerate/vocab"):
             #pronunc(vocabs,2)
         if category == "3conversation":
             listening(vocabs,audio,3, False)
-            pronunc(vocabs,3)
+            #pronunc(vocabs,3)
 
     newfile.close()
     f.close()

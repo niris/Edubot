@@ -14,32 +14,26 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you&#x20;very&#x20;much.mp3) 
- - ( ) Don't mention it
- - ( ) Thank you
- - (x) Thank you very much
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thanks.mp3) 
- - (x) Thanks
- - ( ) That's ok
- - ( ) With pleasure
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Many&#x20;thanks.mp3) 
+ - (x) Many thanks
+ - ( ) Thanks a lot
+ - ( ) You're welcome
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you.mp3) 
  - (x) Thank you
- - ( ) Thanks a lot
- - ( ) That's ok
+ - ( ) That's all right
+ - ( ) With pleasure
 
-ออกเสียงคำว่า **Don't mention it** :
 
-🎙️ don't mention it
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thanks.mp3) 
+ - (x) Thanks
+ - ( ) That's all right
+ - ( ) You're welcome
 
-ออกเสียงคำว่า **Thank you very much** :
 
-🎙️ thank you very much
-
-ออกเสียงคำว่า **Thanks** :
-
-🎙️ thanks
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Thank&#x20;you&#x20;for&#x20;your&#x20;help.mp3) 
+ - (x) Thank you for your help
+ - ( ) Thank you very much
+ - ( ) With pleasure
 

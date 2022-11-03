@@ -40,7 +40,7 @@ def generate_exo(level):
             vocab_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
         
         print(len(vocabs)," ", len(meanings), " ",  len(vocab_audio))
-
+            
         if(vocabs and meanings):
             questionGenerator(vocabs,meanings,3,exo)
             questionGenerator(meanings,vocabs,3,exo)
@@ -55,7 +55,8 @@ def generate_exo(level):
             conver_audio.append('![]('+os.path.join("/media/audio",row[3].replace(" ", "&#x20;")+'.mp3')+')')
         if(conversations):
             listening(conversations,conver_audio,3,False,exo)
-            pronunc(conversations,2,exo)
+            if(int(level) >= 5) : 
+                pronunc(conversations,2,exo)
     exo.close()
 
 def generate_listening(level):
@@ -152,21 +153,20 @@ def pronunc_audio(vocab,audio,number,file):
     print("test_pronunc")
     vocab_tmp = vocab.copy()
     audio_tmp = audio.copy()
-
-    for r in range(number):
-        answer_index = random.choice(range(len(vocab_tmp)))
-        file.write("ออกเสียงตามสิ่งที่ได้ยิน **"+ audio_tmp[answer_index] + "** \n\n")
-        file.write("🎙️ "+ vocab_tmp[answer_index].lower()  +"\n\n")
-        vocab_tmp.pop(answer_index)
-
     for r in range(number):
         answer_index = random.choice(range(len(vocab_tmp)))
         file.write("ออกเสียงคำว่า **"+ vocab_tmp[answer_index].capitalize() + "** :\n\n")
         file.write("🎙️ "+ vocab_tmp[answer_index].lower()  +"\n\n")
         vocab_tmp.pop(answer_index)
-    
+        audio_tmp.pop(answer_index)
+    for r in range(number-1):
+        answer_index = random.choice(range(len(vocab_tmp)))
+        file.write("ออกเสียงตามสิ่งที่ได้ยิน **"+ audio_tmp[answer_index] + "** \n\n")
+        file.write("🎙️ "+ vocab_tmp[answer_index].lower()  +"\n\n")
+        vocab_tmp.pop(answer_index)
+        audio_tmp.pop(answer_index)
   
-for i in range(0,15):
-    generate_exo(str(i))
+for i in range(3,15):
+    #generate_exo(str(i))
     #generate_listening(str(i))
-    #generate_pronunc(str(i))
+    generate_pronunc(str(i))

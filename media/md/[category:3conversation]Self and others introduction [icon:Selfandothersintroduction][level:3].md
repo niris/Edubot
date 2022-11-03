@@ -14,32 +14,26 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm&#x20;glad&#x20;to&#x20;meet&#x20;you.mp3) 
- - (x) I'm glad to meet you
- - ( ) It's good to see you
- - ( ) This is elsa
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Nice&#x20;to&#x20;see&#x20;you.mp3) 
+ - ( ) My name is jenny
+ - ( ) Nice to meet you
+ - (x) Nice to see you
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Nice&#x20;to&#x20;meet&#x20;you.mp3) 
+ - ( ) I'm glad to meet you
+ - ( ) I'm glad to see you
+ - (x) Nice to meet you
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/This&#x20;is&#x20;Elsa.mp3) 
+ - ( ) I want to introduce my friend elsa
+ - ( ) My name is jenny
+ - (x) This is elsa
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/It's&#x20;nice&#x20;to&#x20;meet&#x20;you.mp3) 
- - ( ) It's good to see you
+ - ( ) I'm anna
  - (x) It's nice to meet you
- - ( ) Nice to meet you too
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Let&#x20;me&#x20;introduce&#x20;myself.mp3) 
- - ( ) I want to introduce my friend elsa
- - (x) Let me introduce myself
- - ( ) This is elsa
-
-ออกเสียงคำว่า **Nice to see you** :
-
-🎙️ nice to see you
-
-ออกเสียงคำว่า **May i introduce myself** :
-
-🎙️ may i introduce myself
-
-ออกเสียงคำว่า **I want to introduce my friend** :
-
-🎙️ i want to introduce my friend
+ - ( ) Let me introduce myself
 

@@ -14,32 +14,26 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Bye.mp3) 
- - (x) Bye
- - ( ) Goodbye
- - ( ) See you again
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Goodbye.mp3) 
+ - ( ) Good night
+ - (x) Goodbye
+ - ( ) Have a nice day
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Have&#x20;a&#x20;nice&#x20;day.mp3) 
- - (x) Have a nice day
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/See&#x20;you&#x20;again.mp3) 
+ - ( ) Bye
+ - ( ) Have a nice day
+ - (x) See you again
+
+
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Good&#x20;luck.mp3) 
+ - (x) Good luck
+ - ( ) Have a nice day
  - ( ) Have a nice weekend
- - ( ) See you again tomorrow
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/See&#x20;you&#x20;later.mp3) 
- - ( ) See you again
+ - ( ) Good night
  - ( ) See you again tomorrow
  - (x) See you later
-
-ออกเสียงคำว่า **Have a nice weekend** :
-
-🎙️ have a nice weekend
-
-ออกเสียงคำว่า **Goodbye** :
-
-🎙️ goodbye
-
-ออกเสียงคำว่า **Good night** :
-
-🎙️ good night
 

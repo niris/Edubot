@@ -15,31 +15,25 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/My&#x20;mother&#x20;is&#x20;a&#x20;nurse.mp3) 
- - ( ) I live in bangkok
- - ( ) I want to be a dentist
  - (x) My mother is a nurse
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;does&#x20;your&#x20;mother&#x20;do.mp3) 
- - ( ) How many people are there in your family
  - ( ) What do you want to be when you grow up
- - (x) What does your mother do
+ - ( ) What does your mother do
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;does&#x20;your&#x20;father&#x20;do.mp3) 
- - ( ) I have 2 brothers and 1 sister
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;many&#x20;people&#x20;are&#x20;there&#x20;in&#x20;your&#x20;family.mp3) 
+ - (x) How many people are there in your family
  - ( ) I want to be a dentist
- - (x) What does your father do
+ - ( ) Where do you live
 
-ออกเสียงคำว่า **I live in bangkok** :
 
-🎙️ i live in bangkok
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;want&#x20;to&#x20;be&#x20;a&#x20;dentist.mp3) 
+ - ( ) How many brothers and sisters do you have
+ - (x) I want to be a dentist
+ - ( ) Where do you live
 
-ออกเสียงคำว่า **I have three brothers** :
 
-🎙️ i have three brothers
-
-ออกเสียงคำว่า **How many people in your family** :
-
-🎙️ how many people in your family
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;live&#x20;in&#x20;Bangkok.mp3) 
+ - ( ) How many brothers and sisters do you have
+ - ( ) I have 2 brothers and 1 sister
+ - (x) I live in bangkok
 
