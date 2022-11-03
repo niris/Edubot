@@ -1,10 +1,11 @@
 import listen from '/static/stt.js'
 
+
 const welcomeMessage = `How can I help you?
 - [Vocab : ฝึกคำศัพท์](#/category/2vocab)
 - [Phonics : ฝึกสะกดคำ](#/category/1phonics)
 - [Conversation : ฝึกประโยคสนทนา](#/category/3conversation)
-- [Grammar : ฝึกไวยากรณ์](#/category/6grammar)
+- [Grammar : ฝึกไวยากรณ์](#/category/4grammar)
 - [Chat with me! : คุยกับ AnglizBot](#)`;
 
 
@@ -75,28 +76,27 @@ const BotOnlineChat = {
             } catch (e){
                 res = {intent: 'error', response: 'No Internet'};
             }
-            console.log(res, res.intent)
             let resMessage = ["OK, let's go!", "Let's go!"]
             let randomMessage = resMessage[Math.floor(Math.random() * resMessage.length)]
-            switch (res.intent) {
-                case "Vocab":
-                    return [randomMessage,0,'/category/2vocab']
-                case "Oral":
-                    return [randomMessage,0,'/category/1phonics'];
-                case "Listening":
-                    return [randomMessage,0];
-                case "Reading":
-                    return [randomMessage,0];
+            switch (res.queryResult.intent.displayName) {
                 case "Phonics":
                     return [randomMessage,0,'/category/1phonics'];
-                case "Grammar":
-                    return [randomMessage,0,'/category/6grammar'];
+                case "Vocab":
+                    return [randomMessage,0,'/category/2vocab']
                 case "Conversation":
-                    return [randomMessage,0,'/category/3conversation'];        
+                    return [randomMessage,0,'/category/3conversation']; 
+                case "Grammar":
+                    return [randomMessage,0,'/category/4grammar']; 
+                case "Reading":
+                    return [randomMessage,0,'/category/5reading'];   
+                case "Listening":
+                    return [randomMessage,0,'/category/6listening']; 
+                case "Oral":
+                    return [randomMessage,0,'/category/7pronunciation'];  
                 case "Skills":
-                    return ["What skill do you want to practice ? (อยากฝึกทักษะด้านไหนเอ่ย)",1];
+                    return ["What skill do you want to practice ? \n\n อยากฝึกทักษะด้านไหนเอ่ย",1];
                 default:
-                    return [res.response,1]
+                    return [res.queryResult.fulfillmentText,1]
             }
         },
         md: (txt) => markdownit('default').render(txt),

@@ -5,6 +5,7 @@ from flask import request, make_response,jsonify
 from google.cloud import dialogflow
 from google.api_core.exceptions import InvalidArgument
 from google.auth.exceptions import DefaultCredentialsError
+from google.protobuf.json_format import MessageToJson
 
 app = flask.Flask(__name__)
 
@@ -20,4 +21,4 @@ def main():
         return make_response(jsonify({"reason" : "Invalid Argument"}), 500)
     except DefaultCredentialsError:
         return make_response(jsonify({"reason" : "Dialogflow Credentials Error"}), 500)
-    return make_response(jsonify({"intent" : response.query_result.intent.display_name, "response":response.query_result.fulfillment_text}))
+    return make_response(MessageToJson(response._pb))
