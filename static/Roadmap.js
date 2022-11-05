@@ -88,7 +88,7 @@ const Roadmap = {
         <div class="text-center">Lv:{{$root.myLv}}, Xp:{{$root.myXp}}</div>
     </div>
     <template v-for="(world,level) in $root.worlds">
-        <div :class='{stages:true,disabled:level>$root.myLv}'>
+        <div :class='{stages:true,disabled:level>$root.myLv}' :data-title="'Level:'+level">
             <router-link :to="'/lesson/'+lesson.name" v-for="lesson in world.filter(l=>l.mode!='exam')" :class="{stage:true,complete:('/lesson/'+lesson.name) in this.$root.progress}" style="position:relative">
                 <img :src="'/media/icons/'+lesson.icon+'.svg'" width=64 height=64 alt="lesson" loading=lazy>
                 <img :src="'/media/icons/'+base(lesson.category)+'.svg'" width=32 height=32 alt="cat" loading=lazy style="position:absolute;top:45px;right:-10px;background:var(--bg-color);border-radius:100%;box-shadow:0 1px 2px grey">

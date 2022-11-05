@@ -1,3 +1,4 @@
+import { syncProgress } from "./Sync.js";
 const Profile = {
 	template: `
 	<h1><s>heart</s> Avatar <small>เลือกรูปที่ชอบ Just like you !</small></h1>
@@ -11,7 +12,7 @@ const Profile = {
 		<router-link class="col button success" to="/sign/up"><s>+</s> สร้างบัญชีผู้ใช้ใหม่</router-link>
 		<router-link class="col button primary" to="/sign/in"><s>login</s> ลงชื่อเข้าใช้</router-link>
 	</div>
-	<form v-if=profile @submit.prevent=update(profile,$event)>
+	<form v-if=profile @submit.prevent=syncProgress(profile,$event)>
 		<label>
 			<div>Birthdate  <small> วันเกิด </small></div>
 			<input v-model=profile.birth type=date>
@@ -37,38 +38,18 @@ const Profile = {
 		"profile.theme"() { if (this.profile && this.profile.theme) this.$root.theme = this.profile.theme; }
 	},
 	mounted() { // making it async will give an incomplete $root after Routing redirection
-		if (!this.$root.id) return;
-		fetch(`/api/profile?id=eq.${this.$root.id}`).then(res => res.json()).then(([profile]) => {
-			this.profile = profile;
-			// MERGE and display server<->local delta
-			const merge = { ...this.profile.progress, ...this.$root.progress };
-			this.$root.progress = merge;
-			if (Object.keys(this.profile.progress).length != Object.keys(merge).length) {
-				this.update({ ...this.profile, progress: merge });
-			}
-		});
+		this.syncProgress().then(merge => this.profile = merge||this.profile);
 	},
 	methods: {
+		syncProgress,
 		shuffleAvatar() {
-            const list = [...Array(18).fill().map((c,i)=>`boy-${i}`), ...Array(20).fill().map((c,i)=>`girl-${i}`)];
-            this.$root.alias = list[Math.floor(Math.random()*list.length)];
-        },
+			const list = [...Array(18).fill().map((c, i) => `boy-${i}`), ...Array(20).fill().map((c, i) => `girl-${i}`)];
+			this.$root.alias = list[Math.floor(Math.random() * list.length)];
+		},
 		worker({ target }, action) {
 			target.disabled = true;
 			this.$root.worker.postMessage({ action });
 			target.disabled = false;
-		},
-		update(profile) {
-			profile.theme = this.$root.theme;
-			profile.alias = this.$root.alias;
-			const headers = { 'Content-Type': 'application/json', 'Prefer': 'return=representation' };
-			fetch(`/api/profile?id=eq.${this.$root.id}`, { method: 'PUT', headers, body: JSON.stringify(profile) })
-				.then(res => res.json()).then(([profile]) => {
-					this.profile = profile;
-					this.$root.progress = profile.progress;
-					new Audio('/static/level.ogg', { volume: .05 }).play();
-					this.$root.$refs.bot.say("Progress synchronized !");
-				});
 		},
 		async signOut() {
 			await fetch('/api/rpc/logout');

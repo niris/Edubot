@@ -1,3 +1,4 @@
+import { syncProgress } from "./Sync.js";
 import listen from '/static/stt.js'
 
 // hash a question into a localStorage id
@@ -107,6 +108,7 @@ const LessonShow = {
         }
     },
     methods: {
+        syncProgress,
         async clicked({ target }) {
             if (!target.classList.contains("voice")) return;
             await listen(target, 5000);
@@ -127,12 +129,13 @@ const LessonShow = {
             }
             this.$root.$refs.bot.say(`${info}\nCongratulation !`);
             Object.assign(new Audio('/static/quizz.ogg'), { volume: .1 }).play()
-            valid.forEach(target => this.$root.progress[target.name||target[0].name] = 1)
-            this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
-            setTimeout(this.$router.back, 1000)
+            valid.forEach(target => this.$root.progress[target.name||target[0].name] = +new Date())
+            this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = +new Date();
+            this.syncProgress().then(()=>setTimeout(this.$router.back, 1000));
         },
         validateInput({ target }) {
             if(!target.name)return;
+            const pick = (...list) => list[Math.floor(Math.random() * list.length)];
             const inputs = target.form[target.name];
             let correct = false;
             if (inputs.constructor == HTMLInputElement) {
@@ -142,20 +145,20 @@ const LessonShow = {
                 // bad/incomplete try : shall we tell student ? it break the point of multiple responses...
                 if (target.dataset.checked === undefined) {
                     console.log("wrong answer");
-                    this.$root.$refs.bot.response(false);
+                    this.$root.$refs.bot.say(pick("Oups !", "Try again !"), {bot:true,'text-white':true, 'bg-error':true}, 1500);
                 }
                 correct = [...inputs].every(c => c.checked == (c.dataset.checked !== undefined));
             }
             if (!correct) return;
-            this.$root.progress[target.name] = 1;
+            this.$root.progress[target.name] = +new Date();
             (inputs.length ? inputs : [inputs]).forEach(c => c.disabled = true);
             const remain = target.form.querySelector('input:not([disabled])');
             if (!remain) {
-                this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = 1;
-                setTimeout(this.$router.back, 1000)
+                this.$root.progress[decodeURIComponent(location.hash.replace(/^#/,''))] = +new Date();
+                this.syncProgress().then(()=>setTimeout(this.$router.back, 1000));
             }
             Object.assign(new Audio(remain ? '/static/question.ogg' : '/static/quizz.ogg'), { volume: .1 }).play()
-            this.$root.$refs.bot.response(true);
+            this.$root.$refs.bot.say(pick("Bravo!", "Good job", "Well done!"), {bot:true}, 1500);
         }
     },
     async mounted() {

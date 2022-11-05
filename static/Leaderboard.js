@@ -1,3 +1,4 @@
+import { syncProgress } from "./Sync.js";
 const Leaderboard = {
   template: `
   <progress v-if=profiles===undefined />
@@ -25,16 +26,18 @@ const Leaderboard = {
   </table>
   `,
   data() { return { profiles: undefined } },
+  methods: { syncProgress },
   async mounted() {
     try {
+      await this.syncProgress();
       this.profiles = (await (await fetch(`/api/leaderboard`)).json())
-        .map(profile => ({...profile, lv:this.$root.lv(profile.progress), xp:this.$root.xp(profile.progress)}))
+        .map(profile => ({ ...profile, lv: this.$root.lv(profile.progress), xp: this.$root.xp(profile.progress) }))
         .sort((a, b) => b.xp - a.xp)
         .sort((a, b) => b.lv - a.lv)
         .slice(0, 10)
     } catch (e) {
       this.profiles = null;
     }
-  }
+  },
 }
 export { Leaderboard }
