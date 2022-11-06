@@ -5,7 +5,7 @@
     right: 0;
     padding: 16px;
     max-width: 400px;
-    opacity:.7;
+    /*opacity:.7; yet another round trip on this one */
 }
 
 
@@ -36,6 +36,7 @@
 .chatbot>output {
     display: block; /* flex is problematic with markdown */
     margin-bottom: 1em;
+    animation: MessageCreate .5s ease forwards;
 }
 
 .chatbot>output.user {
@@ -46,6 +47,7 @@
 .chatbot>output.bot {
     border-radius: 20px 20px 0 20px;
     background-color: var(--color-primary);
+    color:var(--bg-color);
 }    
 
 .chatbot>output.bot a {
@@ -55,4 +57,27 @@
     display: inline-block;
     margin: .5em;
     padding: .5em;
+}
+
+.chatbot>output code {
+    --bg-secondary-color: var(--bg-color);
+}
+
+.chatbot>output.hidden {
+    animation: MessageTimeout .5s ease forwards;
+}
+
+.chatbot input[name=req]:disabled {
+    animation: RecordingProgress 3s ease;
+}
+
+
+@keyframes MessageCreate {
+    0%{transform: translateX(500px);opacity: 0;}
+  100%{transform: translateX(0px);opacity: 1;}
+}   
+@keyframes MessageTimeout {
+    0%{transform: translateX(0px);}
+    99%{transform: translateX(500px);}
+   100%{ height: 0; overflow: hidden; margin: 0; padding: 0;}
 }

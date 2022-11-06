@@ -56,7 +56,7 @@ const app = Vue.createApp({
 		this.log();
 		if ('serviceWorker' in navigator) {
 			const register = await navigator.serviceWorker.register('/worker.js');
-			register.onupdatefound = () => this.$root.$refs.bot.say("An update is available !")
+			register.onupdatefound = () => this.$root.$refs.bot.say("Offline mode is now available !")
 			console.log(register);
 			this.worker = register.active;
 			navigator.serviceWorker.addEventListener("message", ({data}) => {

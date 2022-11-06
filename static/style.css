@@ -147,28 +147,6 @@ details>label>input{
     width: -webkit-fill-available !important;
 }
 .truncate{overflow: hidden;word-break: break-word;}
-.chatbot input[name=req]:disabled {
-    animation: RecordingProgress 3s ease;
-}
-@keyframes MessageCreate {
-    0%{transform: translateX(500px);opacity: 0;}
-  100%{transform: translateX(0px);opacity: 1;}
-}   
-@keyframes MessageTimeout {
-    0%{transform: translateX(0px);}
-    99%{transform: translateX(500px);}
-   100%{ height: 0; overflow: hidden; margin: 0; padding: 0;}
-}
-.chatbot>output{
-    animation: MessageCreate .5s ease forwards;
-}
-.chatbot>output.bot {color:var(--bg-color)}
-.chatbot>output code {
-    --bg-secondary-color: var(--bg-color);
-}
-.chatbot>output.hidden {
-    animation: MessageTimeout .5s ease forwards;
-}
 
 .voice[readonly]:disabled {
     animation: RecordingProgress 4.5s ease;

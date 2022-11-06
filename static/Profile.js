@@ -12,7 +12,7 @@ const Profile = {
 		<router-link class="col button success" to="/sign/up"><s>+</s> สร้างบัญชีผู้ใช้ใหม่</router-link>
 		<router-link class="col button primary" to="/sign/in"><s>login</s> ลงชื่อเข้าใช้</router-link>
 	</div>
-	<form v-if=profile @submit.prevent=syncProgress(profile,$event)>
+	<form v-if=profile @submit.prevent=syncProgress({birth:profile.birth,secret:profile.secret})>
 		<label>
 			<div>Birthdate  <small> วันเกิด </small></div>
 			<input v-model=profile.birth type=date>
@@ -38,6 +38,9 @@ const Profile = {
 		"profile.theme"() { if (this.profile && this.profile.theme) this.$root.theme = this.profile.theme; }
 	},
 	mounted() { // making it async will give an incomplete $root after Routing redirection
+		if (!this.$root.id) {
+			this.$root.$refs.bot.say("[ลงทะเบียนหรือลงชื่อเข้าใช้](#/sign/up) เพื่อบันทึกความก้าวหน้า", {bot:true}, 3000);
+		}
 		this.syncProgress().then(merge => this.profile = merge||this.profile);
 	},
 	methods: {
