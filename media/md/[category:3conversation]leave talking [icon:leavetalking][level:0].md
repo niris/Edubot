@@ -13,6 +13,19 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A: ___________  
+B: See you later
+ - ( ) Hello
+ - (x) Goodbye
+ - ( ) Good morning
+
+
+A: Goodbye  
+B: _________
+ - ( ) Hello
+ - ( ) Good morning
+ - (x) See you again tomorrow
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Goodbye.mp3) 
  - ( ) Good night

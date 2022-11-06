@@ -13,6 +13,18 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+เลือกประโยคทักทายที่ตรงกับรูปภาพ  
+![exo](/media/img/greeting__good%20morning_ex.svg) 
+ - (x) Good morning
+ - ( ) Good afternoon
+ - ( ) Good evening
+
+
+เลือกประโยคทักทายที่ตรงกับรูปภาพ  
+![exo](/media/img/greeting__good%20afternoon_ex.svg) 
+ - ( ) Good morning
+ - (x) Good afternoon
+ - ( ) Good evening
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/good&#x20;morning.mp3) 
  - ( ) Good evening

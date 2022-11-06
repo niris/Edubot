@@ -52,20 +52,37 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-I have __ umbrella.
+________ dog
+
+- (x) a
+- ( ) an
+- ( ) the
+
+________ book
+
+- (x) a
+- ( ) an
+- ( ) the
+
+________orange
 
 - ( ) a
 - (x) an
 - ( ) the
 
-This is __ book.
+________sun
 
-- (x) a
+- ( ) a
 - ( ) an
-- ( ) the
+- (x) the
 
-I found __ dog in front of my house.
 
-- (x) a
-- ( ) an
-- ( ) the
+a ________
+- (x) bird
+- ( ) orange
+- ( ) earth
+
+an ________
+- ( ) notebook
+- (x) apple
+- ( ) sun
