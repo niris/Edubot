@@ -74,7 +74,7 @@ const CategoryGroupList = {
         }
     },
     mounted(){
-        this.$root.$refs.bot.say(`Let's enjoy ${this.$props.category.replace(/^\d+/,'')} lessons!`);
+        this.$root.$refs.bot.say(`Let's enjoy ${this.$props.category.replace(/^\d+/,'')} lessons!`,{bot:true},3000);
     },
 
 }

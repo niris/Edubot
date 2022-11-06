@@ -89,3 +89,8 @@
     margin-left: 0.5em;
     margin-bottom: 0.1em;
 }
+
+.lesson img[alt=exo] {
+    width : 20em;
+    margin-left: 1em;
+}

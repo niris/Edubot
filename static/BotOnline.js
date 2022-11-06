@@ -15,7 +15,7 @@ const BotOnlineChat = {
         window.chat = this.chat; // so JS can call it from dialogflow
     },
     methods: {
-        say(msg, opts = { bot: true }, timeout = 8000) {
+        say(msg, opts = { bot: true }, timeout = 5000) {
             const at = this.logs.push({ msg, classes: { card: true, ...opts }, timeout });
             setTimeout(() => this.logs[at - 1].classes.hidden = true, timeout);
         },
@@ -52,7 +52,7 @@ const BotOnlineChat = {
     template: `
     <form class=chatbot @submit.prevent="chat($event.target.req.value);$event.target.reset();" :hidden=hidden>
         <output v-for="log in logs" :class=log.classes v-html="md(log.msg)"></output>
-        <details class=field>
+        <details class=field open>
             <summary>
             <svg class=bot xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 492 492">
                 <path style="opacity:.7" d="m 119,177 c 0,-11 26,-20 37,-23 24,-7 54,-11 83,-11 29,0 59,4 83,11 11,3 37,12 37,23 l -0,19 63,-25 c 3,-1 5,-3 5,-5 0,-1 -1,-4 -4,-5 L 255,68 c -8,-4 -22,-4 -30,0 L 55,160 c -3,1 -5,3 -4,5 0,1 2,3 5,5 l 63,25 z m 0,0"/>

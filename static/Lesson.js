@@ -3,6 +3,7 @@ import listen from '/static/stt.js'
 
 // hash a question into a localStorage id
 const hashCode = (s,lv) => `lv${lv}/` + s.split('').reduce((a, b) => (a = ((a << 5) - a) + b.charCodeAt(0), a & a), 0);
+const pick = (...list) => list[Math.floor(Math.random() * list.length)];
 // add lazy attribut to img
 function lazy_img(md) {
     var defaultImageRenderer = md.renderer.rules.image;
@@ -135,7 +136,6 @@ const LessonShow = {
         },
         validateInput({ target }) {
             if(!target.name)return;
-            const pick = (...list) => list[Math.floor(Math.random() * list.length)];
             const inputs = target.form[target.name];
             let correct = false;
             if (inputs.constructor == HTMLInputElement) {
@@ -165,7 +165,7 @@ const LessonShow = {
         this.level = +(this.$props.id.match(/\[level:(\d+)\]/)||['','0'])[1];
         this.isExam = this.$props.id.includes('[mode:exam]');
         this.lesson = await (await fetch(`/media/md/${this.$props.id}`)).text();
-        this.$root.$refs.bot.say(`Enjoy your lesson!`);
+        this.$root.$refs.bot.say(pick("Enjoy the lesson!", "Let's rock!", "Let's roll!"),{bot:true},1500);
     }
 }
 

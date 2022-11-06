@@ -39,7 +39,7 @@ const Profile = {
 	},
 	mounted() { // making it async will give an incomplete $root after Routing redirection
 		if (!this.$root.id) {
-			this.$root.$refs.bot.say("[ลงทะเบียนหรือลงชื่อเข้าใช้](#/sign/up) เพื่อบันทึกความก้าวหน้า", {bot:true}, 3000);
+			this.$root.$refs.bot.say("**Save your progress!**  \nอยากบันทึกความก้าวหน้าไว้ไหม?  \n[ลงทะเบียนหรือลงชื่อเข้าใช้ได้เลย](#/sign/up)", {bot:true}, 3000);
 		}
 		this.syncProgress().then(merge => this.profile = merge||this.profile);
 	},

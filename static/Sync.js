@@ -15,7 +15,7 @@ async function syncProgress(extra={}) {
     const args = { method: 'PUT', headers, body: JSON.stringify(remote) };
     const [final] = await fetch(`/api/profile?id=eq.${this.$root.id}`, args).then(res => res.json())
     new Audio('/static/level.ogg', { volume: .05 }).play();
-    this.$root.$refs.bot.say("ความก้าวหน้าถูกบันทึกแล้ว");
+    this.$root.$refs.bot.say("Your progress has been synchronized!  \nความก้าวหน้าถูกบันทึกแล้ว");
     console.log(this.$root.progress, final.progress);
     return final;
 }
