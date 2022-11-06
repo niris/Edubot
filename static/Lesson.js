@@ -165,6 +165,7 @@ const LessonShow = {
         this.level = +(this.$props.id.match(/\[level:(\d+)\]/)||['','0'])[1];
         this.isExam = this.$props.id.includes('[mode:exam]');
         this.lesson = await (await fetch(`/media/md/${this.$props.id}`)).text();
+        this.$root.$refs.bot.say(`Enjoy your lesson!`);
     }
 }
 

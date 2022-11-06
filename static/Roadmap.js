@@ -17,7 +17,7 @@ const CategoryList = {
         categories() {
             return [...new Set(this.$root.mds.map(t => t.category))].map(path => ({ path, name: path.replace(/^[^a-zA-Z]+/, '') }));
         },
-    }
+    },
 }
 
 const CategoryGroupList = {
@@ -73,6 +73,10 @@ const CategoryGroupList = {
                 }))
         }
     },
+    mounted(){
+        this.$root.$refs.bot.say(`Let's enjoy ${this.$props.category.replace(/^\d+/,'')} lessons!`);
+    },
+
 }
 
 const Roadmap = {
