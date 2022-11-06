@@ -13,9 +13,17 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+Jenny : Hello, My name is Jenny.
+Mike  : _________________
+
+ - ( ) Goodbye
+ - ( ) See you tomorrow
+ - (x) Nice to meet you
+
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Nice&#x20;to&#x20;see&#x20;you.mp3) 
- - ( ) My name is jenny
+ - ( ) My name is Jenny
  - ( ) Nice to meet you
  - (x) Nice to see you
 
@@ -29,7 +37,7 @@
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/This&#x20;is&#x20;Elsa.mp3) 
  - ( ) I want to introduce my friend elsa
  - ( ) My name is jenny
- - (x) This is elsa
+ - (x) This is Elsa
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/It's&#x20;nice&#x20;to&#x20;meet&#x20;you.mp3) 

@@ -14,8 +14,18 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
+A : Excuse me! what time is it ?
+B : ________________ 
+
+ - ( ) Thanks
+ - (x) It's 9 O'clock
+ - ( ) Good Bye
+
+
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Do&#x20;do&#x20;have&#x20;a&#x20;time.mp3) 
- - ( ) Could you tell me the time please
- - (x) Do do have a time
- - ( ) Excuse me! what time is it
+ - ( ) Could you tell me the time please ?
+ - (x) Do do have a time ?
+ - ( ) Excuse me! what time is it ?
+
+
 

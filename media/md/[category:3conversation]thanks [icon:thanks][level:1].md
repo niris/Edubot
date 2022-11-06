@@ -13,6 +13,21 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A : Thank you
+B : ____________
+
+ - (x) With pleasure
+ - ( ) Hello
+ - ( ) Goodbye
+
+
+A : ___________
+B : You're welcome.
+
+ - ( ) Hello
+ - ( ) Good morning
+ - (x) Thanks
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Many&#x20;thanks.mp3) 
  - (x) Many thanks
