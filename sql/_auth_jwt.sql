@@ -30,7 +30,12 @@ declare
 begin
   select auth.valid(id, pass) into _role;
   if _role is null then raise invalid_password using message = 'ใส่ชื่อผู้ใช้/รหัสผ่านไม่ถูกต้อง'; end if;
-  select sign(row_to_json(r), current_setting('app.settings.jwt_secret')) as token from (
+  select sign(
+    
+    
+    
+    
+    (r), current_setting('app.settings.jwt_secret')) as token from (
     select
       _role as role,
       login.id as id,

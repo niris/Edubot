@@ -40,7 +40,8 @@ const BotOnlineChat = {
                     }
                 }
             } catch (e) {
-                this.hidden = false;
+                console.log("error with bot, hide it", e);
+                this.hidden = true;
             }
         },
         async record({ target }) {
