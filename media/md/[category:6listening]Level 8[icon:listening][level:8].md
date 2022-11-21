@@ -15,13 +15,13 @@
 เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/What&#x20;day&#x20;was&#x20;yesterday.mp3) 
  - ( ) This month is may
  - (x) What day was yesterday
- - ( ) Go
+ - ( ) What year is the next year
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/What&#x20;year&#x20;is&#x20;the&#x20;next&#x20;year.mp3) 
  - ( ) The last month was april
  - (x) What year is the next year
- - ( ) Eat
+ - ( ) What day is tomorrow
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/wash.mp3) 

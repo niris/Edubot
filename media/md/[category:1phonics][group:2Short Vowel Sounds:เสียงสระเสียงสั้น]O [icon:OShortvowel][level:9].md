@@ -14,19 +14,19 @@
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/not.mp3) 
- - ( ) Hot
+ - ( ) Fox
  - (x) Not
- - ( ) Og
+ - ( ) Cop
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/box.mp3) 
  - (x) Box
  - ( ) Hot
- - ( ) Ox
+ - ( ) Mop
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/ox.mp3) 
- - ( ) Cop
+ - ( ) Pot
  - ( ) Jog
  - (x) Ox
 

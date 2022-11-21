@@ -1,7 +1,7 @@
 ## Listening Exercise Level 9
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/Have&#x20;a&#x20;nice&#x20;day.mp3) 
- - (x) Have a nice day
+เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/bicycle.mp3) 
+ - (x) Bicycle
  - ( ) Rugby
  - ( ) Shool bus
 
@@ -27,5 +27,5 @@
 เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/Merry&#x20;Christmas.mp3) 
  - ( ) Get well soon
  - (x) Merry christmas
- - ( ) Bicycle
+ - ( ) Have a nice day
 

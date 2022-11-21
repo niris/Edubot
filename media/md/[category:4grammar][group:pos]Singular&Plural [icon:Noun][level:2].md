@@ -28,6 +28,8 @@
 
 </div>
 
+# ![icon](/media/icons/quiz.svg) 
+
 A ______  
 
  - (x) pencil
