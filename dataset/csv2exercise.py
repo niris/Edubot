@@ -167,6 +167,6 @@ def pronunc_audio(vocab,audio,number,file):
         audio_tmp.pop(answer_index)
   
 for i in range(3,15):
-    #generate_exo(str(i))
+    generate_exo(str(i))
     #generate_listening(str(i))
-    generate_pronunc(str(i))
+    #generate_pronunc(str(i))

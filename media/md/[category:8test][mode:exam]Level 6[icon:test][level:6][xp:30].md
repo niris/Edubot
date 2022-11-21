@@ -3,13 +3,13 @@
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/bum.mp3) 
  - (x) Bum
  - ( ) Cut
- - ( ) Ub
-
-
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/up2.mp3) 
  - ( ) Gun
- - ( ) Ugg
- - (x) Up2
+
+
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/up.mp3) 
+ - ( ) Gun
+ - ( ) Bug
+ - (x) Up
 
 
  เลือกคำศัพท์ที่ตรงกับ : **Pharmacist**
@@ -66,16 +66,16 @@
  - ( ) Photographer
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Do&#x20;do&#x20;have&#x20;a&#x20;time.mp3) 
- - ( ) Could you tell me the time please
- - (x) Do do have a time
- - ( ) Excuse me! what time is it
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Could%20you%20tell%20me%20the%20time%20please.mp3) 
+ - (x) Could you tell me the time please?
+ - ( ) Do do have the time?
+ - ( ) Excuse me! what time is it?
 
-ออกเสียงคำว่า : **Do do have a time** 
+ออกเสียงคำว่า : **Could you tell me the time please?** 
 
-🎙️ do do have a time
+🎙️ could you tell me the time please
 
-ออกเสียงคำว่า : **Excuse me! what time is it** 
+ออกเสียงคำว่า : **Excuse me! what time is it?** 
 
-🎙️ excuse me! what time is it
+🎙️ excuse me what time is it
 

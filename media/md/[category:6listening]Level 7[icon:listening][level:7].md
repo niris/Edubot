@@ -18,14 +18,14 @@
  - ( ) Train station
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/light.mp3) 
- - ( ) Dirty
- - (x) Light
- - ( ) Market
+เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/Perfect.mp3) 
+ - ( ) Excellent
+ - ( ) Nice work
+ - (x) Perfect
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/hot.mp3) 
- - ( ) Empty
- - (x) Hot
- - ( ) Wet
+เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/Good%20job.mp3) 
+ - ( ) That's great
+ - (x) Good job
+ - ( ) Well done
 

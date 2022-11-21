@@ -15,3 +15,40 @@
 
 
 </div>
+
+# ![icon](/media/icons/quiz.svg) 
+
+**เลือกสรรพนามบ่งชี้ที่ถูกต้อง**
+
+![exo](/media/img/definite%20pronoun__this%20is%20an%20eraser_ex.svg) 
+
+ - (x) This
+ - ( ) That
+ - ( ) Those
+
+
+![exo](/media/img/definite%20pronoun__that%20is%20a%20notebook_ex.svg) 
+ - ( ) This
+ - (x) That
+ - ( ) Those
+
+
+![exo](/media/img/definite%20pronoun__these%20are%20rulers_ex.svg) 
+ - ( ) That
+ - ( ) Those
+ - (x) These
+
+![exo](/media/img/definite%20pronoun__those%20are%20notebooks_ex.svg) 
+ - ( ) That
+ - (x) Those
+ - ( ) These
+
+_____ is a ruler
+ - (x) This
+ - ( ) Those
+ - ( ) These
+
+_____ are rulers
+ - ( ) That
+ - ( ) This
+ - (x) These

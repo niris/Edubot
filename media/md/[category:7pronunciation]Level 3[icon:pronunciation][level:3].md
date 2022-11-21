@@ -3,14 +3,6 @@
 
 🎙️ october
 
-ออกเสียงคำว่า **It's nice to meet you** :
-
-🎙️ it's nice to meet you
-
-ออกเสียงคำว่า **Let me introduce myself** :
-
-🎙️ let me introduce myself
-
 ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/Sunday.mp3)** 
 
 🎙️ sunday
@@ -19,3 +11,10 @@
 
 🎙️ saturday
 
+ออกเสียงคำว่า **It's nice to meet you** :
+
+🎙️ it's nice to meet you
+
+ออกเสียงคำว่า **Let me introduce myself** :
+
+🎙️ let me introduce myself

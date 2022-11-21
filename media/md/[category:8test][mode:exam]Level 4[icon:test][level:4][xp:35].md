@@ -67,14 +67,14 @@
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/How&#x20;much&#x20;do&#x20;you&#x20;weigh.mp3) 
- - (x) How much do you weigh
- - ( ) How old are you
- - ( ) I'm 10 years old
+ - (x) How much do you weigh?
+ - ( ) How old are you?
+ - ( ) I'm 10 years old?
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/How&#x20;old&#x20;are&#x20;you.mp3) 
- - (x) How old are you
- - ( ) How tall are you
+ - (x) How old are you?
+ - ( ) How tall are you?
  - ( ) I'm from thailand
 
 

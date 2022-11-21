@@ -3,8 +3,8 @@
 
 > I have a dog.  
 > Its name is Snoopy.  
-> My dog is big.
-> My dog is brown.
+> My dog is big.  
+> My dog is brown.  
 
 
 # ![icon](/media/icons/quiz.svg) 

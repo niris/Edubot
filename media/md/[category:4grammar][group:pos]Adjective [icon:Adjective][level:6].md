@@ -31,6 +31,40 @@
 </div>
 
 
-คำคุณศัพท์มีตำแหน่งการวาง 2 แบบ 
-* วางหลัง v.to be : is, am, are
-* วางหน้าคำนามที่ต้องการขยาย 
+**คำคุณศัพท์มีตำแหน่งการวาง 2 แบบ ได้แก่**
+1. วางหลัง [**Verb to be**](#/lesson/[category:4grammar][group:tense]verb%20to%20be%20[icon:verbtobe][level:4].md) : is, am, are เพื่อแสดงลักษณะของประธาน โดยต้องมีการผันรูปกริยาตามประธาน  
+
+> She is **tall** (หล่อนตัวสูง)  
+> I'm **bored** (ฉันรู้สึกเบื่อ)  
+> My house is **big** (บ้านของฉันหลังใหญ่มาก)  
+> We are **hungry** (พวกเรารู้สึกหิว) 
+> They are **happy** (พวกเขามีความสุข) 
+
+[**ทบทวนเนื้อหา Verb to be คลิก!**](#/lesson/[category:4grammar][group:tense]verb%20to%20be%20[icon:verbtobe][level:4].md)
+
+2. วางหน้าคำนามที่ต้องการขยาย 
+
+> A **big** house (บ้านหลังใหญ่)  
+> A **thick** book (หนังสือเล่มหนา)  
+> A **thin** boy (เด็กผู้ชายตัวผอม)
+> This is an **empty** box (นี่คือกล่องเปล่า)
+
+
+# ![icon](/media/icons/quiz.svg) 
+
+**เลือกคำศัพท์หรือประโยคที่ตรงกับรูปภาพ**
+
+![exo](/media/img/describing%20things__empty.svg) 
+ - (x) An empty box
+ - ( ) A full box
+ - ( ) A thin box
+
+![exo](/media/img/describing%20people__hungry.svg) 
+ - ( ) She is happy
+ - (x) She is hungry
+ - ( ) She is excited
+
+![exo](/media/img/describing%20people__old.svg) 
+ - ( ) He is young
+ - (x) He is old
+ - ( ) He is sad

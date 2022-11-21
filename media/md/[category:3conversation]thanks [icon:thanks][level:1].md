@@ -13,7 +13,7 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-A : Thank you
+A : Thank you  
 B : ____________
 
  - (x) With pleasure
@@ -21,7 +21,7 @@ B : ____________
  - ( ) Goodbye
 
 
-A : ___________
+A : ___________  
 B : You're welcome.
 
  - ( ) Hello

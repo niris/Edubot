@@ -8,7 +8,8 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-<div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>
+**<div class="title">Fill in the blank</div><div class="desc">เติมคำในช่องว่าง</div>**
+
 
 My name is ______
  - (x) Lilly
@@ -21,8 +22,8 @@ I am_____ years old
  - ( ) 9
 
 I am _____
- - ( ) a student
- - (x) a nurse
+ - (x) a student
+ - ( ) a nurse
  - ( ) a cat
 
 I am from______

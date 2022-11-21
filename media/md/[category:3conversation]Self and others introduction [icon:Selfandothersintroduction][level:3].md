@@ -13,7 +13,7 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
-Jenny : Hello, My name is Jenny.
+Jenny : Hello, My name is Jenny.  
 Mike  : _________________
 
  - ( ) Goodbye

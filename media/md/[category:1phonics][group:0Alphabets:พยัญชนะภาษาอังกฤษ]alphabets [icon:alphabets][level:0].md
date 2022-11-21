@@ -12,10 +12,10 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/z.mp3) 
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/y.mp3) 
  - ( ) N
- - ( ) Y
- - (x) Z
+ - (x) Y
+ - ( ) Z
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/x.mp3) 

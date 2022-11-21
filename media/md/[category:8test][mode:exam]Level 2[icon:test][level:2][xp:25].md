@@ -72,14 +72,14 @@
  - (x) Excuse me for interrupting
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Excuse&#x20;me&#x20;please.mp3) 
- - ( ) Don't mention it
- - (x) Excuse me please
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Don't%20mention%20it.mp3) 
+ - (x) Don't mention it
+ - ( ) Don't worry
  - ( ) Forgive me
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Don't&#x20;mention&#x20;it.mp3) 
- - (x) Don't mention it
- - ( ) I'm sorry i'm late
- - ( ) Pardon
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/I%20beg%20your%20pardon.mp3) 
+ - (x) I beg your pardon
+ - ( ) I'm sorry. I'm late
+ - ( ) Forgive me
 

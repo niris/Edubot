@@ -24,8 +24,8 @@
  - ( ) Thin
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/scientist.mp3) 
- - ( ) Artist
- - ( ) Good
- - (x) Scientist
+เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/It's%20five%20o'clock.mp3) 
+ - ( ) It's nine o'clock
+ - ( ) It's four o'clock
+ - (x) It's five o'clock
 

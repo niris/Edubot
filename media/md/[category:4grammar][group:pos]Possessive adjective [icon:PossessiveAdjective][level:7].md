@@ -16,3 +16,27 @@
 |![](/media/audio/this&#x20;is&#x20;my&#x20;ruler.mp3)|![](/media/audio/this&#x20;is&#x20;your&#x20;pencil.mp3)|![](/media/audio/These&#x20;are&#x20;our&#x20;notebooks.mp3)|![](/media/audio/those&#x20;are&#x20;their&#x20;notebooks.mp3)|![](/media/audio/That&#x20;is&#x20;his&#x20;book.mp3)|![](/media/audio/those&#x20;are&#x20;her&#x20;rulers.mp3)|![](/media/audio/that&#x20;is&#x20;my&#x20;dog&#x20;that&#x20;is&#x20;its&#x20;house.mp3)|
 
 </div>
+
+# ![icon](/media/icons/quiz.svg) 
+
+![exo](/media/img/possesive%20adjective__this%20is%20my%20ruler_ex.svg)
+
+ - (x) my
+ - ( ) me
+ - ( ) I
+
+![exo](/media/img/possesive%20adjective__These%20are%20our%20notebooks_ex.svg)
+
+ - ( ) my
+ - ( ) your
+ - (x) our
+
+I have a dog. ___ name is Puppy
+ - ( ) Your
+ - (x) Its
+ - ( ) Their
+
+That boy is my friend. ___ name is Jack
+ - ( ) Her
+ - (x) His
+ - ( ) Your

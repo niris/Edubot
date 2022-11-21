@@ -13,6 +13,14 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A: You look so cute!  
+B: ____________  
+
+ - ( ) Good bye
+ - (x) Thank you
+ - ( ) No problem
+
+
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Fantastic.mp3) 
  - (x) Fantastic
  - ( ) Thanks a lot

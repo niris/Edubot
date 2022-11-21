@@ -1,21 +1,21 @@
 ## Pronunciation Exercise 5
-ออกเสียงคำว่า **I live in bangkok** :
+
+
+ออกเสียง **I live in bangkok** :
 
 🎙️ i live in bangkok
 
-ออกเสียงคำว่า **Stomach** :
+ออกเสียงตามที่ได้ยิน **![](/media/audio/Where%20do%20you%20live.mp3)** 
 
-🎙️ stomach
+🎙️ where do you live
 
-ออกเสียงคำว่า **Leg** :
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/I%20have%202%20brothers%20and%201%20sister.mp3)** 
 
-🎙️ leg
+🎙️ i have two brothers and one sister
 
 ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/How&#x20;many&#x20;people&#x20;are&#x20;there&#x20;in&#x20;your&#x20;family.mp3)** 
 
 🎙️ how many people are there in your family
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/face.mp3)** 
 
-🎙️ face
 

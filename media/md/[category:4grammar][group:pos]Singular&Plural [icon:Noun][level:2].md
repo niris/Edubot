@@ -13,7 +13,7 @@
 แต่ใช้วิธีการ ได้แก่
 
 - เติม S ท้ายคำ
-- หากคำลงท้ายด้วย  s, sh, ch, x หรืแ z ให้เติม es ที่ท้ายคำ
+- หากคำลงท้ายด้วย  s, sh, ch, x หรือ z ให้เติม es ที่ท้ายคำ
 - เปลี่ยนรูปคำศัพท์ เช่น  men, policemen
 - ไม่เปลี่ยนรูปคำศัพท์ เช่น fish, sheep
 
@@ -27,3 +27,35 @@
 |![](/media/audio/a&#x20;bird.mp3)|![](/media/audio/3&#x20;birds.mp3)|![](/media/audio/a&#x20;pencil.mp3)|![](/media/audio/5&#x20;pencils.mp3)|![](/media/audio/an&#x20;apple.mp3)|![](/media/audio/2&#x20;apples.mp3)|![](/media/audio/an&#x20;orange.mp3)|![](/media/audio/3&#x20;oranges.mp3)|![](/media/audio/a&#x20;bus.mp3)|![](/media/audio/2&#x20;buses.mp3)|![](/media/audio/a&#x20;dress.mp3)|![](/media/audio/2&#x20;dresses.mp3)|![](/media/audio/a&#x20;dish.mp3)|![](/media/audio/4&#x20;dishes.mp3)|![](/media/audio/a&#x20;toothbrush.mp3)|![](/media/audio/3&#x20;toothbrushes.mp3)|![](/media/audio/an&#x20;ostrich.mp3)|![](/media/audio/3&#x20;ostriches.mp3)|![](/media/audio/a&#x20;policeman.mp3)|![](/media/audio/2&#x20;policemen.mp3)|![](/media/audio/a&#x20;fish.mp3)|![](/media/audio/4&#x20;fish.mp3)|![](/media/audio/a&#x20;sheep.mp3)|![](/media/audio/3&#x20;sheep.mp3)|
 
 </div>
+
+A ______  
+
+ - (x) pencil
+ - ( ) pencils
+ - ( ) penciles
+
+An _____  
+
+ - (x) orange
+ - ( ) oranges
+ - ( ) orangs
+
+Two ______  
+ - ( ) pencil
+ - (x) pencils
+ - ( ) penciles
+
+Three ______  
+ - ( ) bus
+ - (x) buses
+ - ( ) buss
+
+Four ______  
+ - ( ) policeman
+ - ( ) policemans
+ - (x) policemen
+
+Five ______
+ - (x) sheep
+ - ( ) sheeps
+ - ( ) sheepes

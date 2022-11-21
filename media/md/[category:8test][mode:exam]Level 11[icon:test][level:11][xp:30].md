@@ -71,11 +71,11 @@
  - (x) I like pop music
  - ( ) Yes i like cats
 
-ออกเสียงคำว่า : **Do you like cooking** 
+ออกเสียงคำว่า : **Do you like cooking?** 
 
 🎙️ do you like cooking
 
-ออกเสียงคำว่า : **Do you like swimming** 
+ออกเสียงคำว่า : **Do you like swimming?** 
 
 🎙️ do you like swimming
 

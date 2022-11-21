@@ -1,17 +1,5 @@
 ## Exercise Level 3
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Window.mp3) 
- - ( ) Tiger
- - ( ) Vegetable
- - (x) Window
-
-
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Tomato.mp3) 
- - ( ) Teacher
- - (x) Tomato
- - ( ) Yacht
-
-
  เลือกคำศัพท์ที่ตรงกับ : **April**
  - ( ) กรกฏาคม
  - ( ) มิถุนายน

@@ -52,37 +52,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+**เลือกคำหน้านามที่เหมาะสมสำหรับเติมในช่องว่าง ______ สำหรับแต่ละข้อ**
+
 ________ dog
 
 - (x) a
 - ( ) an
-- ( ) the
 
 ________ book
 
 - (x) a
 - ( ) an
-- ( ) the
 
-________orange
+
+________ orange
 
 - ( ) a
 - (x) an
-- ( ) the
 
-________sun
+
+________ sun
 
 - ( ) a
-- ( ) an
 - (x) the
 
 
 a ________
 - (x) bird
 - ( ) orange
-- ( ) earth
 
 an ________
 - ( ) notebook
 - (x) apple
-- ( ) sun

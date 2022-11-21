@@ -17,3 +17,48 @@
 |![](/media/audio/I&#x20;am&#x20;a&#x20;student.mp3)|![](/media/audio/You&#x20;are&#x20;tall.mp3)|![](/media/audio/We&#x20;are&#x20;watching&#x20;television.mp3)|![](/media/audio/They&#x20;are&#x20;my&#x20;parents.mp3)|![](/media/audio/He&#x20;is&#x20;my&#x20;teacher.mp3)|![](/media/audio/She&#x20;is&#x20;my&#x20;sister.mp3)|![](/media/audio/She&#x20;is&#x20;reading&#x20;a&#x20;book.mp3)|![](/media/audio/It&#x20;is&#x20;very&#x20;big.mp3)|![](/media/audio/They&#x20;are&#x20;my&#x20;parents.&#x20;They&#x20;love&#x20;me.mp3)|![](/media/audio/We&#x20;love&#x20;you.mp3)|![](/media/audio/They&#x20;are&#x20;our&#x20;parents.&#x20;They&#x20;love&#x20;us.mp3)|![](/media/audio/They&#x20;are&#x20;my&#x20;parents.&#x20;I&#x20;love&#x20;them.mp3)|![](/media/audio/He&#x20;is&#x20;my&#x20;teacher.&#x20;I&#x20;like&#x20;him.mp3)|![](/media/audio/She&#x20;is&#x20;my&#x20;sister.&#x20;I&#x20;love&#x20;her.mp3)|![](/media/audio/I&#x20;like&#x20;it.mp3)|
 
 </div>
+
+# ![icon](/media/icons/quiz.svg) 
+
+**เลือกคำตอบที่ถูกต้องสำหรับเติมในช่องว่าง**
+
+
+I _____ a student 
+ - ( ) is
+ - (x) am
+ - ( ) are
+
+You _____ beutiful 
+ - ( ) is
+ - ( ) am
+ - (x) are
+
+He _____ tall 
+ - (x) is
+ - ( ) am
+ - ( ) are
+
+She _____ my teacher 
+ - (x) is
+ - ( ) am
+ - ( ) are
+
+They _____ my parents 
+ - ( ) is
+ - ( ) am
+ - (x) are
+
+It _____ big
+ - (x) is
+ - ( ) am
+ - ( ) are
+
+He is my teacher. I like _____
+ - ( ) her
+ - (x) him
+ - ( ) them
+
+They are my parents. I love _____
+ - ( ) it
+ - ( ) me
+ - (x) them

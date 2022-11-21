@@ -13,27 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A: How many people are there in your family?  
+B: __________________________
+
+ - ( ) My mother is a nurse
+ - ( ) I live in bangkok
+ - (x) There are 4 people in my family
+
+
+A: What do you want to be when you grow up ?  
+B: __________________________  
+
+ - (x) I want to be a dentist
+ - ( ) I live in bangkok
+ - ( ) There are 4 people in my family
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/My&#x20;mother&#x20;is&#x20;a&#x20;nurse.mp3) 
  - (x) My mother is a nurse
- - ( ) What do you want to be when you grow up
- - ( ) What does your mother do
+ - ( ) What do you want to be when you grow up ?
+ - ( ) What does your mother do?
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;many&#x20;people&#x20;are&#x20;there&#x20;in&#x20;your&#x20;family.mp3) 
- - (x) How many people are there in your family
+ - (x) How many people are there in your family?
  - ( ) I want to be a dentist
- - ( ) Where do you live
-
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;want&#x20;to&#x20;be&#x20;a&#x20;dentist.mp3) 
- - ( ) How many brothers and sisters do you have
- - (x) I want to be a dentist
- - ( ) Where do you live
-
+ - ( ) Where do you live?
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;live&#x20;in&#x20;Bangkok.mp3) 
- - ( ) How many brothers and sisters do you have
+ - ( ) How many brothers and sisters do you have?
  - ( ) I have 2 brothers and 1 sister
  - (x) I live in bangkok
 
