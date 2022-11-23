@@ -13,33 +13,31 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A : What subject do you **like**?  
+B : _________________________
+ 
+ - (x) I like English.
+ - ( ) I don't like Maths.
+ - ( ) I'm afraid not.
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;subject&#x20;do&#x20;you&#x20;like.mp3) 
- - ( ) I like english
- - ( ) What subject do you dislike
- - (x) What subject do you like
+A : What subject do you **dislike**?  
+B : _________________________
+ 
+ - ( ) I like English.
+ - (x) I don't like Maths.
+ - ( ) I'm afraid not.
+
+A : _________________________  
+B : My favorite subject is English.
+
+ - ( ) What is your name ?
+ - (x) What is your favorite subject ?
+ - ( ) How old are you ?
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;subject&#x20;do&#x20;you&#x20;dislike.mp3) 
- - ( ) I like english
- - ( ) My favorite subject is english
- - (x) What subject do you dislike
+A : _________________________  
+B : I don't like Maths.
 
-
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I&#x20;don't&#x20;like&#x20;Maths.mp3) 
- - (x) I don't like maths
- - ( ) I like english
- - ( ) What is your favorite subject
-
-ออกเสียงคำว่า **What subject do you like** :
-
-🎙️ what subject do you like
-
-ออกเสียงคำว่า **What subject do you dislike** :
-
-🎙️ what subject do you dislike
-
-ออกเสียงคำว่า **I don't like maths** :
-
-🎙️ i don't like maths
-
+ - (x) What subject do you dislike ?
+ - ( ) What is your favorite subject ?
+ - ( ) What subject do you like ?

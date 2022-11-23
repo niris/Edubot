@@ -13,31 +13,37 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A : What month is this month?  
+B : _________________________
+
+ - ( ) The next year is 2023.
+ - (x) This month is may.
+ - ( ) The last month was April.
+
+A : _________________________  
+B : This year is 2022.  
+
+ - ( ) What month is the next month ?
+ - ( ) What month is this month ?
+ - (x) What year is this ?
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/The&#x20;next&#x20;year&#x20;is&#x20;2023.mp3) 
- - (x) The next year is 2023
- - ( ) This month is may
- - ( ) What month is this month
+ - (x) The next year is 2023.
+ - ( ) This month is may.
+ - ( ) What month is this month?
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/This&#x20;month&#x20;is&#x20;May.mp3) 
- - (x) This month is may
- - ( ) What month is the next month
- - ( ) What year is this
+ - (x) This month is may.
+ - ( ) What month is the next month?
+ - ( ) What year is this?
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;month&#x20;is&#x20;this&#x20;month.mp3) 
- - ( ) What month is the next month
- - (x) What month is this month
- - ( ) What year is this
+ - ( ) What month is the next month ?
+ - (x) What month is this month ?
+ - ( ) What year is this ?
 
-ออกเสียงคำว่า **The next month is june** :
-
-🎙️ the next month is june
-
-ออกเสียงคำว่า **What year is the next year** :
-
-🎙️ what year is the next year
 
 ออกเสียงคำว่า **What year is this** :
 

@@ -1,31 +1,34 @@
 ## Listening Exercise Level 10
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/All&#x20;right.mp3) 
- - (x) All right
- - ( ) I'm really sorry
- - ( ) Noodle
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/milk.mp3) 
+ - ( ) Pie
+ - ( ) Jelly
+ - (x) Milk
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/Can&#x20;you&#x20;help&#x20;me.mp3) 
- - (x) Can you help me
- - ( ) May i borrow your ruler
- - ( ) Watermelon juice
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/ice&#x20;cream.mp3) 
+ - ( ) Get well soon
+ - ( ) Coconut drink
+ - (x) Ice cream
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/jelly.mp3) 
- - ( ) Cookie
- - (x) Jelly
- - ( ) Sushi
-
-
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/cake.mp3) 
- - (x) Cake
- - ( ) Donut
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/tea&#x20;bag.mp3) 
+ - ( ) Fried egg
  - ( ) Fruit salad
+ - (x) Tea bag
 
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/fruit&#x20;salad.mp3) 
+ - ( ) Coconut drink
+ - (x) Fruit salad
+ - ( ) Hamburger
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/orange&#x20;juice.mp3) 
- - (x) Orange juice
- - ( ) Tea
- - ( ) Teapot
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Happy%20birthday.mp3) 
+ - (x) Happy birthday
+ - ( ) Happy Easter day
+ - ( ) Happy new year
+
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Get%20well%20soon.mp3) 
+ - ( ) May god bless you
+ - (x) Get well soon
+ - ( ) Have a nice day
 

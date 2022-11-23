@@ -1,3 +1,17 @@
+13,2,hobbies,seeing a movie,ดูหนัง
+13,2,hobbies,reading,อ่านหนังสือ
+13,2,hobbies,gardening,ทําสวน
+13,2,hobbies,surfing the internet,ท่องอินเทอร์เน็ต
+13,2,hobbies,listening to music,ฟังเพลง
+13,2,hobbies,drawing,วาดภาพ
+13,2,hobbies,cooking,ทําอาหาร
+13,2,hobbies,playing sports,เล่นกีฬา
+13,2,hobbies,watching tv,ดูทีวี
+13,2,hobbies,knitting,ถักไหมพรม
+13,2,hobbies,singing,ร้องเพลง
+13,2,hobbies,taking photos,ถ่ายภาพ
+13,2,hobbies,painting,วาดภาพ
+13,2,hobbies,playing with pet,เล่นกับสัตว์เลี้ยง
 5,3,family,How many people are there in your family,ครอบครัวคุณมีกี่คน
 5,3,family,There are 4 people in my family,ครอบครัวฉันมี 4 คน
 5,3,family,How many brothers and sisters do you have,คุณมีพี่น้องกี่คน?
@@ -43,18 +57,6 @@
 3,2,months,October,ตุลาคม
 3,2,months,November,พฤศจิกายน
 3,2,months,December,ธันวาคม
-13,2,disease,bleed,เลือดออก
-13,2,disease,cough,ไอ
-13,2,disease,stomachache,ปวดท้อง
-13,2,disease,sneeze,จาม
-13,2,disease,fever,ไข้
-13,2,disease,pain,ความเจ็บปวด
-13,2,disease,vomit,อ้วก
-13,2,disease,runny nose,น้ํามูกไหล
-13,2,disease,backache,ปวดหลัง
-13,2,disease,headaches,ปวดหัว
-13,2,disease,sore throat,เจ็บคอ
-13,2,disease,hurt,เจ็บ
 6,2,occupations,teacher,คุณครู
 6,2,occupations,doctor,หมอ
 6,2,occupations,nurse,พยาบาล
@@ -104,6 +106,24 @@
 6,2,occupations,politician,นักการเมือง
 6,2,occupations,prime minister,นายกรัฐมนตรี
 6,2,occupations,president,ประธานาธิบดี
+13,3,Likes and dislikes,What animal do you like,คุณชอบสัตว์อะไร
+13,3,Likes and dislikes,I like dogs,ฉันชอบหมา
+13,3,Likes and dislikes,What sport do you like,คุณชอบกีฬาอะไร
+13,3,Likes and dislikes,I like tennis,ฉันชอบเทนนิส
+13,3,Likes and dislikes,What kind of music do you like,คุณชอบเพลงแนวไหน
+13,3,Likes and dislikes,I like pop music,ฉันชอบเพลงป๊อป
+13,3,Likes and dislikes,Who is your favorite actor,ใครคือนักแสดงคนโปรดของคุณ
+13,3,Likes and dislikes,James is my favorite actor,เจมส์เป็นนักแสดงคนโปรดของฉัน
+13,3,Likes and dislikes,Who is your favorite singer,ใครคือนักร้องคนโปรดของคุณ
+13,3,Likes and dislikes,Lisa is my favorite singer,ลิซ่าเป็นนักร้องคนโปรดของฉัน
+13,3,Likes and dislikes,Do you like cats,คุณชอบแมวไหม
+13,3,Likes and dislikes,Yes I like cats,ค่ะ ฉันชอบแมว
+13,3,Likes and dislikes,Do you like listening to music,คุณชอบฟังเพลงไหม
+13,3,Likes and dislikes,Yes I like listening to music,ใช่ ฉันชอบฟังเพลง
+13,3,Likes and dislikes,Do you like swimming,คุณชอบว่ายน้ําไหม
+13,3,Likes and dislikes,Yes I like swimming,ใช่ ฉันชอบว่ายน้ำ
+13,3,Likes and dislikes,Do you like cooking,คุณชอบทําอาหารไหม
+13,3,Likes and dislikes,Yes I like cooking,ใช่ ฉันชอบทําอาหาร
 11,2,on the table,chili sauce,ซอสพริก
 11,2,on the table,pepper,พริกไทย
 11,2,on the table,napkin,ผ้าเช็ดปาก
@@ -177,24 +197,13 @@
 9,1,OLongvowel,arrow,ลูกศร
 9,1,OLongvowel,pillow,หมอน
 9,1,OLongvowel,window,หน้าต่าง
-14,3,Likes and dislikes,What animal do you like,คุณชอบสัตว์อะไร
-14,3,Likes and dislikes,I like dogs,ฉันชอบหมา
-14,3,Likes and dislikes,What sport do you like,คุณชอบกีฬาอะไร
-14,3,Likes and dislikes,I like tennis,ฉันชอบเทนนิส
-14,3,Likes and dislikes,What kind of music do you like,คุณชอบเพลงแนวไหน
-14,3,Likes and dislikes,I like pop music,ฉันชอบเพลงป๊อป
-14,3,Likes and dislikes,Who is your favorite actor,ใครคือนักแสดงคนโปรดของคุณ
-14,3,Likes and dislikes,James is my favorite actor,เจมส์เป็นนักแสดงคนโปรดของฉัน
-14,3,Likes and dislikes,Who is your favorite singer,ใครคือนักร้องคนโปรดของคุณ
-14,3,Likes and dislikes,Lisa is my favorite singer,ลิซ่าเป็นนักร้องคนโปรดของฉัน
-14,3,Likes and dislikes,Do you like cats,คุณชอบแมวไหม
-14,3,Likes and dislikes,Yes I like cats,ค่ะ ฉันชอบแมว
-14,3,Likes and dislikes,Do you like listening to music,คุณชอบฟังเพลงไหม
-14,3,Likes and dislikes,Yes I like listening to music,ใช่ ฉันชอบฟังเพลง
-14,3,Likes and dislikes,Do you like swimming,คุณชอบว่ายน้ําไหม
-14,3,Likes and dislikes,Yes I like swimming,ใช่ ฉันชอบว่ายน้ำ
-14,3,Likes and dislikes,Do you like cooking,คุณชอบทําอาหารไหม
-14,3,Likes and dislikes,Yes I like cooking,ใช่ ฉันชอบทําอาหาร
+13,2,emotion and feeling,like,ชอบ
+13,2,emotion and feeling,dislike,ไม่ชอบ
+13,2,emotion and feeling,hate,เกลียด
+13,2,emotion and feeling,love,รัก
+13,2,emotion and feeling,smile,ยิ้ม
+13,2,emotion and feeling,laugh,หัวเราะ
+13,2,emotion and feeling,cry,ร้องไห้
 0,0,singularplural,a bird,นก 1 ตัว
 0,0,singularplural,3 birds,นกหลายตัว
 0,0,singularplural,a pencil,ดินสอ 1 แท่ง
@@ -488,12 +497,6 @@
 8,1,ILongvowel,fly,บิน
 8,1,ILongvowel,cry,ร้องไห้
 8,1,ILongvowel,sky,ท้องฟ้า
-13,3,Asking about Education,What subject do you like,วิชาไหนที่คุณชอบ
-13,3,Asking about Education,I like English,ฉันชอบวิชาภาษาอังกฤษ
-13,3,Asking about Education,What subject do you dislike,วิชาไหนที่คุณไม่ชอบ
-13,3,Asking about Education,I don't like Maths,ฉันไม่ชอบวิชาคณิตศาสตร์
-13,3,Asking about Education,What is your favorite subject,วิชาโปรดของคุณคืออะไร
-13,3,Asking about Education,My favorite subject is English,วิชาโปรดของฉันคือภาษาอังกฤษ
 3,1,S-T-U,Snake,งู
 3,1,S-T-U,Seven,เจ็ด
 3,1,S-T-U,Soap,สบู่
@@ -590,20 +593,6 @@
 11,2,living room,vase,แจกัน
 11,2,living room,radio,วิทยุ
 11,2,living room,fish tank,ตู้ปลา
-14,2,hobbies,seeing a movie,ดูหนัง
-14,2,hobbies,reading,อ่านหนังสือ
-14,2,hobbies,gardening,ทําสวน
-14,2,hobbies,surfing the internet,ท่องอินเทอร์เน็ต
-14,2,hobbies,listening to music,ฟังเพลง
-14,2,hobbies,drawing,วาดภาพ
-14,2,hobbies,cooking,ทําอาหาร
-14,2,hobbies,playing sports,เล่นกีฬา
-14,2,hobbies,watching tv,ดูทีวี
-14,2,hobbies,knitting,ถักไหมพรม
-14,2,hobbies,singing,ร้องเพลง
-14,2,hobbies,taking photos,ถ่ายภาพ
-14,2,hobbies,painting,วาดภาพ
-14,2,hobbies,playing with pet,เล่นกับสัตว์เลี้ยง
 4,2,stationary,pen,ปากกา
 4,2,stationary,pencil,ดินสอ
 4,2,stationary,notebook,สมุดบันทึก
@@ -932,13 +921,18 @@
 2,1,P-Q-R,Rabbit,กระต่าย
 2,1,P-Q-R,Rubber,ยางลบ
 2,1,P-Q-R,Ruler,ไม้บรรทัด
-14,2,emotion and feeling,like,ชอบ
-14,2,emotion and feeling,dislike,ไม่ชอบ
-14,2,emotion and feeling,hate,เกลียด
-14,2,emotion and feeling,love,รัก
-14,2,emotion and feeling,smile,ยิ้ม
-14,2,emotion and feeling,laugh,หัวเราะ
-14,2,emotion and feeling,cry,ร้องไห้
+14,2,disease,bleed,เลือดออก
+14,2,disease,cough,ไอ
+14,2,disease,stomachache,ปวดท้อง
+14,2,disease,sneeze,จาม
+14,2,disease,fever,ไข้
+14,2,disease,pain,ความเจ็บปวด
+14,2,disease,vomit,อ้วก
+14,2,disease,runny nose,น้ํามูกไหล
+14,2,disease,backache,ปวดหลัง
+14,2,disease,headaches,ปวดหัว
+14,2,disease,sore throat,เจ็บคอ
+14,2,disease,hurt,เจ็บ
 0,0,singular,a notebook,สมุดบันทึก 1 เล่ม
 0,0,singular,a pumpkin,ฟักทอง 1 ผล
 0,0,singular,a lemon,มะนาว 1 ผล
@@ -1062,24 +1056,6 @@
 5,1,IShortvowel,fix,แก้ไข
 5,1,IShortvowel,mix,ผสม
 5,1,IShortvowel,six,หก
-13,2,clothes,shoes,รองเท้า
-13,2,clothes,socks,ถุงเท้า
-13,2,clothes,belt,เข็มขัด
-13,2,clothes,skirt,กระโปรง
-13,2,clothes,shorts,กางเกงขาสั้น
-13,2,clothes,jean,ยีนส์
-13,2,clothes,pyjamas,ชุดนอน
-13,2,clothes,slippers,รองเท้าแตะ
-13,2,clothes,leggings,กางเกงเลกกิ้ง
-13,2,clothes,bathrobe,เสื้อคลุมอาบน้ํา
-13,2,clothes,swim suit,ชุดว่ายน้ํา
-13,2,clothes,boots,รองเท้าบูท
-13,2,clothes,underwear,ชุดชั้นใน
-13,2,clothes,dress,ชุดกระโปรง
-13,2,clothes,evening dress,ชุดราตรี
-13,2,clothes,diving suit,ชุดดําน้ํา
-13,2,clothes,raincoat,เสื้อกันฝน
-13,2,clothes,suit,สูท
 10,2,food,fried egg,ไข่เจียว
 10,2,food,pizza,พิซซ่า
 10,2,food,hamburger,แฮมเบอร์เกอร์
@@ -1124,6 +1100,12 @@
 4,1,EShortvowel,net,สุทธิ
 4,1,EShortvowel,vet,สัตวแพทย์
 4,1,EShortvowel,wet,เปียก
+14,3,Asking about Education,What subject do you like,วิชาไหนที่คุณชอบ
+14,3,Asking about Education,I like English,ฉันชอบวิชาภาษาอังกฤษ
+14,3,Asking about Education,What subject do you dislike,วิชาไหนที่คุณไม่ชอบ
+14,3,Asking about Education,I don't like Maths,ฉันไม่ชอบวิชาคณิตศาสตร์
+14,3,Asking about Education,What is your favorite subject,วิชาโปรดของคุณคืออะไร
+14,3,Asking about Education,My favorite subject is English,วิชาโปรดของฉันคือภาษาอังกฤษ
 0,0,possesive pronoun,this ruler is mine,ไม้บรรทัดนี่เป็นของฉัน
 0,0,possesive pronoun,this pencil is yours ,ดินสอนี่เป็นของคุณ
 0,0,possesive pronoun,These notebooks are ours,สมุดบันทึกเหล่านี้เป็นของเรา
@@ -1131,3 +1113,21 @@
 0,0,possesive pronoun,That book is his,หนังสือเล่มนั้นเป็นของเขา
 0,0,possesive pronoun,those rulers are hers,ไม้บรรทัดเหล่านั้นเป็นของเธอ
 0,0,possesive pronoun,that is my dog. That house is its,นั่นคือหมาของฉัน บ้านนั้นเป็นของมัน
+14,2,clothes,shoes,รองเท้า
+14,2,clothes,socks,ถุงเท้า
+14,2,clothes,belt,เข็มขัด
+14,2,clothes,skirt,กระโปรง
+14,2,clothes,shorts,กางเกงขาสั้น
+14,2,clothes,jean,ยีนส์
+14,2,clothes,pyjamas,ชุดนอน
+14,2,clothes,slippers,รองเท้าแตะ
+14,2,clothes,leggings,กางเกงเลกกิ้ง
+14,2,clothes,bathrobe,เสื้อคลุมอาบน้ํา
+14,2,clothes,swim suit,ชุดว่ายน้ํา
+14,2,clothes,boots,รองเท้าบูท
+14,2,clothes,underwear,ชุดชั้นใน
+14,2,clothes,dress,ชุดกระโปรง
+14,2,clothes,evening dress,ชุดราตรี
+14,2,clothes,diving suit,ชุดดําน้ํา
+14,2,clothes,raincoat,เสื้อกันฝน
+14,2,clothes,suit,สูท

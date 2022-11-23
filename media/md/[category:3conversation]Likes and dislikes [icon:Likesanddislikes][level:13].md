@@ -14,32 +14,42 @@
 # ![icon](/media/icons/quiz.svg) 
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;sport&#x20;do&#x20;you&#x20;like.mp3) 
- - ( ) I like dogs
- - (x) What sport do you like
- - ( ) Yes i like cooking
+A : What animal do you like ?  
+B : _________________________
+ - (x) I like dogs.
+ - ( ) I like bananas.
+ - ( ) I like cooking.
+
+A : What sport do you like ?  
+B : _________________________
+ - ( ) I like dogs.
+ - ( ) I like bananas.
+ - (x) I like tennis.
+
+A : What kind of music do you like?  
+B : _________________________
+ - (x) I like pop music.
+ - ( ) I like cats.
+ - ( ) I like football.
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/What&#x20;kind&#x20;of&#x20;music&#x20;do&#x20;you&#x20;like.mp3) 
- - ( ) Do you like cats
- - ( ) Do you like swimming
- - (x) What kind of music do you like
+A : Do you like cooking ?  
+B : _____________________
 
+ - ( ) I like football.
+ - (x) Yes, I like cooking.
+ - ( ) I like swimming 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/Lisa&#x20;is&#x20;my&#x20;favorite&#x20;singer.mp3) 
- - ( ) Do you like cats
- - (x) Lisa is my favorite singer
- - ( ) What animal do you like
+A : _____________________  
+B : I like football.
 
-ออกเสียงคำว่า **Lisa is my favorite singer** :
+ - ( ) What animal do you like?
+ - ( ) Who is your favorite actor? 
+ - (x) What sport do you like?
 
-🎙️ lisa is my favorite singer
+A : _____________________  
+B : Yes, I like swimming.
 
-ออกเสียงคำว่า **What animal do you like** :
-
-🎙️ what animal do you like
-
-ออกเสียงคำว่า **Do you like cats** :
-
-🎙️ do you like cats
-
+ - ( ) What animal do you like?
+ - (x) Do you like swimming?
+ - ( ) Who is your favorite singer? 

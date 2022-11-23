@@ -1,21 +1,23 @@
-## Pronunciation Exercise 13
-ออกเสียงคำว่า **Bleed** :
+## Pronunciation Exercise 14
 
-🎙️ bleed
+ออกเสียงคำว่า **Listening to music** :  
+**![](/media/audio/listening%20to%20music.mp3)** 
 
-ออกเสียงคำว่า **Hurt** :
+🎙️ listening to music
 
-🎙️ hurt
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/I%20like%20dogs.mp3)** 
 
-ออกเสียงคำว่า **Runny nose** :
+🎙️ i like dogs
 
-🎙️ runny nose
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/playing%20sports.mp3)** 
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/backache.mp3)** 
+🎙️ playing sports
 
-🎙️ backache
+ออกเสียงคำว่า **I like tennis** :
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/jean.mp3)** 
+🎙️ i like tennis
 
-🎙️ jean
+ออกเสียงคำว่า **I like listening to music** :
+
+🎙️ i like listening to music
 

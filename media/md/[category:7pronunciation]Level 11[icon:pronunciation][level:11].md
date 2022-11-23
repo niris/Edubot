@@ -1,21 +1,23 @@
 ## Pronunciation Exercise 11
-ออกเสียงคำว่า **Do you like listening to music** :
 
-🎙️ do you like listening to music
+ออกเสียงคำว่า **Chili sauce**  
+**![](/media/audio/chili%20sauce.mp3)** 
 
-ออกเสียงคำว่า **Yes i like cooking** :
+🎙️ chili sauce
 
-🎙️ yes i like cooking
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/Calm&#x20;down..mp3)** 
 
-ออกเสียงคำว่า **I'll be there for you** :
+🎙️ calm down
 
-🎙️ i'll be there for you
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/pepper.mp3)** 
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/I&#x20;like&#x20;tennis.mp3)** 
+🎙️ pepper
 
-🎙️ i like tennis
+ออกเสียงคำว่า **Television** :
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/fish&#x20;tank.mp3)** 
+🎙️ television
 
-🎙️ fish tank
+ออกเสียงคำว่า **Don't worry** :
+
+🎙️ don't worry
 

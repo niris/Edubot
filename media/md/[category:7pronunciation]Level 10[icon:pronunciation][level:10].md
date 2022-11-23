@@ -1,21 +1,23 @@
 ## Pronunciation Exercise 10
-ออกเสียงคำว่า **Can you help me** :
 
-🎙️ can you help me
+ออกเสียงคำว่า **Apple juice**   
+**![](/media/audio/apple%20juice.mp3)**  
+🎙️ apple juice
 
-ออกเสียงคำว่า **I'm sorry i'm afraid i can't** :
 
-🎙️ i'm sorry i'm afraid i can't
 
-ออกเสียงคำว่า **Hamburger** :
+ออกเสียงตามสิ่งที่ได้ยิน  **![](/media/audio/orange%20juice.mp3)** 
 
-🎙️ hamburger
+🎙️ orange juice
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/hot&#x20;dog.mp3)** 
+ออกเสียงตามที่ได้ยิน **![](/media/audio/Have%20a%20nice%20day.mp3)** 
 
-🎙️ hot dog
+🎙️ have a nice day
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/Would&#x20;you&#x20;please&#x20;help&#x20;me&#x20;carry&#x20;this&#x20;book.mp3)** 
+ออกเสียงคำว่า **Chocolate bar** :
 
-🎙️ would you please help me carry this book
+🎙️ chocolate bar
 
+ออกเสียงคำว่า **Happy new year** :
+
+🎙️ happy new year

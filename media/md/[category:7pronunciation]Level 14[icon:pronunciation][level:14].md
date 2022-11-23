@@ -1,21 +1,21 @@
-## Pronunciation Exercise 14
-ออกเสียงคำว่า **Watching tv** :
+## Pronunciation Exercise 13
 
-🎙️ watching tv
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/skirt.mp3)** 
 
-ออกเสียงคำว่า **Taking photos** :
+🎙️ skirt
 
-🎙️ taking photos
+ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/stomachache.mp3)** 
 
-ออกเสียงคำว่า **Listening to music** :
+🎙️ stomachache
 
-🎙️ listening to music
+ออกเสียงคำว่า **What subject do you like?** :  
+**![](/media/audio/What%20subject%20do%20you%20like.mp3)**
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/Nice&#x20;work.mp3)** 
+🎙️ what subject do you like
 
-🎙️ nice work
+ออกเสียงคำว่า **I like English**
+🎙️ i like english
 
-ออกเสียงตามสิ่งที่ได้ยิน **![](/media/audio/painting.mp3)** 
+ออกเสียงคำว่า **My favorite subject is English** :
 
-🎙️ painting
-
+🎙️ my favorite subject is english

@@ -1,14 +1,13 @@
 
 # ![](/media/img/lessons__diary.svg) 
-> Dear Diary, 
-> Today, I woke up at 7 O'clock.
-> I ate eggs and bread for breakfast.
-> I went to school by bike.
-> At lunchtime, I ate a fruit salad.
-> I played football after school with Sam and Bob.
-> I went to a restaurant for dinner. 
-> I had apple pie for dessert. 
-> It was sweet.
+> Dear Diary,   
+> Today, I woke up at 7 O'clock.  
+> I ate eggs and bread for breakfast.  
+> I went to school by bike.  
+> At lunchtime, I ate a fruit salad.  
+> I played football after school with Sam and Bob.  
+> I went to a restaurant for dinner.   
+> I had apple pie for dessert. It was sweet.  
 
 
 # ![icon](/media/icons/quiz.svg) 
