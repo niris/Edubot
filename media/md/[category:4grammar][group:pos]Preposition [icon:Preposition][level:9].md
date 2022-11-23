@@ -1,5 +1,5 @@
 
-### Preposition (คำบุพบท)
+### Preposition of place (คำบุพบทระบุตำแหน่ง)
 > คำที่ใช้บอกตำแหน่งและทิศทางว่าอะไรอยู่ตรงไหน เช่น บน ล่าง หน้า หลัง 
 
 <div class="carrousel">
@@ -17,8 +17,39 @@
 
 **เลือกคำบุพบทที่ตรงกับรูปภาพ**
 
-![exo](/media/img/definite%20pronoun__those%20are%20notebooks_ex2.svg) 
-There are three notebooks ___ the table
+![exo](/media/img/preposition__on.svg) 
+The flowerpot is ___ the table.  
  - ( ) in
  - (x) on
  - ( ) under
+
+
+![exo](/media/img/preposition__in%20front%20of.svg)
+Lisa is ________ a box.
+ - (x) in front of
+ - ( ) behind
+ - ( ) above
+
+
+
+![exo](/media/img/preposition__between.svg)
+Lisa is ________ the two boxes  
+ - ( ) below
+ - (x) between
+ - ( ) under
+
+
+![exo](/media/img/preposition__under.svg) 
+A : Where are the shoes ?  
+B : ____________________
+ - ( ) They are above the table
+ - ( ) They are on the table
+ - (x) They are under the table
+
+
+![exo](/media/img/preposition__inside.svg)  
+A : Where is Lisa ?  
+B : ____________________
+ - ( ) She is behind the box
+ - (x) She is inside the box
+ - ( ) She is outside the box
