@@ -13,14 +13,14 @@
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/tea&#x20;bag.mp3) 
- - ( ) Fried egg
+ - ( ) Birthday
  - ( ) Fruit salad
  - (x) Tea bag
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/fruit&#x20;salad.mp3) 
  - ( ) Coconut drink
  - (x) Fruit salad
- - ( ) Hamburger
+ - ( ) Christmas
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Happy%20birthday.mp3) 
  - (x) Happy birthday

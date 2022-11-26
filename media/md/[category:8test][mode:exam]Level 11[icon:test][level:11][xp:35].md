@@ -38,20 +38,20 @@
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/napkin.mp3) 
  - ( ) Chili sauce
- - ( ) Fish tank
+ - ( ) Tomato sauce
  - (x) Napkin
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/picture&#x20;frame.mp3) 
- - ( ) Fish tank
- - (x) Picture frame
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/Would%20you%20please%20help%20me%20carry%20this%20book.mp3) 
+ - ( ) Pizza
+ - (x) Hamburger
  - ( ) Salt
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/pepper.mp3) 
  - (x) Pepper
- - ( ) Sofa
- - ( ) Vase
+ - ( ) Fried egg
+ - ( ) Tempura
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง  :  **![](/media/audio/I'll&#x20;be&#x20;there&#x20;for&#x20;you.mp3)**

@@ -48,10 +48,10 @@
  - ( ) Toothpaste
 
 
-เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/lamp.mp3) 
+เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/table.mp3) 
  - ( ) Alarm clock
  - ( ) Blanket
- - (x) Lamp
+ - (x) Table
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง  ![](/media/audio/Can&#x20;you&#x20;help&#x20;me.mp3) 

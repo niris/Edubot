@@ -5,15 +5,15 @@
  - ( ) Menu
  - ( ) Napkin
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/carpet.mp3) 
- - (x) Carpet
- - ( ) Television
- - ( ) Toothpick
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/pizza.mp3) 
+ - (x) Pizza
+ - ( ) Hot dog
+ - ( ) Tempura
 
-เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/toothpick.mp3) 
+เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/fried%20rice.mp3) 
  - ( ) Menu
- - ( ) Picture frame
- - (x) Toothpick
+ - ( ) Sushi
+ - (x) Fried rice
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/I'll&#x20;be&#x20;there&#x20;for&#x20;you.mp3) 
  - ( ) Everything will be o.k.
