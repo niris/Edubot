@@ -16,7 +16,7 @@ My name is ______
  - ( ) Lisa
  - ( ) Anna
 
-I am_____ years old 
+I am_____ years old.
  - (x) 7
  - ( ) 8
  - ( ) 9

@@ -13,21 +13,35 @@
 
 # ![icon](/media/icons/quiz.svg) 
 
+A: How are you ?  
+B: _____________
+
+ - (x) I'm very well.
+ - ( ) Goodbye.
+ - ( ) Hello.
+
+A: _______________  
+B: I'm good.
+
+ - ( ) Good morning.
+ - (x) How are you doing?
+ - ( ) See you later.
+
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;are&#x20;you.mp3) 
- - (x) How are you
- - ( ) How have you been
- - ( ) I'm good
+ - (x) How are you?
+ - ( ) How have you been?
+ - ( ) How are you doing?
 
 
 เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;have&#x20;you&#x20;been.mp3) 
- - ( ) How are you doing
- - (x) How have you been
- - ( ) I'm very well
+ - ( ) How are you doing?
+ - (x) How have you been?
+ - ( ) How are things with you?
 
 
-เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/How&#x20;are&#x20;you&#x20;doing.mp3) 
- - (x) How are you doing
- - ( ) I'm o.k.
- - ( ) I'm very well
+เลือกคำศัพท์ตรงกับเสียง ![](/media/audio/I'm%20very%20well.mp3) 
+ - ( ) I'm good.
+ - ( ) I'm OK.
+ - (x) I'm very well.
 

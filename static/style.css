@@ -59,7 +59,7 @@ del,
 s {
     font-family: picon;
     text-decoration: none;
-    vertical-align: bottom;
+/*    vertical-align: bottom;*/
 }
 img{
     height: auto;

@@ -7,7 +7,7 @@
 
 
 เลือกคำศัพท์ที่ตรงกับเสียง :  ![](/media/audio/ice&#x20;cream.mp3) 
- - ( ) Get well soon
+ - ( ) Hamburger
  - ( ) Coconut drink
  - (x) Ice cream
 
@@ -31,4 +31,3 @@
  - ( ) May god bless you
  - (x) Get well soon
  - ( ) Have a nice day
-

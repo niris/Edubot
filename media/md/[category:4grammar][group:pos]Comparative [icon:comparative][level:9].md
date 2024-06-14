@@ -4,32 +4,32 @@
 
 > สิ่งที่ต้องการเปรียบเทียบ 1 + Verb to be + คำคุณศัพท์สำหรับเปรียบเทียบขั้นกว่า + than + สิ่งที่ต้องการเปรียบเทียบ 2
 เช่น  
+-  
+    - Mike is **taller than** Jim. (ไมค์ตัวสูงกว่าจิม)
+    - My grandfather is **older than** my father. (คุณปู่ของฉันแก่กว่าพ่อของฉัน)  
+    - The dog is **smaller than** the cow. (สุนัขตัวเล็กกว่าวัว)
 
-- Mike is **taller than** Jim. (ไมค์ตัวสูงกว่าจิม)
-- My grandfather is **older than** my father. (คุณปู่ของฉันแก่กว่าพ่อของฉัน)  
-- The dog is **smaller than** the cow. (สุนัขตัวเล็กกว่าวัว)
-
-## การเปลี่ยนคำคุณศัพท์ (Adjective) เป็นคำคุณศัพท์สำหรับเปรียบเทียบขั้นกว่า
+### การเปลี่ยนคำคุณศัพท์ (Adjective) เป็นคำคุณศัพท์สำหรับเปรียบเทียบขั้นกว่า
 
 1. เพิ่ม er หลังคำคุณศัพท์ (มักใช้กับคำคุณศัพท์ที่มีความยาว 1 - 2 พยางค์) เช่น
-- small => small**er** (เล็กกว่า)
-- tall => tall**er** (สูงกว่า)
-- calm => calm**er** (สงบกว่า)
-- old => old**er** (แก่กว่า)
+    - small => small**er** (เล็กกว่า)
+    - tall => tall**er** (สูงกว่า)
+    - calm => calm**er** (สงบกว่า)
+    - old => old**er** (แก่กว่า)  
+    *หากคำคุณศัพท์ลงท้ายด้วย y จะต้องตัด y ออกแล้วเติม -er เข้าไป* เช่น 
+    - dirty => dirtier (สกปรกกว่า)
+    - easy => easier (ง่ายกว่า)  
 
-หากคำคุณศัพท์ลงท้ายด้วย y จะต้องตัด y ออกแล้วเติม -er เข้าไป เช่น 
-ุ
-- dirty => dirtier (สกปรกกว่า)
-- easy => easier (ง่ายกว่า)
 
 2. ใส่คำว่า more หน้าคำคุณศัพท์  (มักใช้กับคำคุณศัพท์ที่มีความยาว 3 พยางค์ขึ้นไป) เช่น 
-- more beautiful (สวยกว่า)
-- more difficult (ยากกว่า)  
+    - more beautiful (สวยกว่า)
+    - more difficult (ยากกว่า)  
+
 
 3. เปลี่ยนรูปแบบพิเศษ
-- good => better (ดีกว่า)
-- bad => worst
-- far => farther (ไกลกว่า) 
+    - good => better (ดีกว่า)
+    - bad => worst
+    - far => farther (ไกลกว่า) 
 
 <div class="carrousel">
 
@@ -52,20 +52,25 @@ The cat is ____ than the elephant.
 
 **เลือกคำประโยคที่ตรงกับรูปภาพ**
 
-![exo](/media/img) 
- - (x) An empty box
- - ( ) A full box
- - ( ) A thin box
+![exo](/media/img/comparative__The%20giraffe%20is%20taller%20than%20the%20lion.svg) 
+ - (x) The giraffe is taller than the lion
+ - ( ) The lion is taller than the giraffe
+ - ( ) The lion is bigger than the giraffe
 
-![exo](/media/img/describing%20people__hungry.svg) 
- - ( ) She is happy
- - (x) She is hungry
- - ( ) She is excited
+![exo](/media/img/comparative__The%20elephant%20is%20bigger%20than%20the%20cat.svg) 
+ - ( ) The elephant is smaller than the cat
+ - (x) The elephant is bigger than the cat
+ - ( ) The elephant is thinner than the cat
 
-![exo](/media/img/describing%20people__old.svg) 
- - ( ) He is young
- - (x) He is old
- - ( ) He is sad
+![exo](/media/img/comparative__My%20grandfather%20is%20older%20than%20me.svg) 
+ - ( ) My grandfather is younger than me
+ - (x) My grandfather is older than me
+ - ( ) I'm older than my grandfather
+
+ ![exo](/media/img/comparative__I'm%20taller%20than%20my%20sister.svg) 
+ - ( ) I'm smaller than my sister
+ - ( ) My sister is taller than me
+ - (x) I'm taller than my sister
 
 The elephant is ____ than the cat.
  - ( ) smaller

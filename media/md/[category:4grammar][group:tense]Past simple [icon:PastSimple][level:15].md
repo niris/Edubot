@@ -73,7 +73,7 @@ They ___ at school yesterday.
  - (x) were
  - ( ) are 
 
-We ___ television last night
+We ___ watch television last night
 
  - (x) didn't
  - ( ) doen't

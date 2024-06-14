@@ -60,11 +60,16 @@
  - ( ) A thin box
 
 ![exo](/media/img/describing%20people__hungry.svg) 
- - ( ) She is happy
- - (x) She is hungry
- - ( ) She is excited
+ - ( ) She is happy.
+ - (x) She is hungry.
+ - ( ) She is excited.
 
 ![exo](/media/img/describing%20people__old.svg) 
- - ( ) He is young
- - (x) He is old
- - ( ) He is sad
+ - ( ) He is young.
+ - (x) He is old.
+ - ( ) He is sad.
+
+![exo](/media/img/describing%20people__angry.svg) 
+ - ( ) She is happy.
+ - (x) He is angry.
+ - ( ) He is calm.

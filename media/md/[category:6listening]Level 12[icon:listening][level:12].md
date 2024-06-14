@@ -25,3 +25,8 @@
  - ( ) Can you give me that pencil?
  - ( ) Would you please help me carry this book?
 
+เลือก**คำตอบที่ถูกต้องที่สุดสำหรับคำถามในเสียง**ต่อไปนี้  
+![](/media/audio/Can%20you%20give%20me%20that%20pencil.mp3)
+ - ( ) Thank you
+ - ( ) Goodbye
+ - (x) Of course

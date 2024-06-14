@@ -31,12 +31,22 @@
  - ( ) your
  - (x) our
 
-I have a dog. ___ name is Puppy
+These are _______ notebooks.  
+ - ( ) they
+ - (x) their
+ - ( ) them
+
+This is _______ ruler.  
+ - ( ) you
+ - (x) your
+ - ( ) yours
+
+I have a dog. _____ name is Puppy  
  - ( ) Your
  - (x) Its
  - ( ) Their
 
-That boy is my friend. ___ name is Jack
+That boy is my friend. _____ name is Jack  
  - ( ) Her
  - (x) His
  - ( ) Your

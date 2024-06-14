@@ -2,8 +2,14 @@
 
 
 ออกเสียง **I live in bangkok** :
+**![](/media/audio/I%20live%20in%20Bangkok.mp3)** 
 
 🎙️ i live in bangkok
+
+ออกเสียง **Stomach** :
+**![](/media/audio/stomach.mp3)** 
+
+🎙️ stomach
 
 ออกเสียงตามที่ได้ยิน **![](/media/audio/Where%20do%20you%20live.mp3)** 
 
