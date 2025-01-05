@@ -1,0 +1,50 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    expose:
+      - "5432"
+    environment:
+      POSTGRES_DB: root
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./sql:/sql:ro
+      - ./pgdata:/var/lib/postgresql/data
+  api:
+    image: postgrest/postgrest:v12.2.3
+    expose:
+      - "3000"
+    links:
+      - postgres:postgres
+    environment:
+      # a good practice would've been to create a separate non-superuser for postgrest
+      PGRST_DB_URI: postgres://root:password@postgres:5432/root
+      # default schema to be served (reuse existing "public")
+      PGRST_DB_SCHEMA: public
+      # role if bad or missing jwt (must exist)
+      PGRST_DB_ANON_ROLE: anon
+      PGRST_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT check
+      PGRST_APP_SETTINGS_JWT_SECRET: this32BytesOrMoreStringIsUsedToSignAndCheckJWT # for JWT sign
+    depends_on:
+      - postgres
+  httpd:
+    image: nginx:1
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - api:api
+    environment:
+      - PROXY_API=http://api:3000
+    volumes:
+      - ./nginx/nginx.conf:/nginx.tpl:ro
+      - ./nginx/fullchain.pem:/etc/nginx/fullchain.pem:ro
+      - ./nginx/privkey.pem:/etc/nginx/privkey.pem:ro
+      - ./static:/etc/nginx/html/static:ro
+#      - ./media:/etc/nginx/html/media:ro
+    command: bash -c "
+        envsubst '$$PROXY_API' < /nginx.tpl > /etc/nginx/nginx.conf &&
+        nginx -g 'daemon off; error_log /dev/stderr info;'"
+    depends_on:
+      - api
+
